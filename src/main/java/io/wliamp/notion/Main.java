@@ -91,7 +91,7 @@ class Main implements CommandLineRunner {
         Mono<Void> ensureDir = Mono.fromRunnable(() -> {
             try { Files.createDirectories(objDir); }
             catch (Exception e) { throw new RuntimeException(e); }
-        }).subscribeOn(Schedulers.boundedElastic());
+        }).subscribeOn(Schedulers.boundedElastic()).then();
 
         Mono<Void> writePage = ensureDir.then(
                 Mono.fromRunnable(() -> {
@@ -100,7 +100,7 @@ class Main implements CommandLineRunner {
                                 mapper.writerWithDefaultPrettyPrinter().writeValueAsString(obj));
                     } catch (Exception e) { throw new RuntimeException(e); }
                 }).subscribeOn(Schedulers.boundedElastic())
-        );
+        ).then();
 
         Mono<Void> writeBlocks = fetchBlockTree(id)
                 .collectList()
@@ -109,7 +109,7 @@ class Main implements CommandLineRunner {
                         Files.writeString(objDir.resolve("blocks.json"),
                                 mapper.writerWithDefaultPrettyPrinter().writeValueAsString(blocks));
                     } catch (Exception e) { throw new RuntimeException(e); }
-                }).subscribeOn(Schedulers.boundedElastic()));
+                }).subscribeOn(Schedulers.boundedElastic())).then();
 
         return Mono.when(writePage, writeBlocks)
                 .thenReturn(obj)
