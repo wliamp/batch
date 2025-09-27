@@ -49,16 +49,27 @@ class Main implements CommandLineRunner {
     @Override
     public void run(String... args) {
         Path outDir;
-        try { outDir = Files.createDirectories(Path.of("backup")); }
-        catch (Exception e) { throw new RuntimeException(e); }
+        try {
+            outDir = Files.createDirectories(Path.of("backup"));
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
 
-        searchAllObjects()
-                .flatMapSequential(obj -> backupObject(obj, outDir), 4) // parallel page-level, sequential block-level
-                .doOnNext(obj -> log.info("📦 Backed up: {}", extractTitle(obj).orElse(obj.get("id").asText())))
-                .collectList()
-                .doOnNext(list -> log.info("✅ Backup completed. {} objects.", list.size()))
-                .doOnError(err -> log.error("❌ Backup failed", err))
-                .subscribe();
+        try {
+            // block() để chờ toàn bộ pipeline xong, tránh treo
+            var list = searchAllObjects()
+                    .flatMapSequential(obj -> backupObject(obj, outDir), 4)
+                    .doOnNext(obj -> log.info("📦 Backed up: {}", extractTitle(obj).orElse(obj.get("id").asText())))
+                    .collectList()
+                    .doOnNext(res -> log.info("✅ Backup completed. {} objects.", res.size()))
+                    .doOnError(err -> log.error("❌ Backup failed", err))
+                    .block();
+
+            log.info("🔚 Finished backup, exiting. Objects: {}", list != null ? list.size() : 0);
+        } finally {
+            // buộc Spring Boot thoát
+            System.exit(0);
+        }
     }
 
     private Flux<JsonNode> searchAllObjects() {
@@ -100,10 +111,6 @@ class Main implements CommandLineRunner {
                             try {
                                 Files.writeString(objDir.resolve("page.json"),
                                         mapper.writerWithDefaultPrettyPrinter().writeValueAsString(obj));
-                            } catch (IOException e) {
-                                throw new RuntimeException(e);
-                            }
-                            try {
                                 Files.writeString(objDir.resolve("blocks.json"),
                                         mapper.writerWithDefaultPrettyPrinter().writeValueAsString(blocks));
                             } catch (IOException e) {
@@ -129,10 +136,10 @@ class Main implements CommandLineRunner {
                     var results = root.get("results");
                     Flux<JsonNode> blocks = (results != null && results.isArray())
                             ? Flux.fromIterable(results)
-                            .flatMapSequential(this::enrichBlock, 2) // sequential at block-level
+                            .flatMapSequential(this::enrichBlock, 2)
                             : Flux.empty();
 
-                    var nextCursor = root.path("next_cursor").asText(null);
+                    // TODO: handle next_cursor nếu nhiều trang
                     return blocks;
                 });
     }
