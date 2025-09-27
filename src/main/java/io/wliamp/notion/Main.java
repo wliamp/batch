@@ -55,10 +55,12 @@ public class Main implements CommandLineRunner {
 
     // === Search all pages & databases ===
     private Flux<JsonNode> searchAllObjects() {
-        var body = mapper.createObjectNode()
-                .putObject("sort")
-                .put("direction", "descending")
-                .put("timestamp", "last_edited_time");
+        var body = mapper.createObjectNode();
+        var sort = mapper.createObjectNode();
+        sort.put("direction", "descending");
+        sort.put("timestamp", "last_edited_time");
+        body.set("sort", sort);
+        body.put("page_size", 100);
 
         return webClient.post()
                 .uri("/search")
