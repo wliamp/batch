@@ -25,13 +25,13 @@ jobs:
       - name: Run Notion backup
         env:
           NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
-          NOTION_PAGE_ID: ${{ vars.NOTION_PAGE_ID }}
         run: ./gradlew bootRun
 
       - name: Commit & Push changes
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add page.md
-          git commit -m "chore(backup): update from Notion at $(date -u +'%Y-%m-%d %H:%M:%S')" || echo "No changes to commit"
+          git add backup/
+          git commit -m "chore(backup): update Notion JSONs at $(date -u +'%Y-%m-%d %H:%M:%S')" || echo "No changes to commit"
           git push https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }} HEAD:main
+
