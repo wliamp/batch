@@ -9,23 +9,26 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.http.MediaType;
-import org.springframework.web.reactive.function.client.*;
-import reactor.core.publisher.*;
+import org.springframework.web.reactive.function.client.WebClient;
+import reactor.core.publisher.Flux;
+import reactor.core.publisher.Mono;
 import reactor.core.scheduler.Schedulers;
 import reactor.util.retry.Retry;
 
-import java.nio.file.*;
+import java.nio.file.Files;
+import java.nio.file.Path;
 import java.time.Duration;
 import java.util.*;
+import java.util.concurrent.CountDownLatch;
 import java.util.stream.StreamSupport;
 
 @SpringBootApplication
-public class Main implements CommandLineRunner {
+class Main implements CommandLineRunner {
     private static final Logger log = LoggerFactory.getLogger(Main.class);
     private final ObjectMapper mapper = new ObjectMapper();
     private final WebClient webClient;
 
-    public Main() {
+    Main() {
         var token = Optional.ofNullable(System.getenv("NOTION_TOKEN"))
                 .filter(s -> !s.isBlank())
                 .orElseThrow(() -> new IllegalArgumentException("Missing NOTION_TOKEN in ENV"));
@@ -34,7 +37,7 @@ public class Main implements CommandLineRunner {
                 .baseUrl("https://api.notion.com/v1")
                 .defaultHeader("Authorization", "Bearer " + token)
                 .defaultHeader("Notion-Version", "2022-06-28")
-                .codecs(cfg -> cfg.defaultCodecs().maxInMemorySize(16 * 1024 * 1024)) // 16MB buffer
+                .codecs(cfg -> cfg.defaultCodecs().maxInMemorySize(16 * 1024 * 1024))
                 .build();
     }
 
@@ -45,12 +48,17 @@ public class Main implements CommandLineRunner {
     @Override
     public void run(String... args) throws Exception {
         var outDir = Files.createDirectories(Path.of("backup"));
+        var latch = new CountDownLatch(1);
 
         searchAllObjects()
-                .flatMap(obj -> backupObject(obj, outDir), 8) // max concurrency = 8
+                .flatMap(obj -> backupObject(obj, outDir), 4) // concurrency = 4
                 .collectList()
-                .doOnNext(list -> log.info("✅ Backup completed. {} objects.%n", list.size()))
-                .block();
+                .doOnNext(list -> log.info("✅ Backup completed. {} objects.", list.size()))
+                .doOnError(err -> log.error("❌ Backup failed", err))
+                .doFinally(signal -> latch.countDown())
+                .subscribe();
+
+        latch.await();
     }
 
     // === Search all pages & databases ===
@@ -70,8 +78,7 @@ public class Main implements CommandLineRunner {
                 .bodyToMono(JsonNode.class)
                 .flatMapMany(root -> {
                     var results = root.get("results");
-                    if (results == null || !results.isArray()) return Flux.empty();
-                    return Flux.fromIterable(results);
+                    return (results != null && results.isArray()) ? Flux.fromIterable(results) : Flux.empty();
                 });
     }
 
@@ -79,36 +86,34 @@ public class Main implements CommandLineRunner {
     private Mono<JsonNode> backupObject(JsonNode obj, Path outDir) {
         var id = obj.get("id").asText().replace("-", "");
         var title = extractTitle(obj).orElse(id);
-        var safeTitle = safeName(title);
-        var objDir = outDir.resolve(safeTitle);
+        var objDir = outDir.resolve(safeName(title));
 
-        Mono<Void> ensureDir = Mono.fromCallable(() -> Files.createDirectories(objDir))
-                .subscribeOn(Schedulers.boundedElastic())
-                .then();
+        Mono<Void> ensureDir = Mono.fromRunnable(() -> {
+            try { Files.createDirectories(objDir); }
+            catch (Exception e) { throw new RuntimeException(e); }
+        }).subscribeOn(Schedulers.boundedElastic());
 
         Mono<Void> writePage = ensureDir.then(
-                Mono.fromCallable(() -> {
-                    Files.writeString(
-                            objDir.resolve("page.json"),
-                            mapper.writerWithDefaultPrettyPrinter().writeValueAsString(obj));
-                    return (Void) null;
+                Mono.fromRunnable(() -> {
+                    try {
+                        Files.writeString(objDir.resolve("page.json"),
+                                mapper.writerWithDefaultPrettyPrinter().writeValueAsString(obj));
+                    } catch (Exception e) { throw new RuntimeException(e); }
                 }).subscribeOn(Schedulers.boundedElastic())
         );
 
         Mono<Void> writeBlocks = fetchBlockTree(id)
                 .collectList()
-                .flatMap(blocks ->
-                        Mono.fromCallable(() -> {
-                            Files.writeString(
-                                    objDir.resolve("blocks.json"),
-                                    mapper.writerWithDefaultPrettyPrinter().writeValueAsString(blocks));
-                            return (Void) null;
-                        }).subscribeOn(Schedulers.boundedElastic())
-                );
+                .flatMap(blocks -> Mono.fromRunnable(() -> {
+                    try {
+                        Files.writeString(objDir.resolve("blocks.json"),
+                                mapper.writerWithDefaultPrettyPrinter().writeValueAsString(blocks));
+                    } catch (Exception e) { throw new RuntimeException(e); }
+                }).subscribeOn(Schedulers.boundedElastic()));
 
         return Mono.when(writePage, writeBlocks)
                 .thenReturn(obj)
-                .doOnSuccess(_ -> log.info("\uD83D\uDCE6 Backed up: {}", title));
+                .doOnSuccess(_ -> log.info("📦 Backed up: {}", title));
     }
 
     // === Fetch block tree recursively ===
@@ -127,13 +132,12 @@ public class Main implements CommandLineRunner {
                 .retryWhen(Retry.backoff(3, Duration.ofSeconds(1)))
                 .flatMapMany(root -> {
                     var results = root.get("results");
-                    Flux<JsonNode> blocks = (results == null || !results.isArray())
-                            ? Flux.empty()
-                            : Flux.fromIterable(results)
-                            .flatMap(this::enrichBlock, 6);
+                    Flux<JsonNode> blocks = (results != null && results.isArray())
+                            ? Flux.fromIterable(results).flatMap(this::enrichBlock, 3)
+                            : Flux.empty();
 
                     var nextCursor = root.path("next_cursor").asText(null);
-                    return nextCursor != null && !nextCursor.isBlank()
+                    return (nextCursor != null && !nextCursor.isBlank())
                             ? Flux.concat(blocks, fetchBlocksPage(parentId, nextCursor))
                             : blocks;
                 });
@@ -154,27 +158,22 @@ public class Main implements CommandLineRunner {
                 });
     }
 
+    // === Helpers ===
     private Optional<String> extractTitle(JsonNode obj) {
-        // Page: lấy từ properties.title
-        var fromProperties = Optional.ofNullable(obj.get("properties"))
-                .stream()
-                .flatMap(node -> StreamSupport.stream(
-                        Spliterators.spliteratorUnknownSize(node.elements(), Spliterator.ORDERED), false))
-                .filter(prop -> prop.has("title"))
-                .map(prop -> prop.get("title"))
-                .filter(JsonNode::isArray)
-                .filter(arr -> !arr.isEmpty())
-                .map(arr -> arr.get(0).path("plain_text").asText(null))
-                .filter(Objects::nonNull)
-                .findFirst();
-
-        if (fromProperties.isPresent()) return fromProperties;
-
-        // Database: lấy từ "title"
-        return Optional.ofNullable(obj.get("title"))
-                .filter(JsonNode::isArray)
-                .filter(arr -> !arr.isEmpty())
-                .map(arr -> arr.get(0).path("plain_text").asText(null));
+        return Optional.ofNullable(obj.get("properties"))
+                .map(node -> StreamSupport.stream(node.spliterator(), false)
+                        .filter(prop -> prop.has("title"))
+                        .map(prop -> prop.get("title"))
+                        .filter(JsonNode::isArray)
+                        .filter(arr -> !arr.isEmpty())
+                        .map(arr -> arr.get(0).path("plain_text").asText(null))
+                        .filter(Objects::nonNull)
+                        .findFirst()
+                        .orElse(null))
+                .or(() -> Optional.ofNullable(obj.get("title"))
+                        .filter(JsonNode::isArray)
+                        .filter(arr -> !arr.isEmpty())
+                        .map(arr -> arr.get(0).path("plain_text").asText(null)));
     }
 
     private String safeName(String input) {
