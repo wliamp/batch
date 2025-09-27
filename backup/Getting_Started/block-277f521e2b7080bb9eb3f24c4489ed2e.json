@@ -1,0 +1,126 @@
+{
+  "object" : "block",
+  "id" : "277f521e-2b70-80bb-9eb3-f24c4489ed2e",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "277f521e-2b70-8059-aacb-e49e1f753e13"
+  },
+  "created_time" : "2025-09-23T22:57:00.000Z",
+  "last_edited_time" : "2025-09-23T22:57:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "callout",
+  "callout" : {
+    "rich_text" : [ {
+      "type" : "text",
+      "text" : {
+        "content" : "Notion Tip: ",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : true,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "Notion Tip: ",
+      "href" : null
+    }, {
+      "type" : "text",
+      "text" : {
+        "content" : "Create a callout block like this by typing ",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "Create a callout block like this by typing ",
+      "href" : null
+    }, {
+      "type" : "text",
+      "text" : {
+        "content" : "/call",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : true,
+        "color" : "default"
+      },
+      "plain_text" : "/call",
+      "href" : null
+    }, {
+      "type" : "text",
+      "text" : {
+        "content" : " and pressing ",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : " and pressing ",
+      "href" : null
+    }, {
+      "type" : "text",
+      "text" : {
+        "content" : "enter",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : true,
+        "color" : "default"
+      },
+      "plain_text" : "enter",
+      "href" : null
+    }, {
+      "type" : "text",
+      "text" : {
+        "content" : ". Helpful for adding inline instructions, warnings, disclaimers, and tips. Change the emoji icon by clicking on it.",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : ". Helpful for adding inline instructions, warnings, disclaimers, and tips. Change the emoji icon by clicking on it.",
+      "href" : null
+    } ],
+    "icon" : {
+      "type" : "emoji",
+      "emoji" : "💡"
+    },
+    "color" : "gray_background"
+  }
+}

@@ -1,0 +1,75 @@
+{
+  "object" : "block",
+  "id" : "27af521e-2b70-801e-b034-f7220120f0a5",
+  "parent" : {
+    "type" : "block_id",
+    "block_id" : "278f521e-2b70-8083-baa6-ecf9a1ce2309"
+  },
+  "created_time" : "2025-09-26T19:29:00.000Z",
+  "last_edited_time" : "2025-09-26T19:29:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : true,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "to_do",
+  "to_do" : {
+    "rich_text" : [ {
+      "type" : "text",
+      "text" : {
+        "content" : "For ",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "For ",
+      "href" : null
+    }, {
+      "type" : "text",
+      "text" : {
+        "content" : "OnePay / Payoo",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : true,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "OnePay / Payoo",
+      "href" : null
+    }, {
+      "type" : "text",
+      "text" : {
+        "content" : " (or similar providers):",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : " (or similar providers):",
+      "href" : null
+    } ],
+    "checked" : false,
+    "color" : "default"
+  }
+}

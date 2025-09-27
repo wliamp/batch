@@ -1,0 +1,75 @@
+{
+  "object" : "block",
+  "id" : "27af521e-2b70-80b9-bce7-f60e4513191e",
+  "parent" : {
+    "type" : "block_id",
+    "block_id" : "278f521e-2b70-80f8-a6f1-cc9bebab800c"
+  },
+  "created_time" : "2025-09-26T19:44:00.000Z",
+  "last_edited_time" : "2025-09-26T19:44:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "to_do",
+  "to_do" : {
+    "rich_text" : [ {
+      "type" : "text",
+      "text" : {
+        "content" : "Customer can navigate to a ",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "Customer can navigate to a ",
+      "href" : null
+    }, {
+      "type" : "text",
+      "text" : {
+        "content" : "Payment History",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : true,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "Payment History",
+      "href" : null
+    }, {
+      "type" : "text",
+      "text" : {
+        "content" : " section in their account.",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : " section in their account.",
+      "href" : null
+    } ],
+    "checked" : false,
+    "color" : "default"
+  }
+}

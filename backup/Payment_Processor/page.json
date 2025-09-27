@@ -1,0 +1,105 @@
+{
+  "object" : "page",
+  "id" : "277f521e-2b70-800e-b613-c2dba497079d",
+  "created_time" : "2025-09-23T22:57:00.000Z",
+  "last_edited_time" : "2025-09-26T23:26:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "cover" : null,
+  "icon" : {
+    "type" : "emoji",
+    "emoji" : "⚙️"
+  },
+  "parent" : {
+    "type" : "database_id",
+    "database_id" : "277f521e-2b70-80d8-ae3f-f3a85c65d99f"
+  },
+  "archived" : false,
+  "in_trash" : false,
+  "is_locked" : false,
+  "properties" : {
+    "Clarity" : {
+      "id" : "J%3Fx%7D",
+      "type" : "rich_text",
+      "rich_text" : [ {
+        "type" : "text",
+        "text" : {
+          "content" : "A financial intermediary that connects the payment gateway with card networks, performing routing and preliminary risk checks.",
+          "link" : null
+        },
+        "annotations" : {
+          "bold" : false,
+          "italic" : false,
+          "strikethrough" : false,
+          "underline" : false,
+          "code" : false,
+          "color" : "default"
+        },
+        "plain_text" : "A financial intermediary that connects the payment gateway with card networks, performing routing and preliminary risk checks.",
+        "href" : null
+      } ]
+    },
+    "Theme" : {
+      "id" : "VU%5CH",
+      "type" : "select",
+      "select" : {
+        "id" : "c6c22506-937b-4cdb-8e92-e0a677e39325",
+        "name" : "Actors",
+        "color" : "blue"
+      }
+    },
+    "Status" : {
+      "id" : "W%5CQ~",
+      "type" : "status",
+      "status" : {
+        "id" : "2e01eea4-a674-4a3c-9258-56c29e5db025",
+        "name" : "Not started",
+        "color" : "default"
+      }
+    },
+    "Sub-Actors" : {
+      "id" : "juX%5C",
+      "type" : "multi_select",
+      "multi_select" : [ ]
+    },
+    "Actor" : {
+      "id" : "rTVy",
+      "type" : "select",
+      "select" : {
+        "id" : "zjv?",
+        "name" : "Payment Processor",
+        "color" : "orange"
+      }
+    },
+    "Name" : {
+      "id" : "title",
+      "type" : "title",
+      "title" : [ {
+        "type" : "text",
+        "text" : {
+          "content" : "Payment Processor",
+          "link" : null
+        },
+        "annotations" : {
+          "bold" : false,
+          "italic" : false,
+          "strikethrough" : false,
+          "underline" : false,
+          "code" : false,
+          "color" : "default"
+        },
+        "plain_text" : "Payment Processor",
+        "href" : null
+      } ]
+    }
+  },
+  "url" : "https://www.notion.so/Payment-Processor-277f521e2b70800eb613c2dba497079d",
+  "public_url" : null,
+  "request_id" : "063e4b7c-02fb-4470-b3e4-83d881ed0e65"
+}

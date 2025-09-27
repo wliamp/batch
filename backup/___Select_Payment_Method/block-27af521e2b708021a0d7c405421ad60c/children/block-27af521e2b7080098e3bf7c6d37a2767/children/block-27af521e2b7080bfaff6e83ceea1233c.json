@@ -1,0 +1,90 @@
+{
+  "object" : "block",
+  "id" : "27af521e-2b70-80bf-aff6-e83ceea1233c",
+  "parent" : {
+    "type" : "block_id",
+    "block_id" : "27af521e-2b70-8009-8e3b-f7c6d37a2767"
+  },
+  "created_time" : "2025-09-26T19:11:00.000Z",
+  "last_edited_time" : "2025-09-26T19:11:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "bulleted_list_item",
+  "bulleted_list_item" : {
+    "rich_text" : [ {
+      "type" : "text",
+      "text" : {
+        "content" : "If a method is not currently supported by any Vietnamese provider",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : true,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "If a method is not currently supported by any Vietnamese provider",
+      "href" : null
+    }, {
+      "type" : "text",
+      "text" : {
+        "content" : " (e.g., Buy Now Pay Later, Crypto payments, International wallets like PayPal/Apple Pay/Google Pay), the system must allow for ",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : " (e.g., Buy Now Pay Later, Crypto payments, International wallets like PayPal/Apple Pay/Google Pay), the system must allow for ",
+      "href" : null
+    }, {
+      "type" : "text",
+      "text" : {
+        "content" : "self-build or custom integration",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : true,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "self-build or custom integration",
+      "href" : null
+    }, {
+      "type" : "text",
+      "text" : {
+        "content" : " in a modular way.",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : " in a modular way.",
+      "href" : null
+    } ],
+    "color" : "default"
+  }
+}

@@ -1,0 +1,79 @@
+{
+  "object" : "page",
+  "id" : "278f521e-2b70-8018-a714-e20cee84ea27",
+  "created_time" : "2025-09-24T12:11:00.000Z",
+  "last_edited_time" : "2025-09-26T21:36:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "cover" : null,
+  "icon" : {
+    "type" : "emoji",
+    "emoji" : "👤"
+  },
+  "parent" : {
+    "type" : "database_id",
+    "database_id" : "278f521e-2b70-8020-bf7a-c18805532ce2"
+  },
+  "archived" : false,
+  "in_trash" : false,
+  "is_locked" : false,
+  "properties" : {
+    "theme" : {
+      "id" : "Yz%40%60",
+      "type" : "select",
+      "select" : {
+        "id" : "ac791d61-6a58-4e2c-b17e-2919264bdbce",
+        "name" : "Customer",
+        "color" : "pink"
+      }
+    },
+    "Status" : {
+      "id" : "k%3FMm",
+      "type" : "status",
+      "status" : {
+        "id" : "8e60037a-bd86-4bec-ae03-6dcd5c392137",
+        "name" : "Not started",
+        "color" : "default"
+      }
+    },
+    "Priority" : {
+      "id" : "lgXk",
+      "type" : "select",
+      "select" : {
+        "id" : "q_d^",
+        "name" : "P2",
+        "color" : "pink"
+      }
+    },
+    "Title" : {
+      "id" : "title",
+      "type" : "title",
+      "title" : [ {
+        "type" : "text",
+        "text" : {
+          "content" : "🔄💰 Get My Money Back (Refund)",
+          "link" : null
+        },
+        "annotations" : {
+          "bold" : false,
+          "italic" : false,
+          "strikethrough" : false,
+          "underline" : false,
+          "code" : false,
+          "color" : "default"
+        },
+        "plain_text" : "🔄💰 Get My Money Back (Refund)",
+        "href" : null
+      } ]
+    }
+  },
+  "url" : "https://www.notion.so/Get-My-Money-Back-Refund-278f521e2b708018a714e20cee84ea27",
+  "public_url" : null,
+  "request_id" : "a6f8ad67-4624-49f8-916c-617a497486d3"
+}

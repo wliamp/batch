@@ -1,0 +1,74 @@
+{
+  "object" : "block",
+  "id" : "27af521e-2b70-8032-9019-c1e4997c598c",
+  "parent" : {
+    "type" : "block_id",
+    "block_id" : "27af521e-2b70-80d9-bcb1-db6b52b8d741"
+  },
+  "created_time" : "2025-09-26T20:55:00.000Z",
+  "last_edited_time" : "2025-09-26T20:55:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "numbered_list_item",
+  "numbered_list_item" : {
+    "rich_text" : [ {
+      "type" : "text",
+      "text" : {
+        "content" : "Merchant system generates a ",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "Merchant system generates a ",
+      "href" : null
+    }, {
+      "type" : "text",
+      "text" : {
+        "content" : "Refund Request",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : true,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "Refund Request",
+      "href" : null
+    }, {
+      "type" : "text",
+      "text" : {
+        "content" : " and sends it to Payment Gateway.",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : " and sends it to Payment Gateway.",
+      "href" : null
+    } ],
+    "color" : "default"
+  }
+}
