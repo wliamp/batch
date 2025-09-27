@@ -1,0 +1,1814 @@
+[ {
+  "object" : "block",
+  "id" : "278f521e-2b70-80de-b767-ca8fcfdd38dc",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "278f521e-2b70-8040-8d44-fbf72d3180ce"
+  },
+  "created_time" : "2025-09-24T15:28:00.000Z",
+  "last_edited_time" : "2025-09-24T15:29:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : true,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "toggle",
+  "toggle" : {
+    "rich_text" : [ {
+      "type" : "text",
+      "text" : {
+        "content" : "User Story",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : true,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "User Story",
+      "href" : null
+    } ],
+    "color" : "default"
+  },
+  "children" : [ {
+    "object" : "block",
+    "id" : "278f521e-2b70-805b-aff0-f6919eced597",
+    "parent" : {
+      "type" : "block_id",
+      "block_id" : "278f521e-2b70-80de-b767-ca8fcfdd38dc"
+    },
+    "created_time" : "2025-09-24T15:28:00.000Z",
+    "last_edited_time" : "2025-09-26T17:55:00.000Z",
+    "created_by" : {
+      "object" : "user",
+      "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+    },
+    "last_edited_by" : {
+      "object" : "user",
+      "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+    },
+    "has_children" : false,
+    "archived" : false,
+    "in_trash" : false,
+    "type" : "paragraph",
+    "paragraph" : {
+      "rich_text" : [ {
+        "type" : "text",
+        "text" : {
+          "content" : "“As a ",
+          "link" : null
+        },
+        "annotations" : {
+          "bold" : false,
+          "italic" : false,
+          "strikethrough" : false,
+          "underline" : false,
+          "code" : false,
+          "color" : "default"
+        },
+        "plain_text" : "“As a ",
+        "href" : null
+      }, {
+        "type" : "text",
+        "text" : {
+          "content" : "Customer",
+          "link" : null
+        },
+        "annotations" : {
+          "bold" : true,
+          "italic" : false,
+          "strikethrough" : false,
+          "underline" : false,
+          "code" : false,
+          "color" : "default"
+        },
+        "plain_text" : "Customer",
+        "href" : null
+      }, {
+        "type" : "text",
+        "text" : {
+          "content" : ", I want to ",
+          "link" : null
+        },
+        "annotations" : {
+          "bold" : false,
+          "italic" : false,
+          "strikethrough" : false,
+          "underline" : false,
+          "code" : false,
+          "color" : "default"
+        },
+        "plain_text" : ", I want to ",
+        "href" : null
+      }, {
+        "type" : "text",
+        "text" : {
+          "content" : "view my past payments",
+          "link" : null
+        },
+        "annotations" : {
+          "bold" : true,
+          "italic" : false,
+          "strikethrough" : false,
+          "underline" : false,
+          "code" : false,
+          "color" : "default"
+        },
+        "plain_text" : "view my past payments",
+        "href" : null
+      }, {
+        "type" : "text",
+        "text" : {
+          "content" : ", so that I ",
+          "link" : null
+        },
+        "annotations" : {
+          "bold" : false,
+          "italic" : false,
+          "strikethrough" : false,
+          "underline" : false,
+          "code" : false,
+          "color" : "default"
+        },
+        "plain_text" : ", so that I ",
+        "href" : null
+      }, {
+        "type" : "text",
+        "text" : {
+          "content" : "can track what I have purchased and paid for",
+          "link" : null
+        },
+        "annotations" : {
+          "bold" : true,
+          "italic" : false,
+          "strikethrough" : false,
+          "underline" : false,
+          "code" : false,
+          "color" : "default"
+        },
+        "plain_text" : "can track what I have purchased and paid for",
+        "href" : null
+      }, {
+        "type" : "text",
+        "text" : {
+          "content" : ".”",
+          "link" : null
+        },
+        "annotations" : {
+          "bold" : false,
+          "italic" : false,
+          "strikethrough" : false,
+          "underline" : false,
+          "code" : false,
+          "color" : "default"
+        },
+        "plain_text" : ".”",
+        "href" : null
+      } ],
+      "color" : "default"
+    }
+  } ]
+}, {
+  "object" : "block",
+  "id" : "27af521e-2b70-8083-8b51-ca86c45b5e12",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "278f521e-2b70-8040-8d44-fbf72d3180ce"
+  },
+  "created_time" : "2025-09-26T18:48:00.000Z",
+  "last_edited_time" : "2025-09-26T18:49:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : true,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "toggle",
+  "toggle" : {
+    "rich_text" : [ {
+      "type" : "text",
+      "text" : {
+        "content" : "Scope",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : true,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "Scope",
+      "href" : null
+    } ],
+    "color" : "default"
+  },
+  "children" : [ {
+    "object" : "block",
+    "id" : "27af521e-2b70-8093-9240-f06611ead280",
+    "parent" : {
+      "type" : "block_id",
+      "block_id" : "27af521e-2b70-8083-8b51-ca86c45b5e12"
+    },
+    "created_time" : "2025-09-26T18:48:00.000Z",
+    "last_edited_time" : "2025-09-26T19:43:00.000Z",
+    "created_by" : {
+      "object" : "user",
+      "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+    },
+    "last_edited_by" : {
+      "object" : "user",
+      "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+    },
+    "has_children" : true,
+    "archived" : false,
+    "in_trash" : false,
+    "type" : "toggle",
+    "toggle" : {
+      "rich_text" : [ {
+        "type" : "text",
+        "text" : {
+          "content" : "In Scope",
+          "link" : null
+        },
+        "annotations" : {
+          "bold" : true,
+          "italic" : false,
+          "strikethrough" : false,
+          "underline" : false,
+          "code" : false,
+          "color" : "default"
+        },
+        "plain_text" : "In Scope",
+        "href" : null
+      } ],
+      "color" : "default"
+    },
+    "children" : [ {
+      "object" : "block",
+      "id" : "27af521e-2b70-8020-ad42-d83aa726b9eb",
+      "parent" : {
+        "type" : "block_id",
+        "block_id" : "27af521e-2b70-8093-9240-f06611ead280"
+      },
+      "created_time" : "2025-09-26T19:43:00.000Z",
+      "last_edited_time" : "2025-09-26T19:43:00.000Z",
+      "created_by" : {
+        "object" : "user",
+        "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+      },
+      "last_edited_by" : {
+        "object" : "user",
+        "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+      },
+      "has_children" : false,
+      "archived" : false,
+      "in_trash" : false,
+      "type" : "bulleted_list_item",
+      "bulleted_list_item" : {
+        "rich_text" : [ {
+          "type" : "text",
+          "text" : {
+            "content" : "Provide customers with a ",
+            "link" : null
+          },
+          "annotations" : {
+            "bold" : false,
+            "italic" : false,
+            "strikethrough" : false,
+            "underline" : false,
+            "code" : false,
+            "color" : "default"
+          },
+          "plain_text" : "Provide customers with a ",
+          "href" : null
+        }, {
+          "type" : "text",
+          "text" : {
+            "content" : "Payment History view",
+            "link" : null
+          },
+          "annotations" : {
+            "bold" : true,
+            "italic" : false,
+            "strikethrough" : false,
+            "underline" : false,
+            "code" : false,
+            "color" : "default"
+          },
+          "plain_text" : "Payment History view",
+          "href" : null
+        }, {
+          "type" : "text",
+          "text" : {
+            "content" : " showing all past transactions.",
+            "link" : null
+          },
+          "annotations" : {
+            "bold" : false,
+            "italic" : false,
+            "strikethrough" : false,
+            "underline" : false,
+            "code" : false,
+            "color" : "default"
+          },
+          "plain_text" : " showing all past transactions.",
+          "href" : null
+        } ],
+        "color" : "default"
+      }
+    }, {
+      "object" : "block",
+      "id" : "27af521e-2b70-8010-a046-c4dac3ea1d8d",
+      "parent" : {
+        "type" : "block_id",
+        "block_id" : "27af521e-2b70-8093-9240-f06611ead280"
+      },
+      "created_time" : "2025-09-26T19:43:00.000Z",
+      "last_edited_time" : "2025-09-26T19:43:00.000Z",
+      "created_by" : {
+        "object" : "user",
+        "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+      },
+      "last_edited_by" : {
+        "object" : "user",
+        "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+      },
+      "has_children" : true,
+      "archived" : false,
+      "in_trash" : false,
+      "type" : "bulleted_list_item",
+      "bulleted_list_item" : {
+        "rich_text" : [ {
+          "type" : "text",
+          "text" : {
+            "content" : "Display essential details:",
+            "link" : null
+          },
+          "annotations" : {
+            "bold" : false,
+            "italic" : false,
+            "strikethrough" : false,
+            "underline" : false,
+            "code" : false,
+            "color" : "default"
+          },
+          "plain_text" : "Display essential details:",
+          "href" : null
+        } ],
+        "color" : "default"
+      },
+      "children" : [ {
+        "object" : "block",
+        "id" : "27af521e-2b70-80d6-b516-c183c54f227e",
+        "parent" : {
+          "type" : "block_id",
+          "block_id" : "27af521e-2b70-8010-a046-c4dac3ea1d8d"
+        },
+        "created_time" : "2025-09-26T19:43:00.000Z",
+        "last_edited_time" : "2025-09-26T19:43:00.000Z",
+        "created_by" : {
+          "object" : "user",
+          "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+        },
+        "last_edited_by" : {
+          "object" : "user",
+          "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+        },
+        "has_children" : false,
+        "archived" : false,
+        "in_trash" : false,
+        "type" : "bulleted_list_item",
+        "bulleted_list_item" : {
+          "rich_text" : [ {
+            "type" : "text",
+            "text" : {
+              "content" : "Order ID / reference.",
+              "link" : null
+            },
+            "annotations" : {
+              "bold" : false,
+              "italic" : false,
+              "strikethrough" : false,
+              "underline" : false,
+              "code" : false,
+              "color" : "default"
+            },
+            "plain_text" : "Order ID / reference.",
+            "href" : null
+          } ],
+          "color" : "default"
+        }
+      }, {
+        "object" : "block",
+        "id" : "27af521e-2b70-803a-96ec-c1743ca02103",
+        "parent" : {
+          "type" : "block_id",
+          "block_id" : "27af521e-2b70-8010-a046-c4dac3ea1d8d"
+        },
+        "created_time" : "2025-09-26T19:43:00.000Z",
+        "last_edited_time" : "2025-09-26T19:43:00.000Z",
+        "created_by" : {
+          "object" : "user",
+          "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+        },
+        "last_edited_by" : {
+          "object" : "user",
+          "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+        },
+        "has_children" : false,
+        "archived" : false,
+        "in_trash" : false,
+        "type" : "bulleted_list_item",
+        "bulleted_list_item" : {
+          "rich_text" : [ {
+            "type" : "text",
+            "text" : {
+              "content" : "Payment method (domestic card, e-wallet, bank transfer).",
+              "link" : null
+            },
+            "annotations" : {
+              "bold" : false,
+              "italic" : false,
+              "strikethrough" : false,
+              "underline" : false,
+              "code" : false,
+              "color" : "default"
+            },
+            "plain_text" : "Payment method (domestic card, e-wallet, bank transfer).",
+            "href" : null
+          } ],
+          "color" : "default"
+        }
+      }, {
+        "object" : "block",
+        "id" : "27af521e-2b70-80ce-ba08-f3460ead0f28",
+        "parent" : {
+          "type" : "block_id",
+          "block_id" : "27af521e-2b70-8010-a046-c4dac3ea1d8d"
+        },
+        "created_time" : "2025-09-26T19:43:00.000Z",
+        "last_edited_time" : "2025-09-26T19:43:00.000Z",
+        "created_by" : {
+          "object" : "user",
+          "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+        },
+        "last_edited_by" : {
+          "object" : "user",
+          "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+        },
+        "has_children" : false,
+        "archived" : false,
+        "in_trash" : false,
+        "type" : "bulleted_list_item",
+        "bulleted_list_item" : {
+          "rich_text" : [ {
+            "type" : "text",
+            "text" : {
+              "content" : "Amount paid.",
+              "link" : null
+            },
+            "annotations" : {
+              "bold" : false,
+              "italic" : false,
+              "strikethrough" : false,
+              "underline" : false,
+              "code" : false,
+              "color" : "default"
+            },
+            "plain_text" : "Amount paid.",
+            "href" : null
+          } ],
+          "color" : "default"
+        }
+      }, {
+        "object" : "block",
+        "id" : "27af521e-2b70-80ed-ab3e-e0205dfee63f",
+        "parent" : {
+          "type" : "block_id",
+          "block_id" : "27af521e-2b70-8010-a046-c4dac3ea1d8d"
+        },
+        "created_time" : "2025-09-26T19:43:00.000Z",
+        "last_edited_time" : "2025-09-26T19:43:00.000Z",
+        "created_by" : {
+          "object" : "user",
+          "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+        },
+        "last_edited_by" : {
+          "object" : "user",
+          "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+        },
+        "has_children" : false,
+        "archived" : false,
+        "in_trash" : false,
+        "type" : "bulleted_list_item",
+        "bulleted_list_item" : {
+          "rich_text" : [ {
+            "type" : "text",
+            "text" : {
+              "content" : "Payment status (Paid, Failed, Refunded, Cancelled, etc.).",
+              "link" : null
+            },
+            "annotations" : {
+              "bold" : false,
+              "italic" : false,
+              "strikethrough" : false,
+              "underline" : false,
+              "code" : false,
+              "color" : "default"
+            },
+            "plain_text" : "Payment status (Paid, Failed, Refunded, Cancelled, etc.).",
+            "href" : null
+          } ],
+          "color" : "default"
+        }
+      }, {
+        "object" : "block",
+        "id" : "27af521e-2b70-8049-b5ab-ec822903b757",
+        "parent" : {
+          "type" : "block_id",
+          "block_id" : "27af521e-2b70-8010-a046-c4dac3ea1d8d"
+        },
+        "created_time" : "2025-09-26T19:43:00.000Z",
+        "last_edited_time" : "2025-09-26T19:43:00.000Z",
+        "created_by" : {
+          "object" : "user",
+          "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+        },
+        "last_edited_by" : {
+          "object" : "user",
+          "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+        },
+        "has_children" : false,
+        "archived" : false,
+        "in_trash" : false,
+        "type" : "bulleted_list_item",
+        "bulleted_list_item" : {
+          "rich_text" : [ {
+            "type" : "text",
+            "text" : {
+              "content" : "Date and time of transaction.",
+              "link" : null
+            },
+            "annotations" : {
+              "bold" : false,
+              "italic" : false,
+              "strikethrough" : false,
+              "underline" : false,
+              "code" : false,
+              "color" : "default"
+            },
+            "plain_text" : "Date and time of transaction.",
+            "href" : null
+          } ],
+          "color" : "default"
+        }
+      } ]
+    }, {
+      "object" : "block",
+      "id" : "27af521e-2b70-80b7-bed7-e380200c0edb",
+      "parent" : {
+        "type" : "block_id",
+        "block_id" : "27af521e-2b70-8093-9240-f06611ead280"
+      },
+      "created_time" : "2025-09-26T19:43:00.000Z",
+      "last_edited_time" : "2025-09-26T19:43:00.000Z",
+      "created_by" : {
+        "object" : "user",
+        "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+      },
+      "last_edited_by" : {
+        "object" : "user",
+        "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+      },
+      "has_children" : false,
+      "archived" : false,
+      "in_trash" : false,
+      "type" : "bulleted_list_item",
+      "bulleted_list_item" : {
+        "rich_text" : [ {
+          "type" : "text",
+          "text" : {
+            "content" : "Support filtering and sorting (by date range, payment status, method).",
+            "link" : null
+          },
+          "annotations" : {
+            "bold" : false,
+            "italic" : false,
+            "strikethrough" : false,
+            "underline" : false,
+            "code" : false,
+            "color" : "default"
+          },
+          "plain_text" : "Support filtering and sorting (by date range, payment status, method).",
+          "href" : null
+        } ],
+        "color" : "default"
+      }
+    }, {
+      "object" : "block",
+      "id" : "27af521e-2b70-80cf-8e2c-d6895bb13542",
+      "parent" : {
+        "type" : "block_id",
+        "block_id" : "27af521e-2b70-8093-9240-f06611ead280"
+      },
+      "created_time" : "2025-09-26T19:43:00.000Z",
+      "last_edited_time" : "2025-09-26T19:43:00.000Z",
+      "created_by" : {
+        "object" : "user",
+        "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+      },
+      "last_edited_by" : {
+        "object" : "user",
+        "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+      },
+      "has_children" : true,
+      "archived" : false,
+      "in_trash" : false,
+      "type" : "bulleted_list_item",
+      "bulleted_list_item" : {
+        "rich_text" : [ {
+          "type" : "text",
+          "text" : {
+            "content" : "Integrate with Vietnamese payment providers’ APIs",
+            "link" : null
+          },
+          "annotations" : {
+            "bold" : true,
+            "italic" : false,
+            "strikethrough" : false,
+            "underline" : false,
+            "code" : false,
+            "color" : "default"
+          },
+          "plain_text" : "Integrate with Vietnamese payment providers’ APIs",
+          "href" : null
+        }, {
+          "type" : "text",
+          "text" : {
+            "content" : " where available, to retrieve and reconcile transaction history:",
+            "link" : null
+          },
+          "annotations" : {
+            "bold" : false,
+            "italic" : false,
+            "strikethrough" : false,
+            "underline" : false,
+            "code" : false,
+            "color" : "default"
+          },
+          "plain_text" : " where available, to retrieve and reconcile transaction history:",
+          "href" : null
+        } ],
+        "color" : "default"
+      },
+      "children" : [ {
+        "object" : "block",
+        "id" : "27af521e-2b70-80de-b039-cbbb7d542341",
+        "parent" : {
+          "type" : "block_id",
+          "block_id" : "27af521e-2b70-80cf-8e2c-d6895bb13542"
+        },
+        "created_time" : "2025-09-26T19:43:00.000Z",
+        "last_edited_time" : "2025-09-26T19:43:00.000Z",
+        "created_by" : {
+          "object" : "user",
+          "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+        },
+        "last_edited_by" : {
+          "object" : "user",
+          "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+        },
+        "has_children" : false,
+        "archived" : false,
+        "in_trash" : false,
+        "type" : "bulleted_list_item",
+        "bulleted_list_item" : {
+          "rich_text" : [ {
+            "type" : "text",
+            "text" : {
+              "content" : "VNPay Merchant API.",
+              "link" : null
+            },
+            "annotations" : {
+              "bold" : false,
+              "italic" : false,
+              "strikethrough" : false,
+              "underline" : false,
+              "code" : false,
+              "color" : "default"
+            },
+            "plain_text" : "VNPay Merchant API.",
+            "href" : null
+          } ],
+          "color" : "default"
+        }
+      }, {
+        "object" : "block",
+        "id" : "27af521e-2b70-80cc-9e27-cd8b59f69782",
+        "parent" : {
+          "type" : "block_id",
+          "block_id" : "27af521e-2b70-80cf-8e2c-d6895bb13542"
+        },
+        "created_time" : "2025-09-26T19:43:00.000Z",
+        "last_edited_time" : "2025-09-26T19:43:00.000Z",
+        "created_by" : {
+          "object" : "user",
+          "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+        },
+        "last_edited_by" : {
+          "object" : "user",
+          "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+        },
+        "has_children" : false,
+        "archived" : false,
+        "in_trash" : false,
+        "type" : "bulleted_list_item",
+        "bulleted_list_item" : {
+          "rich_text" : [ {
+            "type" : "text",
+            "text" : {
+              "content" : "MoMo Merchant API.",
+              "link" : null
+            },
+            "annotations" : {
+              "bold" : false,
+              "italic" : false,
+              "strikethrough" : false,
+              "underline" : false,
+              "code" : false,
+              "color" : "default"
+            },
+            "plain_text" : "MoMo Merchant API.",
+            "href" : null
+          } ],
+          "color" : "default"
+        }
+      }, {
+        "object" : "block",
+        "id" : "27af521e-2b70-8096-9888-dbedff96ebe3",
+        "parent" : {
+          "type" : "block_id",
+          "block_id" : "27af521e-2b70-80cf-8e2c-d6895bb13542"
+        },
+        "created_time" : "2025-09-26T19:43:00.000Z",
+        "last_edited_time" : "2025-09-26T19:43:00.000Z",
+        "created_by" : {
+          "object" : "user",
+          "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+        },
+        "last_edited_by" : {
+          "object" : "user",
+          "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+        },
+        "has_children" : false,
+        "archived" : false,
+        "in_trash" : false,
+        "type" : "bulleted_list_item",
+        "bulleted_list_item" : {
+          "rich_text" : [ {
+            "type" : "text",
+            "text" : {
+              "content" : "ZaloPay / ShopeePay / Payoo / OnePay portals.",
+              "link" : null
+            },
+            "annotations" : {
+              "bold" : false,
+              "italic" : false,
+              "strikethrough" : false,
+              "underline" : false,
+              "code" : false,
+              "color" : "default"
+            },
+            "plain_text" : "ZaloPay / ShopeePay / Payoo / OnePay portals.",
+            "href" : null
+          } ],
+          "color" : "default"
+        }
+      } ]
+    }, {
+      "object" : "block",
+      "id" : "27af521e-2b70-80a3-affe-fdfc677fa89e",
+      "parent" : {
+        "type" : "block_id",
+        "block_id" : "27af521e-2b70-8093-9240-f06611ead280"
+      },
+      "created_time" : "2025-09-26T19:43:00.000Z",
+      "last_edited_time" : "2025-09-26T19:43:00.000Z",
+      "created_by" : {
+        "object" : "user",
+        "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+      },
+      "last_edited_by" : {
+        "object" : "user",
+        "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+      },
+      "has_children" : false,
+      "archived" : false,
+      "in_trash" : false,
+      "type" : "bulleted_list_item",
+      "bulleted_list_item" : {
+        "rich_text" : [ {
+          "type" : "text",
+          "text" : {
+            "content" : "If the Vietnamese provider does not expose transaction history for end-users, the system will ",
+            "link" : null
+          },
+          "annotations" : {
+            "bold" : false,
+            "italic" : false,
+            "strikethrough" : false,
+            "underline" : false,
+            "code" : false,
+            "color" : "default"
+          },
+          "plain_text" : "If the Vietnamese provider does not expose transaction history for end-users, the system will ",
+          "href" : null
+        }, {
+          "type" : "text",
+          "text" : {
+            "content" : "build its own Payment History service",
+            "link" : null
+          },
+          "annotations" : {
+            "bold" : true,
+            "italic" : false,
+            "strikethrough" : false,
+            "underline" : false,
+            "code" : false,
+            "color" : "default"
+          },
+          "plain_text" : "build its own Payment History service",
+          "href" : null
+        }, {
+          "type" : "text",
+          "text" : {
+            "content" : " (internal SaaS) using transaction logs.",
+            "link" : null
+          },
+          "annotations" : {
+            "bold" : false,
+            "italic" : false,
+            "strikethrough" : false,
+            "underline" : false,
+            "code" : false,
+            "color" : "default"
+          },
+          "plain_text" : " (internal SaaS) using transaction logs.",
+          "href" : null
+        } ],
+        "color" : "default"
+      }
+    }, {
+      "object" : "block",
+      "id" : "27af521e-2b70-8058-8ade-d071f78880c0",
+      "parent" : {
+        "type" : "block_id",
+        "block_id" : "27af521e-2b70-8093-9240-f06611ead280"
+      },
+      "created_time" : "2025-09-26T19:43:00.000Z",
+      "last_edited_time" : "2025-09-26T19:43:00.000Z",
+      "created_by" : {
+        "object" : "user",
+        "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+      },
+      "last_edited_by" : {
+        "object" : "user",
+        "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+      },
+      "has_children" : false,
+      "archived" : false,
+      "in_trash" : false,
+      "type" : "bulleted_list_item",
+      "bulleted_list_item" : {
+        "rich_text" : [ {
+          "type" : "text",
+          "text" : {
+            "content" : "System design must support combining data from ",
+            "link" : null
+          },
+          "annotations" : {
+            "bold" : false,
+            "italic" : false,
+            "strikethrough" : false,
+            "underline" : false,
+            "code" : false,
+            "color" : "default"
+          },
+          "plain_text" : "System design must support combining data from ",
+          "href" : null
+        }, {
+          "type" : "text",
+          "text" : {
+            "content" : "internal DB",
+            "link" : null
+          },
+          "annotations" : {
+            "bold" : true,
+            "italic" : false,
+            "strikethrough" : false,
+            "underline" : false,
+            "code" : false,
+            "color" : "default"
+          },
+          "plain_text" : "internal DB",
+          "href" : null
+        }, {
+          "type" : "text",
+          "text" : {
+            "content" : " and ",
+            "link" : null
+          },
+          "annotations" : {
+            "bold" : false,
+            "italic" : false,
+            "strikethrough" : false,
+            "underline" : false,
+            "code" : false,
+            "color" : "default"
+          },
+          "plain_text" : " and ",
+          "href" : null
+        }, {
+          "type" : "text",
+          "text" : {
+            "content" : "provider APIs",
+            "link" : null
+          },
+          "annotations" : {
+            "bold" : true,
+            "italic" : false,
+            "strikethrough" : false,
+            "underline" : false,
+            "code" : false,
+            "color" : "default"
+          },
+          "plain_text" : "provider APIs",
+          "href" : null
+        }, {
+          "type" : "text",
+          "text" : {
+            "content" : " to ensure accurate payment history.",
+            "link" : null
+          },
+          "annotations" : {
+            "bold" : false,
+            "italic" : false,
+            "strikethrough" : false,
+            "underline" : false,
+            "code" : false,
+            "color" : "default"
+          },
+          "plain_text" : " to ensure accurate payment history.",
+          "href" : null
+        } ],
+        "color" : "default"
+      }
+    } ]
+  }, {
+    "object" : "block",
+    "id" : "27af521e-2b70-8086-9d9e-c3be585f0178",
+    "parent" : {
+      "type" : "block_id",
+      "block_id" : "27af521e-2b70-8083-8b51-ca86c45b5e12"
+    },
+    "created_time" : "2025-09-26T18:48:00.000Z",
+    "last_edited_time" : "2025-09-26T19:43:00.000Z",
+    "created_by" : {
+      "object" : "user",
+      "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+    },
+    "last_edited_by" : {
+      "object" : "user",
+      "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+    },
+    "has_children" : true,
+    "archived" : false,
+    "in_trash" : false,
+    "type" : "toggle",
+    "toggle" : {
+      "rich_text" : [ {
+        "type" : "text",
+        "text" : {
+          "content" : "Out of Scope",
+          "link" : null
+        },
+        "annotations" : {
+          "bold" : true,
+          "italic" : false,
+          "strikethrough" : false,
+          "underline" : false,
+          "code" : false,
+          "color" : "default"
+        },
+        "plain_text" : "Out of Scope",
+        "href" : null
+      } ],
+      "color" : "default"
+    },
+    "children" : [ {
+      "object" : "block",
+      "id" : "27af521e-2b70-8020-b241-ccbe3cb0459a",
+      "parent" : {
+        "type" : "block_id",
+        "block_id" : "27af521e-2b70-8086-9d9e-c3be585f0178"
+      },
+      "created_time" : "2025-09-26T19:43:00.000Z",
+      "last_edited_time" : "2025-09-26T19:43:00.000Z",
+      "created_by" : {
+        "object" : "user",
+        "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+      },
+      "last_edited_by" : {
+        "object" : "user",
+        "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+      },
+      "has_children" : false,
+      "archived" : false,
+      "in_trash" : false,
+      "type" : "bulleted_list_item",
+      "bulleted_list_item" : {
+        "rich_text" : [ {
+          "type" : "text",
+          "text" : {
+            "content" : "International payment history aggregation providers (e.g., Plaid, Stripe Dashboard API).",
+            "link" : null
+          },
+          "annotations" : {
+            "bold" : false,
+            "italic" : false,
+            "strikethrough" : false,
+            "underline" : false,
+            "code" : false,
+            "color" : "default"
+          },
+          "plain_text" : "International payment history aggregation providers (e.g., Plaid, Stripe Dashboard API).",
+          "href" : null
+        } ],
+        "color" : "default"
+      }
+    }, {
+      "object" : "block",
+      "id" : "27af521e-2b70-8082-909a-d82ad8d2d1e1",
+      "parent" : {
+        "type" : "block_id",
+        "block_id" : "27af521e-2b70-8086-9d9e-c3be585f0178"
+      },
+      "created_time" : "2025-09-26T19:43:00.000Z",
+      "last_edited_time" : "2025-09-26T19:43:00.000Z",
+      "created_by" : {
+        "object" : "user",
+        "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+      },
+      "last_edited_by" : {
+        "object" : "user",
+        "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+      },
+      "has_children" : false,
+      "archived" : false,
+      "in_trash" : false,
+      "type" : "bulleted_list_item",
+      "bulleted_list_item" : {
+        "rich_text" : [ {
+          "type" : "text",
+          "text" : {
+            "content" : "Exporting history to file (CSV, PDF, etc.) — covered in a separate story.",
+            "link" : null
+          },
+          "annotations" : {
+            "bold" : false,
+            "italic" : false,
+            "strikethrough" : false,
+            "underline" : false,
+            "code" : false,
+            "color" : "default"
+          },
+          "plain_text" : "Exporting history to file (CSV, PDF, etc.) — covered in a separate story.",
+          "href" : null
+        } ],
+        "color" : "default"
+      }
+    }, {
+      "object" : "block",
+      "id" : "27af521e-2b70-800f-845d-de99445150c9",
+      "parent" : {
+        "type" : "block_id",
+        "block_id" : "27af521e-2b70-8086-9d9e-c3be585f0178"
+      },
+      "created_time" : "2025-09-26T19:43:00.000Z",
+      "last_edited_time" : "2025-09-26T19:43:00.000Z",
+      "created_by" : {
+        "object" : "user",
+        "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+      },
+      "last_edited_by" : {
+        "object" : "user",
+        "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+      },
+      "has_children" : false,
+      "archived" : false,
+      "in_trash" : false,
+      "type" : "bulleted_list_item",
+      "bulleted_list_item" : {
+        "rich_text" : [ {
+          "type" : "text",
+          "text" : {
+            "content" : "Advanced analytics, spending insights, or admin-side reporting.",
+            "link" : null
+          },
+          "annotations" : {
+            "bold" : false,
+            "italic" : false,
+            "strikethrough" : false,
+            "underline" : false,
+            "code" : false,
+            "color" : "default"
+          },
+          "plain_text" : "Advanced analytics, spending insights, or admin-side reporting.",
+          "href" : null
+        } ],
+        "color" : "default"
+      }
+    } ]
+  } ]
+}, {
+  "object" : "block",
+  "id" : "278f521e-2b70-80f8-a6f1-cc9bebab800c",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "278f521e-2b70-8040-8d44-fbf72d3180ce"
+  },
+  "created_time" : "2025-09-24T15:28:00.000Z",
+  "last_edited_time" : "2025-09-26T19:44:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : true,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "toggle",
+  "toggle" : {
+    "rich_text" : [ {
+      "type" : "text",
+      "text" : {
+        "content" : "Acceptance Criteria",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : true,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "Acceptance Criteria",
+      "href" : null
+    } ],
+    "color" : "default"
+  },
+  "children" : [ {
+    "object" : "block",
+    "id" : "27af521e-2b70-80b9-bce7-f60e4513191e",
+    "parent" : {
+      "type" : "block_id",
+      "block_id" : "278f521e-2b70-80f8-a6f1-cc9bebab800c"
+    },
+    "created_time" : "2025-09-26T19:44:00.000Z",
+    "last_edited_time" : "2025-09-26T19:44:00.000Z",
+    "created_by" : {
+      "object" : "user",
+      "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+    },
+    "last_edited_by" : {
+      "object" : "user",
+      "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+    },
+    "has_children" : false,
+    "archived" : false,
+    "in_trash" : false,
+    "type" : "to_do",
+    "to_do" : {
+      "rich_text" : [ {
+        "type" : "text",
+        "text" : {
+          "content" : "Customer can navigate to a ",
+          "link" : null
+        },
+        "annotations" : {
+          "bold" : false,
+          "italic" : false,
+          "strikethrough" : false,
+          "underline" : false,
+          "code" : false,
+          "color" : "default"
+        },
+        "plain_text" : "Customer can navigate to a ",
+        "href" : null
+      }, {
+        "type" : "text",
+        "text" : {
+          "content" : "Payment History",
+          "link" : null
+        },
+        "annotations" : {
+          "bold" : true,
+          "italic" : false,
+          "strikethrough" : false,
+          "underline" : false,
+          "code" : false,
+          "color" : "default"
+        },
+        "plain_text" : "Payment History",
+        "href" : null
+      }, {
+        "type" : "text",
+        "text" : {
+          "content" : " section in their account.",
+          "link" : null
+        },
+        "annotations" : {
+          "bold" : false,
+          "italic" : false,
+          "strikethrough" : false,
+          "underline" : false,
+          "code" : false,
+          "color" : "default"
+        },
+        "plain_text" : " section in their account.",
+        "href" : null
+      } ],
+      "checked" : false,
+      "color" : "default"
+    }
+  }, {
+    "object" : "block",
+    "id" : "27af521e-2b70-8086-aeb3-d89d2cea77f2",
+    "parent" : {
+      "type" : "block_id",
+      "block_id" : "278f521e-2b70-80f8-a6f1-cc9bebab800c"
+    },
+    "created_time" : "2025-09-26T19:44:00.000Z",
+    "last_edited_time" : "2025-09-26T19:44:00.000Z",
+    "created_by" : {
+      "object" : "user",
+      "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+    },
+    "last_edited_by" : {
+      "object" : "user",
+      "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+    },
+    "has_children" : false,
+    "archived" : false,
+    "in_trash" : false,
+    "type" : "to_do",
+    "to_do" : {
+      "rich_text" : [ {
+        "type" : "text",
+        "text" : {
+          "content" : "System lists all payments linked to the customer’s orders.",
+          "link" : null
+        },
+        "annotations" : {
+          "bold" : false,
+          "italic" : false,
+          "strikethrough" : false,
+          "underline" : false,
+          "code" : false,
+          "color" : "default"
+        },
+        "plain_text" : "System lists all payments linked to the customer’s orders.",
+        "href" : null
+      } ],
+      "checked" : false,
+      "color" : "default"
+    }
+  }, {
+    "object" : "block",
+    "id" : "27af521e-2b70-8003-b62d-f13370033a2f",
+    "parent" : {
+      "type" : "block_id",
+      "block_id" : "278f521e-2b70-80f8-a6f1-cc9bebab800c"
+    },
+    "created_time" : "2025-09-26T19:44:00.000Z",
+    "last_edited_time" : "2025-09-26T19:44:00.000Z",
+    "created_by" : {
+      "object" : "user",
+      "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+    },
+    "last_edited_by" : {
+      "object" : "user",
+      "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+    },
+    "has_children" : false,
+    "archived" : false,
+    "in_trash" : false,
+    "type" : "to_do",
+    "to_do" : {
+      "rich_text" : [ {
+        "type" : "text",
+        "text" : {
+          "content" : "Each record shows: Order ID, payment method, total amount, payment status, date/time.",
+          "link" : null
+        },
+        "annotations" : {
+          "bold" : false,
+          "italic" : false,
+          "strikethrough" : false,
+          "underline" : false,
+          "code" : false,
+          "color" : "default"
+        },
+        "plain_text" : "Each record shows: Order ID, payment method, total amount, payment status, date/time.",
+        "href" : null
+      } ],
+      "checked" : false,
+      "color" : "default"
+    }
+  }, {
+    "object" : "block",
+    "id" : "27af521e-2b70-80f5-aa66-f8b41ef75c0e",
+    "parent" : {
+      "type" : "block_id",
+      "block_id" : "278f521e-2b70-80f8-a6f1-cc9bebab800c"
+    },
+    "created_time" : "2025-09-26T19:44:00.000Z",
+    "last_edited_time" : "2025-09-26T19:44:00.000Z",
+    "created_by" : {
+      "object" : "user",
+      "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+    },
+    "last_edited_by" : {
+      "object" : "user",
+      "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+    },
+    "has_children" : true,
+    "archived" : false,
+    "in_trash" : false,
+    "type" : "to_do",
+    "to_do" : {
+      "rich_text" : [ {
+        "type" : "text",
+        "text" : {
+          "content" : "Customer can filter history by:",
+          "link" : null
+        },
+        "annotations" : {
+          "bold" : false,
+          "italic" : false,
+          "strikethrough" : false,
+          "underline" : false,
+          "code" : false,
+          "color" : "default"
+        },
+        "plain_text" : "Customer can filter history by:",
+        "href" : null
+      } ],
+      "checked" : false,
+      "color" : "default"
+    },
+    "children" : [ {
+      "object" : "block",
+      "id" : "27af521e-2b70-802a-ac6c-f8777baf586d",
+      "parent" : {
+        "type" : "block_id",
+        "block_id" : "27af521e-2b70-80f5-aa66-f8b41ef75c0e"
+      },
+      "created_time" : "2025-09-26T19:44:00.000Z",
+      "last_edited_time" : "2025-09-26T19:44:00.000Z",
+      "created_by" : {
+        "object" : "user",
+        "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+      },
+      "last_edited_by" : {
+        "object" : "user",
+        "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+      },
+      "has_children" : false,
+      "archived" : false,
+      "in_trash" : false,
+      "type" : "bulleted_list_item",
+      "bulleted_list_item" : {
+        "rich_text" : [ {
+          "type" : "text",
+          "text" : {
+            "content" : "Date range.",
+            "link" : null
+          },
+          "annotations" : {
+            "bold" : false,
+            "italic" : false,
+            "strikethrough" : false,
+            "underline" : false,
+            "code" : false,
+            "color" : "default"
+          },
+          "plain_text" : "Date range.",
+          "href" : null
+        } ],
+        "color" : "default"
+      }
+    }, {
+      "object" : "block",
+      "id" : "27af521e-2b70-809a-99f6-ea9f4dfc44e8",
+      "parent" : {
+        "type" : "block_id",
+        "block_id" : "27af521e-2b70-80f5-aa66-f8b41ef75c0e"
+      },
+      "created_time" : "2025-09-26T19:44:00.000Z",
+      "last_edited_time" : "2025-09-26T19:44:00.000Z",
+      "created_by" : {
+        "object" : "user",
+        "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+      },
+      "last_edited_by" : {
+        "object" : "user",
+        "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+      },
+      "has_children" : false,
+      "archived" : false,
+      "in_trash" : false,
+      "type" : "bulleted_list_item",
+      "bulleted_list_item" : {
+        "rich_text" : [ {
+          "type" : "text",
+          "text" : {
+            "content" : "Payment status.",
+            "link" : null
+          },
+          "annotations" : {
+            "bold" : false,
+            "italic" : false,
+            "strikethrough" : false,
+            "underline" : false,
+            "code" : false,
+            "color" : "default"
+          },
+          "plain_text" : "Payment status.",
+          "href" : null
+        } ],
+        "color" : "default"
+      }
+    }, {
+      "object" : "block",
+      "id" : "27af521e-2b70-8005-87c8-c2377ba340ea",
+      "parent" : {
+        "type" : "block_id",
+        "block_id" : "27af521e-2b70-80f5-aa66-f8b41ef75c0e"
+      },
+      "created_time" : "2025-09-26T19:44:00.000Z",
+      "last_edited_time" : "2025-09-26T19:44:00.000Z",
+      "created_by" : {
+        "object" : "user",
+        "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+      },
+      "last_edited_by" : {
+        "object" : "user",
+        "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+      },
+      "has_children" : false,
+      "archived" : false,
+      "in_trash" : false,
+      "type" : "bulleted_list_item",
+      "bulleted_list_item" : {
+        "rich_text" : [ {
+          "type" : "text",
+          "text" : {
+            "content" : "Payment method.",
+            "link" : null
+          },
+          "annotations" : {
+            "bold" : false,
+            "italic" : false,
+            "strikethrough" : false,
+            "underline" : false,
+            "code" : false,
+            "color" : "default"
+          },
+          "plain_text" : "Payment method.",
+          "href" : null
+        } ],
+        "color" : "default"
+      }
+    } ]
+  }, {
+    "object" : "block",
+    "id" : "27af521e-2b70-804d-9a28-dcfca36f575c",
+    "parent" : {
+      "type" : "block_id",
+      "block_id" : "278f521e-2b70-80f8-a6f1-cc9bebab800c"
+    },
+    "created_time" : "2025-09-26T19:44:00.000Z",
+    "last_edited_time" : "2025-09-26T19:44:00.000Z",
+    "created_by" : {
+      "object" : "user",
+      "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+    },
+    "last_edited_by" : {
+      "object" : "user",
+      "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+    },
+    "has_children" : false,
+    "archived" : false,
+    "in_trash" : false,
+    "type" : "to_do",
+    "to_do" : {
+      "rich_text" : [ {
+        "type" : "text",
+        "text" : {
+          "content" : "Customer can click into a payment record to view more details (transaction ID, refund info, provider).",
+          "link" : null
+        },
+        "annotations" : {
+          "bold" : false,
+          "italic" : false,
+          "strikethrough" : false,
+          "underline" : false,
+          "code" : false,
+          "color" : "default"
+        },
+        "plain_text" : "Customer can click into a payment record to view more details (transaction ID, refund info, provider).",
+        "href" : null
+      } ],
+      "checked" : false,
+      "color" : "default"
+    }
+  }, {
+    "object" : "block",
+    "id" : "27af521e-2b70-8056-bc49-dfe45442f092",
+    "parent" : {
+      "type" : "block_id",
+      "block_id" : "278f521e-2b70-80f8-a6f1-cc9bebab800c"
+    },
+    "created_time" : "2025-09-26T19:44:00.000Z",
+    "last_edited_time" : "2025-09-26T19:44:00.000Z",
+    "created_by" : {
+      "object" : "user",
+      "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+    },
+    "last_edited_by" : {
+      "object" : "user",
+      "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+    },
+    "has_children" : false,
+    "archived" : false,
+    "in_trash" : false,
+    "type" : "to_do",
+    "to_do" : {
+      "rich_text" : [ {
+        "type" : "text",
+        "text" : {
+          "content" : "If no payments exist, show message: ",
+          "link" : null
+        },
+        "annotations" : {
+          "bold" : false,
+          "italic" : false,
+          "strikethrough" : false,
+          "underline" : false,
+          "code" : false,
+          "color" : "default"
+        },
+        "plain_text" : "If no payments exist, show message: ",
+        "href" : null
+      }, {
+        "type" : "text",
+        "text" : {
+          "content" : "“You have no past payments.”",
+          "link" : null
+        },
+        "annotations" : {
+          "bold" : false,
+          "italic" : true,
+          "strikethrough" : false,
+          "underline" : false,
+          "code" : false,
+          "color" : "default"
+        },
+        "plain_text" : "“You have no past payments.”",
+        "href" : null
+      } ],
+      "checked" : false,
+      "color" : "default"
+    }
+  }, {
+    "object" : "block",
+    "id" : "27af521e-2b70-800c-b0fc-e10a955d4316",
+    "parent" : {
+      "type" : "block_id",
+      "block_id" : "278f521e-2b70-80f8-a6f1-cc9bebab800c"
+    },
+    "created_time" : "2025-09-26T19:44:00.000Z",
+    "last_edited_time" : "2025-09-26T19:44:00.000Z",
+    "created_by" : {
+      "object" : "user",
+      "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+    },
+    "last_edited_by" : {
+      "object" : "user",
+      "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+    },
+    "has_children" : true,
+    "archived" : false,
+    "in_trash" : false,
+    "type" : "to_do",
+    "to_do" : {
+      "rich_text" : [ {
+        "type" : "text",
+        "text" : {
+          "content" : "For ",
+          "link" : null
+        },
+        "annotations" : {
+          "bold" : false,
+          "italic" : false,
+          "strikethrough" : false,
+          "underline" : false,
+          "code" : false,
+          "color" : "default"
+        },
+        "plain_text" : "For ",
+        "href" : null
+      }, {
+        "type" : "text",
+        "text" : {
+          "content" : "VNPay / MoMo / ZaloPay / Payoo / OnePay",
+          "link" : null
+        },
+        "annotations" : {
+          "bold" : true,
+          "italic" : false,
+          "strikethrough" : false,
+          "underline" : false,
+          "code" : false,
+          "color" : "default"
+        },
+        "plain_text" : "VNPay / MoMo / ZaloPay / Payoo / OnePay",
+        "href" : null
+      }, {
+        "type" : "text",
+        "text" : {
+          "content" : ":",
+          "link" : null
+        },
+        "annotations" : {
+          "bold" : false,
+          "italic" : false,
+          "strikethrough" : false,
+          "underline" : false,
+          "code" : false,
+          "color" : "default"
+        },
+        "plain_text" : ":",
+        "href" : null
+      } ],
+      "checked" : false,
+      "color" : "default"
+    },
+    "children" : [ {
+      "object" : "block",
+      "id" : "27af521e-2b70-80a6-89c3-f8adeeb6ee7a",
+      "parent" : {
+        "type" : "block_id",
+        "block_id" : "27af521e-2b70-800c-b0fc-e10a955d4316"
+      },
+      "created_time" : "2025-09-26T19:44:00.000Z",
+      "last_edited_time" : "2025-09-26T19:44:00.000Z",
+      "created_by" : {
+        "object" : "user",
+        "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+      },
+      "last_edited_by" : {
+        "object" : "user",
+        "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+      },
+      "has_children" : false,
+      "archived" : false,
+      "in_trash" : false,
+      "type" : "bulleted_list_item",
+      "bulleted_list_item" : {
+        "rich_text" : [ {
+          "type" : "text",
+          "text" : {
+            "content" : "Transaction history syncs successfully with provider APIs (if available).",
+            "link" : null
+          },
+          "annotations" : {
+            "bold" : false,
+            "italic" : false,
+            "strikethrough" : false,
+            "underline" : false,
+            "code" : false,
+            "color" : "default"
+          },
+          "plain_text" : "Transaction history syncs successfully with provider APIs (if available).",
+          "href" : null
+        } ],
+        "color" : "default"
+      }
+    }, {
+      "object" : "block",
+      "id" : "27af521e-2b70-80ad-beec-f8bf2df5a55c",
+      "parent" : {
+        "type" : "block_id",
+        "block_id" : "27af521e-2b70-800c-b0fc-e10a955d4316"
+      },
+      "created_time" : "2025-09-26T19:44:00.000Z",
+      "last_edited_time" : "2025-09-26T19:44:00.000Z",
+      "created_by" : {
+        "object" : "user",
+        "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+      },
+      "last_edited_by" : {
+        "object" : "user",
+        "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+      },
+      "has_children" : false,
+      "archived" : false,
+      "in_trash" : false,
+      "type" : "bulleted_list_item",
+      "bulleted_list_item" : {
+        "rich_text" : [ {
+          "type" : "text",
+          "text" : {
+            "content" : "If provider does not expose history → system falls back to internal DB logs.",
+            "link" : null
+          },
+          "annotations" : {
+            "bold" : false,
+            "italic" : false,
+            "strikethrough" : false,
+            "underline" : false,
+            "code" : false,
+            "color" : "default"
+          },
+          "plain_text" : "If provider does not expose history → system falls back to internal DB logs.",
+          "href" : null
+        } ],
+        "color" : "default"
+      }
+    } ]
+  }, {
+    "object" : "block",
+    "id" : "27af521e-2b70-8074-8144-c9aeb56cb24e",
+    "parent" : {
+      "type" : "block_id",
+      "block_id" : "278f521e-2b70-80f8-a6f1-cc9bebab800c"
+    },
+    "created_time" : "2025-09-26T19:44:00.000Z",
+    "last_edited_time" : "2025-09-26T19:44:00.000Z",
+    "created_by" : {
+      "object" : "user",
+      "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+    },
+    "last_edited_by" : {
+      "object" : "user",
+      "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+    },
+    "has_children" : false,
+    "archived" : false,
+    "in_trash" : false,
+    "type" : "to_do",
+    "to_do" : {
+      "rich_text" : [ {
+        "type" : "text",
+        "text" : {
+          "content" : "Switching or adding providers requires only configuration updates, not code changes.",
+          "link" : null
+        },
+        "annotations" : {
+          "bold" : false,
+          "italic" : false,
+          "strikethrough" : false,
+          "underline" : false,
+          "code" : false,
+          "color" : "default"
+        },
+        "plain_text" : "Switching or adding providers requires only configuration updates, not code changes.",
+        "href" : null
+      } ],
+      "checked" : false,
+      "color" : "default"
+    }
+  } ]
+} ]
