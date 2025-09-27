@@ -38,7 +38,7 @@ public class Main implements CommandLineRunner {
                 .build();
     }
 
-    static void main(String[] args) {
+    public static void main(String[] args) {
         SpringApplication.run(Main.class, args);
     }
 
