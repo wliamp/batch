@@ -3,200 +3,179 @@ package io.wliamp.notion;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.node.ObjectNode;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.http.MediaType;
+import org.springframework.web.reactive.function.client.*;
+import reactor.core.publisher.*;
+import reactor.core.scheduler.Schedulers;
+import reactor.util.retry.Retry;
 
-import java.net.URI;
-import java.net.http.HttpClient;
-import java.net.http.HttpRequest;
-import java.net.http.HttpResponse;
-import java.nio.file.Files;
-import java.nio.file.Path;
+import java.nio.file.*;
+import java.time.Duration;
 import java.util.*;
-import java.util.function.Supplier;
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
 import java.util.stream.StreamSupport;
 
 @SpringBootApplication
 public class Main implements CommandLineRunner {
+    private static final Logger log = LoggerFactory.getLogger(Main.class);
     private final ObjectMapper mapper = new ObjectMapper();
-    private final HttpClient client = HttpClient.newHttpClient();
-    private String token;
+    private final WebClient webClient;
 
-    public static void main(String[] args) {
+    public Main() {
+        var token = Optional.ofNullable(System.getenv("NOTION_TOKEN"))
+                .filter(s -> !s.isBlank())
+                .orElseThrow(() -> new IllegalArgumentException("Missing NOTION_TOKEN in ENV"));
+
+        this.webClient = WebClient.builder()
+                .baseUrl("https://api.notion.com/v1")
+                .defaultHeader("Authorization", "Bearer " + token)
+                .defaultHeader("Notion-Version", "2022-06-28")
+                .codecs(cfg -> cfg.defaultCodecs().maxInMemorySize(16 * 1024 * 1024)) // 16MB buffer
+                .build();
+    }
+
+    static void main(String[] args) {
         SpringApplication.run(Main.class, args);
     }
 
     @Override
     public void run(String... args) throws Exception {
-        token = envOrThrow("NOTION_TOKEN", "Missing NOTION_TOKEN in ENV");
+        var outDir = Files.createDirectories(Path.of("backup"));
 
-        List<String> rootPageIds = Arrays.stream(
-                        envOrThrow("NOTION_ROOT_PAGES", "Missing NOTION_ROOT_PAGES in ENV (comma-separated page IDs)")
-                                .split(","))
-                .map(String::trim)
-                .filter(s -> !s.isBlank())
-                .toList();
-
-        Path outDir = Path.of("backup");
-        Files.createDirectories(outDir);
-
-        rootPageIds.forEach(id -> {
-            try {
-                backupPage(id, outDir);
-            } catch (Exception e) {
-                throw new RuntimeException(e);
-            }
-        });
-
-        System.out.println("✅ Backup completed. Total root pages: " + rootPageIds.size());
+        searchAllObjects()
+                .flatMap(obj -> backupObject(obj, outDir), 8) // max concurrency = 8
+                .collectList()
+                .doOnNext(list -> log.info("✅ Backup completed. {} objects.%n", list.size()))
+                .block();
     }
 
-    /**
-     * Backup 1 page (metadata + block tree)
-     */
-    private void backupPage(String pageId, Path outDir) throws Exception {
-        JsonNode pageJson = fetchPage(pageId);
+    // === Search all pages & databases ===
+    private Flux<JsonNode> searchAllObjects() {
+        var body = mapper.createObjectNode()
+                .putObject("sort")
+                .put("direction", "descending")
+                .put("timestamp", "last_edited_time");
 
-        String title = Optional.ofNullable(extractTitle(pageJson))
-                .filter(t -> !t.isBlank())
-                .orElse(pageId);
-
-        Path pageDir = outDir.resolve(safeName(title));
-        Files.createDirectories(pageDir);
-
-        Files.writeString(pageDir.resolve("page.json"),
-                mapper.writerWithDefaultPrettyPrinter().writeValueAsString(pageJson));
-
-        List<JsonNode> blocksTree = fetchBlocksTree(pageId);
-        Files.writeString(pageDir.resolve("blocks.json"),
-                mapper.writerWithDefaultPrettyPrinter().writeValueAsString(blocksTree));
-
-        System.out.println("📦 Backed up page: " + title);
+        return webClient.post()
+                .uri("/search")
+                .contentType(MediaType.APPLICATION_JSON)
+                .bodyValue(body)
+                .retrieve()
+                .bodyToMono(JsonNode.class)
+                .flatMapMany(root -> {
+                    var results = root.get("results");
+                    if (results == null || !results.isArray()) return Flux.empty();
+                    return Flux.fromIterable(results);
+                });
     }
 
-    /**
-     * Lấy metadata page
-     */
-    private JsonNode fetchPage(String pageId) throws Exception {
-        HttpRequest request = requestBuilder("https://api.notion.com/v1/pages/" + pageId).GET().build();
-        HttpResponse<String> response = client.send(request, HttpResponse.BodyHandlers.ofString());
-        assert response.statusCode() == 200 : "⚠️ Failed to fetch page " + pageId + ": " + response.statusCode();
-        return mapper.readTree(response.body());
+    // === Backup one object ===
+    private Mono<JsonNode> backupObject(JsonNode obj, Path outDir) {
+        var id = obj.get("id").asText().replace("-", "");
+        var title = extractTitle(obj).orElse(id);
+        var safeTitle = safeName(title);
+        var objDir = outDir.resolve(safeTitle);
+
+        Mono<Void> ensureDir = Mono.fromCallable(() -> Files.createDirectories(objDir))
+                .subscribeOn(Schedulers.boundedElastic())
+                .then();
+
+        Mono<Void> writePage = ensureDir.then(
+                Mono.fromCallable(() -> {
+                    Files.writeString(
+                            objDir.resolve("page.json"),
+                            mapper.writerWithDefaultPrettyPrinter().writeValueAsString(obj));
+                    return (Void) null;
+                }).subscribeOn(Schedulers.boundedElastic())
+        );
+
+        Mono<Void> writeBlocks = fetchBlockTree(id)
+                .collectList()
+                .flatMap(blocks ->
+                        Mono.fromCallable(() -> {
+                            Files.writeString(
+                                    objDir.resolve("blocks.json"),
+                                    mapper.writerWithDefaultPrettyPrinter().writeValueAsString(blocks));
+                            return (Void) null;
+                        }).subscribeOn(Schedulers.boundedElastic())
+                );
+
+        return Mono.when(writePage, writeBlocks)
+                .thenReturn(obj)
+                .doOnSuccess(_ -> log.info("\uD83D\uDCE6 Backed up: {}", title));
     }
 
-    /**
-     * Lấy toàn bộ block tree (recursive)
-     */
-    private List<JsonNode> fetchBlocksTree(String parentId) throws Exception {
-        return fetchBlocksPaged(parentId, null);
+    // === Fetch block tree recursively ===
+    private Flux<JsonNode> fetchBlockTree(String parentId) {
+        return fetchBlocksPage(parentId, null);
     }
 
-    /**
-     * Lấy từng trang con, ghép lại bằng Stream
-     */
-    private List<JsonNode> fetchBlocksPaged(String parentId, String cursor) throws Exception {
-        String url = "https://api.notion.com/v1/blocks/" + parentId + "/children?page_size=100"
+    private Flux<JsonNode> fetchBlocksPage(String parentId, String cursor) {
+        var uri = "/blocks/" + parentId + "/children?page_size=100"
                 + (cursor != null ? "&start_cursor=" + cursor : "");
 
-        HttpRequest request = requestBuilder(url).GET().build();
-        HttpResponse<String> response = client.send(request, HttpResponse.BodyHandlers.ofString());
-        assert response.statusCode() == 200 : "⚠️ Failed to fetch children for " + parentId + ": " + response.statusCode();
+        return webClient.get()
+                .uri(uri)
+                .retrieve()
+                .bodyToMono(JsonNode.class)
+                .retryWhen(Retry.backoff(3, Duration.ofSeconds(1)))
+                .flatMapMany(root -> {
+                    var results = root.get("results");
+                    Flux<JsonNode> blocks = (results == null || !results.isArray())
+                            ? Flux.empty()
+                            : Flux.fromIterable(results)
+                            .flatMap(this::enrichBlock, 6);
 
-        JsonNode root = mapper.readTree(response.body());
+                    var nextCursor = root.path("next_cursor").asText(null);
+                    return nextCursor != null && !nextCursor.isBlank()
+                            ? Flux.concat(blocks, fetchBlocksPage(parentId, nextCursor))
+                            : blocks;
+                });
+    }
 
-        List<JsonNode> currentPageBlocks = Optional.ofNullable(root.get("results"))
+    // enrich: nếu block có children → attach children
+    private Mono<JsonNode> enrichBlock(JsonNode block) {
+        if (!block.path("has_children").asBoolean(false)) return Mono.just(block);
+
+        var childId = block.get("id").asText().replace("-", "");
+        return fetchBlockTree(childId)
+                .collectList()
+                .map(children -> {
+                    var enriched = mapper.createObjectNode();
+                    enriched.setAll((ObjectNode) block);
+                    enriched.set("children", mapper.valueToTree(children));
+                    return enriched;
+                });
+    }
+
+    private Optional<String> extractTitle(JsonNode obj) {
+        // Page: lấy từ properties.title
+        var fromProperties = Optional.ofNullable(obj.get("properties"))
                 .stream()
-                .flatMap(node ->
-                        StreamSupport.stream(
-                                Spliterators.spliteratorUnknownSize(node.elements(), Spliterator.ORDERED),
-                                false
-                        )
-                ).map(this::enrichBlock)
-                .toList();
-
-        return Optional.ofNullable(root.get("next_cursor"))
-                .filter(n -> !n.isNull())
-                .map(JsonNode::asText)
-                .map(next -> Stream.concat(currentPageBlocks.stream(), unchecked(() -> fetchBlocksPaged(parentId, next)).stream())
-                        .collect(Collectors.toList()))
-                .orElse(currentPageBlocks);
-    }
-
-    /**
-     * Xử lý block có children
-     */
-    private JsonNode enrichBlock(JsonNode block) {
-        return Optional.ofNullable(block.get("has_children"))
-                .map(JsonNode::asBoolean)
-                .filter(Boolean::booleanValue)
-                .map(x -> buildBlockWithChildren(block))
-                .orElse(block);
-    }
-
-    private JsonNode buildBlockWithChildren(JsonNode block) {
-        ObjectNode blockObj = mapper.createObjectNode();
-        blockObj.setAll((ObjectNode) block);
-
-        String childId = block.get("id").asText().replaceAll("-", "");
-        List<JsonNode> children = unchecked(() -> fetchBlocksTree(childId));
-        blockObj.set("children", mapper.valueToTree(children));
-
-        return blockObj;
-    }
-
-    /**
-     * Lấy title từ properties
-     */
-    private String extractTitle(JsonNode pageJson) {
-        return Optional.ofNullable(pageJson.get("properties"))
-                .stream()
-                .flatMap(props -> StreamSupport.stream(Spliterators.spliteratorUnknownSize(props.elements(), 0), false))
-                .map(p -> p.get("title"))
-                .filter(Objects::nonNull)
+                .flatMap(node -> StreamSupport.stream(
+                        Spliterators.spliteratorUnknownSize(node.elements(), Spliterator.ORDERED), false))
+                .filter(prop -> prop.has("title"))
+                .map(prop -> prop.get("title"))
                 .filter(JsonNode::isArray)
-                .flatMap(arr -> StreamSupport.stream(arr.spliterator(), false))
-                .findFirst()
-                .map(n -> n.get("plain_text").asText())
-                .orElse(null);
-    }
+                .filter(arr -> !arr.isEmpty())
+                .map(arr -> arr.get(0).path("plain_text").asText(null))
+                .filter(Objects::nonNull)
+                .findFirst();
 
-    /**
-     * Helpers
-     */
-    private String envOrThrow(String key, String message) {
-        return Optional.ofNullable(System.getenv(key))
-                .filter(s -> !s.isBlank())
-                .orElseThrow(() -> new IllegalArgumentException(message));
-    }
+        if (fromProperties.isPresent()) return fromProperties;
 
-    private HttpRequest.Builder requestBuilder(String url) throws Exception {
-        return HttpRequest.newBuilder()
-                .uri(new URI(url))
-                .header("Authorization", "Bearer " + token)
-                .header("Notion-Version", "2022-06-28")
-                .header("Content-Type", "application/json");
+        // Database: lấy từ "title"
+        return Optional.ofNullable(obj.get("title"))
+                .filter(JsonNode::isArray)
+                .filter(arr -> !arr.isEmpty())
+                .map(arr -> arr.get(0).path("plain_text").asText(null));
     }
 
     private String safeName(String input) {
-        return input.replaceAll("[^a-zA-Z0-9-_]", "_");
-    }
-
-    /**
-     * Wrapper để bỏ try/catch inline
-     */
-    private static <T> T unchecked(ThrowingSupplier<T> s) {
-        try {
-            return s.get();
-        } catch (Exception e) {
-            throw new RuntimeException(e);
-        }
-    }
-
-    @FunctionalInterface
-    private interface ThrowingSupplier<T> {
-        T get() throws Exception;
+        return input.replaceAll("[^a-zA-Z0-9-_.]", "_");
     }
 }
