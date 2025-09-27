@@ -19,9 +19,6 @@ jobs:
           distribution: 'temurin'
           java-version: '25'
 
-      - name: Build project
-        run: ./gradlew clean build -x test
-
       - name: Run Notion backup
         env:
           NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
