@@ -13,12 +13,14 @@ import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 import java.nio.file.Files;
 import java.nio.file.Path;
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
+import java.util.function.Supplier;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
+import java.util.stream.StreamSupport;
 
 @SpringBootApplication
 public class Main implements CommandLineRunner {
-
     private final ObjectMapper mapper = new ObjectMapper();
     private final HttpClient client = HttpClient.newHttpClient();
     private String token;
@@ -29,169 +31,172 @@ public class Main implements CommandLineRunner {
 
     @Override
     public void run(String... args) throws Exception {
-        token = System.getenv("NOTION_TOKEN");
-        if (token == null) {
-            throw new IllegalArgumentException("Missing NOTION_TOKEN in ENV");
-        }
+        token = envOrThrow("NOTION_TOKEN", "Missing NOTION_TOKEN in ENV");
+
+        List<String> rootPageIds = Arrays.stream(
+                        envOrThrow("NOTION_ROOT_PAGES", "Missing NOTION_ROOT_PAGES in ENV (comma-separated page IDs)")
+                                .split(","))
+                .map(String::trim)
+                .filter(s -> !s.isBlank())
+                .toList();
 
         Path outDir = Path.of("backup");
         Files.createDirectories(outDir);
 
-        List<String> pageIds = searchAllPages();
+        rootPageIds.forEach(id -> {
+            try {
+                backupPage(id, outDir);
+            } catch (Exception e) {
+                throw new RuntimeException(e);
+            }
+        });
 
-        for (String pageId : pageIds) {
-            backupPage(pageId, outDir);
-        }
-
-        System.out.println("✅ Backup completed. Total pages: " + pageIds.size());
+        System.out.println("✅ Backup completed. Total root pages: " + rootPageIds.size());
     }
 
-    /** Tìm tất cả page mà integration có quyền */
-    private List<String> searchAllPages() throws Exception {
-        List<String> ids = new ArrayList<>();
-        String cursor = null;
-
-        do {
-            String url = "https://api.notion.com/v1/search";
-            String body = cursor == null
-                    ? "{\"page_size\":100,\"filter\":{\"property\":\"object\",\"value\":\"page\"}}"
-                    : "{\"page_size\":100,\"start_cursor\":\"" + cursor + "\",\"filter\":{\"property\":\"object\",\"value\":\"page\"}}";
-
-            HttpRequest request = HttpRequest.newBuilder()
-                    .uri(new URI(url))
-                    .header("Authorization", "Bearer " + token)
-                    .header("Notion-Version", "2022-06-28")
-                    .header("Content-Type", "application/json")
-                    .POST(HttpRequest.BodyPublishers.ofString(body))
-                    .build();
-
-            HttpResponse<String> response = client.send(request, HttpResponse.BodyHandlers.ofString());
-            if (response.statusCode() != 200) {
-                throw new RuntimeException("Search API failed: " + response.statusCode() + "\n" + response.body());
-            }
-
-            JsonNode root = mapper.readTree(response.body());
-            for (JsonNode res : root.get("results")) {
-                if ("page".equals(res.get("object").asText())) {
-                    ids.add(res.get("id").asText().replaceAll("-", ""));
-                }
-            }
-
-            cursor = root.has("next_cursor") && !root.get("next_cursor").isNull()
-                    ? root.get("next_cursor").asText()
-                    : null;
-
-        } while (cursor != null);
-
-        return ids;
-    }
-
-    /** Backup 1 page (metadata + toàn bộ block tree) */
+    /**
+     * Backup 1 page (metadata + block tree)
+     */
     private void backupPage(String pageId, Path outDir) throws Exception {
-        // Metadata page
-        String pageUrl = "https://api.notion.com/v1/pages/" + pageId;
-        HttpRequest pageRequest = HttpRequest.newBuilder()
-                .uri(new URI(pageUrl))
-                .header("Authorization", "Bearer " + token)
-                .header("Notion-Version", "2022-06-28")
-                .GET()
-                .build();
+        JsonNode pageJson = fetchPage(pageId);
 
-        HttpResponse<String> pageResponse = client.send(pageRequest, HttpResponse.BodyHandlers.ofString());
-        if (pageResponse.statusCode() != 200) {
-            System.err.println("⚠️ Failed to fetch page " + pageId);
-            return;
-        }
+        String title = Optional.ofNullable(extractTitle(pageJson))
+                .filter(t -> !t.isBlank())
+                .orElse(pageId);
 
-        JsonNode pageJson = mapper.readTree(pageResponse.body());
-
-        // Lấy title từ properties
-        String title = extractTitle(pageJson);
-        if (title == null || title.isBlank()) {
-            title = pageId;
-        }
-
-        // Tạo thư mục cho page
         Path pageDir = outDir.resolve(safeName(title));
         Files.createDirectories(pageDir);
 
-        // Lưu page.json
         Files.writeString(pageDir.resolve("page.json"),
                 mapper.writerWithDefaultPrettyPrinter().writeValueAsString(pageJson));
 
-        // Lấy cây blocks
         List<JsonNode> blocksTree = fetchBlocksTree(pageId);
-
-        // Lưu blocks.json
         Files.writeString(pageDir.resolve("blocks.json"),
                 mapper.writerWithDefaultPrettyPrinter().writeValueAsString(blocksTree));
 
         System.out.println("📦 Backed up page: " + title);
     }
 
-    /** Đệ quy lấy toàn bộ block tree */
+    /**
+     * Lấy metadata page
+     */
+    private JsonNode fetchPage(String pageId) throws Exception {
+        HttpRequest request = requestBuilder("https://api.notion.com/v1/pages/" + pageId).GET().build();
+        HttpResponse<String> response = client.send(request, HttpResponse.BodyHandlers.ofString());
+        assert response.statusCode() == 200 : "⚠️ Failed to fetch page " + pageId + ": " + response.statusCode();
+        return mapper.readTree(response.body());
+    }
+
+    /**
+     * Lấy toàn bộ block tree (recursive)
+     */
     private List<JsonNode> fetchBlocksTree(String parentId) throws Exception {
-        List<JsonNode> allBlocks = new ArrayList<>();
-        String cursor = null;
-
-        do {
-            String url = "https://api.notion.com/v1/blocks/" + parentId + "/children?page_size=100"
-                    + (cursor != null ? "&start_cursor=" + cursor : "");
-
-            HttpRequest request = HttpRequest.newBuilder()
-                    .uri(new URI(url))
-                    .header("Authorization", "Bearer " + token)
-                    .header("Notion-Version", "2022-06-28")
-                    .GET()
-                    .build();
-
-            HttpResponse<String> response = client.send(request, HttpResponse.BodyHandlers.ofString());
-            if (response.statusCode() != 200) {
-                System.err.println("⚠️ Failed to fetch children for " + parentId + ": " + response.statusCode());
-                return allBlocks;
-            }
-
-            JsonNode root = mapper.readTree(response.body());
-            for (JsonNode block : root.get("results")) {
-                if (block.has("has_children") && block.get("has_children").asBoolean()) {
-                    ObjectNode blockObj = mapper.createObjectNode();
-                    blockObj.setAll((ObjectNode) block);
-
-                    List<JsonNode> children = fetchBlocksTree(block.get("id").asText().replaceAll("-", ""));
-                    blockObj.set("children", mapper.valueToTree(children));
-
-                    allBlocks.add(blockObj);
-                } else {
-                    allBlocks.add(block);
-                }
-            }
-
-            cursor = root.has("next_cursor") && !root.get("next_cursor").isNull()
-                    ? root.get("next_cursor").asText()
-                    : null;
-
-        } while (cursor != null);
-
-        return allBlocks;
+        return fetchBlocksPaged(parentId, null);
     }
 
-    /** Lấy title từ properties["title"] */
+    /**
+     * Lấy từng trang con, ghép lại bằng Stream
+     */
+    private List<JsonNode> fetchBlocksPaged(String parentId, String cursor) throws Exception {
+        String url = "https://api.notion.com/v1/blocks/" + parentId + "/children?page_size=100"
+                + (cursor != null ? "&start_cursor=" + cursor : "");
+
+        HttpRequest request = requestBuilder(url).GET().build();
+        HttpResponse<String> response = client.send(request, HttpResponse.BodyHandlers.ofString());
+        assert response.statusCode() == 200 : "⚠️ Failed to fetch children for " + parentId + ": " + response.statusCode();
+
+        JsonNode root = mapper.readTree(response.body());
+
+        List<JsonNode> currentPageBlocks = Optional.ofNullable(root.get("results"))
+                .stream()
+                .flatMap(node ->
+                        StreamSupport.stream(
+                                Spliterators.spliteratorUnknownSize(node.elements(), Spliterator.ORDERED),
+                                false
+                        )
+                ).map(this::enrichBlock)
+                .toList();
+
+        return Optional.ofNullable(root.get("next_cursor"))
+                .filter(n -> !n.isNull())
+                .map(JsonNode::asText)
+                .map(next -> Stream.concat(currentPageBlocks.stream(), unchecked(() -> fetchBlocksPaged(parentId, next)).stream())
+                        .collect(Collectors.toList()))
+                .orElse(currentPageBlocks);
+    }
+
+    /**
+     * Xử lý block có children
+     */
+    private JsonNode enrichBlock(JsonNode block) {
+        return Optional.ofNullable(block.get("has_children"))
+                .map(JsonNode::asBoolean)
+                .filter(Boolean::booleanValue)
+                .map(x -> buildBlockWithChildren(block))
+                .orElse(block);
+    }
+
+    private JsonNode buildBlockWithChildren(JsonNode block) {
+        ObjectNode blockObj = mapper.createObjectNode();
+        blockObj.setAll((ObjectNode) block);
+
+        String childId = block.get("id").asText().replaceAll("-", "");
+        List<JsonNode> children = unchecked(() -> fetchBlocksTree(childId));
+        blockObj.set("children", mapper.valueToTree(children));
+
+        return blockObj;
+    }
+
+    /**
+     * Lấy title từ properties
+     */
     private String extractTitle(JsonNode pageJson) {
-        if (pageJson.has("properties")) {
-            for (JsonNode prop : pageJson.get("properties")) {
-                if (prop.has("title")) {
-                    JsonNode arr = prop.get("title");
-                    if (arr.isArray() && arr.size() > 0) {
-                        return arr.get(0).get("plain_text").asText();
-                    }
-                }
-            }
-        }
-        return null;
+        return Optional.ofNullable(pageJson.get("properties"))
+                .stream()
+                .flatMap(props -> StreamSupport.stream(Spliterators.spliteratorUnknownSize(props.elements(), 0), false))
+                .map(p -> p.get("title"))
+                .filter(Objects::nonNull)
+                .filter(JsonNode::isArray)
+                .flatMap(arr -> StreamSupport.stream(arr.spliterator(), false))
+                .findFirst()
+                .map(n -> n.get("plain_text").asText())
+                .orElse(null);
     }
 
-    /** Đổi tên hợp lệ cho folder/file */
+    /**
+     * Helpers
+     */
+    private String envOrThrow(String key, String message) {
+        return Optional.ofNullable(System.getenv(key))
+                .filter(s -> !s.isBlank())
+                .orElseThrow(() -> new IllegalArgumentException(message));
+    }
+
+    private HttpRequest.Builder requestBuilder(String url) throws Exception {
+        return HttpRequest.newBuilder()
+                .uri(new URI(url))
+                .header("Authorization", "Bearer " + token)
+                .header("Notion-Version", "2022-06-28")
+                .header("Content-Type", "application/json");
+    }
+
     private String safeName(String input) {
         return input.replaceAll("[^a-zA-Z0-9-_]", "_");
+    }
+
+    /**
+     * Wrapper để bỏ try/catch inline
+     */
+    private static <T> T unchecked(ThrowingSupplier<T> s) {
+        try {
+            return s.get();
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    @FunctionalInterface
+    private interface ThrowingSupplier<T> {
+        T get() throws Exception;
     }
 }
