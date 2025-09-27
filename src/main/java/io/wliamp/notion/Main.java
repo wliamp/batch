@@ -23,6 +23,7 @@ import java.util.Objects;
 import java.util.Optional;
 import java.util.stream.StreamSupport;
 
+@SuppressWarnings("ALL")
 @SpringBootApplication
 class Main implements CommandLineRunner {
     private static final Logger log = LoggerFactory.getLogger(Main.class);
@@ -56,7 +57,6 @@ class Main implements CommandLineRunner {
         }
 
         try {
-            // block() để chờ toàn bộ pipeline xong, tránh treo
             var list = searchAllObjects()
                     .flatMapSequential(obj -> backupObject(obj, outDir), 4)
                     .doOnNext(obj -> log.info("📦 Backed up: {}", extractTitle(obj).orElse(obj.get("id").asText())))
@@ -67,7 +67,6 @@ class Main implements CommandLineRunner {
 
             log.info("🔚 Finished backup, exiting. Objects: {}", list != null ? list.size() : 0);
         } finally {
-            // buộc Spring Boot thoát
             System.exit(0);
         }
     }
@@ -134,40 +133,39 @@ class Main implements CommandLineRunner {
                 .retryWhen(Retry.backoff(3, Duration.ofSeconds(1)))
                 .flatMapMany(root -> {
                     var results = root.get("results");
-                    Flux<JsonNode> blocks = (results != null && results.isArray())
+
+                    return (results != null && results.isArray())
                             ? Flux.fromIterable(results)
                             .flatMapSequential(this::enrichBlock, 2)
                             : Flux.empty();
-
-                    // TODO: handle next_cursor nếu nhiều trang
-                    return blocks;
                 });
     }
 
     private Mono<JsonNode> enrichBlock(JsonNode block) {
-        if (!block.path("has_children").asBoolean(false)) return Mono.just(block);
-        var childId = block.get("id").asText().replace("-", "");
-        return fetchBlockTree(childId)
-                .collectList()
-                .map(children -> {
-                    var enriched = mapper.createObjectNode();
-                    enriched.setAll((ObjectNode) block);
-                    enriched.set("children", mapper.valueToTree(children));
-                    return enriched;
-                });
+        if (block.path("has_children").asBoolean(false)) {
+            var childId = block.get("id").asText().replace("-", "");
+            return fetchBlockTree(childId)
+                    .collectList()
+                    .map(children -> {
+                        var enriched = mapper.createObjectNode();
+                        enriched.setAll((ObjectNode) block);
+                        enriched.set("children", mapper.valueToTree(children));
+                        return enriched;
+                    });
+        }
+        return Mono.just(block);
     }
 
     private Optional<String> extractTitle(JsonNode obj) {
         return Optional.ofNullable(obj.get("properties"))
-                .map(node -> StreamSupport.stream(node.spliterator(), false)
+                .flatMap(node -> StreamSupport.stream(node.spliterator(), false)
                         .filter(prop -> prop.has("title"))
                         .map(prop -> prop.get("title"))
                         .filter(JsonNode::isArray)
                         .filter(arr -> !arr.isEmpty())
                         .map(arr -> arr.get(0).path("plain_text").asText(null))
                         .filter(Objects::nonNull)
-                        .findFirst()
-                        .orElse(null))
+                        .findFirst())
                 .or(() -> Optional.ofNullable(obj.get("title"))
                         .filter(JsonNode::isArray)
                         .filter(arr -> !arr.isEmpty())
