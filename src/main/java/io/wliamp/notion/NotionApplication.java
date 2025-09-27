@@ -1,20 +1,17 @@
 package io.wliamp.notion;
 
-import org.eclipse.jgit.api.Git;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 
-import java.io.File;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.net.URI;
 import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
-import java.time.LocalDateTime;
 
 @SpringBootApplication
 public class NotionApplication implements CommandLineRunner {
@@ -47,7 +44,7 @@ public class NotionApplication implements CommandLineRunner {
 
         var response = client.send(request, HttpResponse.BodyHandlers.ofString());
         if (response.statusCode() != 200) {
-            throw new RuntimeException("❌ API call failed: " + response.statusCode() + "\n" + response.body());
+            throw new RuntimeException("API call failed: " + response.statusCode() + "\n" + response.body());
         }
 
         var root = mapper.readTree(response.body());
@@ -80,18 +77,6 @@ public class NotionApplication implements CommandLineRunner {
         var outFile = Paths.get(repoPath, "page.md");
         Files.writeString(outFile, sb.toString());
         System.out.println("Exported Notion page to Markdown: " + outFile.toAbsolutePath());
-
-        try (var git = Git.open(new File(repoPath))) {
-            git.add().addFilepattern("page.md").call();
-
-            if (!git.status().call().isClean()) {
-                git.commit().setMessage("Update from Notion at " + LocalDateTime.now()).call();
-                git.push().call();
-                System.out.println("Changes committed and pushed");
-            } else {
-                System.out.println("No changes detected");
-            }
-        }
     }
 
     private String getText(JsonNode node) {

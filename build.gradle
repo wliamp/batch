@@ -19,7 +19,6 @@ repositories {
 
 dependencies {
 	implementation 'org.springframework.boot:spring-boot-starter'
-    implementation 'org.eclipse.jgit:org.eclipse.jgit:7.3.0.202506031305-r'
     implementation 'com.fasterxml.jackson.core:jackson-databind:2.20.0'
 }
 
