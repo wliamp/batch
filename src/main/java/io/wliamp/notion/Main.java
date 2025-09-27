@@ -1,5 +1,8 @@
 package io.wliamp.notion;
 
+import com.fasterxml.jackson.databind.JsonNode;
+import com.fasterxml.jackson.databind.ObjectMapper;
+import com.fasterxml.jackson.databind.node.ObjectNode;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -12,9 +15,6 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.ArrayList;
 import java.util.List;
-
-import com.fasterxml.jackson.databind.JsonNode;
-import com.fasterxml.jackson.databind.ObjectMapper;
 
 @SpringBootApplication
 public class Main implements CommandLineRunner {
@@ -34,7 +34,7 @@ public class Main implements CommandLineRunner {
             throw new IllegalArgumentException("Missing NOTION_TOKEN in ENV");
         }
 
-        var outDir = Path.of("backup");
+        Path outDir = Path.of("backup");
         Files.createDirectories(outDir);
 
         List<String> pageIds = searchAllPages();
@@ -52,12 +52,12 @@ public class Main implements CommandLineRunner {
         String cursor = null;
 
         do {
-            var url = "https://api.notion.com/v1/search";
-            var body = cursor == null
+            String url = "https://api.notion.com/v1/search";
+            String body = cursor == null
                     ? "{\"page_size\":100,\"filter\":{\"property\":\"object\",\"value\":\"page\"}}"
                     : "{\"page_size\":100,\"start_cursor\":\"" + cursor + "\",\"filter\":{\"property\":\"object\",\"value\":\"page\"}}";
 
-            var request = HttpRequest.newBuilder()
+            HttpRequest request = HttpRequest.newBuilder()
                     .uri(new URI(url))
                     .header("Authorization", "Bearer " + token)
                     .header("Notion-Version", "2022-06-28")
@@ -65,14 +65,14 @@ public class Main implements CommandLineRunner {
                     .POST(HttpRequest.BodyPublishers.ofString(body))
                     .build();
 
-            var response = client.send(request, HttpResponse.BodyHandlers.ofString());
+            HttpResponse<String> response = client.send(request, HttpResponse.BodyHandlers.ofString());
             if (response.statusCode() != 200) {
                 throw new RuntimeException("Search API failed: " + response.statusCode() + "\n" + response.body());
             }
 
-            var root = mapper.readTree(response.body());
+            JsonNode root = mapper.readTree(response.body());
             for (JsonNode res : root.get("results")) {
-                if (res.get("object").asText().equals("page")) {
+                if ("page".equals(res.get("object").asText())) {
                     ids.add(res.get("id").asText().replaceAll("-", ""));
                 }
             }
@@ -86,18 +86,18 @@ public class Main implements CommandLineRunner {
         return ids;
     }
 
-    /** Backup 1 page + toàn bộ block của nó */
+    /** Backup 1 page (metadata + toàn bộ block tree) */
     private void backupPage(String pageId, Path outDir) throws Exception {
-        // Fetch page metadata
-        var pageUrl = "https://api.notion.com/v1/pages/" + pageId;
-        var pageRequest = HttpRequest.newBuilder()
+        // Metadata page
+        String pageUrl = "https://api.notion.com/v1/pages/" + pageId;
+        HttpRequest pageRequest = HttpRequest.newBuilder()
                 .uri(new URI(pageUrl))
                 .header("Authorization", "Bearer " + token)
                 .header("Notion-Version", "2022-06-28")
                 .GET()
                 .build();
 
-        var pageResponse = client.send(pageRequest, HttpResponse.BodyHandlers.ofString());
+        HttpResponse<String> pageResponse = client.send(pageRequest, HttpResponse.BodyHandlers.ofString());
         if (pageResponse.statusCode() != 200) {
             System.err.println("⚠️ Failed to fetch page " + pageId);
             return;
@@ -105,7 +105,7 @@ public class Main implements CommandLineRunner {
 
         JsonNode pageJson = mapper.readTree(pageResponse.body());
 
-        // Lấy title từ properties (nếu có)
+        // Lấy title từ properties
         String title = extractTitle(pageJson);
         if (title == null || title.isBlank()) {
             title = pageId;
@@ -115,70 +115,54 @@ public class Main implements CommandLineRunner {
         Path pageDir = outDir.resolve(safeName(title));
         Files.createDirectories(pageDir);
 
+        // Lưu page.json
         Files.writeString(pageDir.resolve("page.json"),
                 mapper.writerWithDefaultPrettyPrinter().writeValueAsString(pageJson));
 
-        // Fetch & backup blocks
-        fetchAndBackupBlocks(pageId, pageDir);
+        // Lấy cây blocks
+        List<JsonNode> blocksTree = fetchBlocksTree(pageId);
+
+        // Lưu blocks.json
+        Files.writeString(pageDir.resolve("blocks.json"),
+                mapper.writerWithDefaultPrettyPrinter().writeValueAsString(blocksTree));
 
         System.out.println("📦 Backed up page: " + title);
     }
 
-    /** Đệ quy backup tất cả blocks của parent */
-    private void fetchAndBackupBlocks(String parentId, Path outDir) throws Exception {
+    /** Đệ quy lấy toàn bộ block tree */
+    private List<JsonNode> fetchBlocksTree(String parentId) throws Exception {
+        List<JsonNode> allBlocks = new ArrayList<>();
         String cursor = null;
 
         do {
-            var url = "https://api.notion.com/v1/blocks/" + parentId + "/children?page_size=100"
+            String url = "https://api.notion.com/v1/blocks/" + parentId + "/children?page_size=100"
                     + (cursor != null ? "&start_cursor=" + cursor : "");
 
-            var request = HttpRequest.newBuilder()
+            HttpRequest request = HttpRequest.newBuilder()
                     .uri(new URI(url))
                     .header("Authorization", "Bearer " + token)
                     .header("Notion-Version", "2022-06-28")
                     .GET()
                     .build();
 
-            var response = client.send(request, HttpResponse.BodyHandlers.ofString());
+            HttpResponse<String> response = client.send(request, HttpResponse.BodyHandlers.ofString());
             if (response.statusCode() != 200) {
                 System.err.println("⚠️ Failed to fetch children for " + parentId + ": " + response.statusCode());
-                return;
+                return allBlocks;
             }
 
-            var root = mapper.readTree(response.body());
+            JsonNode root = mapper.readTree(response.body());
             for (JsonNode block : root.get("results")) {
-                String blockId = block.get("id").asText().replaceAll("-", "");
-                String type = block.get("type").asText();
+                if (block.has("has_children") && block.get("has_children").asBoolean()) {
+                    ObjectNode blockObj = mapper.createObjectNode();
+                    blockObj.setAll((ObjectNode) block);
 
-                // Nếu là child_page → tạo thư mục con riêng
-                if ("child_page".equals(type)) {
-                    String childTitle = block.get("child_page").get("title").asText();
-                    Path childDir = outDir.resolve(safeName(childTitle));
-                    Files.createDirectories(childDir);
+                    List<JsonNode> children = fetchBlocksTree(block.get("id").asText().replaceAll("-", ""));
+                    blockObj.set("children", mapper.valueToTree(children));
 
-                    Files.writeString(childDir.resolve("page.json"),
-                            mapper.writerWithDefaultPrettyPrinter().writeValueAsString(block));
-
-                    // Đệ quy vào child_page
-                    fetchAndBackupBlocks(blockId, childDir);
-
-                } else if (block.has("has_children") && block.get("has_children").asBoolean()) {
-                    // Block có children (toggle, column list, …)
-                    Path blockDir = outDir.resolve("block-" + blockId);
-                    Files.createDirectories(blockDir);
-
-                    Files.writeString(blockDir.resolve("block.json"),
-                            mapper.writerWithDefaultPrettyPrinter().writeValueAsString(block));
-
-                    Path childrenDir = blockDir.resolve("children");
-                    Files.createDirectories(childrenDir);
-                    fetchAndBackupBlocks(blockId, childrenDir);
-
+                    allBlocks.add(blockObj);
                 } else {
-                    // Block bình thường → lưu file json riêng
-                    Path file = outDir.resolve("block-" + blockId + ".json");
-                    Files.writeString(file,
-                            mapper.writerWithDefaultPrettyPrinter().writeValueAsString(block));
+                    allBlocks.add(block);
                 }
             }
 
@@ -187,6 +171,8 @@ public class Main implements CommandLineRunner {
                     : null;
 
         } while (cursor != null);
+
+        return allBlocks;
     }
 
     /** Lấy title từ properties["title"] */
@@ -194,7 +180,7 @@ public class Main implements CommandLineRunner {
         if (pageJson.has("properties")) {
             for (JsonNode prop : pageJson.get("properties")) {
                 if (prop.has("title")) {
-                    var arr = prop.get("title");
+                    JsonNode arr = prop.get("title");
                     if (arr.isArray() && arr.size() > 0) {
                         return arr.get(0).get("plain_text").asText();
                     }
