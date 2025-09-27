@@ -46,6 +46,7 @@ public class Main implements CommandLineRunner {
         System.out.println("✅ Backup completed. Total pages: " + pageIds.size());
     }
 
+    /** Tìm tất cả page mà integration có quyền */
     private List<String> searchAllPages() throws Exception {
         List<String> ids = new ArrayList<>();
         String cursor = null;
@@ -85,10 +86,9 @@ public class Main implements CommandLineRunner {
         return ids;
     }
 
+    /** Backup 1 page + toàn bộ block của nó */
     private void backupPage(String pageId, Path outDir) throws Exception {
-        var pageDir = outDir.resolve(pageId);
-        Files.createDirectories(pageDir);
-
+        // Fetch page metadata
         var pageUrl = "https://api.notion.com/v1/pages/" + pageId;
         var pageRequest = HttpRequest.newBuilder()
                 .uri(new URI(pageUrl))
@@ -98,21 +98,35 @@ public class Main implements CommandLineRunner {
                 .build();
 
         var pageResponse = client.send(pageRequest, HttpResponse.BodyHandlers.ofString());
-        if (pageResponse.statusCode() == 200) {
-            Files.writeString(pageDir.resolve("page.json"), pageResponse.body());
+        if (pageResponse.statusCode() != 200) {
+            System.err.println("⚠️ Failed to fetch page " + pageId);
+            return;
         }
 
-        var blocksDir = pageDir.resolve("blocks");
-        Files.createDirectories(blocksDir);
+        JsonNode pageJson = mapper.readTree(pageResponse.body());
 
-        fetchAndBackupBlocks(pageId, blocksDir);
+        // Lấy title từ properties (nếu có)
+        String title = extractTitle(pageJson);
+        if (title == null || title.isBlank()) {
+            title = pageId;
+        }
 
-        System.out.println("📦 Backed up page with recursive blocks: " + pageId);
+        // Tạo thư mục cho page
+        Path pageDir = outDir.resolve(safeName(title));
+        Files.createDirectories(pageDir);
+
+        Files.writeString(pageDir.resolve("page.json"),
+                mapper.writerWithDefaultPrettyPrinter().writeValueAsString(pageJson));
+
+        // Fetch & backup blocks
+        fetchAndBackupBlocks(pageId, pageDir);
+
+        System.out.println("📦 Backed up page: " + title);
     }
 
+    /** Đệ quy backup tất cả blocks của parent */
     private void fetchAndBackupBlocks(String parentId, Path outDir) throws Exception {
         String cursor = null;
-        int blockIndex = 0;
 
         do {
             var url = "https://api.notion.com/v1/blocks/" + parentId + "/children?page_size=100"
@@ -134,10 +148,23 @@ public class Main implements CommandLineRunner {
             var root = mapper.readTree(response.body());
             for (JsonNode block : root.get("results")) {
                 String blockId = block.get("id").asText().replaceAll("-", "");
-                blockIndex++;
+                String type = block.get("type").asText();
 
-                if (block.has("has_children") && block.get("has_children").asBoolean()) {
-                    Path blockDir = outDir.resolve("block-" + blockIndex + "-" + blockId);
+                // Nếu là child_page → tạo thư mục con riêng
+                if ("child_page".equals(type)) {
+                    String childTitle = block.get("child_page").get("title").asText();
+                    Path childDir = outDir.resolve(safeName(childTitle));
+                    Files.createDirectories(childDir);
+
+                    Files.writeString(childDir.resolve("page.json"),
+                            mapper.writerWithDefaultPrettyPrinter().writeValueAsString(block));
+
+                    // Đệ quy vào child_page
+                    fetchAndBackupBlocks(blockId, childDir);
+
+                } else if (block.has("has_children") && block.get("has_children").asBoolean()) {
+                    // Block có children (toggle, column list, …)
+                    Path blockDir = outDir.resolve("block-" + blockId);
                     Files.createDirectories(blockDir);
 
                     Files.writeString(blockDir.resolve("block.json"),
@@ -148,8 +175,9 @@ public class Main implements CommandLineRunner {
                     fetchAndBackupBlocks(blockId, childrenDir);
 
                 } else {
-                    var fileName = "block-" + blockIndex + "-" + blockId + ".json";
-                    Files.writeString(outDir.resolve(fileName),
+                    // Block bình thường → lưu file json riêng
+                    Path file = outDir.resolve("block-" + blockId + ".json");
+                    Files.writeString(file,
                             mapper.writerWithDefaultPrettyPrinter().writeValueAsString(block));
                 }
             }
@@ -159,5 +187,25 @@ public class Main implements CommandLineRunner {
                     : null;
 
         } while (cursor != null);
+    }
+
+    /** Lấy title từ properties["title"] */
+    private String extractTitle(JsonNode pageJson) {
+        if (pageJson.has("properties")) {
+            for (JsonNode prop : pageJson.get("properties")) {
+                if (prop.has("title")) {
+                    var arr = prop.get("title");
+                    if (arr.isArray() && arr.size() > 0) {
+                        return arr.get(0).get("plain_text").asText();
+                    }
+                }
+            }
+        }
+        return null;
+    }
+
+    /** Đổi tên hợp lệ cho folder/file */
+    private String safeName(String input) {
+        return input.replaceAll("[^a-zA-Z0-9-_]", "_");
     }
 }
