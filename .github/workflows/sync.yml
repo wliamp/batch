@@ -25,5 +25,5 @@ jobs:
       - name: Run Notion backup
         env:
           NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
-          NOTION_PAGE_ID: ${{ secrets.NOTION_PAGE_ID }}
+          NOTION_PAGE_ID: ${{ vars.NOTION_PAGE_ID }}
         run: ./gradlew bootRun
