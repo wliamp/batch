@@ -1,0 +1,58 @@
+{
+  "object" : "block",
+  "id" : "27af521e-2b70-80bf-9059-f94cc2d5ae2c",
+  "parent" : {
+    "type" : "block_id",
+    "block_id" : "27af521e-2b70-8080-9437-e2d0fd68c47f"
+  },
+  "created_time" : "2025-09-26T20:56:00.000Z",
+  "last_edited_time" : "2025-09-26T20:56:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "bulleted_list_item",
+  "bulleted_list_item" : {
+    "rich_text" : [ {
+      "type" : "text",
+      "text" : {
+        "content" : "Customer sees: ",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "Customer sees: ",
+      "href" : null
+    }, {
+      "type" : "text",
+      "text" : {
+        "content" : "“Refund failed – period expired.”",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : true,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "“Refund failed – period expired.”",
+      "href" : null
+    } ],
+    "color" : "default"
+  }
+}

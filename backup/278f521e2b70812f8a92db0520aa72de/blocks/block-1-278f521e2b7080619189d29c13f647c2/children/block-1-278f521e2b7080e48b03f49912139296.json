@@ -1,0 +1,138 @@
+{
+  "object" : "block",
+  "id" : "278f521e-2b70-80e4-8b03-f49912139296",
+  "parent" : {
+    "type" : "block_id",
+    "block_id" : "278f521e-2b70-8061-9189-d29c13f647c2"
+  },
+  "created_time" : "2025-09-24T12:04:00.000Z",
+  "last_edited_time" : "2025-09-24T22:48:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "paragraph",
+  "paragraph" : {
+    "rich_text" : [ {
+      "type" : "text",
+      "text" : {
+        "content" : "“As a ",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "“As a ",
+      "href" : null
+    }, {
+      "type" : "text",
+      "text" : {
+        "content" : "Customer",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : true,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "Customer",
+      "href" : null
+    }, {
+      "type" : "text",
+      "text" : {
+        "content" : ", I want my ",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : ", I want my ",
+      "href" : null
+    }, {
+      "type" : "text",
+      "text" : {
+        "content" : "held payment to be completed once the order is shipped or delivered",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : true,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "held payment to be completed once the order is shipped or delivered",
+      "href" : null
+    }, {
+      "type" : "text",
+      "text" : {
+        "content" : ", so that ",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : ", so that ",
+      "href" : null
+    }, {
+      "type" : "text",
+      "text" : {
+        "content" : "the seller actually receives the money",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : true,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "the seller actually receives the money",
+      "href" : null
+    }, {
+      "type" : "text",
+      "text" : {
+        "content" : ".”",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : ".”",
+      "href" : null
+    } ],
+    "color" : "default"
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "object" : "block",
+  "id" : "277f521e-2b70-8022-87ce-f5b28a523af1",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "277f521e-2b70-8059-aacb-e49e1f753e13"
+  },
+  "created_time" : "2025-09-23T22:57:00.000Z",
+  "last_edited_time" : "2025-09-23T22:57:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "paragraph",
+  "paragraph" : {
+    "rich_text" : [ {
+      "type" : "text",
+      "text" : {
+        "content" : "Check out this ",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "Check out this ",
+      "href" : null
+    }, {
+      "type" : "text",
+      "text" : {
+        "content" : "Notion Editor 101",
+        "link" : {
+          "url" : "https://www.notion.so/notion/Notion-editor-101-create-and-edit-68c7c67047494fdb87d50185429df93e"
+        }
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "Notion Editor 101",
+      "href" : "https://www.notion.so/notion/Notion-editor-101-create-and-edit-68c7c67047494fdb87d50185429df93e"
+    }, {
+      "type" : "text",
+      "text" : {
+        "content" : " guide for more advanced tips and how-to's.",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : " guide for more advanced tips and how-to's.",
+      "href" : null
+    } ],
+    "color" : "default"
+  }
+}

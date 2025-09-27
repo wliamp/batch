@@ -1,0 +1,90 @@
+{
+  "object" : "block",
+  "id" : "27af521e-2b70-803d-8d69-cd4f5821d04f",
+  "parent" : {
+    "type" : "block_id",
+    "block_id" : "27af521e-2b70-8179-afc9-ff8e4aef7b0d"
+  },
+  "created_time" : "2025-09-26T20:05:00.000Z",
+  "last_edited_time" : "2025-09-26T20:05:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "paragraph",
+  "paragraph" : {
+    "rich_text" : [ {
+      "type" : "text",
+      "text" : {
+        "content" : "E4. Biometric/3D Secure Failure",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : true,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "E4. Biometric/3D Secure Failure",
+      "href" : null
+    }, {
+      "type" : "text",
+      "text" : {
+        "content" : " → Authentication explicitly rejected by Issuer → Payment = ",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : " → Authentication explicitly rejected by Issuer → Payment = ",
+      "href" : null
+    }, {
+      "type" : "text",
+      "text" : {
+        "content" : "Failed",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : true,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "Failed",
+      "href" : null
+    }, {
+      "type" : "text",
+      "text" : {
+        "content" : ".",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : ".",
+      "href" : null
+    } ],
+    "color" : "default"
+  }
+}
