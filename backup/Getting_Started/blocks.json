@@ -1,0 +1,1975 @@
+[ {
+  "object" : "block",
+  "id" : "277f521e-2b70-80fe-8d91-ccd204b1b130",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "277f521e-2b70-8059-aacb-e49e1f753e13"
+  },
+  "created_time" : "2025-09-23T22:57:00.000Z",
+  "last_edited_time" : "2025-09-23T22:57:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "callout",
+  "callout" : {
+    "rich_text" : [ {
+      "type" : "text",
+      "text" : {
+        "content" : "Notion Tip: When creating a page, it's important to give it a clear title and provide some content. This could include verifying the information, summarizing the topic, or sharing your thoughts and opinions on something that matters to you.",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "Notion Tip: When creating a page, it's important to give it a clear title and provide some content. This could include verifying the information, summarizing the topic, or sharing your thoughts and opinions on something that matters to you.",
+      "href" : null
+    } ],
+    "icon" : {
+      "type" : "emoji",
+      "emoji" : "💡"
+    },
+    "color" : "blue_background"
+  }
+}, {
+  "object" : "block",
+  "id" : "277f521e-2b70-8053-b006-cb8dcbdcc3b2",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "277f521e-2b70-8059-aacb-e49e1f753e13"
+  },
+  "created_time" : "2025-09-23T22:57:00.000Z",
+  "last_edited_time" : "2025-09-23T22:57:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "table_of_contents",
+  "table_of_contents" : {
+    "color" : "gray"
+  }
+}, {
+  "object" : "block",
+  "id" : "277f521e-2b70-8013-b1f2-dd1c0866c0ac",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "277f521e-2b70-8059-aacb-e49e1f753e13"
+  },
+  "created_time" : "2025-09-23T22:57:00.000Z",
+  "last_edited_time" : "2025-09-23T22:57:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "heading_1",
+  "heading_1" : {
+    "rich_text" : [ {
+      "type" : "text",
+      "text" : {
+        "content" : "The Basics",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "The Basics",
+      "href" : null
+    } ],
+    "is_toggleable" : false,
+    "color" : "default"
+  }
+}, {
+  "object" : "block",
+  "id" : "277f521e-2b70-80b0-bc15-cddd9d2e855f",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "277f521e-2b70-8059-aacb-e49e1f753e13"
+  },
+  "created_time" : "2025-09-23T22:57:00.000Z",
+  "last_edited_time" : "2025-09-23T22:57:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "heading_2",
+  "heading_2" : {
+    "rich_text" : [ {
+      "type" : "text",
+      "text" : {
+        "content" : "Create a Page",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "Create a Page",
+      "href" : null
+    } ],
+    "is_toggleable" : false,
+    "color" : "default"
+  }
+}, {
+  "object" : "block",
+  "id" : "277f521e-2b70-80aa-9705-d30dd029a83d",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "277f521e-2b70-8059-aacb-e49e1f753e13"
+  },
+  "created_time" : "2025-09-23T22:57:00.000Z",
+  "last_edited_time" : "2025-09-23T22:57:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "paragraph",
+  "paragraph" : {
+    "rich_text" : [ {
+      "type" : "text",
+      "text" : {
+        "content" : "In your sidebar, click the ",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "In your sidebar, click the ",
+      "href" : null
+    }, {
+      "type" : "text",
+      "text" : {
+        "content" : "+",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : true,
+        "color" : "default"
+      },
+      "plain_text" : "+",
+      "href" : null
+    }, {
+      "type" : "text",
+      "text" : {
+        "content" : " that appears next to the word ",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : " that appears next to the word ",
+      "href" : null
+    }, {
+      "type" : "text",
+      "text" : {
+        "content" : "Workspace",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : true,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "Workspace",
+      "href" : null
+    }, {
+      "type" : "text",
+      "text" : {
+        "content" : " on hover. A new page will appear. Give it a title and start typing like you would in any other document.",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : " on hover. A new page will appear. Give it a title and start typing like you would in any other document.",
+      "href" : null
+    } ],
+    "color" : "default"
+  }
+}, {
+  "object" : "block",
+  "id" : "277f521e-2b70-8012-a5b9-e2a8d20040f5",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "277f521e-2b70-8059-aacb-e49e1f753e13"
+  },
+  "created_time" : "2025-09-23T22:57:00.000Z",
+  "last_edited_time" : "2025-09-23T22:57:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "heading_2",
+  "heading_2" : {
+    "rich_text" : [ {
+      "type" : "text",
+      "text" : {
+        "content" : "Headings",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "Headings",
+      "href" : null
+    } ],
+    "is_toggleable" : false,
+    "color" : "default"
+  }
+}, {
+  "object" : "block",
+  "id" : "277f521e-2b70-804f-8813-c0a35c459e57",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "277f521e-2b70-8059-aacb-e49e1f753e13"
+  },
+  "created_time" : "2025-09-23T22:57:00.000Z",
+  "last_edited_time" : "2025-09-23T22:57:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "paragraph",
+  "paragraph" : {
+    "rich_text" : [ {
+      "type" : "text",
+      "text" : {
+        "content" : "You can add headings and subheadings in one of two ways:",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "You can add headings and subheadings in one of two ways:",
+      "href" : null
+    } ],
+    "color" : "default"
+  }
+}, {
+  "object" : "block",
+  "id" : "277f521e-2b70-8058-8f0e-f45c768f8b7e",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "277f521e-2b70-8059-aacb-e49e1f753e13"
+  },
+  "created_time" : "2025-09-23T22:57:00.000Z",
+  "last_edited_time" : "2025-09-23T22:57:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "bulleted_list_item",
+  "bulleted_list_item" : {
+    "rich_text" : [ {
+      "type" : "text",
+      "text" : {
+        "content" : "Type ",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "Type ",
+      "href" : null
+    }, {
+      "type" : "text",
+      "text" : {
+        "content" : "/heading",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : true,
+        "color" : "default"
+      },
+      "plain_text" : "/heading",
+      "href" : null
+    }, {
+      "type" : "text",
+      "text" : {
+        "content" : " or ",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : " or ",
+      "href" : null
+    }, {
+      "type" : "text",
+      "text" : {
+        "content" : "/h1",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : true,
+        "color" : "default"
+      },
+      "plain_text" : "/h1",
+      "href" : null
+    }, {
+      "type" : "text",
+      "text" : {
+        "content" : ", ",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : ", ",
+      "href" : null
+    }, {
+      "type" : "text",
+      "text" : {
+        "content" : "/h2",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : true,
+        "color" : "default"
+      },
+      "plain_text" : "/h2",
+      "href" : null
+    }, {
+      "type" : "text",
+      "text" : {
+        "content" : ", or ",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : ", or ",
+      "href" : null
+    }, {
+      "type" : "text",
+      "text" : {
+        "content" : "/h3",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : true,
+        "color" : "default"
+      },
+      "plain_text" : "/h3",
+      "href" : null
+    }, {
+      "type" : "text",
+      "text" : {
+        "content" : " to choose the heading size you want.",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : " to choose the heading size you want.",
+      "href" : null
+    } ],
+    "color" : "default"
+  }
+}, {
+  "object" : "block",
+  "id" : "277f521e-2b70-8057-8f85-ee22b362b3ea",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "277f521e-2b70-8059-aacb-e49e1f753e13"
+  },
+  "created_time" : "2025-09-23T22:57:00.000Z",
+  "last_edited_time" : "2025-09-23T22:57:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : true,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "bulleted_list_item",
+  "bulleted_list_item" : {
+    "rich_text" : [ {
+      "type" : "text",
+      "text" : {
+        "content" : "Use Markdown shortcuts, like ",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "Use Markdown shortcuts, like ",
+      "href" : null
+    }, {
+      "type" : "text",
+      "text" : {
+        "content" : "#",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : true,
+        "color" : "default"
+      },
+      "plain_text" : "#",
+      "href" : null
+    }, {
+      "type" : "text",
+      "text" : {
+        "content" : ", ",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : ", ",
+      "href" : null
+    }, {
+      "type" : "text",
+      "text" : {
+        "content" : "##",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : true,
+        "color" : "default"
+      },
+      "plain_text" : "##",
+      "href" : null
+    }, {
+      "type" : "text",
+      "text" : {
+        "content" : ", and ",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : ", and ",
+      "href" : null
+    }, {
+      "type" : "text",
+      "text" : {
+        "content" : "###",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : true,
+        "color" : "default"
+      },
+      "plain_text" : "###",
+      "href" : null
+    }, {
+      "type" : "text",
+      "text" : {
+        "content" : ".  ",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : ".  ",
+      "href" : null
+    } ],
+    "color" : "default"
+  },
+  "children" : [ {
+    "object" : "block",
+    "id" : "277f521e-2b70-808a-871d-c5d20d93d947",
+    "parent" : {
+      "type" : "block_id",
+      "block_id" : "277f521e-2b70-8057-8f85-ee22b362b3ea"
+    },
+    "created_time" : "2025-09-23T22:57:00.000Z",
+    "last_edited_time" : "2025-09-23T22:57:00.000Z",
+    "created_by" : {
+      "object" : "user",
+      "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+    },
+    "last_edited_by" : {
+      "object" : "user",
+      "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+    },
+    "has_children" : false,
+    "archived" : false,
+    "in_trash" : false,
+    "type" : "bulleted_list_item",
+    "bulleted_list_item" : {
+      "rich_text" : [ {
+        "type" : "text",
+        "text" : {
+          "content" : "Create inline code by wrapping text with ",
+          "link" : null
+        },
+        "annotations" : {
+          "bold" : false,
+          "italic" : false,
+          "strikethrough" : false,
+          "underline" : false,
+          "code" : false,
+          "color" : "default"
+        },
+        "plain_text" : "Create inline code by wrapping text with ",
+        "href" : null
+      }, {
+        "type" : "text",
+        "text" : {
+          "content" : "`",
+          "link" : null
+        },
+        "annotations" : {
+          "bold" : false,
+          "italic" : false,
+          "strikethrough" : false,
+          "underline" : false,
+          "code" : true,
+          "color" : "default"
+        },
+        "plain_text" : "`",
+        "href" : null
+      }, {
+        "type" : "text",
+        "text" : {
+          "content" : " (or with the shortcut ",
+          "link" : null
+        },
+        "annotations" : {
+          "bold" : false,
+          "italic" : false,
+          "strikethrough" : false,
+          "underline" : false,
+          "code" : false,
+          "color" : "default"
+        },
+        "plain_text" : " (or with the shortcut ",
+        "href" : null
+      }, {
+        "type" : "text",
+        "text" : {
+          "content" : "cmd/ctrl + e",
+          "link" : null
+        },
+        "annotations" : {
+          "bold" : false,
+          "italic" : false,
+          "strikethrough" : false,
+          "underline" : false,
+          "code" : true,
+          "color" : "default"
+        },
+        "plain_text" : "cmd/ctrl + e",
+        "href" : null
+      }, {
+        "type" : "text",
+        "text" : {
+          "content" : ").",
+          "link" : null
+        },
+        "annotations" : {
+          "bold" : false,
+          "italic" : false,
+          "strikethrough" : false,
+          "underline" : false,
+          "code" : false,
+          "color" : "default"
+        },
+        "plain_text" : ").",
+        "href" : null
+      } ],
+      "color" : "default"
+    }
+  } ]
+}, {
+  "object" : "block",
+  "id" : "277f521e-2b70-8038-b5df-c2de9067fb6c",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "277f521e-2b70-8059-aacb-e49e1f753e13"
+  },
+  "created_time" : "2025-09-23T22:57:00.000Z",
+  "last_edited_time" : "2025-09-23T22:57:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "heading_2",
+  "heading_2" : {
+    "rich_text" : [ {
+      "type" : "text",
+      "text" : {
+        "content" : "Toggle Lists",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "Toggle Lists",
+      "href" : null
+    } ],
+    "is_toggleable" : false,
+    "color" : "default"
+  }
+}, {
+  "object" : "block",
+  "id" : "277f521e-2b70-803f-be41-de57d847b0f9",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "277f521e-2b70-8059-aacb-e49e1f753e13"
+  },
+  "created_time" : "2025-09-23T22:57:00.000Z",
+  "last_edited_time" : "2025-09-23T22:57:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : true,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "toggle",
+  "toggle" : {
+    "rich_text" : [ {
+      "type" : "text",
+      "text" : {
+        "content" : "Toggle lists streamline your content. Click the arrow to open.",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "Toggle lists streamline your content. Click the arrow to open.",
+      "href" : null
+    } ],
+    "color" : "default"
+  },
+  "children" : [ {
+    "object" : "block",
+    "id" : "277f521e-2b70-80f3-90c1-e3831fb7fa36",
+    "parent" : {
+      "type" : "block_id",
+      "block_id" : "277f521e-2b70-803f-be41-de57d847b0f9"
+    },
+    "created_time" : "2025-09-23T22:57:00.000Z",
+    "last_edited_time" : "2025-09-23T22:57:00.000Z",
+    "created_by" : {
+      "object" : "user",
+      "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+    },
+    "last_edited_by" : {
+      "object" : "user",
+      "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+    },
+    "has_children" : false,
+    "archived" : false,
+    "in_trash" : false,
+    "type" : "bulleted_list_item",
+    "bulleted_list_item" : {
+      "rich_text" : [ {
+        "type" : "text",
+        "text" : {
+          "content" : "Click the arrow again to hide this content.",
+          "link" : null
+        },
+        "annotations" : {
+          "bold" : false,
+          "italic" : false,
+          "strikethrough" : false,
+          "underline" : false,
+          "code" : false,
+          "color" : "default"
+        },
+        "plain_text" : "Click the arrow again to hide this content.",
+        "href" : null
+      } ],
+      "color" : "default"
+    }
+  }, {
+    "object" : "block",
+    "id" : "277f521e-2b70-80c8-8251-f7cba889c4d3",
+    "parent" : {
+      "type" : "block_id",
+      "block_id" : "277f521e-2b70-803f-be41-de57d847b0f9"
+    },
+    "created_time" : "2025-09-23T22:57:00.000Z",
+    "last_edited_time" : "2025-09-23T22:57:00.000Z",
+    "created_by" : {
+      "object" : "user",
+      "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+    },
+    "last_edited_by" : {
+      "object" : "user",
+      "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+    },
+    "has_children" : false,
+    "archived" : false,
+    "in_trash" : false,
+    "type" : "bulleted_list_item",
+    "bulleted_list_item" : {
+      "rich_text" : [ {
+        "type" : "text",
+        "text" : {
+          "content" : "Create a toggle by typing ",
+          "link" : null
+        },
+        "annotations" : {
+          "bold" : false,
+          "italic" : false,
+          "strikethrough" : false,
+          "underline" : false,
+          "code" : false,
+          "color" : "default"
+        },
+        "plain_text" : "Create a toggle by typing ",
+        "href" : null
+      }, {
+        "type" : "text",
+        "text" : {
+          "content" : "/toggle",
+          "link" : null
+        },
+        "annotations" : {
+          "bold" : false,
+          "italic" : false,
+          "strikethrough" : false,
+          "underline" : false,
+          "code" : true,
+          "color" : "default"
+        },
+        "plain_text" : "/toggle",
+        "href" : null
+      }, {
+        "type" : "text",
+        "text" : {
+          "content" : " and pressing ",
+          "link" : null
+        },
+        "annotations" : {
+          "bold" : false,
+          "italic" : false,
+          "strikethrough" : false,
+          "underline" : false,
+          "code" : false,
+          "color" : "default"
+        },
+        "plain_text" : " and pressing ",
+        "href" : null
+      }, {
+        "type" : "text",
+        "text" : {
+          "content" : "enter",
+          "link" : null
+        },
+        "annotations" : {
+          "bold" : false,
+          "italic" : false,
+          "strikethrough" : false,
+          "underline" : false,
+          "code" : true,
+          "color" : "default"
+        },
+        "plain_text" : "enter",
+        "href" : null
+      }, {
+        "type" : "text",
+        "text" : {
+          "content" : ".",
+          "link" : null
+        },
+        "annotations" : {
+          "bold" : false,
+          "italic" : false,
+          "strikethrough" : false,
+          "underline" : false,
+          "code" : false,
+          "color" : "default"
+        },
+        "plain_text" : ".",
+        "href" : null
+      } ],
+      "color" : "default"
+    }
+  }, {
+    "object" : "block",
+    "id" : "277f521e-2b70-80eb-a99a-e04190c95ede",
+    "parent" : {
+      "type" : "block_id",
+      "block_id" : "277f521e-2b70-803f-be41-de57d847b0f9"
+    },
+    "created_time" : "2025-09-23T22:57:00.000Z",
+    "last_edited_time" : "2025-09-23T22:57:00.000Z",
+    "created_by" : {
+      "object" : "user",
+      "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+    },
+    "last_edited_by" : {
+      "object" : "user",
+      "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+    },
+    "has_children" : false,
+    "archived" : false,
+    "in_trash" : false,
+    "type" : "bulleted_list_item",
+    "bulleted_list_item" : {
+      "rich_text" : [ {
+        "type" : "text",
+        "text" : {
+          "content" : "You can add anything to toggles, including images and embeds.",
+          "link" : null
+        },
+        "annotations" : {
+          "bold" : false,
+          "italic" : false,
+          "strikethrough" : false,
+          "underline" : false,
+          "code" : false,
+          "color" : "default"
+        },
+        "plain_text" : "You can add anything to toggles, including images and embeds.",
+        "href" : null
+      } ],
+      "color" : "default"
+    }
+  } ]
+}, {
+  "object" : "block",
+  "id" : "277f521e-2b70-80d2-a1ec-fa3a5e089c14",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "277f521e-2b70-8059-aacb-e49e1f753e13"
+  },
+  "created_time" : "2025-09-23T22:57:00.000Z",
+  "last_edited_time" : "2025-09-23T22:57:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "heading_2",
+  "heading_2" : {
+    "rich_text" : [ {
+      "type" : "text",
+      "text" : {
+        "content" : "Callout Blocks",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "Callout Blocks",
+      "href" : null
+    } ],
+    "is_toggleable" : false,
+    "color" : "default"
+  }
+}, {
+  "object" : "block",
+  "id" : "277f521e-2b70-80bb-9eb3-f24c4489ed2e",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "277f521e-2b70-8059-aacb-e49e1f753e13"
+  },
+  "created_time" : "2025-09-23T22:57:00.000Z",
+  "last_edited_time" : "2025-09-23T22:57:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "callout",
+  "callout" : {
+    "rich_text" : [ {
+      "type" : "text",
+      "text" : {
+        "content" : "Notion Tip: ",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : true,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "Notion Tip: ",
+      "href" : null
+    }, {
+      "type" : "text",
+      "text" : {
+        "content" : "Create a callout block like this by typing ",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "Create a callout block like this by typing ",
+      "href" : null
+    }, {
+      "type" : "text",
+      "text" : {
+        "content" : "/call",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : true,
+        "color" : "default"
+      },
+      "plain_text" : "/call",
+      "href" : null
+    }, {
+      "type" : "text",
+      "text" : {
+        "content" : " and pressing ",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : " and pressing ",
+      "href" : null
+    }, {
+      "type" : "text",
+      "text" : {
+        "content" : "enter",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : true,
+        "color" : "default"
+      },
+      "plain_text" : "enter",
+      "href" : null
+    }, {
+      "type" : "text",
+      "text" : {
+        "content" : ". Helpful for adding inline instructions, warnings, disclaimers, and tips. Change the emoji icon by clicking on it.",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : ". Helpful for adding inline instructions, warnings, disclaimers, and tips. Change the emoji icon by clicking on it.",
+      "href" : null
+    } ],
+    "icon" : {
+      "type" : "emoji",
+      "emoji" : "💡"
+    },
+    "color" : "gray_background"
+  }
+}, {
+  "object" : "block",
+  "id" : "277f521e-2b70-8053-84fd-c4a797872fdf",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "277f521e-2b70-8059-aacb-e49e1f753e13"
+  },
+  "created_time" : "2025-09-23T22:57:00.000Z",
+  "last_edited_time" : "2025-09-23T22:57:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "heading_2",
+  "heading_2" : {
+    "rich_text" : [ {
+      "type" : "text",
+      "text" : {
+        "content" : "Code Blocks",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "Code Blocks",
+      "href" : null
+    } ],
+    "is_toggleable" : false,
+    "color" : "default"
+  }
+}, {
+  "object" : "block",
+  "id" : "277f521e-2b70-8094-a7e9-d0d4df69606d",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "277f521e-2b70-8059-aacb-e49e1f753e13"
+  },
+  "created_time" : "2025-09-23T22:57:00.000Z",
+  "last_edited_time" : "2025-09-23T22:57:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : true,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "paragraph",
+  "paragraph" : {
+    "rich_text" : [ {
+      "type" : "text",
+      "text" : {
+        "content" : "You can add code notation to any Notion page:",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "You can add code notation to any Notion page:",
+      "href" : null
+    } ],
+    "color" : "default"
+  },
+  "children" : [ {
+    "object" : "block",
+    "id" : "277f521e-2b70-80c0-bf10-fb9cbb0ecbf5",
+    "parent" : {
+      "type" : "block_id",
+      "block_id" : "277f521e-2b70-8094-a7e9-d0d4df69606d"
+    },
+    "created_time" : "2025-09-23T22:57:00.000Z",
+    "last_edited_time" : "2025-09-23T22:57:00.000Z",
+    "created_by" : {
+      "object" : "user",
+      "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+    },
+    "last_edited_by" : {
+      "object" : "user",
+      "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+    },
+    "has_children" : false,
+    "archived" : false,
+    "in_trash" : false,
+    "type" : "bulleted_list_item",
+    "bulleted_list_item" : {
+      "rich_text" : [ {
+        "type" : "text",
+        "text" : {
+          "content" : "Type ",
+          "link" : null
+        },
+        "annotations" : {
+          "bold" : false,
+          "italic" : false,
+          "strikethrough" : false,
+          "underline" : false,
+          "code" : false,
+          "color" : "default"
+        },
+        "plain_text" : "Type ",
+        "href" : null
+      }, {
+        "type" : "text",
+        "text" : {
+          "content" : "/code",
+          "link" : null
+        },
+        "annotations" : {
+          "bold" : false,
+          "italic" : false,
+          "strikethrough" : false,
+          "underline" : false,
+          "code" : true,
+          "color" : "default"
+        },
+        "plain_text" : "/code",
+        "href" : null
+      }, {
+        "type" : "text",
+        "text" : {
+          "content" : " and press ",
+          "link" : null
+        },
+        "annotations" : {
+          "bold" : false,
+          "italic" : false,
+          "strikethrough" : false,
+          "underline" : false,
+          "code" : false,
+          "color" : "default"
+        },
+        "plain_text" : " and press ",
+        "href" : null
+      }, {
+        "type" : "text",
+        "text" : {
+          "content" : "enter",
+          "link" : null
+        },
+        "annotations" : {
+          "bold" : false,
+          "italic" : false,
+          "strikethrough" : false,
+          "underline" : false,
+          "code" : true,
+          "color" : "default"
+        },
+        "plain_text" : "enter",
+        "href" : null
+      }, {
+        "type" : "text",
+        "text" : {
+          "content" : ".",
+          "link" : null
+        },
+        "annotations" : {
+          "bold" : false,
+          "italic" : false,
+          "strikethrough" : false,
+          "underline" : false,
+          "code" : false,
+          "color" : "default"
+        },
+        "plain_text" : ".",
+        "href" : null
+      } ],
+      "color" : "default"
+    }
+  }, {
+    "object" : "block",
+    "id" : "277f521e-2b70-80e1-9e3a-d704d7aa587b",
+    "parent" : {
+      "type" : "block_id",
+      "block_id" : "277f521e-2b70-8094-a7e9-d0d4df69606d"
+    },
+    "created_time" : "2025-09-23T22:57:00.000Z",
+    "last_edited_time" : "2025-09-23T22:57:00.000Z",
+    "created_by" : {
+      "object" : "user",
+      "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+    },
+    "last_edited_by" : {
+      "object" : "user",
+      "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+    },
+    "has_children" : false,
+    "archived" : false,
+    "in_trash" : false,
+    "type" : "bulleted_list_item",
+    "bulleted_list_item" : {
+      "rich_text" : [ {
+        "type" : "text",
+        "text" : {
+          "content" : "Choose the language from the dropdown in the bottom right corner. ",
+          "link" : null
+        },
+        "annotations" : {
+          "bold" : false,
+          "italic" : false,
+          "strikethrough" : false,
+          "underline" : false,
+          "code" : false,
+          "color" : "default"
+        },
+        "plain_text" : "Choose the language from the dropdown in the bottom right corner. ",
+        "href" : null
+      } ],
+      "color" : "default"
+    }
+  }, {
+    "object" : "block",
+    "id" : "277f521e-2b70-8042-84e5-d708c98b2aff",
+    "parent" : {
+      "type" : "block_id",
+      "block_id" : "277f521e-2b70-8094-a7e9-d0d4df69606d"
+    },
+    "created_time" : "2025-09-23T22:57:00.000Z",
+    "last_edited_time" : "2025-09-23T22:57:00.000Z",
+    "created_by" : {
+      "object" : "user",
+      "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+    },
+    "last_edited_by" : {
+      "object" : "user",
+      "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+    },
+    "has_children" : false,
+    "archived" : false,
+    "in_trash" : false,
+    "type" : "bulleted_list_item",
+    "bulleted_list_item" : {
+      "rich_text" : [ {
+        "type" : "text",
+        "text" : {
+          "content" : "Here's an example:",
+          "link" : null
+        },
+        "annotations" : {
+          "bold" : false,
+          "italic" : false,
+          "strikethrough" : false,
+          "underline" : false,
+          "code" : false,
+          "color" : "default"
+        },
+        "plain_text" : "Here's an example:",
+        "href" : null
+      } ],
+      "color" : "default"
+    }
+  } ]
+}, {
+  "object" : "block",
+  "id" : "277f521e-2b70-803e-81d3-d3842848dde0",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "277f521e-2b70-8059-aacb-e49e1f753e13"
+  },
+  "created_time" : "2025-09-23T22:57:00.000Z",
+  "last_edited_time" : "2025-09-23T22:57:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "code",
+  "code" : {
+    "caption" : [ ],
+    "rich_text" : [ {
+      "type" : "text",
+      "text" : {
+        "content" : "Hover over this block to see the <b>Copy to Clipboard</b> option!",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "Hover over this block to see the <b>Copy to Clipboard</b> option!",
+      "href" : null
+    } ],
+    "language" : "html"
+  }
+}, {
+  "object" : "block",
+  "id" : "277f521e-2b70-806e-a601-d70aba3ad263",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "277f521e-2b70-8059-aacb-e49e1f753e13"
+  },
+  "created_time" : "2025-09-23T22:57:00.000Z",
+  "last_edited_time" : "2025-09-23T22:57:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "bulleted_list_item",
+  "bulleted_list_item" : {
+    "rich_text" : [ {
+      "type" : "text",
+      "text" : {
+        "content" : "Your teammates can select any code to comment on it.",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "Your teammates can select any code to comment on it.",
+      "href" : null
+    } ],
+    "color" : "default"
+  }
+}, {
+  "object" : "block",
+  "id" : "277f521e-2b70-805f-b336-d1fd697faf4e",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "277f521e-2b70-8059-aacb-e49e1f753e13"
+  },
+  "created_time" : "2025-09-23T22:57:00.000Z",
+  "last_edited_time" : "2025-09-23T22:57:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "heading_2",
+  "heading_2" : {
+    "rich_text" : [ {
+      "type" : "text",
+      "text" : {
+        "content" : "Organizing Pages",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "Organizing Pages",
+      "href" : null
+    } ],
+    "is_toggleable" : false,
+    "color" : "default"
+  }
+}, {
+  "object" : "block",
+  "id" : "277f521e-2b70-80ca-8690-c1ffdd6dd42e",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "277f521e-2b70-8059-aacb-e49e1f753e13"
+  },
+  "created_time" : "2025-09-23T22:57:00.000Z",
+  "last_edited_time" : "2025-09-23T22:57:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "paragraph",
+  "paragraph" : {
+    "rich_text" : [ {
+      "type" : "text",
+      "text" : {
+        "content" : "Instead of using folders, Notion lets you nest pages inside pages. Type ",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "Instead of using folders, Notion lets you nest pages inside pages. Type ",
+      "href" : null
+    }, {
+      "type" : "text",
+      "text" : {
+        "content" : "/page",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : true,
+        "color" : "default"
+      },
+      "plain_text" : "/page",
+      "href" : null
+    }, {
+      "type" : "text",
+      "text" : {
+        "content" : " and press ",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : " and press ",
+      "href" : null
+    }, {
+      "type" : "text",
+      "text" : {
+        "content" : "enter",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : true,
+        "color" : "default"
+      },
+      "plain_text" : "enter",
+      "href" : null
+    }, {
+      "type" : "text",
+      "text" : {
+        "content" : " to create a sub-page inside a page. Like this:",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : " to create a sub-page inside a page. Like this:",
+      "href" : null
+    } ],
+    "color" : "default"
+  }
+}, {
+  "object" : "block",
+  "id" : "277f521e-2b70-80b9-ac9e-d0790e0e8c3e",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "277f521e-2b70-8059-aacb-e49e1f753e13"
+  },
+  "created_time" : "2025-09-23T22:57:00.000Z",
+  "last_edited_time" : "2025-09-24T00:14:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "heading_1",
+  "heading_1" : {
+    "rich_text" : [ {
+      "type" : "text",
+      "text" : {
+        "content" : "Advanced Techniques",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "Advanced Techniques",
+      "href" : null
+    } ],
+    "is_toggleable" : false,
+    "color" : "default"
+  }
+}, {
+  "object" : "block",
+  "id" : "277f521e-2b70-8080-acf0-ca5010b7f996",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "277f521e-2b70-8059-aacb-e49e1f753e13"
+  },
+  "created_time" : "2025-09-23T22:57:00.000Z",
+  "last_edited_time" : "2025-09-23T22:57:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : true,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "child_page",
+  "child_page" : {
+    "title" : "How to use verification"
+  },
+  "children" : [ {
+    "object" : "block",
+    "id" : "277f521e-2b70-8098-9195-f08fcd85b6b4",
+    "parent" : {
+      "type" : "page_id",
+      "page_id" : "277f521e-2b70-8080-acf0-ca5010b7f996"
+    },
+    "created_time" : "2025-09-23T22:57:00.000Z",
+    "last_edited_time" : "2025-09-23T22:57:00.000Z",
+    "created_by" : {
+      "object" : "user",
+      "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+    },
+    "last_edited_by" : {
+      "object" : "user",
+      "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+    },
+    "has_children" : false,
+    "archived" : false,
+    "in_trash" : false,
+    "type" : "callout",
+    "callout" : {
+      "rich_text" : [ {
+        "type" : "text",
+        "text" : {
+          "content" : "Notion Tip: An owner of a page can verify it by clicking on the verification button above and choosing to verify the page for either a set amount of time or indefinitely!",
+          "link" : null
+        },
+        "annotations" : {
+          "bold" : false,
+          "italic" : false,
+          "strikethrough" : false,
+          "underline" : false,
+          "code" : false,
+          "color" : "default"
+        },
+        "plain_text" : "Notion Tip: An owner of a page can verify it by clicking on the verification button above and choosing to verify the page for either a set amount of time or indefinitely!",
+        "href" : null
+      } ],
+      "icon" : {
+        "type" : "emoji",
+        "emoji" : "💡"
+      },
+      "color" : "blue_background"
+    }
+  } ]
+}, {
+  "object" : "block",
+  "id" : "277f521e-2b70-80ae-8ed2-f7b70761f410",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "277f521e-2b70-8059-aacb-e49e1f753e13"
+  },
+  "created_time" : "2025-09-23T22:57:00.000Z",
+  "last_edited_time" : "2025-09-23T22:57:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : true,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "child_page",
+  "child_page" : {
+    "title" : "New Page With Tags"
+  },
+  "children" : [ {
+    "object" : "block",
+    "id" : "277f521e-2b70-80d7-a0a7-ce6a02d231a4",
+    "parent" : {
+      "type" : "page_id",
+      "page_id" : "277f521e-2b70-80ae-8ed2-f7b70761f410"
+    },
+    "created_time" : "2025-09-23T22:57:00.000Z",
+    "last_edited_time" : "2025-09-23T22:57:00.000Z",
+    "created_by" : {
+      "object" : "user",
+      "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+    },
+    "last_edited_by" : {
+      "object" : "user",
+      "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+    },
+    "has_children" : false,
+    "archived" : false,
+    "in_trash" : false,
+    "type" : "callout",
+    "callout" : {
+      "rich_text" : [ {
+        "type" : "text",
+        "text" : {
+          "content" : "Notion Tip: Tag pages to let collaborators know what they can expect to use the page for. You can add one or many tags to any page in a wiki.",
+          "link" : null
+        },
+        "annotations" : {
+          "bold" : false,
+          "italic" : false,
+          "strikethrough" : false,
+          "underline" : false,
+          "code" : false,
+          "color" : "default"
+        },
+        "plain_text" : "Notion Tip: Tag pages to let collaborators know what they can expect to use the page for. You can add one or many tags to any page in a wiki.",
+        "href" : null
+      } ],
+      "icon" : {
+        "type" : "emoji",
+        "emoji" : "💡"
+      },
+      "color" : "blue_background"
+    }
+  } ]
+}, {
+  "object" : "block",
+  "id" : "277f521e-2b70-8022-87ce-f5b28a523af1",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "277f521e-2b70-8059-aacb-e49e1f753e13"
+  },
+  "created_time" : "2025-09-23T22:57:00.000Z",
+  "last_edited_time" : "2025-09-23T22:57:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "paragraph",
+  "paragraph" : {
+    "rich_text" : [ {
+      "type" : "text",
+      "text" : {
+        "content" : "Check out this ",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "Check out this ",
+      "href" : null
+    }, {
+      "type" : "text",
+      "text" : {
+        "content" : "Notion Editor 101",
+        "link" : {
+          "url" : "https://www.notion.so/notion/Notion-editor-101-create-and-edit-68c7c67047494fdb87d50185429df93e"
+        }
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "Notion Editor 101",
+      "href" : "https://www.notion.so/notion/Notion-editor-101-create-and-edit-68c7c67047494fdb87d50185429df93e"
+    }, {
+      "type" : "text",
+      "text" : {
+        "content" : " guide for more advanced tips and how-to's.",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : " guide for more advanced tips and how-to's.",
+      "href" : null
+    } ],
+    "color" : "default"
+  }
+}, {
+  "object" : "block",
+  "id" : "277f521e-2b70-80df-ac74-c7bcdc96ac54",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "277f521e-2b70-8059-aacb-e49e1f753e13"
+  },
+  "created_time" : "2025-09-23T22:57:00.000Z",
+  "last_edited_time" : "2025-09-23T22:57:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "paragraph",
+  "paragraph" : {
+    "rich_text" : [ ],
+    "color" : "default"
+  }
+} ]

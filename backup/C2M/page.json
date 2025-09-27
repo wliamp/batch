@@ -1,0 +1,104 @@
+{
+  "object" : "page",
+  "id" : "277f521e-2b70-80f4-baac-db391cc6399e",
+  "created_time" : "2025-09-23T22:57:00.000Z",
+  "last_edited_time" : "2025-09-26T21:47:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "cover" : null,
+  "icon" : {
+    "type" : "emoji",
+    "emoji" : "🗺️"
+  },
+  "parent" : {
+    "type" : "database_id",
+    "database_id" : "277f521e-2b70-80d8-ae3f-f3a85c65d99f"
+  },
+  "archived" : false,
+  "in_trash" : false,
+  "is_locked" : false,
+  "properties" : {
+    "Clarity" : {
+      "id" : "J%3Fx%7D",
+      "type" : "rich_text",
+      "rich_text" : [ {
+        "type" : "text",
+        "text" : {
+          "content" : "Customer to Merchant",
+          "link" : null
+        },
+        "annotations" : {
+          "bold" : false,
+          "italic" : false,
+          "strikethrough" : false,
+          "underline" : false,
+          "code" : false,
+          "color" : "default"
+        },
+        "plain_text" : "Customer to Merchant",
+        "href" : null
+      } ]
+    },
+    "Theme" : {
+      "id" : "VU%5CH",
+      "type" : "select",
+      "select" : {
+        "id" : "285bfc6d-8a00-4079-857f-f89880631c45",
+        "name" : "User Flows",
+        "color" : "pink"
+      }
+    },
+    "Status" : {
+      "id" : "W%5CQ~",
+      "type" : "status",
+      "status" : {
+        "id" : "2e01eea4-a674-4a3c-9258-56c29e5db025",
+        "name" : "Not started",
+        "color" : "default"
+      }
+    },
+    "Sub-Actors" : {
+      "id" : "juX%5C",
+      "type" : "multi_select",
+      "multi_select" : [ ]
+    },
+    "Actor" : {
+      "id" : "rTVy",
+      "type" : "select",
+      "select" : {
+        "id" : ":hXL",
+        "name" : "Customer",
+        "color" : "pink"
+      }
+    },
+    "Name" : {
+      "id" : "title",
+      "type" : "title",
+      "title" : [ {
+        "type" : "text",
+        "text" : {
+          "content" : "C2M",
+          "link" : null
+        },
+        "annotations" : {
+          "bold" : false,
+          "italic" : false,
+          "strikethrough" : false,
+          "underline" : false,
+          "code" : false,
+          "color" : "default"
+        },
+        "plain_text" : "C2M",
+        "href" : null
+      } ]
+    }
+  },
+  "url" : "https://www.notion.so/C2M-277f521e2b7080f4baacdb391cc6399e",
+  "public_url" : null
+}

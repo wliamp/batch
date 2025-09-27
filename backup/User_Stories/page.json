@@ -1,0 +1,294 @@
+{
+  "object" : "database",
+  "id" : "278f521e-2b70-8020-bf7a-c18805532ce2",
+  "cover" : {
+    "type" : "external",
+    "external" : {
+      "url" : "https://images.unsplash.com/photo-1532456745301-b2c645d8b80d?ixlib=rb-4.0.3&q=80&fm=jpg&crop=entropy&cs=tinysrgb"
+    }
+  },
+  "icon" : {
+    "type" : "external",
+    "external" : {
+      "url" : "https://www.notion.so/icons/clipping_yellow.svg"
+    }
+  },
+  "created_time" : "2025-09-24T10:47:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_time" : "2025-09-27T04:33:00.000Z",
+  "title" : [ {
+    "type" : "text",
+    "text" : {
+      "content" : "User Stories",
+      "link" : null
+    },
+    "annotations" : {
+      "bold" : false,
+      "italic" : false,
+      "strikethrough" : false,
+      "underline" : false,
+      "code" : false,
+      "color" : "default"
+    },
+    "plain_text" : "User Stories",
+    "href" : null
+  } ],
+  "description" : [ {
+    "type" : "text",
+    "text" : {
+      "content" : "Kanban boards are helpful for showing items in a database moving through stages of a process",
+      "link" : null
+    },
+    "annotations" : {
+      "bold" : true,
+      "italic" : false,
+      "strikethrough" : false,
+      "underline" : false,
+      "code" : false,
+      "color" : "gray"
+    },
+    "plain_text" : "Kanban boards are helpful for showing items in a database moving through stages of a process",
+    "href" : null
+  }, {
+    "type" : "text",
+    "text" : {
+      "content" : ".\n1. Every card on a Notion board is its own page, where you can add more content. Click on a card to open it.\n2. Move cards along the work-in-progress limits with drag-and-drop\n3. Customize what properties are visible on a card by clicking ",
+      "link" : null
+    },
+    "annotations" : {
+      "bold" : false,
+      "italic" : false,
+      "strikethrough" : false,
+      "underline" : false,
+      "code" : false,
+      "color" : "gray"
+    },
+    "plain_text" : ".\n1. Every card on a Notion board is its own page, where you can add more content. Click on a card to open it.\n2. Move cards along the work-in-progress limits with drag-and-drop\n3. Customize what properties are visible on a card by clicking ",
+    "href" : null
+  }, {
+    "type" : "text",
+    "text" : {
+      "content" : "•••",
+      "link" : null
+    },
+    "annotations" : {
+      "bold" : false,
+      "italic" : false,
+      "strikethrough" : false,
+      "underline" : false,
+      "code" : true,
+      "color" : "gray"
+    },
+    "plain_text" : "•••",
+    "href" : null
+  }, {
+    "type" : "text",
+    "text" : {
+      "content" : " on the top right of the database  > ",
+      "link" : null
+    },
+    "annotations" : {
+      "bold" : false,
+      "italic" : false,
+      "strikethrough" : false,
+      "underline" : false,
+      "code" : false,
+      "color" : "gray"
+    },
+    "plain_text" : " on the top right of the database  > ",
+    "href" : null
+  }, {
+    "type" : "text",
+    "text" : {
+      "content" : "Properties",
+      "link" : null
+    },
+    "annotations" : {
+      "bold" : false,
+      "italic" : false,
+      "strikethrough" : false,
+      "underline" : false,
+      "code" : true,
+      "color" : "gray"
+    },
+    "plain_text" : "Properties",
+    "href" : null
+  }, {
+    "type" : "text",
+    "text" : {
+      "content" : "\n4. You can remove the engineering vs design grouping by clicking ",
+      "link" : null
+    },
+    "annotations" : {
+      "bold" : false,
+      "italic" : false,
+      "strikethrough" : false,
+      "underline" : false,
+      "code" : false,
+      "color" : "gray"
+    },
+    "plain_text" : "\n4. You can remove the engineering vs design grouping by clicking ",
+    "href" : null
+  }, {
+    "type" : "text",
+    "text" : {
+      "content" : "•••",
+      "link" : null
+    },
+    "annotations" : {
+      "bold" : false,
+      "italic" : false,
+      "strikethrough" : false,
+      "underline" : false,
+      "code" : true,
+      "color" : "gray"
+    },
+    "plain_text" : "•••",
+    "href" : null
+  }, {
+    "type" : "text",
+    "text" : {
+      "content" : " on the top right of the database  > ",
+      "link" : null
+    },
+    "annotations" : {
+      "bold" : false,
+      "italic" : false,
+      "strikethrough" : false,
+      "underline" : false,
+      "code" : false,
+      "color" : "gray"
+    },
+    "plain_text" : " on the top right of the database  > ",
+    "href" : null
+  }, {
+    "type" : "text",
+    "text" : {
+      "content" : "Sub-group",
+      "link" : null
+    },
+    "annotations" : {
+      "bold" : false,
+      "italic" : false,
+      "strikethrough" : false,
+      "underline" : false,
+      "code" : true,
+      "color" : "gray"
+    },
+    "plain_text" : "Sub-group",
+    "href" : null
+  } ],
+  "is_inline" : false,
+  "properties" : {
+    "theme" : {
+      "id" : "Yz%40%60",
+      "name" : "theme",
+      "description" : null,
+      "type" : "select",
+      "select" : {
+        "options" : [ {
+          "id" : "ac791d61-6a58-4e2c-b17e-2919264bdbce",
+          "name" : "Customer",
+          "color" : "pink",
+          "description" : null
+        } ]
+      }
+    },
+    "Status" : {
+      "id" : "k%3FMm",
+      "name" : "Status",
+      "description" : null,
+      "type" : "status",
+      "status" : {
+        "options" : [ {
+          "id" : "8e60037a-bd86-4bec-ae03-6dcd5c392137",
+          "name" : "Not started",
+          "color" : "default",
+          "description" : null
+        }, {
+          "id" : "41bab616-0dd9-46e7-8ef6-3f32c7a04032",
+          "name" : "In development",
+          "color" : "blue",
+          "description" : null
+        }, {
+          "id" : "C[hY",
+          "name" : "Testing",
+          "color" : "pink",
+          "description" : null
+        }, {
+          "id" : "|y|:",
+          "name" : "Reviewing",
+          "color" : "purple",
+          "description" : null
+        }, {
+          "id" : "a087807d-e7e9-4e12-8560-44a3d64d6110",
+          "name" : "Done",
+          "color" : "green",
+          "description" : null
+        } ],
+        "groups" : [ {
+          "id" : "7d4cf63c-7659-459a-ac32-05166c1e181c",
+          "name" : "To-do",
+          "color" : "gray",
+          "option_ids" : [ "8e60037a-bd86-4bec-ae03-6dcd5c392137" ]
+        }, {
+          "id" : "f5fe17a9-2c83-48be-9905-de6392578965",
+          "name" : "In progress",
+          "color" : "blue",
+          "option_ids" : [ "C[hY", "41bab616-0dd9-46e7-8ef6-3f32c7a04032", "|y|:" ]
+        }, {
+          "id" : "115d4d3e-711d-4ece-a9bd-3ca0942e74bb",
+          "name" : "Complete",
+          "color" : "green",
+          "option_ids" : [ "a087807d-e7e9-4e12-8560-44a3d64d6110" ]
+        } ]
+      }
+    },
+    "Priority" : {
+      "id" : "lgXk",
+      "name" : "Priority",
+      "description" : "",
+      "type" : "select",
+      "select" : {
+        "options" : [ {
+          "id" : "PBTx",
+          "name" : "P1",
+          "color" : "red",
+          "description" : null
+        }, {
+          "id" : "q_d^",
+          "name" : "P2",
+          "color" : "pink",
+          "description" : null
+        }, {
+          "id" : "_lFc",
+          "name" : "P3",
+          "color" : "purple",
+          "description" : null
+        } ]
+      }
+    },
+    "Title" : {
+      "id" : "title",
+      "name" : "Title",
+      "description" : null,
+      "type" : "title",
+      "title" : { }
+    }
+  },
+  "parent" : {
+    "type" : "workspace",
+    "workspace" : true
+  },
+  "url" : "https://www.notion.so/278f521e2b708020bf7ac18805532ce2",
+  "public_url" : null,
+  "archived" : false,
+  "in_trash" : false
+}

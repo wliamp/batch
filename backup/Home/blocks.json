@@ -1,0 +1,4045 @@
+[ {
+  "object" : "block",
+  "id" : "278f521e-2b70-80f3-b627-e25d52e9be8d",
+  "parent" : {
+    "type" : "database_id",
+    "database_id" : "277f521e-2b70-8004-8473-f06ca9926420"
+  },
+  "created_time" : "2025-09-24T13:00:00.000Z",
+  "last_edited_time" : "2025-09-24T13:22:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : true,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "quote",
+  "quote" : {
+    "rich_text" : [ {
+      "type" : "text",
+      "text" : {
+        "content" : "Idea",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : true,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "Idea",
+      "href" : null
+    } ],
+    "color" : "default"
+  },
+  "children" : [ {
+    "object" : "block",
+    "id" : "278f521e-2b70-80a8-91b4-f2360dc03674",
+    "parent" : {
+      "type" : "block_id",
+      "block_id" : "278f521e-2b70-80f3-b627-e25d52e9be8d"
+    },
+    "created_time" : "2025-09-24T13:15:00.000Z",
+    "last_edited_time" : "2025-09-24T13:18:00.000Z",
+    "created_by" : {
+      "object" : "user",
+      "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+    },
+    "last_edited_by" : {
+      "object" : "user",
+      "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+    },
+    "has_children" : false,
+    "archived" : false,
+    "in_trash" : false,
+    "type" : "paragraph",
+    "paragraph" : {
+      "rich_text" : [ {
+        "type" : "text",
+        "text" : {
+          "content" : "A simulator for an end-to-end payment pipeline (authorize, capture, sale, refund, void). The goal is purely educational: to explore, practice, and understand payment workflows and related backend/cloud technologies. This project is not intended for business use.",
+          "link" : null
+        },
+        "annotations" : {
+          "bold" : false,
+          "italic" : false,
+          "strikethrough" : false,
+          "underline" : false,
+          "code" : false,
+          "color" : "default"
+        },
+        "plain_text" : "A simulator for an end-to-end payment pipeline (authorize, capture, sale, refund, void). The goal is purely educational: to explore, practice, and understand payment workflows and related backend/cloud technologies. This project is not intended for business use.",
+        "href" : null
+      } ],
+      "color" : "default"
+    }
+  } ]
+}, {
+  "object" : "block",
+  "id" : "278f521e-2b70-8044-901a-ff60cf4a9e0b",
+  "parent" : {
+    "type" : "database_id",
+    "database_id" : "277f521e-2b70-8004-8473-f06ca9926420"
+  },
+  "created_time" : "2025-09-24T13:17:00.000Z",
+  "last_edited_time" : "2025-09-24T13:17:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "paragraph",
+  "paragraph" : {
+    "rich_text" : [ ],
+    "color" : "default"
+  }
+}, {
+  "object" : "block",
+  "id" : "278f521e-2b70-8050-aed7-fd62401b66f8",
+  "parent" : {
+    "type" : "database_id",
+    "database_id" : "277f521e-2b70-8004-8473-f06ca9926420"
+  },
+  "created_time" : "2025-09-24T13:00:00.000Z",
+  "last_edited_time" : "2025-09-24T13:20:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : true,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "quote",
+  "quote" : {
+    "rich_text" : [ {
+      "type" : "text",
+      "text" : {
+        "content" : "Motivation",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : true,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "Motivation",
+      "href" : null
+    } ],
+    "color" : "default"
+  },
+  "children" : [ {
+    "object" : "block",
+    "id" : "278f521e-2b70-80b8-b3dc-c0404d8406b4",
+    "parent" : {
+      "type" : "block_id",
+      "block_id" : "278f521e-2b70-8050-aed7-fd62401b66f8"
+    },
+    "created_time" : "2025-09-24T13:16:00.000Z",
+    "last_edited_time" : "2025-09-24T13:18:00.000Z",
+    "created_by" : {
+      "object" : "user",
+      "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+    },
+    "last_edited_by" : {
+      "object" : "user",
+      "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+    },
+    "has_children" : false,
+    "archived" : false,
+    "in_trash" : false,
+    "type" : "paragraph",
+    "paragraph" : {
+      "rich_text" : [ {
+        "type" : "text",
+        "text" : {
+          "content" : "The purpose is to learn and strengthen technical skills, build hands-on experience, and share open-source knowledge. Success is measured by:",
+          "link" : null
+        },
+        "annotations" : {
+          "bold" : false,
+          "italic" : false,
+          "strikethrough" : false,
+          "underline" : false,
+          "code" : false,
+          "color" : "default"
+        },
+        "plain_text" : "The purpose is to learn and strengthen technical skills, build hands-on experience, and share open-source knowledge. Success is measured by:",
+        "href" : null
+      } ],
+      "color" : "default"
+    }
+  }, {
+    "object" : "block",
+    "id" : "278f521e-2b70-808f-a762-ccd2dba6021e",
+    "parent" : {
+      "type" : "block_id",
+      "block_id" : "278f521e-2b70-8050-aed7-fd62401b66f8"
+    },
+    "created_time" : "2025-09-24T13:16:00.000Z",
+    "last_edited_time" : "2025-09-24T13:18:00.000Z",
+    "created_by" : {
+      "object" : "user",
+      "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+    },
+    "last_edited_by" : {
+      "object" : "user",
+      "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+    },
+    "has_children" : false,
+    "archived" : false,
+    "in_trash" : false,
+    "type" : "bulleted_list_item",
+    "bulleted_list_item" : {
+      "rich_text" : [ {
+        "type" : "text",
+        "text" : {
+          "content" : "Self-deploying the demo on cloud platforms.",
+          "link" : null
+        },
+        "annotations" : {
+          "bold" : false,
+          "italic" : false,
+          "strikethrough" : false,
+          "underline" : false,
+          "code" : false,
+          "color" : "default"
+        },
+        "plain_text" : "Self-deploying the demo on cloud platforms.",
+        "href" : null
+      } ],
+      "color" : "default"
+    }
+  }, {
+    "object" : "block",
+    "id" : "278f521e-2b70-800b-81f5-e77c342759ac",
+    "parent" : {
+      "type" : "block_id",
+      "block_id" : "278f521e-2b70-8050-aed7-fd62401b66f8"
+    },
+    "created_time" : "2025-09-24T13:16:00.000Z",
+    "last_edited_time" : "2025-09-24T13:18:00.000Z",
+    "created_by" : {
+      "object" : "user",
+      "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+    },
+    "last_edited_by" : {
+      "object" : "user",
+      "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+    },
+    "has_children" : false,
+    "archived" : false,
+    "in_trash" : false,
+    "type" : "bulleted_list_item",
+    "bulleted_list_item" : {
+      "rich_text" : [ {
+        "type" : "text",
+        "text" : {
+          "content" : "Publishing the project as open source.",
+          "link" : null
+        },
+        "annotations" : {
+          "bold" : false,
+          "italic" : false,
+          "strikethrough" : false,
+          "underline" : false,
+          "code" : false,
+          "color" : "default"
+        },
+        "plain_text" : "Publishing the project as open source.",
+        "href" : null
+      } ],
+      "color" : "default"
+    }
+  }, {
+    "object" : "block",
+    "id" : "278f521e-2b70-80a9-bbab-f11dd9001b3d",
+    "parent" : {
+      "type" : "block_id",
+      "block_id" : "278f521e-2b70-8050-aed7-fd62401b66f8"
+    },
+    "created_time" : "2025-09-24T13:16:00.000Z",
+    "last_edited_time" : "2025-09-24T13:18:00.000Z",
+    "created_by" : {
+      "object" : "user",
+      "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+    },
+    "last_edited_by" : {
+      "object" : "user",
+      "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+    },
+    "has_children" : false,
+    "archived" : false,
+    "in_trash" : false,
+    "type" : "bulleted_list_item",
+    "bulleted_list_item" : {
+      "rich_text" : [ {
+        "type" : "text",
+        "text" : {
+          "content" : "Receiving minimal community engagement (e.g., someone forks the repo, reaches out for discussion, or asks to join the research team).",
+          "link" : null
+        },
+        "annotations" : {
+          "bold" : false,
+          "italic" : false,
+          "strikethrough" : false,
+          "underline" : false,
+          "code" : false,
+          "color" : "default"
+        },
+        "plain_text" : "Receiving minimal community engagement (e.g., someone forks the repo, reaches out for discussion, or asks to join the research team).",
+        "href" : null
+      } ],
+      "color" : "default"
+    }
+  }, {
+    "object" : "block",
+    "id" : "278f521e-2b70-8053-ab6d-eaa920fc597d",
+    "parent" : {
+      "type" : "block_id",
+      "block_id" : "278f521e-2b70-8050-aed7-fd62401b66f8"
+    },
+    "created_time" : "2025-09-24T13:16:00.000Z",
+    "last_edited_time" : "2025-09-24T13:18:00.000Z",
+    "created_by" : {
+      "object" : "user",
+      "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+    },
+    "last_edited_by" : {
+      "object" : "user",
+      "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+    },
+    "has_children" : false,
+    "archived" : false,
+    "in_trash" : false,
+    "type" : "bulleted_list_item",
+    "bulleted_list_item" : {
+      "rich_text" : [ {
+        "type" : "text",
+        "text" : {
+          "content" : "No business objectives, only research and knowledge exchange.",
+          "link" : null
+        },
+        "annotations" : {
+          "bold" : false,
+          "italic" : false,
+          "strikethrough" : false,
+          "underline" : false,
+          "code" : false,
+          "color" : "default"
+        },
+        "plain_text" : "No business objectives, only research and knowledge exchange.",
+        "href" : null
+      } ],
+      "color" : "default"
+    }
+  } ]
+}, {
+  "object" : "block",
+  "id" : "278f521e-2b70-8043-91ad-ef2eee5324ae",
+  "parent" : {
+    "type" : "database_id",
+    "database_id" : "277f521e-2b70-8004-8473-f06ca9926420"
+  },
+  "created_time" : "2025-09-24T13:17:00.000Z",
+  "last_edited_time" : "2025-09-24T13:17:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "paragraph",
+  "paragraph" : {
+    "rich_text" : [ ],
+    "color" : "default"
+  }
+}, {
+  "object" : "block",
+  "id" : "278f521e-2b70-806b-8a75-d4ebdda77f18",
+  "parent" : {
+    "type" : "database_id",
+    "database_id" : "277f521e-2b70-8004-8473-f06ca9926420"
+  },
+  "created_time" : "2025-09-24T13:15:00.000Z",
+  "last_edited_time" : "2025-09-24T13:20:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : true,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "quote",
+  "quote" : {
+    "rich_text" : [ {
+      "type" : "text",
+      "text" : {
+        "content" : "Success Criteria",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : true,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "Success Criteria",
+      "href" : null
+    } ],
+    "color" : "default"
+  },
+  "children" : [ {
+    "object" : "block",
+    "id" : "278f521e-2b70-80f3-bd5b-fdd43f541fdb",
+    "parent" : {
+      "type" : "block_id",
+      "block_id" : "278f521e-2b70-806b-8a75-d4ebdda77f18"
+    },
+    "created_time" : "2025-09-24T13:17:00.000Z",
+    "last_edited_time" : "2025-09-24T13:18:00.000Z",
+    "created_by" : {
+      "object" : "user",
+      "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+    },
+    "last_edited_by" : {
+      "object" : "user",
+      "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+    },
+    "has_children" : false,
+    "archived" : false,
+    "in_trash" : false,
+    "type" : "paragraph",
+    "paragraph" : {
+      "rich_text" : [ {
+        "type" : "text",
+        "text" : {
+          "content" : "The project is successful if it can run as a demo, be deployed on at least one cloud provider, and have open-source visibility that sparks knowledge-sharing interest.",
+          "link" : null
+        },
+        "annotations" : {
+          "bold" : false,
+          "italic" : false,
+          "strikethrough" : false,
+          "underline" : false,
+          "code" : false,
+          "color" : "default"
+        },
+        "plain_text" : "The project is successful if it can run as a demo, be deployed on at least one cloud provider, and have open-source visibility that sparks knowledge-sharing interest.",
+        "href" : null
+      } ],
+      "color" : "default"
+    }
+  } ]
+}, {
+  "object" : "block",
+  "id" : "278f521e-2b70-802f-9a34-dc2fab9cc050",
+  "parent" : {
+    "type" : "database_id",
+    "database_id" : "277f521e-2b70-8004-8473-f06ca9926420"
+  },
+  "created_time" : "2025-09-24T13:18:00.000Z",
+  "last_edited_time" : "2025-09-24T13:18:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "paragraph",
+  "paragraph" : {
+    "rich_text" : [ ],
+    "color" : "default"
+  }
+}, {
+  "object" : "block",
+  "id" : "278f521e-2b70-8008-9de6-e6cc1b10833e",
+  "parent" : {
+    "type" : "database_id",
+    "database_id" : "277f521e-2b70-8004-8473-f06ca9926420"
+  },
+  "created_time" : "2025-09-24T13:15:00.000Z",
+  "last_edited_time" : "2025-09-24T13:22:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : true,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "quote",
+  "quote" : {
+    "rich_text" : [ {
+      "type" : "text",
+      "text" : {
+        "content" : "Resources",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : true,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "Resources",
+      "href" : null
+    } ],
+    "color" : "default"
+  },
+  "children" : [ {
+    "object" : "block",
+    "id" : "278f521e-2b70-8011-9771-eefa6faea23a",
+    "parent" : {
+      "type" : "block_id",
+      "block_id" : "278f521e-2b70-8008-9de6-e6cc1b10833e"
+    },
+    "created_time" : "2025-09-24T13:18:00.000Z",
+    "last_edited_time" : "2025-09-24T13:18:00.000Z",
+    "created_by" : {
+      "object" : "user",
+      "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+    },
+    "last_edited_by" : {
+      "object" : "user",
+      "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+    },
+    "has_children" : false,
+    "archived" : false,
+    "in_trash" : false,
+    "type" : "bulleted_list_item",
+    "bulleted_list_item" : {
+      "rich_text" : [ {
+        "type" : "text",
+        "text" : {
+          "content" : "Team: 1 developer (myself).",
+          "link" : null
+        },
+        "annotations" : {
+          "bold" : false,
+          "italic" : false,
+          "strikethrough" : false,
+          "underline" : false,
+          "code" : false,
+          "color" : "default"
+        },
+        "plain_text" : "Team: 1 developer (myself).",
+        "href" : null
+      } ],
+      "color" : "default"
+    }
+  }, {
+    "object" : "block",
+    "id" : "278f521e-2b70-8059-89c8-f9b3bb59481c",
+    "parent" : {
+      "type" : "block_id",
+      "block_id" : "278f521e-2b70-8008-9de6-e6cc1b10833e"
+    },
+    "created_time" : "2025-09-24T13:18:00.000Z",
+    "last_edited_time" : "2025-09-24T13:18:00.000Z",
+    "created_by" : {
+      "object" : "user",
+      "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+    },
+    "last_edited_by" : {
+      "object" : "user",
+      "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+    },
+    "has_children" : false,
+    "archived" : false,
+    "in_trash" : false,
+    "type" : "bulleted_list_item",
+    "bulleted_list_item" : {
+      "rich_text" : [ {
+        "type" : "text",
+        "text" : {
+          "content" : "Time: ~3 hours per day.",
+          "link" : null
+        },
+        "annotations" : {
+          "bold" : false,
+          "italic" : false,
+          "strikethrough" : false,
+          "underline" : false,
+          "code" : false,
+          "color" : "default"
+        },
+        "plain_text" : "Time: ~3 hours per day.",
+        "href" : null
+      } ],
+      "color" : "default"
+    }
+  }, {
+    "object" : "block",
+    "id" : "278f521e-2b70-8042-8d52-dcb553a92105",
+    "parent" : {
+      "type" : "block_id",
+      "block_id" : "278f521e-2b70-8008-9de6-e6cc1b10833e"
+    },
+    "created_time" : "2025-09-24T13:18:00.000Z",
+    "last_edited_time" : "2025-09-24T13:18:00.000Z",
+    "created_by" : {
+      "object" : "user",
+      "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+    },
+    "last_edited_by" : {
+      "object" : "user",
+      "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+    },
+    "has_children" : false,
+    "archived" : false,
+    "in_trash" : false,
+    "type" : "bulleted_list_item",
+    "bulleted_list_item" : {
+      "rich_text" : [ {
+        "type" : "text",
+        "text" : {
+          "content" : "Budget: none (free-tier services only).",
+          "link" : null
+        },
+        "annotations" : {
+          "bold" : false,
+          "italic" : false,
+          "strikethrough" : false,
+          "underline" : false,
+          "code" : false,
+          "color" : "default"
+        },
+        "plain_text" : "Budget: none (free-tier services only).",
+        "href" : null
+      } ],
+      "color" : "default"
+    }
+  }, {
+    "object" : "block",
+    "id" : "278f521e-2b70-807e-8aae-ebf76b8513d6",
+    "parent" : {
+      "type" : "block_id",
+      "block_id" : "278f521e-2b70-8008-9de6-e6cc1b10833e"
+    },
+    "created_time" : "2025-09-24T13:18:00.000Z",
+    "last_edited_time" : "2025-09-24T13:18:00.000Z",
+    "created_by" : {
+      "object" : "user",
+      "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+    },
+    "last_edited_by" : {
+      "object" : "user",
+      "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+    },
+    "has_children" : true,
+    "archived" : false,
+    "in_trash" : false,
+    "type" : "bulleted_list_item",
+    "bulleted_list_item" : {
+      "rich_text" : [ {
+        "type" : "text",
+        "text" : {
+          "content" : "Tech stack (one per category, all open-source):",
+          "link" : null
+        },
+        "annotations" : {
+          "bold" : false,
+          "italic" : false,
+          "strikethrough" : false,
+          "underline" : false,
+          "code" : false,
+          "color" : "default"
+        },
+        "plain_text" : "Tech stack (one per category, all open-source):",
+        "href" : null
+      } ],
+      "color" : "default"
+    },
+    "children" : [ {
+      "object" : "block",
+      "id" : "278f521e-2b70-800f-a027-c0d4f704749e",
+      "parent" : {
+        "type" : "block_id",
+        "block_id" : "278f521e-2b70-807e-8aae-ebf76b8513d6"
+      },
+      "created_time" : "2025-09-24T13:18:00.000Z",
+      "last_edited_time" : "2025-09-24T13:18:00.000Z",
+      "created_by" : {
+        "object" : "user",
+        "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+      },
+      "last_edited_by" : {
+        "object" : "user",
+        "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+      },
+      "has_children" : false,
+      "archived" : false,
+      "in_trash" : false,
+      "type" : "bulleted_list_item",
+      "bulleted_list_item" : {
+        "rich_text" : [ {
+          "type" : "text",
+          "text" : {
+            "content" : "Backend: ",
+            "link" : null
+          },
+          "annotations" : {
+            "bold" : false,
+            "italic" : false,
+            "strikethrough" : false,
+            "underline" : false,
+            "code" : false,
+            "color" : "default"
+          },
+          "plain_text" : "Backend: ",
+          "href" : null
+        }, {
+          "type" : "text",
+          "text" : {
+            "content" : "Spring Boot",
+            "link" : null
+          },
+          "annotations" : {
+            "bold" : true,
+            "italic" : false,
+            "strikethrough" : false,
+            "underline" : false,
+            "code" : false,
+            "color" : "default"
+          },
+          "plain_text" : "Spring Boot",
+          "href" : null
+        } ],
+        "color" : "default"
+      }
+    }, {
+      "object" : "block",
+      "id" : "278f521e-2b70-8090-8e47-f2ac15eaf2f4",
+      "parent" : {
+        "type" : "block_id",
+        "block_id" : "278f521e-2b70-807e-8aae-ebf76b8513d6"
+      },
+      "created_time" : "2025-09-24T13:18:00.000Z",
+      "last_edited_time" : "2025-09-24T13:18:00.000Z",
+      "created_by" : {
+        "object" : "user",
+        "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+      },
+      "last_edited_by" : {
+        "object" : "user",
+        "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+      },
+      "has_children" : false,
+      "archived" : false,
+      "in_trash" : false,
+      "type" : "bulleted_list_item",
+      "bulleted_list_item" : {
+        "rich_text" : [ {
+          "type" : "text",
+          "text" : {
+            "content" : "Database: ",
+            "link" : null
+          },
+          "annotations" : {
+            "bold" : false,
+            "italic" : false,
+            "strikethrough" : false,
+            "underline" : false,
+            "code" : false,
+            "color" : "default"
+          },
+          "plain_text" : "Database: ",
+          "href" : null
+        }, {
+          "type" : "text",
+          "text" : {
+            "content" : "PostgreSQL",
+            "link" : null
+          },
+          "annotations" : {
+            "bold" : true,
+            "italic" : false,
+            "strikethrough" : false,
+            "underline" : false,
+            "code" : false,
+            "color" : "default"
+          },
+          "plain_text" : "PostgreSQL",
+          "href" : null
+        } ],
+        "color" : "default"
+      }
+    }, {
+      "object" : "block",
+      "id" : "278f521e-2b70-80f3-a844-c24631c55862",
+      "parent" : {
+        "type" : "block_id",
+        "block_id" : "278f521e-2b70-807e-8aae-ebf76b8513d6"
+      },
+      "created_time" : "2025-09-24T13:18:00.000Z",
+      "last_edited_time" : "2025-09-24T13:18:00.000Z",
+      "created_by" : {
+        "object" : "user",
+        "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+      },
+      "last_edited_by" : {
+        "object" : "user",
+        "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+      },
+      "has_children" : false,
+      "archived" : false,
+      "in_trash" : false,
+      "type" : "bulleted_list_item",
+      "bulleted_list_item" : {
+        "rich_text" : [ {
+          "type" : "text",
+          "text" : {
+            "content" : "Cloud: ",
+            "link" : null
+          },
+          "annotations" : {
+            "bold" : false,
+            "italic" : false,
+            "strikethrough" : false,
+            "underline" : false,
+            "code" : false,
+            "color" : "default"
+          },
+          "plain_text" : "Cloud: ",
+          "href" : null
+        }, {
+          "type" : "text",
+          "text" : {
+            "content" : "AWS Free Tier",
+            "link" : null
+          },
+          "annotations" : {
+            "bold" : true,
+            "italic" : false,
+            "strikethrough" : false,
+            "underline" : false,
+            "code" : false,
+            "color" : "default"
+          },
+          "plain_text" : "AWS Free Tier",
+          "href" : null
+        } ],
+        "color" : "default"
+      }
+    }, {
+      "object" : "block",
+      "id" : "278f521e-2b70-80b0-8e16-e68fd91cfc42",
+      "parent" : {
+        "type" : "block_id",
+        "block_id" : "278f521e-2b70-807e-8aae-ebf76b8513d6"
+      },
+      "created_time" : "2025-09-24T13:18:00.000Z",
+      "last_edited_time" : "2025-09-24T13:18:00.000Z",
+      "created_by" : {
+        "object" : "user",
+        "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+      },
+      "last_edited_by" : {
+        "object" : "user",
+        "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+      },
+      "has_children" : false,
+      "archived" : false,
+      "in_trash" : false,
+      "type" : "bulleted_list_item",
+      "bulleted_list_item" : {
+        "rich_text" : [ {
+          "type" : "text",
+          "text" : {
+            "content" : "Version control: ",
+            "link" : null
+          },
+          "annotations" : {
+            "bold" : false,
+            "italic" : false,
+            "strikethrough" : false,
+            "underline" : false,
+            "code" : false,
+            "color" : "default"
+          },
+          "plain_text" : "Version control: ",
+          "href" : null
+        }, {
+          "type" : "text",
+          "text" : {
+            "content" : "GitHub",
+            "link" : null
+          },
+          "annotations" : {
+            "bold" : true,
+            "italic" : false,
+            "strikethrough" : false,
+            "underline" : false,
+            "code" : false,
+            "color" : "default"
+          },
+          "plain_text" : "GitHub",
+          "href" : null
+        } ],
+        "color" : "default"
+      }
+    }, {
+      "object" : "block",
+      "id" : "278f521e-2b70-8012-a88a-efb1c37ea345",
+      "parent" : {
+        "type" : "block_id",
+        "block_id" : "278f521e-2b70-807e-8aae-ebf76b8513d6"
+      },
+      "created_time" : "2025-09-24T13:18:00.000Z",
+      "last_edited_time" : "2025-09-24T13:18:00.000Z",
+      "created_by" : {
+        "object" : "user",
+        "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+      },
+      "last_edited_by" : {
+        "object" : "user",
+        "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+      },
+      "has_children" : false,
+      "archived" : false,
+      "in_trash" : false,
+      "type" : "bulleted_list_item",
+      "bulleted_list_item" : {
+        "rich_text" : [ {
+          "type" : "text",
+          "text" : {
+            "content" : "CI/CD: ",
+            "link" : null
+          },
+          "annotations" : {
+            "bold" : false,
+            "italic" : false,
+            "strikethrough" : false,
+            "underline" : false,
+            "code" : false,
+            "color" : "default"
+          },
+          "plain_text" : "CI/CD: ",
+          "href" : null
+        }, {
+          "type" : "text",
+          "text" : {
+            "content" : "GitHub Actions",
+            "link" : null
+          },
+          "annotations" : {
+            "bold" : true,
+            "italic" : false,
+            "strikethrough" : false,
+            "underline" : false,
+            "code" : false,
+            "color" : "default"
+          },
+          "plain_text" : "GitHub Actions",
+          "href" : null
+        } ],
+        "color" : "default"
+      }
+    }, {
+      "object" : "block",
+      "id" : "278f521e-2b70-8024-9372-e35a91b7c8fc",
+      "parent" : {
+        "type" : "block_id",
+        "block_id" : "278f521e-2b70-807e-8aae-ebf76b8513d6"
+      },
+      "created_time" : "2025-09-24T13:18:00.000Z",
+      "last_edited_time" : "2025-09-24T13:18:00.000Z",
+      "created_by" : {
+        "object" : "user",
+        "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+      },
+      "last_edited_by" : {
+        "object" : "user",
+        "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+      },
+      "has_children" : false,
+      "archived" : false,
+      "in_trash" : false,
+      "type" : "bulleted_list_item",
+      "bulleted_list_item" : {
+        "rich_text" : [ {
+          "type" : "text",
+          "text" : {
+            "content" : "Containerization: ",
+            "link" : null
+          },
+          "annotations" : {
+            "bold" : false,
+            "italic" : false,
+            "strikethrough" : false,
+            "underline" : false,
+            "code" : false,
+            "color" : "default"
+          },
+          "plain_text" : "Containerization: ",
+          "href" : null
+        }, {
+          "type" : "text",
+          "text" : {
+            "content" : "Docker",
+            "link" : null
+          },
+          "annotations" : {
+            "bold" : true,
+            "italic" : false,
+            "strikethrough" : false,
+            "underline" : false,
+            "code" : false,
+            "color" : "default"
+          },
+          "plain_text" : "Docker",
+          "href" : null
+        } ],
+        "color" : "default"
+      }
+    } ]
+  } ]
+}, {
+  "object" : "block",
+  "id" : "277f521e-2b70-80ca-8607-f934a43500ac",
+  "parent" : {
+    "type" : "database_id",
+    "database_id" : "277f521e-2b70-8004-8473-f06ca9926420"
+  },
+  "created_time" : "2025-09-23T22:57:00.000Z",
+  "last_edited_time" : "2025-09-23T22:57:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "divider",
+  "divider" : { }
+}, {
+  "object" : "block",
+  "id" : "277f521e-2b70-808d-826b-c2b865ba83c8",
+  "parent" : {
+    "type" : "database_id",
+    "database_id" : "277f521e-2b70-8004-8473-f06ca9926420"
+  },
+  "created_time" : "2025-09-23T22:57:00.000Z",
+  "last_edited_time" : "2025-09-23T22:57:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : true,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "column_list",
+  "column_list" : { },
+  "children" : [ {
+    "object" : "block",
+    "id" : "277f521e-2b70-8073-a3fa-e41c68a93559",
+    "parent" : {
+      "type" : "block_id",
+      "block_id" : "277f521e-2b70-808d-826b-c2b865ba83c8"
+    },
+    "created_time" : "2025-09-23T22:57:00.000Z",
+    "last_edited_time" : "2025-09-24T13:05:00.000Z",
+    "created_by" : {
+      "object" : "user",
+      "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+    },
+    "last_edited_by" : {
+      "object" : "user",
+      "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+    },
+    "has_children" : true,
+    "archived" : false,
+    "in_trash" : false,
+    "type" : "column",
+    "column" : {
+      "width_ratio" : 0.5
+    },
+    "children" : [ {
+      "object" : "block",
+      "id" : "277f521e-2b70-80c7-be2a-dcb65da6fb8c",
+      "parent" : {
+        "type" : "block_id",
+        "block_id" : "277f521e-2b70-8073-a3fa-e41c68a93559"
+      },
+      "created_time" : "2025-09-23T22:57:00.000Z",
+      "last_edited_time" : "2025-09-23T22:57:00.000Z",
+      "created_by" : {
+        "object" : "user",
+        "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+      },
+      "last_edited_by" : {
+        "object" : "user",
+        "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+      },
+      "has_children" : false,
+      "archived" : false,
+      "in_trash" : false,
+      "type" : "heading_2",
+      "heading_2" : {
+        "rich_text" : [ {
+          "type" : "text",
+          "text" : {
+            "content" : "Team",
+            "link" : null
+          },
+          "annotations" : {
+            "bold" : false,
+            "italic" : false,
+            "strikethrough" : false,
+            "underline" : false,
+            "code" : false,
+            "color" : "default"
+          },
+          "plain_text" : "Team",
+          "href" : null
+        } ],
+        "is_toggleable" : false,
+        "color" : "default"
+      }
+    }, {
+      "object" : "block",
+      "id" : "277f521e-2b70-8053-9fd1-e818db9a3f1d",
+      "parent" : {
+        "type" : "block_id",
+        "block_id" : "277f521e-2b70-8073-a3fa-e41c68a93559"
+      },
+      "created_time" : "2025-09-23T22:57:00.000Z",
+      "last_edited_time" : "2025-09-23T22:57:00.000Z",
+      "created_by" : {
+        "object" : "user",
+        "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+      },
+      "last_edited_by" : {
+        "object" : "user",
+        "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+      },
+      "has_children" : false,
+      "archived" : false,
+      "in_trash" : false,
+      "type" : "divider",
+      "divider" : { }
+    }, {
+      "object" : "block",
+      "id" : "277f521e-2b70-8059-aacb-e49e1f753e13",
+      "parent" : {
+        "type" : "block_id",
+        "block_id" : "277f521e-2b70-8073-a3fa-e41c68a93559"
+      },
+      "created_time" : "2025-09-23T22:57:00.000Z",
+      "last_edited_time" : "2025-09-24T00:14:00.000Z",
+      "created_by" : {
+        "object" : "user",
+        "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+      },
+      "last_edited_by" : {
+        "object" : "user",
+        "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+      },
+      "has_children" : true,
+      "archived" : false,
+      "in_trash" : false,
+      "type" : "child_page",
+      "child_page" : {
+        "title" : "Getting Started"
+      },
+      "children" : [ {
+        "object" : "block",
+        "id" : "277f521e-2b70-80fe-8d91-ccd204b1b130",
+        "parent" : {
+          "type" : "page_id",
+          "page_id" : "277f521e-2b70-8059-aacb-e49e1f753e13"
+        },
+        "created_time" : "2025-09-23T22:57:00.000Z",
+        "last_edited_time" : "2025-09-23T22:57:00.000Z",
+        "created_by" : {
+          "object" : "user",
+          "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+        },
+        "last_edited_by" : {
+          "object" : "user",
+          "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+        },
+        "has_children" : false,
+        "archived" : false,
+        "in_trash" : false,
+        "type" : "callout",
+        "callout" : {
+          "rich_text" : [ {
+            "type" : "text",
+            "text" : {
+              "content" : "Notion Tip: When creating a page, it's important to give it a clear title and provide some content. This could include verifying the information, summarizing the topic, or sharing your thoughts and opinions on something that matters to you.",
+              "link" : null
+            },
+            "annotations" : {
+              "bold" : false,
+              "italic" : false,
+              "strikethrough" : false,
+              "underline" : false,
+              "code" : false,
+              "color" : "default"
+            },
+            "plain_text" : "Notion Tip: When creating a page, it's important to give it a clear title and provide some content. This could include verifying the information, summarizing the topic, or sharing your thoughts and opinions on something that matters to you.",
+            "href" : null
+          } ],
+          "icon" : {
+            "type" : "emoji",
+            "emoji" : "💡"
+          },
+          "color" : "blue_background"
+        }
+      }, {
+        "object" : "block",
+        "id" : "277f521e-2b70-8053-b006-cb8dcbdcc3b2",
+        "parent" : {
+          "type" : "page_id",
+          "page_id" : "277f521e-2b70-8059-aacb-e49e1f753e13"
+        },
+        "created_time" : "2025-09-23T22:57:00.000Z",
+        "last_edited_time" : "2025-09-23T22:57:00.000Z",
+        "created_by" : {
+          "object" : "user",
+          "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+        },
+        "last_edited_by" : {
+          "object" : "user",
+          "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+        },
+        "has_children" : false,
+        "archived" : false,
+        "in_trash" : false,
+        "type" : "table_of_contents",
+        "table_of_contents" : {
+          "color" : "gray"
+        }
+      }, {
+        "object" : "block",
+        "id" : "277f521e-2b70-8013-b1f2-dd1c0866c0ac",
+        "parent" : {
+          "type" : "page_id",
+          "page_id" : "277f521e-2b70-8059-aacb-e49e1f753e13"
+        },
+        "created_time" : "2025-09-23T22:57:00.000Z",
+        "last_edited_time" : "2025-09-23T22:57:00.000Z",
+        "created_by" : {
+          "object" : "user",
+          "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+        },
+        "last_edited_by" : {
+          "object" : "user",
+          "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+        },
+        "has_children" : false,
+        "archived" : false,
+        "in_trash" : false,
+        "type" : "heading_1",
+        "heading_1" : {
+          "rich_text" : [ {
+            "type" : "text",
+            "text" : {
+              "content" : "The Basics",
+              "link" : null
+            },
+            "annotations" : {
+              "bold" : false,
+              "italic" : false,
+              "strikethrough" : false,
+              "underline" : false,
+              "code" : false,
+              "color" : "default"
+            },
+            "plain_text" : "The Basics",
+            "href" : null
+          } ],
+          "is_toggleable" : false,
+          "color" : "default"
+        }
+      }, {
+        "object" : "block",
+        "id" : "277f521e-2b70-80b0-bc15-cddd9d2e855f",
+        "parent" : {
+          "type" : "page_id",
+          "page_id" : "277f521e-2b70-8059-aacb-e49e1f753e13"
+        },
+        "created_time" : "2025-09-23T22:57:00.000Z",
+        "last_edited_time" : "2025-09-23T22:57:00.000Z",
+        "created_by" : {
+          "object" : "user",
+          "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+        },
+        "last_edited_by" : {
+          "object" : "user",
+          "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+        },
+        "has_children" : false,
+        "archived" : false,
+        "in_trash" : false,
+        "type" : "heading_2",
+        "heading_2" : {
+          "rich_text" : [ {
+            "type" : "text",
+            "text" : {
+              "content" : "Create a Page",
+              "link" : null
+            },
+            "annotations" : {
+              "bold" : false,
+              "italic" : false,
+              "strikethrough" : false,
+              "underline" : false,
+              "code" : false,
+              "color" : "default"
+            },
+            "plain_text" : "Create a Page",
+            "href" : null
+          } ],
+          "is_toggleable" : false,
+          "color" : "default"
+        }
+      }, {
+        "object" : "block",
+        "id" : "277f521e-2b70-80aa-9705-d30dd029a83d",
+        "parent" : {
+          "type" : "page_id",
+          "page_id" : "277f521e-2b70-8059-aacb-e49e1f753e13"
+        },
+        "created_time" : "2025-09-23T22:57:00.000Z",
+        "last_edited_time" : "2025-09-23T22:57:00.000Z",
+        "created_by" : {
+          "object" : "user",
+          "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+        },
+        "last_edited_by" : {
+          "object" : "user",
+          "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+        },
+        "has_children" : false,
+        "archived" : false,
+        "in_trash" : false,
+        "type" : "paragraph",
+        "paragraph" : {
+          "rich_text" : [ {
+            "type" : "text",
+            "text" : {
+              "content" : "In your sidebar, click the ",
+              "link" : null
+            },
+            "annotations" : {
+              "bold" : false,
+              "italic" : false,
+              "strikethrough" : false,
+              "underline" : false,
+              "code" : false,
+              "color" : "default"
+            },
+            "plain_text" : "In your sidebar, click the ",
+            "href" : null
+          }, {
+            "type" : "text",
+            "text" : {
+              "content" : "+",
+              "link" : null
+            },
+            "annotations" : {
+              "bold" : false,
+              "italic" : false,
+              "strikethrough" : false,
+              "underline" : false,
+              "code" : true,
+              "color" : "default"
+            },
+            "plain_text" : "+",
+            "href" : null
+          }, {
+            "type" : "text",
+            "text" : {
+              "content" : " that appears next to the word ",
+              "link" : null
+            },
+            "annotations" : {
+              "bold" : false,
+              "italic" : false,
+              "strikethrough" : false,
+              "underline" : false,
+              "code" : false,
+              "color" : "default"
+            },
+            "plain_text" : " that appears next to the word ",
+            "href" : null
+          }, {
+            "type" : "text",
+            "text" : {
+              "content" : "Workspace",
+              "link" : null
+            },
+            "annotations" : {
+              "bold" : true,
+              "italic" : false,
+              "strikethrough" : false,
+              "underline" : false,
+              "code" : false,
+              "color" : "default"
+            },
+            "plain_text" : "Workspace",
+            "href" : null
+          }, {
+            "type" : "text",
+            "text" : {
+              "content" : " on hover. A new page will appear. Give it a title and start typing like you would in any other document.",
+              "link" : null
+            },
+            "annotations" : {
+              "bold" : false,
+              "italic" : false,
+              "strikethrough" : false,
+              "underline" : false,
+              "code" : false,
+              "color" : "default"
+            },
+            "plain_text" : " on hover. A new page will appear. Give it a title and start typing like you would in any other document.",
+            "href" : null
+          } ],
+          "color" : "default"
+        }
+      }, {
+        "object" : "block",
+        "id" : "277f521e-2b70-8012-a5b9-e2a8d20040f5",
+        "parent" : {
+          "type" : "page_id",
+          "page_id" : "277f521e-2b70-8059-aacb-e49e1f753e13"
+        },
+        "created_time" : "2025-09-23T22:57:00.000Z",
+        "last_edited_time" : "2025-09-23T22:57:00.000Z",
+        "created_by" : {
+          "object" : "user",
+          "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+        },
+        "last_edited_by" : {
+          "object" : "user",
+          "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+        },
+        "has_children" : false,
+        "archived" : false,
+        "in_trash" : false,
+        "type" : "heading_2",
+        "heading_2" : {
+          "rich_text" : [ {
+            "type" : "text",
+            "text" : {
+              "content" : "Headings",
+              "link" : null
+            },
+            "annotations" : {
+              "bold" : false,
+              "italic" : false,
+              "strikethrough" : false,
+              "underline" : false,
+              "code" : false,
+              "color" : "default"
+            },
+            "plain_text" : "Headings",
+            "href" : null
+          } ],
+          "is_toggleable" : false,
+          "color" : "default"
+        }
+      }, {
+        "object" : "block",
+        "id" : "277f521e-2b70-804f-8813-c0a35c459e57",
+        "parent" : {
+          "type" : "page_id",
+          "page_id" : "277f521e-2b70-8059-aacb-e49e1f753e13"
+        },
+        "created_time" : "2025-09-23T22:57:00.000Z",
+        "last_edited_time" : "2025-09-23T22:57:00.000Z",
+        "created_by" : {
+          "object" : "user",
+          "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+        },
+        "last_edited_by" : {
+          "object" : "user",
+          "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+        },
+        "has_children" : false,
+        "archived" : false,
+        "in_trash" : false,
+        "type" : "paragraph",
+        "paragraph" : {
+          "rich_text" : [ {
+            "type" : "text",
+            "text" : {
+              "content" : "You can add headings and subheadings in one of two ways:",
+              "link" : null
+            },
+            "annotations" : {
+              "bold" : false,
+              "italic" : false,
+              "strikethrough" : false,
+              "underline" : false,
+              "code" : false,
+              "color" : "default"
+            },
+            "plain_text" : "You can add headings and subheadings in one of two ways:",
+            "href" : null
+          } ],
+          "color" : "default"
+        }
+      }, {
+        "object" : "block",
+        "id" : "277f521e-2b70-8058-8f0e-f45c768f8b7e",
+        "parent" : {
+          "type" : "page_id",
+          "page_id" : "277f521e-2b70-8059-aacb-e49e1f753e13"
+        },
+        "created_time" : "2025-09-23T22:57:00.000Z",
+        "last_edited_time" : "2025-09-23T22:57:00.000Z",
+        "created_by" : {
+          "object" : "user",
+          "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+        },
+        "last_edited_by" : {
+          "object" : "user",
+          "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+        },
+        "has_children" : false,
+        "archived" : false,
+        "in_trash" : false,
+        "type" : "bulleted_list_item",
+        "bulleted_list_item" : {
+          "rich_text" : [ {
+            "type" : "text",
+            "text" : {
+              "content" : "Type ",
+              "link" : null
+            },
+            "annotations" : {
+              "bold" : false,
+              "italic" : false,
+              "strikethrough" : false,
+              "underline" : false,
+              "code" : false,
+              "color" : "default"
+            },
+            "plain_text" : "Type ",
+            "href" : null
+          }, {
+            "type" : "text",
+            "text" : {
+              "content" : "/heading",
+              "link" : null
+            },
+            "annotations" : {
+              "bold" : false,
+              "italic" : false,
+              "strikethrough" : false,
+              "underline" : false,
+              "code" : true,
+              "color" : "default"
+            },
+            "plain_text" : "/heading",
+            "href" : null
+          }, {
+            "type" : "text",
+            "text" : {
+              "content" : " or ",
+              "link" : null
+            },
+            "annotations" : {
+              "bold" : false,
+              "italic" : false,
+              "strikethrough" : false,
+              "underline" : false,
+              "code" : false,
+              "color" : "default"
+            },
+            "plain_text" : " or ",
+            "href" : null
+          }, {
+            "type" : "text",
+            "text" : {
+              "content" : "/h1",
+              "link" : null
+            },
+            "annotations" : {
+              "bold" : false,
+              "italic" : false,
+              "strikethrough" : false,
+              "underline" : false,
+              "code" : true,
+              "color" : "default"
+            },
+            "plain_text" : "/h1",
+            "href" : null
+          }, {
+            "type" : "text",
+            "text" : {
+              "content" : ", ",
+              "link" : null
+            },
+            "annotations" : {
+              "bold" : false,
+              "italic" : false,
+              "strikethrough" : false,
+              "underline" : false,
+              "code" : false,
+              "color" : "default"
+            },
+            "plain_text" : ", ",
+            "href" : null
+          }, {
+            "type" : "text",
+            "text" : {
+              "content" : "/h2",
+              "link" : null
+            },
+            "annotations" : {
+              "bold" : false,
+              "italic" : false,
+              "strikethrough" : false,
+              "underline" : false,
+              "code" : true,
+              "color" : "default"
+            },
+            "plain_text" : "/h2",
+            "href" : null
+          }, {
+            "type" : "text",
+            "text" : {
+              "content" : ", or ",
+              "link" : null
+            },
+            "annotations" : {
+              "bold" : false,
+              "italic" : false,
+              "strikethrough" : false,
+              "underline" : false,
+              "code" : false,
+              "color" : "default"
+            },
+            "plain_text" : ", or ",
+            "href" : null
+          }, {
+            "type" : "text",
+            "text" : {
+              "content" : "/h3",
+              "link" : null
+            },
+            "annotations" : {
+              "bold" : false,
+              "italic" : false,
+              "strikethrough" : false,
+              "underline" : false,
+              "code" : true,
+              "color" : "default"
+            },
+            "plain_text" : "/h3",
+            "href" : null
+          }, {
+            "type" : "text",
+            "text" : {
+              "content" : " to choose the heading size you want.",
+              "link" : null
+            },
+            "annotations" : {
+              "bold" : false,
+              "italic" : false,
+              "strikethrough" : false,
+              "underline" : false,
+              "code" : false,
+              "color" : "default"
+            },
+            "plain_text" : " to choose the heading size you want.",
+            "href" : null
+          } ],
+          "color" : "default"
+        }
+      }, {
+        "object" : "block",
+        "id" : "277f521e-2b70-8057-8f85-ee22b362b3ea",
+        "parent" : {
+          "type" : "page_id",
+          "page_id" : "277f521e-2b70-8059-aacb-e49e1f753e13"
+        },
+        "created_time" : "2025-09-23T22:57:00.000Z",
+        "last_edited_time" : "2025-09-23T22:57:00.000Z",
+        "created_by" : {
+          "object" : "user",
+          "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+        },
+        "last_edited_by" : {
+          "object" : "user",
+          "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+        },
+        "has_children" : true,
+        "archived" : false,
+        "in_trash" : false,
+        "type" : "bulleted_list_item",
+        "bulleted_list_item" : {
+          "rich_text" : [ {
+            "type" : "text",
+            "text" : {
+              "content" : "Use Markdown shortcuts, like ",
+              "link" : null
+            },
+            "annotations" : {
+              "bold" : false,
+              "italic" : false,
+              "strikethrough" : false,
+              "underline" : false,
+              "code" : false,
+              "color" : "default"
+            },
+            "plain_text" : "Use Markdown shortcuts, like ",
+            "href" : null
+          }, {
+            "type" : "text",
+            "text" : {
+              "content" : "#",
+              "link" : null
+            },
+            "annotations" : {
+              "bold" : false,
+              "italic" : false,
+              "strikethrough" : false,
+              "underline" : false,
+              "code" : true,
+              "color" : "default"
+            },
+            "plain_text" : "#",
+            "href" : null
+          }, {
+            "type" : "text",
+            "text" : {
+              "content" : ", ",
+              "link" : null
+            },
+            "annotations" : {
+              "bold" : false,
+              "italic" : false,
+              "strikethrough" : false,
+              "underline" : false,
+              "code" : false,
+              "color" : "default"
+            },
+            "plain_text" : ", ",
+            "href" : null
+          }, {
+            "type" : "text",
+            "text" : {
+              "content" : "##",
+              "link" : null
+            },
+            "annotations" : {
+              "bold" : false,
+              "italic" : false,
+              "strikethrough" : false,
+              "underline" : false,
+              "code" : true,
+              "color" : "default"
+            },
+            "plain_text" : "##",
+            "href" : null
+          }, {
+            "type" : "text",
+            "text" : {
+              "content" : ", and ",
+              "link" : null
+            },
+            "annotations" : {
+              "bold" : false,
+              "italic" : false,
+              "strikethrough" : false,
+              "underline" : false,
+              "code" : false,
+              "color" : "default"
+            },
+            "plain_text" : ", and ",
+            "href" : null
+          }, {
+            "type" : "text",
+            "text" : {
+              "content" : "###",
+              "link" : null
+            },
+            "annotations" : {
+              "bold" : false,
+              "italic" : false,
+              "strikethrough" : false,
+              "underline" : false,
+              "code" : true,
+              "color" : "default"
+            },
+            "plain_text" : "###",
+            "href" : null
+          }, {
+            "type" : "text",
+            "text" : {
+              "content" : ".  ",
+              "link" : null
+            },
+            "annotations" : {
+              "bold" : false,
+              "italic" : false,
+              "strikethrough" : false,
+              "underline" : false,
+              "code" : false,
+              "color" : "default"
+            },
+            "plain_text" : ".  ",
+            "href" : null
+          } ],
+          "color" : "default"
+        },
+        "children" : [ {
+          "object" : "block",
+          "id" : "277f521e-2b70-808a-871d-c5d20d93d947",
+          "parent" : {
+            "type" : "block_id",
+            "block_id" : "277f521e-2b70-8057-8f85-ee22b362b3ea"
+          },
+          "created_time" : "2025-09-23T22:57:00.000Z",
+          "last_edited_time" : "2025-09-23T22:57:00.000Z",
+          "created_by" : {
+            "object" : "user",
+            "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+          },
+          "last_edited_by" : {
+            "object" : "user",
+            "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+          },
+          "has_children" : false,
+          "archived" : false,
+          "in_trash" : false,
+          "type" : "bulleted_list_item",
+          "bulleted_list_item" : {
+            "rich_text" : [ {
+              "type" : "text",
+              "text" : {
+                "content" : "Create inline code by wrapping text with ",
+                "link" : null
+              },
+              "annotations" : {
+                "bold" : false,
+                "italic" : false,
+                "strikethrough" : false,
+                "underline" : false,
+                "code" : false,
+                "color" : "default"
+              },
+              "plain_text" : "Create inline code by wrapping text with ",
+              "href" : null
+            }, {
+              "type" : "text",
+              "text" : {
+                "content" : "`",
+                "link" : null
+              },
+              "annotations" : {
+                "bold" : false,
+                "italic" : false,
+                "strikethrough" : false,
+                "underline" : false,
+                "code" : true,
+                "color" : "default"
+              },
+              "plain_text" : "`",
+              "href" : null
+            }, {
+              "type" : "text",
+              "text" : {
+                "content" : " (or with the shortcut ",
+                "link" : null
+              },
+              "annotations" : {
+                "bold" : false,
+                "italic" : false,
+                "strikethrough" : false,
+                "underline" : false,
+                "code" : false,
+                "color" : "default"
+              },
+              "plain_text" : " (or with the shortcut ",
+              "href" : null
+            }, {
+              "type" : "text",
+              "text" : {
+                "content" : "cmd/ctrl + e",
+                "link" : null
+              },
+              "annotations" : {
+                "bold" : false,
+                "italic" : false,
+                "strikethrough" : false,
+                "underline" : false,
+                "code" : true,
+                "color" : "default"
+              },
+              "plain_text" : "cmd/ctrl + e",
+              "href" : null
+            }, {
+              "type" : "text",
+              "text" : {
+                "content" : ").",
+                "link" : null
+              },
+              "annotations" : {
+                "bold" : false,
+                "italic" : false,
+                "strikethrough" : false,
+                "underline" : false,
+                "code" : false,
+                "color" : "default"
+              },
+              "plain_text" : ").",
+              "href" : null
+            } ],
+            "color" : "default"
+          }
+        } ]
+      }, {
+        "object" : "block",
+        "id" : "277f521e-2b70-8038-b5df-c2de9067fb6c",
+        "parent" : {
+          "type" : "page_id",
+          "page_id" : "277f521e-2b70-8059-aacb-e49e1f753e13"
+        },
+        "created_time" : "2025-09-23T22:57:00.000Z",
+        "last_edited_time" : "2025-09-23T22:57:00.000Z",
+        "created_by" : {
+          "object" : "user",
+          "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+        },
+        "last_edited_by" : {
+          "object" : "user",
+          "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+        },
+        "has_children" : false,
+        "archived" : false,
+        "in_trash" : false,
+        "type" : "heading_2",
+        "heading_2" : {
+          "rich_text" : [ {
+            "type" : "text",
+            "text" : {
+              "content" : "Toggle Lists",
+              "link" : null
+            },
+            "annotations" : {
+              "bold" : false,
+              "italic" : false,
+              "strikethrough" : false,
+              "underline" : false,
+              "code" : false,
+              "color" : "default"
+            },
+            "plain_text" : "Toggle Lists",
+            "href" : null
+          } ],
+          "is_toggleable" : false,
+          "color" : "default"
+        }
+      }, {
+        "object" : "block",
+        "id" : "277f521e-2b70-803f-be41-de57d847b0f9",
+        "parent" : {
+          "type" : "page_id",
+          "page_id" : "277f521e-2b70-8059-aacb-e49e1f753e13"
+        },
+        "created_time" : "2025-09-23T22:57:00.000Z",
+        "last_edited_time" : "2025-09-23T22:57:00.000Z",
+        "created_by" : {
+          "object" : "user",
+          "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+        },
+        "last_edited_by" : {
+          "object" : "user",
+          "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+        },
+        "has_children" : true,
+        "archived" : false,
+        "in_trash" : false,
+        "type" : "toggle",
+        "toggle" : {
+          "rich_text" : [ {
+            "type" : "text",
+            "text" : {
+              "content" : "Toggle lists streamline your content. Click the arrow to open.",
+              "link" : null
+            },
+            "annotations" : {
+              "bold" : false,
+              "italic" : false,
+              "strikethrough" : false,
+              "underline" : false,
+              "code" : false,
+              "color" : "default"
+            },
+            "plain_text" : "Toggle lists streamline your content. Click the arrow to open.",
+            "href" : null
+          } ],
+          "color" : "default"
+        },
+        "children" : [ {
+          "object" : "block",
+          "id" : "277f521e-2b70-80f3-90c1-e3831fb7fa36",
+          "parent" : {
+            "type" : "block_id",
+            "block_id" : "277f521e-2b70-803f-be41-de57d847b0f9"
+          },
+          "created_time" : "2025-09-23T22:57:00.000Z",
+          "last_edited_time" : "2025-09-23T22:57:00.000Z",
+          "created_by" : {
+            "object" : "user",
+            "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+          },
+          "last_edited_by" : {
+            "object" : "user",
+            "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+          },
+          "has_children" : false,
+          "archived" : false,
+          "in_trash" : false,
+          "type" : "bulleted_list_item",
+          "bulleted_list_item" : {
+            "rich_text" : [ {
+              "type" : "text",
+              "text" : {
+                "content" : "Click the arrow again to hide this content.",
+                "link" : null
+              },
+              "annotations" : {
+                "bold" : false,
+                "italic" : false,
+                "strikethrough" : false,
+                "underline" : false,
+                "code" : false,
+                "color" : "default"
+              },
+              "plain_text" : "Click the arrow again to hide this content.",
+              "href" : null
+            } ],
+            "color" : "default"
+          }
+        }, {
+          "object" : "block",
+          "id" : "277f521e-2b70-80c8-8251-f7cba889c4d3",
+          "parent" : {
+            "type" : "block_id",
+            "block_id" : "277f521e-2b70-803f-be41-de57d847b0f9"
+          },
+          "created_time" : "2025-09-23T22:57:00.000Z",
+          "last_edited_time" : "2025-09-23T22:57:00.000Z",
+          "created_by" : {
+            "object" : "user",
+            "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+          },
+          "last_edited_by" : {
+            "object" : "user",
+            "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+          },
+          "has_children" : false,
+          "archived" : false,
+          "in_trash" : false,
+          "type" : "bulleted_list_item",
+          "bulleted_list_item" : {
+            "rich_text" : [ {
+              "type" : "text",
+              "text" : {
+                "content" : "Create a toggle by typing ",
+                "link" : null
+              },
+              "annotations" : {
+                "bold" : false,
+                "italic" : false,
+                "strikethrough" : false,
+                "underline" : false,
+                "code" : false,
+                "color" : "default"
+              },
+              "plain_text" : "Create a toggle by typing ",
+              "href" : null
+            }, {
+              "type" : "text",
+              "text" : {
+                "content" : "/toggle",
+                "link" : null
+              },
+              "annotations" : {
+                "bold" : false,
+                "italic" : false,
+                "strikethrough" : false,
+                "underline" : false,
+                "code" : true,
+                "color" : "default"
+              },
+              "plain_text" : "/toggle",
+              "href" : null
+            }, {
+              "type" : "text",
+              "text" : {
+                "content" : " and pressing ",
+                "link" : null
+              },
+              "annotations" : {
+                "bold" : false,
+                "italic" : false,
+                "strikethrough" : false,
+                "underline" : false,
+                "code" : false,
+                "color" : "default"
+              },
+              "plain_text" : " and pressing ",
+              "href" : null
+            }, {
+              "type" : "text",
+              "text" : {
+                "content" : "enter",
+                "link" : null
+              },
+              "annotations" : {
+                "bold" : false,
+                "italic" : false,
+                "strikethrough" : false,
+                "underline" : false,
+                "code" : true,
+                "color" : "default"
+              },
+              "plain_text" : "enter",
+              "href" : null
+            }, {
+              "type" : "text",
+              "text" : {
+                "content" : ".",
+                "link" : null
+              },
+              "annotations" : {
+                "bold" : false,
+                "italic" : false,
+                "strikethrough" : false,
+                "underline" : false,
+                "code" : false,
+                "color" : "default"
+              },
+              "plain_text" : ".",
+              "href" : null
+            } ],
+            "color" : "default"
+          }
+        }, {
+          "object" : "block",
+          "id" : "277f521e-2b70-80eb-a99a-e04190c95ede",
+          "parent" : {
+            "type" : "block_id",
+            "block_id" : "277f521e-2b70-803f-be41-de57d847b0f9"
+          },
+          "created_time" : "2025-09-23T22:57:00.000Z",
+          "last_edited_time" : "2025-09-23T22:57:00.000Z",
+          "created_by" : {
+            "object" : "user",
+            "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+          },
+          "last_edited_by" : {
+            "object" : "user",
+            "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+          },
+          "has_children" : false,
+          "archived" : false,
+          "in_trash" : false,
+          "type" : "bulleted_list_item",
+          "bulleted_list_item" : {
+            "rich_text" : [ {
+              "type" : "text",
+              "text" : {
+                "content" : "You can add anything to toggles, including images and embeds.",
+                "link" : null
+              },
+              "annotations" : {
+                "bold" : false,
+                "italic" : false,
+                "strikethrough" : false,
+                "underline" : false,
+                "code" : false,
+                "color" : "default"
+              },
+              "plain_text" : "You can add anything to toggles, including images and embeds.",
+              "href" : null
+            } ],
+            "color" : "default"
+          }
+        } ]
+      }, {
+        "object" : "block",
+        "id" : "277f521e-2b70-80d2-a1ec-fa3a5e089c14",
+        "parent" : {
+          "type" : "page_id",
+          "page_id" : "277f521e-2b70-8059-aacb-e49e1f753e13"
+        },
+        "created_time" : "2025-09-23T22:57:00.000Z",
+        "last_edited_time" : "2025-09-23T22:57:00.000Z",
+        "created_by" : {
+          "object" : "user",
+          "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+        },
+        "last_edited_by" : {
+          "object" : "user",
+          "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+        },
+        "has_children" : false,
+        "archived" : false,
+        "in_trash" : false,
+        "type" : "heading_2",
+        "heading_2" : {
+          "rich_text" : [ {
+            "type" : "text",
+            "text" : {
+              "content" : "Callout Blocks",
+              "link" : null
+            },
+            "annotations" : {
+              "bold" : false,
+              "italic" : false,
+              "strikethrough" : false,
+              "underline" : false,
+              "code" : false,
+              "color" : "default"
+            },
+            "plain_text" : "Callout Blocks",
+            "href" : null
+          } ],
+          "is_toggleable" : false,
+          "color" : "default"
+        }
+      }, {
+        "object" : "block",
+        "id" : "277f521e-2b70-80bb-9eb3-f24c4489ed2e",
+        "parent" : {
+          "type" : "page_id",
+          "page_id" : "277f521e-2b70-8059-aacb-e49e1f753e13"
+        },
+        "created_time" : "2025-09-23T22:57:00.000Z",
+        "last_edited_time" : "2025-09-23T22:57:00.000Z",
+        "created_by" : {
+          "object" : "user",
+          "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+        },
+        "last_edited_by" : {
+          "object" : "user",
+          "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+        },
+        "has_children" : false,
+        "archived" : false,
+        "in_trash" : false,
+        "type" : "callout",
+        "callout" : {
+          "rich_text" : [ {
+            "type" : "text",
+            "text" : {
+              "content" : "Notion Tip: ",
+              "link" : null
+            },
+            "annotations" : {
+              "bold" : true,
+              "italic" : false,
+              "strikethrough" : false,
+              "underline" : false,
+              "code" : false,
+              "color" : "default"
+            },
+            "plain_text" : "Notion Tip: ",
+            "href" : null
+          }, {
+            "type" : "text",
+            "text" : {
+              "content" : "Create a callout block like this by typing ",
+              "link" : null
+            },
+            "annotations" : {
+              "bold" : false,
+              "italic" : false,
+              "strikethrough" : false,
+              "underline" : false,
+              "code" : false,
+              "color" : "default"
+            },
+            "plain_text" : "Create a callout block like this by typing ",
+            "href" : null
+          }, {
+            "type" : "text",
+            "text" : {
+              "content" : "/call",
+              "link" : null
+            },
+            "annotations" : {
+              "bold" : false,
+              "italic" : false,
+              "strikethrough" : false,
+              "underline" : false,
+              "code" : true,
+              "color" : "default"
+            },
+            "plain_text" : "/call",
+            "href" : null
+          }, {
+            "type" : "text",
+            "text" : {
+              "content" : " and pressing ",
+              "link" : null
+            },
+            "annotations" : {
+              "bold" : false,
+              "italic" : false,
+              "strikethrough" : false,
+              "underline" : false,
+              "code" : false,
+              "color" : "default"
+            },
+            "plain_text" : " and pressing ",
+            "href" : null
+          }, {
+            "type" : "text",
+            "text" : {
+              "content" : "enter",
+              "link" : null
+            },
+            "annotations" : {
+              "bold" : false,
+              "italic" : false,
+              "strikethrough" : false,
+              "underline" : false,
+              "code" : true,
+              "color" : "default"
+            },
+            "plain_text" : "enter",
+            "href" : null
+          }, {
+            "type" : "text",
+            "text" : {
+              "content" : ". Helpful for adding inline instructions, warnings, disclaimers, and tips. Change the emoji icon by clicking on it.",
+              "link" : null
+            },
+            "annotations" : {
+              "bold" : false,
+              "italic" : false,
+              "strikethrough" : false,
+              "underline" : false,
+              "code" : false,
+              "color" : "default"
+            },
+            "plain_text" : ". Helpful for adding inline instructions, warnings, disclaimers, and tips. Change the emoji icon by clicking on it.",
+            "href" : null
+          } ],
+          "icon" : {
+            "type" : "emoji",
+            "emoji" : "💡"
+          },
+          "color" : "gray_background"
+        }
+      }, {
+        "object" : "block",
+        "id" : "277f521e-2b70-8053-84fd-c4a797872fdf",
+        "parent" : {
+          "type" : "page_id",
+          "page_id" : "277f521e-2b70-8059-aacb-e49e1f753e13"
+        },
+        "created_time" : "2025-09-23T22:57:00.000Z",
+        "last_edited_time" : "2025-09-23T22:57:00.000Z",
+        "created_by" : {
+          "object" : "user",
+          "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+        },
+        "last_edited_by" : {
+          "object" : "user",
+          "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+        },
+        "has_children" : false,
+        "archived" : false,
+        "in_trash" : false,
+        "type" : "heading_2",
+        "heading_2" : {
+          "rich_text" : [ {
+            "type" : "text",
+            "text" : {
+              "content" : "Code Blocks",
+              "link" : null
+            },
+            "annotations" : {
+              "bold" : false,
+              "italic" : false,
+              "strikethrough" : false,
+              "underline" : false,
+              "code" : false,
+              "color" : "default"
+            },
+            "plain_text" : "Code Blocks",
+            "href" : null
+          } ],
+          "is_toggleable" : false,
+          "color" : "default"
+        }
+      }, {
+        "object" : "block",
+        "id" : "277f521e-2b70-8094-a7e9-d0d4df69606d",
+        "parent" : {
+          "type" : "page_id",
+          "page_id" : "277f521e-2b70-8059-aacb-e49e1f753e13"
+        },
+        "created_time" : "2025-09-23T22:57:00.000Z",
+        "last_edited_time" : "2025-09-23T22:57:00.000Z",
+        "created_by" : {
+          "object" : "user",
+          "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+        },
+        "last_edited_by" : {
+          "object" : "user",
+          "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+        },
+        "has_children" : true,
+        "archived" : false,
+        "in_trash" : false,
+        "type" : "paragraph",
+        "paragraph" : {
+          "rich_text" : [ {
+            "type" : "text",
+            "text" : {
+              "content" : "You can add code notation to any Notion page:",
+              "link" : null
+            },
+            "annotations" : {
+              "bold" : false,
+              "italic" : false,
+              "strikethrough" : false,
+              "underline" : false,
+              "code" : false,
+              "color" : "default"
+            },
+            "plain_text" : "You can add code notation to any Notion page:",
+            "href" : null
+          } ],
+          "color" : "default"
+        },
+        "children" : [ {
+          "object" : "block",
+          "id" : "277f521e-2b70-80c0-bf10-fb9cbb0ecbf5",
+          "parent" : {
+            "type" : "block_id",
+            "block_id" : "277f521e-2b70-8094-a7e9-d0d4df69606d"
+          },
+          "created_time" : "2025-09-23T22:57:00.000Z",
+          "last_edited_time" : "2025-09-23T22:57:00.000Z",
+          "created_by" : {
+            "object" : "user",
+            "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+          },
+          "last_edited_by" : {
+            "object" : "user",
+            "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+          },
+          "has_children" : false,
+          "archived" : false,
+          "in_trash" : false,
+          "type" : "bulleted_list_item",
+          "bulleted_list_item" : {
+            "rich_text" : [ {
+              "type" : "text",
+              "text" : {
+                "content" : "Type ",
+                "link" : null
+              },
+              "annotations" : {
+                "bold" : false,
+                "italic" : false,
+                "strikethrough" : false,
+                "underline" : false,
+                "code" : false,
+                "color" : "default"
+              },
+              "plain_text" : "Type ",
+              "href" : null
+            }, {
+              "type" : "text",
+              "text" : {
+                "content" : "/code",
+                "link" : null
+              },
+              "annotations" : {
+                "bold" : false,
+                "italic" : false,
+                "strikethrough" : false,
+                "underline" : false,
+                "code" : true,
+                "color" : "default"
+              },
+              "plain_text" : "/code",
+              "href" : null
+            }, {
+              "type" : "text",
+              "text" : {
+                "content" : " and press ",
+                "link" : null
+              },
+              "annotations" : {
+                "bold" : false,
+                "italic" : false,
+                "strikethrough" : false,
+                "underline" : false,
+                "code" : false,
+                "color" : "default"
+              },
+              "plain_text" : " and press ",
+              "href" : null
+            }, {
+              "type" : "text",
+              "text" : {
+                "content" : "enter",
+                "link" : null
+              },
+              "annotations" : {
+                "bold" : false,
+                "italic" : false,
+                "strikethrough" : false,
+                "underline" : false,
+                "code" : true,
+                "color" : "default"
+              },
+              "plain_text" : "enter",
+              "href" : null
+            }, {
+              "type" : "text",
+              "text" : {
+                "content" : ".",
+                "link" : null
+              },
+              "annotations" : {
+                "bold" : false,
+                "italic" : false,
+                "strikethrough" : false,
+                "underline" : false,
+                "code" : false,
+                "color" : "default"
+              },
+              "plain_text" : ".",
+              "href" : null
+            } ],
+            "color" : "default"
+          }
+        }, {
+          "object" : "block",
+          "id" : "277f521e-2b70-80e1-9e3a-d704d7aa587b",
+          "parent" : {
+            "type" : "block_id",
+            "block_id" : "277f521e-2b70-8094-a7e9-d0d4df69606d"
+          },
+          "created_time" : "2025-09-23T22:57:00.000Z",
+          "last_edited_time" : "2025-09-23T22:57:00.000Z",
+          "created_by" : {
+            "object" : "user",
+            "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+          },
+          "last_edited_by" : {
+            "object" : "user",
+            "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+          },
+          "has_children" : false,
+          "archived" : false,
+          "in_trash" : false,
+          "type" : "bulleted_list_item",
+          "bulleted_list_item" : {
+            "rich_text" : [ {
+              "type" : "text",
+              "text" : {
+                "content" : "Choose the language from the dropdown in the bottom right corner. ",
+                "link" : null
+              },
+              "annotations" : {
+                "bold" : false,
+                "italic" : false,
+                "strikethrough" : false,
+                "underline" : false,
+                "code" : false,
+                "color" : "default"
+              },
+              "plain_text" : "Choose the language from the dropdown in the bottom right corner. ",
+              "href" : null
+            } ],
+            "color" : "default"
+          }
+        }, {
+          "object" : "block",
+          "id" : "277f521e-2b70-8042-84e5-d708c98b2aff",
+          "parent" : {
+            "type" : "block_id",
+            "block_id" : "277f521e-2b70-8094-a7e9-d0d4df69606d"
+          },
+          "created_time" : "2025-09-23T22:57:00.000Z",
+          "last_edited_time" : "2025-09-23T22:57:00.000Z",
+          "created_by" : {
+            "object" : "user",
+            "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+          },
+          "last_edited_by" : {
+            "object" : "user",
+            "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+          },
+          "has_children" : false,
+          "archived" : false,
+          "in_trash" : false,
+          "type" : "bulleted_list_item",
+          "bulleted_list_item" : {
+            "rich_text" : [ {
+              "type" : "text",
+              "text" : {
+                "content" : "Here's an example:",
+                "link" : null
+              },
+              "annotations" : {
+                "bold" : false,
+                "italic" : false,
+                "strikethrough" : false,
+                "underline" : false,
+                "code" : false,
+                "color" : "default"
+              },
+              "plain_text" : "Here's an example:",
+              "href" : null
+            } ],
+            "color" : "default"
+          }
+        } ]
+      }, {
+        "object" : "block",
+        "id" : "277f521e-2b70-803e-81d3-d3842848dde0",
+        "parent" : {
+          "type" : "page_id",
+          "page_id" : "277f521e-2b70-8059-aacb-e49e1f753e13"
+        },
+        "created_time" : "2025-09-23T22:57:00.000Z",
+        "last_edited_time" : "2025-09-23T22:57:00.000Z",
+        "created_by" : {
+          "object" : "user",
+          "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+        },
+        "last_edited_by" : {
+          "object" : "user",
+          "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+        },
+        "has_children" : false,
+        "archived" : false,
+        "in_trash" : false,
+        "type" : "code",
+        "code" : {
+          "caption" : [ ],
+          "rich_text" : [ {
+            "type" : "text",
+            "text" : {
+              "content" : "Hover over this block to see the <b>Copy to Clipboard</b> option!",
+              "link" : null
+            },
+            "annotations" : {
+              "bold" : false,
+              "italic" : false,
+              "strikethrough" : false,
+              "underline" : false,
+              "code" : false,
+              "color" : "default"
+            },
+            "plain_text" : "Hover over this block to see the <b>Copy to Clipboard</b> option!",
+            "href" : null
+          } ],
+          "language" : "html"
+        }
+      }, {
+        "object" : "block",
+        "id" : "277f521e-2b70-806e-a601-d70aba3ad263",
+        "parent" : {
+          "type" : "page_id",
+          "page_id" : "277f521e-2b70-8059-aacb-e49e1f753e13"
+        },
+        "created_time" : "2025-09-23T22:57:00.000Z",
+        "last_edited_time" : "2025-09-23T22:57:00.000Z",
+        "created_by" : {
+          "object" : "user",
+          "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+        },
+        "last_edited_by" : {
+          "object" : "user",
+          "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+        },
+        "has_children" : false,
+        "archived" : false,
+        "in_trash" : false,
+        "type" : "bulleted_list_item",
+        "bulleted_list_item" : {
+          "rich_text" : [ {
+            "type" : "text",
+            "text" : {
+              "content" : "Your teammates can select any code to comment on it.",
+              "link" : null
+            },
+            "annotations" : {
+              "bold" : false,
+              "italic" : false,
+              "strikethrough" : false,
+              "underline" : false,
+              "code" : false,
+              "color" : "default"
+            },
+            "plain_text" : "Your teammates can select any code to comment on it.",
+            "href" : null
+          } ],
+          "color" : "default"
+        }
+      }, {
+        "object" : "block",
+        "id" : "277f521e-2b70-805f-b336-d1fd697faf4e",
+        "parent" : {
+          "type" : "page_id",
+          "page_id" : "277f521e-2b70-8059-aacb-e49e1f753e13"
+        },
+        "created_time" : "2025-09-23T22:57:00.000Z",
+        "last_edited_time" : "2025-09-23T22:57:00.000Z",
+        "created_by" : {
+          "object" : "user",
+          "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+        },
+        "last_edited_by" : {
+          "object" : "user",
+          "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+        },
+        "has_children" : false,
+        "archived" : false,
+        "in_trash" : false,
+        "type" : "heading_2",
+        "heading_2" : {
+          "rich_text" : [ {
+            "type" : "text",
+            "text" : {
+              "content" : "Organizing Pages",
+              "link" : null
+            },
+            "annotations" : {
+              "bold" : false,
+              "italic" : false,
+              "strikethrough" : false,
+              "underline" : false,
+              "code" : false,
+              "color" : "default"
+            },
+            "plain_text" : "Organizing Pages",
+            "href" : null
+          } ],
+          "is_toggleable" : false,
+          "color" : "default"
+        }
+      }, {
+        "object" : "block",
+        "id" : "277f521e-2b70-80ca-8690-c1ffdd6dd42e",
+        "parent" : {
+          "type" : "page_id",
+          "page_id" : "277f521e-2b70-8059-aacb-e49e1f753e13"
+        },
+        "created_time" : "2025-09-23T22:57:00.000Z",
+        "last_edited_time" : "2025-09-23T22:57:00.000Z",
+        "created_by" : {
+          "object" : "user",
+          "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+        },
+        "last_edited_by" : {
+          "object" : "user",
+          "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+        },
+        "has_children" : false,
+        "archived" : false,
+        "in_trash" : false,
+        "type" : "paragraph",
+        "paragraph" : {
+          "rich_text" : [ {
+            "type" : "text",
+            "text" : {
+              "content" : "Instead of using folders, Notion lets you nest pages inside pages. Type ",
+              "link" : null
+            },
+            "annotations" : {
+              "bold" : false,
+              "italic" : false,
+              "strikethrough" : false,
+              "underline" : false,
+              "code" : false,
+              "color" : "default"
+            },
+            "plain_text" : "Instead of using folders, Notion lets you nest pages inside pages. Type ",
+            "href" : null
+          }, {
+            "type" : "text",
+            "text" : {
+              "content" : "/page",
+              "link" : null
+            },
+            "annotations" : {
+              "bold" : false,
+              "italic" : false,
+              "strikethrough" : false,
+              "underline" : false,
+              "code" : true,
+              "color" : "default"
+            },
+            "plain_text" : "/page",
+            "href" : null
+          }, {
+            "type" : "text",
+            "text" : {
+              "content" : " and press ",
+              "link" : null
+            },
+            "annotations" : {
+              "bold" : false,
+              "italic" : false,
+              "strikethrough" : false,
+              "underline" : false,
+              "code" : false,
+              "color" : "default"
+            },
+            "plain_text" : " and press ",
+            "href" : null
+          }, {
+            "type" : "text",
+            "text" : {
+              "content" : "enter",
+              "link" : null
+            },
+            "annotations" : {
+              "bold" : false,
+              "italic" : false,
+              "strikethrough" : false,
+              "underline" : false,
+              "code" : true,
+              "color" : "default"
+            },
+            "plain_text" : "enter",
+            "href" : null
+          }, {
+            "type" : "text",
+            "text" : {
+              "content" : " to create a sub-page inside a page. Like this:",
+              "link" : null
+            },
+            "annotations" : {
+              "bold" : false,
+              "italic" : false,
+              "strikethrough" : false,
+              "underline" : false,
+              "code" : false,
+              "color" : "default"
+            },
+            "plain_text" : " to create a sub-page inside a page. Like this:",
+            "href" : null
+          } ],
+          "color" : "default"
+        }
+      }, {
+        "object" : "block",
+        "id" : "277f521e-2b70-80b9-ac9e-d0790e0e8c3e",
+        "parent" : {
+          "type" : "page_id",
+          "page_id" : "277f521e-2b70-8059-aacb-e49e1f753e13"
+        },
+        "created_time" : "2025-09-23T22:57:00.000Z",
+        "last_edited_time" : "2025-09-24T00:14:00.000Z",
+        "created_by" : {
+          "object" : "user",
+          "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+        },
+        "last_edited_by" : {
+          "object" : "user",
+          "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+        },
+        "has_children" : false,
+        "archived" : false,
+        "in_trash" : false,
+        "type" : "heading_1",
+        "heading_1" : {
+          "rich_text" : [ {
+            "type" : "text",
+            "text" : {
+              "content" : "Advanced Techniques",
+              "link" : null
+            },
+            "annotations" : {
+              "bold" : false,
+              "italic" : false,
+              "strikethrough" : false,
+              "underline" : false,
+              "code" : false,
+              "color" : "default"
+            },
+            "plain_text" : "Advanced Techniques",
+            "href" : null
+          } ],
+          "is_toggleable" : false,
+          "color" : "default"
+        }
+      }, {
+        "object" : "block",
+        "id" : "277f521e-2b70-8080-acf0-ca5010b7f996",
+        "parent" : {
+          "type" : "page_id",
+          "page_id" : "277f521e-2b70-8059-aacb-e49e1f753e13"
+        },
+        "created_time" : "2025-09-23T22:57:00.000Z",
+        "last_edited_time" : "2025-09-23T22:57:00.000Z",
+        "created_by" : {
+          "object" : "user",
+          "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+        },
+        "last_edited_by" : {
+          "object" : "user",
+          "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+        },
+        "has_children" : true,
+        "archived" : false,
+        "in_trash" : false,
+        "type" : "child_page",
+        "child_page" : {
+          "title" : "How to use verification"
+        },
+        "children" : [ {
+          "object" : "block",
+          "id" : "277f521e-2b70-8098-9195-f08fcd85b6b4",
+          "parent" : {
+            "type" : "page_id",
+            "page_id" : "277f521e-2b70-8080-acf0-ca5010b7f996"
+          },
+          "created_time" : "2025-09-23T22:57:00.000Z",
+          "last_edited_time" : "2025-09-23T22:57:00.000Z",
+          "created_by" : {
+            "object" : "user",
+            "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+          },
+          "last_edited_by" : {
+            "object" : "user",
+            "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+          },
+          "has_children" : false,
+          "archived" : false,
+          "in_trash" : false,
+          "type" : "callout",
+          "callout" : {
+            "rich_text" : [ {
+              "type" : "text",
+              "text" : {
+                "content" : "Notion Tip: An owner of a page can verify it by clicking on the verification button above and choosing to verify the page for either a set amount of time or indefinitely!",
+                "link" : null
+              },
+              "annotations" : {
+                "bold" : false,
+                "italic" : false,
+                "strikethrough" : false,
+                "underline" : false,
+                "code" : false,
+                "color" : "default"
+              },
+              "plain_text" : "Notion Tip: An owner of a page can verify it by clicking on the verification button above and choosing to verify the page for either a set amount of time or indefinitely!",
+              "href" : null
+            } ],
+            "icon" : {
+              "type" : "emoji",
+              "emoji" : "💡"
+            },
+            "color" : "blue_background"
+          }
+        } ]
+      }, {
+        "object" : "block",
+        "id" : "277f521e-2b70-80ae-8ed2-f7b70761f410",
+        "parent" : {
+          "type" : "page_id",
+          "page_id" : "277f521e-2b70-8059-aacb-e49e1f753e13"
+        },
+        "created_time" : "2025-09-23T22:57:00.000Z",
+        "last_edited_time" : "2025-09-23T22:57:00.000Z",
+        "created_by" : {
+          "object" : "user",
+          "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+        },
+        "last_edited_by" : {
+          "object" : "user",
+          "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+        },
+        "has_children" : true,
+        "archived" : false,
+        "in_trash" : false,
+        "type" : "child_page",
+        "child_page" : {
+          "title" : "New Page With Tags"
+        },
+        "children" : [ {
+          "object" : "block",
+          "id" : "277f521e-2b70-80d7-a0a7-ce6a02d231a4",
+          "parent" : {
+            "type" : "page_id",
+            "page_id" : "277f521e-2b70-80ae-8ed2-f7b70761f410"
+          },
+          "created_time" : "2025-09-23T22:57:00.000Z",
+          "last_edited_time" : "2025-09-23T22:57:00.000Z",
+          "created_by" : {
+            "object" : "user",
+            "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+          },
+          "last_edited_by" : {
+            "object" : "user",
+            "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+          },
+          "has_children" : false,
+          "archived" : false,
+          "in_trash" : false,
+          "type" : "callout",
+          "callout" : {
+            "rich_text" : [ {
+              "type" : "text",
+              "text" : {
+                "content" : "Notion Tip: Tag pages to let collaborators know what they can expect to use the page for. You can add one or many tags to any page in a wiki.",
+                "link" : null
+              },
+              "annotations" : {
+                "bold" : false,
+                "italic" : false,
+                "strikethrough" : false,
+                "underline" : false,
+                "code" : false,
+                "color" : "default"
+              },
+              "plain_text" : "Notion Tip: Tag pages to let collaborators know what they can expect to use the page for. You can add one or many tags to any page in a wiki.",
+              "href" : null
+            } ],
+            "icon" : {
+              "type" : "emoji",
+              "emoji" : "💡"
+            },
+            "color" : "blue_background"
+          }
+        } ]
+      }, {
+        "object" : "block",
+        "id" : "277f521e-2b70-8022-87ce-f5b28a523af1",
+        "parent" : {
+          "type" : "page_id",
+          "page_id" : "277f521e-2b70-8059-aacb-e49e1f753e13"
+        },
+        "created_time" : "2025-09-23T22:57:00.000Z",
+        "last_edited_time" : "2025-09-23T22:57:00.000Z",
+        "created_by" : {
+          "object" : "user",
+          "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+        },
+        "last_edited_by" : {
+          "object" : "user",
+          "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+        },
+        "has_children" : false,
+        "archived" : false,
+        "in_trash" : false,
+        "type" : "paragraph",
+        "paragraph" : {
+          "rich_text" : [ {
+            "type" : "text",
+            "text" : {
+              "content" : "Check out this ",
+              "link" : null
+            },
+            "annotations" : {
+              "bold" : false,
+              "italic" : false,
+              "strikethrough" : false,
+              "underline" : false,
+              "code" : false,
+              "color" : "default"
+            },
+            "plain_text" : "Check out this ",
+            "href" : null
+          }, {
+            "type" : "text",
+            "text" : {
+              "content" : "Notion Editor 101",
+              "link" : {
+                "url" : "https://www.notion.so/notion/Notion-editor-101-create-and-edit-68c7c67047494fdb87d50185429df93e"
+              }
+            },
+            "annotations" : {
+              "bold" : false,
+              "italic" : false,
+              "strikethrough" : false,
+              "underline" : false,
+              "code" : false,
+              "color" : "default"
+            },
+            "plain_text" : "Notion Editor 101",
+            "href" : "https://www.notion.so/notion/Notion-editor-101-create-and-edit-68c7c67047494fdb87d50185429df93e"
+          }, {
+            "type" : "text",
+            "text" : {
+              "content" : " guide for more advanced tips and how-to's.",
+              "link" : null
+            },
+            "annotations" : {
+              "bold" : false,
+              "italic" : false,
+              "strikethrough" : false,
+              "underline" : false,
+              "code" : false,
+              "color" : "default"
+            },
+            "plain_text" : " guide for more advanced tips and how-to's.",
+            "href" : null
+          } ],
+          "color" : "default"
+        }
+      }, {
+        "object" : "block",
+        "id" : "277f521e-2b70-80df-ac74-c7bcdc96ac54",
+        "parent" : {
+          "type" : "page_id",
+          "page_id" : "277f521e-2b70-8059-aacb-e49e1f753e13"
+        },
+        "created_time" : "2025-09-23T22:57:00.000Z",
+        "last_edited_time" : "2025-09-23T22:57:00.000Z",
+        "created_by" : {
+          "object" : "user",
+          "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+        },
+        "last_edited_by" : {
+          "object" : "user",
+          "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+        },
+        "has_children" : false,
+        "archived" : false,
+        "in_trash" : false,
+        "type" : "paragraph",
+        "paragraph" : {
+          "rich_text" : [ ],
+          "color" : "default"
+        }
+      } ]
+    }, {
+      "object" : "block",
+      "id" : "277f521e-2b70-80cc-ac81-de008435c608",
+      "parent" : {
+        "type" : "block_id",
+        "block_id" : "277f521e-2b70-8073-a3fa-e41c68a93559"
+      },
+      "created_time" : "2025-09-23T22:57:00.000Z",
+      "last_edited_time" : "2025-09-23T22:57:00.000Z",
+      "created_by" : {
+        "object" : "user",
+        "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+      },
+      "last_edited_by" : {
+        "object" : "user",
+        "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+      },
+      "has_children" : true,
+      "archived" : false,
+      "in_trash" : false,
+      "type" : "child_page",
+      "child_page" : {
+        "title" : "Mission, Vision, Values"
+      },
+      "children" : [ {
+        "object" : "block",
+        "id" : "277f521e-2b70-803d-b239-dcfb44ca1848",
+        "parent" : {
+          "type" : "page_id",
+          "page_id" : "277f521e-2b70-80cc-ac81-de008435c608"
+        },
+        "created_time" : "2025-09-23T22:57:00.000Z",
+        "last_edited_time" : "2025-09-23T22:57:00.000Z",
+        "created_by" : {
+          "object" : "user",
+          "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+        },
+        "last_edited_by" : {
+          "object" : "user",
+          "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+        },
+        "has_children" : false,
+        "archived" : false,
+        "in_trash" : false,
+        "type" : "callout",
+        "callout" : {
+          "rich_text" : [ {
+            "type" : "text",
+            "text" : {
+              "content" : "Notion Tip: A company mission provides direction and purpose, aligning actions and decisions towards a common goal. It also helps attract like-minded individuals who share the same values and vision for the company.",
+              "link" : null
+            },
+            "annotations" : {
+              "bold" : false,
+              "italic" : false,
+              "strikethrough" : false,
+              "underline" : false,
+              "code" : false,
+              "color" : "default"
+            },
+            "plain_text" : "Notion Tip: A company mission provides direction and purpose, aligning actions and decisions towards a common goal. It also helps attract like-minded individuals who share the same values and vision for the company.",
+            "href" : null
+          } ],
+          "icon" : {
+            "type" : "emoji",
+            "emoji" : "💡"
+          },
+          "color" : "blue_background"
+        }
+      }, {
+        "object" : "block",
+        "id" : "277f521e-2b70-805d-8def-eb280430b688",
+        "parent" : {
+          "type" : "page_id",
+          "page_id" : "277f521e-2b70-80cc-ac81-de008435c608"
+        },
+        "created_time" : "2025-09-23T22:57:00.000Z",
+        "last_edited_time" : "2025-09-23T22:57:00.000Z",
+        "created_by" : {
+          "object" : "user",
+          "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+        },
+        "last_edited_by" : {
+          "object" : "user",
+          "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+        },
+        "has_children" : false,
+        "archived" : false,
+        "in_trash" : false,
+        "type" : "paragraph",
+        "paragraph" : {
+          "rich_text" : [ ],
+          "color" : "default"
+        }
+      } ]
+    }, {
+      "object" : "block",
+      "id" : "277f521e-2b70-80c6-be10-dc22bd913bac",
+      "parent" : {
+        "type" : "block_id",
+        "block_id" : "277f521e-2b70-8073-a3fa-e41c68a93559"
+      },
+      "created_time" : "2025-09-23T22:57:00.000Z",
+      "last_edited_time" : "2025-09-24T10:43:00.000Z",
+      "created_by" : {
+        "object" : "user",
+        "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+      },
+      "last_edited_by" : {
+        "object" : "user",
+        "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+      },
+      "has_children" : false,
+      "archived" : false,
+      "in_trash" : false,
+      "type" : "child_database",
+      "child_database" : {
+        "title" : "Global Offices"
+      }
+    }, {
+      "object" : "block",
+      "id" : "277f521e-2b70-8045-859e-c7145c97b896",
+      "parent" : {
+        "type" : "block_id",
+        "block_id" : "277f521e-2b70-8073-a3fa-e41c68a93559"
+      },
+      "created_time" : "2025-09-23T22:57:00.000Z",
+      "last_edited_time" : "2025-09-23T22:57:00.000Z",
+      "created_by" : {
+        "object" : "user",
+        "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+      },
+      "last_edited_by" : {
+        "object" : "user",
+        "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+      },
+      "has_children" : true,
+      "archived" : false,
+      "in_trash" : false,
+      "type" : "child_page",
+      "child_page" : {
+        "title" : "Corporate Travel"
+      },
+      "children" : [ {
+        "object" : "block",
+        "id" : "277f521e-2b70-802a-a34d-f0446fb0320f",
+        "parent" : {
+          "type" : "page_id",
+          "page_id" : "277f521e-2b70-8045-859e-c7145c97b896"
+        },
+        "created_time" : "2025-09-23T22:57:00.000Z",
+        "last_edited_time" : "2025-09-23T22:57:00.000Z",
+        "created_by" : {
+          "object" : "user",
+          "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+        },
+        "last_edited_by" : {
+          "object" : "user",
+          "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+        },
+        "has_children" : false,
+        "archived" : false,
+        "in_trash" : false,
+        "type" : "callout",
+        "callout" : {
+          "rich_text" : [ {
+            "type" : "text",
+            "text" : {
+              "content" : "Notion Tip: A corporate travel policy is crucial for controlling costs, ensuring compliance, and guaranteeing the safety of employees when traveling for the company. ",
+              "link" : null
+            },
+            "annotations" : {
+              "bold" : false,
+              "italic" : false,
+              "strikethrough" : false,
+              "underline" : false,
+              "code" : false,
+              "color" : "default"
+            },
+            "plain_text" : "Notion Tip: A corporate travel policy is crucial for controlling costs, ensuring compliance, and guaranteeing the safety of employees when traveling for the company. ",
+            "href" : null
+          } ],
+          "icon" : {
+            "type" : "emoji",
+            "emoji" : "💡"
+          },
+          "color" : "blue_background"
+        }
+      }, {
+        "object" : "block",
+        "id" : "277f521e-2b70-8085-be83-c8d4458c4877",
+        "parent" : {
+          "type" : "page_id",
+          "page_id" : "277f521e-2b70-8045-859e-c7145c97b896"
+        },
+        "created_time" : "2025-09-23T22:57:00.000Z",
+        "last_edited_time" : "2025-09-23T22:57:00.000Z",
+        "created_by" : {
+          "object" : "user",
+          "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+        },
+        "last_edited_by" : {
+          "object" : "user",
+          "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+        },
+        "has_children" : false,
+        "archived" : false,
+        "in_trash" : false,
+        "type" : "paragraph",
+        "paragraph" : {
+          "rich_text" : [ ],
+          "color" : "default"
+        }
+      }, {
+        "object" : "block",
+        "id" : "277f521e-2b70-8000-a7de-c71bb631969e",
+        "parent" : {
+          "type" : "page_id",
+          "page_id" : "277f521e-2b70-8045-859e-c7145c97b896"
+        },
+        "created_time" : "2025-09-23T22:57:00.000Z",
+        "last_edited_time" : "2025-09-23T22:57:00.000Z",
+        "created_by" : {
+          "object" : "user",
+          "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+        },
+        "last_edited_by" : {
+          "object" : "user",
+          "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+        },
+        "has_children" : false,
+        "archived" : false,
+        "in_trash" : false,
+        "type" : "paragraph",
+        "paragraph" : {
+          "rich_text" : [ ],
+          "color" : "default"
+        }
+      } ]
+    }, {
+      "object" : "block",
+      "id" : "277f521e-2b70-802e-975f-e698dbd9533a",
+      "parent" : {
+        "type" : "block_id",
+        "block_id" : "277f521e-2b70-8073-a3fa-e41c68a93559"
+      },
+      "created_time" : "2025-09-23T22:57:00.000Z",
+      "last_edited_time" : "2025-09-23T22:57:00.000Z",
+      "created_by" : {
+        "object" : "user",
+        "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+      },
+      "last_edited_by" : {
+        "object" : "user",
+        "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+      },
+      "has_children" : true,
+      "archived" : false,
+      "in_trash" : false,
+      "type" : "child_page",
+      "child_page" : {
+        "title" : "Recent Press"
+      },
+      "children" : [ {
+        "object" : "block",
+        "id" : "277f521e-2b70-8046-8d75-e592d57c113c",
+        "parent" : {
+          "type" : "page_id",
+          "page_id" : "277f521e-2b70-802e-975f-e698dbd9533a"
+        },
+        "created_time" : "2025-09-23T22:57:00.000Z",
+        "last_edited_time" : "2025-09-23T22:57:00.000Z",
+        "created_by" : {
+          "object" : "user",
+          "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+        },
+        "last_edited_by" : {
+          "object" : "user",
+          "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+        },
+        "has_children" : false,
+        "archived" : false,
+        "in_trash" : false,
+        "type" : "unsupported",
+        "unsupported" : { }
+      }, {
+        "object" : "block",
+        "id" : "277f521e-2b70-8099-8f78-f4154a9ac017",
+        "parent" : {
+          "type" : "page_id",
+          "page_id" : "277f521e-2b70-802e-975f-e698dbd9533a"
+        },
+        "created_time" : "2025-09-23T22:57:00.000Z",
+        "last_edited_time" : "2025-09-23T22:57:00.000Z",
+        "created_by" : {
+          "object" : "user",
+          "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+        },
+        "last_edited_by" : {
+          "object" : "user",
+          "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+        },
+        "has_children" : false,
+        "archived" : false,
+        "in_trash" : false,
+        "type" : "callout",
+        "callout" : {
+          "rich_text" : [ {
+            "type" : "text",
+            "text" : {
+              "content" : "Notion Tip: Telling employees about news about your company is important because it helps them stay informed about the direction of the company and their role in it. It can also increase employee engagement and help them feel more connected to the company's mission and values.",
+              "link" : null
+            },
+            "annotations" : {
+              "bold" : false,
+              "italic" : false,
+              "strikethrough" : false,
+              "underline" : false,
+              "code" : false,
+              "color" : "default"
+            },
+            "plain_text" : "Notion Tip: Telling employees about news about your company is important because it helps them stay informed about the direction of the company and their role in it. It can also increase employee engagement and help them feel more connected to the company's mission and values.",
+            "href" : null
+          } ],
+          "icon" : {
+            "type" : "emoji",
+            "emoji" : "💡"
+          },
+          "color" : "blue_background"
+        }
+      } ]
+    }, {
+      "object" : "block",
+      "id" : "277f521e-2b70-8083-86f1-f98b6f2a77e9",
+      "parent" : {
+        "type" : "block_id",
+        "block_id" : "277f521e-2b70-8073-a3fa-e41c68a93559"
+      },
+      "created_time" : "2025-09-23T22:57:00.000Z",
+      "last_edited_time" : "2025-09-23T22:57:00.000Z",
+      "created_by" : {
+        "object" : "user",
+        "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+      },
+      "last_edited_by" : {
+        "object" : "user",
+        "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+      },
+      "has_children" : false,
+      "archived" : false,
+      "in_trash" : false,
+      "type" : "child_page",
+      "child_page" : {
+        "title" : "What’s New?"
+      }
+    } ]
+  }, {
+    "object" : "block",
+    "id" : "277f521e-2b70-80e0-88ca-d7f10c8a8bd4",
+    "parent" : {
+      "type" : "block_id",
+      "block_id" : "277f521e-2b70-808d-826b-c2b865ba83c8"
+    },
+    "created_time" : "2025-09-23T22:57:00.000Z",
+    "last_edited_time" : "2025-09-24T10:44:00.000Z",
+    "created_by" : {
+      "object" : "user",
+      "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+    },
+    "last_edited_by" : {
+      "object" : "user",
+      "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+    },
+    "has_children" : true,
+    "archived" : false,
+    "in_trash" : false,
+    "type" : "column",
+    "column" : {
+      "width_ratio" : 0.5
+    },
+    "children" : [ {
+      "object" : "block",
+      "id" : "277f521e-2b70-802c-aea9-eecb831381cd",
+      "parent" : {
+        "type" : "block_id",
+        "block_id" : "277f521e-2b70-80e0-88ca-d7f10c8a8bd4"
+      },
+      "created_time" : "2025-09-23T22:57:00.000Z",
+      "last_edited_time" : "2025-09-23T22:57:00.000Z",
+      "created_by" : {
+        "object" : "user",
+        "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+      },
+      "last_edited_by" : {
+        "object" : "user",
+        "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+      },
+      "has_children" : false,
+      "archived" : false,
+      "in_trash" : false,
+      "type" : "heading_2",
+      "heading_2" : {
+        "rich_text" : [ {
+          "type" : "text",
+          "text" : {
+            "content" : "Policies",
+            "link" : null
+          },
+          "annotations" : {
+            "bold" : false,
+            "italic" : false,
+            "strikethrough" : false,
+            "underline" : false,
+            "code" : false,
+            "color" : "default"
+          },
+          "plain_text" : "Policies",
+          "href" : null
+        } ],
+        "is_toggleable" : false,
+        "color" : "default"
+      }
+    }, {
+      "object" : "block",
+      "id" : "277f521e-2b70-8081-bc68-d707a891b67a",
+      "parent" : {
+        "type" : "block_id",
+        "block_id" : "277f521e-2b70-80e0-88ca-d7f10c8a8bd4"
+      },
+      "created_time" : "2025-09-23T22:57:00.000Z",
+      "last_edited_time" : "2025-09-23T22:57:00.000Z",
+      "created_by" : {
+        "object" : "user",
+        "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+      },
+      "last_edited_by" : {
+        "object" : "user",
+        "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+      },
+      "has_children" : false,
+      "archived" : false,
+      "in_trash" : false,
+      "type" : "divider",
+      "divider" : { }
+    }, {
+      "object" : "block",
+      "id" : "277f521e-2b70-804e-9045-daff2886dcbe",
+      "parent" : {
+        "type" : "block_id",
+        "block_id" : "277f521e-2b70-80e0-88ca-d7f10c8a8bd4"
+      },
+      "created_time" : "2025-09-23T22:57:00.000Z",
+      "last_edited_time" : "2025-09-23T22:57:00.000Z",
+      "created_by" : {
+        "object" : "user",
+        "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+      },
+      "last_edited_by" : {
+        "object" : "user",
+        "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+      },
+      "has_children" : true,
+      "archived" : false,
+      "in_trash" : false,
+      "type" : "child_page",
+      "child_page" : {
+        "title" : "Vacation Policy"
+      },
+      "children" : [ {
+        "object" : "block",
+        "id" : "277f521e-2b70-8001-a4bd-c5d32d691944",
+        "parent" : {
+          "type" : "page_id",
+          "page_id" : "277f521e-2b70-804e-9045-daff2886dcbe"
+        },
+        "created_time" : "2025-09-23T22:57:00.000Z",
+        "last_edited_time" : "2025-09-23T22:57:00.000Z",
+        "created_by" : {
+          "object" : "user",
+          "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+        },
+        "last_edited_by" : {
+          "object" : "user",
+          "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+        },
+        "has_children" : false,
+        "archived" : false,
+        "in_trash" : false,
+        "type" : "callout",
+        "callout" : {
+          "rich_text" : [ {
+            "type" : "text",
+            "text" : {
+              "content" : "Notion Tip: Vacation policies are crucial for employee well-being and productivity. They provide rest and recharge, reduce burnout and increase job satisfaction. ",
+              "link" : null
+            },
+            "annotations" : {
+              "bold" : false,
+              "italic" : false,
+              "strikethrough" : false,
+              "underline" : false,
+              "code" : false,
+              "color" : "default"
+            },
+            "plain_text" : "Notion Tip: Vacation policies are crucial for employee well-being and productivity. They provide rest and recharge, reduce burnout and increase job satisfaction. ",
+            "href" : null
+          } ],
+          "icon" : {
+            "type" : "emoji",
+            "emoji" : "💡"
+          },
+          "color" : "blue_background"
+        }
+      } ]
+    }, {
+      "object" : "block",
+      "id" : "277f521e-2b70-8026-802d-db6f106cd825",
+      "parent" : {
+        "type" : "block_id",
+        "block_id" : "277f521e-2b70-80e0-88ca-d7f10c8a8bd4"
+      },
+      "created_time" : "2025-09-23T22:57:00.000Z",
+      "last_edited_time" : "2025-09-23T22:57:00.000Z",
+      "created_by" : {
+        "object" : "user",
+        "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+      },
+      "last_edited_by" : {
+        "object" : "user",
+        "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+      },
+      "has_children" : true,
+      "archived" : false,
+      "in_trash" : false,
+      "type" : "child_page",
+      "child_page" : {
+        "title" : " Morale Events"
+      },
+      "children" : [ {
+        "object" : "block",
+        "id" : "277f521e-2b70-8019-a476-ea97a9d1693e",
+        "parent" : {
+          "type" : "page_id",
+          "page_id" : "277f521e-2b70-8026-802d-db6f106cd825"
+        },
+        "created_time" : "2025-09-23T22:57:00.000Z",
+        "last_edited_time" : "2025-09-23T22:57:00.000Z",
+        "created_by" : {
+          "object" : "user",
+          "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+        },
+        "last_edited_by" : {
+          "object" : "user",
+          "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+        },
+        "has_children" : false,
+        "archived" : false,
+        "in_trash" : false,
+        "type" : "callout",
+        "callout" : {
+          "rich_text" : [ {
+            "type" : "text",
+            "text" : {
+              "content" : "Notion Tip: Morale events increase employee satisfaction, motivation, and well-being, while promoting community and teamwork, resulting in higher productivity and retention rates. ",
+              "link" : null
+            },
+            "annotations" : {
+              "bold" : false,
+              "italic" : false,
+              "strikethrough" : false,
+              "underline" : false,
+              "code" : false,
+              "color" : "default"
+            },
+            "plain_text" : "Notion Tip: Morale events increase employee satisfaction, motivation, and well-being, while promoting community and teamwork, resulting in higher productivity and retention rates. ",
+            "href" : null
+          } ],
+          "icon" : {
+            "type" : "emoji",
+            "emoji" : "💡"
+          },
+          "color" : "blue_background"
+        }
+      } ]
+    }, {
+      "object" : "block",
+      "id" : "277f521e-2b70-8055-8966-c75d48382945",
+      "parent" : {
+        "type" : "block_id",
+        "block_id" : "277f521e-2b70-80e0-88ca-d7f10c8a8bd4"
+      },
+      "created_time" : "2025-09-23T22:57:00.000Z",
+      "last_edited_time" : "2025-09-23T22:57:00.000Z",
+      "created_by" : {
+        "object" : "user",
+        "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+      },
+      "last_edited_by" : {
+        "object" : "user",
+        "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+      },
+      "has_children" : true,
+      "archived" : false,
+      "in_trash" : false,
+      "type" : "child_page",
+      "child_page" : {
+        "title" : "Benefits Policies"
+      },
+      "children" : [ {
+        "object" : "block",
+        "id" : "277f521e-2b70-8068-9904-ddae9ffc149b",
+        "parent" : {
+          "type" : "page_id",
+          "page_id" : "277f521e-2b70-8055-8966-c75d48382945"
+        },
+        "created_time" : "2025-09-23T22:57:00.000Z",
+        "last_edited_time" : "2025-09-23T22:57:00.000Z",
+        "created_by" : {
+          "object" : "user",
+          "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+        },
+        "last_edited_by" : {
+          "object" : "user",
+          "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+        },
+        "has_children" : false,
+        "archived" : false,
+        "in_trash" : false,
+        "type" : "callout",
+        "callout" : {
+          "rich_text" : [ {
+            "type" : "text",
+            "text" : {
+              "content" : "Notion Tip: Benefits policies can attract and retain employees, promote well-being, create positive culture, differentiate from competitors, and increase morale and satisfaction.",
+              "link" : null
+            },
+            "annotations" : {
+              "bold" : false,
+              "italic" : false,
+              "strikethrough" : false,
+              "underline" : false,
+              "code" : false,
+              "color" : "default"
+            },
+            "plain_text" : "Notion Tip: Benefits policies can attract and retain employees, promote well-being, create positive culture, differentiate from competitors, and increase morale and satisfaction.",
+            "href" : null
+          } ],
+          "icon" : {
+            "type" : "emoji",
+            "emoji" : "💡"
+          },
+          "color" : "blue_background"
+        }
+      }, {
+        "object" : "block",
+        "id" : "277f521e-2b70-8065-8b59-c898ec4e4c34",
+        "parent" : {
+          "type" : "page_id",
+          "page_id" : "277f521e-2b70-8055-8966-c75d48382945"
+        },
+        "created_time" : "2025-09-23T22:57:00.000Z",
+        "last_edited_time" : "2025-09-23T22:57:00.000Z",
+        "created_by" : {
+          "object" : "user",
+          "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+        },
+        "last_edited_by" : {
+          "object" : "user",
+          "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+        },
+        "has_children" : false,
+        "archived" : false,
+        "in_trash" : false,
+        "type" : "paragraph",
+        "paragraph" : {
+          "rich_text" : [ ],
+          "color" : "default"
+        }
+      } ]
+    }, {
+      "object" : "block",
+      "id" : "277f521e-2b70-8095-bdfc-e010791f1350",
+      "parent" : {
+        "type" : "block_id",
+        "block_id" : "277f521e-2b70-80e0-88ca-d7f10c8a8bd4"
+      },
+      "created_time" : "2025-09-23T22:57:00.000Z",
+      "last_edited_time" : "2025-09-23T22:57:00.000Z",
+      "created_by" : {
+        "object" : "user",
+        "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+      },
+      "last_edited_by" : {
+        "object" : "user",
+        "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+      },
+      "has_children" : false,
+      "archived" : false,
+      "in_trash" : false,
+      "type" : "child_page",
+      "child_page" : {
+        "title" : "Expense Policy"
+      }
+    }, {
+      "object" : "block",
+      "id" : "278f521e-2b70-80c4-9bf5-da193959af56",
+      "parent" : {
+        "type" : "block_id",
+        "block_id" : "277f521e-2b70-80e0-88ca-d7f10c8a8bd4"
+      },
+      "created_time" : "2025-09-24T10:44:00.000Z",
+      "last_edited_time" : "2025-09-24T10:44:00.000Z",
+      "created_by" : {
+        "object" : "user",
+        "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+      },
+      "last_edited_by" : {
+        "object" : "user",
+        "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+      },
+      "has_children" : false,
+      "archived" : false,
+      "in_trash" : false,
+      "type" : "paragraph",
+      "paragraph" : {
+        "rich_text" : [ ],
+        "color" : "default"
+      }
+    } ]
+  } ]
+}, {
+  "object" : "block",
+  "id" : "277f521e-2b70-802f-aed8-e010fa91ae34",
+  "parent" : {
+    "type" : "database_id",
+    "database_id" : "277f521e-2b70-8004-8473-f06ca9926420"
+  },
+  "created_time" : "2025-09-23T22:57:00.000Z",
+  "last_edited_time" : "2025-09-23T22:57:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : true,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "column_list",
+  "column_list" : { },
+  "children" : [ {
+    "object" : "block",
+    "id" : "277f521e-2b70-8040-b39d-f568c36c82f6",
+    "parent" : {
+      "type" : "block_id",
+      "block_id" : "277f521e-2b70-802f-aed8-e010fa91ae34"
+    },
+    "created_time" : "2025-09-23T22:57:00.000Z",
+    "last_edited_time" : "2025-09-26T21:37:00.000Z",
+    "created_by" : {
+      "object" : "user",
+      "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+    },
+    "last_edited_by" : {
+      "object" : "user",
+      "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+    },
+    "has_children" : true,
+    "archived" : false,
+    "in_trash" : false,
+    "type" : "column",
+    "column" : {
+      "width_ratio" : 0.5
+    },
+    "children" : [ {
+      "object" : "block",
+      "id" : "277f521e-2b70-80d8-ae3f-f3a85c65d99f",
+      "parent" : {
+        "type" : "block_id",
+        "block_id" : "277f521e-2b70-8040-b39d-f568c36c82f6"
+      },
+      "created_time" : "2025-09-23T22:57:00.000Z",
+      "last_edited_time" : "2025-09-26T23:26:00.000Z",
+      "created_by" : {
+        "object" : "user",
+        "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+      },
+      "last_edited_by" : {
+        "object" : "user",
+        "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+      },
+      "has_children" : false,
+      "archived" : false,
+      "in_trash" : false,
+      "type" : "child_database",
+      "child_database" : {
+        "title" : "Components"
+      }
+    } ]
+  }, {
+    "object" : "block",
+    "id" : "277f521e-2b70-8042-a474-ee5fd5a4bddd",
+    "parent" : {
+      "type" : "block_id",
+      "block_id" : "277f521e-2b70-802f-aed8-e010fa91ae34"
+    },
+    "created_time" : "2025-09-23T22:57:00.000Z",
+    "last_edited_time" : "2025-09-26T21:37:00.000Z",
+    "created_by" : {
+      "object" : "user",
+      "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+    },
+    "last_edited_by" : {
+      "object" : "user",
+      "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+    },
+    "has_children" : true,
+    "archived" : false,
+    "in_trash" : false,
+    "type" : "column",
+    "column" : {
+      "width_ratio" : 0.49999999999999994
+    },
+    "children" : [ {
+      "object" : "block",
+      "id" : "277f521e-2b70-8091-b2d8-ec897561efc9",
+      "parent" : {
+        "type" : "block_id",
+        "block_id" : "277f521e-2b70-8042-a474-ee5fd5a4bddd"
+      },
+      "created_time" : "2025-09-23T22:57:00.000Z",
+      "last_edited_time" : "2025-09-26T21:36:00.000Z",
+      "created_by" : {
+        "object" : "user",
+        "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+      },
+      "last_edited_by" : {
+        "object" : "user",
+        "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+      },
+      "has_children" : false,
+      "archived" : false,
+      "in_trash" : false,
+      "type" : "child_database",
+      "child_database" : {
+        "title" : "Global Offices"
+      }
+    } ]
+  } ]
+}, {
+  "object" : "block",
+  "id" : "277f521e-2b70-8020-b5d8-cfaab09322b8",
+  "parent" : {
+    "type" : "database_id",
+    "database_id" : "277f521e-2b70-8004-8473-f06ca9926420"
+  },
+  "created_time" : "2025-09-23T22:57:00.000Z",
+  "last_edited_time" : "2025-09-23T22:57:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "paragraph",
+  "paragraph" : {
+    "rich_text" : [ ],
+    "color" : "default"
+  }
+} ]

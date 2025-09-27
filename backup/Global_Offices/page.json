@@ -1,0 +1,120 @@
+{
+  "object" : "database",
+  "id" : "277f521e-2b70-80c6-be10-dc22bd913bac",
+  "cover" : {
+    "type" : "external",
+    "external" : {
+      "url" : "https://www.notion.so/images/page-cover/gradients_11.jpg"
+    }
+  },
+  "icon" : {
+    "type" : "emoji",
+    "emoji" : "🏢"
+  },
+  "created_time" : "2025-09-23T22:57:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_time" : "2025-09-24T10:43:00.000Z",
+  "title" : [ {
+    "type" : "text",
+    "text" : {
+      "content" : "Global Offices",
+      "link" : null
+    },
+    "annotations" : {
+      "bold" : false,
+      "italic" : false,
+      "strikethrough" : false,
+      "underline" : false,
+      "code" : false,
+      "color" : "default"
+    },
+    "plain_text" : "Global Offices",
+    "href" : null
+  } ],
+  "description" : [ ],
+  "is_inline" : false,
+  "properties" : {
+    "Teams" : {
+      "id" : "AnE%3D",
+      "name" : "Teams",
+      "description" : null,
+      "type" : "multi_select",
+      "multi_select" : {
+        "options" : [ {
+          "id" : "9da2b4ff-25b1-4d52-8fcd-12af7aef05a1",
+          "name" : "Engineering",
+          "color" : "pink",
+          "description" : null
+        }, {
+          "id" : "84f6bd08-21aa-450d-996a-b68bd158e131",
+          "name" : "Sales",
+          "color" : "yellow",
+          "description" : null
+        }, {
+          "id" : "21425cb6-b5bf-4d63-bf51-7767a8a982fd",
+          "name" : "HR",
+          "color" : "blue",
+          "description" : null
+        }, {
+          "id" : "0f3dad01-e519-4fd9-96f2-8a8a81964784",
+          "name" : "Marketing",
+          "color" : "red",
+          "description" : null
+        } ]
+      }
+    },
+    "Region" : {
+      "id" : "H%3E%3C%3E",
+      "name" : "Region",
+      "description" : null,
+      "type" : "select",
+      "select" : {
+        "options" : [ {
+          "id" : "nK\\c",
+          "name" : "APAC",
+          "color" : "gray",
+          "description" : null
+        }, {
+          "id" : "GrNL",
+          "name" : "EMEA",
+          "color" : "orange",
+          "description" : null
+        }, {
+          "id" : "zTv~",
+          "name" : "NA",
+          "color" : "blue",
+          "description" : null
+        } ]
+      }
+    },
+    "Address" : {
+      "id" : "zxyJ",
+      "name" : "Address",
+      "description" : null,
+      "type" : "rich_text",
+      "rich_text" : { }
+    },
+    "Office" : {
+      "id" : "title",
+      "name" : "Office",
+      "description" : null,
+      "type" : "title",
+      "title" : { }
+    }
+  },
+  "parent" : {
+    "type" : "block_id",
+    "block_id" : "277f521e-2b70-8073-a3fa-e41c68a93559"
+  },
+  "url" : "https://www.notion.so/277f521e2b7080c6be10dc22bd913bac",
+  "public_url" : null,
+  "archived" : false,
+  "in_trash" : false
+}
