@@ -14,12 +14,12 @@ import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 
 @SpringBootApplication
-public class NotionApplication implements CommandLineRunner {
+public class Main implements CommandLineRunner {
 
     private final ObjectMapper mapper = new ObjectMapper();
 
     public static void main(String[] args) {
-        SpringApplication.run(NotionApplication.class, args);
+        SpringApplication.run(Main.class, args);
     }
 
     @Override
