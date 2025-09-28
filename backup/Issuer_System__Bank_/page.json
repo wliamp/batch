@@ -24,56 +24,12 @@
   "in_trash" : false,
   "is_locked" : false,
   "properties" : {
-    "Clarity" : {
-      "id" : "J%3Fx%7D",
-      "type" : "rich_text",
-      "rich_text" : [ {
-        "type" : "text",
-        "text" : {
-          "content" : "The financial institution that issues payment instruments to customers, verifies transaction validity, and provides approval or rejection.",
-          "link" : null
-        },
-        "annotations" : {
-          "bold" : false,
-          "italic" : false,
-          "strikethrough" : false,
-          "underline" : false,
-          "code" : false,
-          "color" : "default"
-        },
-        "plain_text" : "The financial institution that issues payment instruments to customers, verifies transaction validity, and provides approval or rejection.",
-        "href" : null
-      } ]
-    },
     "Theme" : {
       "id" : "VU%5CH",
       "type" : "select",
       "select" : {
         "id" : "c6c22506-937b-4cdb-8e92-e0a677e39325",
         "name" : "Actors",
-        "color" : "blue"
-      }
-    },
-    "Status" : {
-      "id" : "W%5CQ~",
-      "type" : "status",
-      "status" : {
-        "id" : "2e01eea4-a674-4a3c-9258-56c29e5db025",
-        "name" : "Not started",
-        "color" : "default"
-      }
-    },
-    "Sub-Actors" : {
-      "id" : "juX%5C",
-      "type" : "multi_select",
-      "multi_select" : [ ]
-    },
-    "Actor" : {
-      "id" : "rTVy",
-      "type" : "select",
-      "select" : {
-        "id" : "vG@T",
-        "name" : "Issuer Bank",
         "color" : "blue"
       }
     },

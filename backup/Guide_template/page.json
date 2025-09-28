@@ -1,0 +1,100 @@
+{
+  "object" : "page",
+  "id" : "27cf521e-2b70-803b-8f48-fcf56d57e5de",
+  "created_time" : "2025-09-28T01:09:00.000Z",
+  "last_edited_time" : "2025-09-28T01:09:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "cover" : null,
+  "icon" : null,
+  "parent" : {
+    "type" : "database_id",
+    "database_id" : "27cf521e-2b70-8022-b575-f03cfff604f0"
+  },
+  "archived" : false,
+  "in_trash" : false,
+  "is_locked" : false,
+  "properties" : {
+    "Reviewers" : {
+      "id" : "%3DMPg",
+      "type" : "people",
+      "people" : [ ]
+    },
+    "Category" : {
+      "id" : "%40~FS",
+      "type" : "multi_select",
+      "multi_select" : [ {
+        "id" : "05fceb12-3cbd-4d4f-941e-41192f96522e",
+        "name" : "Guide",
+        "color" : "yellow"
+      } ]
+    },
+    "Last edited time" : {
+      "id" : "FDl%5D",
+      "type" : "last_edited_time",
+      "last_edited_time" : "2025-09-28T01:09:00.000Z"
+    },
+    "Author" : {
+      "id" : "S%3D%3DT",
+      "type" : "people",
+      "people" : [ {
+        "object" : "user",
+        "id" : "277d872b-594c-815d-ac0f-00023df22fd2",
+        "name" : "William Phan",
+        "avatar_url" : null,
+        "type" : "person",
+        "person" : {
+          "email" : "phnam230197@gmail.com"
+        }
+      } ]
+    },
+    "Summary" : {
+      "id" : "sXBl",
+      "type" : "rich_text",
+      "rich_text" : [ ]
+    },
+    "Status" : {
+      "id" : "vPbC",
+      "type" : "status",
+      "status" : {
+        "id" : "7a53fda1-e88d-42e3-9967-51e71dd64b7f",
+        "name" : "Draft",
+        "color" : "default"
+      }
+    },
+    "Created time" : {
+      "id" : "~B%5DS",
+      "type" : "created_time",
+      "created_time" : "2025-09-28T01:09:00.000Z"
+    },
+    "Doc name" : {
+      "id" : "title",
+      "type" : "title",
+      "title" : [ {
+        "type" : "text",
+        "text" : {
+          "content" : "Guide template",
+          "link" : null
+        },
+        "annotations" : {
+          "bold" : false,
+          "italic" : false,
+          "strikethrough" : false,
+          "underline" : false,
+          "code" : false,
+          "color" : "default"
+        },
+        "plain_text" : "Guide template",
+        "href" : null
+      } ]
+    }
+  },
+  "url" : "https://www.notion.so/Guide-template-27cf521e2b70803b8f48fcf56d57e5de",
+  "public_url" : null
+}
