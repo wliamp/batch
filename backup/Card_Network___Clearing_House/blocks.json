@@ -1,1 +1,391 @@
-[ ]
+[ {
+  "object" : "block",
+  "id" : "27cf521e-2b70-8010-a117-f05cb8486e05",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "277f521e-2b70-80fa-bfbf-f4c4d56d6455"
+  },
+  "created_time" : "2025-09-28T02:21:00.000Z",
+  "last_edited_time" : "2025-09-28T02:21:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : true,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "toggle",
+  "toggle" : {
+    "rich_text" : [ {
+      "type" : "text",
+      "text" : {
+        "content" : "General",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : true,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "General",
+      "href" : null
+    } ],
+    "color" : "default"
+  },
+  "children" : [ {
+    "object" : "block",
+    "id" : "27cf521e-2b70-803f-8ccd-c32c87113460",
+    "parent" : {
+      "type" : "block_id",
+      "block_id" : "27cf521e-2b70-8010-a117-f05cb8486e05"
+    },
+    "created_time" : "2025-09-28T02:21:00.000Z",
+    "last_edited_time" : "2025-09-28T02:21:00.000Z",
+    "created_by" : {
+      "object" : "user",
+      "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+    },
+    "last_edited_by" : {
+      "object" : "user",
+      "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+    },
+    "has_children" : false,
+    "archived" : false,
+    "in_trash" : false,
+    "type" : "paragraph",
+    "paragraph" : {
+      "rich_text" : [ {
+        "type" : "text",
+        "text" : {
+          "content" : "The ",
+          "link" : null
+        },
+        "annotations" : {
+          "bold" : false,
+          "italic" : false,
+          "strikethrough" : false,
+          "underline" : false,
+          "code" : false,
+          "color" : "default"
+        },
+        "plain_text" : "The ",
+        "href" : null
+      }, {
+        "type" : "text",
+        "text" : {
+          "content" : "Card Network / Clearing House",
+          "link" : null
+        },
+        "annotations" : {
+          "bold" : true,
+          "italic" : false,
+          "strikethrough" : false,
+          "underline" : false,
+          "code" : false,
+          "color" : "default"
+        },
+        "plain_text" : "Card Network / Clearing House",
+        "href" : null
+      }, {
+        "type" : "text",
+        "text" : {
+          "content" : " is the intermediary entity that connects issuing banks (which provide payment instruments to customers) with acquiring banks (which provide payment acceptance services to merchants). It establishes the technical and operational infrastructure for routing payment transactions, enforces rules and standards for security and interoperability, and ensures that financial obligations between parties are calculated and settled. Beyond transaction routing, a card network or clearing house also manages dispute resolution, compliance, and fraud monitoring.",
+          "link" : null
+        },
+        "annotations" : {
+          "bold" : false,
+          "italic" : false,
+          "strikethrough" : false,
+          "underline" : false,
+          "code" : false,
+          "color" : "default"
+        },
+        "plain_text" : " is the intermediary entity that connects issuing banks (which provide payment instruments to customers) with acquiring banks (which provide payment acceptance services to merchants). It establishes the technical and operational infrastructure for routing payment transactions, enforces rules and standards for security and interoperability, and ensures that financial obligations between parties are calculated and settled. Beyond transaction routing, a card network or clearing house also manages dispute resolution, compliance, and fraud monitoring.",
+        "href" : null
+      } ],
+      "color" : "default"
+    }
+  } ]
+}, {
+  "object" : "block",
+  "id" : "27cf521e-2b70-8066-962d-f59cf0eaec2e",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "277f521e-2b70-80fa-bfbf-f4c4d56d6455"
+  },
+  "created_time" : "2025-09-28T02:21:00.000Z",
+  "last_edited_time" : "2025-09-28T02:21:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : true,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "toggle",
+  "toggle" : {
+    "rich_text" : [ {
+      "type" : "text",
+      "text" : {
+        "content" : "Focused",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : true,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "Focused",
+      "href" : null
+    } ],
+    "color" : "default"
+  },
+  "children" : [ {
+    "object" : "block",
+    "id" : "27cf521e-2b70-809e-a9d0-c7deba1406f8",
+    "parent" : {
+      "type" : "block_id",
+      "block_id" : "27cf521e-2b70-8066-962d-f59cf0eaec2e"
+    },
+    "created_time" : "2025-09-28T02:21:00.000Z",
+    "last_edited_time" : "2025-09-28T03:08:00.000Z",
+    "created_by" : {
+      "object" : "user",
+      "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+    },
+    "last_edited_by" : {
+      "object" : "user",
+      "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+    },
+    "has_children" : false,
+    "archived" : false,
+    "in_trash" : false,
+    "type" : "paragraph",
+    "paragraph" : {
+      "rich_text" : [ {
+        "type" : "text",
+        "text" : {
+          "content" : "In the ",
+          "link" : null
+        },
+        "annotations" : {
+          "bold" : false,
+          "italic" : false,
+          "strikethrough" : false,
+          "underline" : false,
+          "code" : false,
+          "color" : "default"
+        },
+        "plain_text" : "In the ",
+        "href" : null
+      }, {
+        "type" : "text",
+        "text" : {
+          "content" : "Payment Pipeline",
+          "link" : null
+        },
+        "annotations" : {
+          "bold" : true,
+          "italic" : false,
+          "strikethrough" : false,
+          "underline" : false,
+          "code" : false,
+          "color" : "default"
+        },
+        "plain_text" : "Payment Pipeline",
+        "href" : null
+      }, {
+        "type" : "text",
+        "text" : {
+          "content" : ", the ",
+          "link" : null
+        },
+        "annotations" : {
+          "bold" : false,
+          "italic" : false,
+          "strikethrough" : false,
+          "underline" : false,
+          "code" : false,
+          "color" : "default"
+        },
+        "plain_text" : ", the ",
+        "href" : null
+      }, {
+        "type" : "text",
+        "text" : {
+          "content" : "Network",
+          "link" : null
+        },
+        "annotations" : {
+          "bold" : true,
+          "italic" : false,
+          "strikethrough" : false,
+          "underline" : false,
+          "code" : false,
+          "color" : "default"
+        },
+        "plain_text" : "Network",
+        "href" : null
+      }, {
+        "type" : "text",
+        "text" : {
+          "content" : " receives authorization and clearing messages from the ",
+          "link" : null
+        },
+        "annotations" : {
+          "bold" : false,
+          "italic" : false,
+          "strikethrough" : false,
+          "underline" : false,
+          "code" : false,
+          "color" : "default"
+        },
+        "plain_text" : " receives authorization and clearing messages from the ",
+        "href" : null
+      }, {
+        "type" : "text",
+        "text" : {
+          "content" : "Acquirer",
+          "link" : null
+        },
+        "annotations" : {
+          "bold" : true,
+          "italic" : false,
+          "strikethrough" : false,
+          "underline" : false,
+          "code" : false,
+          "color" : "default"
+        },
+        "plain_text" : "Acquirer",
+        "href" : null
+      }, {
+        "type" : "text",
+        "text" : {
+          "content" : ", routes them securely to the ",
+          "link" : null
+        },
+        "annotations" : {
+          "bold" : false,
+          "italic" : false,
+          "strikethrough" : false,
+          "underline" : false,
+          "code" : false,
+          "color" : "default"
+        },
+        "plain_text" : ", routes them securely to the ",
+        "href" : null
+      }, {
+        "type" : "text",
+        "text" : {
+          "content" : "Issuer",
+          "link" : null
+        },
+        "annotations" : {
+          "bold" : true,
+          "italic" : false,
+          "strikethrough" : false,
+          "underline" : false,
+          "code" : false,
+          "color" : "default"
+        },
+        "plain_text" : "Issuer",
+        "href" : null
+      }, {
+        "type" : "text",
+        "text" : {
+          "content" : ", and returns the ",
+          "link" : null
+        },
+        "annotations" : {
+          "bold" : false,
+          "italic" : false,
+          "strikethrough" : false,
+          "underline" : false,
+          "code" : false,
+          "color" : "default"
+        },
+        "plain_text" : ", and returns the ",
+        "href" : null
+      }, {
+        "type" : "text",
+        "text" : {
+          "content" : "Issuer",
+          "link" : null
+        },
+        "annotations" : {
+          "bold" : true,
+          "italic" : false,
+          "strikethrough" : false,
+          "underline" : false,
+          "code" : false,
+          "color" : "default"
+        },
+        "plain_text" : "Issuer",
+        "href" : null
+      }, {
+        "type" : "text",
+        "text" : {
+          "content" : "’s response back to the ",
+          "link" : null
+        },
+        "annotations" : {
+          "bold" : false,
+          "italic" : false,
+          "strikethrough" : false,
+          "underline" : false,
+          "code" : false,
+          "color" : "default"
+        },
+        "plain_text" : "’s response back to the ",
+        "href" : null
+      }, {
+        "type" : "text",
+        "text" : {
+          "content" : "Acquirer",
+          "link" : null
+        },
+        "annotations" : {
+          "bold" : true,
+          "italic" : false,
+          "strikethrough" : false,
+          "underline" : false,
+          "code" : false,
+          "color" : "default"
+        },
+        "plain_text" : "Acquirer",
+        "href" : null
+      }, {
+        "type" : "text",
+        "text" : {
+          "content" : ".",
+          "link" : null
+        },
+        "annotations" : {
+          "bold" : false,
+          "italic" : false,
+          "strikethrough" : false,
+          "underline" : false,
+          "code" : false,
+          "color" : "default"
+        },
+        "plain_text" : ".",
+        "href" : null
+      } ],
+      "color" : "default"
+    }
+  } ]
+} ]

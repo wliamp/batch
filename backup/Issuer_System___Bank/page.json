@@ -1,7 +1,7 @@
 {
   "object" : "page",
-  "id" : "277f521e-2b70-80fa-bfbf-f4c4d56d6455",
-  "created_time" : "2025-09-23T23:34:00.000Z",
+  "id" : "27cf521e-2b70-80ca-93e3-d420ede3f38b",
+  "created_time" : "2025-09-28T02:23:00.000Z",
   "last_edited_time" : "2025-09-28T05:31:00.000Z",
   "created_by" : {
     "object" : "user",
@@ -14,7 +14,7 @@
   "cover" : null,
   "icon" : {
     "type" : "emoji",
-    "emoji" : "🌐"
+    "emoji" : "💳"
   },
   "parent" : {
     "type" : "database_id",
@@ -37,18 +37,18 @@
       "id" : "ptl_",
       "type" : "select",
       "select" : {
-        "id" : "34628511-04fc-4907-997f-8ed44a3ec54f",
-        "name" : "Network",
-        "color" : "purple"
+        "id" : "c4ae7dd6-8e6f-4fd0-81e9-3191ac748ebe",
+        "name" : "Issuer",
+        "color" : "pink"
       }
     },
     "Role" : {
       "id" : "zYvc",
       "type" : "select",
       "select" : {
-        "id" : "522c3ae6-7b08-47ff-8eb0-794a6e654274",
-        "name" : "Mock",
-        "color" : "default"
+        "id" : "db7d926e-0177-46b9-a6d3-78dda94e33ca",
+        "name" : "Core",
+        "color" : "green"
       }
     },
     "Name" : {
@@ -57,7 +57,7 @@
       "title" : [ {
         "type" : "text",
         "text" : {
-          "content" : "Card Network / Clearing House",
+          "content" : "Issuer System / Bank",
           "link" : null
         },
         "annotations" : {
@@ -68,11 +68,11 @@
           "code" : false,
           "color" : "default"
         },
-        "plain_text" : "Card Network / Clearing House",
+        "plain_text" : "Issuer System / Bank",
         "href" : null
       } ]
     }
   },
-  "url" : "https://www.notion.so/Card-Network-Clearing-House-277f521e2b7080fabfbff4c4d56d6455",
+  "url" : "https://www.notion.so/Issuer-System-Bank-27cf521e2b7080ca93e3d420ede3f38b",
   "public_url" : null
 }

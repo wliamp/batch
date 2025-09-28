@@ -1,12 +1,12 @@
 [ {
   "object" : "block",
-  "id" : "27cf521e-2b70-80fa-8d5e-d9e9de26fab4",
+  "id" : "27cf521e-2b70-80d5-b974-f2e69811dca2",
   "parent" : {
     "type" : "page_id",
-    "page_id" : "277f521e-2b70-8099-a6ab-e8fb63702882"
+    "page_id" : "27cf521e-2b70-8029-a066-d7002b23682d"
   },
-  "created_time" : "2025-09-28T01:43:00.000Z",
-  "last_edited_time" : "2025-09-28T01:44:00.000Z",
+  "created_time" : "2025-09-28T02:17:00.000Z",
+  "last_edited_time" : "2025-09-28T02:17:00.000Z",
   "created_by" : {
     "object" : "user",
     "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
@@ -41,13 +41,13 @@
   },
   "children" : [ {
     "object" : "block",
-    "id" : "27cf521e-2b70-80e2-89a2-db8b37dabaf5",
+    "id" : "27cf521e-2b70-809e-968c-ef621106d916",
     "parent" : {
       "type" : "block_id",
-      "block_id" : "27cf521e-2b70-80fa-8d5e-d9e9de26fab4"
+      "block_id" : "27cf521e-2b70-80d5-b974-f2e69811dca2"
     },
-    "created_time" : "2025-09-28T01:43:00.000Z",
-    "last_edited_time" : "2025-09-28T01:43:00.000Z",
+    "created_time" : "2025-09-28T02:17:00.000Z",
+    "last_edited_time" : "2025-09-28T02:17:00.000Z",
     "created_by" : {
       "object" : "user",
       "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
@@ -64,7 +64,7 @@
       "rich_text" : [ {
         "type" : "text",
         "text" : {
-          "content" : "A ",
+          "content" : "The ",
           "link" : null
         },
         "annotations" : {
@@ -75,12 +75,12 @@
           "code" : false,
           "color" : "default"
         },
-        "plain_text" : "A ",
+        "plain_text" : "The ",
         "href" : null
       }, {
         "type" : "text",
         "text" : {
-          "content" : "Payment Gateway",
+          "content" : "Customer",
           "link" : null
         },
         "annotations" : {
@@ -91,12 +91,12 @@
           "code" : false,
           "color" : "default"
         },
-        "plain_text" : "Payment Gateway",
+        "plain_text" : "Customer",
         "href" : null
       }, {
         "type" : "text",
         "text" : {
-          "content" : " is a service that securely processes and transmits payment information between a merchant and the financial institutions involved in a transaction. It provides the technical infrastructure for encrypting sensitive data, routing payment requests, supporting multiple payment methods, and ensuring compliance with industry standards such as PCI-DSS. Payment gateways are commonly used in both physical retail (integrated with POS terminals) and online commerce (via checkout pages, APIs, or SDKs).",
+          "content" : " is the individual or entity that purchases goods or services from a merchant and provides payment in exchange. A customer may interact with merchants through physical channels (such as in-store shopping) or digital channels (such as e-commerce platforms and mobile applications). In addition to making payments, customers may also initiate refund requests, track order status, and engage in service or support interactions related to their purchases.",
           "link" : null
         },
         "annotations" : {
@@ -107,7 +107,7 @@
           "code" : false,
           "color" : "default"
         },
-        "plain_text" : " is a service that securely processes and transmits payment information between a merchant and the financial institutions involved in a transaction. It provides the technical infrastructure for encrypting sensitive data, routing payment requests, supporting multiple payment methods, and ensuring compliance with industry standards such as PCI-DSS. Payment gateways are commonly used in both physical retail (integrated with POS terminals) and online commerce (via checkout pages, APIs, or SDKs).",
+        "plain_text" : " is the individual or entity that purchases goods or services from a merchant and provides payment in exchange. A customer may interact with merchants through physical channels (such as in-store shopping) or digital channels (such as e-commerce platforms and mobile applications). In addition to making payments, customers may also initiate refund requests, track order status, and engage in service or support interactions related to their purchases.",
         "href" : null
       } ],
       "color" : "default"
@@ -115,13 +115,13 @@
   } ]
 }, {
   "object" : "block",
-  "id" : "27cf521e-2b70-8093-aa06-c20ca39f273a",
+  "id" : "27cf521e-2b70-8054-bdb0-c243ca2ede81",
   "parent" : {
     "type" : "page_id",
-    "page_id" : "277f521e-2b70-8099-a6ab-e8fb63702882"
+    "page_id" : "27cf521e-2b70-8029-a066-d7002b23682d"
   },
-  "created_time" : "2025-09-28T01:44:00.000Z",
-  "last_edited_time" : "2025-09-28T01:44:00.000Z",
+  "created_time" : "2025-09-28T02:17:00.000Z",
+  "last_edited_time" : "2025-09-28T02:17:00.000Z",
   "created_by" : {
     "object" : "user",
     "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
@@ -156,13 +156,13 @@
   },
   "children" : [ {
     "object" : "block",
-    "id" : "27cf521e-2b70-8068-a9c2-ea3fa5ae2cee",
+    "id" : "27cf521e-2b70-80f5-80b1-c3472f6f951e",
     "parent" : {
       "type" : "block_id",
-      "block_id" : "27cf521e-2b70-8093-aa06-c20ca39f273a"
+      "block_id" : "27cf521e-2b70-8054-bdb0-c243ca2ede81"
     },
-    "created_time" : "2025-09-28T01:44:00.000Z",
-    "last_edited_time" : "2025-09-28T03:05:00.000Z",
+    "created_time" : "2025-09-28T02:17:00.000Z",
+    "last_edited_time" : "2025-09-28T03:00:00.000Z",
     "created_by" : {
       "object" : "user",
       "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
@@ -211,7 +211,7 @@
       }, {
         "type" : "text",
         "text" : {
-          "content" : ", the ",
+          "content" : ", they acts as the ",
           "link" : null
         },
         "annotations" : {
@@ -222,12 +222,12 @@
           "code" : false,
           "color" : "default"
         },
-        "plain_text" : ", the ",
+        "plain_text" : ", they acts as the ",
         "href" : null
       }, {
         "type" : "text",
         "text" : {
-          "content" : "Gateway",
+          "content" : "Payer",
           "link" : null
         },
         "annotations" : {
@@ -238,12 +238,12 @@
           "code" : false,
           "color" : "default"
         },
-        "plain_text" : "Gateway",
+        "plain_text" : "Payer",
         "href" : null
       }, {
         "type" : "text",
         "text" : {
-          "content" : " receives payment requests from the ",
+          "content" : " who initiates the payment by providing payment credentials (such as card details, e-wallet authorization, or bank account information) and authorizes the transaction.",
           "link" : null
         },
         "annotations" : {
@@ -254,71 +254,7 @@
           "code" : false,
           "color" : "default"
         },
-        "plain_text" : " receives payment requests from the ",
-        "href" : null
-      }, {
-        "type" : "text",
-        "text" : {
-          "content" : "Merchant",
-          "link" : null
-        },
-        "annotations" : {
-          "bold" : true,
-          "italic" : false,
-          "strikethrough" : false,
-          "underline" : false,
-          "code" : false,
-          "color" : "default"
-        },
-        "plain_text" : "Merchant",
-        "href" : null
-      }, {
-        "type" : "text",
-        "text" : {
-          "content" : ", securely forwards them to the ",
-          "link" : null
-        },
-        "annotations" : {
-          "bold" : false,
-          "italic" : false,
-          "strikethrough" : false,
-          "underline" : false,
-          "code" : false,
-          "color" : "default"
-        },
-        "plain_text" : ", securely forwards them to the ",
-        "href" : null
-      }, {
-        "type" : "text",
-        "text" : {
-          "content" : "Acquirer",
-          "link" : null
-        },
-        "annotations" : {
-          "bold" : true,
-          "italic" : false,
-          "strikethrough" : false,
-          "underline" : false,
-          "code" : false,
-          "color" : "default"
-        },
-        "plain_text" : "Acquirer",
-        "href" : null
-      }, {
-        "type" : "text",
-        "text" : {
-          "content" : " or payment network, and returns authorization results back to the merchant system.",
-          "link" : null
-        },
-        "annotations" : {
-          "bold" : false,
-          "italic" : false,
-          "strikethrough" : false,
-          "underline" : false,
-          "code" : false,
-          "color" : "default"
-        },
-        "plain_text" : " or payment network, and returns authorization results back to the merchant system.",
+        "plain_text" : " who initiates the payment by providing payment credentials (such as card details, e-wallet authorization, or bank account information) and authorizes the transaction.",
         "href" : null
       } ],
       "color" : "default"

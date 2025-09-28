@@ -1,8 +1,8 @@
 {
   "object" : "page",
-  "id" : "277f521e-2b70-80fa-bfbf-f4c4d56d6455",
-  "created_time" : "2025-09-23T23:34:00.000Z",
-  "last_edited_time" : "2025-09-28T05:31:00.000Z",
+  "id" : "27cf521e-2b70-8042-a565-c58b15d1808f",
+  "created_time" : "2025-09-28T02:48:00.000Z",
+  "last_edited_time" : "2025-09-28T03:29:00.000Z",
   "created_by" : {
     "object" : "user",
     "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
@@ -14,7 +14,7 @@
   "cover" : null,
   "icon" : {
     "type" : "emoji",
-    "emoji" : "🌐"
+    "emoji" : "🛡️"
   },
   "parent" : {
     "type" : "database_id",
@@ -37,18 +37,18 @@
       "id" : "ptl_",
       "type" : "select",
       "select" : {
-        "id" : "34628511-04fc-4907-997f-8ed44a3ec54f",
-        "name" : "Network",
-        "color" : "purple"
+        "id" : "9d007c45-337e-40ce-acc7-61b3cf98d2ee",
+        "name" : "F&R",
+        "color" : "brown"
       }
     },
     "Role" : {
       "id" : "zYvc",
       "type" : "select",
       "select" : {
-        "id" : "522c3ae6-7b08-47ff-8eb0-794a6e654274",
-        "name" : "Mock",
-        "color" : "default"
+        "id" : "48bd25fe-374e-412d-a245-10a7536488dd",
+        "name" : "Infra",
+        "color" : "brown"
       }
     },
     "Name" : {
@@ -57,7 +57,7 @@
       "title" : [ {
         "type" : "text",
         "text" : {
-          "content" : "Card Network / Clearing House",
+          "content" : "Fraud / Risk Engine",
           "link" : null
         },
         "annotations" : {
@@ -68,11 +68,11 @@
           "code" : false,
           "color" : "default"
         },
-        "plain_text" : "Card Network / Clearing House",
+        "plain_text" : "Fraud / Risk Engine",
         "href" : null
       } ]
     }
   },
-  "url" : "https://www.notion.so/Card-Network-Clearing-House-277f521e2b7080fabfbff4c4d56d6455",
+  "url" : "https://www.notion.so/Fraud-Risk-Engine-27cf521e2b708042a565c58b15d1808f",
   "public_url" : null
 }

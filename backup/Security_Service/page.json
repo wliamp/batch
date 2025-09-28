@@ -1,8 +1,8 @@
 {
   "object" : "page",
-  "id" : "277f521e-2b70-80fa-bfbf-f4c4d56d6455",
-  "created_time" : "2025-09-23T23:34:00.000Z",
-  "last_edited_time" : "2025-09-28T05:31:00.000Z",
+  "id" : "27cf521e-2b70-80d1-9596-ead6c0d3c7d1",
+  "created_time" : "2025-09-28T02:32:00.000Z",
+  "last_edited_time" : "2025-09-28T03:28:00.000Z",
   "created_by" : {
     "object" : "user",
     "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
@@ -14,7 +14,7 @@
   "cover" : null,
   "icon" : {
     "type" : "emoji",
-    "emoji" : "🌐"
+    "emoji" : "🔐"
   },
   "parent" : {
     "type" : "database_id",
@@ -37,18 +37,18 @@
       "id" : "ptl_",
       "type" : "select",
       "select" : {
-        "id" : "34628511-04fc-4907-997f-8ed44a3ec54f",
-        "name" : "Network",
-        "color" : "purple"
+        "id" : "a20eec03-8231-4533-a669-8cdf57fe2a1f",
+        "name" : "Secure",
+        "color" : "yellow"
       }
     },
     "Role" : {
       "id" : "zYvc",
       "type" : "select",
       "select" : {
-        "id" : "522c3ae6-7b08-47ff-8eb0-794a6e654274",
-        "name" : "Mock",
-        "color" : "default"
+        "id" : "48bd25fe-374e-412d-a245-10a7536488dd",
+        "name" : "Infra",
+        "color" : "brown"
       }
     },
     "Name" : {
@@ -57,7 +57,7 @@
       "title" : [ {
         "type" : "text",
         "text" : {
-          "content" : "Card Network / Clearing House",
+          "content" : "Security Service",
           "link" : null
         },
         "annotations" : {
@@ -68,11 +68,11 @@
           "code" : false,
           "color" : "default"
         },
-        "plain_text" : "Card Network / Clearing House",
+        "plain_text" : "Security Service",
         "href" : null
       } ]
     }
   },
-  "url" : "https://www.notion.so/Card-Network-Clearing-House-277f521e2b7080fabfbff4c4d56d6455",
+  "url" : "https://www.notion.so/Security-Service-27cf521e2b7080d19596ead6c0d3c7d1",
   "public_url" : null
 }

@@ -162,7 +162,7 @@
       "block_id" : "27cf521e-2b70-8063-a85c-db3e344de33a"
     },
     "created_time" : "2025-09-28T01:45:00.000Z",
-    "last_edited_time" : "2025-09-28T01:45:00.000Z",
+    "last_edited_time" : "2025-09-28T03:08:00.000Z",
     "created_by" : {
       "object" : "user",
       "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
@@ -211,7 +211,7 @@
       }, {
         "type" : "text",
         "text" : {
-          "content" : ", the ",
+          "content" : ", the",
           "link" : null
         },
         "annotations" : {
@@ -222,12 +222,12 @@
           "code" : false,
           "color" : "default"
         },
-        "plain_text" : ", the ",
+        "plain_text" : ", the",
         "href" : null
       }, {
         "type" : "text",
         "text" : {
-          "content" : "Payment Processor",
+          "content" : " Processor",
           "link" : null
         },
         "annotations" : {
@@ -238,12 +238,12 @@
           "code" : false,
           "color" : "default"
         },
-        "plain_text" : "Payment Processor",
+        "plain_text" : " Processor",
         "href" : null
       }, {
         "type" : "text",
         "text" : {
-          "content" : " executes the core transaction flow by routing payment data between the merchant’s payment gateway, the acquiring bank, the card network, and the issuing bank, ensuring authorization, clearing, and settlement of the transaction.",
+          "content" : " executes the core transaction flow by routing payment data between the ",
           "link" : null
         },
         "annotations" : {
@@ -254,7 +254,167 @@
           "code" : false,
           "color" : "default"
         },
-        "plain_text" : " executes the core transaction flow by routing payment data between the merchant’s payment gateway, the acquiring bank, the card network, and the issuing bank, ensuring authorization, clearing, and settlement of the transaction.",
+        "plain_text" : " executes the core transaction flow by routing payment data between the ",
+        "href" : null
+      }, {
+        "type" : "text",
+        "text" : {
+          "content" : "Merchant’s",
+          "link" : null
+        },
+        "annotations" : {
+          "bold" : true,
+          "italic" : false,
+          "strikethrough" : false,
+          "underline" : false,
+          "code" : false,
+          "color" : "default"
+        },
+        "plain_text" : "Merchant’s",
+        "href" : null
+      }, {
+        "type" : "text",
+        "text" : {
+          "content" : " ",
+          "link" : null
+        },
+        "annotations" : {
+          "bold" : false,
+          "italic" : false,
+          "strikethrough" : false,
+          "underline" : false,
+          "code" : false,
+          "color" : "default"
+        },
+        "plain_text" : " ",
+        "href" : null
+      }, {
+        "type" : "text",
+        "text" : {
+          "content" : "Gateway",
+          "link" : null
+        },
+        "annotations" : {
+          "bold" : true,
+          "italic" : false,
+          "strikethrough" : false,
+          "underline" : false,
+          "code" : false,
+          "color" : "default"
+        },
+        "plain_text" : "Gateway",
+        "href" : null
+      }, {
+        "type" : "text",
+        "text" : {
+          "content" : ", ",
+          "link" : null
+        },
+        "annotations" : {
+          "bold" : false,
+          "italic" : false,
+          "strikethrough" : false,
+          "underline" : false,
+          "code" : false,
+          "color" : "default"
+        },
+        "plain_text" : ", ",
+        "href" : null
+      }, {
+        "type" : "text",
+        "text" : {
+          "content" : "Acquirer",
+          "link" : null
+        },
+        "annotations" : {
+          "bold" : true,
+          "italic" : false,
+          "strikethrough" : false,
+          "underline" : false,
+          "code" : false,
+          "color" : "default"
+        },
+        "plain_text" : "Acquirer",
+        "href" : null
+      }, {
+        "type" : "text",
+        "text" : {
+          "content" : ", ",
+          "link" : null
+        },
+        "annotations" : {
+          "bold" : false,
+          "italic" : false,
+          "strikethrough" : false,
+          "underline" : false,
+          "code" : false,
+          "color" : "default"
+        },
+        "plain_text" : ", ",
+        "href" : null
+      }, {
+        "type" : "text",
+        "text" : {
+          "content" : "Network",
+          "link" : null
+        },
+        "annotations" : {
+          "bold" : true,
+          "italic" : false,
+          "strikethrough" : false,
+          "underline" : false,
+          "code" : false,
+          "color" : "default"
+        },
+        "plain_text" : "Network",
+        "href" : null
+      }, {
+        "type" : "text",
+        "text" : {
+          "content" : ", and ",
+          "link" : null
+        },
+        "annotations" : {
+          "bold" : false,
+          "italic" : false,
+          "strikethrough" : false,
+          "underline" : false,
+          "code" : false,
+          "color" : "default"
+        },
+        "plain_text" : ", and ",
+        "href" : null
+      }, {
+        "type" : "text",
+        "text" : {
+          "content" : "Issuer",
+          "link" : null
+        },
+        "annotations" : {
+          "bold" : true,
+          "italic" : false,
+          "strikethrough" : false,
+          "underline" : false,
+          "code" : false,
+          "color" : "default"
+        },
+        "plain_text" : "Issuer",
+        "href" : null
+      }, {
+        "type" : "text",
+        "text" : {
+          "content" : ", ensuring authorization, clearing, and settlement of the transaction.",
+          "link" : null
+        },
+        "annotations" : {
+          "bold" : false,
+          "italic" : false,
+          "strikethrough" : false,
+          "underline" : false,
+          "code" : false,
+          "color" : "default"
+        },
+        "plain_text" : ", ensuring authorization, clearing, and settlement of the transaction.",
         "href" : null
       } ],
       "color" : "default"

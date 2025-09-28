@@ -1,8 +1,8 @@
 {
   "object" : "page",
-  "id" : "277f521e-2b70-80fa-bfbf-f4c4d56d6455",
-  "created_time" : "2025-09-23T23:34:00.000Z",
-  "last_edited_time" : "2025-09-28T05:31:00.000Z",
+  "id" : "27cf521e-2b70-8029-a066-d7002b23682d",
+  "created_time" : "2025-09-28T02:17:00.000Z",
+  "last_edited_time" : "2025-09-28T03:27:00.000Z",
   "created_by" : {
     "object" : "user",
     "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
@@ -14,7 +14,7 @@
   "cover" : null,
   "icon" : {
     "type" : "emoji",
-    "emoji" : "🌐"
+    "emoji" : "👤"
   },
   "parent" : {
     "type" : "database_id",
@@ -37,9 +37,9 @@
       "id" : "ptl_",
       "type" : "select",
       "select" : {
-        "id" : "34628511-04fc-4907-997f-8ed44a3ec54f",
-        "name" : "Network",
-        "color" : "purple"
+        "id" : "ce51b93b-2e55-4473-9dd9-a85af6e045c2",
+        "name" : "Payer",
+        "color" : "green"
       }
     },
     "Role" : {
@@ -57,7 +57,7 @@
       "title" : [ {
         "type" : "text",
         "text" : {
-          "content" : "Card Network / Clearing House",
+          "content" : "Customer",
           "link" : null
         },
         "annotations" : {
@@ -68,11 +68,11 @@
           "code" : false,
           "color" : "default"
         },
-        "plain_text" : "Card Network / Clearing House",
+        "plain_text" : "Customer",
         "href" : null
       } ]
     }
   },
-  "url" : "https://www.notion.so/Card-Network-Clearing-House-277f521e2b7080fabfbff4c4d56d6455",
+  "url" : "https://www.notion.so/Customer-27cf521e2b708029a066d7002b23682d",
   "public_url" : null
 }

@@ -1,0 +1,130 @@
+[ {
+  "object" : "block",
+  "id" : "27cf521e-2b70-804b-9d3d-f473b38cb1db",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "27cf521e-2b70-8026-a3d6-d22eb9a91f61"
+  },
+  "created_time" : "2025-09-28T05:38:00.000Z",
+  "last_edited_time" : "2025-09-28T06:29:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "code",
+  "code" : {
+    "caption" : [ ],
+    "rich_text" : [ {
+      "type" : "text",
+      "text" : {
+        "content" : "flowchart LR\n    P[\"Payer (Void Request)\"]:::user --> M[\"Merchant API\"]:::merchant\n    M --> PG[\"Payment Gateway\"]:::gateway\n    PG --> SEC[\"Security Service (AuthN/AuthZ)\"]:::service\n    SEC --> PP[\"Processor\"]:::infra\n    PP --> ACQ[\"Acquirer\"]:::infra\n    ACQ --> CN[\"Card Network\"]:::infra\n    CN --> ISS[\"Issuer\"]:::infra\n    ISS --> A5[\"Action: Void (Release Hold)\"]:::action\n    A5 --> CN\n    CN --> ACQ --> PP --> PG --> M --> P\n\n    %% Supporting\n    PG -.-> LOG[\"Logging Service\"]:::service\n    PG -.-> NOTI[\"Notification Service\"]:::service\n    NOTI -.-> M\n    NOTI -.-> P\n\n    classDef user fill:#FFD580,stroke:#333;\n    classDef merchant fill:#FFB347,stroke:#333;\n    classDef gateway fill:#87CEFA,stroke:#333;\n    classDef infra fill:#90EE90,stroke:#333;\n    classDef service fill:#DDA0DD,stroke:#333;\n    classDef action fill:#FF6961,stroke:#333,stroke-dasharray:3 3;\n",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "flowchart LR\n    P[\"Payer (Void Request)\"]:::user --> M[\"Merchant API\"]:::merchant\n    M --> PG[\"Payment Gateway\"]:::gateway\n    PG --> SEC[\"Security Service (AuthN/AuthZ)\"]:::service\n    SEC --> PP[\"Processor\"]:::infra\n    PP --> ACQ[\"Acquirer\"]:::infra\n    ACQ --> CN[\"Card Network\"]:::infra\n    CN --> ISS[\"Issuer\"]:::infra\n    ISS --> A5[\"Action: Void (Release Hold)\"]:::action\n    A5 --> CN\n    CN --> ACQ --> PP --> PG --> M --> P\n\n    %% Supporting\n    PG -.-> LOG[\"Logging Service\"]:::service\n    PG -.-> NOTI[\"Notification Service\"]:::service\n    NOTI -.-> M\n    NOTI -.-> P\n\n    classDef user fill:#FFD580,stroke:#333;\n    classDef merchant fill:#FFB347,stroke:#333;\n    classDef gateway fill:#87CEFA,stroke:#333;\n    classDef infra fill:#90EE90,stroke:#333;\n    classDef service fill:#DDA0DD,stroke:#333;\n    classDef action fill:#FF6961,stroke:#333,stroke-dasharray:3 3;\n",
+      "href" : null
+    } ],
+    "language" : "mermaid"
+  }
+}, {
+  "object" : "block",
+  "id" : "27cf521e-2b70-80b8-a988-ddd3fdf32e38",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "27cf521e-2b70-8026-a3d6-d22eb9a91f61"
+  },
+  "created_time" : "2025-09-28T05:38:00.000Z",
+  "last_edited_time" : "2025-09-28T05:38:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "image",
+  "image" : {
+    "caption" : [ ],
+    "type" : "file",
+    "file" : {
+      "url" : "https://prod-files-secure.s3.us-west-2.amazonaws.com/e36f521e-2b70-81cf-83aa-000383baa689/071b7bc7-4815-4ef4-beb2-31531370a10d/image.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466ZWR6UUIC%2F20250928%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250928T063507Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjECoaCXVzLXdlc3QtMiJGMEQCIHlZLawSVUsKjWVhHj2S1fZK%2BZtAmvADG8VDdHrjvsuqAiBDR%2B1eIKcR1lWdnIffvjvYnUdTWaHm5bBfcsZbNrsriiqIBAiz%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAAaDDYzNzQyMzE4MzgwNSIMo0%2FoJWi9LdBwQ%2BX5KtwDESBS1SHWG7WI6IbT4gk1oA29JH3IH0PAIdWXGOAgCk8z1Y0uWEIoFO3w6NkT%2F%2BRw%2Bye2ZfuAFmk%2FLo9uEE8P%2F0usEwrFxsq4AP2uAjgeRK2I2b%2FstkFxYnsgNqTZFPxKrANSx33sYYa6wqhkuHQ0Zuk2kJKuKlkjQ%2Fi2%2FX3Prm29oHk6drKS12VskwKMv7B3sFPIvK0xys5lVGUuvAT%2FLqEIdrYeJKqzRXavhh4DWl4VIOQEjIysxDjE3bYQUQbt5AssTBa3H7CkIFbEzGnh1BcnfhPMBGb5GW3bsIoNZCfw6uf6%2BtfxzAeTOi79LsSn95GGA2Jd26HpaUL3f4uKBhrbMss1sex%2F0vFTNqQR2qDoZAvIb%2BotboFLduo9ZyNDGtM%2Bkcza17CoYvOMi0NMX0ROMiYMqBI%2FxW5yPCMWXUUOZ3RY%2FaGmmtternIqCsB4zIe8KhabdKofRBXOp7sUyeqe2uIrt6cMvdfjqK3UEFriqxrTU5fxyRcUVtjjC%2F574EStiWYCE88WkY1xBwCqFKD4N9DIprGguCTZXfPMBWyYI4VgG1Y76mlsQ4hjorUiiNdn4ho2T%2BGtZsCJ2llMj%2FgHoRLxACmWAZ6WXcU%2Fk2%2BjqvvZOL%2BKUKk2WzMwwLLixgY6pgFf6PiPOmXVI5byEaSam65w2ELA6DK8dBhLr9M1JIoSWTV0%2F9dQ1jMC76TlVeLaz35bJ%2Fyo050vEPU0O3Gar26DvQp0xmLteLXWDstC399ceolpmEBletGritT2u7v6cRZVsUKdhu0ST5n2beHORqaqqDaQ%2Fo2Jliv17flYyaMbywz8%2Fs%2F18WL2EMOJiA%2FbzCKuKbgHQdYndcyhSA1bHbBTdksrQQYa&X-Amz-Signature=fb3ed77e08cd29e1dd92850a0eda0924022ecc30dc576d01f7512ad2216e5c5b&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+      "expiry_time" : "2025-09-28T07:35:07.692Z"
+    }
+  }
+}, {
+  "object" : "block",
+  "id" : "27cf521e-2b70-8036-91e0-cabb4f11927a",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "27cf521e-2b70-8026-a3d6-d22eb9a91f61"
+  },
+  "created_time" : "2025-09-28T05:38:00.000Z",
+  "last_edited_time" : "2025-09-28T05:38:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "image",
+  "image" : {
+    "caption" : [ ],
+    "type" : "file",
+    "file" : {
+      "url" : "https://prod-files-secure.s3.us-west-2.amazonaws.com/e36f521e-2b70-81cf-83aa-000383baa689/4df21dac-7b6f-415f-9cf5-0abf927dcbff/image.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466ZWR6UUIC%2F20250928%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250928T063507Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjECoaCXVzLXdlc3QtMiJGMEQCIHlZLawSVUsKjWVhHj2S1fZK%2BZtAmvADG8VDdHrjvsuqAiBDR%2B1eIKcR1lWdnIffvjvYnUdTWaHm5bBfcsZbNrsriiqIBAiz%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAAaDDYzNzQyMzE4MzgwNSIMo0%2FoJWi9LdBwQ%2BX5KtwDESBS1SHWG7WI6IbT4gk1oA29JH3IH0PAIdWXGOAgCk8z1Y0uWEIoFO3w6NkT%2F%2BRw%2Bye2ZfuAFmk%2FLo9uEE8P%2F0usEwrFxsq4AP2uAjgeRK2I2b%2FstkFxYnsgNqTZFPxKrANSx33sYYa6wqhkuHQ0Zuk2kJKuKlkjQ%2Fi2%2FX3Prm29oHk6drKS12VskwKMv7B3sFPIvK0xys5lVGUuvAT%2FLqEIdrYeJKqzRXavhh4DWl4VIOQEjIysxDjE3bYQUQbt5AssTBa3H7CkIFbEzGnh1BcnfhPMBGb5GW3bsIoNZCfw6uf6%2BtfxzAeTOi79LsSn95GGA2Jd26HpaUL3f4uKBhrbMss1sex%2F0vFTNqQR2qDoZAvIb%2BotboFLduo9ZyNDGtM%2Bkcza17CoYvOMi0NMX0ROMiYMqBI%2FxW5yPCMWXUUOZ3RY%2FaGmmtternIqCsB4zIe8KhabdKofRBXOp7sUyeqe2uIrt6cMvdfjqK3UEFriqxrTU5fxyRcUVtjjC%2F574EStiWYCE88WkY1xBwCqFKD4N9DIprGguCTZXfPMBWyYI4VgG1Y76mlsQ4hjorUiiNdn4ho2T%2BGtZsCJ2llMj%2FgHoRLxACmWAZ6WXcU%2Fk2%2BjqvvZOL%2BKUKk2WzMwwLLixgY6pgFf6PiPOmXVI5byEaSam65w2ELA6DK8dBhLr9M1JIoSWTV0%2F9dQ1jMC76TlVeLaz35bJ%2Fyo050vEPU0O3Gar26DvQp0xmLteLXWDstC399ceolpmEBletGritT2u7v6cRZVsUKdhu0ST5n2beHORqaqqDaQ%2Fo2Jliv17flYyaMbywz8%2Fs%2F18WL2EMOJiA%2FbzCKuKbgHQdYndcyhSA1bHbBTdksrQQYa&X-Amz-Signature=b993eb81a1a4020e34885507a0c6080a9f858df2cc3495750f78a86e7fb10349&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+      "expiry_time" : "2025-09-28T07:35:07.696Z"
+    }
+  }
+}, {
+  "object" : "block",
+  "id" : "27cf521e-2b70-80fb-ac23-f1545d14de66",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "27cf521e-2b70-8026-a3d6-d22eb9a91f61"
+  },
+  "created_time" : "2025-09-28T05:38:00.000Z",
+  "last_edited_time" : "2025-09-28T05:38:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "image",
+  "image" : {
+    "caption" : [ ],
+    "type" : "file",
+    "file" : {
+      "url" : "https://prod-files-secure.s3.us-west-2.amazonaws.com/e36f521e-2b70-81cf-83aa-000383baa689/577b539b-8529-4457-99ae-c202fb1b7b1b/image.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB466ZWR6UUIC%2F20250928%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250928T063507Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjECoaCXVzLXdlc3QtMiJGMEQCIHlZLawSVUsKjWVhHj2S1fZK%2BZtAmvADG8VDdHrjvsuqAiBDR%2B1eIKcR1lWdnIffvjvYnUdTWaHm5bBfcsZbNrsriiqIBAiz%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F8BEAAaDDYzNzQyMzE4MzgwNSIMo0%2FoJWi9LdBwQ%2BX5KtwDESBS1SHWG7WI6IbT4gk1oA29JH3IH0PAIdWXGOAgCk8z1Y0uWEIoFO3w6NkT%2F%2BRw%2Bye2ZfuAFmk%2FLo9uEE8P%2F0usEwrFxsq4AP2uAjgeRK2I2b%2FstkFxYnsgNqTZFPxKrANSx33sYYa6wqhkuHQ0Zuk2kJKuKlkjQ%2Fi2%2FX3Prm29oHk6drKS12VskwKMv7B3sFPIvK0xys5lVGUuvAT%2FLqEIdrYeJKqzRXavhh4DWl4VIOQEjIysxDjE3bYQUQbt5AssTBa3H7CkIFbEzGnh1BcnfhPMBGb5GW3bsIoNZCfw6uf6%2BtfxzAeTOi79LsSn95GGA2Jd26HpaUL3f4uKBhrbMss1sex%2F0vFTNqQR2qDoZAvIb%2BotboFLduo9ZyNDGtM%2Bkcza17CoYvOMi0NMX0ROMiYMqBI%2FxW5yPCMWXUUOZ3RY%2FaGmmtternIqCsB4zIe8KhabdKofRBXOp7sUyeqe2uIrt6cMvdfjqK3UEFriqxrTU5fxyRcUVtjjC%2F574EStiWYCE88WkY1xBwCqFKD4N9DIprGguCTZXfPMBWyYI4VgG1Y76mlsQ4hjorUiiNdn4ho2T%2BGtZsCJ2llMj%2FgHoRLxACmWAZ6WXcU%2Fk2%2BjqvvZOL%2BKUKk2WzMwwLLixgY6pgFf6PiPOmXVI5byEaSam65w2ELA6DK8dBhLr9M1JIoSWTV0%2F9dQ1jMC76TlVeLaz35bJ%2Fyo050vEPU0O3Gar26DvQp0xmLteLXWDstC399ceolpmEBletGritT2u7v6cRZVsUKdhu0ST5n2beHORqaqqDaQ%2Fo2Jliv17flYyaMbywz8%2Fs%2F18WL2EMOJiA%2FbzCKuKbgHQdYndcyhSA1bHbBTdksrQQYa&X-Amz-Signature=f5e53ea64b70f21303e805192dd63439853785b3d00315109e79add781a6edfd&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+      "expiry_time" : "2025-09-28T07:35:07.694Z"
+    }
+  }
+} ]

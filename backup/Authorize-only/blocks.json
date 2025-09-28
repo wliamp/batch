@@ -1,0 +1,130 @@
+[ {
+  "object" : "block",
+  "id" : "27cf521e-2b70-8091-93cc-c871040dc7ed",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "27cf521e-2b70-8064-a88d-d0078b828069"
+  },
+  "created_time" : "2025-09-28T05:03:00.000Z",
+  "last_edited_time" : "2025-09-28T06:31:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "code",
+  "code" : {
+    "caption" : [ ],
+    "rich_text" : [ {
+      "type" : "text",
+      "text" : {
+        "content" : "flowchart LR\n    P[\"Payer\"]:::user --> M[\"Merchant\"]:::merchant\n    M --> PG[\"Gateway\"]:::gateway\n    PG --> SEC[\"Secure\"]:::service\n    SEC --> PP[\"Processor\"]:::infra\n    PP --> ACQ[\"Acquirer\"]:::infra\n    ACQ --> CN[\"Network\"]:::infra\n    CN --> ISS[\"Issuer\"]:::infra\n    ISS --> A1([\"Action: Authorize Hold\"]):::action\n    A1 --> CN\n    CN --> ACQ --> PP --> PG --> M --> P\n\n    %% Supporting\n    PG -.-> LOG[\"Logging Service\"]:::service\n    PG -.-> NOTI[\"Notification Service\"]:::service\n    NOTI -.-> M\n    NOTI -.-> P\n\n    classDef user fill:#FFD580,stroke:#333;\n    classDef merchant fill:#FFB347,stroke:#333;\n    classDef gateway fill:#87CEFA,stroke:#333;\n    classDef infra fill:#90EE90,stroke:#333;\n    classDef service fill:#DDA0DD,stroke:#333;\n    classDef action fill:#FF6961,stroke:#333,stroke-dasharray:3 3;\n",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "flowchart LR\n    P[\"Payer\"]:::user --> M[\"Merchant\"]:::merchant\n    M --> PG[\"Gateway\"]:::gateway\n    PG --> SEC[\"Secure\"]:::service\n    SEC --> PP[\"Processor\"]:::infra\n    PP --> ACQ[\"Acquirer\"]:::infra\n    ACQ --> CN[\"Network\"]:::infra\n    CN --> ISS[\"Issuer\"]:::infra\n    ISS --> A1([\"Action: Authorize Hold\"]):::action\n    A1 --> CN\n    CN --> ACQ --> PP --> PG --> M --> P\n\n    %% Supporting\n    PG -.-> LOG[\"Logging Service\"]:::service\n    PG -.-> NOTI[\"Notification Service\"]:::service\n    NOTI -.-> M\n    NOTI -.-> P\n\n    classDef user fill:#FFD580,stroke:#333;\n    classDef merchant fill:#FFB347,stroke:#333;\n    classDef gateway fill:#87CEFA,stroke:#333;\n    classDef infra fill:#90EE90,stroke:#333;\n    classDef service fill:#DDA0DD,stroke:#333;\n    classDef action fill:#FF6961,stroke:#333,stroke-dasharray:3 3;\n",
+      "href" : null
+    } ],
+    "language" : "mermaid"
+  }
+}, {
+  "object" : "block",
+  "id" : "27cf521e-2b70-80f3-8f42-fbdd1ac1a6a5",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "27cf521e-2b70-8064-a88d-d0078b828069"
+  },
+  "created_time" : "2025-09-28T05:32:00.000Z",
+  "last_edited_time" : "2025-09-28T05:32:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "image",
+  "image" : {
+    "caption" : [ ],
+    "type" : "file",
+    "file" : {
+      "url" : "https://prod-files-secure.s3.us-west-2.amazonaws.com/e36f521e-2b70-81cf-83aa-000383baa689/071b7bc7-4815-4ef4-beb2-31531370a10d/image.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB4666O7GX6BH%2F20250928%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250928T063507Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjECoaCXVzLXdlc3QtMiJHMEUCIQDjLXf2XFOgqOhUdSieFdIoxN4qDkY17VEJEX0qTA5v5wIgOXdjUPl3GvcfKmTTg8DNPwrrl%2BuvWZsxAkSjp41K7B8qiAQIs%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAAGgw2Mzc0MjMxODM4MDUiDP3fbgKTc2WRFWl2qircA8OvNy4kdA%2BILZfnAAjZR2koxd8gp9AYac6X3tVe185jQx2Be4tzu0kgVSV%2BjsmE7PxaMM3AqVq6m13%2F6IK7%2FiDbuGWMT5k2Vod8AzCSUE7%2Bf6AyIxMS9BKbviqZJh8Y5koJsYp7P9FwepKdD6ojVPMSb%2F7xAmG%2BEZKyAztqVxi5GU7Ax2dJQrIfU7vExpHGyJntVyIKgoTgj0nRSgi3yWfSbRExWHBMc7aKQfrg8b4AG5%2B%2BeGenXqLZ9X8TpZrX8esaPUuB%2FKIUIodTP%2FLCCpF3vPX66MaQmxVyZ%2FalwWkQdvKk6nntKdAVHNoDfyHbbdfpsrbdAqsTyHux6r8JM%2Bhpbxgvfy%2BuUpuvTqtqpBu9oW0oKY49EMldi8n%2FRyThm3vVNexlhU1QidKveK5fM5KOz58kQOdwqH5i1OBvJZAYu3pYLHXMc%2Bm6FuwZd1H%2BaJHXFqUjroZd9kapPeTQkFnYki68AdaoR1RMkNwyXA0vAF5SB4whfXJ7mtrg7Ya43V%2Br8lKlsF6dcQV5ronYLBBJoIrKiZdwIBd50j0148mxG3le6TlXqn0zRZO6MMoOth38irLN2VeS6Sf0L4gx6M9xi04npHejeAjZMlSVZae2QcAUbX5Fjk3ZJLJ3MMCy4sYGOqUBf3lvLBU9ACD4EZSWwDn12FgPGXxe2ogWkAh5QKg4PiEDIPXp9Uj5O1pslFmAl2k4fxKnyFEkLSQfWa6A3DCkN126qzh5tu%2FB97wDWCgu%2FOGJ3pspq1N%2FRqVXejEAc%2BNg2XjSJrIZ8Uihw57SVnzlKf59pm7fh2Vnc9brj2viK1dN5HMli%2B5zaENpyRM93Dj61i8FYxUJ1dnHw0LLc0S9I9E%2F2zfK&X-Amz-Signature=af9e5197a922c99ca5d5768544a7d8cc467a4568fb188ed7bc8636bcbad71bfa&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+      "expiry_time" : "2025-09-28T07:35:07.737Z"
+    }
+  }
+}, {
+  "object" : "block",
+  "id" : "27cf521e-2b70-808f-a73e-fad15edac9d7",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "27cf521e-2b70-8064-a88d-d0078b828069"
+  },
+  "created_time" : "2025-09-28T05:32:00.000Z",
+  "last_edited_time" : "2025-09-28T05:32:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "image",
+  "image" : {
+    "caption" : [ ],
+    "type" : "file",
+    "file" : {
+      "url" : "https://prod-files-secure.s3.us-west-2.amazonaws.com/e36f521e-2b70-81cf-83aa-000383baa689/4df21dac-7b6f-415f-9cf5-0abf927dcbff/image.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB4666O7GX6BH%2F20250928%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250928T063507Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjECoaCXVzLXdlc3QtMiJHMEUCIQDjLXf2XFOgqOhUdSieFdIoxN4qDkY17VEJEX0qTA5v5wIgOXdjUPl3GvcfKmTTg8DNPwrrl%2BuvWZsxAkSjp41K7B8qiAQIs%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAAGgw2Mzc0MjMxODM4MDUiDP3fbgKTc2WRFWl2qircA8OvNy4kdA%2BILZfnAAjZR2koxd8gp9AYac6X3tVe185jQx2Be4tzu0kgVSV%2BjsmE7PxaMM3AqVq6m13%2F6IK7%2FiDbuGWMT5k2Vod8AzCSUE7%2Bf6AyIxMS9BKbviqZJh8Y5koJsYp7P9FwepKdD6ojVPMSb%2F7xAmG%2BEZKyAztqVxi5GU7Ax2dJQrIfU7vExpHGyJntVyIKgoTgj0nRSgi3yWfSbRExWHBMc7aKQfrg8b4AG5%2B%2BeGenXqLZ9X8TpZrX8esaPUuB%2FKIUIodTP%2FLCCpF3vPX66MaQmxVyZ%2FalwWkQdvKk6nntKdAVHNoDfyHbbdfpsrbdAqsTyHux6r8JM%2Bhpbxgvfy%2BuUpuvTqtqpBu9oW0oKY49EMldi8n%2FRyThm3vVNexlhU1QidKveK5fM5KOz58kQOdwqH5i1OBvJZAYu3pYLHXMc%2Bm6FuwZd1H%2BaJHXFqUjroZd9kapPeTQkFnYki68AdaoR1RMkNwyXA0vAF5SB4whfXJ7mtrg7Ya43V%2Br8lKlsF6dcQV5ronYLBBJoIrKiZdwIBd50j0148mxG3le6TlXqn0zRZO6MMoOth38irLN2VeS6Sf0L4gx6M9xi04npHejeAjZMlSVZae2QcAUbX5Fjk3ZJLJ3MMCy4sYGOqUBf3lvLBU9ACD4EZSWwDn12FgPGXxe2ogWkAh5QKg4PiEDIPXp9Uj5O1pslFmAl2k4fxKnyFEkLSQfWa6A3DCkN126qzh5tu%2FB97wDWCgu%2FOGJ3pspq1N%2FRqVXejEAc%2BNg2XjSJrIZ8Uihw57SVnzlKf59pm7fh2Vnc9brj2viK1dN5HMli%2B5zaENpyRM93Dj61i8FYxUJ1dnHw0LLc0S9I9E%2F2zfK&X-Amz-Signature=a880c4d427ececebe7322cbde9f7c733a14b9812e55157ea8a774e7e387258ec&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+      "expiry_time" : "2025-09-28T07:35:07.732Z"
+    }
+  }
+}, {
+  "object" : "block",
+  "id" : "27cf521e-2b70-80cf-9338-e6e0f5092311",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "27cf521e-2b70-8064-a88d-d0078b828069"
+  },
+  "created_time" : "2025-09-28T05:31:00.000Z",
+  "last_edited_time" : "2025-09-28T05:32:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "image",
+  "image" : {
+    "caption" : [ ],
+    "type" : "file",
+    "file" : {
+      "url" : "https://prod-files-secure.s3.us-west-2.amazonaws.com/e36f521e-2b70-81cf-83aa-000383baa689/577b539b-8529-4457-99ae-c202fb1b7b1b/image.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=ASIAZI2LB4666O7GX6BH%2F20250928%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250928T063507Z&X-Amz-Expires=3600&X-Amz-Security-Token=IQoJb3JpZ2luX2VjECoaCXVzLXdlc3QtMiJHMEUCIQDjLXf2XFOgqOhUdSieFdIoxN4qDkY17VEJEX0qTA5v5wIgOXdjUPl3GvcfKmTTg8DNPwrrl%2BuvWZsxAkSjp41K7B8qiAQIs%2F%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAAGgw2Mzc0MjMxODM4MDUiDP3fbgKTc2WRFWl2qircA8OvNy4kdA%2BILZfnAAjZR2koxd8gp9AYac6X3tVe185jQx2Be4tzu0kgVSV%2BjsmE7PxaMM3AqVq6m13%2F6IK7%2FiDbuGWMT5k2Vod8AzCSUE7%2Bf6AyIxMS9BKbviqZJh8Y5koJsYp7P9FwepKdD6ojVPMSb%2F7xAmG%2BEZKyAztqVxi5GU7Ax2dJQrIfU7vExpHGyJntVyIKgoTgj0nRSgi3yWfSbRExWHBMc7aKQfrg8b4AG5%2B%2BeGenXqLZ9X8TpZrX8esaPUuB%2FKIUIodTP%2FLCCpF3vPX66MaQmxVyZ%2FalwWkQdvKk6nntKdAVHNoDfyHbbdfpsrbdAqsTyHux6r8JM%2Bhpbxgvfy%2BuUpuvTqtqpBu9oW0oKY49EMldi8n%2FRyThm3vVNexlhU1QidKveK5fM5KOz58kQOdwqH5i1OBvJZAYu3pYLHXMc%2Bm6FuwZd1H%2BaJHXFqUjroZd9kapPeTQkFnYki68AdaoR1RMkNwyXA0vAF5SB4whfXJ7mtrg7Ya43V%2Br8lKlsF6dcQV5ronYLBBJoIrKiZdwIBd50j0148mxG3le6TlXqn0zRZO6MMoOth38irLN2VeS6Sf0L4gx6M9xi04npHejeAjZMlSVZae2QcAUbX5Fjk3ZJLJ3MMCy4sYGOqUBf3lvLBU9ACD4EZSWwDn12FgPGXxe2ogWkAh5QKg4PiEDIPXp9Uj5O1pslFmAl2k4fxKnyFEkLSQfWa6A3DCkN126qzh5tu%2FB97wDWCgu%2FOGJ3pspq1N%2FRqVXejEAc%2BNg2XjSJrIZ8Uihw57SVnzlKf59pm7fh2Vnc9brj2viK1dN5HMli%2B5zaENpyRM93Dj61i8FYxUJ1dnHw0LLc0S9I9E%2F2zfK&X-Amz-Signature=69c93d7d274ee8b3af42039069694f42187971c9b041eb8ab37869853194b8a2&X-Amz-SignedHeaders=host&x-amz-checksum-mode=ENABLED&x-id=GetObject",
+      "expiry_time" : "2025-09-28T07:35:07.730Z"
+    }
+  }
+} ]

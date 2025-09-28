@@ -162,7 +162,7 @@
       "block_id" : "27cf521e-2b70-80c1-b67f-de694e5d69f1"
     },
     "created_time" : "2025-09-28T01:42:00.000Z",
-    "last_edited_time" : "2025-09-28T01:42:00.000Z",
+    "last_edited_time" : "2025-09-28T03:01:00.000Z",
     "created_by" : {
       "object" : "user",
       "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
@@ -243,7 +243,7 @@
       }, {
         "type" : "text",
         "text" : {
-          "content" : " acts as the initiating party that creates and submits payment requests on behalf of the payer through physical or digital channels, and receives the authorization results from the payment service provider.",
+          "content" : " creates and submits payment requests on behalf of the payer through physical or digital channels, and receives the authorization results from the payment service provider.",
           "link" : null
         },
         "annotations" : {
@@ -254,7 +254,7 @@
           "code" : false,
           "color" : "default"
         },
-        "plain_text" : " acts as the initiating party that creates and submits payment requests on behalf of the payer through physical or digital channels, and receives the authorization results from the payment service provider.",
+        "plain_text" : " creates and submits payment requests on behalf of the payer through physical or digital channels, and receives the authorization results from the payment service provider.",
         "href" : null
       } ],
       "color" : "default"
