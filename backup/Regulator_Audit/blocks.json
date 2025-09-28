@@ -1,0 +1,138 @@
+[ {
+  "object" : "block",
+  "id" : "27cf521e-2b70-80ad-b004-def9f26976b0",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "27cf521e-2b70-8075-b537-f3dc123fbd0c"
+  },
+  "created_time" : "2025-09-28T17:35:00.000Z",
+  "last_edited_time" : "2025-09-28T17:37:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "paragraph",
+  "paragraph" : {
+    "rich_text" : [ {
+      "type" : "text",
+      "text" : {
+        "content" : "“As a ",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : true,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "“As a ",
+      "href" : null
+    }, {
+      "type" : "text",
+      "text" : {
+        "content" : "Regulator",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : true,
+        "italic" : true,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "Regulator",
+      "href" : null
+    }, {
+      "type" : "text",
+      "text" : {
+        "content" : ", I want to ",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : true,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : ", I want to ",
+      "href" : null
+    }, {
+      "type" : "text",
+      "text" : {
+        "content" : "have audit access to all transactions",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : true,
+        "italic" : true,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "have audit access to all transactions",
+      "href" : null
+    }, {
+      "type" : "text",
+      "text" : {
+        "content" : ", so that I ",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : true,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : ", so that I ",
+      "href" : null
+    }, {
+      "type" : "text",
+      "text" : {
+        "content" : "ensure compliance",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : true,
+        "italic" : true,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "ensure compliance",
+      "href" : null
+    }, {
+      "type" : "text",
+      "text" : {
+        "content" : ".”",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : true,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : ".”",
+      "href" : null
+    } ],
+    "color" : "default"
+  }
+} ]

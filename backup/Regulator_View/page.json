@@ -1,0 +1,87 @@
+{
+  "object" : "page",
+  "id" : "27cf521e-2b70-8073-8212-eff41ec54033",
+  "created_time" : "2025-09-28T17:39:00.000Z",
+  "last_edited_time" : "2025-09-28T17:39:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "cover" : null,
+  "icon" : {
+    "type" : "emoji",
+    "emoji" : "⚖️"
+  },
+  "parent" : {
+    "type" : "database_id",
+    "database_id" : "278f521e-2b70-8020-bf7a-c18805532ce2"
+  },
+  "archived" : false,
+  "in_trash" : false,
+  "is_locked" : false,
+  "properties" : {
+    "Actor" : {
+      "id" : "Yz%40%60",
+      "type" : "select",
+      "select" : {
+        "id" : "8c10a64c-2eb6-4e1d-9395-448d73d63cde",
+        "name" : "Regulator",
+        "color" : "blue"
+      }
+    },
+    "Action" : {
+      "id" : "b%7Bxb",
+      "type" : "select",
+      "select" : {
+        "id" : "97409d14-278a-4bc5-9c70-1f71578fab2d",
+        "name" : "View",
+        "color" : "green"
+      }
+    },
+    "Status" : {
+      "id" : "k%3FMm",
+      "type" : "status",
+      "status" : {
+        "id" : "8e60037a-bd86-4bec-ae03-6dcd5c392137",
+        "name" : "Not started",
+        "color" : "default"
+      }
+    },
+    "Priority" : {
+      "id" : "lgXk",
+      "type" : "select",
+      "select" : {
+        "id" : "PBTx",
+        "name" : "P1",
+        "color" : "red"
+      }
+    },
+    "Title" : {
+      "id" : "title",
+      "type" : "title",
+      "title" : [ {
+        "type" : "text",
+        "text" : {
+          "content" : "Regulator View",
+          "link" : null
+        },
+        "annotations" : {
+          "bold" : false,
+          "italic" : false,
+          "strikethrough" : false,
+          "underline" : false,
+          "code" : false,
+          "color" : "default"
+        },
+        "plain_text" : "Regulator View",
+        "href" : null
+      } ]
+    }
+  },
+  "url" : "https://www.notion.so/Regulator-View-27cf521e2b7080738212eff41ec54033",
+  "public_url" : null
+}

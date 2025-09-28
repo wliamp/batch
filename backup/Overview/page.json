@@ -12,7 +12,7 @@
     "object" : "user",
     "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
   },
-  "last_edited_time" : "2025-09-28T12:17:00.000Z",
+  "last_edited_time" : "2025-09-28T13:17:00.000Z",
   "title" : [ {
     "type" : "text",
     "text" : {
@@ -64,44 +64,9 @@
       "type" : "select",
       "select" : {
         "options" : [ {
-          "id" : "ce51b93b-2e55-4473-9dd9-a85af6e045c2",
-          "name" : "Payer",
-          "color" : "green",
-          "description" : null
-        }, {
-          "id" : "df3eb6ab-d16e-4b51-a9f1-2bbe49d3c70f",
-          "name" : "Merchant",
-          "color" : "blue",
-          "description" : null
-        }, {
-          "id" : "4ea83c1a-5001-42c6-bebb-7d3787ac3be9",
-          "name" : "Gateway",
-          "color" : "red",
-          "description" : null
-        }, {
-          "id" : "e5b8066d-8014-4fe0-a5b9-5d1231cbb2d7",
-          "name" : "Processor",
-          "color" : "default",
-          "description" : null
-        }, {
-          "id" : "34628511-04fc-4907-997f-8ed44a3ec54f",
-          "name" : "Network",
-          "color" : "purple",
-          "description" : null
-        }, {
-          "id" : "c4ae7dd6-8e6f-4fd0-81e9-3191ac748ebe",
-          "name" : "Issuer",
-          "color" : "pink",
-          "description" : null
-        }, {
           "id" : "e0db8fe7-3207-4c3e-ad65-2f78aa8517e7",
           "name" : "Acquirer",
           "color" : "brown",
-          "description" : null
-        }, {
-          "id" : "a20eec03-8231-4533-a669-8cdf57fe2a1f",
-          "name" : "Secure",
-          "color" : "yellow",
           "description" : null
         }, {
           "id" : "ec57969b-fcb5-4101-916e-c24260513f37",
@@ -109,14 +74,9 @@
           "color" : "orange",
           "description" : null
         }, {
-          "id" : "05460651-7110-4c2e-9462-582fe2794e88",
-          "name" : "Notify",
-          "color" : "gray",
-          "description" : null
-        }, {
-          "id" : "7dc140fc-5d93-41f6-95fb-4df0d435ba61",
-          "name" : "Logger",
-          "color" : "blue",
+          "id" : "cea11812-6b7c-4dba-97dd-2abe1ba3417b",
+          "name" : "C&S",
+          "color" : "yellow",
           "description" : null
         }, {
           "id" : "9d007c45-337e-40ce-acc7-61b3cf98d2ee",
@@ -124,14 +84,54 @@
           "color" : "brown",
           "description" : null
         }, {
-          "id" : "cea11812-6b7c-4dba-97dd-2abe1ba3417b",
-          "name" : "C&S",
-          "color" : "yellow",
+          "id" : "4ea83c1a-5001-42c6-bebb-7d3787ac3be9",
+          "name" : "Gateway",
+          "color" : "red",
+          "description" : null
+        }, {
+          "id" : "c4ae7dd6-8e6f-4fd0-81e9-3191ac748ebe",
+          "name" : "Issuer",
+          "color" : "pink",
+          "description" : null
+        }, {
+          "id" : "7dc140fc-5d93-41f6-95fb-4df0d435ba61",
+          "name" : "Logger",
+          "color" : "blue",
+          "description" : null
+        }, {
+          "id" : "df3eb6ab-d16e-4b51-a9f1-2bbe49d3c70f",
+          "name" : "Merchant",
+          "color" : "blue",
+          "description" : null
+        }, {
+          "id" : "34628511-04fc-4907-997f-8ed44a3ec54f",
+          "name" : "Network",
+          "color" : "purple",
+          "description" : null
+        }, {
+          "id" : "05460651-7110-4c2e-9462-582fe2794e88",
+          "name" : "Notify",
+          "color" : "gray",
+          "description" : null
+        }, {
+          "id" : "ce51b93b-2e55-4473-9dd9-a85af6e045c2",
+          "name" : "Payer",
+          "color" : "green",
+          "description" : null
+        }, {
+          "id" : "e5b8066d-8014-4fe0-a5b9-5d1231cbb2d7",
+          "name" : "Processor",
+          "color" : "default",
           "description" : null
         }, {
           "id" : "1b0f294b-5dc8-4523-896a-aeaca77d53fd",
           "name" : "Regulator",
           "color" : "gray",
+          "description" : null
+        }, {
+          "id" : "a20eec03-8231-4533-a669-8cdf57fe2a1f",
+          "name" : "Secure",
+          "color" : "yellow",
           "description" : null
         } ]
       }
@@ -143,11 +143,6 @@
       "type" : "select",
       "select" : {
         "options" : [ {
-          "id" : "522c3ae6-7b08-47ff-8eb0-794a6e654274",
-          "name" : "Mock",
-          "color" : "default",
-          "description" : null
-        }, {
           "id" : "db7d926e-0177-46b9-a6d3-78dda94e33ca",
           "name" : "Core",
           "color" : "green",
@@ -156,6 +151,11 @@
           "id" : "48bd25fe-374e-412d-a245-10a7536488dd",
           "name" : "Infra",
           "color" : "brown",
+          "description" : null
+        }, {
+          "id" : "522c3ae6-7b08-47ff-8eb0-794a6e654274",
+          "name" : "Mock",
+          "color" : "default",
           "description" : null
         } ]
       }

@@ -6,7 +6,7 @@
     "page_id" : "27cf521e-2b70-8021-843a-ea3d58ede321"
   },
   "created_time" : "2025-09-28T11:13:00.000Z",
-  "last_edited_time" : "2025-09-28T11:13:00.000Z",
+  "last_edited_time" : "2025-09-28T17:21:00.000Z",
   "created_by" : {
     "object" : "user",
     "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
@@ -23,18 +23,18 @@
     "rich_text" : [ {
       "type" : "text",
       "text" : {
-        "content" : "As a ",
+        "content" : "“As a ",
         "link" : null
       },
       "annotations" : {
         "bold" : false,
-        "italic" : false,
+        "italic" : true,
         "strikethrough" : false,
         "underline" : false,
         "code" : false,
         "color" : "default"
       },
-      "plain_text" : "As a ",
+      "plain_text" : "“As a ",
       "href" : null
     }, {
       "type" : "text",
@@ -44,7 +44,7 @@
       },
       "annotations" : {
         "bold" : true,
-        "italic" : false,
+        "italic" : true,
         "strikethrough" : false,
         "underline" : false,
         "code" : false,
@@ -55,18 +55,82 @@
     }, {
       "type" : "text",
       "text" : {
-        "content" : ", I want to receive payment at the time of order, so that I am guaranteed funds before fulfilling it.",
+        "content" : ", I want to ",
         "link" : null
       },
       "annotations" : {
         "bold" : false,
-        "italic" : false,
+        "italic" : true,
         "strikethrough" : false,
         "underline" : false,
         "code" : false,
         "color" : "default"
       },
-      "plain_text" : ", I want to receive payment at the time of order, so that I am guaranteed funds before fulfilling it.",
+      "plain_text" : ", I want to ",
+      "href" : null
+    }, {
+      "type" : "text",
+      "text" : {
+        "content" : "initiate a one-step sale (auth + capture)",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : true,
+        "italic" : true,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "initiate a one-step sale (auth + capture)",
+      "href" : null
+    }, {
+      "type" : "text",
+      "text" : {
+        "content" : ", so that I can ",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : true,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : ", so that I can ",
+      "href" : null
+    }, {
+      "type" : "text",
+      "text" : {
+        "content" : "receive money instantly",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : true,
+        "italic" : true,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "receive money instantly",
+      "href" : null
+    }, {
+      "type" : "text",
+      "text" : {
+        "content" : ".”",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : true,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : ".”",
       "href" : null
     } ],
     "color" : "default"

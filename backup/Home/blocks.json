@@ -47,7 +47,7 @@
       "block_id" : "278f521e-2b70-80f3-b627-e25d52e9be8d"
     },
     "created_time" : "2025-09-24T13:15:00.000Z",
-    "last_edited_time" : "2025-09-24T13:18:00.000Z",
+    "last_edited_time" : "2025-09-28T15:54:00.000Z",
     "created_by" : {
       "object" : "user",
       "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
@@ -64,7 +64,7 @@
       "rich_text" : [ {
         "type" : "text",
         "text" : {
-          "content" : "A simulator for an end-to-end payment pipeline (authorize, capture, sale, refund, void). The goal is purely educational: to explore, practice, and understand payment workflows and related backend/cloud technologies. This project is not intended for business use.",
+          "content" : "A simulator for an end-to-end payment pipeline (authorize, capture, sale, refund, void, etc.) The goal is purely educational: to explore, practice, and understand payment workflows and related backend/cloud technologies. This project is not intended for business use.",
           "link" : null
         },
         "annotations" : {
@@ -75,7 +75,7 @@
           "code" : false,
           "color" : "default"
         },
-        "plain_text" : "A simulator for an end-to-end payment pipeline (authorize, capture, sale, refund, void). The goal is purely educational: to explore, practice, and understand payment workflows and related backend/cloud technologies. This project is not intended for business use.",
+        "plain_text" : "A simulator for an end-to-end payment pipeline (authorize, capture, sale, refund, void, etc.) The goal is purely educational: to explore, practice, and understand payment workflows and related backend/cloud technologies. This project is not intended for business use.",
         "href" : null
       } ],
       "color" : "default"
@@ -1065,7 +1065,7 @@
       "block_id" : "277f521e-2b70-802f-aed8-e010fa91ae34"
     },
     "created_time" : "2025-09-23T22:57:00.000Z",
-    "last_edited_time" : "2025-09-28T04:08:00.000Z",
+    "last_edited_time" : "2025-09-28T14:18:00.000Z",
     "created_by" : {
       "object" : "user",
       "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
@@ -1089,7 +1089,7 @@
         "block_id" : "277f521e-2b70-8040-b39d-f568c36c82f6"
       },
       "created_time" : "2025-09-23T22:57:00.000Z",
-      "last_edited_time" : "2025-09-28T12:17:00.000Z",
+      "last_edited_time" : "2025-09-28T13:17:00.000Z",
       "created_by" : {
         "object" : "user",
         "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
@@ -1105,6 +1105,30 @@
       "child_database" : {
         "title" : "Overview"
       }
+    }, {
+      "object" : "block",
+      "id" : "27cf521e-2b70-800f-baa7-c74b675dc4fe",
+      "parent" : {
+        "type" : "block_id",
+        "block_id" : "277f521e-2b70-8040-b39d-f568c36c82f6"
+      },
+      "created_time" : "2025-09-28T14:18:00.000Z",
+      "last_edited_time" : "2025-09-28T15:54:00.000Z",
+      "created_by" : {
+        "object" : "user",
+        "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+      },
+      "last_edited_by" : {
+        "object" : "user",
+        "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+      },
+      "has_children" : false,
+      "archived" : false,
+      "in_trash" : false,
+      "type" : "child_database",
+      "child_database" : {
+        "title" : ""
+      }
     } ]
   }, {
     "object" : "block",
@@ -1114,7 +1138,7 @@
       "block_id" : "277f521e-2b70-802f-aed8-e010fa91ae34"
     },
     "created_time" : "2025-09-23T22:57:00.000Z",
-    "last_edited_time" : "2025-09-28T01:12:00.000Z",
+    "last_edited_time" : "2025-09-28T14:27:00.000Z",
     "created_by" : {
       "object" : "user",
       "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
@@ -1138,7 +1162,7 @@
         "block_id" : "277f521e-2b70-8042-a474-ee5fd5a4bddd"
       },
       "created_time" : "2025-09-23T22:57:00.000Z",
-      "last_edited_time" : "2025-09-28T11:49:00.000Z",
+      "last_edited_time" : "2025-09-28T17:41:00.000Z",
       "created_by" : {
         "object" : "user",
         "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
@@ -1177,6 +1201,31 @@
       "type" : "child_database",
       "child_database" : {
         "title" : "Global Offices"
+      }
+    }, {
+      "object" : "block",
+      "id" : "27cf521e-2b70-803a-842b-e5d938f63351",
+      "parent" : {
+        "type" : "block_id",
+        "block_id" : "277f521e-2b70-8042-a474-ee5fd5a4bddd"
+      },
+      "created_time" : "2025-09-28T14:27:00.000Z",
+      "last_edited_time" : "2025-09-28T14:27:00.000Z",
+      "created_by" : {
+        "object" : "user",
+        "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+      },
+      "last_edited_by" : {
+        "object" : "user",
+        "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+      },
+      "has_children" : false,
+      "archived" : false,
+      "in_trash" : false,
+      "type" : "paragraph",
+      "paragraph" : {
+        "rich_text" : [ ],
+        "color" : "default"
       }
     } ]
   } ]

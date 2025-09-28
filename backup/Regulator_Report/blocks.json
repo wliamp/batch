@@ -1,0 +1,138 @@
+[ {
+  "object" : "block",
+  "id" : "27cf521e-2b70-80e0-a90f-ef54aaa06654",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "27cf521e-2b70-8002-ac03-dbe6120a6138"
+  },
+  "created_time" : "2025-09-28T17:38:00.000Z",
+  "last_edited_time" : "2025-09-28T17:38:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "paragraph",
+  "paragraph" : {
+    "rich_text" : [ {
+      "type" : "text",
+      "text" : {
+        "content" : "“As a ",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : true,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "“As a ",
+      "href" : null
+    }, {
+      "type" : "text",
+      "text" : {
+        "content" : "Regulator",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : true,
+        "italic" : true,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "Regulator",
+      "href" : null
+    }, {
+      "type" : "text",
+      "text" : {
+        "content" : ", I want to ",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : true,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : ", I want to ",
+      "href" : null
+    }, {
+      "type" : "text",
+      "text" : {
+        "content" : "receive reports (daily/weekly/monthly)",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : true,
+        "italic" : true,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "receive reports (daily/weekly/monthly)",
+      "href" : null
+    }, {
+      "type" : "text",
+      "text" : {
+        "content" : ", so that I can ",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : true,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : ", so that I can ",
+      "href" : null
+    }, {
+      "type" : "text",
+      "text" : {
+        "content" : "track flows",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : true,
+        "italic" : true,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "track flows",
+      "href" : null
+    }, {
+      "type" : "text",
+      "text" : {
+        "content" : ".”",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : true,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : ".”",
+      "href" : null
+    } ],
+    "color" : "default"
+  }
+} ]

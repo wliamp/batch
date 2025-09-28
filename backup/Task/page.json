@@ -31,7 +31,7 @@
       "type" : "select",
       "select" : null
     },
-    "Business" : {
+    "Action" : {
       "id" : "b%7Bxb",
       "type" : "select",
       "select" : null
