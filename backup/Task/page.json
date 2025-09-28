@@ -26,8 +26,13 @@
   "in_trash" : false,
   "is_locked" : false,
   "properties" : {
-    "theme" : {
+    "Actor" : {
       "id" : "Yz%40%60",
+      "type" : "select",
+      "select" : null
+    },
+    "Business" : {
+      "id" : "b%7Bxb",
       "type" : "select",
       "select" : null
     },

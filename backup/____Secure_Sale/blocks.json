@@ -1,0 +1,411 @@
+[ {
+  "object" : "block",
+  "id" : "27cf521e-2b70-80d5-8acd-c52b260ac78a",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "27cf521e-2b70-8066-a150-d0fc64b7461c"
+  },
+  "created_time" : "2025-09-28T11:25:00.000Z",
+  "last_edited_time" : "2025-09-28T11:25:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "paragraph",
+  "paragraph" : {
+    "rich_text" : [ {
+      "type" : "text",
+      "text" : {
+        "content" : "As a ",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "As a ",
+      "href" : null
+    }, {
+      "type" : "text",
+      "text" : {
+        "content" : "Security Service",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : true,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "Security Service",
+      "href" : null
+    }, {
+      "type" : "text",
+      "text" : {
+        "content" : ", I want to check sale requests, so that only genuine transactions are processed.",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : ", I want to check sale requests, so that only genuine transactions are processed.",
+      "href" : null
+    } ],
+    "color" : "default"
+  }
+}, {
+  "object" : "block",
+  "id" : "27cf521e-2b70-80de-be5b-c8b0d3437012",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "27cf521e-2b70-8066-a150-d0fc64b7461c"
+  },
+  "created_time" : "2025-09-28T11:25:00.000Z",
+  "last_edited_time" : "2025-09-28T11:25:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "paragraph",
+  "paragraph" : {
+    "rich_text" : [ {
+      "type" : "text",
+      "text" : {
+        "content" : "Scope",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : true,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "Scope",
+      "href" : null
+    } ],
+    "color" : "default"
+  }
+}, {
+  "object" : "block",
+  "id" : "27cf521e-2b70-8007-87d1-f8d73140cf80",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "27cf521e-2b70-8066-a150-d0fc64b7461c"
+  },
+  "created_time" : "2025-09-28T11:25:00.000Z",
+  "last_edited_time" : "2025-09-28T11:25:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "bulleted_list_item",
+  "bulleted_list_item" : {
+    "rich_text" : [ {
+      "type" : "text",
+      "text" : {
+        "content" : "Validate request origin.",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "Validate request origin.",
+      "href" : null
+    } ],
+    "color" : "default"
+  }
+}, {
+  "object" : "block",
+  "id" : "27cf521e-2b70-806c-8e0e-f800b833c3cb",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "27cf521e-2b70-8066-a150-d0fc64b7461c"
+  },
+  "created_time" : "2025-09-28T11:25:00.000Z",
+  "last_edited_time" : "2025-09-28T11:25:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "bulleted_list_item",
+  "bulleted_list_item" : {
+    "rich_text" : [ {
+      "type" : "text",
+      "text" : {
+        "content" : "Block anomalies.",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "Block anomalies.",
+      "href" : null
+    } ],
+    "color" : "default"
+  }
+}, {
+  "object" : "block",
+  "id" : "27cf521e-2b70-80e6-aca4-cb9a566fb7d6",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "27cf521e-2b70-8066-a150-d0fc64b7461c"
+  },
+  "created_time" : "2025-09-28T11:25:00.000Z",
+  "last_edited_time" : "2025-09-28T11:25:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "paragraph",
+  "paragraph" : {
+    "rich_text" : [ {
+      "type" : "text",
+      "text" : {
+        "content" : "Acceptance Criteria",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : true,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "Acceptance Criteria",
+      "href" : null
+    } ],
+    "color" : "default"
+  }
+}, {
+  "object" : "block",
+  "id" : "27cf521e-2b70-80c1-8924-d00e4881a871",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "27cf521e-2b70-8066-a150-d0fc64b7461c"
+  },
+  "created_time" : "2025-09-28T11:25:00.000Z",
+  "last_edited_time" : "2025-09-28T11:25:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "bulleted_list_item",
+  "bulleted_list_item" : {
+    "rich_text" : [ {
+      "type" : "text",
+      "text" : {
+        "content" : "Valid sales pass.",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "Valid sales pass.",
+      "href" : null
+    } ],
+    "color" : "default"
+  }
+}, {
+  "object" : "block",
+  "id" : "27cf521e-2b70-807a-a04c-da388a88909e",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "27cf521e-2b70-8066-a150-d0fc64b7461c"
+  },
+  "created_time" : "2025-09-28T11:25:00.000Z",
+  "last_edited_time" : "2025-09-28T11:25:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "bulleted_list_item",
+  "bulleted_list_item" : {
+    "rich_text" : [ {
+      "type" : "text",
+      "text" : {
+        "content" : "Invalid/duplicate rejected.",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "Invalid/duplicate rejected.",
+      "href" : null
+    } ],
+    "color" : "default"
+  }
+}, {
+  "object" : "block",
+  "id" : "27cf521e-2b70-8022-9314-f2ec3523af24",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "27cf521e-2b70-8066-a150-d0fc64b7461c"
+  },
+  "created_time" : "2025-09-28T11:25:00.000Z",
+  "last_edited_time" : "2025-09-28T11:25:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "bulleted_list_item",
+  "bulleted_list_item" : {
+    "rich_text" : [ {
+      "type" : "text",
+      "text" : {
+        "content" : "Logs kept for audit.",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "Logs kept for audit.",
+      "href" : null
+    } ],
+    "color" : "default"
+  }
+}, {
+  "object" : "block",
+  "id" : "27cf521e-2b70-81ee-b6c2-c0e646d603d4",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "27cf521e-2b70-8066-a150-d0fc64b7461c"
+  },
+  "created_time" : "2025-09-28T11:19:00.000Z",
+  "last_edited_time" : "2025-09-28T11:19:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "paragraph",
+  "paragraph" : {
+    "rich_text" : [ ],
+    "color" : "default"
+  }
+}, {
+  "object" : "block",
+  "id" : "27cf521e-2b70-8141-87a4-d11f996bc116",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "27cf521e-2b70-8066-a150-d0fc64b7461c"
+  },
+  "created_time" : "2025-09-28T11:19:00.000Z",
+  "last_edited_time" : "2025-09-28T11:19:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "paragraph",
+  "paragraph" : {
+    "rich_text" : [ ],
+    "color" : "default"
+  }
+} ]

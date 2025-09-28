@@ -1,0 +1,411 @@
+[ {
+  "object" : "block",
+  "id" : "27cf521e-2b70-8002-99ec-e2e5c5f32d1f",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "27cf521e-2b70-80f6-8a38-de568a179d2a"
+  },
+  "created_time" : "2025-09-28T11:49:00.000Z",
+  "last_edited_time" : "2025-09-28T11:51:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "paragraph",
+  "paragraph" : {
+    "rich_text" : [ {
+      "type" : "text",
+      "text" : {
+        "content" : "As a ",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "As a ",
+      "href" : null
+    }, {
+      "type" : "text",
+      "text" : {
+        "content" : "Record Service",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : true,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "Record Service",
+      "href" : null
+    }, {
+      "type" : "text",
+      "text" : {
+        "content" : ", I want to log all void events, so that the payment history is complete.",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : ", I want to log all void events, so that the payment history is complete.",
+      "href" : null
+    } ],
+    "color" : "default"
+  }
+}, {
+  "object" : "block",
+  "id" : "27cf521e-2b70-80da-8bbe-e1486e1fac89",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "27cf521e-2b70-80f6-8a38-de568a179d2a"
+  },
+  "created_time" : "2025-09-28T11:49:00.000Z",
+  "last_edited_time" : "2025-09-28T11:51:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "paragraph",
+  "paragraph" : {
+    "rich_text" : [ {
+      "type" : "text",
+      "text" : {
+        "content" : "Scope",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : true,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "Scope",
+      "href" : null
+    } ],
+    "color" : "default"
+  }
+}, {
+  "object" : "block",
+  "id" : "27cf521e-2b70-80e9-98d2-ca469568482b",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "27cf521e-2b70-80f6-8a38-de568a179d2a"
+  },
+  "created_time" : "2025-09-28T11:49:00.000Z",
+  "last_edited_time" : "2025-09-28T11:51:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "bulleted_list_item",
+  "bulleted_list_item" : {
+    "rich_text" : [ {
+      "type" : "text",
+      "text" : {
+        "content" : "Store void details linked to authorization.",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "Store void details linked to authorization.",
+      "href" : null
+    } ],
+    "color" : "default"
+  }
+}, {
+  "object" : "block",
+  "id" : "27cf521e-2b70-80fa-845a-ebd365606d02",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "27cf521e-2b70-80f6-8a38-de568a179d2a"
+  },
+  "created_time" : "2025-09-28T11:49:00.000Z",
+  "last_edited_time" : "2025-09-28T11:51:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "bulleted_list_item",
+  "bulleted_list_item" : {
+    "rich_text" : [ {
+      "type" : "text",
+      "text" : {
+        "content" : "Record timestamps and outcome.",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "Record timestamps and outcome.",
+      "href" : null
+    } ],
+    "color" : "default"
+  }
+}, {
+  "object" : "block",
+  "id" : "27cf521e-2b70-805d-8ef8-e16d10e2097f",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "27cf521e-2b70-80f6-8a38-de568a179d2a"
+  },
+  "created_time" : "2025-09-28T11:49:00.000Z",
+  "last_edited_time" : "2025-09-28T11:51:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "paragraph",
+  "paragraph" : {
+    "rich_text" : [ {
+      "type" : "text",
+      "text" : {
+        "content" : "Acceptance Criteria",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : true,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "Acceptance Criteria",
+      "href" : null
+    } ],
+    "color" : "default"
+  }
+}, {
+  "object" : "block",
+  "id" : "27cf521e-2b70-805f-9c31-ed7c9b8fbc2f",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "27cf521e-2b70-80f6-8a38-de568a179d2a"
+  },
+  "created_time" : "2025-09-28T11:49:00.000Z",
+  "last_edited_time" : "2025-09-28T11:51:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "bulleted_list_item",
+  "bulleted_list_item" : {
+    "rich_text" : [ {
+      "type" : "text",
+      "text" : {
+        "content" : "Every void logged with ID.",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "Every void logged with ID.",
+      "href" : null
+    } ],
+    "color" : "default"
+  }
+}, {
+  "object" : "block",
+  "id" : "27cf521e-2b70-8045-942e-e271d65df808",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "27cf521e-2b70-80f6-8a38-de568a179d2a"
+  },
+  "created_time" : "2025-09-28T11:49:00.000Z",
+  "last_edited_time" : "2025-09-28T11:51:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "bulleted_list_item",
+  "bulleted_list_item" : {
+    "rich_text" : [ {
+      "type" : "text",
+      "text" : {
+        "content" : "Success/failure recorded.",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "Success/failure recorded.",
+      "href" : null
+    } ],
+    "color" : "default"
+  }
+}, {
+  "object" : "block",
+  "id" : "27cf521e-2b70-80a5-a92b-d1e3e517845a",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "27cf521e-2b70-80f6-8a38-de568a179d2a"
+  },
+  "created_time" : "2025-09-28T11:49:00.000Z",
+  "last_edited_time" : "2025-09-28T11:51:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "bulleted_list_item",
+  "bulleted_list_item" : {
+    "rich_text" : [ {
+      "type" : "text",
+      "text" : {
+        "content" : "Data retrievable for reporting.",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "Data retrievable for reporting.",
+      "href" : null
+    } ],
+    "color" : "default"
+  }
+}, {
+  "object" : "block",
+  "id" : "27cf521e-2b70-81a6-9dbf-d5d4c876b22b",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "27cf521e-2b70-80f6-8a38-de568a179d2a"
+  },
+  "created_time" : "2025-09-28T11:49:00.000Z",
+  "last_edited_time" : "2025-09-28T11:49:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "paragraph",
+  "paragraph" : {
+    "rich_text" : [ ],
+    "color" : "default"
+  }
+}, {
+  "object" : "block",
+  "id" : "27cf521e-2b70-8118-a05a-de2178044cbd",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "27cf521e-2b70-80f6-8a38-de568a179d2a"
+  },
+  "created_time" : "2025-09-28T11:49:00.000Z",
+  "last_edited_time" : "2025-09-28T11:49:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "paragraph",
+  "paragraph" : {
+    "rich_text" : [ ],
+    "color" : "default"
+  }
+} ]

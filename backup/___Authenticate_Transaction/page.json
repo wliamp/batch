@@ -2,7 +2,7 @@
   "object" : "page",
   "id" : "278f521e-2b70-8028-8e92-e3264cf4cbf0",
   "created_time" : "2025-09-24T15:27:00.000Z",
-  "last_edited_time" : "2025-09-26T21:36:00.000Z",
+  "last_edited_time" : "2025-09-28T09:54:00.000Z",
   "created_by" : {
     "object" : "user",
     "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
@@ -14,7 +14,7 @@
   "cover" : null,
   "icon" : {
     "type" : "emoji",
-    "emoji" : "👤"
+    "emoji" : "💳"
   },
   "parent" : {
     "type" : "database_id",
@@ -24,14 +24,19 @@
   "in_trash" : false,
   "is_locked" : false,
   "properties" : {
-    "theme" : {
+    "Actor" : {
       "id" : "Yz%40%60",
       "type" : "select",
       "select" : {
-        "id" : "ac791d61-6a58-4e2c-b17e-2919264bdbce",
-        "name" : "Customer",
-        "color" : "pink"
+        "id" : "60b5bf7c-a35d-44c6-844b-558d82f58760",
+        "name" : "Issuer",
+        "color" : "blue"
       }
+    },
+    "Business" : {
+      "id" : "b%7Bxb",
+      "type" : "select",
+      "select" : null
     },
     "Status" : {
       "id" : "k%3FMm",

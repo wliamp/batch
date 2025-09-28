@@ -1,0 +1,443 @@
+[ {
+  "object" : "block",
+  "id" : "27cf521e-2b70-8045-b081-e6ef624a2274",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "27cf521e-2b70-80cb-9b4f-c370992b9792"
+  },
+  "created_time" : "2025-09-28T11:29:00.000Z",
+  "last_edited_time" : "2025-09-28T11:29:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "paragraph",
+  "paragraph" : {
+    "rich_text" : [ {
+      "type" : "text",
+      "text" : {
+        "content" : "As a ",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "As a ",
+      "href" : null
+    }, {
+      "type" : "text",
+      "text" : {
+        "content" : "Merchant",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : true,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "Merchant",
+      "href" : null
+    }, {
+      "type" : "text",
+      "text" : {
+        "content" : ", I want to issue refunds for returned or cancelled orders, so that I maintain customer trust.",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : ", I want to issue refunds for returned or cancelled orders, so that I maintain customer trust.",
+      "href" : null
+    } ],
+    "color" : "default"
+  }
+}, {
+  "object" : "block",
+  "id" : "27cf521e-2b70-80ab-aed4-c0ce82014438",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "27cf521e-2b70-80cb-9b4f-c370992b9792"
+  },
+  "created_time" : "2025-09-28T11:29:00.000Z",
+  "last_edited_time" : "2025-09-28T11:29:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "paragraph",
+  "paragraph" : {
+    "rich_text" : [ {
+      "type" : "text",
+      "text" : {
+        "content" : "Scope",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : true,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "Scope",
+      "href" : null
+    } ],
+    "color" : "default"
+  }
+}, {
+  "object" : "block",
+  "id" : "27cf521e-2b70-80f9-8249-d73197b71801",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "27cf521e-2b70-80cb-9b4f-c370992b9792"
+  },
+  "created_time" : "2025-09-28T11:29:00.000Z",
+  "last_edited_time" : "2025-09-28T11:29:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "bulleted_list_item",
+  "bulleted_list_item" : {
+    "rich_text" : [ {
+      "type" : "text",
+      "text" : {
+        "content" : "Initiate refund against completed sale or capture.",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "Initiate refund against completed sale or capture.",
+      "href" : null
+    } ],
+    "color" : "default"
+  }
+}, {
+  "object" : "block",
+  "id" : "27cf521e-2b70-80ea-b6da-fd6ea4e830e7",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "27cf521e-2b70-80cb-9b4f-c370992b9792"
+  },
+  "created_time" : "2025-09-28T11:29:00.000Z",
+  "last_edited_time" : "2025-09-28T11:29:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "bulleted_list_item",
+  "bulleted_list_item" : {
+    "rich_text" : [ {
+      "type" : "text",
+      "text" : {
+        "content" : "View refund status in dashboard.",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "View refund status in dashboard.",
+      "href" : null
+    } ],
+    "color" : "default"
+  }
+}, {
+  "object" : "block",
+  "id" : "27cf521e-2b70-80e7-b2e6-c26d4000692c",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "27cf521e-2b70-80cb-9b4f-c370992b9792"
+  },
+  "created_time" : "2025-09-28T11:29:00.000Z",
+  "last_edited_time" : "2025-09-28T11:29:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "paragraph",
+  "paragraph" : {
+    "rich_text" : [ {
+      "type" : "text",
+      "text" : {
+        "content" : "Acceptance Criteria",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : true,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "Acceptance Criteria",
+      "href" : null
+    } ],
+    "color" : "default"
+  }
+}, {
+  "object" : "block",
+  "id" : "27cf521e-2b70-801e-b72a-c51566d14e50",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "27cf521e-2b70-80cb-9b4f-c370992b9792"
+  },
+  "created_time" : "2025-09-28T11:29:00.000Z",
+  "last_edited_time" : "2025-09-28T11:29:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "bulleted_list_item",
+  "bulleted_list_item" : {
+    "rich_text" : [ {
+      "type" : "text",
+      "text" : {
+        "content" : "Refund succeeds → order status = ",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "Refund succeeds → order status = ",
+      "href" : null
+    }, {
+      "type" : "text",
+      "text" : {
+        "content" : "Refunded",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : true,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "Refunded",
+      "href" : null
+    }, {
+      "type" : "text",
+      "text" : {
+        "content" : ".",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : ".",
+      "href" : null
+    } ],
+    "color" : "default"
+  }
+}, {
+  "object" : "block",
+  "id" : "27cf521e-2b70-80c1-b924-d3d57e8bc260",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "27cf521e-2b70-80cb-9b4f-c370992b9792"
+  },
+  "created_time" : "2025-09-28T11:29:00.000Z",
+  "last_edited_time" : "2025-09-28T11:29:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "bulleted_list_item",
+  "bulleted_list_item" : {
+    "rich_text" : [ {
+      "type" : "text",
+      "text" : {
+        "content" : "Refund fails → merchant notified.",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "Refund fails → merchant notified.",
+      "href" : null
+    } ],
+    "color" : "default"
+  }
+}, {
+  "object" : "block",
+  "id" : "27cf521e-2b70-80db-b20f-c07f36150367",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "27cf521e-2b70-80cb-9b4f-c370992b9792"
+  },
+  "created_time" : "2025-09-28T11:29:00.000Z",
+  "last_edited_time" : "2025-09-28T11:29:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "bulleted_list_item",
+  "bulleted_list_item" : {
+    "rich_text" : [ {
+      "type" : "text",
+      "text" : {
+        "content" : "Refund history logged.",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "Refund history logged.",
+      "href" : null
+    } ],
+    "color" : "default"
+  }
+}, {
+  "object" : "block",
+  "id" : "27cf521e-2b70-817d-9007-f15744310fb9",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "27cf521e-2b70-80cb-9b4f-c370992b9792"
+  },
+  "created_time" : "2025-09-28T11:28:00.000Z",
+  "last_edited_time" : "2025-09-28T11:28:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "paragraph",
+  "paragraph" : {
+    "rich_text" : [ ],
+    "color" : "default"
+  }
+}, {
+  "object" : "block",
+  "id" : "27cf521e-2b70-818c-ad04-f893f70b5b09",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "27cf521e-2b70-80cb-9b4f-c370992b9792"
+  },
+  "created_time" : "2025-09-28T11:28:00.000Z",
+  "last_edited_time" : "2025-09-28T11:28:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "paragraph",
+  "paragraph" : {
+    "rich_text" : [ ],
+    "color" : "default"
+  }
+} ]

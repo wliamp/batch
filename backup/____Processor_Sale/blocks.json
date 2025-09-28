@@ -1,0 +1,452 @@
+[ {
+  "object" : "block",
+  "id" : "27cf521e-2b70-80f5-92f2-fdb3d1f897c8",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "27cf521e-2b70-807b-9d42-e5eb84c16e23"
+  },
+  "created_time" : "2025-09-28T11:14:00.000Z",
+  "last_edited_time" : "2025-09-28T11:14:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "paragraph",
+  "paragraph" : {
+    "rich_text" : [ {
+      "type" : "text",
+      "text" : {
+        "content" : "As a ",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "As a ",
+      "href" : null
+    }, {
+      "type" : "text",
+      "text" : {
+        "content" : "Processor",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : true,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "Processor",
+      "href" : null
+    }, {
+      "type" : "text",
+      "text" : {
+        "content" : ", I want to execute sale transactions, so that payments are settled immediately.",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : ", I want to execute sale transactions, so that payments are settled immediately.",
+      "href" : null
+    } ],
+    "color" : "default"
+  }
+}, {
+  "object" : "block",
+  "id" : "27cf521e-2b70-808c-b8a1-cb915baf3433",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "27cf521e-2b70-807b-9d42-e5eb84c16e23"
+  },
+  "created_time" : "2025-09-28T11:14:00.000Z",
+  "last_edited_time" : "2025-09-28T11:14:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "paragraph",
+  "paragraph" : {
+    "rich_text" : [ {
+      "type" : "text",
+      "text" : {
+        "content" : "Scope",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : true,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "Scope",
+      "href" : null
+    } ],
+    "color" : "default"
+  }
+}, {
+  "object" : "block",
+  "id" : "27cf521e-2b70-802a-abf4-dcfc05bead9f",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "27cf521e-2b70-807b-9d42-e5eb84c16e23"
+  },
+  "created_time" : "2025-09-28T11:14:00.000Z",
+  "last_edited_time" : "2025-09-28T11:14:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "bulleted_list_item",
+  "bulleted_list_item" : {
+    "rich_text" : [ {
+      "type" : "text",
+      "text" : {
+        "content" : "Validate request.",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "Validate request.",
+      "href" : null
+    } ],
+    "color" : "default"
+  }
+}, {
+  "object" : "block",
+  "id" : "27cf521e-2b70-80c1-8d15-e9f4859514b6",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "27cf521e-2b70-807b-9d42-e5eb84c16e23"
+  },
+  "created_time" : "2025-09-28T11:14:00.000Z",
+  "last_edited_time" : "2025-09-28T11:14:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "bulleted_list_item",
+  "bulleted_list_item" : {
+    "rich_text" : [ {
+      "type" : "text",
+      "text" : {
+        "content" : "Convert into transfer instruction.",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "Convert into transfer instruction.",
+      "href" : null
+    } ],
+    "color" : "default"
+  }
+}, {
+  "object" : "block",
+  "id" : "27cf521e-2b70-8044-8279-d78f9eefe604",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "27cf521e-2b70-807b-9d42-e5eb84c16e23"
+  },
+  "created_time" : "2025-09-28T11:14:00.000Z",
+  "last_edited_time" : "2025-09-28T11:14:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "bulleted_list_item",
+  "bulleted_list_item" : {
+    "rich_text" : [ {
+      "type" : "text",
+      "text" : {
+        "content" : "Relay outcome.",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "Relay outcome.",
+      "href" : null
+    } ],
+    "color" : "default"
+  }
+}, {
+  "object" : "block",
+  "id" : "27cf521e-2b70-80d9-8ea3-cbdfd324c440",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "27cf521e-2b70-807b-9d42-e5eb84c16e23"
+  },
+  "created_time" : "2025-09-28T11:14:00.000Z",
+  "last_edited_time" : "2025-09-28T11:14:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "paragraph",
+  "paragraph" : {
+    "rich_text" : [ {
+      "type" : "text",
+      "text" : {
+        "content" : "Acceptance Criteria",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : true,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "Acceptance Criteria",
+      "href" : null
+    } ],
+    "color" : "default"
+  }
+}, {
+  "object" : "block",
+  "id" : "27cf521e-2b70-800f-8b50-e8a4528a80be",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "27cf521e-2b70-807b-9d42-e5eb84c16e23"
+  },
+  "created_time" : "2025-09-28T11:14:00.000Z",
+  "last_edited_time" : "2025-09-28T11:14:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "bulleted_list_item",
+  "bulleted_list_item" : {
+    "rich_text" : [ {
+      "type" : "text",
+      "text" : {
+        "content" : "Sale valid only with sufficient funds.",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "Sale valid only with sufficient funds.",
+      "href" : null
+    } ],
+    "color" : "default"
+  }
+}, {
+  "object" : "block",
+  "id" : "27cf521e-2b70-80ad-8e25-d94380bd5ac2",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "27cf521e-2b70-807b-9d42-e5eb84c16e23"
+  },
+  "created_time" : "2025-09-28T11:14:00.000Z",
+  "last_edited_time" : "2025-09-28T11:14:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "bulleted_list_item",
+  "bulleted_list_item" : {
+    "rich_text" : [ {
+      "type" : "text",
+      "text" : {
+        "content" : "Settlement instruction issued.",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "Settlement instruction issued.",
+      "href" : null
+    } ],
+    "color" : "default"
+  }
+}, {
+  "object" : "block",
+  "id" : "27cf521e-2b70-808f-883c-cacd19bceb78",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "27cf521e-2b70-807b-9d42-e5eb84c16e23"
+  },
+  "created_time" : "2025-09-28T11:14:00.000Z",
+  "last_edited_time" : "2025-09-28T11:14:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "bulleted_list_item",
+  "bulleted_list_item" : {
+    "rich_text" : [ {
+      "type" : "text",
+      "text" : {
+        "content" : "Result logged consistently.",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "Result logged consistently.",
+      "href" : null
+    } ],
+    "color" : "default"
+  }
+}, {
+  "object" : "block",
+  "id" : "27cf521e-2b70-8101-8c0c-d28c26d0f3a0",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "27cf521e-2b70-807b-9d42-e5eb84c16e23"
+  },
+  "created_time" : "2025-09-28T11:14:00.000Z",
+  "last_edited_time" : "2025-09-28T11:14:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "paragraph",
+  "paragraph" : {
+    "rich_text" : [ ],
+    "color" : "default"
+  }
+}, {
+  "object" : "block",
+  "id" : "27cf521e-2b70-8127-90a0-f6574447318b",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "27cf521e-2b70-807b-9d42-e5eb84c16e23"
+  },
+  "created_time" : "2025-09-28T11:14:00.000Z",
+  "last_edited_time" : "2025-09-28T11:14:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "paragraph",
+  "paragraph" : {
+    "rich_text" : [ ],
+    "color" : "default"
+  }
+} ]

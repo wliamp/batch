@@ -47,7 +47,7 @@
       "block_id" : "278f521e-2b70-808a-a520-fa688237aedd"
     },
     "created_time" : "2025-09-26T17:42:00.000Z",
-    "last_edited_time" : "2025-09-26T17:42:00.000Z",
+    "last_edited_time" : "2025-09-28T08:54:00.000Z",
     "created_by" : {
       "object" : "user",
       "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
@@ -80,7 +80,7 @@
       }, {
         "type" : "text",
         "text" : {
-          "content" : "Customer",
+          "content" : "Payer",
           "link" : null
         },
         "annotations" : {
@@ -91,7 +91,7 @@
           "code" : false,
           "color" : "default"
         },
-        "plain_text" : "Customer",
+        "plain_text" : "Payer",
         "href" : null
       }, {
         "type" : "text",
@@ -226,7 +226,7 @@
       "block_id" : "27af521e-2b70-809a-98d2-ff57863f7bef"
     },
     "created_time" : "2025-09-26T18:01:00.000Z",
-    "last_edited_time" : "2025-09-26T19:23:00.000Z",
+    "last_edited_time" : "2025-09-28T08:55:00.000Z",
     "created_by" : {
       "object" : "user",
       "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
@@ -261,13 +261,13 @@
     },
     "children" : [ {
       "object" : "block",
-      "id" : "27af521e-2b70-803f-be05-dafa3e844a86",
+      "id" : "27cf521e-2b70-8005-85e3-d7b3d5ee5086",
       "parent" : {
         "type" : "block_id",
         "block_id" : "27af521e-2b70-8011-a026-ccb50030ce88"
       },
-      "created_time" : "2025-09-26T19:23:00.000Z",
-      "last_edited_time" : "2025-09-26T19:23:00.000Z",
+      "created_time" : "2025-09-28T08:55:00.000Z",
+      "last_edited_time" : "2025-09-28T08:55:00.000Z",
       "created_by" : {
         "object" : "user",
         "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
@@ -300,7 +300,7 @@
         }, {
           "type" : "text",
           "text" : {
-            "content" : "secure input form",
+            "content" : "secure input form simulation",
             "link" : null
           },
           "annotations" : {
@@ -311,7 +311,7 @@
             "code" : false,
             "color" : "default"
           },
-          "plain_text" : "secure input form",
+          "plain_text" : "secure input form simulation",
           "href" : null
         }, {
           "type" : "text",
@@ -334,13 +334,13 @@
       }
     }, {
       "object" : "block",
-      "id" : "27af521e-2b70-8042-bcb7-c53a5c887614",
+      "id" : "27cf521e-2b70-80e7-85d5-d99226912e53",
       "parent" : {
         "type" : "block_id",
         "block_id" : "27af521e-2b70-8011-a026-ccb50030ce88"
       },
-      "created_time" : "2025-09-26T19:23:00.000Z",
-      "last_edited_time" : "2025-09-26T19:23:00.000Z",
+      "created_time" : "2025-09-28T08:55:00.000Z",
+      "last_edited_time" : "2025-09-28T08:55:00.000Z",
       "created_by" : {
         "object" : "user",
         "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
@@ -357,7 +357,7 @@
         "rich_text" : [ {
           "type" : "text",
           "text" : {
-            "content" : "Supported input types:",
+            "content" : "Supported input types (all simulated):",
             "link" : null
           },
           "annotations" : {
@@ -368,20 +368,20 @@
             "code" : false,
             "color" : "default"
           },
-          "plain_text" : "Supported input types:",
+          "plain_text" : "Supported input types (all simulated):",
           "href" : null
         } ],
         "color" : "default"
       },
       "children" : [ {
         "object" : "block",
-        "id" : "27af521e-2b70-8031-ac89-d52fab75814b",
+        "id" : "27cf521e-2b70-80f9-98ab-c185dbb39a09",
         "parent" : {
           "type" : "block_id",
-          "block_id" : "27af521e-2b70-8042-bcb7-c53a5c887614"
+          "block_id" : "27cf521e-2b70-80e7-85d5-d99226912e53"
         },
-        "created_time" : "2025-09-26T19:23:00.000Z",
-        "last_edited_time" : "2025-09-26T19:23:00.000Z",
+        "created_time" : "2025-09-28T08:55:00.000Z",
+        "last_edited_time" : "2025-09-28T08:55:00.000Z",
         "created_by" : {
           "object" : "user",
           "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
@@ -414,7 +414,7 @@
           }, {
             "type" : "text",
             "text" : {
-              "content" : ": card number, expiry date, CVV, cardholder name (through local providers/gateways such as Napas, VNPay, Payoo, OnePay).",
+              "content" : ": card number, expiry date, CVV, cardholder name.",
               "link" : null
             },
             "annotations" : {
@@ -425,20 +425,20 @@
               "code" : false,
               "color" : "default"
             },
-            "plain_text" : ": card number, expiry date, CVV, cardholder name (through local providers/gateways such as Napas, VNPay, Payoo, OnePay).",
+            "plain_text" : ": card number, expiry date, CVV, cardholder name.",
             "href" : null
           } ],
           "color" : "default"
         }
       }, {
         "object" : "block",
-        "id" : "27af521e-2b70-809b-8fa7-e15183680535",
+        "id" : "27cf521e-2b70-8025-bb5b-deacf97571a0",
         "parent" : {
           "type" : "block_id",
-          "block_id" : "27af521e-2b70-8042-bcb7-c53a5c887614"
+          "block_id" : "27cf521e-2b70-80e7-85d5-d99226912e53"
         },
-        "created_time" : "2025-09-26T19:23:00.000Z",
-        "last_edited_time" : "2025-09-26T19:23:00.000Z",
+        "created_time" : "2025-09-28T08:55:00.000Z",
+        "last_edited_time" : "2025-09-28T08:55:00.000Z",
         "created_by" : {
           "object" : "user",
           "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
@@ -455,7 +455,7 @@
           "rich_text" : [ {
             "type" : "text",
             "text" : {
-              "content" : "Bank Account details",
+              "content" : "Bank Account",
               "link" : null
             },
             "annotations" : {
@@ -466,12 +466,12 @@
               "code" : false,
               "color" : "default"
             },
-            "plain_text" : "Bank Account details",
+            "plain_text" : "Bank Account",
             "href" : null
           }, {
             "type" : "text",
             "text" : {
-              "content" : ": account number + bank code (",
+              "content" : ": account number + bank code.",
               "link" : null
             },
             "annotations" : {
@@ -482,52 +482,20 @@
               "code" : false,
               "color" : "default"
             },
-            "plain_text" : ": account number + bank code (",
-            "href" : null
-          }, {
-            "type" : "text",
-            "text" : {
-              "content" : "only for VN banks that support direct debit API from raw account input",
-              "link" : null
-            },
-            "annotations" : {
-              "bold" : false,
-              "italic" : true,
-              "strikethrough" : false,
-              "underline" : false,
-              "code" : false,
-              "color" : "default"
-            },
-            "plain_text" : "only for VN banks that support direct debit API from raw account input",
-            "href" : null
-          }, {
-            "type" : "text",
-            "text" : {
-              "content" : ").",
-              "link" : null
-            },
-            "annotations" : {
-              "bold" : false,
-              "italic" : false,
-              "strikethrough" : false,
-              "underline" : false,
-              "code" : false,
-              "color" : "default"
-            },
-            "plain_text" : ").",
+            "plain_text" : ": account number + bank code.",
             "href" : null
           } ],
           "color" : "default"
         }
       }, {
         "object" : "block",
-        "id" : "27af521e-2b70-8031-9365-e42a3edc41b8",
+        "id" : "27cf521e-2b70-80da-ad38-dcec780430ad",
         "parent" : {
           "type" : "block_id",
-          "block_id" : "27af521e-2b70-8042-bcb7-c53a5c887614"
+          "block_id" : "27cf521e-2b70-80e7-85d5-d99226912e53"
         },
-        "created_time" : "2025-09-26T19:23:00.000Z",
-        "last_edited_time" : "2025-09-26T19:23:00.000Z",
+        "created_time" : "2025-09-28T08:55:00.000Z",
+        "last_edited_time" : "2025-09-28T08:55:00.000Z",
         "created_by" : {
           "object" : "user",
           "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
@@ -544,7 +512,7 @@
           "rich_text" : [ {
             "type" : "text",
             "text" : {
-              "content" : "Local e-wallet binding",
+              "content" : "E-wallet binding",
               "link" : null
             },
             "annotations" : {
@@ -555,12 +523,12 @@
               "code" : false,
               "color" : "default"
             },
-            "plain_text" : "Local e-wallet binding",
+            "plain_text" : "E-wallet binding",
             "href" : null
           }, {
             "type" : "text",
             "text" : {
-              "content" : " (",
+              "content" : ": customer provides simulated wallet ID or account reference.",
               "link" : null
             },
             "annotations" : {
@@ -571,39 +539,7 @@
               "code" : false,
               "color" : "default"
             },
-            "plain_text" : " (",
-            "href" : null
-          }, {
-            "type" : "text",
-            "text" : {
-              "content" : "only if the wallet provider supports direct card/account binding via API, otherwise redirect flow is handled separately",
-              "link" : null
-            },
-            "annotations" : {
-              "bold" : false,
-              "italic" : true,
-              "strikethrough" : false,
-              "underline" : false,
-              "code" : false,
-              "color" : "default"
-            },
-            "plain_text" : "only if the wallet provider supports direct card/account binding via API, otherwise redirect flow is handled separately",
-            "href" : null
-          }, {
-            "type" : "text",
-            "text" : {
-              "content" : ").",
-              "link" : null
-            },
-            "annotations" : {
-              "bold" : false,
-              "italic" : false,
-              "strikethrough" : false,
-              "underline" : false,
-              "code" : false,
-              "color" : "default"
-            },
-            "plain_text" : ").",
+            "plain_text" : ": customer provides simulated wallet ID or account reference.",
             "href" : null
           } ],
           "color" : "default"
@@ -611,13 +547,13 @@
       } ]
     }, {
       "object" : "block",
-      "id" : "27af521e-2b70-80b6-97cb-f1beba424b5d",
+      "id" : "27cf521e-2b70-80a2-9b30-f07f2380f18b",
       "parent" : {
         "type" : "block_id",
         "block_id" : "27af521e-2b70-8011-a026-ccb50030ce88"
       },
-      "created_time" : "2025-09-26T19:23:00.000Z",
-      "last_edited_time" : "2025-09-26T19:23:00.000Z",
+      "created_time" : "2025-09-28T08:55:00.000Z",
+      "last_edited_time" : "2025-09-28T08:55:00.000Z",
       "created_by" : {
         "object" : "user",
         "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
@@ -634,7 +570,7 @@
         "rich_text" : [ {
           "type" : "text",
           "text" : {
-            "content" : "Input must follow ",
+            "content" : "Apply ",
             "link" : null
           },
           "annotations" : {
@@ -645,7 +581,7 @@
             "code" : false,
             "color" : "default"
           },
-          "plain_text" : "Input must follow ",
+          "plain_text" : "Apply ",
           "href" : null
         }, {
           "type" : "text",
@@ -666,7 +602,7 @@
         }, {
           "type" : "text",
           "text" : {
-            "content" : ":",
+            "content" : " within the system:",
             "link" : null
           },
           "annotations" : {
@@ -677,20 +613,20 @@
             "code" : false,
             "color" : "default"
           },
-          "plain_text" : ":",
+          "plain_text" : " within the system:",
           "href" : null
         } ],
         "color" : "default"
       },
       "children" : [ {
         "object" : "block",
-        "id" : "27af521e-2b70-80f8-8850-f60a15e61f78",
+        "id" : "27cf521e-2b70-80af-bdbc-e31062de59ac",
         "parent" : {
           "type" : "block_id",
-          "block_id" : "27af521e-2b70-80b6-97cb-f1beba424b5d"
+          "block_id" : "27cf521e-2b70-80a2-9b30-f07f2380f18b"
         },
-        "created_time" : "2025-09-26T19:23:00.000Z",
-        "last_edited_time" : "2025-09-26T19:23:00.000Z",
+        "created_time" : "2025-09-28T08:55:00.000Z",
+        "last_edited_time" : "2025-09-28T08:55:00.000Z",
         "created_by" : {
           "object" : "user",
           "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
@@ -707,7 +643,7 @@
           "rich_text" : [ {
             "type" : "text",
             "text" : {
-              "content" : "Mask sensitive fields (card number, CVV).",
+              "content" : "Mask sensitive fields (e.g., card number, CVV) while typing.",
               "link" : null
             },
             "annotations" : {
@@ -718,20 +654,20 @@
               "code" : false,
               "color" : "default"
             },
-            "plain_text" : "Mask sensitive fields (card number, CVV).",
+            "plain_text" : "Mask sensitive fields (e.g., card number, CVV) while typing.",
             "href" : null
           } ],
           "color" : "default"
         }
       }, {
         "object" : "block",
-        "id" : "27af521e-2b70-80f2-8a6b-e0ceb2de99e0",
+        "id" : "27cf521e-2b70-8098-b99b-d3942f35fe57",
         "parent" : {
           "type" : "block_id",
-          "block_id" : "27af521e-2b70-80b6-97cb-f1beba424b5d"
+          "block_id" : "27cf521e-2b70-80a2-9b30-f07f2380f18b"
         },
-        "created_time" : "2025-09-26T19:23:00.000Z",
-        "last_edited_time" : "2025-09-26T19:23:00.000Z",
+        "created_time" : "2025-09-28T08:55:00.000Z",
+        "last_edited_time" : "2025-09-28T08:55:00.000Z",
         "created_by" : {
           "object" : "user",
           "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
@@ -748,7 +684,7 @@
           "rich_text" : [ {
             "type" : "text",
             "text" : {
-              "content" : "Use HTTPS/TLS for all data transmission.",
+              "content" : "Validate input format on the client side (e.g., card number with Luhn check, expiry date format, CVV length).",
               "link" : null
             },
             "annotations" : {
@@ -759,20 +695,20 @@
               "code" : false,
               "color" : "default"
             },
-            "plain_text" : "Use HTTPS/TLS for all data transmission.",
+            "plain_text" : "Validate input format on the client side (e.g., card number with Luhn check, expiry date format, CVV length).",
             "href" : null
           } ],
           "color" : "default"
         }
       }, {
         "object" : "block",
-        "id" : "27af521e-2b70-8081-a87b-e7cb11bf83ad",
+        "id" : "27cf521e-2b70-80e1-aaa7-eb382c3aaa80",
         "parent" : {
           "type" : "block_id",
-          "block_id" : "27af521e-2b70-80b6-97cb-f1beba424b5d"
+          "block_id" : "27cf521e-2b70-80a2-9b30-f07f2380f18b"
         },
-        "created_time" : "2025-09-26T19:23:00.000Z",
-        "last_edited_time" : "2025-09-26T19:23:00.000Z",
+        "created_time" : "2025-09-28T08:55:00.000Z",
+        "last_edited_time" : "2025-09-28T08:55:00.000Z",
         "created_by" : {
           "object" : "user",
           "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
@@ -789,7 +725,7 @@
           "rich_text" : [ {
             "type" : "text",
             "text" : {
-              "content" : "Apply client-side validation for input format.",
+              "content" : "Ensure data transmission is assumed to be encrypted (HTTPS/TLS).",
               "link" : null
             },
             "annotations" : {
@@ -800,20 +736,20 @@
               "code" : false,
               "color" : "default"
             },
-            "plain_text" : "Apply client-side validation for input format.",
+            "plain_text" : "Ensure data transmission is assumed to be encrypted (HTTPS/TLS).",
             "href" : null
           } ],
           "color" : "default"
         }
       }, {
         "object" : "block",
-        "id" : "27af521e-2b70-80e0-bf5b-d2b36f101764",
+        "id" : "27cf521e-2b70-808e-9aa6-d5419c270467",
         "parent" : {
           "type" : "block_id",
-          "block_id" : "27af521e-2b70-80b6-97cb-f1beba424b5d"
+          "block_id" : "27cf521e-2b70-80a2-9b30-f07f2380f18b"
         },
-        "created_time" : "2025-09-26T19:23:00.000Z",
-        "last_edited_time" : "2025-09-26T19:23:00.000Z",
+        "created_time" : "2025-09-28T08:55:00.000Z",
+        "last_edited_time" : "2025-09-28T08:55:00.000Z",
         "created_by" : {
           "object" : "user",
           "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
@@ -830,7 +766,7 @@
           "rich_text" : [ {
             "type" : "text",
             "text" : {
-              "content" : "Do not log or persist raw card/account details.",
+              "content" : "No logging or persistence of raw sensitive data.",
               "link" : null
             },
             "annotations" : {
@@ -841,7 +777,7 @@
               "code" : false,
               "color" : "default"
             },
-            "plain_text" : "Do not log or persist raw card/account details.",
+            "plain_text" : "No logging or persistence of raw sensitive data.",
             "href" : null
           } ],
           "color" : "default"
@@ -849,13 +785,13 @@
       } ]
     }, {
       "object" : "block",
-      "id" : "27af521e-2b70-8018-b785-c96b0099c9a2",
+      "id" : "27cf521e-2b70-8058-b621-c8fd64b2367e",
       "parent" : {
         "type" : "block_id",
         "block_id" : "27af521e-2b70-8011-a026-ccb50030ce88"
       },
-      "created_time" : "2025-09-26T19:23:00.000Z",
-      "last_edited_time" : "2025-09-26T19:23:00.000Z",
+      "created_time" : "2025-09-28T08:55:00.000Z",
+      "last_edited_time" : "2025-09-28T08:55:00.000Z",
       "created_by" : {
         "object" : "user",
         "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
@@ -872,7 +808,7 @@
         "rich_text" : [ {
           "type" : "text",
           "text" : {
-            "content" : "System design must allow adding or switching ",
+            "content" : "The backend must be able to ",
             "link" : null
           },
           "annotations" : {
@@ -883,12 +819,12 @@
             "code" : false,
             "color" : "default"
           },
-          "plain_text" : "System design must allow adding or switching ",
+          "plain_text" : "The backend must be able to ",
           "href" : null
         }, {
           "type" : "text",
           "text" : {
-            "content" : "Vietnamese providers",
+            "content" : "simulate authorization results",
             "link" : null
           },
           "annotations" : {
@@ -899,12 +835,12 @@
             "code" : false,
             "color" : "default"
           },
-          "plain_text" : "Vietnamese providers",
+          "plain_text" : "simulate authorization results",
           "href" : null
         }, {
           "type" : "text",
           "text" : {
-            "content" : " via configuration, not code changes.",
+            "content" : " (success/failure) based on predefined rules.",
             "link" : null
           },
           "annotations" : {
@@ -915,7 +851,48 @@
             "code" : false,
             "color" : "default"
           },
-          "plain_text" : " via configuration, not code changes.",
+          "plain_text" : " (success/failure) based on predefined rules.",
+          "href" : null
+        } ],
+        "color" : "default"
+      }
+    }, {
+      "object" : "block",
+      "id" : "27cf521e-2b70-8095-901d-f19e31f80e88",
+      "parent" : {
+        "type" : "block_id",
+        "block_id" : "27af521e-2b70-8011-a026-ccb50030ce88"
+      },
+      "created_time" : "2025-09-28T08:55:00.000Z",
+      "last_edited_time" : "2025-09-28T08:55:00.000Z",
+      "created_by" : {
+        "object" : "user",
+        "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+      },
+      "last_edited_by" : {
+        "object" : "user",
+        "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+      },
+      "has_children" : false,
+      "archived" : false,
+      "in_trash" : false,
+      "type" : "bulleted_list_item",
+      "bulleted_list_item" : {
+        "rich_text" : [ {
+          "type" : "text",
+          "text" : {
+            "content" : "Configuration-driven approach: available input methods (card, bank account, wallet) can be enabled or disabled without code changes.",
+            "link" : null
+          },
+          "annotations" : {
+            "bold" : false,
+            "italic" : false,
+            "strikethrough" : false,
+            "underline" : false,
+            "code" : false,
+            "color" : "default"
+          },
+          "plain_text" : "Configuration-driven approach: available input methods (card, bank account, wallet) can be enabled or disabled without code changes.",
           "href" : null
         } ],
         "color" : "default"
@@ -929,7 +906,7 @@
       "block_id" : "27af521e-2b70-809a-98d2-ff57863f7bef"
     },
     "created_time" : "2025-09-26T18:01:00.000Z",
-    "last_edited_time" : "2025-09-26T19:23:00.000Z",
+    "last_edited_time" : "2025-09-28T08:55:00.000Z",
     "created_by" : {
       "object" : "user",
       "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
@@ -964,13 +941,13 @@
     },
     "children" : [ {
       "object" : "block",
-      "id" : "27af521e-2b70-807b-b262-e51849da2e40",
+      "id" : "27cf521e-2b70-804a-8725-d20c9b8e6656",
       "parent" : {
         "type" : "block_id",
         "block_id" : "27af521e-2b70-807f-94db-f9392aa5d9c1"
       },
-      "created_time" : "2025-09-26T19:23:00.000Z",
-      "last_edited_time" : "2025-09-26T19:23:00.000Z",
+      "created_time" : "2025-09-28T08:55:00.000Z",
+      "last_edited_time" : "2025-09-28T08:55:00.000Z",
       "created_by" : {
         "object" : "user",
         "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
@@ -987,7 +964,7 @@
         "rich_text" : [ {
           "type" : "text",
           "text" : {
-            "content" : "International gateways (e.g., Stripe, PayPal).",
+            "content" : "Real integration with any payment gateway, e-wallet, or bank API.",
             "link" : null
           },
           "annotations" : {
@@ -998,20 +975,20 @@
             "code" : false,
             "color" : "default"
           },
-          "plain_text" : "International gateways (e.g., Stripe, PayPal).",
+          "plain_text" : "Real integration with any payment gateway, e-wallet, or bank API.",
           "href" : null
         } ],
         "color" : "default"
       }
     }, {
       "object" : "block",
-      "id" : "27af521e-2b70-80d5-9729-c35edc13a1ee",
+      "id" : "27cf521e-2b70-80be-8f9f-f84c2facc3b6",
       "parent" : {
         "type" : "block_id",
         "block_id" : "27af521e-2b70-807f-94db-f9392aa5d9c1"
       },
-      "created_time" : "2025-09-26T19:23:00.000Z",
-      "last_edited_time" : "2025-09-26T19:23:00.000Z",
+      "created_time" : "2025-09-28T08:55:00.000Z",
+      "last_edited_time" : "2025-09-28T08:55:00.000Z",
       "created_by" : {
         "object" : "user",
         "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
@@ -1028,7 +1005,7 @@
         "rich_text" : [ {
           "type" : "text",
           "text" : {
-            "content" : "PCI-DSS full certification, tokenization, or secure vaulting of card data (covered in later stories).",
+            "content" : "PCI-DSS certification, tokenization, or secure vaulting of card/account data.",
             "link" : null
           },
           "annotations" : {
@@ -1039,20 +1016,20 @@
             "code" : false,
             "color" : "default"
           },
-          "plain_text" : "PCI-DSS full certification, tokenization, or secure vaulting of card data (covered in later stories).",
+          "plain_text" : "PCI-DSS certification, tokenization, or secure vaulting of card/account data.",
           "href" : null
         } ],
         "color" : "default"
       }
     }, {
       "object" : "block",
-      "id" : "27af521e-2b70-8090-9318-e3155dbb2ecb",
+      "id" : "27cf521e-2b70-80cc-8d57-dd9ba30d173b",
       "parent" : {
         "type" : "block_id",
         "block_id" : "27af521e-2b70-807f-94db-f9392aa5d9c1"
       },
-      "created_time" : "2025-09-26T19:23:00.000Z",
-      "last_edited_time" : "2025-09-26T19:23:00.000Z",
+      "created_time" : "2025-09-28T08:55:00.000Z",
+      "last_edited_time" : "2025-09-28T08:55:00.000Z",
       "created_by" : {
         "object" : "user",
         "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
@@ -1069,7 +1046,7 @@
         "rich_text" : [ {
           "type" : "text",
           "text" : {
-            "content" : "Advanced fraud detection (3D Secure, behavioral analytics, AI-based risk scoring).",
+            "content" : "Fraud detection mechanisms (e.g., 3D Secure, risk scoring).",
             "link" : null
           },
           "annotations" : {
@@ -1080,20 +1057,20 @@
             "code" : false,
             "color" : "default"
           },
-          "plain_text" : "Advanced fraud detection (3D Secure, behavioral analytics, AI-based risk scoring).",
+          "plain_text" : "Fraud detection mechanisms (e.g., 3D Secure, risk scoring).",
           "href" : null
         } ],
         "color" : "default"
       }
     }, {
       "object" : "block",
-      "id" : "27af521e-2b70-8091-aa5c-cd578a10fd63",
+      "id" : "27cf521e-2b70-807d-b976-d0c8884a355e",
       "parent" : {
         "type" : "block_id",
         "block_id" : "27af521e-2b70-807f-94db-f9392aa5d9c1"
       },
-      "created_time" : "2025-09-26T19:23:00.000Z",
-      "last_edited_time" : "2025-09-26T19:23:00.000Z",
+      "created_time" : "2025-09-28T08:55:00.000Z",
+      "last_edited_time" : "2025-09-28T08:55:00.000Z",
       "created_by" : {
         "object" : "user",
         "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
@@ -1110,7 +1087,7 @@
         "rich_text" : [ {
           "type" : "text",
           "text" : {
-            "content" : "Recurring billing, saved cards, or subscription management (separate story).",
+            "content" : "Recurring payments, saved cards, or subscription management.",
             "link" : null
           },
           "annotations" : {
@@ -1121,20 +1098,20 @@
             "code" : false,
             "color" : "default"
           },
-          "plain_text" : "Recurring billing, saved cards, or subscription management (separate story).",
+          "plain_text" : "Recurring payments, saved cards, or subscription management.",
           "href" : null
         } ],
         "color" : "default"
       }
     }, {
       "object" : "block",
-      "id" : "27af521e-2b70-8079-b822-cf96073a69ef",
+      "id" : "27cf521e-2b70-80ae-b034-e6833e331c83",
       "parent" : {
         "type" : "block_id",
         "block_id" : "27af521e-2b70-807f-94db-f9392aa5d9c1"
       },
-      "created_time" : "2025-09-26T19:23:00.000Z",
-      "last_edited_time" : "2025-09-26T19:23:00.000Z",
+      "created_time" : "2025-09-28T08:55:00.000Z",
+      "last_edited_time" : "2025-09-28T08:55:00.000Z",
       "created_by" : {
         "object" : "user",
         "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
@@ -1151,7 +1128,7 @@
         "rich_text" : [ {
           "type" : "text",
           "text" : {
-            "content" : "International wallet providers (PayPal, Apple Pay, Google Pay, Alipay, WeChat Pay).",
+            "content" : "International payment methods (PayPal, Apple Pay, Google Pay, etc.).",
             "link" : null
           },
           "annotations" : {
@@ -1162,7 +1139,7 @@
             "code" : false,
             "color" : "default"
           },
-          "plain_text" : "International wallet providers (PayPal, Apple Pay, Google Pay, Alipay, WeChat Pay).",
+          "plain_text" : "International payment methods (PayPal, Apple Pay, Google Pay, etc.).",
           "href" : null
         } ],
         "color" : "default"
@@ -1177,7 +1154,7 @@
     "page_id" : "278f521e-2b70-8002-a270-e02f45f0720e"
   },
   "created_time" : "2025-09-24T15:39:00.000Z",
-  "last_edited_time" : "2025-09-26T19:23:00.000Z",
+  "last_edited_time" : "2025-09-28T08:55:00.000Z",
   "created_by" : {
     "object" : "user",
     "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
@@ -1212,13 +1189,13 @@
   },
   "children" : [ {
     "object" : "block",
-    "id" : "27af521e-2b70-8078-ae11-ec380cbddd49",
+    "id" : "27cf521e-2b70-80ae-8837-d95073c2ca59",
     "parent" : {
       "type" : "block_id",
       "block_id" : "278f521e-2b70-804b-9473-ef3bed2c06a1"
     },
-    "created_time" : "2025-09-26T19:23:00.000Z",
-    "last_edited_time" : "2025-09-26T19:23:00.000Z",
+    "created_time" : "2025-09-28T08:55:00.000Z",
+    "last_edited_time" : "2025-09-28T08:55:00.000Z",
     "created_by" : {
       "object" : "user",
       "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
@@ -1235,23 +1212,7 @@
       "rich_text" : [ {
         "type" : "text",
         "text" : {
-          "content" : "Customer sees a ",
-          "link" : null
-        },
-        "annotations" : {
-          "bold" : false,
-          "italic" : false,
-          "strikethrough" : false,
-          "underline" : false,
-          "code" : false,
-          "color" : "default"
-        },
-        "plain_text" : "Customer sees a ",
-        "href" : null
-      }, {
-        "type" : "text",
-        "text" : {
-          "content" : "secure form",
+          "content" : "Payer",
           "link" : null
         },
         "annotations" : {
@@ -1262,7 +1223,39 @@
           "code" : false,
           "color" : "default"
         },
-        "plain_text" : "secure form",
+        "plain_text" : "Payer",
+        "href" : null
+      }, {
+        "type" : "text",
+        "text" : {
+          "content" : " is presented with a ",
+          "link" : null
+        },
+        "annotations" : {
+          "bold" : false,
+          "italic" : false,
+          "strikethrough" : false,
+          "underline" : false,
+          "code" : false,
+          "color" : "default"
+        },
+        "plain_text" : " is presented with a ",
+        "href" : null
+      }, {
+        "type" : "text",
+        "text" : {
+          "content" : "secure form simulation",
+          "link" : null
+        },
+        "annotations" : {
+          "bold" : true,
+          "italic" : false,
+          "strikethrough" : false,
+          "underline" : false,
+          "code" : false,
+          "color" : "default"
+        },
+        "plain_text" : "secure form simulation",
         "href" : null
       }, {
         "type" : "text",
@@ -1286,13 +1279,13 @@
     }
   }, {
     "object" : "block",
-    "id" : "27af521e-2b70-8079-94b8-fc00b3a76da8",
+    "id" : "27cf521e-2b70-80b0-ac3e-c6a85fc24517",
     "parent" : {
       "type" : "block_id",
       "block_id" : "278f521e-2b70-804b-9473-ef3bed2c06a1"
     },
-    "created_time" : "2025-09-26T19:23:00.000Z",
-    "last_edited_time" : "2025-09-26T19:23:00.000Z",
+    "created_time" : "2025-09-28T08:55:00.000Z",
+    "last_edited_time" : "2025-09-28T08:55:00.000Z",
     "created_by" : {
       "object" : "user",
       "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
@@ -1309,7 +1302,7 @@
       "rich_text" : [ {
         "type" : "text",
         "text" : {
-          "content" : "Card number and CVV fields are masked while typing.",
+          "content" : "Sensitive fields (card number, CVV) are masked during input.",
           "link" : null
         },
         "annotations" : {
@@ -1320,7 +1313,7 @@
           "code" : false,
           "color" : "default"
         },
-        "plain_text" : "Card number and CVV fields are masked while typing.",
+        "plain_text" : "Sensitive fields (card number, CVV) are masked during input.",
         "href" : null
       } ],
       "checked" : false,
@@ -1328,139 +1321,13 @@
     }
   }, {
     "object" : "block",
-    "id" : "27af521e-2b70-8073-a1ec-f2a0efd09298",
+    "id" : "27cf521e-2b70-8010-88f2-cbed237f143d",
     "parent" : {
       "type" : "block_id",
       "block_id" : "278f521e-2b70-804b-9473-ef3bed2c06a1"
     },
-    "created_time" : "2025-09-26T19:23:00.000Z",
-    "last_edited_time" : "2025-09-26T19:23:00.000Z",
-    "created_by" : {
-      "object" : "user",
-      "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
-    },
-    "last_edited_by" : {
-      "object" : "user",
-      "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
-    },
-    "has_children" : false,
-    "archived" : false,
-    "in_trash" : false,
-    "type" : "to_do",
-    "to_do" : {
-      "rich_text" : [ {
-        "type" : "text",
-        "text" : {
-          "content" : "Form validates card number (Luhn check), expiry date format, and CVV length.",
-          "link" : null
-        },
-        "annotations" : {
-          "bold" : false,
-          "italic" : false,
-          "strikethrough" : false,
-          "underline" : false,
-          "code" : false,
-          "color" : "default"
-        },
-        "plain_text" : "Form validates card number (Luhn check), expiry date format, and CVV length.",
-        "href" : null
-      } ],
-      "checked" : false,
-      "color" : "default"
-    }
-  }, {
-    "object" : "block",
-    "id" : "27af521e-2b70-80aa-8857-db43a47426da",
-    "parent" : {
-      "type" : "block_id",
-      "block_id" : "278f521e-2b70-804b-9473-ef3bed2c06a1"
-    },
-    "created_time" : "2025-09-26T19:23:00.000Z",
-    "last_edited_time" : "2025-09-26T19:23:00.000Z",
-    "created_by" : {
-      "object" : "user",
-      "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
-    },
-    "last_edited_by" : {
-      "object" : "user",
-      "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
-    },
-    "has_children" : false,
-    "archived" : false,
-    "in_trash" : false,
-    "type" : "to_do",
-    "to_do" : {
-      "rich_text" : [ {
-        "type" : "text",
-        "text" : {
-          "content" : "Data is submitted over HTTPS/TLS.",
-          "link" : null
-        },
-        "annotations" : {
-          "bold" : false,
-          "italic" : false,
-          "strikethrough" : false,
-          "underline" : false,
-          "code" : false,
-          "color" : "default"
-        },
-        "plain_text" : "Data is submitted over HTTPS/TLS.",
-        "href" : null
-      } ],
-      "checked" : false,
-      "color" : "default"
-    }
-  }, {
-    "object" : "block",
-    "id" : "27af521e-2b70-80b3-81e0-f25c2c041514",
-    "parent" : {
-      "type" : "block_id",
-      "block_id" : "278f521e-2b70-804b-9473-ef3bed2c06a1"
-    },
-    "created_time" : "2025-09-26T19:23:00.000Z",
-    "last_edited_time" : "2025-09-26T19:23:00.000Z",
-    "created_by" : {
-      "object" : "user",
-      "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
-    },
-    "last_edited_by" : {
-      "object" : "user",
-      "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
-    },
-    "has_children" : false,
-    "archived" : false,
-    "in_trash" : false,
-    "type" : "to_do",
-    "to_do" : {
-      "rich_text" : [ {
-        "type" : "text",
-        "text" : {
-          "content" : "No raw card/account data is logged or stored on client or server.",
-          "link" : null
-        },
-        "annotations" : {
-          "bold" : false,
-          "italic" : false,
-          "strikethrough" : false,
-          "underline" : false,
-          "code" : false,
-          "color" : "default"
-        },
-        "plain_text" : "No raw card/account data is logged or stored on client or server.",
-        "href" : null
-      } ],
-      "checked" : false,
-      "color" : "default"
-    }
-  }, {
-    "object" : "block",
-    "id" : "27af521e-2b70-8081-96a7-d617cf7e1898",
-    "parent" : {
-      "type" : "block_id",
-      "block_id" : "278f521e-2b70-804b-9473-ef3bed2c06a1"
-    },
-    "created_time" : "2025-09-26T19:23:00.000Z",
-    "last_edited_time" : "2025-09-26T19:23:00.000Z",
+    "created_time" : "2025-09-28T08:55:00.000Z",
+    "last_edited_time" : "2025-09-28T08:55:00.000Z",
     "created_by" : {
       "object" : "user",
       "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
@@ -1477,7 +1344,7 @@
       "rich_text" : [ {
         "type" : "text",
         "text" : {
-          "content" : "For ",
+          "content" : "Form enforces ",
           "link" : null
         },
         "annotations" : {
@@ -1488,12 +1355,12 @@
           "code" : false,
           "color" : "default"
         },
-        "plain_text" : "For ",
+        "plain_text" : "Form enforces ",
         "href" : null
       }, {
         "type" : "text",
         "text" : {
-          "content" : "credit/debit cards via Napas/local gateways",
+          "content" : "basic validation rules",
           "link" : null
         },
         "annotations" : {
@@ -1504,7 +1371,7 @@
           "code" : false,
           "color" : "default"
         },
-        "plain_text" : "credit/debit cards via Napas/local gateways",
+        "plain_text" : "basic validation rules",
         "href" : null
       }, {
         "type" : "text",
@@ -1528,13 +1395,13 @@
     },
     "children" : [ {
       "object" : "block",
-      "id" : "27af521e-2b70-80eb-8797-c455273d7b45",
+      "id" : "27cf521e-2b70-801a-a73d-f47a2129da67",
       "parent" : {
         "type" : "block_id",
-        "block_id" : "27af521e-2b70-8081-96a7-d617cf7e1898"
+        "block_id" : "27cf521e-2b70-8010-88f2-cbed237f143d"
       },
-      "created_time" : "2025-09-26T19:23:00.000Z",
-      "last_edited_time" : "2025-09-26T19:23:00.000Z",
+      "created_time" : "2025-09-28T08:55:00.000Z",
+      "last_edited_time" : "2025-09-28T08:55:00.000Z",
       "created_by" : {
         "object" : "user",
         "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
@@ -1551,7 +1418,7 @@
         "rich_text" : [ {
           "type" : "text",
           "text" : {
-            "content" : "Valid cards return a successful authorization response.",
+            "content" : "Card number passes Luhn check.",
             "link" : null
           },
           "annotations" : {
@@ -1562,20 +1429,20 @@
             "code" : false,
             "color" : "default"
           },
-          "plain_text" : "Valid cards return a successful authorization response.",
+          "plain_text" : "Card number passes Luhn check.",
           "href" : null
         } ],
         "color" : "default"
       }
     }, {
       "object" : "block",
-      "id" : "27af521e-2b70-807c-b45d-fb32512f21f1",
+      "id" : "27cf521e-2b70-80ef-9e5e-c7a3bec3827d",
       "parent" : {
         "type" : "block_id",
-        "block_id" : "27af521e-2b70-8081-96a7-d617cf7e1898"
+        "block_id" : "27cf521e-2b70-8010-88f2-cbed237f143d"
       },
-      "created_time" : "2025-09-26T19:23:00.000Z",
-      "last_edited_time" : "2025-09-26T19:23:00.000Z",
+      "created_time" : "2025-09-28T08:55:00.000Z",
+      "last_edited_time" : "2025-09-28T08:55:00.000Z",
       "created_by" : {
         "object" : "user",
         "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
@@ -1592,7 +1459,7 @@
         "rich_text" : [ {
           "type" : "text",
           "text" : {
-            "content" : "Invalid/expired cards return an error.",
+            "content" : "Expiry date is in valid format and not in the past.",
             "link" : null
           },
           "annotations" : {
@@ -1603,7 +1470,89 @@
             "code" : false,
             "color" : "default"
           },
-          "plain_text" : "Invalid/expired cards return an error.",
+          "plain_text" : "Expiry date is in valid format and not in the past.",
+          "href" : null
+        } ],
+        "color" : "default"
+      }
+    }, {
+      "object" : "block",
+      "id" : "27cf521e-2b70-804e-8207-c3a215fc5ece",
+      "parent" : {
+        "type" : "block_id",
+        "block_id" : "27cf521e-2b70-8010-88f2-cbed237f143d"
+      },
+      "created_time" : "2025-09-28T08:55:00.000Z",
+      "last_edited_time" : "2025-09-28T08:55:00.000Z",
+      "created_by" : {
+        "object" : "user",
+        "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+      },
+      "last_edited_by" : {
+        "object" : "user",
+        "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+      },
+      "has_children" : false,
+      "archived" : false,
+      "in_trash" : false,
+      "type" : "bulleted_list_item",
+      "bulleted_list_item" : {
+        "rich_text" : [ {
+          "type" : "text",
+          "text" : {
+            "content" : "CVV has correct length (e.g., 3–4 digits).",
+            "link" : null
+          },
+          "annotations" : {
+            "bold" : false,
+            "italic" : false,
+            "strikethrough" : false,
+            "underline" : false,
+            "code" : false,
+            "color" : "default"
+          },
+          "plain_text" : "CVV has correct length (e.g., 3–4 digits).",
+          "href" : null
+        } ],
+        "color" : "default"
+      }
+    }, {
+      "object" : "block",
+      "id" : "27cf521e-2b70-80ac-90eb-ea2659a6f5fb",
+      "parent" : {
+        "type" : "block_id",
+        "block_id" : "27cf521e-2b70-8010-88f2-cbed237f143d"
+      },
+      "created_time" : "2025-09-28T08:55:00.000Z",
+      "last_edited_time" : "2025-09-28T08:55:00.000Z",
+      "created_by" : {
+        "object" : "user",
+        "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+      },
+      "last_edited_by" : {
+        "object" : "user",
+        "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+      },
+      "has_children" : false,
+      "archived" : false,
+      "in_trash" : false,
+      "type" : "bulleted_list_item",
+      "bulleted_list_item" : {
+        "rich_text" : [ {
+          "type" : "text",
+          "text" : {
+            "content" : "Bank account number matches expected format.",
+            "link" : null
+          },
+          "annotations" : {
+            "bold" : false,
+            "italic" : false,
+            "strikethrough" : false,
+            "underline" : false,
+            "code" : false,
+            "color" : "default"
+          },
+          "plain_text" : "Bank account number matches expected format.",
           "href" : null
         } ],
         "color" : "default"
@@ -1611,13 +1560,97 @@
     } ]
   }, {
     "object" : "block",
-    "id" : "27af521e-2b70-80a3-8bc5-f944d71b821c",
+    "id" : "27cf521e-2b70-8061-a3f6-dc4e185f59e8",
     "parent" : {
       "type" : "block_id",
       "block_id" : "278f521e-2b70-804b-9473-ef3bed2c06a1"
     },
-    "created_time" : "2025-09-26T19:23:00.000Z",
-    "last_edited_time" : "2025-09-26T19:23:00.000Z",
+    "created_time" : "2025-09-28T08:55:00.000Z",
+    "last_edited_time" : "2025-09-28T08:55:00.000Z",
+    "created_by" : {
+      "object" : "user",
+      "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+    },
+    "last_edited_by" : {
+      "object" : "user",
+      "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+    },
+    "has_children" : false,
+    "archived" : false,
+    "in_trash" : false,
+    "type" : "to_do",
+    "to_do" : {
+      "rich_text" : [ {
+        "type" : "text",
+        "text" : {
+          "content" : "Data is transmitted over an assumed secure channel (HTTPS/TLS).",
+          "link" : null
+        },
+        "annotations" : {
+          "bold" : false,
+          "italic" : false,
+          "strikethrough" : false,
+          "underline" : false,
+          "code" : false,
+          "color" : "default"
+        },
+        "plain_text" : "Data is transmitted over an assumed secure channel (HTTPS/TLS).",
+        "href" : null
+      } ],
+      "checked" : false,
+      "color" : "default"
+    }
+  }, {
+    "object" : "block",
+    "id" : "27cf521e-2b70-8039-9ec8-e0cb488e6434",
+    "parent" : {
+      "type" : "block_id",
+      "block_id" : "278f521e-2b70-804b-9473-ef3bed2c06a1"
+    },
+    "created_time" : "2025-09-28T08:55:00.000Z",
+    "last_edited_time" : "2025-09-28T08:55:00.000Z",
+    "created_by" : {
+      "object" : "user",
+      "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+    },
+    "last_edited_by" : {
+      "object" : "user",
+      "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+    },
+    "has_children" : false,
+    "archived" : false,
+    "in_trash" : false,
+    "type" : "to_do",
+    "to_do" : {
+      "rich_text" : [ {
+        "type" : "text",
+        "text" : {
+          "content" : "No raw sensitive data is logged or stored in the system.",
+          "link" : null
+        },
+        "annotations" : {
+          "bold" : false,
+          "italic" : false,
+          "strikethrough" : false,
+          "underline" : false,
+          "code" : false,
+          "color" : "default"
+        },
+        "plain_text" : "No raw sensitive data is logged or stored in the system.",
+        "href" : null
+      } ],
+      "checked" : false,
+      "color" : "default"
+    }
+  }, {
+    "object" : "block",
+    "id" : "27cf521e-2b70-8000-91b8-fe451f59021e",
+    "parent" : {
+      "type" : "block_id",
+      "block_id" : "278f521e-2b70-804b-9473-ef3bed2c06a1"
+    },
+    "created_time" : "2025-09-28T08:55:00.000Z",
+    "last_edited_time" : "2025-09-28T08:55:00.000Z",
     "created_by" : {
       "object" : "user",
       "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
@@ -1634,23 +1667,7 @@
       "rich_text" : [ {
         "type" : "text",
         "text" : {
-          "content" : "For ",
-          "link" : null
-        },
-        "annotations" : {
-          "bold" : false,
-          "italic" : false,
-          "strikethrough" : false,
-          "underline" : false,
-          "code" : false,
-          "color" : "default"
-        },
-        "plain_text" : "For ",
-        "href" : null
-      }, {
-        "type" : "text",
-        "text" : {
-          "content" : "bank account entry",
+          "content" : "Credit/Debit Card simulation",
           "link" : null
         },
         "annotations" : {
@@ -1661,12 +1678,12 @@
           "code" : false,
           "color" : "default"
         },
-        "plain_text" : "bank account entry",
+        "plain_text" : "Credit/Debit Card simulation",
         "href" : null
       }, {
         "type" : "text",
         "text" : {
-          "content" : " (if provider supports direct debit via account input):",
+          "content" : ":",
           "link" : null
         },
         "annotations" : {
@@ -1677,7 +1694,7 @@
           "code" : false,
           "color" : "default"
         },
-        "plain_text" : " (if provider supports direct debit via account input):",
+        "plain_text" : ":",
         "href" : null
       } ],
       "checked" : false,
@@ -1685,13 +1702,13 @@
     },
     "children" : [ {
       "object" : "block",
-      "id" : "27af521e-2b70-804b-80c1-e34d68bb3215",
+      "id" : "27cf521e-2b70-80c3-8d18-f01b64f00c91",
       "parent" : {
         "type" : "block_id",
-        "block_id" : "27af521e-2b70-80a3-8bc5-f944d71b821c"
+        "block_id" : "27cf521e-2b70-8000-91b8-fe451f59021e"
       },
-      "created_time" : "2025-09-26T19:23:00.000Z",
-      "last_edited_time" : "2025-09-26T19:23:00.000Z",
+      "created_time" : "2025-09-28T08:55:00.000Z",
+      "last_edited_time" : "2025-09-28T08:55:00.000Z",
       "created_by" : {
         "object" : "user",
         "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
@@ -1708,7 +1725,7 @@
         "rich_text" : [ {
           "type" : "text",
           "text" : {
-            "content" : "Valid account details return a success response.",
+            "content" : "Valid input returns a simulated successful authorization.",
             "link" : null
           },
           "annotations" : {
@@ -1719,20 +1736,20 @@
             "code" : false,
             "color" : "default"
           },
-          "plain_text" : "Valid account details return a success response.",
+          "plain_text" : "Valid input returns a simulated successful authorization.",
           "href" : null
         } ],
         "color" : "default"
       }
     }, {
       "object" : "block",
-      "id" : "27af521e-2b70-80e2-aeae-f99a0b2a1630",
+      "id" : "27cf521e-2b70-80db-adc1-d86e09c7e500",
       "parent" : {
         "type" : "block_id",
-        "block_id" : "27af521e-2b70-80a3-8bc5-f944d71b821c"
+        "block_id" : "27cf521e-2b70-8000-91b8-fe451f59021e"
       },
-      "created_time" : "2025-09-26T19:23:00.000Z",
-      "last_edited_time" : "2025-09-26T19:23:00.000Z",
+      "created_time" : "2025-09-28T08:55:00.000Z",
+      "last_edited_time" : "2025-09-28T08:55:00.000Z",
       "created_by" : {
         "object" : "user",
         "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
@@ -1749,7 +1766,7 @@
         "rich_text" : [ {
           "type" : "text",
           "text" : {
-            "content" : "Invalid details return an error.",
+            "content" : "Invalid/expired input returns a simulated failure.",
             "link" : null
           },
           "annotations" : {
@@ -1760,7 +1777,7 @@
             "code" : false,
             "color" : "default"
           },
-          "plain_text" : "Invalid details return an error.",
+          "plain_text" : "Invalid/expired input returns a simulated failure.",
           "href" : null
         } ],
         "color" : "default"
@@ -1768,13 +1785,13 @@
     } ]
   }, {
     "object" : "block",
-    "id" : "27af521e-2b70-80fd-a4f9-cbfca5dc8993",
+    "id" : "27cf521e-2b70-80ca-a3ad-eceb9a7d02d9",
     "parent" : {
       "type" : "block_id",
       "block_id" : "278f521e-2b70-804b-9473-ef3bed2c06a1"
     },
-    "created_time" : "2025-09-26T19:23:00.000Z",
-    "last_edited_time" : "2025-09-26T19:23:00.000Z",
+    "created_time" : "2025-09-28T08:55:00.000Z",
+    "last_edited_time" : "2025-09-28T08:55:00.000Z",
     "created_by" : {
       "object" : "user",
       "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
@@ -1791,23 +1808,7 @@
       "rich_text" : [ {
         "type" : "text",
         "text" : {
-          "content" : "For ",
-          "link" : null
-        },
-        "annotations" : {
-          "bold" : false,
-          "italic" : false,
-          "strikethrough" : false,
-          "underline" : false,
-          "code" : false,
-          "color" : "default"
-        },
-        "plain_text" : "For ",
-        "href" : null
-      }, {
-        "type" : "text",
-        "text" : {
-          "content" : "local e-wallet card/account binding",
+          "content" : "Bank Account simulation",
           "link" : null
         },
         "annotations" : {
@@ -1818,12 +1819,12 @@
           "code" : false,
           "color" : "default"
         },
-        "plain_text" : "local e-wallet card/account binding",
+        "plain_text" : "Bank Account simulation",
         "href" : null
       }, {
         "type" : "text",
         "text" : {
-          "content" : " (if supported by wallet API):",
+          "content" : ":",
           "link" : null
         },
         "annotations" : {
@@ -1834,7 +1835,7 @@
           "code" : false,
           "color" : "default"
         },
-        "plain_text" : " (if supported by wallet API):",
+        "plain_text" : ":",
         "href" : null
       } ],
       "checked" : false,
@@ -1842,13 +1843,13 @@
     },
     "children" : [ {
       "object" : "block",
-      "id" : "27af521e-2b70-80bb-9af4-d492ababc8ee",
+      "id" : "27cf521e-2b70-80f5-822e-d4f9fc643fa4",
       "parent" : {
         "type" : "block_id",
-        "block_id" : "27af521e-2b70-80fd-a4f9-cbfca5dc8993"
+        "block_id" : "27cf521e-2b70-80ca-a3ad-eceb9a7d02d9"
       },
-      "created_time" : "2025-09-26T19:23:00.000Z",
-      "last_edited_time" : "2025-09-26T19:23:00.000Z",
+      "created_time" : "2025-09-28T08:55:00.000Z",
+      "last_edited_time" : "2025-09-28T08:55:00.000Z",
       "created_by" : {
         "object" : "user",
         "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
@@ -1865,7 +1866,7 @@
         "rich_text" : [ {
           "type" : "text",
           "text" : {
-            "content" : "Successful binding allows proceeding to payment.",
+            "content" : "Valid input returns simulated success.",
             "link" : null
           },
           "annotations" : {
@@ -1876,20 +1877,20 @@
             "code" : false,
             "color" : "default"
           },
-          "plain_text" : "Successful binding allows proceeding to payment.",
+          "plain_text" : "Valid input returns simulated success.",
           "href" : null
         } ],
         "color" : "default"
       }
     }, {
       "object" : "block",
-      "id" : "27af521e-2b70-8074-b8fb-c0fe7c6552b5",
+      "id" : "27cf521e-2b70-80bf-93e0-ea376fc9668d",
       "parent" : {
         "type" : "block_id",
-        "block_id" : "27af521e-2b70-80fd-a4f9-cbfca5dc8993"
+        "block_id" : "27cf521e-2b70-80ca-a3ad-eceb9a7d02d9"
       },
-      "created_time" : "2025-09-26T19:23:00.000Z",
-      "last_edited_time" : "2025-09-26T19:23:00.000Z",
+      "created_time" : "2025-09-28T08:55:00.000Z",
+      "last_edited_time" : "2025-09-28T08:55:00.000Z",
       "created_by" : {
         "object" : "user",
         "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
@@ -1906,7 +1907,7 @@
         "rich_text" : [ {
           "type" : "text",
           "text" : {
-            "content" : "Failed binding shows an error to the customer.",
+            "content" : "Invalid input returns simulated failure.",
             "link" : null
           },
           "annotations" : {
@@ -1917,7 +1918,7 @@
             "code" : false,
             "color" : "default"
           },
-          "plain_text" : "Failed binding shows an error to the customer.",
+          "plain_text" : "Invalid input returns simulated failure.",
           "href" : null
         } ],
         "color" : "default"
@@ -1925,13 +1926,154 @@
     } ]
   }, {
     "object" : "block",
-    "id" : "27af521e-2b70-807a-b81d-def87ded80df",
+    "id" : "27cf521e-2b70-8080-8403-f57564f6b68c",
     "parent" : {
       "type" : "block_id",
       "block_id" : "278f521e-2b70-804b-9473-ef3bed2c06a1"
     },
-    "created_time" : "2025-09-26T19:23:00.000Z",
-    "last_edited_time" : "2025-09-26T19:23:00.000Z",
+    "created_time" : "2025-09-28T08:55:00.000Z",
+    "last_edited_time" : "2025-09-28T08:55:00.000Z",
+    "created_by" : {
+      "object" : "user",
+      "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+    },
+    "last_edited_by" : {
+      "object" : "user",
+      "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+    },
+    "has_children" : true,
+    "archived" : false,
+    "in_trash" : false,
+    "type" : "to_do",
+    "to_do" : {
+      "rich_text" : [ {
+        "type" : "text",
+        "text" : {
+          "content" : "E-wallet binding simulation",
+          "link" : null
+        },
+        "annotations" : {
+          "bold" : true,
+          "italic" : false,
+          "strikethrough" : false,
+          "underline" : false,
+          "code" : false,
+          "color" : "default"
+        },
+        "plain_text" : "E-wallet binding simulation",
+        "href" : null
+      }, {
+        "type" : "text",
+        "text" : {
+          "content" : ":",
+          "link" : null
+        },
+        "annotations" : {
+          "bold" : false,
+          "italic" : false,
+          "strikethrough" : false,
+          "underline" : false,
+          "code" : false,
+          "color" : "default"
+        },
+        "plain_text" : ":",
+        "href" : null
+      } ],
+      "checked" : false,
+      "color" : "default"
+    },
+    "children" : [ {
+      "object" : "block",
+      "id" : "27cf521e-2b70-8028-b912-ebb7652b4ef4",
+      "parent" : {
+        "type" : "block_id",
+        "block_id" : "27cf521e-2b70-8080-8403-f57564f6b68c"
+      },
+      "created_time" : "2025-09-28T08:55:00.000Z",
+      "last_edited_time" : "2025-09-28T08:55:00.000Z",
+      "created_by" : {
+        "object" : "user",
+        "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+      },
+      "last_edited_by" : {
+        "object" : "user",
+        "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+      },
+      "has_children" : false,
+      "archived" : false,
+      "in_trash" : false,
+      "type" : "bulleted_list_item",
+      "bulleted_list_item" : {
+        "rich_text" : [ {
+          "type" : "text",
+          "text" : {
+            "content" : "Valid input allows proceeding to payment.",
+            "link" : null
+          },
+          "annotations" : {
+            "bold" : false,
+            "italic" : false,
+            "strikethrough" : false,
+            "underline" : false,
+            "code" : false,
+            "color" : "default"
+          },
+          "plain_text" : "Valid input allows proceeding to payment.",
+          "href" : null
+        } ],
+        "color" : "default"
+      }
+    }, {
+      "object" : "block",
+      "id" : "27cf521e-2b70-80cb-89fe-d2dde79abadb",
+      "parent" : {
+        "type" : "block_id",
+        "block_id" : "27cf521e-2b70-8080-8403-f57564f6b68c"
+      },
+      "created_time" : "2025-09-28T08:55:00.000Z",
+      "last_edited_time" : "2025-09-28T08:55:00.000Z",
+      "created_by" : {
+        "object" : "user",
+        "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+      },
+      "last_edited_by" : {
+        "object" : "user",
+        "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+      },
+      "has_children" : false,
+      "archived" : false,
+      "in_trash" : false,
+      "type" : "bulleted_list_item",
+      "bulleted_list_item" : {
+        "rich_text" : [ {
+          "type" : "text",
+          "text" : {
+            "content" : "Invalid input returns an error.",
+            "link" : null
+          },
+          "annotations" : {
+            "bold" : false,
+            "italic" : false,
+            "strikethrough" : false,
+            "underline" : false,
+            "code" : false,
+            "color" : "default"
+          },
+          "plain_text" : "Invalid input returns an error.",
+          "href" : null
+        } ],
+        "color" : "default"
+      }
+    } ]
+  }, {
+    "object" : "block",
+    "id" : "27cf521e-2b70-8085-ad4f-e1e3d7bb00d5",
+    "parent" : {
+      "type" : "block_id",
+      "block_id" : "278f521e-2b70-804b-9473-ef3bed2c06a1"
+    },
+    "created_time" : "2025-09-28T08:55:00.000Z",
+    "last_edited_time" : "2025-09-28T08:55:00.000Z",
     "created_by" : {
       "object" : "user",
       "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
@@ -1948,7 +2090,7 @@
       "rich_text" : [ {
         "type" : "text",
         "text" : {
-          "content" : "On success, payment flow proceeds to processing.",
+          "content" : "On successful simulation, the payment flow continues to order processing.",
           "link" : null
         },
         "annotations" : {
@@ -1959,7 +2101,7 @@
           "code" : false,
           "color" : "default"
         },
-        "plain_text" : "On success, payment flow proceeds to processing.",
+        "plain_text" : "On successful simulation, the payment flow continues to order processing.",
         "href" : null
       } ],
       "checked" : false,
@@ -1967,13 +2109,13 @@
     }
   }, {
     "object" : "block",
-    "id" : "27af521e-2b70-8076-9d48-e8dc4ecebdbf",
+    "id" : "27cf521e-2b70-806a-bdfb-ccd15a990fcf",
     "parent" : {
       "type" : "block_id",
       "block_id" : "278f521e-2b70-804b-9473-ef3bed2c06a1"
     },
-    "created_time" : "2025-09-26T19:23:00.000Z",
-    "last_edited_time" : "2025-09-26T19:23:00.000Z",
+    "created_time" : "2025-09-28T08:55:00.000Z",
+    "last_edited_time" : "2025-09-28T08:55:00.000Z",
     "created_by" : {
       "object" : "user",
       "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
@@ -1990,7 +2132,7 @@
       "rich_text" : [ {
         "type" : "text",
         "text" : {
-          "content" : "On failure (invalid input or provider-declined details), customer is shown an error and asked to re-enter.",
+          "content" : "On failure, the customer is shown an error and asked to re-enter details.",
           "link" : null
         },
         "annotations" : {
@@ -2001,7 +2143,7 @@
           "code" : false,
           "color" : "default"
         },
-        "plain_text" : "On failure (invalid input or provider-declined details), customer is shown an error and asked to re-enter.",
+        "plain_text" : "On failure, the customer is shown an error and asked to re-enter details.",
         "href" : null
       } ],
       "checked" : false,
@@ -2009,13 +2151,13 @@
     }
   }, {
     "object" : "block",
-    "id" : "27af521e-2b70-8048-89f3-c30537fdfc3d",
+    "id" : "27cf521e-2b70-80f5-bac8-e646cedc1b76",
     "parent" : {
       "type" : "block_id",
       "block_id" : "278f521e-2b70-804b-9473-ef3bed2c06a1"
     },
-    "created_time" : "2025-09-26T19:23:00.000Z",
-    "last_edited_time" : "2025-09-26T19:23:00.000Z",
+    "created_time" : "2025-09-28T08:55:00.000Z",
+    "last_edited_time" : "2025-09-28T08:55:00.000Z",
     "created_by" : {
       "object" : "user",
       "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
@@ -2032,7 +2174,7 @@
       "rich_text" : [ {
         "type" : "text",
         "text" : {
-          "content" : "Adding or switching between Vietnamese providers is possible via configuration, without code changes.",
+          "content" : "Available input methods can be enabled/disabled through configuration.",
           "link" : null
         },
         "annotations" : {
@@ -2043,7 +2185,7 @@
           "code" : false,
           "color" : "default"
         },
-        "plain_text" : "Adding or switching between Vietnamese providers is possible via configuration, without code changes.",
+        "plain_text" : "Available input methods can be enabled/disabled through configuration.",
         "href" : null
       } ],
       "checked" : false,

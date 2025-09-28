@@ -47,7 +47,7 @@
       "block_id" : "278f521e-2b70-8030-84a5-e8faa23aa970"
     },
     "created_time" : "2025-09-26T17:31:00.000Z",
-    "last_edited_time" : "2025-09-26T17:31:00.000Z",
+    "last_edited_time" : "2025-09-28T09:13:00.000Z",
     "created_by" : {
       "object" : "user",
       "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
@@ -64,114 +64,114 @@
       "rich_text" : [ {
         "type" : "text",
         "text" : {
-          "content" : "“As a ",
+          "content" : "“As an ",
           "link" : null
         },
         "annotations" : {
           "bold" : false,
-          "italic" : false,
+          "italic" : true,
           "strikethrough" : false,
           "underline" : false,
           "code" : false,
           "color" : "default"
         },
-        "plain_text" : "“As a ",
+        "plain_text" : "“As an ",
         "href" : null
       }, {
         "type" : "text",
         "text" : {
-          "content" : "Customer",
+          "content" : "Issuer",
           "link" : null
         },
         "annotations" : {
           "bold" : true,
-          "italic" : false,
+          "italic" : true,
           "strikethrough" : false,
           "underline" : false,
           "code" : false,
           "color" : "default"
         },
-        "plain_text" : "Customer",
+        "plain_text" : "Issuer",
         "href" : null
       }, {
         "type" : "text",
         "text" : {
-          "content" : ", I need to complete ",
+          "content" : ", I need the ability to ",
           "link" : null
         },
         "annotations" : {
           "bold" : false,
-          "italic" : false,
+          "italic" : true,
           "strikethrough" : false,
           "underline" : false,
           "code" : false,
           "color" : "default"
         },
-        "plain_text" : ", I need to complete ",
+        "plain_text" : ", I need the ability to ",
         "href" : null
       }, {
         "type" : "text",
         "text" : {
-          "content" : "authentication (OTP, biometric, or 3D Secure)",
+          "content" : "require additional authentication (OTP, biometric, or 3D Secure) when risk rules apply",
           "link" : null
         },
         "annotations" : {
           "bold" : true,
-          "italic" : false,
+          "italic" : true,
           "strikethrough" : false,
           "underline" : false,
           "code" : false,
           "color" : "default"
         },
-        "plain_text" : "authentication (OTP, biometric, or 3D Secure)",
+        "plain_text" : "require additional authentication (OTP, biometric, or 3D Secure) when risk rules apply",
         "href" : null
       }, {
         "type" : "text",
         "text" : {
-          "content" : " when required, so that my ",
+          "content" : ", so that ",
           "link" : null
         },
         "annotations" : {
           "bold" : false,
-          "italic" : false,
+          "italic" : true,
           "strikethrough" : false,
           "underline" : false,
           "code" : false,
           "color" : "default"
         },
-        "plain_text" : " when required, so that my ",
+        "plain_text" : ", so that ",
         "href" : null
       }, {
         "type" : "text",
         "text" : {
-          "content" : "payment can be processed successfully",
+          "content" : "only legitimate transactions are approved",
           "link" : null
         },
         "annotations" : {
           "bold" : true,
-          "italic" : false,
+          "italic" : true,
           "strikethrough" : false,
           "underline" : false,
           "code" : false,
           "color" : "default"
         },
-        "plain_text" : "payment can be processed successfully",
+        "plain_text" : "only legitimate transactions are approved",
         "href" : null
       }, {
         "type" : "text",
         "text" : {
-          "content" : ".",
+          "content" : ".”",
           "link" : null
         },
         "annotations" : {
           "bold" : false,
-          "italic" : false,
+          "italic" : true,
           "strikethrough" : false,
           "underline" : false,
           "code" : false,
           "color" : "default"
         },
-        "plain_text" : ".",
+        "plain_text" : ".”",
         "href" : null
       } ],
       "color" : "default"
@@ -226,7 +226,7 @@
       "block_id" : "27af521e-2b70-8089-9611-df31a044c9be"
     },
     "created_time" : "2025-09-26T17:27:00.000Z",
-    "last_edited_time" : "2025-09-26T19:27:00.000Z",
+    "last_edited_time" : "2025-09-28T09:13:00.000Z",
     "created_by" : {
       "object" : "user",
       "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
@@ -261,13 +261,13 @@
     },
     "children" : [ {
       "object" : "block",
-      "id" : "27af521e-2b70-8040-8e16-e2f9117295f6",
+      "id" : "27cf521e-2b70-8061-b713-fd4023f55790",
       "parent" : {
         "type" : "block_id",
         "block_id" : "27af521e-2b70-80d0-877a-fa7ab6cf3b1a"
       },
-      "created_time" : "2025-09-26T19:27:00.000Z",
-      "last_edited_time" : "2025-09-26T19:27:00.000Z",
+      "created_time" : "2025-09-28T09:13:00.000Z",
+      "last_edited_time" : "2025-09-28T09:13:00.000Z",
       "created_by" : {
         "object" : "user",
         "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
@@ -284,7 +284,7 @@
         "rich_text" : [ {
           "type" : "text",
           "text" : {
-            "content" : "Implement authentication flows required during payment, covering:",
+            "content" : "The system must allow the Issuer to require additional authentication during the payment flow, including:",
             "link" : null
           },
           "annotations" : {
@@ -295,20 +295,20 @@
             "code" : false,
             "color" : "default"
           },
-          "plain_text" : "Implement authentication flows required during payment, covering:",
+          "plain_text" : "The system must allow the Issuer to require additional authentication during the payment flow, including:",
           "href" : null
         } ],
         "color" : "default"
       },
       "children" : [ {
         "object" : "block",
-        "id" : "27af521e-2b70-805e-a4ef-c0546bdce030",
+        "id" : "27cf521e-2b70-8037-b46f-c57bc9c05812",
         "parent" : {
           "type" : "block_id",
-          "block_id" : "27af521e-2b70-8040-8e16-e2f9117295f6"
+          "block_id" : "27cf521e-2b70-8061-b713-fd4023f55790"
         },
-        "created_time" : "2025-09-26T19:27:00.000Z",
-        "last_edited_time" : "2025-09-26T19:27:00.000Z",
+        "created_time" : "2025-09-28T09:13:00.000Z",
+        "last_edited_time" : "2025-09-28T09:13:00.000Z",
         "created_by" : {
           "object" : "user",
           "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
@@ -325,7 +325,7 @@
           "rich_text" : [ {
             "type" : "text",
             "text" : {
-              "content" : "OTP (One-Time Password)",
+              "content" : "OTP Authentication",
               "link" : null
             },
             "annotations" : {
@@ -336,20 +336,20 @@
               "code" : false,
               "color" : "default"
             },
-            "plain_text" : "OTP (One-Time Password)",
+            "plain_text" : "OTP Authentication",
             "href" : null
           } ],
           "color" : "default"
         },
         "children" : [ {
           "object" : "block",
-          "id" : "27af521e-2b70-807f-94e0-e589dad7278d",
+          "id" : "27cf521e-2b70-8020-8c44-c8281f6c7ece",
           "parent" : {
             "type" : "block_id",
-            "block_id" : "27af521e-2b70-805e-a4ef-c0546bdce030"
+            "block_id" : "27cf521e-2b70-8037-b46f-c57bc9c05812"
           },
-          "created_time" : "2025-09-26T19:27:00.000Z",
-          "last_edited_time" : "2025-09-26T19:27:00.000Z",
+          "created_time" : "2025-09-28T09:13:00.000Z",
+          "last_edited_time" : "2025-09-28T09:13:00.000Z",
           "created_by" : {
             "object" : "user",
             "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
@@ -366,7 +366,7 @@
             "rich_text" : [ {
               "type" : "text",
               "text" : {
-                "content" : "Generation, delivery, validation, failure handling.",
+                "content" : "The system can generate a one-time password (OTP), deliver it to the user through available channels (e.g., SMS, voice, app notification), and validate the code entered by the user.",
                 "link" : null
               },
               "annotations" : {
@@ -377,327 +377,7 @@
                 "code" : false,
                 "color" : "default"
               },
-              "plain_text" : "Generation, delivery, validation, failure handling.",
-              "href" : null
-            } ],
-            "color" : "default"
-          }
-        }, {
-          "object" : "block",
-          "id" : "27af521e-2b70-8014-aad7-c9269064ba0f",
-          "parent" : {
-            "type" : "block_id",
-            "block_id" : "27af521e-2b70-805e-a4ef-c0546bdce030"
-          },
-          "created_time" : "2025-09-26T19:27:00.000Z",
-          "last_edited_time" : "2025-09-26T19:27:00.000Z",
-          "created_by" : {
-            "object" : "user",
-            "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
-          },
-          "last_edited_by" : {
-            "object" : "user",
-            "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
-          },
-          "has_children" : true,
-          "archived" : false,
-          "in_trash" : false,
-          "type" : "bulleted_list_item",
-          "bulleted_list_item" : {
-            "rich_text" : [ {
-              "type" : "text",
-              "text" : {
-                "content" : "Integration with Vietnamese providers:",
-                "link" : null
-              },
-              "annotations" : {
-                "bold" : false,
-                "italic" : false,
-                "strikethrough" : false,
-                "underline" : false,
-                "code" : false,
-                "color" : "default"
-              },
-              "plain_text" : "Integration with Vietnamese providers:",
-              "href" : null
-            } ],
-            "color" : "default"
-          },
-          "children" : [ {
-            "object" : "block",
-            "id" : "27af521e-2b70-8000-b98e-e652f2d267fb",
-            "parent" : {
-              "type" : "block_id",
-              "block_id" : "27af521e-2b70-8014-aad7-c9269064ba0f"
-            },
-            "created_time" : "2025-09-26T19:27:00.000Z",
-            "last_edited_time" : "2025-09-26T19:27:00.000Z",
-            "created_by" : {
-              "object" : "user",
-              "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
-            },
-            "last_edited_by" : {
-              "object" : "user",
-              "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
-            },
-            "has_children" : false,
-            "archived" : false,
-            "in_trash" : false,
-            "type" : "bulleted_list_item",
-            "bulleted_list_item" : {
-              "rich_text" : [ {
-                "type" : "text",
-                "text" : {
-                  "content" : "SpeedSMS (SMS OTP).",
-                  "link" : null
-                },
-                "annotations" : {
-                  "bold" : false,
-                  "italic" : false,
-                  "strikethrough" : false,
-                  "underline" : false,
-                  "code" : false,
-                  "color" : "default"
-                },
-                "plain_text" : "SpeedSMS (SMS OTP).",
-                "href" : null
-              } ],
-              "color" : "default"
-            }
-          }, {
-            "object" : "block",
-            "id" : "27af521e-2b70-801f-807b-cb87610325ab",
-            "parent" : {
-              "type" : "block_id",
-              "block_id" : "27af521e-2b70-8014-aad7-c9269064ba0f"
-            },
-            "created_time" : "2025-09-26T19:27:00.000Z",
-            "last_edited_time" : "2025-09-26T19:27:00.000Z",
-            "created_by" : {
-              "object" : "user",
-              "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
-            },
-            "last_edited_by" : {
-              "object" : "user",
-              "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
-            },
-            "has_children" : false,
-            "archived" : false,
-            "in_trash" : false,
-            "type" : "bulleted_list_item",
-            "bulleted_list_item" : {
-              "rich_text" : [ {
-                "type" : "text",
-                "text" : {
-                  "content" : "Unimatrix (SMS/OTP).",
-                  "link" : null
-                },
-                "annotations" : {
-                  "bold" : false,
-                  "italic" : false,
-                  "strikethrough" : false,
-                  "underline" : false,
-                  "code" : false,
-                  "color" : "default"
-                },
-                "plain_text" : "Unimatrix (SMS/OTP).",
-                "href" : null
-              } ],
-              "color" : "default"
-            }
-          }, {
-            "object" : "block",
-            "id" : "27af521e-2b70-804c-bf58-d90fd1ca2774",
-            "parent" : {
-              "type" : "block_id",
-              "block_id" : "27af521e-2b70-8014-aad7-c9269064ba0f"
-            },
-            "created_time" : "2025-09-26T19:27:00.000Z",
-            "last_edited_time" : "2025-09-26T19:27:00.000Z",
-            "created_by" : {
-              "object" : "user",
-              "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
-            },
-            "last_edited_by" : {
-              "object" : "user",
-              "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
-            },
-            "has_children" : false,
-            "archived" : false,
-            "in_trash" : false,
-            "type" : "bulleted_list_item",
-            "bulleted_list_item" : {
-              "rich_text" : [ {
-                "type" : "text",
-                "text" : {
-                  "content" : "Messaggio (SMS API).",
-                  "link" : null
-                },
-                "annotations" : {
-                  "bold" : false,
-                  "italic" : false,
-                  "strikethrough" : false,
-                  "underline" : false,
-                  "code" : false,
-                  "color" : "default"
-                },
-                "plain_text" : "Messaggio (SMS API).",
-                "href" : null
-              } ],
-              "color" : "default"
-            }
-          }, {
-            "object" : "block",
-            "id" : "27af521e-2b70-801f-84d1-e764d59ad567",
-            "parent" : {
-              "type" : "block_id",
-              "block_id" : "27af521e-2b70-8014-aad7-c9269064ba0f"
-            },
-            "created_time" : "2025-09-26T19:27:00.000Z",
-            "last_edited_time" : "2025-09-26T19:27:00.000Z",
-            "created_by" : {
-              "object" : "user",
-              "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
-            },
-            "last_edited_by" : {
-              "object" : "user",
-              "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
-            },
-            "has_children" : false,
-            "archived" : false,
-            "in_trash" : false,
-            "type" : "bulleted_list_item",
-            "bulleted_list_item" : {
-              "rich_text" : [ {
-                "type" : "text",
-                "text" : {
-                  "content" : "Viettel (Voice OTP).",
-                  "link" : null
-                },
-                "annotations" : {
-                  "bold" : false,
-                  "italic" : false,
-                  "strikethrough" : false,
-                  "underline" : false,
-                  "code" : false,
-                  "color" : "default"
-                },
-                "plain_text" : "Viettel (Voice OTP).",
-                "href" : null
-              } ],
-              "color" : "default"
-            }
-          }, {
-            "object" : "block",
-            "id" : "27af521e-2b70-80bb-a092-d27c6a3069f4",
-            "parent" : {
-              "type" : "block_id",
-              "block_id" : "27af521e-2b70-8014-aad7-c9269064ba0f"
-            },
-            "created_time" : "2025-09-26T19:27:00.000Z",
-            "last_edited_time" : "2025-09-26T19:27:00.000Z",
-            "created_by" : {
-              "object" : "user",
-              "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
-            },
-            "last_edited_by" : {
-              "object" : "user",
-              "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
-            },
-            "has_children" : false,
-            "archived" : false,
-            "in_trash" : false,
-            "type" : "bulleted_list_item",
-            "bulleted_list_item" : {
-              "rich_text" : [ {
-                "type" : "text",
-                "text" : {
-                  "content" : "Zalo Notification Service (ZNS) for OTP/transactional messages.",
-                  "link" : null
-                },
-                "annotations" : {
-                  "bold" : false,
-                  "italic" : false,
-                  "strikethrough" : false,
-                  "underline" : false,
-                  "code" : false,
-                  "color" : "default"
-                },
-                "plain_text" : "Zalo Notification Service (ZNS) for OTP/transactional messages.",
-                "href" : null
-              } ],
-              "color" : "default"
-            }
-          } ]
-        }, {
-          "object" : "block",
-          "id" : "27af521e-2b70-80d2-8873-e6f7c37c77e0",
-          "parent" : {
-            "type" : "block_id",
-            "block_id" : "27af521e-2b70-805e-a4ef-c0546bdce030"
-          },
-          "created_time" : "2025-09-26T19:27:00.000Z",
-          "last_edited_time" : "2025-09-26T19:27:00.000Z",
-          "created_by" : {
-            "object" : "user",
-            "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
-          },
-          "last_edited_by" : {
-            "object" : "user",
-            "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
-          },
-          "has_children" : false,
-          "archived" : false,
-          "in_trash" : false,
-          "type" : "bulleted_list_item",
-          "bulleted_list_item" : {
-            "rich_text" : [ {
-              "type" : "text",
-              "text" : {
-                "content" : "If a specific channel is not supported by any provider in VN, the system must allow a ",
-                "link" : null
-              },
-              "annotations" : {
-                "bold" : false,
-                "italic" : false,
-                "strikethrough" : false,
-                "underline" : false,
-                "code" : false,
-                "color" : "default"
-              },
-              "plain_text" : "If a specific channel is not supported by any provider in VN, the system must allow a ",
-              "href" : null
-            }, {
-              "type" : "text",
-              "text" : {
-                "content" : "self-build module",
-                "link" : null
-              },
-              "annotations" : {
-                "bold" : true,
-                "italic" : false,
-                "strikethrough" : false,
-                "underline" : false,
-                "code" : false,
-                "color" : "default"
-              },
-              "plain_text" : "self-build module",
-              "href" : null
-            }, {
-              "type" : "text",
-              "text" : {
-                "content" : " to handle it.",
-                "link" : null
-              },
-              "annotations" : {
-                "bold" : false,
-                "italic" : false,
-                "strikethrough" : false,
-                "underline" : false,
-                "code" : false,
-                "color" : "default"
-              },
-              "plain_text" : " to handle it.",
+              "plain_text" : "The system can generate a one-time password (OTP), deliver it to the user through available channels (e.g., SMS, voice, app notification), and validate the code entered by the user.",
               "href" : null
             } ],
             "color" : "default"
@@ -705,13 +385,13 @@
         } ]
       }, {
         "object" : "block",
-        "id" : "27af521e-2b70-80c7-b44f-e48149dfa7db",
+        "id" : "27cf521e-2b70-80dd-b46a-cd3fa1464b20",
         "parent" : {
           "type" : "block_id",
-          "block_id" : "27af521e-2b70-8040-8e16-e2f9117295f6"
+          "block_id" : "27cf521e-2b70-8061-b713-fd4023f55790"
         },
-        "created_time" : "2025-09-26T19:27:00.000Z",
-        "last_edited_time" : "2025-09-26T19:27:00.000Z",
+        "created_time" : "2025-09-28T09:13:00.000Z",
+        "last_edited_time" : "2025-09-28T09:13:00.000Z",
         "created_by" : {
           "object" : "user",
           "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
@@ -728,7 +408,7 @@
           "rich_text" : [ {
             "type" : "text",
             "text" : {
-              "content" : "Biometric Authentication (fingerprint, face ID, mobile app auth)",
+              "content" : "Biometric Authentication",
               "link" : null
             },
             "annotations" : {
@@ -739,20 +419,20 @@
               "code" : false,
               "color" : "default"
             },
-            "plain_text" : "Biometric Authentication (fingerprint, face ID, mobile app auth)",
+            "plain_text" : "Biometric Authentication",
             "href" : null
           } ],
           "color" : "default"
         },
         "children" : [ {
           "object" : "block",
-          "id" : "27af521e-2b70-8082-b01a-c45df2c9e90a",
+          "id" : "27cf521e-2b70-8096-bf16-d009a34a3434",
           "parent" : {
             "type" : "block_id",
-            "block_id" : "27af521e-2b70-80c7-b44f-e48149dfa7db"
+            "block_id" : "27cf521e-2b70-80dd-b46a-cd3fa1464b20"
           },
-          "created_time" : "2025-09-26T19:27:00.000Z",
-          "last_edited_time" : "2025-09-26T19:27:00.000Z",
+          "created_time" : "2025-09-28T09:13:00.000Z",
+          "last_edited_time" : "2025-09-28T09:13:00.000Z",
           "created_by" : {
             "object" : "user",
             "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
@@ -769,7 +449,7 @@
             "rich_text" : [ {
               "type" : "text",
               "text" : {
-                "content" : "Use provider SDKs/APIs if available (e.g., local banks/e-wallets offering biometric SDKs).",
+                "content" : "The system supports biometric authentication (fingerprint, face ID, or mobile app authentication) using device-native or issuer-provided methods.",
                 "link" : null
               },
               "annotations" : {
@@ -780,80 +460,7 @@
                 "code" : false,
                 "color" : "default"
               },
-              "plain_text" : "Use provider SDKs/APIs if available (e.g., local banks/e-wallets offering biometric SDKs).",
-              "href" : null
-            } ],
-            "color" : "default"
-          }
-        }, {
-          "object" : "block",
-          "id" : "27af521e-2b70-8040-bc79-cd6c746e3e75",
-          "parent" : {
-            "type" : "block_id",
-            "block_id" : "27af521e-2b70-80c7-b44f-e48149dfa7db"
-          },
-          "created_time" : "2025-09-26T19:27:00.000Z",
-          "last_edited_time" : "2025-09-26T19:27:00.000Z",
-          "created_by" : {
-            "object" : "user",
-            "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
-          },
-          "last_edited_by" : {
-            "object" : "user",
-            "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
-          },
-          "has_children" : false,
-          "archived" : false,
-          "in_trash" : false,
-          "type" : "bulleted_list_item",
-          "bulleted_list_item" : {
-            "rich_text" : [ {
-              "type" : "text",
-              "text" : {
-                "content" : "If no Vietnamese provider is available, support ",
-                "link" : null
-              },
-              "annotations" : {
-                "bold" : false,
-                "italic" : false,
-                "strikethrough" : false,
-                "underline" : false,
-                "code" : false,
-                "color" : "default"
-              },
-              "plain_text" : "If no Vietnamese provider is available, support ",
-              "href" : null
-            }, {
-              "type" : "text",
-              "text" : {
-                "content" : "self-build biometric auth",
-                "link" : null
-              },
-              "annotations" : {
-                "bold" : true,
-                "italic" : false,
-                "strikethrough" : false,
-                "underline" : false,
-                "code" : false,
-                "color" : "default"
-              },
-              "plain_text" : "self-build biometric auth",
-              "href" : null
-            }, {
-              "type" : "text",
-              "text" : {
-                "content" : " (via device-native APIs such as iOS/Android BiometricPrompt).",
-                "link" : null
-              },
-              "annotations" : {
-                "bold" : false,
-                "italic" : false,
-                "strikethrough" : false,
-                "underline" : false,
-                "code" : false,
-                "color" : "default"
-              },
-              "plain_text" : " (via device-native APIs such as iOS/Android BiometricPrompt).",
+              "plain_text" : "The system supports biometric authentication (fingerprint, face ID, or mobile app authentication) using device-native or issuer-provided methods.",
               "href" : null
             } ],
             "color" : "default"
@@ -861,13 +468,13 @@
         } ]
       }, {
         "object" : "block",
-        "id" : "27af521e-2b70-80e2-8581-f36acfa06432",
+        "id" : "27cf521e-2b70-80c0-90c1-c4f3f1d8c9f5",
         "parent" : {
           "type" : "block_id",
-          "block_id" : "27af521e-2b70-8040-8e16-e2f9117295f6"
+          "block_id" : "27cf521e-2b70-8061-b713-fd4023f55790"
         },
-        "created_time" : "2025-09-26T19:27:00.000Z",
-        "last_edited_time" : "2025-09-26T19:27:00.000Z",
+        "created_time" : "2025-09-28T09:13:00.000Z",
+        "last_edited_time" : "2025-09-28T09:13:00.000Z",
         "created_by" : {
           "object" : "user",
           "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
@@ -902,13 +509,13 @@
         },
         "children" : [ {
           "object" : "block",
-          "id" : "27af521e-2b70-808b-9ab9-f274351d58c0",
+          "id" : "27cf521e-2b70-8021-b30d-cd36a68f13ff",
           "parent" : {
             "type" : "block_id",
-            "block_id" : "27af521e-2b70-80e2-8581-f36acfa06432"
+            "block_id" : "27cf521e-2b70-80c0-90c1-c4f3f1d8c9f5"
           },
-          "created_time" : "2025-09-26T19:27:00.000Z",
-          "last_edited_time" : "2025-09-26T19:27:00.000Z",
+          "created_time" : "2025-09-28T09:13:00.000Z",
+          "last_edited_time" : "2025-09-28T09:13:00.000Z",
           "created_by" : {
             "object" : "user",
             "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
@@ -925,7 +532,7 @@
             "rich_text" : [ {
               "type" : "text",
               "text" : {
-                "content" : "Integrate with 3DS via Vietnamese acquirers/gateways (e.g., Napas, VNPay, bank issuers supporting 3DS 2.x).",
+                "content" : "The system supports 3D Secure authentication according to card scheme requirements (3DS 1.x/2.x).",
                 "link" : null
               },
               "annotations" : {
@@ -936,20 +543,20 @@
                 "code" : false,
                 "color" : "default"
               },
-              "plain_text" : "Integrate with 3DS via Vietnamese acquirers/gateways (e.g., Napas, VNPay, bank issuers supporting 3DS 2.x).",
+              "plain_text" : "The system supports 3D Secure authentication according to card scheme requirements (3DS 1.x/2.x).",
               "href" : null
             } ],
             "color" : "default"
           }
         }, {
           "object" : "block",
-          "id" : "27af521e-2b70-8054-98f2-ecfc781f8a71",
+          "id" : "27cf521e-2b70-8096-b2f3-e886bf22891e",
           "parent" : {
             "type" : "block_id",
-            "block_id" : "27af521e-2b70-80e2-8581-f36acfa06432"
+            "block_id" : "27cf521e-2b70-80c0-90c1-c4f3f1d8c9f5"
           },
-          "created_time" : "2025-09-26T19:27:00.000Z",
-          "last_edited_time" : "2025-09-26T19:27:00.000Z",
+          "created_time" : "2025-09-28T09:13:00.000Z",
+          "last_edited_time" : "2025-09-28T09:13:00.000Z",
           "created_by" : {
             "object" : "user",
             "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
@@ -966,7 +573,7 @@
             "rich_text" : [ {
               "type" : "text",
               "text" : {
-                "content" : "If a local integration is unavailable, system must support a ",
+                "content" : "If the Issuer operates its own ACS, the system must redirect the user to the ACS page and capture the result.",
                 "link" : null
               },
               "annotations" : {
@@ -977,39 +584,7 @@
                 "code" : false,
                 "color" : "default"
               },
-              "plain_text" : "If a local integration is unavailable, system must support a ",
-              "href" : null
-            }, {
-              "type" : "text",
-              "text" : {
-                "content" : "self-build fallback module",
-                "link" : null
-              },
-              "annotations" : {
-                "bold" : true,
-                "italic" : false,
-                "strikethrough" : false,
-                "underline" : false,
-                "code" : false,
-                "color" : "default"
-              },
-              "plain_text" : "self-build fallback module",
-              "href" : null
-            }, {
-              "type" : "text",
-              "text" : {
-                "content" : " (e.g., redirect to bank’s ACS page & capture result).",
-                "link" : null
-              },
-              "annotations" : {
-                "bold" : false,
-                "italic" : false,
-                "strikethrough" : false,
-                "underline" : false,
-                "code" : false,
-                "color" : "default"
-              },
-              "plain_text" : " (e.g., redirect to bank’s ACS page & capture result).",
+              "plain_text" : "If the Issuer operates its own ACS, the system must redirect the user to the ACS page and capture the result.",
               "href" : null
             } ],
             "color" : "default"
@@ -1018,13 +593,13 @@
       } ]
     }, {
       "object" : "block",
-      "id" : "27af521e-2b70-80a1-abec-d8d8eaf00b11",
+      "id" : "27cf521e-2b70-8037-b46b-c2b3bfe6afb2",
       "parent" : {
         "type" : "block_id",
         "block_id" : "27af521e-2b70-80d0-877a-fa7ab6cf3b1a"
       },
-      "created_time" : "2025-09-26T19:27:00.000Z",
-      "last_edited_time" : "2025-09-26T19:27:00.000Z",
+      "created_time" : "2025-09-28T09:13:00.000Z",
+      "last_edited_time" : "2025-09-28T09:13:00.000Z",
       "created_by" : {
         "object" : "user",
         "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
@@ -1041,7 +616,7 @@
         "rich_text" : [ {
           "type" : "text",
           "text" : {
-            "content" : "System design must allow switching providers or adding new ones via configuration without code changes.",
+            "content" : "The system must allow flexible configuration of which authentication method(s) to enforce, based on business criteria (e.g., transaction amount, risk level).",
             "link" : null
           },
           "annotations" : {
@@ -1052,20 +627,20 @@
             "code" : false,
             "color" : "default"
           },
-          "plain_text" : "System design must allow switching providers or adding new ones via configuration without code changes.",
+          "plain_text" : "The system must allow flexible configuration of which authentication method(s) to enforce, based on business criteria (e.g., transaction amount, risk level).",
           "href" : null
         } ],
         "color" : "default"
       }
     }, {
       "object" : "block",
-      "id" : "27af521e-2b70-8048-a97a-e6de43b22b7b",
+      "id" : "27cf521e-2b70-808b-84ad-e66e3a79194b",
       "parent" : {
         "type" : "block_id",
         "block_id" : "27af521e-2b70-80d0-877a-fa7ab6cf3b1a"
       },
-      "created_time" : "2025-09-26T19:27:00.000Z",
-      "last_edited_time" : "2025-09-26T19:27:00.000Z",
+      "created_time" : "2025-09-28T09:13:00.000Z",
+      "last_edited_time" : "2025-09-28T09:13:00.000Z",
       "created_by" : {
         "object" : "user",
         "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
@@ -1082,7 +657,7 @@
         "rich_text" : [ {
           "type" : "text",
           "text" : {
-            "content" : "Logging/audit for all authentication attempts (type, provider, status, timestamp).",
+            "content" : "All authentication attempts must be logged/audited with type, status, and timestamp.",
             "link" : null
           },
           "annotations" : {
@@ -1093,7 +668,7 @@
             "code" : false,
             "color" : "default"
           },
-          "plain_text" : "Logging/audit for all authentication attempts (type, provider, status, timestamp).",
+          "plain_text" : "All authentication attempts must be logged/audited with type, status, and timestamp.",
           "href" : null
         } ],
         "color" : "default"
@@ -1107,7 +682,7 @@
       "block_id" : "27af521e-2b70-8089-9611-df31a044c9be"
     },
     "created_time" : "2025-09-26T17:27:00.000Z",
-    "last_edited_time" : "2025-09-26T19:28:00.000Z",
+    "last_edited_time" : "2025-09-28T09:13:00.000Z",
     "created_by" : {
       "object" : "user",
       "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
@@ -1142,13 +717,13 @@
     },
     "children" : [ {
       "object" : "block",
-      "id" : "27af521e-2b70-80db-bc3e-cdce99bc51cc",
+      "id" : "27cf521e-2b70-804d-a50b-f6115d11932c",
       "parent" : {
         "type" : "block_id",
         "block_id" : "27af521e-2b70-8070-8a8d-d9507772ea93"
       },
-      "created_time" : "2025-09-26T19:28:00.000Z",
-      "last_edited_time" : "2025-09-26T19:28:00.000Z",
+      "created_time" : "2025-09-28T09:13:00.000Z",
+      "last_edited_time" : "2025-09-28T09:13:00.000Z",
       "created_by" : {
         "object" : "user",
         "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
@@ -1165,7 +740,7 @@
         "rich_text" : [ {
           "type" : "text",
           "text" : {
-            "content" : "International-only authentication providers (e.g., Twilio Authy, Firebase Authentication).",
+            "content" : "Authentication flows unrelated to payment (e.g., application login).",
             "link" : null
           },
           "annotations" : {
@@ -1176,20 +751,20 @@
             "code" : false,
             "color" : "default"
           },
-          "plain_text" : "International-only authentication providers (e.g., Twilio Authy, Firebase Authentication).",
+          "plain_text" : "Authentication flows unrelated to payment (e.g., application login).",
           "href" : null
         } ],
         "color" : "default"
       }
     }, {
       "object" : "block",
-      "id" : "27af521e-2b70-80ad-9388-e7a83283d701",
+      "id" : "27cf521e-2b70-806f-b83c-f59b82b79a98",
       "parent" : {
         "type" : "block_id",
         "block_id" : "27af521e-2b70-8070-8a8d-d9507772ea93"
       },
-      "created_time" : "2025-09-26T19:28:00.000Z",
-      "last_edited_time" : "2025-09-26T19:28:00.000Z",
+      "created_time" : "2025-09-28T09:13:00.000Z",
+      "last_edited_time" : "2025-09-28T09:13:00.000Z",
       "created_by" : {
         "object" : "user",
         "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
@@ -1206,7 +781,7 @@
         "rich_text" : [ {
           "type" : "text",
           "text" : {
-            "content" : "Advanced fraud detection (behavioral analytics, AI risk scoring).",
+            "content" : "Advanced fraud detection (behavioral analytics, AI-based scoring).",
             "link" : null
           },
           "annotations" : {
@@ -1217,20 +792,20 @@
             "code" : false,
             "color" : "default"
           },
-          "plain_text" : "Advanced fraud detection (behavioral analytics, AI risk scoring).",
+          "plain_text" : "Advanced fraud detection (behavioral analytics, AI-based scoring).",
           "href" : null
         } ],
         "color" : "default"
       }
     }, {
       "object" : "block",
-      "id" : "27af521e-2b70-80ec-a076-c98d2f2c0534",
+      "id" : "27cf521e-2b70-8011-aa1c-dc6980723e97",
       "parent" : {
         "type" : "block_id",
         "block_id" : "27af521e-2b70-8070-8a8d-d9507772ea93"
       },
-      "created_time" : "2025-09-26T19:28:00.000Z",
-      "last_edited_time" : "2025-09-26T19:28:00.000Z",
+      "created_time" : "2025-09-28T09:13:00.000Z",
+      "last_edited_time" : "2025-09-28T09:13:00.000Z",
       "created_by" : {
         "object" : "user",
         "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
@@ -1247,7 +822,7 @@
         "rich_text" : [ {
           "type" : "text",
           "text" : {
-            "content" : "Non-payment authentication flows (e.g., general app login, device-level PIN).",
+            "content" : "Integration with or description of specific third-party service providers.",
             "link" : null
           },
           "annotations" : {
@@ -1258,48 +833,7 @@
             "code" : false,
             "color" : "default"
           },
-          "plain_text" : "Non-payment authentication flows (e.g., general app login, device-level PIN).",
-          "href" : null
-        } ],
-        "color" : "default"
-      }
-    }, {
-      "object" : "block",
-      "id" : "27af521e-2b70-80b2-9d42-d8755e53e497",
-      "parent" : {
-        "type" : "block_id",
-        "block_id" : "27af521e-2b70-8070-8a8d-d9507772ea93"
-      },
-      "created_time" : "2025-09-26T19:28:00.000Z",
-      "last_edited_time" : "2025-09-26T19:28:00.000Z",
-      "created_by" : {
-        "object" : "user",
-        "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
-      },
-      "last_edited_by" : {
-        "object" : "user",
-        "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
-      },
-      "has_children" : false,
-      "archived" : false,
-      "in_trash" : false,
-      "type" : "bulleted_list_item",
-      "bulleted_list_item" : {
-        "rich_text" : [ {
-          "type" : "text",
-          "text" : {
-            "content" : "Compliance frameworks (FIDO2, PSD2 SCA) outside Vietnam’s regulatory scope.",
-            "link" : null
-          },
-          "annotations" : {
-            "bold" : false,
-            "italic" : false,
-            "strikethrough" : false,
-            "underline" : false,
-            "code" : false,
-            "color" : "default"
-          },
-          "plain_text" : "Compliance frameworks (FIDO2, PSD2 SCA) outside Vietnam’s regulatory scope.",
+          "plain_text" : "Integration with or description of specific third-party service providers.",
           "href" : null
         } ],
         "color" : "default"
@@ -1314,7 +848,7 @@
     "page_id" : "278f521e-2b70-8028-8e92-e3264cf4cbf0"
   },
   "created_time" : "2025-09-24T15:27:00.000Z",
-  "last_edited_time" : "2025-09-26T19:28:00.000Z",
+  "last_edited_time" : "2025-09-28T09:13:00.000Z",
   "created_by" : {
     "object" : "user",
     "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
@@ -1349,13 +883,13 @@
   },
   "children" : [ {
     "object" : "block",
-    "id" : "27af521e-2b70-80c6-9721-c40fc3ba9326",
+    "id" : "27cf521e-2b70-804f-9d9b-d90a7025bc05",
     "parent" : {
       "type" : "block_id",
       "block_id" : "278f521e-2b70-808d-8e41-d1cbb81bded5"
     },
-    "created_time" : "2025-09-26T19:28:00.000Z",
-    "last_edited_time" : "2025-09-26T19:28:00.000Z",
+    "created_time" : "2025-09-28T09:13:00.000Z",
+    "last_edited_time" : "2025-09-28T09:13:00.000Z",
     "created_by" : {
       "object" : "user",
       "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
@@ -1372,7 +906,7 @@
       "rich_text" : [ {
         "type" : "text",
         "text" : {
-          "content" : "System can ",
+          "content" : "The system can require OTP, biometric, or 3DS as an additional authentication step in the payment process.",
           "link" : null
         },
         "annotations" : {
@@ -1383,39 +917,7 @@
           "code" : false,
           "color" : "default"
         },
-        "plain_text" : "System can ",
-        "href" : null
-      }, {
-        "type" : "text",
-        "text" : {
-          "content" : "generate, deliver, and validate OTP codes",
-          "link" : null
-        },
-        "annotations" : {
-          "bold" : true,
-          "italic" : false,
-          "strikethrough" : false,
-          "underline" : false,
-          "code" : false,
-          "color" : "default"
-        },
-        "plain_text" : "generate, deliver, and validate OTP codes",
-        "href" : null
-      }, {
-        "type" : "text",
-        "text" : {
-          "content" : " bound to a session (payment or user action).",
-          "link" : null
-        },
-        "annotations" : {
-          "bold" : false,
-          "italic" : false,
-          "strikethrough" : false,
-          "underline" : false,
-          "code" : false,
-          "color" : "default"
-        },
-        "plain_text" : " bound to a session (payment or user action).",
+        "plain_text" : "The system can require OTP, biometric, or 3DS as an additional authentication step in the payment process.",
         "href" : null
       } ],
       "checked" : false,
@@ -1423,211 +925,13 @@
     }
   }, {
     "object" : "block",
-    "id" : "27af521e-2b70-8093-b39c-d063198eb8e1",
+    "id" : "27cf521e-2b70-80d2-a853-c5b1d5176f4b",
     "parent" : {
       "type" : "block_id",
       "block_id" : "278f521e-2b70-808d-8e41-d1cbb81bded5"
     },
-    "created_time" : "2025-09-26T19:28:00.000Z",
-    "last_edited_time" : "2025-09-26T19:28:00.000Z",
-    "created_by" : {
-      "object" : "user",
-      "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
-    },
-    "last_edited_by" : {
-      "object" : "user",
-      "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
-    },
-    "has_children" : true,
-    "archived" : false,
-    "in_trash" : false,
-    "type" : "to_do",
-    "to_do" : {
-      "rich_text" : [ {
-        "type" : "text",
-        "text" : {
-          "content" : "OTP delivery works via ",
-          "link" : null
-        },
-        "annotations" : {
-          "bold" : false,
-          "italic" : false,
-          "strikethrough" : false,
-          "underline" : false,
-          "code" : false,
-          "color" : "default"
-        },
-        "plain_text" : "OTP delivery works via ",
-        "href" : null
-      }, {
-        "type" : "text",
-        "text" : {
-          "content" : "Vietnamese providers",
-          "link" : null
-        },
-        "annotations" : {
-          "bold" : true,
-          "italic" : false,
-          "strikethrough" : false,
-          "underline" : false,
-          "code" : false,
-          "color" : "default"
-        },
-        "plain_text" : "Vietnamese providers",
-        "href" : null
-      }, {
-        "type" : "text",
-        "text" : {
-          "content" : ":",
-          "link" : null
-        },
-        "annotations" : {
-          "bold" : false,
-          "italic" : false,
-          "strikethrough" : false,
-          "underline" : false,
-          "code" : false,
-          "color" : "default"
-        },
-        "plain_text" : ":",
-        "href" : null
-      } ],
-      "checked" : false,
-      "color" : "default"
-    },
-    "children" : [ {
-      "object" : "block",
-      "id" : "27af521e-2b70-80ca-897d-fe4606875603",
-      "parent" : {
-        "type" : "block_id",
-        "block_id" : "27af521e-2b70-8093-b39c-d063198eb8e1"
-      },
-      "created_time" : "2025-09-26T19:28:00.000Z",
-      "last_edited_time" : "2025-09-26T19:28:00.000Z",
-      "created_by" : {
-        "object" : "user",
-        "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
-      },
-      "last_edited_by" : {
-        "object" : "user",
-        "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
-      },
-      "has_children" : false,
-      "archived" : false,
-      "in_trash" : false,
-      "type" : "bulleted_list_item",
-      "bulleted_list_item" : {
-        "rich_text" : [ {
-          "type" : "text",
-          "text" : {
-            "content" : "SMS (SpeedSMS, Unimatrix, Messaggio).",
-            "link" : null
-          },
-          "annotations" : {
-            "bold" : false,
-            "italic" : false,
-            "strikethrough" : false,
-            "underline" : false,
-            "code" : false,
-            "color" : "default"
-          },
-          "plain_text" : "SMS (SpeedSMS, Unimatrix, Messaggio).",
-          "href" : null
-        } ],
-        "color" : "default"
-      }
-    }, {
-      "object" : "block",
-      "id" : "27af521e-2b70-80fb-a373-fd99971c495e",
-      "parent" : {
-        "type" : "block_id",
-        "block_id" : "27af521e-2b70-8093-b39c-d063198eb8e1"
-      },
-      "created_time" : "2025-09-26T19:28:00.000Z",
-      "last_edited_time" : "2025-09-26T19:28:00.000Z",
-      "created_by" : {
-        "object" : "user",
-        "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
-      },
-      "last_edited_by" : {
-        "object" : "user",
-        "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
-      },
-      "has_children" : false,
-      "archived" : false,
-      "in_trash" : false,
-      "type" : "bulleted_list_item",
-      "bulleted_list_item" : {
-        "rich_text" : [ {
-          "type" : "text",
-          "text" : {
-            "content" : "Voice call OTP (Viettel).",
-            "link" : null
-          },
-          "annotations" : {
-            "bold" : false,
-            "italic" : false,
-            "strikethrough" : false,
-            "underline" : false,
-            "code" : false,
-            "color" : "default"
-          },
-          "plain_text" : "Voice call OTP (Viettel).",
-          "href" : null
-        } ],
-        "color" : "default"
-      }
-    }, {
-      "object" : "block",
-      "id" : "27af521e-2b70-8027-9c49-fe52363ed6c8",
-      "parent" : {
-        "type" : "block_id",
-        "block_id" : "27af521e-2b70-8093-b39c-d063198eb8e1"
-      },
-      "created_time" : "2025-09-26T19:28:00.000Z",
-      "last_edited_time" : "2025-09-26T19:28:00.000Z",
-      "created_by" : {
-        "object" : "user",
-        "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
-      },
-      "last_edited_by" : {
-        "object" : "user",
-        "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
-      },
-      "has_children" : false,
-      "archived" : false,
-      "in_trash" : false,
-      "type" : "bulleted_list_item",
-      "bulleted_list_item" : {
-        "rich_text" : [ {
-          "type" : "text",
-          "text" : {
-            "content" : "Zalo Notification (ZNS).",
-            "link" : null
-          },
-          "annotations" : {
-            "bold" : false,
-            "italic" : false,
-            "strikethrough" : false,
-            "underline" : false,
-            "code" : false,
-            "color" : "default"
-          },
-          "plain_text" : "Zalo Notification (ZNS).",
-          "href" : null
-        } ],
-        "color" : "default"
-      }
-    } ]
-  }, {
-    "object" : "block",
-    "id" : "27af521e-2b70-80b0-b1ec-cfb6b4872fe5",
-    "parent" : {
-      "type" : "block_id",
-      "block_id" : "278f521e-2b70-808d-8e41-d1cbb81bded5"
-    },
-    "created_time" : "2025-09-26T19:28:00.000Z",
-    "last_edited_time" : "2025-09-26T19:28:00.000Z",
+    "created_time" : "2025-09-28T09:13:00.000Z",
+    "last_edited_time" : "2025-09-28T09:13:00.000Z",
     "created_by" : {
       "object" : "user",
       "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
@@ -1644,7 +948,7 @@
       "rich_text" : [ {
         "type" : "text",
         "text" : {
-          "content" : "OTP failures handled: missing, expired, invalid → system rejects and prompts retry.",
+          "content" : "OTPs can be generated and validated; OTP length, expiration time, and retry attempts are configurable.",
           "link" : null
         },
         "annotations" : {
@@ -1655,7 +959,7 @@
           "code" : false,
           "color" : "default"
         },
-        "plain_text" : "OTP failures handled: missing, expired, invalid → system rejects and prompts retry.",
+        "plain_text" : "OTPs can be generated and validated; OTP length, expiration time, and retry attempts are configurable.",
         "href" : null
       } ],
       "checked" : false,
@@ -1663,13 +967,13 @@
     }
   }, {
     "object" : "block",
-    "id" : "27af521e-2b70-80d5-84ba-fe2c56ff36e2",
+    "id" : "27cf521e-2b70-80cd-a945-f850a35b2e7e",
     "parent" : {
       "type" : "block_id",
       "block_id" : "278f521e-2b70-808d-8e41-d1cbb81bded5"
     },
-    "created_time" : "2025-09-26T19:28:00.000Z",
-    "last_edited_time" : "2025-09-26T19:28:00.000Z",
+    "created_time" : "2025-09-28T09:13:00.000Z",
+    "last_edited_time" : "2025-09-28T09:13:00.000Z",
     "created_by" : {
       "object" : "user",
       "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
@@ -1686,7 +990,7 @@
       "rich_text" : [ {
         "type" : "text",
         "text" : {
-          "content" : "OTP length, expiration, and retry attempts are configurable.",
+          "content" : "Biometric authentication is supported when the user’s device allows it; if unavailable, the system falls back to another method (e.g., OTP).",
           "link" : null
         },
         "annotations" : {
@@ -1697,7 +1001,7 @@
           "code" : false,
           "color" : "default"
         },
-        "plain_text" : "OTP length, expiration, and retry attempts are configurable.",
+        "plain_text" : "Biometric authentication is supported when the user’s device allows it; if unavailable, the system falls back to another method (e.g., OTP).",
         "href" : null
       } ],
       "checked" : false,
@@ -1705,13 +1009,13 @@
     }
   }, {
     "object" : "block",
-    "id" : "27af521e-2b70-80f7-aad5-c1e968b248b3",
+    "id" : "27cf521e-2b70-80c7-bdfc-cc3144f70e47",
     "parent" : {
       "type" : "block_id",
       "block_id" : "278f521e-2b70-808d-8e41-d1cbb81bded5"
     },
-    "created_time" : "2025-09-26T19:28:00.000Z",
-    "last_edited_time" : "2025-09-26T19:28:00.000Z",
+    "created_time" : "2025-09-28T09:13:00.000Z",
+    "last_edited_time" : "2025-09-28T09:13:00.000Z",
     "created_by" : {
       "object" : "user",
       "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
@@ -1728,7 +1032,7 @@
       "rich_text" : [ {
         "type" : "text",
         "text" : {
-          "content" : "OTP values are never stored in plain text (only hashed in DB/logs).",
+          "content" : "3D Secure is supported: if an ACS is available, the system redirects the user and captures the authentication result.",
           "link" : null
         },
         "annotations" : {
@@ -1739,7 +1043,7 @@
           "code" : false,
           "color" : "default"
         },
-        "plain_text" : "OTP values are never stored in plain text (only hashed in DB/logs).",
+        "plain_text" : "3D Secure is supported: if an ACS is available, the system redirects the user and captures the authentication result.",
         "href" : null
       } ],
       "checked" : false,
@@ -1747,327 +1051,13 @@
     }
   }, {
     "object" : "block",
-    "id" : "27af521e-2b70-800d-90bd-eb2abea5b87f",
+    "id" : "27cf521e-2b70-8013-b7c4-dfd6d0a6eafa",
     "parent" : {
       "type" : "block_id",
       "block_id" : "278f521e-2b70-808d-8e41-d1cbb81bded5"
     },
-    "created_time" : "2025-09-26T19:28:00.000Z",
-    "last_edited_time" : "2025-09-26T19:28:00.000Z",
-    "created_by" : {
-      "object" : "user",
-      "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
-    },
-    "last_edited_by" : {
-      "object" : "user",
-      "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
-    },
-    "has_children" : true,
-    "archived" : false,
-    "in_trash" : false,
-    "type" : "to_do",
-    "to_do" : {
-      "rich_text" : [ {
-        "type" : "text",
-        "text" : {
-          "content" : "System supports ",
-          "link" : null
-        },
-        "annotations" : {
-          "bold" : false,
-          "italic" : false,
-          "strikethrough" : false,
-          "underline" : false,
-          "code" : false,
-          "color" : "default"
-        },
-        "plain_text" : "System supports ",
-        "href" : null
-      }, {
-        "type" : "text",
-        "text" : {
-          "content" : "biometric authentication",
-          "link" : null
-        },
-        "annotations" : {
-          "bold" : true,
-          "italic" : false,
-          "strikethrough" : false,
-          "underline" : false,
-          "code" : false,
-          "color" : "default"
-        },
-        "plain_text" : "biometric authentication",
-        "href" : null
-      }, {
-        "type" : "text",
-        "text" : {
-          "content" : ":",
-          "link" : null
-        },
-        "annotations" : {
-          "bold" : false,
-          "italic" : false,
-          "strikethrough" : false,
-          "underline" : false,
-          "code" : false,
-          "color" : "default"
-        },
-        "plain_text" : ":",
-        "href" : null
-      } ],
-      "checked" : false,
-      "color" : "default"
-    },
-    "children" : [ {
-      "object" : "block",
-      "id" : "27af521e-2b70-800f-95c4-ee7b97e4956a",
-      "parent" : {
-        "type" : "block_id",
-        "block_id" : "27af521e-2b70-800d-90bd-eb2abea5b87f"
-      },
-      "created_time" : "2025-09-26T19:28:00.000Z",
-      "last_edited_time" : "2025-09-26T19:28:00.000Z",
-      "created_by" : {
-        "object" : "user",
-        "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
-      },
-      "last_edited_by" : {
-        "object" : "user",
-        "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
-      },
-      "has_children" : false,
-      "archived" : false,
-      "in_trash" : false,
-      "type" : "bulleted_list_item",
-      "bulleted_list_item" : {
-        "rich_text" : [ {
-          "type" : "text",
-          "text" : {
-            "content" : "If provider SDK available → integrated.",
-            "link" : null
-          },
-          "annotations" : {
-            "bold" : false,
-            "italic" : false,
-            "strikethrough" : false,
-            "underline" : false,
-            "code" : false,
-            "color" : "default"
-          },
-          "plain_text" : "If provider SDK available → integrated.",
-          "href" : null
-        } ],
-        "color" : "default"
-      }
-    }, {
-      "object" : "block",
-      "id" : "27af521e-2b70-80f3-9d14-d8fbbb0a69c1",
-      "parent" : {
-        "type" : "block_id",
-        "block_id" : "27af521e-2b70-800d-90bd-eb2abea5b87f"
-      },
-      "created_time" : "2025-09-26T19:28:00.000Z",
-      "last_edited_time" : "2025-09-26T19:28:00.000Z",
-      "created_by" : {
-        "object" : "user",
-        "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
-      },
-      "last_edited_by" : {
-        "object" : "user",
-        "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
-      },
-      "has_children" : false,
-      "archived" : false,
-      "in_trash" : false,
-      "type" : "bulleted_list_item",
-      "bulleted_list_item" : {
-        "rich_text" : [ {
-          "type" : "text",
-          "text" : {
-            "content" : "Else → fallback to device-native biometric APIs.",
-            "link" : null
-          },
-          "annotations" : {
-            "bold" : false,
-            "italic" : false,
-            "strikethrough" : false,
-            "underline" : false,
-            "code" : false,
-            "color" : "default"
-          },
-          "plain_text" : "Else → fallback to device-native biometric APIs.",
-          "href" : null
-        } ],
-        "color" : "default"
-      }
-    } ]
-  }, {
-    "object" : "block",
-    "id" : "27af521e-2b70-80aa-a31d-e5d37013ceb7",
-    "parent" : {
-      "type" : "block_id",
-      "block_id" : "278f521e-2b70-808d-8e41-d1cbb81bded5"
-    },
-    "created_time" : "2025-09-26T19:28:00.000Z",
-    "last_edited_time" : "2025-09-26T19:28:00.000Z",
-    "created_by" : {
-      "object" : "user",
-      "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
-    },
-    "last_edited_by" : {
-      "object" : "user",
-      "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
-    },
-    "has_children" : true,
-    "archived" : false,
-    "in_trash" : false,
-    "type" : "to_do",
-    "to_do" : {
-      "rich_text" : [ {
-        "type" : "text",
-        "text" : {
-          "content" : "System supports ",
-          "link" : null
-        },
-        "annotations" : {
-          "bold" : false,
-          "italic" : false,
-          "strikethrough" : false,
-          "underline" : false,
-          "code" : false,
-          "color" : "default"
-        },
-        "plain_text" : "System supports ",
-        "href" : null
-      }, {
-        "type" : "text",
-        "text" : {
-          "content" : "3D Secure",
-          "link" : null
-        },
-        "annotations" : {
-          "bold" : true,
-          "italic" : false,
-          "strikethrough" : false,
-          "underline" : false,
-          "code" : false,
-          "color" : "default"
-        },
-        "plain_text" : "3D Secure",
-        "href" : null
-      }, {
-        "type" : "text",
-        "text" : {
-          "content" : ":",
-          "link" : null
-        },
-        "annotations" : {
-          "bold" : false,
-          "italic" : false,
-          "strikethrough" : false,
-          "underline" : false,
-          "code" : false,
-          "color" : "default"
-        },
-        "plain_text" : ":",
-        "href" : null
-      } ],
-      "checked" : false,
-      "color" : "default"
-    },
-    "children" : [ {
-      "object" : "block",
-      "id" : "27af521e-2b70-80a9-ba4d-e035c60ad72a",
-      "parent" : {
-        "type" : "block_id",
-        "block_id" : "27af521e-2b70-80aa-a31d-e5d37013ceb7"
-      },
-      "created_time" : "2025-09-26T19:28:00.000Z",
-      "last_edited_time" : "2025-09-26T19:28:00.000Z",
-      "created_by" : {
-        "object" : "user",
-        "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
-      },
-      "last_edited_by" : {
-        "object" : "user",
-        "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
-      },
-      "has_children" : false,
-      "archived" : false,
-      "in_trash" : false,
-      "type" : "bulleted_list_item",
-      "bulleted_list_item" : {
-        "rich_text" : [ {
-          "type" : "text",
-          "text" : {
-            "content" : "If available via local acquirer → integrated.",
-            "link" : null
-          },
-          "annotations" : {
-            "bold" : false,
-            "italic" : false,
-            "strikethrough" : false,
-            "underline" : false,
-            "code" : false,
-            "color" : "default"
-          },
-          "plain_text" : "If available via local acquirer → integrated.",
-          "href" : null
-        } ],
-        "color" : "default"
-      }
-    }, {
-      "object" : "block",
-      "id" : "27af521e-2b70-8057-a946-f7cba7d4049f",
-      "parent" : {
-        "type" : "block_id",
-        "block_id" : "27af521e-2b70-80aa-a31d-e5d37013ceb7"
-      },
-      "created_time" : "2025-09-26T19:28:00.000Z",
-      "last_edited_time" : "2025-09-26T19:28:00.000Z",
-      "created_by" : {
-        "object" : "user",
-        "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
-      },
-      "last_edited_by" : {
-        "object" : "user",
-        "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
-      },
-      "has_children" : false,
-      "archived" : false,
-      "in_trash" : false,
-      "type" : "bulleted_list_item",
-      "bulleted_list_item" : {
-        "rich_text" : [ {
-          "type" : "text",
-          "text" : {
-            "content" : "Else → fallback redirect to ACS & capture result.",
-            "link" : null
-          },
-          "annotations" : {
-            "bold" : false,
-            "italic" : false,
-            "strikethrough" : false,
-            "underline" : false,
-            "code" : false,
-            "color" : "default"
-          },
-          "plain_text" : "Else → fallback redirect to ACS & capture result.",
-          "href" : null
-        } ],
-        "color" : "default"
-      }
-    } ]
-  }, {
-    "object" : "block",
-    "id" : "27af521e-2b70-8084-b4c5-d9a37491539e",
-    "parent" : {
-      "type" : "block_id",
-      "block_id" : "278f521e-2b70-808d-8e41-d1cbb81bded5"
-    },
-    "created_time" : "2025-09-26T19:28:00.000Z",
-    "last_edited_time" : "2025-09-26T19:28:00.000Z",
+    "created_time" : "2025-09-28T09:13:00.000Z",
+    "last_edited_time" : "2025-09-28T09:13:00.000Z",
     "created_by" : {
       "object" : "user",
       "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
@@ -2084,7 +1074,7 @@
       "rich_text" : [ {
         "type" : "text",
         "text" : {
-          "content" : "If authentication succeeds, payment flow continues.",
+          "content" : "If authentication succeeds, the payment flow continues; if authentication fails, the payment is stopped, and the customer is notified.",
           "link" : null
         },
         "annotations" : {
@@ -2095,7 +1085,7 @@
           "code" : false,
           "color" : "default"
         },
-        "plain_text" : "If authentication succeeds, payment flow continues.",
+        "plain_text" : "If authentication succeeds, the payment flow continues; if authentication fails, the payment is stopped, and the customer is notified.",
         "href" : null
       } ],
       "checked" : false,
@@ -2103,13 +1093,13 @@
     }
   }, {
     "object" : "block",
-    "id" : "27af521e-2b70-800b-9882-cbf2e3d8949c",
+    "id" : "27cf521e-2b70-8044-9f3b-fb5bd12fa590",
     "parent" : {
       "type" : "block_id",
       "block_id" : "278f521e-2b70-808d-8e41-d1cbb81bded5"
     },
-    "created_time" : "2025-09-26T19:28:00.000Z",
-    "last_edited_time" : "2025-09-26T19:28:00.000Z",
+    "created_time" : "2025-09-28T09:13:00.000Z",
+    "last_edited_time" : "2025-09-28T09:13:00.000Z",
     "created_by" : {
       "object" : "user",
       "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
@@ -2126,7 +1116,7 @@
       "rich_text" : [ {
         "type" : "text",
         "text" : {
-          "content" : "If authentication fails, payment is stopped and customer is notified.",
+          "content" : "Administrators can configure which authentication method(s) apply under which business rules without code changes.",
           "link" : null
         },
         "annotations" : {
@@ -2137,7 +1127,7 @@
           "code" : false,
           "color" : "default"
         },
-        "plain_text" : "If authentication fails, payment is stopped and customer is notified.",
+        "plain_text" : "Administrators can configure which authentication method(s) apply under which business rules without code changes.",
         "href" : null
       } ],
       "checked" : false,
@@ -2145,13 +1135,13 @@
     }
   }, {
     "object" : "block",
-    "id" : "27af521e-2b70-808b-92c6-e9cca6561326",
+    "id" : "27cf521e-2b70-8034-b205-f9c114552a0f",
     "parent" : {
       "type" : "block_id",
       "block_id" : "278f521e-2b70-808d-8e41-d1cbb81bded5"
     },
-    "created_time" : "2025-09-26T19:28:00.000Z",
-    "last_edited_time" : "2025-09-26T19:28:00.000Z",
+    "created_time" : "2025-09-28T09:13:00.000Z",
+    "last_edited_time" : "2025-09-28T09:13:00.000Z",
     "created_by" : {
       "object" : "user",
       "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
@@ -2168,7 +1158,7 @@
       "rich_text" : [ {
         "type" : "text",
         "text" : {
-          "content" : "Provider switching / enabling new auth methods is possible via configuration, not code changes.",
+          "content" : "All authentication attempts are logged with type, status, and timestamp for auditing purposes.",
           "link" : null
         },
         "annotations" : {
@@ -2179,7 +1169,7 @@
           "code" : false,
           "color" : "default"
         },
-        "plain_text" : "Provider switching / enabling new auth methods is possible via configuration, not code changes.",
+        "plain_text" : "All authentication attempts are logged with type, status, and timestamp for auditing purposes.",
         "href" : null
       } ],
       "checked" : false,

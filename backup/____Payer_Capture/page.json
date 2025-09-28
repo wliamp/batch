@@ -1,0 +1,87 @@
+{
+  "object" : "page",
+  "id" : "278f521e-2b70-812f-8a92-db0520aa72de",
+  "created_time" : "2025-09-24T10:47:00.000Z",
+  "last_edited_time" : "2025-09-28T10:43:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "cover" : null,
+  "icon" : {
+    "type" : "emoji",
+    "emoji" : "👤"
+  },
+  "parent" : {
+    "type" : "database_id",
+    "database_id" : "278f521e-2b70-8020-bf7a-c18805532ce2"
+  },
+  "archived" : false,
+  "in_trash" : false,
+  "is_locked" : false,
+  "properties" : {
+    "Actor" : {
+      "id" : "Yz%40%60",
+      "type" : "select",
+      "select" : {
+        "id" : "ac791d61-6a58-4e2c-b17e-2919264bdbce",
+        "name" : "Payer",
+        "color" : "pink"
+      }
+    },
+    "Business" : {
+      "id" : "b%7Bxb",
+      "type" : "select",
+      "select" : {
+        "id" : "bf12ea2d-9c1c-4d1d-b4c1-ea9a302a36fd",
+        "name" : "Capture",
+        "color" : "pink"
+      }
+    },
+    "Status" : {
+      "id" : "k%3FMm",
+      "type" : "status",
+      "status" : {
+        "id" : "8e60037a-bd86-4bec-ae03-6dcd5c392137",
+        "name" : "Not started",
+        "color" : "default"
+      }
+    },
+    "Priority" : {
+      "id" : "lgXk",
+      "type" : "select",
+      "select" : {
+        "id" : "q_d^",
+        "name" : "P2",
+        "color" : "pink"
+      }
+    },
+    "Title" : {
+      "id" : "title",
+      "type" : "title",
+      "title" : [ {
+        "type" : "text",
+        "text" : {
+          "content" : "➡️🏪 Payer Capture",
+          "link" : null
+        },
+        "annotations" : {
+          "bold" : false,
+          "italic" : false,
+          "strikethrough" : false,
+          "underline" : false,
+          "code" : false,
+          "color" : "default"
+        },
+        "plain_text" : "➡️🏪 Payer Capture",
+        "href" : null
+      } ]
+    }
+  },
+  "url" : "https://www.notion.so/Payer-Capture-278f521e2b70812f8a92db0520aa72de",
+  "public_url" : null
+}

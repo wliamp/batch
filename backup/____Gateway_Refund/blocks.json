@@ -1,0 +1,452 @@
+[ {
+  "object" : "block",
+  "id" : "27cf521e-2b70-8093-8bcf-f5d21d14986a",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "27cf521e-2b70-80df-814c-edc8d4612820"
+  },
+  "created_time" : "2025-09-28T11:32:00.000Z",
+  "last_edited_time" : "2025-09-28T11:32:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "paragraph",
+  "paragraph" : {
+    "rich_text" : [ {
+      "type" : "text",
+      "text" : {
+        "content" : "As a ",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "As a ",
+      "href" : null
+    }, {
+      "type" : "text",
+      "text" : {
+        "content" : "Payment Gateway",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : true,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "Payment Gateway",
+      "href" : null
+    }, {
+      "type" : "text",
+      "text" : {
+        "content" : ", I want to handle refund requests from merchants, so that the process is consistent.",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : ", I want to handle refund requests from merchants, so that the process is consistent.",
+      "href" : null
+    } ],
+    "color" : "default"
+  }
+}, {
+  "object" : "block",
+  "id" : "27cf521e-2b70-8086-826f-e316f7daedde",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "27cf521e-2b70-80df-814c-edc8d4612820"
+  },
+  "created_time" : "2025-09-28T11:32:00.000Z",
+  "last_edited_time" : "2025-09-28T11:32:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "paragraph",
+  "paragraph" : {
+    "rich_text" : [ {
+      "type" : "text",
+      "text" : {
+        "content" : "Scope",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : true,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "Scope",
+      "href" : null
+    } ],
+    "color" : "default"
+  }
+}, {
+  "object" : "block",
+  "id" : "27cf521e-2b70-80c0-ac07-d0069ed8e8d8",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "27cf521e-2b70-80df-814c-edc8d4612820"
+  },
+  "created_time" : "2025-09-28T11:32:00.000Z",
+  "last_edited_time" : "2025-09-28T11:32:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "bulleted_list_item",
+  "bulleted_list_item" : {
+    "rich_text" : [ {
+      "type" : "text",
+      "text" : {
+        "content" : "Accept refund referencing sale/capture.",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "Accept refund referencing sale/capture.",
+      "href" : null
+    } ],
+    "color" : "default"
+  }
+}, {
+  "object" : "block",
+  "id" : "27cf521e-2b70-806a-89b7-df6419162ee0",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "27cf521e-2b70-80df-814c-edc8d4612820"
+  },
+  "created_time" : "2025-09-28T11:32:00.000Z",
+  "last_edited_time" : "2025-09-28T11:32:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "bulleted_list_item",
+  "bulleted_list_item" : {
+    "rich_text" : [ {
+      "type" : "text",
+      "text" : {
+        "content" : "Forward to processor/issuer.",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "Forward to processor/issuer.",
+      "href" : null
+    } ],
+    "color" : "default"
+  }
+}, {
+  "object" : "block",
+  "id" : "27cf521e-2b70-80fc-92cb-c129185d2f69",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "27cf521e-2b70-80df-814c-edc8d4612820"
+  },
+  "created_time" : "2025-09-28T11:32:00.000Z",
+  "last_edited_time" : "2025-09-28T11:32:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "bulleted_list_item",
+  "bulleted_list_item" : {
+    "rich_text" : [ {
+      "type" : "text",
+      "text" : {
+        "content" : "Relay result.",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "Relay result.",
+      "href" : null
+    } ],
+    "color" : "default"
+  }
+}, {
+  "object" : "block",
+  "id" : "27cf521e-2b70-8097-af0a-c77bd7a03419",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "27cf521e-2b70-80df-814c-edc8d4612820"
+  },
+  "created_time" : "2025-09-28T11:32:00.000Z",
+  "last_edited_time" : "2025-09-28T11:32:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "paragraph",
+  "paragraph" : {
+    "rich_text" : [ {
+      "type" : "text",
+      "text" : {
+        "content" : "Acceptance Criteria",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : true,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "Acceptance Criteria",
+      "href" : null
+    } ],
+    "color" : "default"
+  }
+}, {
+  "object" : "block",
+  "id" : "27cf521e-2b70-8069-b9bc-cb050d72ca74",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "27cf521e-2b70-80df-814c-edc8d4612820"
+  },
+  "created_time" : "2025-09-28T11:32:00.000Z",
+  "last_edited_time" : "2025-09-28T11:32:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "bulleted_list_item",
+  "bulleted_list_item" : {
+    "rich_text" : [ {
+      "type" : "text",
+      "text" : {
+        "content" : "Refund linked to valid original transaction.",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "Refund linked to valid original transaction.",
+      "href" : null
+    } ],
+    "color" : "default"
+  }
+}, {
+  "object" : "block",
+  "id" : "27cf521e-2b70-8081-829c-cab53a17747d",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "27cf521e-2b70-80df-814c-edc8d4612820"
+  },
+  "created_time" : "2025-09-28T11:32:00.000Z",
+  "last_edited_time" : "2025-09-28T11:32:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "bulleted_list_item",
+  "bulleted_list_item" : {
+    "rich_text" : [ {
+      "type" : "text",
+      "text" : {
+        "content" : "Correct response returned.",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "Correct response returned.",
+      "href" : null
+    } ],
+    "color" : "default"
+  }
+}, {
+  "object" : "block",
+  "id" : "27cf521e-2b70-80f0-acd9-cc98973f1b05",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "27cf521e-2b70-80df-814c-edc8d4612820"
+  },
+  "created_time" : "2025-09-28T11:32:00.000Z",
+  "last_edited_time" : "2025-09-28T11:32:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "bulleted_list_item",
+  "bulleted_list_item" : {
+    "rich_text" : [ {
+      "type" : "text",
+      "text" : {
+        "content" : "Refund logged with reference ID.",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "Refund logged with reference ID.",
+      "href" : null
+    } ],
+    "color" : "default"
+  }
+}, {
+  "object" : "block",
+  "id" : "27cf521e-2b70-81db-b813-d576d032c766",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "27cf521e-2b70-80df-814c-edc8d4612820"
+  },
+  "created_time" : "2025-09-28T11:31:00.000Z",
+  "last_edited_time" : "2025-09-28T11:31:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "paragraph",
+  "paragraph" : {
+    "rich_text" : [ ],
+    "color" : "default"
+  }
+}, {
+  "object" : "block",
+  "id" : "27cf521e-2b70-8158-95e9-d1c958afae9e",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "27cf521e-2b70-80df-814c-edc8d4612820"
+  },
+  "created_time" : "2025-09-28T11:31:00.000Z",
+  "last_edited_time" : "2025-09-28T11:31:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "paragraph",
+  "paragraph" : {
+    "rich_text" : [ ],
+    "color" : "default"
+  }
+} ]

@@ -20,7 +20,7 @@
     "object" : "user",
     "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
   },
-  "last_edited_time" : "2025-09-28T00:39:00.000Z",
+  "last_edited_time" : "2025-09-28T11:49:00.000Z",
   "title" : [ {
     "type" : "text",
     "text" : {
@@ -185,16 +185,100 @@
   } ],
   "is_inline" : false,
   "properties" : {
-    "theme" : {
+    "Actor" : {
       "id" : "Yz%40%60",
-      "name" : "theme",
+      "name" : "Actor",
       "description" : null,
       "type" : "select",
       "select" : {
         "options" : [ {
           "id" : "ac791d61-6a58-4e2c-b17e-2919264bdbce",
-          "name" : "Customer",
+          "name" : "Payer",
           "color" : "pink",
+          "description" : null
+        }, {
+          "id" : "60b5bf7c-a35d-44c6-844b-558d82f58760",
+          "name" : "Issuer",
+          "color" : "blue",
+          "description" : null
+        }, {
+          "id" : "55e1fcc0-e6c9-43b7-bc48-df1780b5d187",
+          "name" : "Merchant",
+          "color" : "brown",
+          "description" : null
+        }, {
+          "id" : "3bd994cb-c175-4b61-a79b-73200a59272d",
+          "name" : "Acquirer",
+          "color" : "yellow",
+          "description" : null
+        }, {
+          "id" : "7a3a08de-39ba-4231-8425-60046fac4003",
+          "name" : "Gateway",
+          "color" : "default",
+          "description" : null
+        }, {
+          "id" : "0a8e6b70-6de0-4115-8667-70803e3e45cd",
+          "name" : "Processor",
+          "color" : "green",
+          "description" : null
+        }, {
+          "id" : "0744356f-576e-43ad-8fcb-53d53e46380b",
+          "name" : "Network",
+          "color" : "purple",
+          "description" : null
+        }, {
+          "id" : "ee3cedba-bda3-4ec3-aa63-6f68527831a6",
+          "name" : "Secure",
+          "color" : "gray",
+          "description" : null
+        }, {
+          "id" : "64bae610-3ad9-4e4f-baf5-4fa2dda8c729",
+          "name" : "Notify",
+          "color" : "orange",
+          "description" : null
+        }, {
+          "id" : "df7fa019-9079-4951-b987-8c870d093412",
+          "name" : "Recoder",
+          "color" : "red",
+          "description" : null
+        }, {
+          "id" : "81887d16-f453-46d7-bfd3-661a90b248bc",
+          "name" : "F&R",
+          "color" : "orange",
+          "description" : null
+        } ]
+      }
+    },
+    "Business" : {
+      "id" : "b%7Bxb",
+      "name" : "Business",
+      "description" : null,
+      "type" : "select",
+      "select" : {
+        "options" : [ {
+          "id" : "fca8c6f7-e3b6-4df2-8dc0-21a80b28fcc7",
+          "name" : "Authorize",
+          "color" : "orange",
+          "description" : null
+        }, {
+          "id" : "bf12ea2d-9c1c-4d1d-b4c1-ea9a302a36fd",
+          "name" : "Capture",
+          "color" : "pink",
+          "description" : null
+        }, {
+          "id" : "9d26ce23-ad42-4410-be9f-a8bac5a4fb3b",
+          "name" : "Sale",
+          "color" : "brown",
+          "description" : null
+        }, {
+          "id" : "2bf062bc-3f4b-4b8c-ba97-fde9cc424919",
+          "name" : "Refund",
+          "color" : "blue",
+          "description" : null
+        }, {
+          "id" : "2ee92cd2-d3e9-4cd9-9553-a7cd12a44498",
+          "name" : "Void",
+          "color" : "yellow",
           "description" : null
         } ]
       }
