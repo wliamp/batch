@@ -1,5 +1,7 @@
 package io.wliamp.notion.service;
 
+import io.wliamp.notion.Director;
+import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 import reactor.core.publisher.Mono;
@@ -11,22 +13,24 @@ import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 import static java.nio.file.Files.*;
-import static reactor.core.publisher.Mono.*;
+import static reactor.core.publisher.Mono.fromRunnable;
 
 @Service
 @Slf4j
+@RequiredArgsConstructor
 public class CleanupService {
 
     private static final Path STORAGE_PATH = Paths.get("storage");
+    private final Director director;
 
-    public Mono<Void> cleanStorage(List<String> validWorkspaces) {
+    public void cleanup() {
+        List<String> validWorkspaces = director.getDirectories();
+        cleanStorage(validWorkspaces).block();
+    }
+
+    private Mono<Void> cleanStorage(List<String> validWorkspaces) {
         return fromRunnable(() -> {
-            if (notAStorageDir()) {
-                log.warn("⚠ Storage folder not found at {}", STORAGE_PATH.toAbsolutePath());
-                return;
-            }
-
-            try (Stream<Path> stream = list(STORAGE_PATH)) {
+            if (!notAStorageDir()) try (Stream<Path> stream = list(STORAGE_PATH)) {
                 var partitioned = stream.collect(Collectors.partitioningBy(Files::isDirectory));
 
                 partitioned.getOrDefault(true, List.of())
@@ -38,6 +42,8 @@ public class CleanupService {
             } catch (IOException e) {
                 log.error("❌ Failed to scan storage folder", e);
             }
+            else log.warn("⚠ Storage folder not found at {}", STORAGE_PATH.toAbsolutePath());
+
         }).then();
     }
 

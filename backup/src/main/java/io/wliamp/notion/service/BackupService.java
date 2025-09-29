@@ -2,6 +2,7 @@ package io.wliamp.notion.service;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import io.wliamp.notion.Director;
 import io.wliamp.notion.util.Safer;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -21,7 +22,7 @@ import java.util.stream.Stream;
 import static io.wliamp.notion.util.Extractor.*;
 import static io.wliamp.notion.util.Safer.*;
 import static java.nio.file.Files.*;
-import static java.nio.file.Path.*;
+import static java.nio.file.Paths.get;
 import static reactor.core.publisher.Mono.*;
 
 @Service
@@ -30,28 +31,34 @@ import static reactor.core.publisher.Mono.*;
 public class BackupService {
     private final WebClient webClient;
     private final ObjectMapper mapper = new ObjectMapper();
+    private final Director director;
 
-    public void runBackup(String token, String workspaceName) {
-        log.info("🚀 Starting backup for workspace [{}]", workspaceName);
-        try {
-            var outDir = createDirectories(of("storage").resolve(workspaceName));
+    public void backup() {
+        director.getGithubSecrets().forEach((workspace, token) -> {
+            try {
+                backupOneWorkspace(token, workspace);
+                log.info("🎉 Backup done for workspace [{}]", workspace);
+            } catch (Exception e) {
+                log.error("❌ Backup failed for workspace [{}]", workspace, e);
+            }
+        });
+    }
 
-            var activeIds = searchAllObjects(token)
-                    .flatMapSequential(obj -> backupObject(obj, outDir, token), 4)
-                    .map(Safer::safeId)
-                    .collectList()
-                    .flatMap(aIds -> cleanupDeletedObjects(outDir, new HashSet<>(aIds))
-                            .thenReturn(aIds))
-                    .doOnError(err -> log.error("❌ Backup failed for [{}]", workspaceName, err))
-                    .block();
+    private void backupOneWorkspace(String token, String workspace) throws Exception {
+        log.info("🚀 Starting backup for workspace [{}]", workspace);
+        var outDir = createDirectories(get("storage").resolve(workspace));
 
-            log.info("✅ Backup completed for [{}]. {} objects.",
-                    workspaceName, activeIds != null ? activeIds.size() : 0);
+        var activeIds = searchAllObjects(token)
+                .flatMapSequential(obj -> backupObject(obj, outDir, token), 4)
+                .map(Safer::safeId)
+                .collectList()
+                .flatMap(aIds -> cleanupDeletedObjects(outDir, new HashSet<>(aIds))
+                        .thenReturn(aIds))
+                .doOnError(err -> log.error("❌ Backup failed for [{}]", workspace, err))
+                .block();
 
-        } catch (IOException e) {
-            log.error("❌ Backup failed due to IO error", e);
-            throw new RuntimeException("Backup failed", e);
-        }
+        log.info("✅ Backup completed for [{}]. {} objects.",
+                workspace, activeIds != null ? activeIds.size() : 0);
     }
 
     // --- Search ---
