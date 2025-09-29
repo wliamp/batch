@@ -2,9 +2,7 @@ package io.wliamp.notion.service;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.fasterxml.jackson.databind.node.ObjectNode;
-import io.wliamp.notion.util.Director;
-import io.wliamp.notion.util.Extractor;
+import io.wliamp.notion.util.Safer;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
@@ -16,8 +14,16 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.HashSet;
-import java.util.List;
 import java.util.Set;
+
+import static io.wliamp.notion.util.Director.*;
+import static io.wliamp.notion.util.Extractor.*;
+import static io.wliamp.notion.util.Safer.*;
+import static io.wliamp.notion.util.Safer.safeName;
+import static java.nio.file.Files.createDirectories;
+import static java.nio.file.Files.list;
+import static java.nio.file.Path.*;
+import static reactor.core.publisher.Mono.*;
 
 @Service
 public class BackupService {
@@ -32,16 +38,14 @@ public class BackupService {
 
     public void runBackup(String token, String workspaceName) {
         try {
-            Path outDir = Files.createDirectories(Path.of("backup").resolve(workspaceName));
+            var outDir = createDirectories(of("backup").resolve(workspaceName));
 
-            Mono<List<String>> pipeline = searchAllObjects(token)
+            var activeIds = searchAllObjects(token)
                     .flatMapSequential(obj -> backupObject(obj, outDir, token), 4)
-                    .map(obj -> obj.get("id").asText().replace("-", ""))
+                    .map(Safer::safeId)
                     .collectList()
-                    .flatMap(activeIds -> cleanupDeletedObjects(outDir, new HashSet<>(activeIds))
-                            .thenReturn(activeIds));
-
-            var activeIds = pipeline.block();
+                    .flatMap(aIds -> cleanupDeletedObjects(outDir, new HashSet<>(aIds))
+                            .thenReturn(aIds)).block();
             log.info("✅ Backup completed for [{}]. {} objects.",
                     workspaceName, activeIds != null ? activeIds.size() : 0);
 
@@ -52,45 +56,45 @@ public class BackupService {
 
     // --- Search ---
     private Flux<JsonNode> searchAllObjects(String token) {
-        ObjectNode body = mapper.createObjectNode();
+        var body = mapper.createObjectNode();
         body.set("sort", mapper.createObjectNode()
                 .put("direction", "descending")
                 .put("timestamp", "last_edited_time"));
         body.put("page_size", 100);
 
-        return requestPost("/search", token, body)
+        return requestPost(token, body)
                 .flatMapMany(root -> asFlux(root.get("results")));
     }
 
     // --- Backup Object ---
     private Mono<JsonNode> backupObject(JsonNode obj, Path outDir, String token) {
-        String id = obj.get("id").asText();
-        String shortId = id.replace("-", "");
-        var titleResult = Extractor.extractTitle(obj, shortId);
+        var id = safeId(obj);
 
-        Path objDir = outDir.resolve(Director.safeName(titleResult.title()));
+        var objDir = outDir.resolve(safeName(extractTitle(obj, id).title()));
 
-        Mono<Void> mkdir = Director.createDir(objDir);
-        Mono<List<JsonNode>> blocksMono = fetchBlockTree(shortId, token).collectList();
-        Mono<Void> writeFiles = blocksMono.flatMap(blocks ->
-                Director.writeFiles(mapper, objDir, obj, blocks, id, shortId, titleResult)
-        );
+        var writeFiles = fetchBlockTree(id, token)
+                .collectList()
+                .flatMap(blocks ->
+                        writeFiles(mapper, objDir, obj, blocks)
+                );
 
-        return mkdir.then(writeFiles).thenReturn(obj);
+        return createDir(objDir)
+                .then(writeFiles)
+                .thenReturn(obj);
     }
 
     // --- Fetch Block Tree ---
     private Flux<JsonNode> fetchBlockTree(String parentId, String token) {
-        String uri = "/blocks/" + parentId + "/children?page_size=100";
-        return requestGet(uri, token).flatMapMany(root -> asFlux(root.get("results")));
+        return requestGet("/blocks/" + parentId + "/children?page_size=100", token)
+                .flatMapMany(root -> asFlux(root.get("results")));
     }
 
     // --- Cleanup Deleted ---
     private Mono<Void> cleanupDeletedObjects(Path outDir, Set<String> activeIds) {
-        return Mono.fromCallable(() -> Files.list(outDir))
+        return fromCallable(() -> list(outDir))
                 .flatMapMany(Flux::fromStream)
                 .filter(Files::isDirectory)
-                .flatMap(path -> Director.checkAndDelete(mapper, path, activeIds), 4)
+                .flatMap(path -> checkAndDelete(mapper, path, activeIds), 4)
                 .then();
     }
 
@@ -103,9 +107,9 @@ public class BackupService {
                 .bodyToMono(JsonNode.class);
     }
 
-    private Mono<JsonNode> requestPost(String uri, String token, Object body) {
+    private Mono<JsonNode> requestPost(String token, Object body) {
         return webClient.post()
-                .uri(uri)
+                .uri("/search")
                 .header("Authorization", "Bearer " + token)
                 .bodyValue(body)
                 .retrieve()
@@ -113,8 +117,6 @@ public class BackupService {
     }
 
     private Flux<JsonNode> asFlux(JsonNode results) {
-        return (results != null && results.isArray())
-                ? Flux.fromIterable(results)
-                : Flux.empty();
+        return results == null || !results.isArray() ? Flux.empty() : Flux.fromIterable(results);
     }
 }
