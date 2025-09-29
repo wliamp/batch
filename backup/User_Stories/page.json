@@ -20,7 +20,7 @@
     "object" : "user",
     "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
   },
-  "last_edited_time" : "2025-09-28T17:42:00.000Z",
+  "last_edited_time" : "2025-09-29T06:13:00.000Z",
   "title" : [ {
     "type" : "text",
     "text" : {
@@ -254,16 +254,16 @@
         } ]
       }
     },
-    "Action" : {
+    "Policies" : {
       "id" : "b%7Bxb",
-      "name" : "Action",
-      "description" : null,
-      "type" : "select",
-      "select" : {
+      "name" : "Policies",
+      "description" : "",
+      "type" : "multi_select",
+      "multi_select" : {
         "options" : [ {
-          "id" : "?>sx",
-          "name" : "Check",
-          "color" : "red",
+          "id" : "61fc969e-8b20-4ccd-bd46-960a84095361",
+          "name" : "Audit",
+          "color" : "default",
           "description" : null
         }, {
           "id" : "fca8c6f7-e3b6-4df2-8dc0-21a80b28fcc7",
@@ -271,13 +271,78 @@
           "color" : "orange",
           "description" : null
         }, {
+          "id" : "97409d14-278a-4bc5-9c70-1f71578fab2d",
+          "name" : "Batch",
+          "color" : "green",
+          "description" : null
+        }, {
+          "id" : "4067165c-6486-46bc-9896-bd412e949f29",
+          "name" : "C&R",
+          "color" : "green",
+          "description" : null
+        }, {
           "id" : "bf12ea2d-9c1c-4d1d-b4c1-ea9a302a36fd",
           "name" : "Capture",
           "color" : "pink",
           "description" : null
         }, {
-          "id" : "9d26ce23-ad42-4410-be9f-a8bac5a4fb3b",
-          "name" : "Sale",
+          "id" : "04e934c8-f2f3-42e0-b035-85d3276c8075",
+          "name" : "Chargeback",
+          "color" : "purple",
+          "description" : null
+        }, {
+          "id" : "22a2534d-6552-4bb1-b4e2-67d43d33f18c",
+          "name" : "Config",
+          "color" : "red",
+          "description" : null
+        }, {
+          "id" : "d4ab3c3a-fd53-4273-ab1a-a014f191e79b",
+          "name" : "Dispute",
+          "color" : "green",
+          "description" : null
+        }, {
+          "id" : "e4e07491-6b93-47a1-af3c-036ff620a2d5",
+          "name" : "Fee",
+          "color" : "default",
+          "description" : null
+        }, {
+          "id" : "cb36254f-31c1-4f02-84d6-9ad93de93596",
+          "name" : "Fraud",
+          "color" : "purple",
+          "description" : null
+        }, {
+          "id" : "?>sx",
+          "name" : "Inquiry",
+          "color" : "red",
+          "description" : null
+        }, {
+          "id" : "6055957f-dee1-42a4-82ed-713ceb44eb0d",
+          "name" : "KYC",
+          "color" : "orange",
+          "description" : null
+        }, {
+          "id" : "7dcd9209-09fe-46ee-94fb-ecafb408d9ff",
+          "name" : "Notify",
+          "color" : "gray",
+          "description" : null
+        }, {
+          "id" : "a91e9fe1-5fc2-48c3-85e7-fca8ef14f2f5",
+          "name" : "OI",
+          "color" : "orange",
+          "description" : null
+        }, {
+          "id" : "5ad665b5-a849-4dd1-bc45-8e7ec7f41f9c",
+          "name" : "Payout",
+          "color" : "gray",
+          "description" : null
+        }, {
+          "id" : "d51bcba4-ad77-4caa-88ac-775ee3911718",
+          "name" : "Reconcile",
+          "color" : "red",
+          "description" : null
+        }, {
+          "id" : "6c85f845-f9e8-4668-a01d-e358e0f15c08",
+          "name" : "Record",
           "color" : "brown",
           "description" : null
         }, {
@@ -286,13 +351,33 @@
           "color" : "blue",
           "description" : null
         }, {
-          "id" : "2ee92cd2-d3e9-4cd9-9553-a7cd12a44498",
-          "name" : "Void",
+          "id" : "79f69e2e-071c-46c5-ba48-8d416be7b181",
+          "name" : "Report",
+          "color" : "blue",
+          "description" : null
+        }, {
+          "id" : "df59750e-765c-444c-999d-102e28e7f066",
+          "name" : "S&A",
+          "color" : "pink",
+          "description" : null
+        }, {
+          "id" : "9d26ce23-ad42-4410-be9f-a8bac5a4fb3b",
+          "name" : "Sale",
+          "color" : "brown",
+          "description" : null
+        }, {
+          "id" : "56270e84-fd35-4141-ba15-8a757e63de61",
+          "name" : "Settlement",
+          "color" : "pink",
+          "description" : null
+        }, {
+          "id" : "86ac7a81-05c1-4b58-8e17-ace9d2b04ef9",
+          "name" : "T&A",
           "color" : "yellow",
           "description" : null
         }, {
-          "id" : "04e934c8-f2f3-42e0-b035-85d3276c8075",
-          "name" : "Chargeback",
+          "id" : "582cd64e-2cf2-437d-993d-52ce885e61cb",
+          "name" : "Token",
           "color" : "purple",
           "description" : null
         }, {
@@ -301,39 +386,19 @@
           "color" : "default",
           "description" : null
         }, {
-          "id" : "d51bcba4-ad77-4caa-88ac-775ee3911718",
-          "name" : "Withdraw",
-          "color" : "red",
-          "description" : null
-        }, {
-          "id" : "97409d14-278a-4bc5-9c70-1f71578fab2d",
-          "name" : "View",
-          "color" : "green",
-          "description" : null
-        }, {
-          "id" : "5ad665b5-a849-4dd1-bc45-8e7ec7f41f9c",
-          "name" : "Payout",
-          "color" : "gray",
-          "description" : null
-        }, {
-          "id" : "79f69e2e-071c-46c5-ba48-8d416be7b181",
-          "name" : "Report",
-          "color" : "blue",
-          "description" : null
-        }, {
-          "id" : "3a3145bf-ac31-421b-83ff-78571d2476a3",
-          "name" : "audit",
+          "id" : "1521fc18-9edd-4e95-9937-9ec666d73259",
+          "name" : "U&T",
           "color" : "default",
           "description" : null
         }, {
-          "id" : "7dcd9209-09fe-46ee-94fb-ecafb408d9ff",
-          "name" : "Analyst",
-          "color" : "gray",
+          "id" : "2709ee8d-ced1-4119-8181-3e71d82c2562",
+          "name" : "Valid",
+          "color" : "pink",
           "description" : null
         }, {
-          "id" : "6055957f-dee1-42a4-82ed-713ceb44eb0d",
-          "name" : "Receive",
-          "color" : "orange",
+          "id" : "2ee92cd2-d3e9-4cd9-9553-a7cd12a44498",
+          "name" : "Void",
+          "color" : "yellow",
           "description" : null
         } ]
       }
