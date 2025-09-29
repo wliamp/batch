@@ -15,7 +15,9 @@ import reactor.core.publisher.Mono;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
-import java.util.*;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
 
 @Service
 public class BackupService {
@@ -28,19 +30,20 @@ public class BackupService {
         this.webClient = notionWebClient;
     }
 
-    public void runBackup() {
+    public void runBackup(String token, String workspaceName) {
         try {
-            Path outDir = Files.createDirectories(Path.of("backup"));
+            Path outDir = Files.createDirectories(Path.of("backup").resolve(workspaceName));
 
-            Mono<List<String>> pipeline = searchAllObjects()
-                    .flatMapSequential(obj -> backupObject(obj, outDir), 4)
+            Mono<List<String>> pipeline = searchAllObjects(token)
+                    .flatMapSequential(obj -> backupObject(obj, outDir, token), 4)
                     .map(obj -> obj.get("id").asText().replace("-", ""))
                     .collectList()
                     .flatMap(activeIds -> cleanupDeletedObjects(outDir, new HashSet<>(activeIds))
                             .thenReturn(activeIds));
 
             var activeIds = pipeline.block();
-            log.info("✅ Backup completed. {} objects.", activeIds != null ? activeIds.size() : 0);
+            log.info("✅ Backup completed for [{}]. {} objects.",
+                    workspaceName, activeIds != null ? activeIds.size() : 0);
 
         } catch (IOException e) {
             throw new RuntimeException("Backup failed", e);
@@ -48,27 +51,19 @@ public class BackupService {
     }
 
     // --- Search ---
-    private Flux<JsonNode> searchAllObjects() {
+    private Flux<JsonNode> searchAllObjects(String token) {
         ObjectNode body = mapper.createObjectNode();
-        ObjectNode sort = mapper.createObjectNode();
-        sort.put("direction", "descending");
-        sort.put("timestamp", "last_edited_time");
-        body.set("sort", sort);
+        body.set("sort", mapper.createObjectNode()
+                .put("direction", "descending")
+                .put("timestamp", "last_edited_time"));
         body.put("page_size", 100);
 
-        return webClient.post()
-                .uri("/search")
-                .bodyValue(body)
-                .retrieve()
-                .bodyToMono(JsonNode.class)
-                .flatMapMany(root -> {
-                    JsonNode results = root.get("results");
-                    return (results != null && results.isArray()) ? Flux.fromIterable(results) : Flux.empty();
-                });
+        return requestPost("/search", token, body)
+                .flatMapMany(root -> asFlux(root.get("results")));
     }
 
     // --- Backup Object ---
-    private Mono<JsonNode> backupObject(JsonNode obj, Path outDir) {
+    private Mono<JsonNode> backupObject(JsonNode obj, Path outDir, String token) {
         String id = obj.get("id").asText();
         String shortId = id.replace("-", "");
         var titleResult = Extractor.extractTitle(obj, shortId);
@@ -76,28 +71,18 @@ public class BackupService {
         Path objDir = outDir.resolve(Director.safeName(titleResult.title()));
 
         Mono<Void> mkdir = Director.createDir(objDir);
-
-        Mono<List<JsonNode>> blocksMono = fetchBlockTree(shortId).collectList();
-
-        Mono<Void> writeFiles = blocksMono.flatMap(blocks -> Director.writeFiles(mapper, objDir, obj, blocks, id, shortId, titleResult));
+        Mono<List<JsonNode>> blocksMono = fetchBlockTree(shortId, token).collectList();
+        Mono<Void> writeFiles = blocksMono.flatMap(blocks ->
+                Director.writeFiles(mapper, objDir, obj, blocks, id, shortId, titleResult)
+        );
 
         return mkdir.then(writeFiles).thenReturn(obj);
     }
 
     // --- Fetch Block Tree ---
-    private Flux<JsonNode> fetchBlockTree(String parentId) {
+    private Flux<JsonNode> fetchBlockTree(String parentId, String token) {
         String uri = "/blocks/" + parentId + "/children?page_size=100";
-
-        return webClient.get()
-                .uri(uri)
-                .retrieve()
-                .bodyToMono(JsonNode.class)
-                .flatMapMany(root -> {
-                    JsonNode results = root.get("results");
-                    return (results != null && results.isArray())
-                            ? Flux.fromIterable(results)
-                            : Flux.empty();
-                });
+        return requestGet(uri, token).flatMapMany(root -> asFlux(root.get("results")));
     }
 
     // --- Cleanup Deleted ---
@@ -107,5 +92,29 @@ public class BackupService {
                 .filter(Files::isDirectory)
                 .flatMap(path -> Director.checkAndDelete(mapper, path, activeIds), 4)
                 .then();
+    }
+
+    // --- Helpers ---
+    private Mono<JsonNode> requestGet(String uri, String token) {
+        return webClient.get()
+                .uri(uri)
+                .header("Authorization", "Bearer " + token)
+                .retrieve()
+                .bodyToMono(JsonNode.class);
+    }
+
+    private Mono<JsonNode> requestPost(String uri, String token, Object body) {
+        return webClient.post()
+                .uri(uri)
+                .header("Authorization", "Bearer " + token)
+                .bodyValue(body)
+                .retrieve()
+                .bodyToMono(JsonNode.class);
+    }
+
+    private Flux<JsonNode> asFlux(JsonNode results) {
+        return (results != null && results.isArray())
+                ? Flux.fromIterable(results)
+                : Flux.empty();
     }
 }
