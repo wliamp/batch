@@ -14,4 +14,10 @@ public class Safer {
                 .map(s -> s.replaceAll("[^a-zA-Z0-9-_.]", "_"))
                 .orElse("untitled");
     }
+
+    public static String mask(String token) {
+        return token == null || token.length() < 8
+                ? "****"
+                : token.substring(0, 4) + "****" + token.substring(token.length() - 4);
+    }
 }

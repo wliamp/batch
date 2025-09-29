@@ -1,8 +1,8 @@
 package io.wliamp.notion.compo;
 
 import io.wliamp.notion.service.BackupService;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
@@ -12,14 +12,10 @@ import static java.util.Arrays.stream;
 import static org.slf4j.event.Level.*;
 
 @Component
+@Slf4j
+@RequiredArgsConstructor
 public class BackupRunner implements CommandLineRunner {
-    private static final Logger log = LoggerFactory.getLogger(BackupRunner.class);
-
     private final BackupService backupService;
-
-    public BackupRunner(BackupService backupService) {
-        this.backupService = backupService;
-    }
 
     @Override
     public void run(String... args) {
