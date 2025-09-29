@@ -1,1 +1,1 @@
-# notion-backup
+# io.wliamp.notion-backup
