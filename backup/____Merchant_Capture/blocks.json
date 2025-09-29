@@ -1,12 +1,12 @@
 [ {
   "object" : "block",
-  "id" : "27cf521e-2b70-808b-98d3-f58ba65f9391",
+  "id" : "27cf521e-2b70-818a-b723-dca5ece64224",
   "parent" : {
     "type" : "page_id",
-    "page_id" : "27cf521e-2b70-803b-af22-e68b55a88d3d"
+    "page_id" : "27cf521e-2b70-8057-bd54-f997b4777baf"
   },
-  "created_time" : "2025-09-28T10:46:00.000Z",
-  "last_edited_time" : "2025-09-28T17:20:00.000Z",
+  "created_time" : "2025-09-28T17:30:00.000Z",
+  "last_edited_time" : "2025-09-28T17:30:00.000Z",
   "created_by" : {
     "object" : "user",
     "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
@@ -18,12 +18,12 @@
   "has_children" : false,
   "archived" : false,
   "in_trash" : false,
-  "type" : "quote",
-  "quote" : {
+  "type" : "paragraph",
+  "paragraph" : {
     "rich_text" : [ {
       "type" : "text",
       "text" : {
-        "content" : "“As a ",
+        "content" : "”As a ",
         "link" : null
       },
       "annotations" : {
@@ -34,7 +34,7 @@
         "code" : false,
         "color" : "default"
       },
-      "plain_text" : "“As a ",
+      "plain_text" : "”As a ",
       "href" : null
     }, {
       "type" : "text",
@@ -71,7 +71,7 @@
     }, {
       "type" : "text",
       "text" : {
-        "content" : "capture funds from an authorization",
+        "content" : "configure capture policies (auto/manual)",
         "link" : null
       },
       "annotations" : {
@@ -82,12 +82,12 @@
         "code" : false,
         "color" : "default"
       },
-      "plain_text" : "capture funds from an authorization",
+      "plain_text" : "configure capture policies (auto/manual)",
       "href" : null
     }, {
       "type" : "text",
       "text" : {
-        "content" : ", so that I get ",
+        "content" : ", so that I ",
         "link" : null
       },
       "annotations" : {
@@ -98,12 +98,12 @@
         "code" : false,
         "color" : "default"
       },
-      "plain_text" : ", so that I get ",
+      "plain_text" : ", so that I ",
       "href" : null
     }, {
       "type" : "text",
       "text" : {
-        "content" : "paid for fulfilled orders",
+        "content" : "align payment timing with business model",
         "link" : null
       },
       "annotations" : {
@@ -114,7 +114,7 @@
         "code" : false,
         "color" : "default"
       },
-      "plain_text" : "paid for fulfilled orders",
+      "plain_text" : "align payment timing with business model",
       "href" : null
     }, {
       "type" : "text",
@@ -137,13 +137,13 @@
   }
 }, {
   "object" : "block",
-  "id" : "27cf521e-2b70-8036-9057-d6e5495f2762",
+  "id" : "27cf521e-2b70-815e-8cb0-ca276eda77fc",
   "parent" : {
     "type" : "page_id",
-    "page_id" : "27cf521e-2b70-803b-af22-e68b55a88d3d"
+    "page_id" : "27cf521e-2b70-8057-bd54-f997b4777baf"
   },
-  "created_time" : "2025-09-28T10:46:00.000Z",
-  "last_edited_time" : "2025-09-28T10:46:00.000Z",
+  "created_time" : "2025-09-28T17:30:00.000Z",
+  "last_edited_time" : "2025-09-28T17:30:00.000Z",
   "created_by" : {
     "object" : "user",
     "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
@@ -178,13 +178,13 @@
   }
 }, {
   "object" : "block",
-  "id" : "27cf521e-2b70-805f-8037-d9eed3c08d53",
+  "id" : "27cf521e-2b70-8101-afb0-f1e4767535cd",
   "parent" : {
     "type" : "page_id",
-    "page_id" : "27cf521e-2b70-803b-af22-e68b55a88d3d"
+    "page_id" : "27cf521e-2b70-8057-bd54-f997b4777baf"
   },
-  "created_time" : "2025-09-28T10:46:00.000Z",
-  "last_edited_time" : "2025-09-28T10:46:00.000Z",
+  "created_time" : "2025-09-28T17:30:00.000Z",
+  "last_edited_time" : "2025-09-28T17:30:00.000Z",
   "created_by" : {
     "object" : "user",
     "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
@@ -201,7 +201,7 @@
     "rich_text" : [ {
       "type" : "text",
       "text" : {
-        "content" : "Trigger capture after delivery/shipment.",
+        "content" : "Initiate void against authorization.",
         "link" : null
       },
       "annotations" : {
@@ -212,20 +212,20 @@
         "code" : false,
         "color" : "default"
       },
-      "plain_text" : "Trigger capture after delivery/shipment.",
+      "plain_text" : "Initiate void against authorization.",
       "href" : null
     } ],
     "color" : "default"
   }
 }, {
   "object" : "block",
-  "id" : "27cf521e-2b70-8012-b634-eb809f1bf686",
+  "id" : "27cf521e-2b70-81b8-8562-f386195a2109",
   "parent" : {
     "type" : "page_id",
-    "page_id" : "27cf521e-2b70-803b-af22-e68b55a88d3d"
+    "page_id" : "27cf521e-2b70-8057-bd54-f997b4777baf"
   },
-  "created_time" : "2025-09-28T10:46:00.000Z",
-  "last_edited_time" : "2025-09-28T10:48:00.000Z",
+  "created_time" : "2025-09-28T17:30:00.000Z",
+  "last_edited_time" : "2025-09-28T17:30:00.000Z",
   "created_by" : {
     "object" : "user",
     "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
@@ -242,7 +242,7 @@
     "rich_text" : [ {
       "type" : "text",
       "text" : {
-        "content" : "Payment status updated accordingly.",
+        "content" : "Dashboard shows updated status.",
         "link" : null
       },
       "annotations" : {
@@ -253,61 +253,20 @@
         "code" : false,
         "color" : "default"
       },
-      "plain_text" : "Payment status updated accordingly.",
+      "plain_text" : "Dashboard shows updated status.",
       "href" : null
     } ],
     "color" : "default"
   }
 }, {
   "object" : "block",
-  "id" : "27cf521e-2b70-80d0-9ef3-ef6028ebe1f6",
+  "id" : "27cf521e-2b70-818d-beef-df6cb956bcdc",
   "parent" : {
     "type" : "page_id",
-    "page_id" : "27cf521e-2b70-803b-af22-e68b55a88d3d"
+    "page_id" : "27cf521e-2b70-8057-bd54-f997b4777baf"
   },
-  "created_time" : "2025-09-28T10:46:00.000Z",
-  "last_edited_time" : "2025-09-28T10:48:00.000Z",
-  "created_by" : {
-    "object" : "user",
-    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
-  },
-  "last_edited_by" : {
-    "object" : "user",
-    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
-  },
-  "has_children" : false,
-  "archived" : false,
-  "in_trash" : false,
-  "type" : "bulleted_list_item",
-  "bulleted_list_item" : {
-    "rich_text" : [ {
-      "type" : "text",
-      "text" : {
-        "content" : "Merchant dashboard shows captured vs pending.",
-        "link" : null
-      },
-      "annotations" : {
-        "bold" : false,
-        "italic" : false,
-        "strikethrough" : false,
-        "underline" : false,
-        "code" : false,
-        "color" : "default"
-      },
-      "plain_text" : "Merchant dashboard shows captured vs pending.",
-      "href" : null
-    } ],
-    "color" : "default"
-  }
-}, {
-  "object" : "block",
-  "id" : "27cf521e-2b70-80ec-a4ca-e0803260f248",
-  "parent" : {
-    "type" : "page_id",
-    "page_id" : "27cf521e-2b70-803b-af22-e68b55a88d3d"
-  },
-  "created_time" : "2025-09-28T10:46:00.000Z",
-  "last_edited_time" : "2025-09-28T10:46:00.000Z",
+  "created_time" : "2025-09-28T17:30:00.000Z",
+  "last_edited_time" : "2025-09-28T17:30:00.000Z",
   "created_by" : {
     "object" : "user",
     "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
@@ -342,13 +301,13 @@
   }
 }, {
   "object" : "block",
-  "id" : "27cf521e-2b70-8091-9184-d005c09d9879",
+  "id" : "27cf521e-2b70-81ea-87a1-de5177d9c3b3",
   "parent" : {
     "type" : "page_id",
-    "page_id" : "27cf521e-2b70-803b-af22-e68b55a88d3d"
+    "page_id" : "27cf521e-2b70-8057-bd54-f997b4777baf"
   },
-  "created_time" : "2025-09-28T10:46:00.000Z",
-  "last_edited_time" : "2025-09-28T10:47:00.000Z",
+  "created_time" : "2025-09-28T17:30:00.000Z",
+  "last_edited_time" : "2025-09-28T17:30:00.000Z",
   "created_by" : {
     "object" : "user",
     "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
@@ -360,12 +319,12 @@
   "has_children" : false,
   "archived" : false,
   "in_trash" : false,
-  "type" : "to_do",
-  "to_do" : {
+  "type" : "bulleted_list_item",
+  "bulleted_list_item" : {
     "rich_text" : [ {
       "type" : "text",
       "text" : {
-        "content" : "Capture succeeds → status = ",
+        "content" : "Void request succeeds → order = ",
         "link" : null
       },
       "annotations" : {
@@ -376,12 +335,12 @@
         "code" : false,
         "color" : "default"
       },
-      "plain_text" : "Capture succeeds → status = ",
+      "plain_text" : "Void request succeeds → order = ",
       "href" : null
     }, {
       "type" : "text",
       "text" : {
-        "content" : "Paid",
+        "content" : "Cancelled",
         "link" : null
       },
       "annotations" : {
@@ -392,7 +351,7 @@
         "code" : false,
         "color" : "default"
       },
-      "plain_text" : "Paid",
+      "plain_text" : "Cancelled",
       "href" : null
     }, {
       "type" : "text",
@@ -411,18 +370,17 @@
       "plain_text" : ".",
       "href" : null
     } ],
-    "checked" : false,
     "color" : "default"
   }
 }, {
   "object" : "block",
-  "id" : "27cf521e-2b70-8044-9ee2-e96ce0c47ab4",
+  "id" : "27cf521e-2b70-81c6-b707-f9ff489162d6",
   "parent" : {
     "type" : "page_id",
-    "page_id" : "27cf521e-2b70-803b-af22-e68b55a88d3d"
+    "page_id" : "27cf521e-2b70-8057-bd54-f997b4777baf"
   },
-  "created_time" : "2025-09-28T10:46:00.000Z",
-  "last_edited_time" : "2025-09-28T10:47:00.000Z",
+  "created_time" : "2025-09-28T17:30:00.000Z",
+  "last_edited_time" : "2025-09-28T17:30:00.000Z",
   "created_by" : {
     "object" : "user",
     "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
@@ -434,12 +392,12 @@
   "has_children" : false,
   "archived" : false,
   "in_trash" : false,
-  "type" : "to_do",
-  "to_do" : {
+  "type" : "bulleted_list_item",
+  "bulleted_list_item" : {
     "rich_text" : [ {
       "type" : "text",
       "text" : {
-        "content" : "Capture fails → status = ",
+        "content" : "Failed void → merchant alerted.",
         "link" : null
       },
       "annotations" : {
@@ -450,53 +408,20 @@
         "code" : false,
         "color" : "default"
       },
-      "plain_text" : "Capture fails → status = ",
-      "href" : null
-    }, {
-      "type" : "text",
-      "text" : {
-        "content" : "Payment Failed",
-        "link" : null
-      },
-      "annotations" : {
-        "bold" : false,
-        "italic" : true,
-        "strikethrough" : false,
-        "underline" : false,
-        "code" : false,
-        "color" : "default"
-      },
-      "plain_text" : "Payment Failed",
-      "href" : null
-    }, {
-      "type" : "text",
-      "text" : {
-        "content" : ".",
-        "link" : null
-      },
-      "annotations" : {
-        "bold" : false,
-        "italic" : false,
-        "strikethrough" : false,
-        "underline" : false,
-        "code" : false,
-        "color" : "default"
-      },
-      "plain_text" : ".",
+      "plain_text" : "Failed void → merchant alerted.",
       "href" : null
     } ],
-    "checked" : false,
     "color" : "default"
   }
 }, {
   "object" : "block",
-  "id" : "27cf521e-2b70-80cb-ae61-c37e0aff98b1",
+  "id" : "27cf521e-2b70-8146-b803-d1cb50385528",
   "parent" : {
     "type" : "page_id",
-    "page_id" : "27cf521e-2b70-803b-af22-e68b55a88d3d"
+    "page_id" : "27cf521e-2b70-8057-bd54-f997b4777baf"
   },
-  "created_time" : "2025-09-28T10:46:00.000Z",
-  "last_edited_time" : "2025-09-28T10:47:00.000Z",
+  "created_time" : "2025-09-28T17:30:00.000Z",
+  "last_edited_time" : "2025-09-28T17:30:00.000Z",
   "created_by" : {
     "object" : "user",
     "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
@@ -508,12 +433,12 @@
   "has_children" : false,
   "archived" : false,
   "in_trash" : false,
-  "type" : "to_do",
-  "to_do" : {
+  "type" : "bulleted_list_item",
+  "bulleted_list_item" : {
     "rich_text" : [ {
       "type" : "text",
       "text" : {
-        "content" : "Merchant can view capture details in logs.",
+        "content" : "All voids logged.",
         "link" : null
       },
       "annotations" : {
@@ -524,21 +449,20 @@
         "code" : false,
         "color" : "default"
       },
-      "plain_text" : "Merchant can view capture details in logs.",
+      "plain_text" : "All voids logged.",
       "href" : null
     } ],
-    "checked" : false,
     "color" : "default"
   }
 }, {
   "object" : "block",
-  "id" : "27cf521e-2b70-81b1-a33c-e55343e3e41f",
+  "id" : "27cf521e-2b70-81c3-af7b-de21307d36af",
   "parent" : {
     "type" : "page_id",
-    "page_id" : "27cf521e-2b70-803b-af22-e68b55a88d3d"
+    "page_id" : "27cf521e-2b70-8057-bd54-f997b4777baf"
   },
-  "created_time" : "2025-09-28T10:46:00.000Z",
-  "last_edited_time" : "2025-09-28T10:46:00.000Z",
+  "created_time" : "2025-09-28T17:30:00.000Z",
+  "last_edited_time" : "2025-09-28T17:30:00.000Z",
   "created_by" : {
     "object" : "user",
     "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
@@ -557,13 +481,13 @@
   }
 }, {
   "object" : "block",
-  "id" : "27cf521e-2b70-81f9-991f-dd90574d92d7",
+  "id" : "27cf521e-2b70-81c6-b3b8-edd8208ace1e",
   "parent" : {
     "type" : "page_id",
-    "page_id" : "27cf521e-2b70-803b-af22-e68b55a88d3d"
+    "page_id" : "27cf521e-2b70-8057-bd54-f997b4777baf"
   },
-  "created_time" : "2025-09-28T10:46:00.000Z",
-  "last_edited_time" : "2025-09-28T10:46:00.000Z",
+  "created_time" : "2025-09-28T17:30:00.000Z",
+  "last_edited_time" : "2025-09-28T17:30:00.000Z",
   "created_by" : {
     "object" : "user",
     "id" : "277d872b-594c-815d-ac0f-00023df22fd2"

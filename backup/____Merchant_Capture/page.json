@@ -1,7 +1,7 @@
 {
   "object" : "page",
-  "id" : "27cf521e-2b70-803b-af22-e68b55a88d3d",
-  "created_time" : "2025-09-28T10:46:00.000Z",
+  "id" : "27cf521e-2b70-8057-bd54-f997b4777baf",
+  "created_time" : "2025-09-28T17:30:00.000Z",
   "last_edited_time" : "2025-09-28T17:30:00.000Z",
   "created_by" : {
     "object" : "user",
@@ -55,9 +55,9 @@
       "id" : "lgXk",
       "type" : "select",
       "select" : {
-        "id" : "PBTx",
-        "name" : "P1",
-        "color" : "red"
+        "id" : "_lFc",
+        "name" : "P3",
+        "color" : "purple"
       }
     },
     "Title" : {
@@ -82,6 +82,6 @@
       } ]
     }
   },
-  "url" : "https://www.notion.so/Merchant-Capture-27cf521e2b70803baf22e68b55a88d3d",
+  "url" : "https://www.notion.so/Merchant-Capture-27cf521e2b708057bd54f997b4777baf",
   "public_url" : null
 }
