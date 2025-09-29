@@ -1,0 +1,23 @@
+name: Storage Cleanup
+
+on:
+  schedule:
+    - cron: "0 0 * * *"
+  workflow_dispatch:
+
+jobs:
+  cleanup:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: '25'
+
+      - name: Run Storage cleanup
+        env:
+          PPS_INTEGRATION_NOTION: ${{ secrets.PPS_INTEGRATION_NOTION }}
+        run: ./gradlew :cleanup:bootRun
