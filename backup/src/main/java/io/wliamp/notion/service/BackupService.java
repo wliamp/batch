@@ -23,6 +23,7 @@ import static io.wliamp.notion.util.Extractor.*;
 import static io.wliamp.notion.util.Safer.*;
 import static java.nio.file.Files.*;
 import static java.nio.file.Paths.get;
+import static reactor.core.publisher.Flux.*;
 import static reactor.core.publisher.Mono.*;
 
 @Service
@@ -33,32 +34,30 @@ public class BackupService {
     private final ObjectMapper mapper = new ObjectMapper();
     private final Director director;
 
-    public void backup() {
-        director.getGithubSecrets().forEach((workspace, token) -> {
-            try {
-                backupOneWorkspace(token, workspace);
-                log.info("🎉 Backup done for workspace [{}]", workspace);
-            } catch (Exception e) {
-                log.error("❌ Backup failed for workspace [{}]", workspace, e);
-            }
-        });
+    public Mono<Void> backup() {
+        return fromIterable(director.getGithubSecrets().entrySet())
+                .flatMap(entry -> backupOneWorkspace(entry.getValue(), entry.getKey()), 4) // parallel 4
+                .then();
     }
 
-    private void backupOneWorkspace(String token, String workspace) throws Exception {
+    private Mono<Void> backupOneWorkspace(String token, String workspace) {
         log.info("🚀 Starting backup for workspace [{}]", workspace);
-        var outDir = createDirectories(get("storage").resolve(workspace));
 
-        var activeIds = searchAllObjects(token)
+        Path outDir;
+        try {
+            outDir = createDirectories(get("storage").resolve(workspace));
+        } catch (IOException e) {
+            log.error("❌ Failed to create directory for [{}]", workspace, e);
+            return Mono.empty();
+        }
+
+        return searchAllObjects(token)
                 .flatMapSequential(obj -> backupObject(obj, outDir, token), 4)
                 .map(Safer::safeId)
                 .collectList()
-                .flatMap(aIds -> cleanupDeletedObjects(outDir, new HashSet<>(aIds))
-                        .thenReturn(aIds))
+                .flatMap(aIds -> cleanupDeletedObjects(outDir, new HashSet<>(aIds)))
                 .doOnError(err -> log.error("❌ Backup failed for [{}]", workspace, err))
-                .block();
-
-        log.info("✅ Backup completed for [{}]. {} objects.",
-                workspace, activeIds != null ? activeIds.size() : 0);
+                .doOnSuccess(v -> log.info("✅ Backup completed for [{}]", workspace));
     }
 
     // --- Search ---
@@ -147,7 +146,7 @@ public class BackupService {
     }
 
     private Flux<JsonNode> asFlux(JsonNode results) {
-        return results == null || !results.isArray() ? Flux.empty() : Flux.fromIterable(results);
+        return results == null || !results.isArray() ? Flux.empty() : fromIterable(results);
     }
 
     public static Mono<Void> createDir(Path dir) {
@@ -189,7 +188,7 @@ public class BackupService {
                 .map(root -> root.get("id").asText().replace("-", ""))
                 .flatMap(id -> {
                     if (activeIds.contains(id)) {
-                        return empty();
+                        return Mono.empty();
                     } else {
                         log.info("🗑️ Deleting orphaned object [{}] at {}", id, dir);
                         return deleteRecursively(dir);
@@ -197,8 +196,8 @@ public class BackupService {
                 })
                 .onErrorResume(err -> {
                     log.warn("⚠️ Could not check/delete dir {}", dir, err);
-                    return empty();
-                }) : empty();
+                    return Mono.empty();
+                }) : Mono.empty();
     }
 
     private static Mono<Void> deleteRecursively(Path path) {
@@ -221,7 +220,7 @@ public class BackupService {
                 .subscribeOn(Schedulers.boundedElastic())
                 .onErrorResume(err -> {
                     log.warn("⚠️ Delete failed for {}", path, err);
-                    return empty();
+                    return Mono.empty();
                 });
         return voidMono;
     }

@@ -7,13 +7,14 @@ import org.springframework.stereotype.Service;
 import reactor.core.publisher.Mono;
 
 import java.io.IOException;
-import java.nio.file.*;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.List;
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
 import static java.nio.file.Files.*;
-import static reactor.core.publisher.Mono.fromRunnable;
+import static reactor.core.publisher.Flux.*;
+import static reactor.core.publisher.Mono.*;
 
 @Service
 @Slf4j
@@ -23,68 +24,68 @@ public class CleanupService {
     private static final Path STORAGE_PATH = Paths.get("storage");
     private final Director director;
 
-    public void cleanup() {
+    public Mono<Void> cleanup() {
         List<String> validWorkspaces = director.getDirectories();
-        cleanStorage(validWorkspaces).block();
+
+        if (!exists(STORAGE_PATH) || !isDirectory(STORAGE_PATH)) {
+            log.warn("⚠ Storage folder not found at {}", STORAGE_PATH.toAbsolutePath());
+            return Mono.empty();
+        }
+
+        try {
+            return fromStream(list(STORAGE_PATH))
+                    .flatMap(path -> {
+                        if (Files.isDirectory(path)) {
+                            return handleDirectory(path, validWorkspaces);
+                        } else {
+                            return handleFile(path);
+                        }
+                    })
+                    .then();
+        } catch (IOException e) {
+            log.error("❌ Failed to scan storage folder", e);
+            return Mono.error(e);
+        }
     }
 
-    private Mono<Void> cleanStorage(List<String> validWorkspaces) {
-        return fromRunnable(() -> {
-            if (!notAStorageDir()) try (Stream<Path> stream = list(STORAGE_PATH)) {
-                var partitioned = stream.collect(Collectors.partitioningBy(Files::isDirectory));
-
-                partitioned.getOrDefault(true, List.of())
-                        .forEach(path -> handleDirectory(path, validWorkspaces));
-
-                partitioned.getOrDefault(false, List.of())
-                        .forEach(this::handleFile);
-
-            } catch (IOException e) {
-                log.error("❌ Failed to scan storage folder", e);
-            }
-            else log.warn("⚠ Storage folder not found at {}", STORAGE_PATH.toAbsolutePath());
-
-        }).then();
-    }
-
-    private boolean notAStorageDir() {
-        return !exists(STORAGE_PATH) || !isDirectory(STORAGE_PATH);
-    }
-
-    private void handleDirectory(Path path, List<String> validWorkspaces) {
+    private Mono<Void> handleDirectory(Path path, List<String> validWorkspaces) {
         var folderName = path.getFileName().toString();
         if (validWorkspaces.contains(folderName)) {
             log.info("✅ Keeping valid folder: {}", folderName);
-            return;
+            return Mono.empty();
         }
 
         log.info("🗑 Deleting non-matching folder: {}", folderName);
-        try {
-            deleteRecursively(path);
-        } catch (IOException e) {
-            log.error("❌ Failed to delete folder {}", path, e);
-        }
+        return deleteRecursively(path)
+                .doOnError(err -> log.error("❌ Failed to delete folder {}", path, err));
     }
 
-    private void handleFile(Path path) {
+    private Mono<Void> handleFile(Path path) {
         log.info("🗑 Deleting file: {}", path.getFileName());
-        try {
-            deleteIfExists(path);
-        } catch (IOException e) {
-            log.error("❌ Failed to delete file {}", path, e);
-        }
+        return fromRunnable(() -> {
+            try {
+                Files.deleteIfExists(path);
+            } catch (IOException e) {
+                throw new RuntimeException(e);
+            }
+        });
     }
 
-    private void deleteRecursively(Path path) throws IOException {
-        if (isDirectory(path)) try (var entries = list(path)) {
-            entries.forEach(p -> {
-                try {
-                    deleteRecursively(p);
-                } catch (IOException e) {
-                    log.error("❌ Failed to delete nested path {}", p, e);
-                }
-            });
+    private Mono<Void> deleteRecursively(Path path) {
+        if (Files.isDirectory(path)) try {
+            return fromStream(list(path))
+                    .flatMap(this::deleteRecursively)
+                    .then(fromRunnable(() -> {
+                        try {
+                            Files.deleteIfExists(path);
+                        } catch (IOException e) {
+                            throw new RuntimeException(e);
+                        }
+                    }));
+        } catch (IOException e) {
+            return Mono.error(e);
         }
-        deleteIfExists(path);
+        return handleFile(path);
+
     }
 }
