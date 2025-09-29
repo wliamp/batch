@@ -9,7 +9,10 @@ jobs:
   cleanup:
     runs-on: ubuntu-latest
     steps:
-      - name: commit & push
-        uses: ./.github/actions/git-commit
-        with:
-          scope: "cleanup"
+    - name: Checkout repo
+      uses: actions/checkout@v4
+
+    - name: commit & push
+      uses: ./.github/actions/git-commit
+      with:
+        scope: "cleanup"
