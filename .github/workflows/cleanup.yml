@@ -9,22 +9,7 @@ jobs:
   cleanup:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repo
-        uses: actions/checkout@v4
-
-      - name: Set up Java
-        uses: actions/setup-java@v4
-        with:
-          distribution: 'temurin'
-          java-version: '25'
-
-      - name: Run Storage cleanup
-        env:
-          PPS_INTEGRATION_NOTION: ${{ secrets.PPS_INTEGRATION_NOTION }}
-        run: ./gradlew :cleanup:bootRun
-
-      - name: Commit & Push changes
+      - name: commit & push
         uses: ./.github/actions/git-commit
         with:
-          commit-message: "chore(cleanup): cleanup Notion JSONs at $(date -u +'%Y-%m-%d %H:%M:%S')"
-          paths: "storage/"
+          scope: "cleanup"
