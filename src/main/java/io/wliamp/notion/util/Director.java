@@ -2,7 +2,6 @@ package io.wliamp.notion.util;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import com.fasterxml.jackson.databind.node.ObjectNode;
 import io.wliamp.notion.record.TitleResult;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -15,13 +14,17 @@ import java.time.Instant;
 import java.util.Set;
 import java.util.stream.Stream;
 
+import static java.nio.file.Files.*;
+import static java.util.Optional.ofNullable;
+import static reactor.core.publisher.Mono.*;
+
 public class Director {
     private static final Logger log = LoggerFactory.getLogger(Director.class);
 
     public static Mono<Void> createDir(Path dir) {
-        return Mono.fromRunnable(() -> {
+        return fromRunnable(() -> {
             try {
-                Files.createDirectories(dir);
+                createDirectories(dir);
             } catch (IOException e) {
                 throw new RuntimeException(e);
             }
@@ -31,22 +34,25 @@ public class Director {
     public static Mono<Void> writeFiles(ObjectMapper mapper, Path dir, JsonNode obj,
                                         java.util.List<JsonNode> blocks, String id, String shortId,
                                         TitleResult titleResult) {
-        return Mono.fromRunnable(() -> {
+        return fromRunnable(() -> {
             try {
-                Files.writeString(dir.resolve("page.json"),
+                writeString(
+                        dir.resolve("page.json"),
                         mapper.writerWithDefaultPrettyPrinter().writeValueAsString(obj));
-                Files.writeString(dir.resolve("blocks.json"),
+                writeString(
+                        dir.resolve("blocks.json"),
                         mapper.writerWithDefaultPrettyPrinter().writeValueAsString(blocks));
-
-                ObjectNode meta = mapper.createObjectNode();
-                meta.put("id", id);
-                meta.put("shortId", shortId);
-                meta.put("title", titleResult.title());
-                meta.put("backup_time", Instant.now().toString());
-                meta.put("title_source", titleResult.source());
-
-                Files.writeString(dir.resolve("meta.json"),
-                        mapper.writerWithDefaultPrettyPrinter().writeValueAsString(meta));
+                writeString(
+                        dir.resolve("meta.json"),
+                        mapper.writerWithDefaultPrettyPrinter().writeValueAsString(
+                                mapper.createObjectNode()
+                                        .put("id", id)
+                                        .put("shortId", shortId)
+                                        .put("title", titleResult.title())
+                                        .put("backup_time", Instant.now().toString())
+                                        .put("title_source", titleResult.source())
+                        )
+                );
             } catch (IOException e) {
                 throw new RuntimeException(e);
             }
@@ -55,45 +61,46 @@ public class Director {
 
     public static Mono<Void> checkAndDelete(ObjectMapper mapper, Path dir, Set<String> activeIds) {
         Path pageJson = dir.resolve("page.json");
-        if (!Files.exists(pageJson)) return Mono.empty();
-
-        return Mono.fromCallable(() -> mapper.readTree(Files.readString(pageJson)))
+        return exists(pageJson) ? fromCallable(() -> mapper.readTree(readString(pageJson)))
                 .subscribeOn(Schedulers.boundedElastic())
                 .map(root -> root.get("id").asText().replace("-", ""))
                 .flatMap(id -> {
-                    if (!activeIds.contains(id)) {
-                        log.info("🗑 Removing deleted page: {} (id={})", dir, id);
-                        return deleteRecursively(dir);
+                    if (activeIds.contains(id)) {
+                        return empty();
                     }
-                    return Mono.empty();
+                    log.info("🗑 Removing deleted page: {} (id={})", dir, id);
+                    return deleteRecursively(dir);
                 })
                 .onErrorResume(ex -> {
                     log.warn("⚠ Could not parse {}: {}", pageJson, ex.toString());
-                    return Mono.empty();
-                });
+                    return empty();
+                }) : empty();
     }
 
     private static Mono<Void> deleteRecursively(Path path) {
-        return Mono.fromCallable(() -> {
-                    try (Stream<Path> walker = Files.walk(path)) {
-                        walker.sorted(java.util.Comparator.reverseOrder())
-                                .forEach(p -> {
-                                    try {
-                                        Files.deleteIfExists(p);
-                                    } catch (IOException e) {
-                                        throw new RuntimeException("Failed to delete: " + p, e);
-                                    }
-                                });
-                    }
-                    return (Void) null;
-                })
+        Mono<Void> voidMono = fromCallable(() -> {
+            try (Stream<Path> walker = walk(path)) {
+                walker.sorted(java.util.Comparator.reverseOrder())
+                        .forEach(p -> {
+                            try {
+                                deleteIfExists(p);
+                            } catch (IOException e) {
+                                throw new RuntimeException("Failed to delete: " + p, e);
+                            }
+                        });
+            }
+            return null;
+        });
+        voidMono
                 .subscribeOn(Schedulers.boundedElastic())
                 .doOnError(e -> log.warn("⚠ Could not delete {}", path, e))
-                .onErrorResume(e -> Mono.empty());
+                .onErrorResume(_ -> empty());
+        return voidMono;
     }
 
     public static String safeName(String input) {
-        if (input == null) return "untitled";
-        return input.replaceAll("[^a-zA-Z0-9-_.]", "_");
+        return ofNullable(input)
+                .map(s -> s.replaceAll("[^a-zA-Z0-9-_.]", "_"))
+                .orElse("untitled");
     }
 }
