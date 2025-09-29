@@ -1,5 +1,7 @@
 package io.wliamp.notion.service;
 
+import com.fasterxml.jackson.databind.JsonNode;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import io.wliamp.notion.Director;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -13,8 +15,9 @@ import java.nio.file.Paths;
 import java.util.List;
 
 import static java.nio.file.Files.*;
-import static reactor.core.publisher.Flux.*;
-import static reactor.core.publisher.Mono.*;
+import static reactor.core.publisher.Flux.fromStream;
+import static reactor.core.publisher.Mono.defer;
+import static reactor.core.publisher.Mono.fromRunnable;
 
 @Service
 @Slf4j
@@ -23,69 +26,95 @@ public class CleanupService {
 
     private static final Path STORAGE_PATH = Paths.get("storage");
     private final Director director;
+    private final ObjectMapper objectMapper = new ObjectMapper();
 
     public Mono<Void> cleanup() {
-        List<String> validWorkspaces = director.getDirectories();
-
-        if (!exists(STORAGE_PATH) || !isDirectory(STORAGE_PATH)) {
-            log.warn("⚠ Storage folder not found at {}", STORAGE_PATH.toAbsolutePath());
-            return Mono.empty();
-        }
-
-        try {
-            return fromStream(list(STORAGE_PATH))
-                    .flatMap(path -> {
-                        if (Files.isDirectory(path)) {
-                            return handleDirectory(path, validWorkspaces);
-                        } else {
-                            return handleFile(path);
-                        }
-                    })
-                    .then();
-        } catch (IOException e) {
-            log.error("❌ Failed to scan storage folder", e);
-            return Mono.error(e);
-        }
+        var validDirs = director.getDirectories();
+        return defer(() -> {
+                    try {
+                        return Files.exists(STORAGE_PATH) && Files.isDirectory(STORAGE_PATH)
+                                ? fromStream(Files.list(STORAGE_PATH))
+                                .flatMap(path -> pathHandler(path, validDirs))
+                                .then()
+                                : Mono.fromRunnable(() -> log.warn("⚠ Storage folder not found at {}", STORAGE_PATH.toAbsolutePath()));
+                    } catch (IOException e) {
+                        throw new RuntimeException(e);
+                    }
+                }
+        );
     }
 
-    private Mono<Void> handleDirectory(Path path, List<String> validWorkspaces) {
-        var folderName = path.getFileName().toString();
-        if (validWorkspaces.contains(folderName)) {
-            log.info("✅ Keeping valid folder: {}", folderName);
-            return Mono.empty();
-        }
-
-        log.info("🗑 Deleting non-matching folder: {}", folderName);
-        return deleteRecursively(path)
-                .doOnError(err -> log.error("❌ Failed to delete folder {}", path, err));
+    private Mono<Void> pathHandler(Path path, List<String> validDirs) {
+        return Files.isDirectory(path)
+                ? directoryHandler(path, validDirs)
+                : fileHandler(path);
     }
 
-    private Mono<Void> handleFile(Path path) {
-        log.info("🗑 Deleting file: {}", path.getFileName());
-        return fromRunnable(() -> {
+    private Mono<Void> directoryHandler(Path dirPath, List<String> validDirs) {
+        var folderName = dirPath.getFileName().toString();
+        return validDirs.contains(folderName)
+                ? defer(() -> {
+                    try {
+                        return fromStream(list(dirPath))
+                        .flatMap(p -> isDirectory(p)
+                                ? directoryHandler(p, validDirs)
+                                : jsonFileHandler(p, validDirs))
+                        .then();
+                    } catch (IOException e) {
+                        throw new RuntimeException(e);
+                    }
+                }
+        ).doOnSubscribe(s -> log.info("✅ Keeping valid folder: {}", folderName))
+                : deleteRecursively(dirPath)
+                .doOnSubscribe(s -> log.info("🗑 Deleting non-matching folder: {}", folderName));
+    }
+
+    private Mono<Void> fileHandler(Path filePath) {
+        return defer(() -> fromRunnable(() -> {
             try {
-                Files.deleteIfExists(path);
+                deleteIfExists(filePath);
             } catch (IOException e) {
                 throw new RuntimeException(e);
             }
+        })).doOnSubscribe(s -> log.info("🗑 Deleting file: {}", filePath.getFileName())).then();
+    }
+
+    private Mono<Void> jsonFileHandler(Path filePath, List<String> validDirs) {
+        return defer(() -> {
+            JsonNode json;
+            try {
+                json = objectMapper.readTree(filePath.toFile());
+            } catch (IOException e) {
+                throw new RuntimeException(e);
+            }
+            return isOrphan(json, validDirs)
+                    ? fileHandler(filePath)
+                    .doOnSubscribe(s -> log.info("🗑 Deleting orphan object: {}", filePath.getFileName()))
+                    : Mono.empty();
         });
     }
 
-    private Mono<Void> deleteRecursively(Path path) {
-        if (Files.isDirectory(path)) try {
-            return fromStream(list(path))
-                    .flatMap(this::deleteRecursively)
-                    .then(fromRunnable(() -> {
-                        try {
-                            Files.deleteIfExists(path);
-                        } catch (IOException e) {
-                            throw new RuntimeException(e);
-                        }
-                    }));
-        } catch (IOException e) {
-            return Mono.error(e);
-        }
-        return handleFile(path);
+    private boolean isOrphan(JsonNode objectJson, List<String> validDirs) {
+        var workspaceId = objectJson.path("workspace_id").asText(null);
+        if (workspaceId == null || !validDirs.contains(workspaceId)) return true;
 
+        var parentId = objectJson.path("parent_id").asText(null);
+        if (parentId != null && !Files.exists(STORAGE_PATH.resolve(parentId))) return true;
+
+        return objectJson.path("archived").asBoolean(false);
+    }
+
+    private Mono<Void> deleteRecursively(Path path) {
+        return Files.isDirectory(path)
+                ? defer(() -> {
+                    try {
+                        return fromStream(Files.list(path))
+                                .flatMap(this::deleteRecursively)
+                                .then(fileHandler(path));
+                    } catch (IOException e) {
+                        throw new RuntimeException(e);
+                    }
+                }
+        ) : fileHandler(path);
     }
 }
