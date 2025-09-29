@@ -16,4 +16,4 @@ jobs:
       uses: ./.github/actions/git-commit
       with:
         scope: "backup"
-
+        pps: ${{ secrets.PPS_INTEGRATION_NOTION }}

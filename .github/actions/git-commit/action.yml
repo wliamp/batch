@@ -5,6 +5,9 @@ inputs:
   scope:
     required: true
     description: "Scope in Commit message"
+  pps:
+    required: true
+    description: "PPS Integration Notion token"
 
 runs:
   using: "composite"
@@ -17,7 +20,7 @@ runs:
 
     - name: run ${{ inputs.scope }}
       env:
-        PPS_INTEGRATION_NOTION: ${{ secrets.PPS_INTEGRATION_NOTION }}
+        PPS_INTEGRATION_NOTION: ${{ inputs.pps }}
       run: ./gradlew :${{ inputs.scope }}:bootRun
       shell: bash
 

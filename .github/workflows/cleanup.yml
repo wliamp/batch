@@ -16,3 +16,4 @@ jobs:
       uses: ./.github/actions/git-commit
       with:
         scope: "cleanup"
+        pps: ${{ secrets.PPS_INTEGRATION_NOTION }}
