@@ -1,0 +1,902 @@
+[ {
+  "object" : "block",
+  "id" : "27cf521e-2b70-8053-bb7f-c44b11f6f99b",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "277f521e-2b70-802e-983f-d9b84ddebec8"
+  },
+  "created_time" : "2025-09-28T15:49:00.000Z",
+  "last_edited_time" : "2025-09-28T15:49:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "paragraph",
+  "paragraph" : {
+    "rich_text" : [ {
+      "type" : "text",
+      "text" : {
+        "content" : "🔍 ",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "🔍 ",
+      "href" : null
+    }, {
+      "type" : "text",
+      "text" : {
+        "content" : "Inquiry / Status Check",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : true,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "Inquiry / Status Check",
+      "href" : null
+    }, {
+      "type" : "text",
+      "text" : {
+        "content" : " – returns transaction state, no balance impact.",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : " – returns transaction state, no balance impact.",
+      "href" : null
+    } ],
+    "color" : "default"
+  }
+}, {
+  "object" : "block",
+  "id" : "27cf521e-2b70-80be-a72f-cc23be261a1b",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "277f521e-2b70-802e-983f-d9b84ddebec8"
+  },
+  "created_time" : "2025-09-28T15:49:00.000Z",
+  "last_edited_time" : "2025-09-28T15:49:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "paragraph",
+  "paragraph" : {
+    "rich_text" : [ {
+      "type" : "text",
+      "text" : {
+        "content" : "📢 ",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "📢 ",
+      "href" : null
+    }, {
+      "type" : "text",
+      "text" : {
+        "content" : "Notification Dispatch",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : true,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "Notification Dispatch",
+      "href" : null
+    }, {
+      "type" : "text",
+      "text" : {
+        "content" : " – delivers system messages to payer/merchant; logs all.",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : " – delivers system messages to payer/merchant; logs all.",
+      "href" : null
+    } ],
+    "color" : "default"
+  }
+}, {
+  "object" : "block",
+  "id" : "27cf521e-2b70-80ed-afb7-cfa9c4218d11",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "277f521e-2b70-802e-983f-d9b84ddebec8"
+  },
+  "created_time" : "2025-09-28T15:49:00.000Z",
+  "last_edited_time" : "2025-09-28T15:49:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "paragraph",
+  "paragraph" : {
+    "rich_text" : [ {
+      "type" : "text",
+      "text" : {
+        "content" : "🕵️ ",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "🕵️ ",
+      "href" : null
+    }, {
+      "type" : "text",
+      "text" : {
+        "content" : "Fraud / Risk Screening",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : true,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "Fraud / Risk Screening",
+      "href" : null
+    }, {
+      "type" : "text",
+      "text" : {
+        "content" : " – rule/ML-based, blocks or flags suspicious activity.",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : " – rule/ML-based, blocks or flags suspicious activity.",
+      "href" : null
+    } ],
+    "color" : "default"
+  }
+}, {
+  "object" : "block",
+  "id" : "27cf521e-2b70-8001-9b30-ca64f0f86166",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "277f521e-2b70-802e-983f-d9b84ddebec8"
+  },
+  "created_time" : "2025-09-28T15:49:00.000Z",
+  "last_edited_time" : "2025-09-28T15:49:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "paragraph",
+  "paragraph" : {
+    "rich_text" : [ {
+      "type" : "text",
+      "text" : {
+        "content" : "🗄️ ",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "🗄️ ",
+      "href" : null
+    }, {
+      "type" : "text",
+      "text" : {
+        "content" : "Record Keeping / Reporting",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : true,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "Record Keeping / Reporting",
+      "href" : null
+    }, {
+      "type" : "text",
+      "text" : {
+        "content" : " – permanent transaction history; audit/regulator query APIs.",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : " – permanent transaction history; audit/regulator query APIs.",
+      "href" : null
+    } ],
+    "color" : "default"
+  }
+}, {
+  "object" : "block",
+  "id" : "27cf521e-2b70-8000-a556-d27532809438",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "277f521e-2b70-802e-983f-d9b84ddebec8"
+  },
+  "created_time" : "2025-09-28T15:49:00.000Z",
+  "last_edited_time" : "2025-09-28T15:49:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "paragraph",
+  "paragraph" : {
+    "rich_text" : [ {
+      "type" : "text",
+      "text" : {
+        "content" : "🔑 ",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "🔑 ",
+      "href" : null
+    }, {
+      "type" : "text",
+      "text" : {
+        "content" : "Authentication / Identity Validation",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : true,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "Authentication / Identity Validation",
+      "href" : null
+    }, {
+      "type" : "text",
+      "text" : {
+        "content" : " – OTP, MFA, 3DS, device binding.",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : " – OTP, MFA, 3DS, device binding.",
+      "href" : null
+    } ],
+    "color" : "default"
+  }
+}, {
+  "object" : "block",
+  "id" : "27cf521e-2b70-8065-b9c5-dc740eddd80f",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "277f521e-2b70-802e-983f-d9b84ddebec8"
+  },
+  "created_time" : "2025-09-28T15:49:00.000Z",
+  "last_edited_time" : "2025-09-28T15:49:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "paragraph",
+  "paragraph" : {
+    "rich_text" : [ {
+      "type" : "text",
+      "text" : {
+        "content" : "🎫 ",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "🎫 ",
+      "href" : null
+    }, {
+      "type" : "text",
+      "text" : {
+        "content" : "Tokenization",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : true,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "Tokenization",
+      "href" : null
+    }, {
+      "type" : "text",
+      "text" : {
+        "content" : " – replaces sensitive PAN/account data with tokens.",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : " – replaces sensitive PAN/account data with tokens.",
+      "href" : null
+    } ],
+    "color" : "default"
+  }
+}, {
+  "object" : "block",
+  "id" : "27cf521e-2b70-80da-bac5-f9d2ac5cc078",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "277f521e-2b70-802e-983f-d9b84ddebec8"
+  },
+  "created_time" : "2025-09-28T15:49:00.000Z",
+  "last_edited_time" : "2025-09-28T15:49:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "paragraph",
+  "paragraph" : {
+    "rich_text" : [ {
+      "type" : "text",
+      "text" : {
+        "content" : "🖥️ ",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "🖥️ ",
+      "href" : null
+    }, {
+      "type" : "text",
+      "text" : {
+        "content" : "System Diagnostics (Ping/Health Check)",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : true,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "System Diagnostics (Ping/Health Check)",
+      "href" : null
+    }, {
+      "type" : "text",
+      "text" : {
+        "content" : " – uptime, latency, load monitoring.",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : " – uptime, latency, load monitoring.",
+      "href" : null
+    } ],
+    "color" : "default"
+  }
+}, {
+  "object" : "block",
+  "id" : "27cf521e-2b70-80a8-a5a6-c0d5ce7148a9",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "277f521e-2b70-802e-983f-d9b84ddebec8"
+  },
+  "created_time" : "2025-09-28T15:49:00.000Z",
+  "last_edited_time" : "2025-09-28T15:49:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "paragraph",
+  "paragraph" : {
+    "rich_text" : [ {
+      "type" : "text",
+      "text" : {
+        "content" : "📑 ",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "📑 ",
+      "href" : null
+    }, {
+      "type" : "text",
+      "text" : {
+        "content" : "Reconciliation Actions (Non-financial)",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : true,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "Reconciliation Actions (Non-financial)",
+      "href" : null
+    }, {
+      "type" : "text",
+      "text" : {
+        "content" : " – compare ledger vs network reports.",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : " – compare ledger vs network reports.",
+      "href" : null
+    } ],
+    "color" : "default"
+  }
+}, {
+  "object" : "block",
+  "id" : "27cf521e-2b70-8009-9009-e847ff0035f8",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "277f521e-2b70-802e-983f-d9b84ddebec8"
+  },
+  "created_time" : "2025-09-28T15:49:00.000Z",
+  "last_edited_time" : "2025-09-28T15:49:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "paragraph",
+  "paragraph" : {
+    "rich_text" : [ {
+      "type" : "text",
+      "text" : {
+        "content" : "🧾 ",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "🧾 ",
+      "href" : null
+    }, {
+      "type" : "text",
+      "text" : {
+        "content" : "Merchant Onboarding / KYC",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : true,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "Merchant Onboarding / KYC",
+      "href" : null
+    }, {
+      "type" : "text",
+      "text" : {
+        "content" : " – identity verification, AML checks.",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : " – identity verification, AML checks.",
+      "href" : null
+    } ],
+    "color" : "default"
+  }
+}, {
+  "object" : "block",
+  "id" : "27cf521e-2b70-8054-9349-c71b9c7676f0",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "277f521e-2b70-802e-983f-d9b84ddebec8"
+  },
+  "created_time" : "2025-09-28T15:49:00.000Z",
+  "last_edited_time" : "2025-09-28T15:49:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "paragraph",
+  "paragraph" : {
+    "rich_text" : [ {
+      "type" : "text",
+      "text" : {
+        "content" : "📜 ",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "📜 ",
+      "href" : null
+    }, {
+      "type" : "text",
+      "text" : {
+        "content" : "Compliance Reporting",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : true,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "Compliance Reporting",
+      "href" : null
+    }, {
+      "type" : "text",
+      "text" : {
+        "content" : " – SAR filing, AML/CTF monitoring.",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : " – SAR filing, AML/CTF monitoring.",
+      "href" : null
+    } ],
+    "color" : "default"
+  }
+}, {
+  "object" : "block",
+  "id" : "27cf521e-2b70-8049-920a-f80b9537a51d",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "277f521e-2b70-802e-983f-d9b84ddebec8"
+  },
+  "created_time" : "2025-09-28T15:49:00.000Z",
+  "last_edited_time" : "2025-09-28T15:49:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "paragraph",
+  "paragraph" : {
+    "rich_text" : [ {
+      "type" : "text",
+      "text" : {
+        "content" : "⚙️ ",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "⚙️ ",
+      "href" : null
+    }, {
+      "type" : "text",
+      "text" : {
+        "content" : "Configuration / Preference Management",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : true,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "Configuration / Preference Management",
+      "href" : null
+    }, {
+      "type" : "text",
+      "text" : {
+        "content" : " – merchant settings, payout schedule updates.",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : " – merchant settings, payout schedule updates.",
+      "href" : null
+    } ],
+    "color" : "default"
+  }
+}, {
+  "object" : "block",
+  "id" : "27cf521e-2b70-8033-8297-f67ae6973fae",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "277f521e-2b70-802e-983f-d9b84ddebec8"
+  },
+  "created_time" : "2025-09-28T15:49:00.000Z",
+  "last_edited_time" : "2025-09-28T15:49:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "paragraph",
+  "paragraph" : {
+    "rich_text" : [ {
+      "type" : "text",
+      "text" : {
+        "content" : "🔐 ",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "🔐 ",
+      "href" : null
+    }, {
+      "type" : "text",
+      "text" : {
+        "content" : "Audit & Access Control Actions",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : true,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "Audit & Access Control Actions",
+      "href" : null
+    }, {
+      "type" : "text",
+      "text" : {
+        "content" : " – role assignment, log access, consent management.",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : " – role assignment, log access, consent management.",
+      "href" : null
+    } ],
+    "color" : "default"
+  }
+}, {
+  "object" : "block",
+  "id" : "277f521e-2b70-8017-8029-d1e7f675fb20",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "277f521e-2b70-802e-983f-d9b84ddebec8"
+  },
+  "created_time" : "2025-09-23T23:02:00.000Z",
+  "last_edited_time" : "2025-09-23T23:02:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "paragraph",
+  "paragraph" : {
+    "rich_text" : [ ],
+    "color" : "default"
+  }
+} ]

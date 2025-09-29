@@ -1,0 +1,704 @@
+[ {
+  "object" : "block",
+  "id" : "27cf521e-2b70-80e3-be58-e5fd1d4aa8ea",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "27cf521e-2b70-8061-9cbd-d4e1e0acc99d"
+  },
+  "created_time" : "2025-09-28T11:42:00.000Z",
+  "last_edited_time" : "2025-09-29T04:34:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "quote",
+  "quote" : {
+    "rich_text" : [ {
+      "type" : "text",
+      "text" : {
+        "content" : "“As a ",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : true,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "“As a ",
+      "href" : null
+    }, {
+      "type" : "text",
+      "text" : {
+        "content" : "Merchant",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : true,
+        "italic" : true,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "Merchant",
+      "href" : null
+    }, {
+      "type" : "text",
+      "text" : {
+        "content" : ", I want to ",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : true,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : ", I want to ",
+      "href" : null
+    }, {
+      "type" : "text",
+      "text" : {
+        "content" : "void an authorization",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : true,
+        "italic" : true,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "void an authorization",
+      "href" : null
+    }, {
+      "type" : "text",
+      "text" : {
+        "content" : ", so that I can ",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : true,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : ", so that I can ",
+      "href" : null
+    }, {
+      "type" : "text",
+      "text" : {
+        "content" : "cancel orders cleanly",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : true,
+        "italic" : true,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "cancel orders cleanly",
+      "href" : null
+    }, {
+      "type" : "text",
+      "text" : {
+        "content" : ".”",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : true,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : ".”",
+      "href" : null
+    } ],
+    "color" : "default"
+  }
+}, {
+  "object" : "block",
+  "id" : "27df521e-2b70-80e7-8352-d783182adc07",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "27cf521e-2b70-8061-9cbd-d4e1e0acc99d"
+  },
+  "created_time" : "2025-09-29T04:33:00.000Z",
+  "last_edited_time" : "2025-09-29T04:33:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "heading_3",
+  "heading_3" : {
+    "rich_text" : [ {
+      "type" : "text",
+      "text" : {
+        "content" : "📌 Scope",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "📌 Scope",
+      "href" : null
+    } ],
+    "is_toggleable" : false,
+    "color" : "default"
+  }
+}, {
+  "object" : "block",
+  "id" : "27df521e-2b70-80a2-bec5-ef7a46ae1204",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "27cf521e-2b70-8061-9cbd-d4e1e0acc99d"
+  },
+  "created_time" : "2025-09-29T04:33:00.000Z",
+  "last_edited_time" : "2025-09-29T04:33:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "bulleted_list_item",
+  "bulleted_list_item" : {
+    "rich_text" : [ {
+      "type" : "text",
+      "text" : {
+        "content" : "Allow Merchant to void an active authorization before capture.",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "Allow Merchant to void an active authorization before capture.",
+      "href" : null
+    } ],
+    "color" : "default"
+  }
+}, {
+  "object" : "block",
+  "id" : "27df521e-2b70-806d-9b60-c810504abce9",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "27cf521e-2b70-8061-9cbd-d4e1e0acc99d"
+  },
+  "created_time" : "2025-09-29T04:33:00.000Z",
+  "last_edited_time" : "2025-09-29T04:33:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "bulleted_list_item",
+  "bulleted_list_item" : {
+    "rich_text" : [ {
+      "type" : "text",
+      "text" : {
+        "content" : "Ensure funds are released back to the customer once voided.",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "Ensure funds are released back to the customer once voided.",
+      "href" : null
+    } ],
+    "color" : "default"
+  }
+}, {
+  "object" : "block",
+  "id" : "27df521e-2b70-8070-99aa-f937eee6b4c3",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "27cf521e-2b70-8061-9cbd-d4e1e0acc99d"
+  },
+  "created_time" : "2025-09-29T04:33:00.000Z",
+  "last_edited_time" : "2025-09-29T04:33:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "bulleted_list_item",
+  "bulleted_list_item" : {
+    "rich_text" : [ {
+      "type" : "text",
+      "text" : {
+        "content" : "Void action must not be confused with refund (no money has moved yet).",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "Void action must not be confused with refund (no money has moved yet).",
+      "href" : null
+    } ],
+    "color" : "default"
+  }
+}, {
+  "object" : "block",
+  "id" : "27df521e-2b70-802d-be37-e390cd5388c4",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "27cf521e-2b70-8061-9cbd-d4e1e0acc99d"
+  },
+  "created_time" : "2025-09-29T04:33:00.000Z",
+  "last_edited_time" : "2025-09-29T04:33:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "bulleted_list_item",
+  "bulleted_list_item" : {
+    "rich_text" : [ {
+      "type" : "text",
+      "text" : {
+        "content" : "All void operations must comply with compliance, security, and audit policies.",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "All void operations must comply with compliance, security, and audit policies.",
+      "href" : null
+    } ],
+    "color" : "default"
+  }
+}, {
+  "object" : "block",
+  "id" : "27df521e-2b70-80d8-8843-e9dd46a28406",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "27cf521e-2b70-8061-9cbd-d4e1e0acc99d"
+  },
+  "created_time" : "2025-09-29T04:33:00.000Z",
+  "last_edited_time" : "2025-09-29T04:33:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "divider",
+  "divider" : { }
+}, {
+  "object" : "block",
+  "id" : "27df521e-2b70-8072-b0c9-ce6fc3e5ef8d",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "27cf521e-2b70-8061-9cbd-d4e1e0acc99d"
+  },
+  "created_time" : "2025-09-29T04:33:00.000Z",
+  "last_edited_time" : "2025-09-29T04:33:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "heading_3",
+  "heading_3" : {
+    "rich_text" : [ {
+      "type" : "text",
+      "text" : {
+        "content" : "✅ Acceptance Criteria",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "✅ Acceptance Criteria",
+      "href" : null
+    } ],
+    "is_toggleable" : false,
+    "color" : "default"
+  }
+}, {
+  "object" : "block",
+  "id" : "27df521e-2b70-801d-8133-dbfa617948e9",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "27cf521e-2b70-8061-9cbd-d4e1e0acc99d"
+  },
+  "created_time" : "2025-09-29T04:33:00.000Z",
+  "last_edited_time" : "2025-09-29T04:33:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "bulleted_list_item",
+  "bulleted_list_item" : {
+    "rich_text" : [ {
+      "type" : "text",
+      "text" : {
+        "content" : "Void is only possible on valid authorizations that are not yet captured, expired, or already voided.",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "Void is only possible on valid authorizations that are not yet captured, expired, or already voided.",
+      "href" : null
+    } ],
+    "color" : "default"
+  }
+}, {
+  "object" : "block",
+  "id" : "27df521e-2b70-80a7-9116-ea8e2ff4de7e",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "27cf521e-2b70-8061-9cbd-d4e1e0acc99d"
+  },
+  "created_time" : "2025-09-29T04:33:00.000Z",
+  "last_edited_time" : "2025-09-29T04:33:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "bulleted_list_item",
+  "bulleted_list_item" : {
+    "rich_text" : [ {
+      "type" : "text",
+      "text" : {
+        "content" : "Merchant receives a clear outcome: success / failed with reason.",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "Merchant receives a clear outcome: success / failed with reason.",
+      "href" : null
+    } ],
+    "color" : "default"
+  }
+}, {
+  "object" : "block",
+  "id" : "27df521e-2b70-8056-a680-f8e8039b3c5c",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "27cf521e-2b70-8061-9cbd-d4e1e0acc99d"
+  },
+  "created_time" : "2025-09-29T04:33:00.000Z",
+  "last_edited_time" : "2025-09-29T04:33:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "bulleted_list_item",
+  "bulleted_list_item" : {
+    "rich_text" : [ {
+      "type" : "text",
+      "text" : {
+        "content" : "Funds held in the authorization are released upon success.",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "Funds held in the authorization are released upon success.",
+      "href" : null
+    } ],
+    "color" : "default"
+  }
+}, {
+  "object" : "block",
+  "id" : "27df521e-2b70-800b-b6bc-e0c2833e1c9b",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "27cf521e-2b70-8061-9cbd-d4e1e0acc99d"
+  },
+  "created_time" : "2025-09-29T04:33:00.000Z",
+  "last_edited_time" : "2025-09-29T04:33:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "bulleted_list_item",
+  "bulleted_list_item" : {
+    "rich_text" : [ {
+      "type" : "text",
+      "text" : {
+        "content" : "All void attempts are logged (merchant ID, transaction ID, amount, timestamp, outcome).",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "All void attempts are logged (merchant ID, transaction ID, amount, timestamp, outcome).",
+      "href" : null
+    } ],
+    "color" : "default"
+  }
+}, {
+  "object" : "block",
+  "id" : "27df521e-2b70-80f5-96e8-d05cc3791cab",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "27cf521e-2b70-8061-9cbd-d4e1e0acc99d"
+  },
+  "created_time" : "2025-09-29T04:33:00.000Z",
+  "last_edited_time" : "2025-09-29T04:33:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "bulleted_list_item",
+  "bulleted_list_item" : {
+    "rich_text" : [ {
+      "type" : "text",
+      "text" : {
+        "content" : "Retry attempts are idempotent (no duplicate voids).",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "Retry attempts are idempotent (no duplicate voids).",
+      "href" : null
+    } ],
+    "color" : "default"
+  }
+}, {
+  "object" : "block",
+  "id" : "27df521e-2b70-8078-acdc-fd2ecc53517d",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "27cf521e-2b70-8061-9cbd-d4e1e0acc99d"
+  },
+  "created_time" : "2025-09-29T04:33:00.000Z",
+  "last_edited_time" : "2025-09-29T04:33:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "bulleted_list_item",
+  "bulleted_list_item" : {
+    "rich_text" : [ {
+      "type" : "text",
+      "text" : {
+        "content" : "Merchant can view the voided status of the order transaction.",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "Merchant can view the voided status of the order transaction.",
+      "href" : null
+    } ],
+    "color" : "default"
+  }
+}, {
+  "object" : "block",
+  "id" : "27cf521e-2b70-8147-88d1-fc8bddc0b197",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "27cf521e-2b70-8061-9cbd-d4e1e0acc99d"
+  },
+  "created_time" : "2025-09-28T11:42:00.000Z",
+  "last_edited_time" : "2025-09-28T11:42:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "paragraph",
+  "paragraph" : {
+    "rich_text" : [ ],
+    "color" : "default"
+  }
+}, {
+  "object" : "block",
+  "id" : "27cf521e-2b70-8125-ae41-df8c1eaf91b4",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "27cf521e-2b70-8061-9cbd-d4e1e0acc99d"
+  },
+  "created_time" : "2025-09-28T11:42:00.000Z",
+  "last_edited_time" : "2025-09-28T11:42:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "paragraph",
+  "paragraph" : {
+    "rich_text" : [ ],
+    "color" : "default"
+  }
+} ]

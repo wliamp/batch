@@ -1,0 +1,736 @@
+[ {
+  "object" : "block",
+  "id" : "27cf521e-2b70-80bf-adbc-e2218774c540",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "278f521e-2b70-812f-8a92-db0520aa72de"
+  },
+  "created_time" : "2025-09-28T10:42:00.000Z",
+  "last_edited_time" : "2025-09-28T16:59:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "quote",
+  "quote" : {
+    "rich_text" : [ {
+      "type" : "text",
+      "text" : {
+        "content" : "“As a ",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : true,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "“As a ",
+      "href" : null
+    }, {
+      "type" : "text",
+      "text" : {
+        "content" : "Payer",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : true,
+        "italic" : true,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "Payer",
+      "href" : null
+    }, {
+      "type" : "text",
+      "text" : {
+        "content" : ", I want to ",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : true,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : ", I want to ",
+      "href" : null
+    }, {
+      "type" : "text",
+      "text" : {
+        "content" : "dispute a transaction (chargeback)",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : true,
+        "italic" : true,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "dispute a transaction (chargeback)",
+      "href" : null
+    }, {
+      "type" : "text",
+      "text" : {
+        "content" : ", so that I can ",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : true,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : ", so that I can ",
+      "href" : null
+    }, {
+      "type" : "text",
+      "text" : {
+        "content" : "protect myself from fraud or errors",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : true,
+        "italic" : true,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "protect myself from fraud or errors",
+      "href" : null
+    }, {
+      "type" : "text",
+      "text" : {
+        "content" : ".”",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : true,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : ".”",
+      "href" : null
+    } ],
+    "color" : "default"
+  }
+}, {
+  "object" : "block",
+  "id" : "27df521e-2b70-801d-87c9-e5284694981f",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "278f521e-2b70-812f-8a92-db0520aa72de"
+  },
+  "created_time" : "2025-09-29T04:55:00.000Z",
+  "last_edited_time" : "2025-09-29T04:55:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "heading_3",
+  "heading_3" : {
+    "rich_text" : [ {
+      "type" : "text",
+      "text" : {
+        "content" : "📌 Scope",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "📌 Scope",
+      "href" : null
+    } ],
+    "is_toggleable" : false,
+    "color" : "default"
+  }
+}, {
+  "object" : "block",
+  "id" : "27df521e-2b70-80a7-846a-e9eeccae9d65",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "278f521e-2b70-812f-8a92-db0520aa72de"
+  },
+  "created_time" : "2025-09-29T04:55:00.000Z",
+  "last_edited_time" : "2025-09-29T04:55:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "bulleted_list_item",
+  "bulleted_list_item" : {
+    "rich_text" : [ {
+      "type" : "text",
+      "text" : {
+        "content" : "Allow Payer to initiate a dispute/chargeback request against a completed transaction.",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "Allow Payer to initiate a dispute/chargeback request against a completed transaction.",
+      "href" : null
+    } ],
+    "color" : "default"
+  }
+}, {
+  "object" : "block",
+  "id" : "27df521e-2b70-808b-ad66-c8f0abf73ec7",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "278f521e-2b70-812f-8a92-db0520aa72de"
+  },
+  "created_time" : "2025-09-29T04:55:00.000Z",
+  "last_edited_time" : "2025-09-29T04:55:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "bulleted_list_item",
+  "bulleted_list_item" : {
+    "rich_text" : [ {
+      "type" : "text",
+      "text" : {
+        "content" : "Collect supporting details (reason code, evidence, documentation).",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "Collect supporting details (reason code, evidence, documentation).",
+      "href" : null
+    } ],
+    "color" : "default"
+  }
+}, {
+  "object" : "block",
+  "id" : "27df521e-2b70-800d-b977-f4be8a63cbc1",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "278f521e-2b70-812f-8a92-db0520aa72de"
+  },
+  "created_time" : "2025-09-29T04:55:00.000Z",
+  "last_edited_time" : "2025-09-29T04:55:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "bulleted_list_item",
+  "bulleted_list_item" : {
+    "rich_text" : [ {
+      "type" : "text",
+      "text" : {
+        "content" : "Ensure dispute is routed securely to issuer and card network.",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "Ensure dispute is routed securely to issuer and card network.",
+      "href" : null
+    } ],
+    "color" : "default"
+  }
+}, {
+  "object" : "block",
+  "id" : "27df521e-2b70-8074-9389-e11b47e8cb54",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "278f521e-2b70-812f-8a92-db0520aa72de"
+  },
+  "created_time" : "2025-09-29T04:55:00.000Z",
+  "last_edited_time" : "2025-09-29T04:55:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "bulleted_list_item",
+  "bulleted_list_item" : {
+    "rich_text" : [ {
+      "type" : "text",
+      "text" : {
+        "content" : "Provide Payer with updates on dispute progress (submitted, under review, resolved).",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "Provide Payer with updates on dispute progress (submitted, under review, resolved).",
+      "href" : null
+    } ],
+    "color" : "default"
+  }
+}, {
+  "object" : "block",
+  "id" : "27df521e-2b70-8079-bdf4-c6bd62005979",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "278f521e-2b70-812f-8a92-db0520aa72de"
+  },
+  "created_time" : "2025-09-29T04:55:00.000Z",
+  "last_edited_time" : "2025-09-29T04:55:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "bulleted_list_item",
+  "bulleted_list_item" : {
+    "rich_text" : [ {
+      "type" : "text",
+      "text" : {
+        "content" : "Maintain audit trail and compliance with chargeback regulations.",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "Maintain audit trail and compliance with chargeback regulations.",
+      "href" : null
+    } ],
+    "color" : "default"
+  }
+}, {
+  "object" : "block",
+  "id" : "27df521e-2b70-8060-9e3d-eccbcbefab12",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "278f521e-2b70-812f-8a92-db0520aa72de"
+  },
+  "created_time" : "2025-09-29T04:55:00.000Z",
+  "last_edited_time" : "2025-09-29T04:55:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "divider",
+  "divider" : { }
+}, {
+  "object" : "block",
+  "id" : "27df521e-2b70-80d6-8948-d7a17ca023c5",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "278f521e-2b70-812f-8a92-db0520aa72de"
+  },
+  "created_time" : "2025-09-29T04:55:00.000Z",
+  "last_edited_time" : "2025-09-29T04:55:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "heading_3",
+  "heading_3" : {
+    "rich_text" : [ {
+      "type" : "text",
+      "text" : {
+        "content" : "✅ Completion Acceptance (CA)",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "✅ Completion Acceptance (CA)",
+      "href" : null
+    } ],
+    "is_toggleable" : false,
+    "color" : "default"
+  }
+}, {
+  "object" : "block",
+  "id" : "27df521e-2b70-80c1-907e-ed7976baf11c",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "278f521e-2b70-812f-8a92-db0520aa72de"
+  },
+  "created_time" : "2025-09-29T04:55:00.000Z",
+  "last_edited_time" : "2025-09-29T04:55:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "bulleted_list_item",
+  "bulleted_list_item" : {
+    "rich_text" : [ {
+      "type" : "text",
+      "text" : {
+        "content" : "Payer can initiate a dispute via app or API with a valid transaction ID.",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "Payer can initiate a dispute via app or API with a valid transaction ID.",
+      "href" : null
+    } ],
+    "color" : "default"
+  }
+}, {
+  "object" : "block",
+  "id" : "27df521e-2b70-8069-afd8-e1cdd1f77762",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "278f521e-2b70-812f-8a92-db0520aa72de"
+  },
+  "created_time" : "2025-09-29T04:55:00.000Z",
+  "last_edited_time" : "2025-09-29T04:55:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "bulleted_list_item",
+  "bulleted_list_item" : {
+    "rich_text" : [ {
+      "type" : "text",
+      "text" : {
+        "content" : "System validates eligibility (e.g., transaction must be captured/settled).",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "System validates eligibility (e.g., transaction must be captured/settled).",
+      "href" : null
+    } ],
+    "color" : "default"
+  }
+}, {
+  "object" : "block",
+  "id" : "27df521e-2b70-8027-b085-fe50f888de68",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "278f521e-2b70-812f-8a92-db0520aa72de"
+  },
+  "created_time" : "2025-09-29T04:55:00.000Z",
+  "last_edited_time" : "2025-09-29T04:55:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "bulleted_list_item",
+  "bulleted_list_item" : {
+    "rich_text" : [ {
+      "type" : "text",
+      "text" : {
+        "content" : "Dispute request includes reason code and optional evidence.",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "Dispute request includes reason code and optional evidence.",
+      "href" : null
+    } ],
+    "color" : "default"
+  }
+}, {
+  "object" : "block",
+  "id" : "27df521e-2b70-8045-99b1-f308facb52a8",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "278f521e-2b70-812f-8a92-db0520aa72de"
+  },
+  "created_time" : "2025-09-29T04:55:00.000Z",
+  "last_edited_time" : "2025-09-29T04:55:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "bulleted_list_item",
+  "bulleted_list_item" : {
+    "rich_text" : [ {
+      "type" : "text",
+      "text" : {
+        "content" : "Payer receives confirmation of dispute submission.",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "Payer receives confirmation of dispute submission.",
+      "href" : null
+    } ],
+    "color" : "default"
+  }
+}, {
+  "object" : "block",
+  "id" : "27df521e-2b70-80c5-80b5-e59e3c40ea0c",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "278f521e-2b70-812f-8a92-db0520aa72de"
+  },
+  "created_time" : "2025-09-29T04:55:00.000Z",
+  "last_edited_time" : "2025-09-29T04:55:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "bulleted_list_item",
+  "bulleted_list_item" : {
+    "rich_text" : [ {
+      "type" : "text",
+      "text" : {
+        "content" : "Dispute status is trackable until resolution (won, lost, reversed).",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "Dispute status is trackable until resolution (won, lost, reversed).",
+      "href" : null
+    } ],
+    "color" : "default"
+  }
+}, {
+  "object" : "block",
+  "id" : "27df521e-2b70-80fb-b0b2-e8309d763e4d",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "278f521e-2b70-812f-8a92-db0520aa72de"
+  },
+  "created_time" : "2025-09-29T04:55:00.000Z",
+  "last_edited_time" : "2025-09-29T04:55:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "bulleted_list_item",
+  "bulleted_list_item" : {
+    "rich_text" : [ {
+      "type" : "text",
+      "text" : {
+        "content" : "All dispute events logged (payer, transaction ID, timestamp, outcome).",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "All dispute events logged (payer, transaction ID, timestamp, outcome).",
+      "href" : null
+    } ],
+    "color" : "default"
+  }
+}, {
+  "object" : "block",
+  "id" : "27df521e-2b70-8072-9f85-c3a0aa6ce8c3",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "278f521e-2b70-812f-8a92-db0520aa72de"
+  },
+  "created_time" : "2025-09-29T04:55:00.000Z",
+  "last_edited_time" : "2025-09-29T04:55:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "bulleted_list_item",
+  "bulleted_list_item" : {
+    "rich_text" : [ {
+      "type" : "text",
+      "text" : {
+        "content" : "Sensitive data is handled securely, complying with PCI-DSS & regulatory rules.",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "Sensitive data is handled securely, complying with PCI-DSS & regulatory rules.",
+      "href" : null
+    } ],
+    "color" : "default"
+  }
+} ]
