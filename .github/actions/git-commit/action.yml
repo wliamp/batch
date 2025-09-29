@@ -1,0 +1,28 @@
+name: "Git Commit & Push"
+description: "Commit and push changes with github-actions[bot]"
+
+inputs:
+  commit-message:
+    required: true
+    description: "Commit message to use for the commit"
+  paths:
+    required: true
+    description: "Paths to add to the commit (e.g., storage/ or docs/)"
+
+runs:
+  using: "composite"
+  steps:
+    - uses: actions/checkout@v4
+      with:
+        persist-credentials: true
+
+    - run: |
+        git config user.name "github-actions[bot]"
+        git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+        git add ${{ inputs.paths }}
+        git commit \
+            -m "chore(backup): backup Notion JSONs at $(date -u +'%Y-%m-%d %H:%M:%S')" \
+            -m "$(git diff --cached --name-status)" \
+            || echo "✅ No changes to commit"
+        git push
+      shell: bash

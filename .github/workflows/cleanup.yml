@@ -11,8 +11,6 @@ jobs:
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
-        with:
-          persist-credentials: true
 
       - name: Set up Java
         uses: actions/setup-java@v4
@@ -26,10 +24,7 @@ jobs:
         run: ./gradlew :cleanup:bootRun
 
       - name: Commit & Push changes
-        run: |
-          git add storage/
-          git commit \
-            -m "chore(cleanup): cleanup Notion JSONs at $(date -u +'%Y-%m-%d %H:%M:%S')" \
-            -m "$(git diff --cached --name-status)" \
-            || echo "No changes to commit"
-          git push
+        uses: ./.github/actions/git-commit
+        with:
+          commit-message: "chore(cleanup): cleanup Notion JSONs at $(date -u +'%Y-%m-%d %H:%M:%S')"
+          paths: "storage/"
