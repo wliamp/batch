@@ -24,7 +24,7 @@ jobs:
 
       - name: Run Notion backup
         env:
-          NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
+          PPS_INTEGRATION_NOTION: ${{ secrets.NOTION_TOKEN }}
         run: ./gradlew bootRun
 
       - name: Commit & Push changes
