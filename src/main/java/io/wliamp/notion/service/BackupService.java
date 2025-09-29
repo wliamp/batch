@@ -38,7 +38,7 @@ public class BackupService {
 
     public void runBackup(String token, String workspaceName) {
         try {
-            var outDir = createDirectories(of("backup").resolve(workspaceName));
+            var outDir = createDirectories(of("storage").resolve(workspaceName));
 
             var activeIds = searchAllObjects(token)
                     .flatMapSequential(obj -> backupObject(obj, outDir, token), 4)
