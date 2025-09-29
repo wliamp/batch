@@ -25,7 +25,7 @@ jobs:
       - name: Run Notion backup
         env:
           PPS_INTEGRATION_NOTION: ${{ secrets.PPS_INTEGRATION_NOTION }}
-        run: ./gradlew bootRun
+        run: ./gradlew :backup:bootRun
 
       - name: Commit & Push changes
         run: |
