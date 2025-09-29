@@ -16,22 +16,21 @@ import reactor.core.scheduler.Schedulers;
 import reactor.util.retry.Retry;
 
 import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Path;
+import java.nio.file.*;
 import java.time.Duration;
-import java.util.Objects;
-import java.util.Optional;
+import java.time.Instant;
+import java.util.*;
+import java.util.stream.Stream;
 import java.util.stream.StreamSupport;
 
-@SuppressWarnings("ALL")
 @SpringBootApplication
-class Main implements CommandLineRunner {
+public class Main implements CommandLineRunner {
     private static final Logger log = LoggerFactory.getLogger(Main.class);
     private final ObjectMapper mapper = new ObjectMapper();
     private final WebClient webClient;
 
-    Main() {
-        var token = Optional.ofNullable(System.getenv("NOTION_TOKEN"))
+    public Main() {
+        String token = Optional.ofNullable(System.getenv("NOTION_TOKEN"))
                 .filter(s -> !s.isBlank())
                 .orElseThrow(() -> new IllegalArgumentException("Missing NOTION_TOKEN in ENV"));
 
@@ -52,28 +51,81 @@ class Main implements CommandLineRunner {
         Path outDir;
         try {
             outDir = Files.createDirectories(Path.of("backup"));
-        } catch (Exception e) {
+        } catch (IOException e) {
             throw new RuntimeException(e);
         }
 
-        try {
-            var list = searchAllObjects()
-                    .flatMapSequential(obj -> backupObject(obj, outDir), 4)
-                    .doOnNext(obj -> log.info("📦 Backed up: {}", extractTitle(obj).orElse(obj.get("id").asText())))
-                    .collectList()
-                    .doOnNext(res -> log.info("✅ Backup completed. {} objects.", res.size()))
-                    .doOnError(err -> log.error("❌ Backup failed", err))
-                    .block();
+        Mono<List<String>> pipeline = searchAllObjects()
+                .flatMapSequential(obj -> backupObject(obj, outDir), 4)
+                .map(obj -> obj.get("id").asText().replace("-", ""))
+                .collectList()
+                .flatMap(activeIds -> cleanupDeletedObjects(outDir, new HashSet<>(activeIds))
+                        .thenReturn(activeIds));
 
-            log.info("🔚 Finished backup, exiting. Objects: {}", list != null ? list.size() : 0);
-        } finally {
-            System.exit(0);
-        }
+        var activeIds = pipeline
+                .doOnNext(ids -> log.info("✅ Backup completed. {} objects.", ids.size()))
+                .doOnError(err -> log.error("❌ Backup pipeline failed", err))
+                .block();
+
+        log.info("🔚 Finished backup, exiting. Objects: {}", activeIds != null ? activeIds.size() : 0);
+        System.exit(0);
     }
 
+    /**
+     * --- Cleanup ---
+     */
+    private Mono<Void> cleanupDeletedObjects(Path outDir, Set<String> activeIds) {
+        return Mono.fromCallable(() -> Files.list(outDir))
+                .subscribeOn(Schedulers.boundedElastic())
+                .flatMapMany(Flux::fromStream)
+                .filter(Files::isDirectory)
+                .flatMap(path -> {
+                    Path pageJson = path.resolve("page.json");
+                    if (!Files.exists(pageJson)) return Mono.empty();
+
+                    return Mono.fromCallable(() -> mapper.readTree(Files.readString(pageJson)))
+                            .subscribeOn(Schedulers.boundedElastic())
+                            .map(root -> root.get("id").asText().replace("-", ""))
+                            .flatMap(id -> {
+                                if (!activeIds.contains(id)) {
+                                    log.info("🗑 Removing deleted page: {} (id={})", path, id);
+                                    return deleteRecursively(path);
+                                }
+                                return Mono.empty();
+                            })
+                            .onErrorResume(ex -> {
+                                log.warn("⚠ Could not parse {}: {}", pageJson, ex.toString());
+                                return Mono.empty();
+                            });
+                }, 4)
+                .then();
+    }
+
+    private Mono<Void> deleteRecursively(Path path) {
+        return Mono.fromCallable(() -> {
+                    try (Stream<Path> walker = Files.walk(path)) {
+                        walker.sorted(Comparator.reverseOrder())
+                                .forEach(p -> {
+                                    try {
+                                        Files.deleteIfExists(p);
+                                    } catch (IOException e) {
+                                        throw new RuntimeException("Failed to delete: " + p, e);
+                                    }
+                                });
+                    }
+                    return (Void) null;
+                })
+                .subscribeOn(Schedulers.boundedElastic())
+                .doOnError(e -> log.warn("⚠ Could not delete {}", path, e))
+                .onErrorResume(e -> Mono.empty());
+    }
+
+    /**
+     * --- Search API ---
+     */
     private Flux<JsonNode> searchAllObjects() {
-        var body = mapper.createObjectNode();
-        var sort = mapper.createObjectNode();
+        ObjectNode body = mapper.createObjectNode();
+        ObjectNode sort = mapper.createObjectNode();
         sort.put("direction", "descending");
         sort.put("timestamp", "last_edited_time");
         body.set("sort", sort);
@@ -86,45 +138,64 @@ class Main implements CommandLineRunner {
                 .retrieve()
                 .bodyToMono(JsonNode.class)
                 .flatMapMany(root -> {
-                    var results = root.get("results");
+                    JsonNode results = root.get("results");
                     return (results != null && results.isArray()) ? Flux.fromIterable(results) : Flux.empty();
                 });
     }
 
+    /**
+     * --- Backup ---
+     */
     private Mono<JsonNode> backupObject(JsonNode obj, Path outDir) {
-        var id = obj.get("id").asText().replace("-", "");
-        var title = extractTitle(obj).orElse(id);
-        var objDir = outDir.resolve(safeName(title));
+        String id = obj.get("id").asText();
+        String shortId = id.replace("-", "");
+        TitleResult titleResult = extractTitle(obj, shortId);
 
-        return Mono.fromRunnable(() -> {
-                    try {
-                        Files.createDirectories(objDir);
-                    } catch (IOException e) {
-                        throw new RuntimeException(e);
-                    }
-                })
-                .subscribeOn(Schedulers.boundedElastic())
-                .then(fetchBlockTree(id)
-                        .collectList()
-                        .flatMap(blocks -> Mono.fromRunnable(() -> {
-                            try {
-                                Files.writeString(objDir.resolve("page.json"),
-                                        mapper.writerWithDefaultPrettyPrinter().writeValueAsString(obj));
-                                Files.writeString(objDir.resolve("blocks.json"),
-                                        mapper.writerWithDefaultPrettyPrinter().writeValueAsString(blocks));
-                            } catch (IOException e) {
-                                throw new RuntimeException(e);
-                            }
-                        }).subscribeOn(Schedulers.boundedElastic()))
-                ).thenReturn(obj);
+        Path objDir = outDir.resolve(safeName(titleResult.title));
+
+        Mono<Void> mkdir = Mono.fromRunnable(() -> {
+            try {
+                Files.createDirectories(objDir);
+            } catch (IOException e) {
+                throw new RuntimeException(e);
+            }
+        }).subscribeOn(Schedulers.boundedElastic()).then();
+
+        Mono<List<JsonNode>> blocksMono = fetchBlockTree(shortId).collectList();
+
+        Mono<Void> writeFiles = blocksMono.flatMap(blocks -> Mono.fromRunnable(() -> {
+            try {
+                Files.writeString(objDir.resolve("page.json"),
+                        mapper.writerWithDefaultPrettyPrinter().writeValueAsString(obj));
+                Files.writeString(objDir.resolve("blocks.json"),
+                        mapper.writerWithDefaultPrettyPrinter().writeValueAsString(blocks));
+
+                ObjectNode meta = mapper.createObjectNode();
+                meta.put("id", id);
+                meta.put("shortId", shortId);
+                meta.put("title", titleResult.title);
+                meta.put("backup_time", Instant.now().toString());
+                meta.put("title_source", titleResult.source);
+
+                Files.writeString(objDir.resolve("meta.json"),
+                        mapper.writerWithDefaultPrettyPrinter().writeValueAsString(meta));
+            } catch (IOException e) {
+                throw new RuntimeException(e);
+            }
+        }).subscribeOn(Schedulers.boundedElastic())).then();
+
+        return mkdir.then(writeFiles).thenReturn(obj);
     }
 
+    /**
+     * --- Block Tree ---
+     */
     private Flux<JsonNode> fetchBlockTree(String parentId) {
         return fetchBlocksPage(parentId);
     }
 
     private Flux<JsonNode> fetchBlocksPage(String parentId) {
-        var uri = "/blocks/" + parentId + "/children?page_size=100";
+        String uri = "/blocks/" + parentId + "/children?page_size=100";
 
         return webClient.get()
                 .uri(uri)
@@ -132,22 +203,20 @@ class Main implements CommandLineRunner {
                 .bodyToMono(JsonNode.class)
                 .retryWhen(Retry.backoff(3, Duration.ofSeconds(1)))
                 .flatMapMany(root -> {
-                    var results = root.get("results");
-
+                    JsonNode results = root.get("results");
                     return (results != null && results.isArray())
-                            ? Flux.fromIterable(results)
-                            .flatMapSequential(this::enrichBlock, 2)
+                            ? Flux.fromIterable(results).flatMapSequential(this::enrichBlock, 2)
                             : Flux.empty();
                 });
     }
 
     private Mono<JsonNode> enrichBlock(JsonNode block) {
         if (block.path("has_children").asBoolean(false)) {
-            var childId = block.get("id").asText().replace("-", "");
+            String childId = block.get("id").asText().replace("-", "");
             return fetchBlockTree(childId)
                     .collectList()
                     .map(children -> {
-                        var enriched = mapper.createObjectNode();
+                        ObjectNode enriched = mapper.createObjectNode();
                         enriched.setAll((ObjectNode) block);
                         enriched.set("children", mapper.valueToTree(children));
                         return enriched;
@@ -156,8 +225,15 @@ class Main implements CommandLineRunner {
         return Mono.just(block);
     }
 
-    private Optional<String> extractTitle(JsonNode obj) {
-        return Optional.ofNullable(obj.get("properties"))
+    /**
+     * --- Utils ---
+     */
+    private record TitleResult(String title, String source) {
+    }
+
+    private TitleResult extractTitle(JsonNode obj, String shortId) {
+        // 1. Try properties.title
+        Optional<String> fromProps = Optional.ofNullable(obj.get("properties"))
                 .flatMap(node -> StreamSupport.stream(node.spliterator(), false)
                         .filter(prop -> prop.has("title"))
                         .map(prop -> prop.get("title"))
@@ -165,14 +241,25 @@ class Main implements CommandLineRunner {
                         .filter(arr -> !arr.isEmpty())
                         .map(arr -> arr.get(0).path("plain_text").asText(null))
                         .filter(Objects::nonNull)
-                        .findFirst())
-                .or(() -> Optional.ofNullable(obj.get("title"))
-                        .filter(JsonNode::isArray)
-                        .filter(arr -> !arr.isEmpty())
-                        .map(arr -> arr.get(0).path("plain_text").asText(null)));
+                        .findFirst());
+
+        if (fromProps.isPresent()) {
+            return new TitleResult(fromProps.get(), "properties.title");
+        }
+
+        // 2. Try obj.title
+        Optional<String> fromTitle = Optional.ofNullable(obj.get("title"))
+                .filter(JsonNode::isArray)
+                .filter(arr -> !arr.isEmpty())
+                .map(arr -> arr.get(0).path("plain_text").asText(null));
+
+        return fromTitle.map(s -> new TitleResult(s, "title")).orElseGet(() -> new TitleResult("untitled-" + shortId, "fallback"));
+
+        // 3. Fallback
     }
 
     private String safeName(String input) {
+        if (input == null) return "untitled";
         return input.replaceAll("[^a-zA-Z0-9-_.]", "_");
     }
 }
