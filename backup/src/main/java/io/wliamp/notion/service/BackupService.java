@@ -50,10 +50,8 @@ public class BackupService {
                         .flatMapSequential(obj -> backupNode(obj, outDir, token), 4)
                         .flatMap(commonService::safeId)
                         .collectList()
-                        .flatMap(ids -> {
-                            log.info("🧹 Cleaning up unused files in [{}], keeping {} objects", workspace, ids.size());
-                            return removeService.remove(outDir, new HashSet<>(ids));
-                        })
+                        .doOnNext(ids -> log.info("📌 Skipping cleanup, backed up {} objects in [{}]", ids.size(), workspace))
+                        .then()
                 )
                 .doOnError(e -> log.error("❌ Backup failed for [{}]", workspace, e))
                 .doOnSuccess(_ -> log.info("✅ Backup completed for [{}]", workspace));
