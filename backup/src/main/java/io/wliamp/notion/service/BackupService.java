@@ -137,7 +137,7 @@ public class BackupService {
         log.trace("➡️ POST /search with body {}", body);
         return webClient.post()
                 .uri("/search")
-                .header("Authorization", "Bearer " + mask(token))
+                .header("Authorization", "Bearer " + token)
                 .bodyValue(body)
                 .retrieve()
                 .bodyToMono(JsonNode.class)
