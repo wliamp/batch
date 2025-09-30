@@ -14,6 +14,7 @@ import java.util.Optional;
 
 import static io.wliamp.notion.compa.Utility.extractFirstPlainText;
 import static io.wliamp.notion.compa.Utility.generateCode;
+import static io.wliamp.notion.constant.Constant.INVALID;
 import static java.util.Optional.ofNullable;
 import static java.util.stream.StreamSupport.stream;
 import static reactor.core.publisher.Mono.*;
@@ -40,7 +41,7 @@ public class CommonService {
                 .map(s -> new Title(s, "properties.title"))
                 .orElseGet(() -> extractFirstPlainText(node.get("title"))
                         .map(s -> new Title(s, "title"))
-                        .orElseGet(() -> new Title("untitled-" + generateCode(8), "fallback"))))
+                        .orElseGet(() -> new Title(INVALID.getName() + "-" + generateCode(8), "fallback"))))
                 .doOnError(e -> log.error("❌ extractTitle() FAILED from node={}", node, e));
     }
 

@@ -8,10 +8,9 @@ import org.springframework.stereotype.Service;
 import reactor.core.publisher.Mono;
 
 import java.nio.file.Path;
-import java.nio.file.Paths;
-import java.util.HashSet;
 
 import static io.wliamp.notion.compa.Utility.*;
+import static io.wliamp.notion.constant.Constant.*;
 import static reactor.core.publisher.Flux.fromIterable;
 import static reactor.core.publisher.Mono.*;
 
@@ -22,7 +21,6 @@ public class BackupService {
     private final Director director;
 
     private final FetchService fetchService;
-    private final RemoveService removeService;
     private final SearchService searchService;
 
     private final CommonService commonService;
@@ -41,11 +39,7 @@ public class BackupService {
     private Mono<Void> backupWorkspace(String token, String workspace) {
         log.info("🚀 Starting backup for workspace [{}]", workspace);
 
-        var outPath = Paths
-                .get(System.getProperty("user.dir"))
-                .getParent()
-                .resolve("storage")
-                .resolve(workspace);
+        var outPath = DIR.getPath();
 
         log.info("📂 Storage directory path={}", outPath);
 
@@ -77,8 +71,8 @@ public class BackupService {
                         .flatMap(blocks ->
                                 pathService.createDir(objDir)
                                         .thenMany(
-                                                jsonService.create(objDir.resolve("meta.json"), node)
-                                                        .then(jsonService.create(objDir.resolve("blocks.json"), blocks))
+                                                jsonService.create(objDir.resolve(JSON1.getJson()), node)
+                                                        .then(jsonService.create(objDir.resolve(JSON2.getJson()), blocks))
                                         )
                                         .then(fromRunnable(() -> log.info("💾 Object [{}] written to {}", id, objDir)))
                         )

@@ -10,6 +10,7 @@ import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
 
+import static io.wliamp.notion.compa.Utility.mask;
 import static java.util.Arrays.stream;
 import static java.util.stream.Collectors.toMap;
 
@@ -32,7 +33,7 @@ public class Director {
                     String value = System.getenv(key);
                     log.warn(value == null || value.isBlank()
                             ? "⚠ Missing or blank token for Env [{}]"
-                            : "✅ Found token for Env [{}]", key);
+                            : "✅ Found token for Env [{}]", mask(key, 5));
                     return new SimpleEntry<>(key, value);
                 })
                 .filter(entry -> entry.getValue() != null && !entry.getValue().isBlank())
