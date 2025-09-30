@@ -1,7 +1,6 @@
 package io.wliamp.notion.service;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
-import io.wliamp.notion.CommonService;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
@@ -20,6 +19,8 @@ import static reactor.core.publisher.Mono.*;
 @RequiredArgsConstructor
 public class RemoveService {
     private final CommonService commonService;
+    private final PathService pathService;
+
     private final ObjectMapper mapper;
 
     public Mono<Void> remove(Path outDir, Set<String> activeIds) {
@@ -44,7 +45,7 @@ public class RemoveService {
                 .doOnSubscribe(sub -> log.debug("📄 Reading page.json in [{}]", dir))
                 .flatMap(commonService::safeId)
                 .filter(id -> !activeIds.contains(id))
-                .flatMap(id -> commonService.cleanRecursively(dir)
+                .flatMap(id -> pathService.cleanRecursively(dir)
                         .doOnSubscribe(sub -> log.info("🗑️ Directory [{}] (id={}) not active, cleaning up", dir, id))
                         .doOnSuccess(v -> log.debug("🧽 Directory [{}] cleaned", dir))
                 )

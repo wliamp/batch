@@ -1,4 +1,4 @@
-package io.wliamp.notion;
+package io.wliamp.notion.compa;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import lombok.experimental.UtilityClass;

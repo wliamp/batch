@@ -1,4 +1,4 @@
-package io.wliamp.notion;
+package io.wliamp.notion.compo;
 
 import lombok.Getter;
 import lombok.extern.slf4j.Slf4j;
