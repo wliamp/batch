@@ -72,8 +72,10 @@ public class BackupService {
                         .doOnNext(blocks -> log.info("📦 Fetched {} blocks for [{}]", blocks.size(), id))
                         .flatMap(blocks ->
                                 pathService.createDir(objDir)
-                                        .then(jsonService.create(objDir.resolve("meta.json"), node))
-                                        .then(jsonService.create(objDir.resolve("blocks.json"), blocks))
+                                        .thenMany(
+                                                jsonService.create(objDir.resolve("meta.json"), node)
+                                                        .then(jsonService.create(objDir.resolve("blocks.json"), blocks))
+                                        )
                                         .then(fromRunnable(() -> log.info("💾 Object [{}] written to {}", id, objDir)))
                         )
                         .thenReturn(node);
