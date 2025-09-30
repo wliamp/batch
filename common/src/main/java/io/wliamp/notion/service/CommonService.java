@@ -57,7 +57,7 @@ public class CommonService {
                             || parentId != null && !parentExists
                             || archived;
 
-                    log.debug("🔎 Checking orphan: workspaceId={}, parentId={}, archived={}, parentExists={}, orphan={}",
+                    log.info("🔎 Checking orphan: workspaceId={}, parentId={}, archived={}, parentExists={}, orphan={}",
                             workspaceId, parentId, archived, parentExists, orphan);
 
                     return orphan;

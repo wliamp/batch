@@ -31,7 +31,7 @@ public class JsonService {
                             return path;
                         })
                         .subscribeOn(boundedElastic()))
-                .doOnSuccess(p -> log.debug("📝 {} created", p))
+                .doOnSuccess(p -> log.info("📝 {} created", p))
                 .doOnError(e -> log.error("❌ JSON create() FAILED for path={}", path, e))
                 .then();
     }

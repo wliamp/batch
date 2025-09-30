@@ -38,7 +38,7 @@ public class PathService {
 
     public Mono<Path> createDir(Path path) {
         return fromCallable(() -> createDirectories(path))
-                .doOnSuccess(p -> log.debug("📂 Directory created at {}", p.toAbsolutePath()))
+                .doOnSuccess(p -> log.info("📂 Directory created at {}", p.toAbsolutePath()))
                 .doOnError(e -> log.error("❌ createDir() FAILED for path={}", path, e));
     }
 
