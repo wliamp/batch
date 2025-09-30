@@ -41,7 +41,10 @@ public class BackupService {
     private Mono<Void> backupWorkspace(String token, String workspace) {
         log.info("🚀 Starting backup for workspace [{}]", workspace);
 
-        var outPath = Paths.get("storage", workspace);
+        var outPath = Paths.get("", "storage", workspace).toAbsolutePath();
+
+        log.info("📂 user.dir = {}", System.getProperty("user.dir"));
+        log.info("📂 outPath = {}", outPath.toAbsolutePath());
 
         return pathService.createDir(outPath)
                 .doOnSubscribe(sub -> log.info("📂 Preparing output directory for [{}]", workspace))
