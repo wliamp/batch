@@ -10,21 +10,22 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.reactive.function.client.WebClient;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
-import reactor.core.scheduler.Schedulers;
 
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
-import java.util.stream.Stream;
 
 import static io.wliamp.notion.util.Extractor.*;
 import static io.wliamp.notion.util.Safer.*;
 import static java.nio.file.Files.*;
 import static java.nio.file.Paths.get;
+import static java.util.Comparator.*;
 import static reactor.core.publisher.Flux.*;
 import static reactor.core.publisher.Mono.*;
+import static reactor.core.scheduler.Schedulers.*;
 
 @Service
 @Slf4j
@@ -100,7 +101,7 @@ public class BackupService {
     // --- Fetch Block Tree ---
     private Flux<JsonNode> fetchBlockTree(String parentId, String token) {
         log.trace("➡️ Fetching block tree for [{}]", parentId);
-        return requestGet("/blocks/" + parentId + "/children?page_size=100", token)
+        return requestGet(token, parentId)
                 .flatMapMany(root -> {
                     var results = asFlux(root.get("results"));
                     log.debug("⬅️ [{}] fetched {} child blocks",
@@ -122,15 +123,15 @@ public class BackupService {
     }
 
     // --- Helpers ---
-    private Mono<JsonNode> requestGet(String uri, String token) {
-        log.trace("➡️ GET {}", uri);
+    private Mono<JsonNode> requestGet(String token, String parentId) {
+        log.trace("➡️ GET /blocks with parentId {}", mask(parentId));
         return webClient.get()
-                .uri(uri)
+                .uri("/blocks/" + parentId + "/children?page_size=100")
                 .header("Authorization", "Bearer " + mask(token))
                 .retrieve()
                 .bodyToMono(JsonNode.class)
-                .doOnSuccess(resp -> log.trace("⬅️ GET {} completed", uri))
-                .doOnError(err -> log.error("❌ GET {} failed", uri, err));
+                .doOnSuccess(resp -> log.trace("⬅️ GET {} completed", parentId))
+                .doOnError(err -> log.error("❌ GET {} failed", parentId, err));
     }
 
     private Mono<JsonNode> requestPost(String token, Object body) {
@@ -149,50 +150,53 @@ public class BackupService {
         return results == null || !results.isArray() ? Flux.empty() : fromIterable(results);
     }
 
-    public static Mono<Void> createDir(Path dir) {
+    private Mono<Void> createDir(Path dir) {
         return fromRunnable(() -> {
             try {
                 createDirectories(dir);
                 log.trace("📁 Created directory {}", dir);
             } catch (IOException e) {
                 log.error("❌ Failed to create directory {}", dir, e);
-                throw new RuntimeException(e);
             }
-        }).subscribeOn(Schedulers.boundedElastic()).then();
+        }).subscribeOn(boundedElastic())
+                .onErrorResume(err -> {
+                    log.warn("⚠️ Ignored error while creating {}", dir, err);
+                    return Mono.empty();
+                })
+                .then();
     }
 
-    public static Mono<Void> writeFiles(ObjectMapper mapper,
+    private Mono<Void> writeFiles(ObjectMapper mapper,
                                         Path dir,
                                         JsonNode obj,
-                                        java.util.List<JsonNode> blocks) {
+                                        List<JsonNode> blocks) {
         return fromRunnable(() -> {
             try {
-                writeString(
-                        dir.resolve("page.json"),
+                writeString(dir.resolve("page.json"),
                         mapper.writerWithDefaultPrettyPrinter().writeValueAsString(obj));
-                writeString(
-                        dir.resolve("blocks.json"),
+                writeString(dir.resolve("blocks.json"),
                         mapper.writerWithDefaultPrettyPrinter().writeValueAsString(blocks));
                 log.trace("💾 Wrote files for {}", dir);
             } catch (IOException e) {
                 log.error("❌ Failed to write files for {}", dir, e);
-                throw new RuntimeException(e);
             }
-        }).subscribeOn(Schedulers.boundedElastic()).then();
+        }).subscribeOn(boundedElastic())
+                .onErrorResume(err -> {
+                    log.warn("⚠️ Ignored error while writing {}", dir, err);
+                    return Mono.empty();
+                })
+                .then();
     }
 
     private Mono<Void> checkAndDelete(ObjectMapper mapper, Path dir, Set<String> activeIds) {
         var pageJson = dir.resolve("page.json");
         return exists(pageJson) ? fromCallable(() -> mapper.readTree(readString(pageJson)))
-                .subscribeOn(Schedulers.boundedElastic())
+                .subscribeOn(boundedElastic())
                 .map(root -> root.get("id").asText().replace("-", ""))
                 .flatMap(id -> {
-                    if (activeIds.contains(id)) {
-                        return Mono.empty();
-                    } else {
-                        log.info("🗑️ Deleting orphaned object [{}] at {}", id, dir);
-                        return deleteRecursively(dir);
-                    }
+                    if (activeIds.contains(id)) return Mono.empty();
+                    log.info("🗑️ Deleting orphaned object [{}] at {}", id, dir);
+                    return deleteRecursively(dir);
                 })
                 .onErrorResume(err -> {
                     log.warn("⚠️ Could not check/delete dir {}", dir, err);
@@ -201,27 +205,24 @@ public class BackupService {
     }
 
     private static Mono<Void> deleteRecursively(Path path) {
-        Mono<Void> voidMono = fromCallable(() -> {
-            try (Stream<Path> walker = walk(path)) {
-                walker.sorted(java.util.Comparator.reverseOrder())
+        return fromCallable(() -> {
+            try (var walker = walk(path)) {
+                walker.sorted(reverseOrder())
                         .forEach(p -> {
                             try {
                                 deleteIfExists(p);
                                 log.trace("🗑️ Deleted {}", p);
                             } catch (IOException e) {
                                 log.error("❌ Failed to delete {}", p, e);
-                                throw new RuntimeException("Failed to delete: " + p, e);
                             }
                         });
             }
             return null;
-        });
-        voidMono
-                .subscribeOn(Schedulers.boundedElastic())
+        }).subscribeOn(boundedElastic())
                 .onErrorResume(err -> {
                     log.warn("⚠️ Delete failed for {}", path, err);
                     return Mono.empty();
-                });
-        return voidMono;
+                })
+                .then();
     }
 }
