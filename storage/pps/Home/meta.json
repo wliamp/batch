@@ -1,0 +1,122 @@
+{
+  "object" : "database",
+  "id" : "277f521e-2b70-8004-8473-f06ca9926420",
+  "cover" : {
+    "type" : "external",
+    "external" : {
+      "url" : "https://images.unsplash.com/photo-1524758631624-e2822e304c36?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb"
+    }
+  },
+  "icon" : {
+    "type" : "emoji",
+    "emoji" : "🏠"
+  },
+  "created_time" : "2025-09-23T18:43:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_time" : "2025-09-30T17:33:00.000Z",
+  "title" : [ {
+    "type" : "text",
+    "text" : {
+      "content" : "Home",
+      "link" : null
+    },
+    "annotations" : {
+      "bold" : false,
+      "italic" : false,
+      "strikethrough" : false,
+      "underline" : false,
+      "code" : false,
+      "color" : "default"
+    },
+    "plain_text" : "Home",
+    "href" : null
+  } ],
+  "description" : [ ],
+  "is_inline" : false,
+  "properties" : {
+    "Tags" : {
+      "id" : "%3Ckwj",
+      "name" : "Tags",
+      "description" : null,
+      "type" : "multi_select",
+      "multi_select" : {
+        "options" : [ {
+          "id" : "14d4ed7e-bb81-4983-98f1-bc3cc72b2220",
+          "name" : "Onboarding",
+          "color" : "blue",
+          "description" : null
+        }, {
+          "id" : "0a5df00b-8d4c-4921-8490-df595f1307aa",
+          "name" : "HR",
+          "color" : "green",
+          "description" : null
+        }, {
+          "id" : "b7f936bc-5140-4ee4-8483-b8eae4acc04d",
+          "name" : "Policies",
+          "color" : "gray",
+          "description" : null
+        }, {
+          "id" : "f8d74e0b-7e6d-419f-aa4c-2cdfcb4418ce",
+          "name" : "Vision",
+          "color" : "brown",
+          "description" : null
+        }, {
+          "id" : "ad684e24-cec1-4fbb-96be-a82a65df983c",
+          "name" : "Company Updates",
+          "color" : "pink",
+          "description" : null
+        } ]
+      }
+    },
+    "Created time" : {
+      "id" : "HqX%3F",
+      "name" : "Created time",
+      "description" : null,
+      "type" : "created_time",
+      "created_time" : { }
+    },
+    "Last edited time" : {
+      "id" : "OJYA",
+      "name" : "Last edited time",
+      "description" : null,
+      "type" : "last_edited_time",
+      "last_edited_time" : { }
+    },
+    "Verification" : {
+      "id" : "fpVq",
+      "name" : "Verification",
+      "description" : null,
+      "type" : "verification",
+      "verification" : { }
+    },
+    "Page" : {
+      "id" : "title",
+      "name" : "Page",
+      "description" : null,
+      "type" : "title",
+      "title" : { }
+    },
+    "Owner" : {
+      "id" : "notion%3A%2F%2Fwiki%2Fowner_property",
+      "name" : "Owner",
+      "description" : null,
+      "type" : "people",
+      "people" : { }
+    }
+  },
+  "parent" : {
+    "type" : "workspace",
+    "workspace" : true
+  },
+  "url" : "https://www.notion.so/277f521e2b7080048473f06ca9926420",
+  "public_url" : null,
+  "archived" : false,
+  "in_trash" : false
+}

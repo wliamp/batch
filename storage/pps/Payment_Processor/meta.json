@@ -1,0 +1,78 @@
+{
+  "object" : "page",
+  "id" : "277f521e-2b70-800e-b613-c2dba497079d",
+  "created_time" : "2025-09-23T22:57:00.000Z",
+  "last_edited_time" : "2025-09-28T03:28:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "cover" : null,
+  "icon" : {
+    "type" : "emoji",
+    "emoji" : "⚙️"
+  },
+  "parent" : {
+    "type" : "database_id",
+    "database_id" : "277f521e-2b70-80d8-ae3f-f3a85c65d99f"
+  },
+  "archived" : false,
+  "in_trash" : false,
+  "is_locked" : false,
+  "properties" : {
+    "Theme" : {
+      "id" : "VU%5CH",
+      "type" : "select",
+      "select" : {
+        "id" : "c6c22506-937b-4cdb-8e92-e0a677e39325",
+        "name" : "Actors",
+        "color" : "blue"
+      }
+    },
+    "Alias" : {
+      "id" : "ptl_",
+      "type" : "select",
+      "select" : {
+        "id" : "e5b8066d-8014-4fe0-a5b9-5d1231cbb2d7",
+        "name" : "Processor",
+        "color" : "default"
+      }
+    },
+    "Role" : {
+      "id" : "zYvc",
+      "type" : "select",
+      "select" : {
+        "id" : "db7d926e-0177-46b9-a6d3-78dda94e33ca",
+        "name" : "Core",
+        "color" : "green"
+      }
+    },
+    "Name" : {
+      "id" : "title",
+      "type" : "title",
+      "title" : [ {
+        "type" : "text",
+        "text" : {
+          "content" : "Payment Processor",
+          "link" : null
+        },
+        "annotations" : {
+          "bold" : false,
+          "italic" : false,
+          "strikethrough" : false,
+          "underline" : false,
+          "code" : false,
+          "color" : "default"
+        },
+        "plain_text" : "Payment Processor",
+        "href" : null
+      } ]
+    }
+  },
+  "url" : "https://www.notion.so/Payment-Processor-277f521e2b70800eb613c2dba497079d",
+  "public_url" : null
+}

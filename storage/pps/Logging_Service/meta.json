@@ -1,0 +1,78 @@
+{
+  "object" : "page",
+  "id" : "27cf521e-2b70-804f-a106-feba2189de34",
+  "created_time" : "2025-09-28T02:41:00.000Z",
+  "last_edited_time" : "2025-09-28T03:29:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "cover" : null,
+  "icon" : {
+    "type" : "emoji",
+    "emoji" : "📜"
+  },
+  "parent" : {
+    "type" : "database_id",
+    "database_id" : "277f521e-2b70-80d8-ae3f-f3a85c65d99f"
+  },
+  "archived" : false,
+  "in_trash" : false,
+  "is_locked" : false,
+  "properties" : {
+    "Theme" : {
+      "id" : "VU%5CH",
+      "type" : "select",
+      "select" : {
+        "id" : "c6c22506-937b-4cdb-8e92-e0a677e39325",
+        "name" : "Actors",
+        "color" : "blue"
+      }
+    },
+    "Alias" : {
+      "id" : "ptl_",
+      "type" : "select",
+      "select" : {
+        "id" : "7dc140fc-5d93-41f6-95fb-4df0d435ba61",
+        "name" : "Logger",
+        "color" : "blue"
+      }
+    },
+    "Role" : {
+      "id" : "zYvc",
+      "type" : "select",
+      "select" : {
+        "id" : "48bd25fe-374e-412d-a245-10a7536488dd",
+        "name" : "Infra",
+        "color" : "brown"
+      }
+    },
+    "Name" : {
+      "id" : "title",
+      "type" : "title",
+      "title" : [ {
+        "type" : "text",
+        "text" : {
+          "content" : "Logging Service",
+          "link" : null
+        },
+        "annotations" : {
+          "bold" : false,
+          "italic" : false,
+          "strikethrough" : false,
+          "underline" : false,
+          "code" : false,
+          "color" : "default"
+        },
+        "plain_text" : "Logging Service",
+        "href" : null
+      } ]
+    }
+  },
+  "url" : "https://www.notion.so/Logging-Service-27cf521e2b70804fa106feba2189de34",
+  "public_url" : null
+}
