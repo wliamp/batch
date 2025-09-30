@@ -73,7 +73,8 @@ public class BackupService {
                                 pathService.createDir(objDir)
                                         .then(jsonService.create(objDir.resolve("meta.json"), node))
                                         .then(jsonService.create(objDir.resolve("blocks.json"), blocks))
-                                        .doOnSuccess(v -> log.info("💾 Object [{}] written to {}", id, objDir)))
+                                        .then(Mono.fromRunnable(() -> log.info("💾 Object [{}] written to {}", id, objDir)))
+                        )
                         .thenReturn(node);
             });
         });
