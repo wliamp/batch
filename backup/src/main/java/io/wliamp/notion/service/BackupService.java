@@ -13,6 +13,7 @@ import java.util.HashSet;
 
 import static io.wliamp.notion.compa.Utility.*;
 import static reactor.core.publisher.Flux.fromIterable;
+import static reactor.core.publisher.Mono.*;
 
 @Service
 @Slf4j
@@ -43,37 +44,37 @@ public class BackupService {
         var outPath = Paths.get("storage", workspace);
 
         return pathService.createDir(outPath)
-                .doOnSubscribe(sub -> log.debug("📂 Preparing output directory for [{}]", workspace))
+                .doOnSubscribe(sub -> log.info("📂 Preparing output directory for [{}]", workspace))
                 .flatMap(outDir -> searchService.search(token)
                         .doOnSubscribe(sub -> log.info("🔍 Searching objects in workspace [{}]", workspace))
                         .flatMapSequential(obj -> backupNode(obj, outDir, token), 4)
                         .flatMap(commonService::safeId)
                         .collectList()
                         .flatMap(ids -> {
-                            log.debug("🧹 Cleaning up unused files in [{}], keeping {} objects", workspace, ids.size());
+                            log.info("🧹 Cleaning up unused files in [{}], keeping {} objects", workspace, ids.size());
                             return removeService.remove(outDir, new HashSet<>(ids));
                         })
                 )
-                .doOnError(err -> log.error("❌ Backup failed for [{}]", workspace, err))
+                .doOnError(e -> log.error("❌ Backup failed for [{}]", workspace, e))
                 .doOnSuccess(_ -> log.info("✅ Backup completed for [{}]", workspace));
     }
 
     private Mono<JsonNode> backupNode(JsonNode node, Path outDir, String token) {
         return commonService.safeId(node).flatMap(id -> {
-            log.debug("📄 Processing object [{}]", id);
+            log.info("📄 Processing object [{}]", id);
             return commonService.extractTitle(node).flatMap(title -> {
                 var objDir = outDir.resolve(safeName(title.name()));
                 log.info("➡️ Backing up object [{}] with title [{}]", id, title.name());
 
                 return fetchService.fetch(id, token)
-                        .doOnSubscribe(sub -> log.debug("📥 Fetching block tree for [{}]", id))
+                        .doOnSubscribe(sub -> log.info("📥 Fetching block tree for [{}]", id))
                         .collectList()
-                        .doOnNext(blocks -> log.debug("📦 Fetched {} blocks for [{}]", blocks.size(), id))
+                        .doOnNext(blocks -> log.info("📦 Fetched {} blocks for [{}]", blocks.size(), id))
                         .flatMap(blocks ->
                                 pathService.createDir(objDir)
                                         .then(jsonService.create(objDir.resolve("meta.json"), node))
                                         .then(jsonService.create(objDir.resolve("blocks.json"), blocks))
-                                        .then(Mono.fromRunnable(() -> log.info("💾 Object [{}] written to {}", id, objDir)))
+                                        .then(fromRunnable(() -> log.info("💾 Object [{}] written to {}", id, objDir)))
                         )
                         .thenReturn(node);
             });

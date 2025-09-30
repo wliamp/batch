@@ -29,7 +29,7 @@ public class RemoveService {
         return fromCallable(() -> list(outDir))
                 .flatMapMany(Flux::fromStream)
                 .filter(Files::isDirectory)
-                .doOnNext(dir -> log.debug("🔎 Scanning directory [{}]", dir))
+                .doOnNext(dir -> log.info("🔎 Scanning directory [{}]", dir))
                 .flatMap(dir -> scanPageJson(dir, activeIds))
                 .then()
                 .doOnSuccess(v -> log.info("✅ Cleanup completed in [{}]", outDir))
@@ -37,20 +37,20 @@ public class RemoveService {
     }
 
     private Mono<Void> scanPageJson(Path dir, Set<String> activeIds) {
-        var pageJson = dir.resolve("page.json");
+        var pageJson = dir.resolve("meta.json");
 
         return defer(() -> !exists(pageJson)
                         ? empty()
                         : fromCallable(() -> mapper.readTree(readString(pageJson))))
-                .doOnSubscribe(sub -> log.debug("📄 Reading page.json in [{}]", dir))
+                .doOnSubscribe(sub -> log.info("📄 Reading meta.json in [{}]", dir))
                 .flatMap(commonService::safeId)
                 .filter(id -> !activeIds.contains(id))
                 .flatMap(id -> pathService.cleanRecursively(dir)
                         .doOnSubscribe(sub -> log.info("🗑️ Directory [{}] (id={}) not active, cleaning up", dir, id))
-                        .doOnSuccess(v -> log.debug("🧽 Directory [{}] cleaned", dir))
+                        .doOnSuccess(v -> log.info("🧽 Directory [{}] cleaned", dir))
                 )
                 .switchIfEmpty(fromRunnable(() ->
-                        log.debug("✅ Directory [{}] is still active or has no page.json, skipping", dir)
+                        log.info("✅ Directory [{}] is still active or has no meta.json, skipping", dir)
                 ))
                 .doOnError(e -> log.error("❌ Failed to process [{}]", dir, e));
     }

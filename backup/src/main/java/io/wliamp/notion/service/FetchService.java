@@ -16,21 +16,21 @@ public class FetchService {
     private final WebClient webClient;
 
     public Flux<JsonNode> fetch(String parentId, String token) {
-        log.debug("📥 Fetching children blocks for parentId={}", parentId);
+        log.info("📥 Fetching children blocks for parentId={}", parentId);
 
         return webClient.get()
                 .uri("/blocks/{id}/children?page_size=100", parentId)
                 .header("Authorization", "Bearer " + token)
                 .retrieve()
                 .bodyToMono(JsonNode.class)
-                .doOnNext(root -> log.debug("📦 Raw fetch response for [{}]: has 'results'={}",
+                .doOnNext(root -> log.info("📦 Raw fetch response for [{}]: has 'results'={}",
                         parentId, root.has("results")))
                 .flatMapMany(root -> {
                     var results = root.get("results");
 
                     return results != null && results.isArray()
                             ? fromIterable(results)
-                            .doOnSubscribe(s -> log.debug("📥 Processing children for [{}]", parentId))
+                            .doOnSubscribe(s -> log.info("📥 Processing children for [{}]", parentId))
                             .doOnComplete(() -> log.info("✅ Fetched {} blocks for parentId={}", results.size(), parentId))
                             : Flux.<JsonNode>empty()
                             .doOnSubscribe(s -> log.warn("⚠️ No results array in fetch response for [{}]", parentId));
