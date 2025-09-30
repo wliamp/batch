@@ -9,7 +9,7 @@ import org.springframework.web.reactive.function.client.WebClient;
 public class WebClientConfig {
 
     @Bean
-    public WebClient notionWebClient() {
+    public WebClient notionApi() {
         return WebClient.builder()
                 .baseUrl("https://api.notion.com/v1")
                 .defaultHeader("Notion-Version", "2022-06-28")
