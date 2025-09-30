@@ -8,6 +8,8 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.reactive.function.client.WebClient;
 import reactor.core.publisher.Flux;
 
+import static reactor.core.publisher.Flux.*;
+
 @Service
 @Slf4j
 @RequiredArgsConstructor
@@ -16,6 +18,8 @@ public class SearchService {
     private final ObjectMapper mapper;
 
     public Flux<JsonNode> search(String token) {
+        log.debug("🔍 Searching Notion workspace");
+
         var body = mapper.createObjectNode();
         body.set("sort", mapper.createObjectNode()
                 .put("direction", "descending")
@@ -28,12 +32,19 @@ public class SearchService {
                 .bodyValue(body)
                 .retrieve()
                 .bodyToMono(JsonNode.class)
+                .doOnNext(root -> log.debug("📦 Raw search response: has 'results'={}", root.has("results")))
                 .flatMapMany(root -> {
                     var results = root.get("results");
-                    return results == null || !results.isArray()
-                            ? Flux.empty()
-                            : Flux.fromIterable(results);
-                });
+
+                    return results != null && results.isArray()
+                            ? fromIterable(results)
+                            .doOnSubscribe(s -> log.debug("🔍 Processing results array"))
+                            .doOnNext(r -> log.trace("➡️ Result item: {}", r))
+                            .doOnComplete(() -> log.info("✅ Search returned {} objects", results.size()))
+                            : Flux.<JsonNode>empty()
+                            .doOnSubscribe(s -> log.warn("⚠️ No results array in search response"));
+                })
+                .doOnError(e -> log.error("❌ Search request failed", e));
     }
 }
 
