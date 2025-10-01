@@ -7,13 +7,7 @@ on:
 
 jobs:
   cleanup:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout Repo
-        uses: actions/checkout@v4
-
-      - name: Commit & Push
-        uses: ./.github/actions/git-commit
-        with:
-          module: "pps"
-          scope: "cleanup"
+    uses: ./.github/workflows/commit-push.yml
+    with:
+      module: "pps"
+      scope: "cleanup"
