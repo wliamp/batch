@@ -9,5 +9,6 @@ jobs:
   cleanup:
     uses: ./.github/workflows/commit-push.yml
     with:
+      PAT: ${secrets.PAT}
       module: "pps"
       scope: "cleanup"
