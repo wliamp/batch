@@ -52,9 +52,13 @@ jobs:
             || echo "✅ No changes to commit"
 
           echo "Remote about to add:"
-          echo "https://x-access-token:${PAT}@github.com/wliamp/notion-storage-pps.git" | sed 's/[0-9a-z]\{20,\}/***/g'
+          echo "https://wliamp:${PAT}@github.com/wliamp/notion-storage-${{ inputs.module }}.git" | sed 's/[0-9a-z]\{20,\}/***/g'
+
+          # tạo branch chỉ chứa nội dung storage/
+          git subtree split --prefix storage -b storage-branch
+
+          git remote add storage "https://wliamp:${PAT}@github.com/wliamp/notion-storage-${{ inputs.module }}.git"
+          git push --force storage storage-branch:main
+
+          git branch -D storage-branch
       
-          git remote add storage "https://x-access-token:${PAT}@github.com/wliamp/notion-storage-pps.git"
-          git remote -v
-      
-          git push storage storage-branch:main
