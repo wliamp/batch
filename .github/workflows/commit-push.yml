@@ -57,8 +57,14 @@ jobs:
           # tạo branch chỉ chứa nội dung storage/
           git subtree split --prefix storage -b storage-branch
 
+          # đảm bảo remote không còn bot token
+          git remote remove storage || true
           git remote add storage "https://wliamp:${PAT}@github.com/wliamp/notion-storage-${{ inputs.module }}.git"
+          git remote -v
+
+          # push sang main bằng PAT cá nhân
           git push --force storage storage-branch:main
 
           git branch -D storage-branch
+      
       
