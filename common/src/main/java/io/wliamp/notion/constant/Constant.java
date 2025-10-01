@@ -16,14 +16,15 @@ public enum Constant {
 
     private final String name;
 
-    public Path getPath(){
+    public Path getPath(String workspace) {
         return Paths
                 .get(System.getProperty("user.dir"))
                 .getParent()
-                .resolve(name);
+                .resolve(name)
+                .resolve(workspace);
     }
 
-    public String getJson(){
+    public String getJson() {
         return name + ".json";
     }
 }
