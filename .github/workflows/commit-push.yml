@@ -25,7 +25,9 @@ jobs:
 
       - name: Debug PAT
         run: |
-          echo "PAT length ${{ secrets.PAT }}"
+          echo "PAT length: ${#PAT}"
+        env:
+          PAT: ${{ secrets.PAT }}
 
       - name: Test PAT with git ls-remote
         run: |
