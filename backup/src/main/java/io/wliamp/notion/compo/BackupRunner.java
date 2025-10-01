@@ -14,7 +14,7 @@ public class BackupRunner implements CommandLineRunner {
 
     @Override
     public void run(String... args) {
-        backupService.backup().block();
+        backupService.backup();
         System.exit(0);
     }
 }

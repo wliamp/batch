@@ -1,16 +1,16 @@
 package io.wliamp.notion.service;
 
-import io.wliamp.notion.compo.Director;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 import reactor.core.publisher.Mono;
 
 import java.nio.file.Path;
-import java.util.List;
 
 import static io.wliamp.notion.constant.Constant.*;
 import static reactor.core.publisher.Mono.*;
+import static reactor.core.publisher.Mono.empty;
+import static reactor.core.publisher.Mono.fromRunnable;
 
 @Service
 @Slf4j
@@ -18,76 +18,67 @@ import static reactor.core.publisher.Mono.*;
 public class CleanupService {
     private final CommonService commonService;
     private final PathService pathService;
-    private final Director director;
     private final JsonService jsonService;
 
-    public Mono<Void> cleanup() {
-        return pathService.exists(DIR.getPath())
+    public void cleanup() {
+        var root = DIR.getPath();
+
+        log.info("🚀 Starting cleanup repo {}", root);
+
+        pathService.exists(root)
                 .filter(Boolean::booleanValue)
-                .flatMapMany(_ -> pathService.list(DIR.getPath()))
-                .flatMap(workspace -> cleanDir(workspace, director.getDirectories()))
+                .flatMapMany(_ -> pathService.list(root))
+                .flatMap(this::cleanObjectDir)
                 .then()
                 .switchIfEmpty(fromRunnable(() ->
-                        log.warn("⚠ Storage folder not found at {}", DIR.getPath().toAbsolutePath()))
-                )
+                        log.warn("⚠ Root folder not found at {}", root.toAbsolutePath())))
                 .doOnSuccess(v -> log.info("🎉 CLEANUP completed successfully"))
-                .doOnError(e -> log.error("🔥 CLEANUP failed", e));
+                .doOnError(e -> log.error("🔥 CLEANUP failed", e))
+                .block();
     }
 
-    private Mono<Void> cleanDir(Path dir, List<String> validDirs) {
-        var folderName = dir.getFileName().toString();
-
+    private Mono<Void> cleanObjectDir(Path dir) {
         return pathService.isDir(dir)
-                .flatMap(isDir -> !isDir
-                        ? pathService.removeFile(dir)
-                        : !validDirs.contains(folderName)
-                        ? pathService.cleanRecursively(dir).doOnSubscribe(s -> log.info("🗑 Deleting invalid workspace: {}", folderName))
-                        : pathService.list(dir)
-                        .flatMap(this::cleanSubDir)
-                        .then()
-                        .doOnSubscribe(s -> log.info("✅ Keeping valid workspace: {}", folderName)));
+                .flatMap(isDir -> isDir
+                        ? handleDir(dir, dir.getFileName().toString())
+                        : pathService.removeFile(dir)
+                        .doOnSubscribe(_ -> log.info("🗑 Removing stray file: {}", dir))
+                );
     }
 
-    private Mono<Void> cleanSubDir(Path folder) {
-        var folderName = folder.getFileName().toString();
+    private Mono<Void> handleDir(Path dir, String name) {
+        return just(name)
+                .filter(n -> n.startsWith(INVALID.getName()))
+                .flatMap(n -> pathService.cleanRecursively(dir)
+                        .doOnSubscribe(_ -> log.info("🗑 Removing untitled folder: {}", n)))
+                .switchIfEmpty(
+                        pathService.list(dir)
+                                .flatMap(file -> pathService.isDir(file)
+                                        .flatMap(isDir2 -> isDir2
+                                                ? pathService.cleanRecursively(file)
+                                                .doOnSubscribe(s -> log.info("🗑 Unexpected subdirectory inside object, deleting: {}", file))
+                                                : cleanFile(file)))
+                                .then(cleanOrphan(dir))
+                );
+    }
 
-        return pathService.isDir(folder).flatMap(isDir -> !isDir
-                ? pathService
-                .removeFile(folder)
-                .doOnSubscribe(_ -> log.info("🗑 Removing stray file: {}", folder))
-                : folderName.startsWith(INVALID.getName())
-                ? pathService
-                .cleanRecursively(folder)
-                .doOnSubscribe(_ -> log.info("🗑 Removing untitled folder: {}", folderName))
-                : pathService.list(folder)
-                .flatMap(file -> pathService.isDir(file).flatMap(isDir2 -> {
-                    if (isDir2) return pathService.cleanRecursively(file)
-                            .doOnSubscribe(s -> log.info("🗑 Unexpected subdirectory inside object, deleting: {}", file));
-                    var name = file.getFileName().toString();
-                    return !(name.equals(JSON1.getJson()) || name.equals(JSON2.getJson()))
-                            ? pathService.removeFile(file)
-                            .doOnSubscribe(s -> log.info("🗑 Removing extra file: {}", name))
-                            : empty();
-                }))
-                .then(cleanOrphan(folder)));
+    private Mono<Void> cleanFile(Path file) {
+        return just(file.getFileName().toString())
+                .filter(n -> !(n.equals(JSON1.getJson()) || n.equals(JSON2.getJson())))
+                .flatMap(n -> pathService.removeFile(file)
+                        .doOnSubscribe(s -> log.info("🗑 Removing extra file: {}", n)))
+                .switchIfEmpty(empty());
     }
 
     private Mono<Void> cleanOrphan(Path objectDir) {
-        var metaPath = objectDir.resolve(JSON1.getJson());
-
-        return jsonService.read(metaPath)
-                .flatMap(node -> commonService
-                        .isOrphan(node, director.getDirectories(), objectDir.getParent()))
-                .flatMap(orphan -> orphan
-                        ? pathService
-                        .cleanRecursively(objectDir)
-                        .doOnSubscribe(s -> log.info("🗑 Deleting orphan folder: {}", objectDir))
-                        : empty())
+        return jsonService.read(objectDir.resolve(JSON1.getJson()))
+                .flatMap(node -> commonService.isOrphan(node, objectDir.getParent()))
+                .filter(Boolean::booleanValue)
+                .flatMap(_ -> pathService.cleanRecursively(objectDir)
+                        .doOnSubscribe(s -> log.info("🗑 Deleting orphan folder: {}", objectDir)))
                 .onErrorResume(e -> {
                     log.error("❌ Failed to process [{}]: {}", objectDir, e.getMessage());
                     return empty();
                 });
     }
 }
-
-

@@ -14,7 +14,7 @@ public class CleanupRunner implements CommandLineRunner {
 
     @Override
     public void run(String... args) {
-        CleanupService.cleanup().block();
+        CleanupService.cleanup();
         System.exit(0);
     }
 }

@@ -9,7 +9,6 @@ import org.springframework.stereotype.Service;
 import reactor.core.publisher.Mono;
 
 import java.nio.file.Path;
-import java.util.List;
 import java.util.Optional;
 
 import static io.wliamp.notion.compa.Utility.extractFirstPlainText;
@@ -45,21 +44,17 @@ public class CommonService {
                 .doOnError(e -> log.error("❌ extractTitle() FAILED from node={}", node, e));
     }
 
-    public Mono<Boolean> isOrphan(JsonNode node, List<String> dirs, Path dir) {
-        var workspaceId = node.path("workspace_id").asText(null);
+    public Mono<Boolean> isOrphan(JsonNode node, Path dir) {
         var parentId = node.path("parent_id").asText(null);
         var archived = node.path("archived").asBoolean(false);
         var parentPath = dir.resolve(ofNullable(parentId).orElse(""));
 
         return pathService.exists(parentPath)
                 .map(parentExists -> {
-                    var orphan = workspaceId == null
-                            || !dirs.contains(workspaceId)
-                            || parentId != null && !parentExists
-                            || archived;
+                    var orphan = !(parentId == null || parentExists) || archived;
 
-                    log.info("🔎 Checking orphan: workspaceId={}, parentId={}, archived={}, parentExists={}, orphan={}",
-                            workspaceId, parentId, archived, parentExists, orphan);
+                    log.info("🔎 Checking orphan: parentId={}, archived={}, parentExists={}, orphan={}",
+                            parentId, archived, parentExists, orphan);
 
                     return orphan;
                 })

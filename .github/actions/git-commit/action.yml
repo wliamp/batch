@@ -2,12 +2,12 @@ name: "Bot Commit & Push"
 description: "Commit and push changes with github-actions[bot]"
 
 inputs:
+  module:
+    required: true
+    description: "Notion Workspace name"
   scope:
     required: true
-    description: "Scope in Commit message"
-  pps:
-    required: true
-    description: "PPS Integration Notion token"
+    description: "Scope of Module"
 
 runs:
   using: "composite"
@@ -18,20 +18,19 @@ runs:
         distribution: 'temurin'
         java-version: '25'
 
-    - name: run ${{ inputs.scope }}
-      env:
-        PPS_INTEGRATION_NOTION: ${{ inputs.pps }}
+    - name: Run ${{ inputs.module }} ${{ inputs.scope }}
       run: ./gradlew :${{ inputs.scope }}:bootRun
       shell: bash
 
-    - name: commit & push
+    - name: Commit & Push
       run: |
         git config user.name "github-actions[bot]"
         git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
         git add storage/
         git commit \
           -m "chore(${{ inputs.scope }}): ${{ inputs.scope }} Notion JSONs at $(date -u +'%Y-%m-%d %H:%M:%S')" \
           -m "$(git diff --cached --name-status)" \
           || echo "✅ No changes to commit"
-        git push "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git"
+        git subtree push --prefix storage "https://x-access-token:${{ github.token }}@github.com/wliamp/notion-storage-${{ inputs.module }}.git"
       shell: bash

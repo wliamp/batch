@@ -1,0 +1,21 @@
+name: PPS Backup
+
+on:
+  schedule:
+    - cron: "0 */6 * * *"
+  workflow_dispatch:
+
+jobs:
+  backup:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v4
+
+      - name: Commit & Push
+        uses: ./.github/actions/git-commit
+        env:
+          NOTION_INTEGRATION_TOKEN: ${{ secrets.PPS_INTEGRATION_NOTION }}
+        with:
+          module: "pps"
+          scope: "backup"
