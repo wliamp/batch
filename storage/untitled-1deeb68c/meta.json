@@ -1,0 +1,79 @@
+{
+  "object" : "page",
+  "id" : "277f521e-2b70-8019-b02b-dca59f05c6c8",
+  "created_time" : "2025-09-23T23:02:00.000Z",
+  "last_edited_time" : "2025-09-23T23:02:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "cover" : null,
+  "icon" : {
+    "type" : "external",
+    "external" : {
+      "url" : "https://www.notion.so/icons/document_red.svg"
+    }
+  },
+  "parent" : {
+    "type" : "database_id",
+    "database_id" : "277f521e-2b70-803f-9d57-cb7922c9a8b1"
+  },
+  "archived" : false,
+  "in_trash" : false,
+  "is_locked" : false,
+  "properties" : {
+    "Author" : {
+      "id" : "%3Cc%3AH",
+      "type" : "people",
+      "people" : [ {
+        "object" : "user",
+        "id" : "277d872b-594c-815d-ac0f-00023df22fd2",
+        "name" : "William Phan",
+        "avatar_url" : null,
+        "type" : "person",
+        "person" : {
+          "email" : "phnam230197@gmail.com"
+        }
+      } ]
+    },
+    "Status" : {
+      "id" : "KKQe",
+      "type" : "status",
+      "status" : {
+        "id" : "7a53fda1-e88d-42e3-9967-51e71dd64b7f",
+        "name" : "Draft",
+        "color" : "default"
+      }
+    },
+    "Edited" : {
+      "id" : "%5CyfD",
+      "type" : "last_edited_time",
+      "last_edited_time" : "2025-09-23T23:02:00.000Z"
+    },
+    "Date" : {
+      "id" : "adz%40",
+      "type" : "date",
+      "date" : null
+    },
+    "Category" : {
+      "id" : "w%40ZD",
+      "type" : "multi_select",
+      "multi_select" : [ {
+        "id" : "9dac58be-47e8-4e6f-814b-c7e1a193ca3e",
+        "name" : "PRD",
+        "color" : "default"
+      } ]
+    },
+    "Title" : {
+      "id" : "title",
+      "type" : "title",
+      "title" : [ ]
+    }
+  },
+  "url" : "https://www.notion.so/277f521e2b708019b02bdca59f05c6c8",
+  "public_url" : null
+}
