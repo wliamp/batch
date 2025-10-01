@@ -23,6 +23,10 @@ jobs:
           distribution: temurin
           java-version: 25
 
+      - name: Debug PAT
+        run: |
+          echo "PAT length ${{ secrets.PAT }}"
+
       - name: Test PAT with git ls-remote
         run: |
           echo "🔎 Testing PAT against target repo..."
