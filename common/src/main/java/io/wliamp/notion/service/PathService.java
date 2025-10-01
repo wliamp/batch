@@ -11,7 +11,7 @@ import java.util.stream.BaseStream;
 
 import static java.nio.file.Files.*;
 import static java.util.Comparator.reverseOrder;
-import static reactor.core.publisher.Flux.fromStream;
+import static reactor.core.publisher.Flux.*;
 import static reactor.core.publisher.Mono.fromCallable;
 import static reactor.core.scheduler.Schedulers.boundedElastic;
 
@@ -19,7 +19,7 @@ import static reactor.core.scheduler.Schedulers.boundedElastic;
 @Slf4j
 public class PathService {
     public Flux<Path> list(Path path) {
-        return Flux.using(
+        return using(
                 () -> Files.list(path),
                 Flux::fromStream,
                 BaseStream::close
@@ -42,11 +42,14 @@ public class PathService {
                 .doOnError(e -> log.error("❌ createDir() FAILED for path={}", path, e));
     }
 
+    @SuppressWarnings("resource")
     public Mono<Void> cleanRecursively(Path path) {
-        return fromCallable(() -> walk(path))
-                .flatMapMany(stream -> fromStream(stream.sorted(reverseOrder())))
-                .flatMap(this::removeFile)
-                .then()
+        return Mono.using(() -> walk(path).sorted(reverseOrder()),
+                        stream -> Flux.fromStream(stream)
+                                .concatMap(this::removeFile)
+                                .then(),
+                        BaseStream::close
+                )
                 .doOnError(e -> log.error("❌ cleanRecursively() FAILED for path={}", path, e))
                 .subscribeOn(boundedElastic());
     }
