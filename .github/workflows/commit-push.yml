@@ -59,7 +59,7 @@ jobs:
           git subtree split --prefix storage -b storage-branch
 
           # add remote repo đích
-          git remote add storage "https://x-access-token:${PAT}@github.com/wliamp/notion-storage-${{ inputs.module }}.git"
+          git remote add storage "https://x-access-token:${PAT}@github.com/wliamp/notion-storage-pps.git"
           git remote -v
 
           # push sang main
