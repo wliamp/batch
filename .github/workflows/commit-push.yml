@@ -1,5 +1,3 @@
-name: Commit & Push
-
 on:
   workflow_call:
     inputs:
@@ -41,4 +39,8 @@ jobs:
             -m "$(git diff --cached --name-status)" \
             || echo "✅ No changes to commit"
 
-          git subtree push --prefix storage "https://x-access-token:${{ secrets.PAT }}@github.com/wliamp/notion-storage-${{ inputs.module }}.git" main
+          git remote add storage "https://x-access-token:${{ secrets.PAT }}@github.com/wliamp/notion-storage-${{ inputs.module }}.git"
+      
+          git subtree split --prefix storage -b storage-branch
+      
+          git push --force storage storage-branch:main
