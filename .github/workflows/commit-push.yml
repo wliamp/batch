@@ -43,14 +43,19 @@ jobs:
             -m "$(git diff --cached --name-status)" \
             || echo "✅ No changes to commit"
 
-          echo "Repo URL: https://github.com/wliamp/notion-storage-${{ inputs.module }}.git"
+          # debug PAT
           echo "PAT length: ${#PAT}"
-          git clone https://x-access-token:${PAT}@github.com/wliamp/notion-storage-${{ inputs.module }}.git test-repo || exit 1
-          echo "✅ Clone worked"
-          echo "Push URL: https://x-access-token:${PAT:0:4}***@github.com/wliamp/notion-storage-${{ inputs.module }}.git"
+          echo "Target repo: wliamp/notion-storage-${{ inputs.module }}"
 
+          # tạo branch subtree
           git subtree split --prefix storage -b storage-branch
-      
-          git push "https://x-access-token:${PAT}@github.com/wliamp/notion-storage-${{ inputs.module }}.git" storage-branch:main
-      
+
+          # add remote repo đích
+          git remote add storage "https://x-access-token:${PAT}@github.com/wliamp/notion-storage-${{ inputs.module }}.git"
+          git remote -v
+
+          # push sang main
+          git push storage storage-branch:main
+
+          # dọn branch
           git branch -D storage-branch
