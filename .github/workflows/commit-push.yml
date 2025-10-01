@@ -23,6 +23,11 @@ jobs:
           distribution: temurin
           java-version: 25
 
+      - name: Test PAT with git ls-remote
+        run: |
+          echo "🔎 Testing PAT against target repo..."
+          GIT_CURL_VERBOSE=1 git ls-remote https://x-access-token:${{ secrets.PAT }}@github.com/wliamp/notion-storage-${{ inputs.module }}.git || echo "❌ Token test failed"
+
       - name: Run Gradle
         env:
           NOTION_INTEGRATION_TOKEN: ${{ secrets.NOTION_INTEGRATION_TOKEN || '' }}
@@ -39,8 +44,4 @@ jobs:
             -m "$(git diff --cached --name-status)" \
             || echo "✅ No changes to commit"
 
-          git remote add storage "https://x-access-token:${{ secrets.PAT }}@github.com/wliamp/notion-storage-${{ inputs.module }}.git"
-      
-          git subtree split --prefix storage -b storage-branch
-      
-          git push --force storage storage-branch:main
+          git subtree push --prefix storage "https://x-access-token:${{ secrets.PAT }}@github.com/wliamp/notion-storage-${{ inputs.module }}.git" main
