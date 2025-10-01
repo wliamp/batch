@@ -47,5 +47,12 @@ jobs:
           echo "PAT length: ${#PAT}"
           git clone https://x-access-token:${PAT}@github.com/wliamp/notion-storage-${{ inputs.module }}.git test-repo || exit 1
           echo "✅ Clone worked"
-  
-          git subtree push --prefix storage "https://x-access-token:${PAT}@github.com/wliamp/notion-storage-${{ inputs.module }}.git" main
+
+          # tạo branch tạm chỉ chứa storage/
+          git subtree split --prefix storage -b storage-branch
+      
+          # push branch tạm sang main của repo đích
+          git push "https://x-access-token:${PAT}@github.com/wliamp/notion-storage-${{ inputs.module }}.git" storage-branch:main
+      
+          # dọn dẹp branch tạm
+          git branch -D storage-branch
