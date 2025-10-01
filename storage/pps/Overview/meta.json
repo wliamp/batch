@@ -12,7 +12,7 @@
     "object" : "user",
     "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
   },
-  "last_edited_time" : "2025-09-30T00:39:00.000Z",
+  "last_edited_time" : "2025-09-30T23:21:00.000Z",
   "title" : [ {
     "type" : "text",
     "text" : {
@@ -46,7 +46,7 @@
           "description" : null
         }, {
           "id" : "285bfc6d-8a00-4079-857f-f89880631c45",
-          "name" : "Sequence Diagrams",
+          "name" : "System Flows",
           "color" : "pink",
           "description" : null
         }, {

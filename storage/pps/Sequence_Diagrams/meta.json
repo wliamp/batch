@@ -1,6 +1,6 @@
 {
   "object" : "database",
-  "id" : "27cf521e-2b70-8036-b25a-ce12f56a7afb",
+  "id" : "27ef521e-2b70-804c-a771-d46e8d445dc8",
   "cover" : {
     "type" : "external",
     "external" : {
@@ -9,9 +9,9 @@
   },
   "icon" : {
     "type" : "emoji",
-    "emoji" : "🧲"
+    "emoji" : "💬"
   },
-  "created_time" : "2025-09-28T00:45:00.000Z",
+  "created_time" : "2025-09-30T23:56:00.000Z",
   "created_by" : {
     "object" : "user",
     "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
@@ -20,11 +20,11 @@
     "object" : "user",
     "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
   },
-  "last_edited_time" : "2025-09-30T23:31:00.000Z",
+  "last_edited_time" : "2025-10-01T00:10:00.000Z",
   "title" : [ {
     "type" : "text",
     "text" : {
-      "content" : "Use Cases",
+      "content" : "Sequence Diagrams",
       "link" : null
     },
     "annotations" : {
@@ -35,7 +35,7 @@
       "code" : false,
       "color" : "default"
     },
-    "plain_text" : "Use Cases",
+    "plain_text" : "Sequence Diagrams",
     "href" : null
   } ],
   "description" : [ {
@@ -185,16 +185,40 @@
   } ],
   "is_inline" : false,
   "properties" : {
-    "theme" : {
-      "id" : "Yz%40%60",
-      "name" : "theme",
+    "Flow" : {
+      "id" : "J%5CU%7B",
+      "name" : "Flow",
       "description" : null,
       "type" : "select",
       "select" : {
         "options" : [ {
-          "id" : "ac791d61-6a58-4e2c-b17e-2919264bdbce",
-          "name" : "Customer",
-          "color" : "pink",
+          "id" : "f0b6e4da-28f5-4334-90bd-4c2b6b6fbbca",
+          "name" : "Alternate",
+          "color" : "brown",
+          "description" : null
+        }, {
+          "id" : "9c659120-83be-4216-908c-81218ae6a8fa",
+          "name" : "Exception",
+          "color" : "gray",
+          "description" : null
+        }, {
+          "id" : "6c100098-baa2-4db9-b532-a91f97294543",
+          "name" : "Main",
+          "color" : "orange",
+          "description" : null
+        } ]
+      }
+    },
+    "Use Case" : {
+      "id" : "dZh%40",
+      "name" : "Use Case",
+      "description" : null,
+      "type" : "select",
+      "select" : {
+        "options" : [ {
+          "id" : ":>N[",
+          "name" : "Authorize",
+          "color" : "red",
           "description" : null
         } ]
       }
@@ -279,111 +303,13 @@
       "description" : null,
       "type" : "title",
       "title" : { }
-    },
-    "Actor" : {
-      "id" : "738ac8d9-357f-4637-b7d5-acfcbe5c94a5",
-      "name" : "Actor",
-      "description" : null,
-      "type" : "select",
-      "select" : {
-        "options" : [ {
-          "id" : ":Dxe",
-          "name" : "Acquirer Bank",
-          "color" : "red",
-          "description" : null
-        }, {
-          "id" : ":hXL",
-          "name" : "Customer",
-          "color" : "pink",
-          "description" : null
-        }, {
-          "id" : "[PRT",
-          "name" : "Payment Gateway",
-          "color" : "purple",
-          "description" : null
-        }, {
-          "id" : "vG@T",
-          "name" : "Issuer Bank",
-          "color" : "blue",
-          "description" : null
-        }, {
-          "id" : "JCH|",
-          "name" : "Merchant",
-          "color" : "green",
-          "description" : null
-        }, {
-          "id" : "G^}|",
-          "name" : "Card Network",
-          "color" : "yellow",
-          "description" : null
-        }, {
-          "id" : "zjv?",
-          "name" : "Payment Processor",
-          "color" : "orange",
-          "description" : null
-        } ]
-      }
-    },
-    "Sub-Actors" : {
-      "id" : "f5510557-c2ea-4537-93cd-bacc82b7fabb",
-      "name" : "Sub-Actors",
-      "description" : null,
-      "type" : "multi_select",
-      "multi_select" : {
-        "options" : [ {
-          "id" : "v?|B",
-          "name" : "Acquirer",
-          "color" : "red",
-          "description" : null
-        }, {
-          "id" : "`ma}",
-          "name" : "Network",
-          "color" : "yellow",
-          "description" : null
-        }, {
-          "id" : "eiWZ",
-          "name" : "Customer",
-          "color" : "pink",
-          "description" : null
-        }, {
-          "id" : "Ca\\T",
-          "name" : "Issuer",
-          "color" : "blue",
-          "description" : null
-        }, {
-          "id" : "Kfe{",
-          "name" : "Merchant",
-          "color" : "green",
-          "description" : null
-        }, {
-          "id" : "cCgy",
-          "name" : "Gateway",
-          "color" : "purple",
-          "description" : null
-        }, {
-          "id" : "EivC",
-          "name" : "Notification",
-          "color" : "gray",
-          "description" : null
-        }, {
-          "id" : "mXf?",
-          "name" : "Processor",
-          "color" : "orange",
-          "description" : null
-        }, {
-          "id" : "vG;r",
-          "name" : "Security",
-          "color" : "brown",
-          "description" : null
-        } ]
-      }
     }
   },
   "parent" : {
     "type" : "workspace",
     "workspace" : true
   },
-  "url" : "https://www.notion.so/27cf521e2b708036b25ace12f56a7afb",
+  "url" : "https://www.notion.so/27ef521e2b70804ca771d46e8d445dc8",
   "public_url" : null,
   "archived" : false,
   "in_trash" : false

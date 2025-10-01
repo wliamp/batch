@@ -61,27 +61,6 @@
         "href" : null
       } ]
     },
-    "Clarity" : {
-      "id" : "257d1830-6d82-48d9-a1ef-c2b387419d33",
-      "type" : "rich_text",
-      "rich_text" : [ {
-        "type" : "text",
-        "text" : {
-          "content" : "Full or Partial Reversal after Capture",
-          "link" : null
-        },
-        "annotations" : {
-          "bold" : false,
-          "italic" : false,
-          "strikethrough" : false,
-          "underline" : false,
-          "code" : false,
-          "color" : "default"
-        },
-        "plain_text" : "Full or Partial Reversal after Capture",
-        "href" : null
-      } ]
-    },
     "Actor" : {
       "id" : "738ac8d9-357f-4637-b7d5-acfcbe5c94a5",
       "type" : "select",
