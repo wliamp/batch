@@ -30,6 +30,14 @@ jobs:
           NOTION_INTEGRATION_TOKEN: ${{ secrets.NOTION_INTEGRATION_TOKEN || '' }}
         run: ./gradlew :${{ inputs.scope }}:bootRun
 
+      - name: Debug remote
+        run: |
+          git remote -v
+          echo "PAT length: ${#PAT}"
+          echo "PAT hex: $(echo -n $PAT | xxd)"
+        env:
+          PAT: ${{ secrets.PAT }}
+
       - name: Commit & Push
         env:
           PAT: ${{ secrets.PAT }}
