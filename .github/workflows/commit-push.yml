@@ -41,6 +41,4 @@ jobs:
             -m "$(git diff --cached --name-status)" \
             || echo "✅ No changes to commit"
 
-          git subtree push --prefix storage \
-          "https://x-access-token:${{ secrets.PAT }}@github.com/wliamp/notion-storage-${{ inputs.module }}.git" \
-          main
+          git subtree push --prefix storage "https://x-access-token:${{ secrets.PAT }}@github.com/wliamp/notion-storage-${{ inputs.module }}.git" main
