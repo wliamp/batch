@@ -42,29 +42,26 @@ jobs:
         env:
           PAT: ${{ secrets.PAT }}
         run: |
+          git config --global --unset credential.helper || true
+          
           git config user.name "William Phan"
           git config user.email "phnam230197@gmail.com"
-
+          
           git add storage/
           git commit \
             -m "chore(${{ inputs.scope }}): ${{ inputs.scope }} Notion JSONs at $(date -u +'%Y-%m-%d %H:%M:%S')" \
             -m "$(git diff --cached --name-status)" \
             || echo "✅ No changes to commit"
-
+          
           echo "Remote about to add:"
           echo "https://wliamp:${PAT}@github.com/wliamp/notion-storage-${{ inputs.module }}.git" | sed 's/[0-9a-z]\{20,\}/***/g'
-
-          # tạo branch chỉ chứa nội dung storage/
+          
           git subtree split --prefix storage -b storage-branch
-
-          # đảm bảo remote không còn bot token
+          
           git remote remove storage || true
           git remote add storage "https://wliamp:${PAT}@github.com/wliamp/notion-storage-${{ inputs.module }}.git"
           git remote -v
-
-          # push sang main bằng PAT cá nhân
+          
           git push --force storage storage-branch:main
-
-          git branch -D storage-branch
-      
-      
+          
+          git branch -D storage-branch    
