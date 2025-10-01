@@ -32,5 +32,7 @@ runs:
           -m "chore(${{ inputs.scope }}): ${{ inputs.scope }} Notion JSONs at $(date -u +'%Y-%m-%d %H:%M:%S')" \
           -m "$(git diff --cached --name-status)" \
           || echo "✅ No changes to commit"
-        git subtree push --prefix storage "https://x-access-token:${{ github.token }}@github.com/wliamp/notion-storage-${{ inputs.module }}.git"
+        git subtree push --prefix storage \
+        "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/wliamp/notion-storage-${{ inputs.module }}.git" \
+        main
       shell: bash
