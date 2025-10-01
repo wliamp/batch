@@ -43,4 +43,7 @@ jobs:
             -m "$(git diff --cached --name-status)" \
             || echo "✅ No changes to commit"
 
+          echo "Repo URL: https://github.com/wliamp/notion-storage-${{ inputs.module }}.git"
+          echo "PAT length: ${#PAT}"
+  
           git subtree push --prefix storage "https://x-access-token:${PAT}@github.com/wliamp/notion-storage-${{ inputs.module }}.git" main
