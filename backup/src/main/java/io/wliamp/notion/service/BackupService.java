@@ -30,7 +30,6 @@ public class BackupService {
 
     public void backup() {
         var root = DIR.getPath();
-        log.info("");
         log.info("🚀 Starting backup into repo {}", root);
 
         prepareRoot(root)
