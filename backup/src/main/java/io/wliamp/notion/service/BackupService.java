@@ -24,7 +24,6 @@ public class BackupService {
 
     private final FetchService fetchService;
     private final SearchService searchService;
-
     private final CommonService commonService;
     private final JsonService jsonService;
     private final PathService pathService;
@@ -43,12 +42,12 @@ public class BackupService {
 
     private Mono<Path> prepareRoot(Path root) {
         return pathService.createDir(root)
-                .doOnSubscribe(_ -> log.info("📂 Preparing output directory at {}", root));
+                .doOnSubscribe(sub -> log.debug("📂 Preparing output directory at {}", root));
     }
 
     private Flux<JsonNode> searchAndBackupObjects(Path outDir) {
         return searchService.search(token)
-                .doOnSubscribe(_ -> log.info("🔍 Searching objects ..."))
+                .doOnSubscribe(sub -> log.info("🔍 Searching objects ..."))
                 .flatMapSequential(node -> backupObject(node, outDir), 4);
     }
 
@@ -59,14 +58,15 @@ public class BackupService {
                             log.info("➡️ Backing up object [{}] with title [{}]", id, title.name());
                             return fetchAndWrite(id, node, outDir.resolve(safeName(title.name())));
                         })
-                );
+                )
+                .doOnError(e -> log.warn("⚠ Failed to backup object [{}]", node.path("id").asText(), e));
     }
 
     private Mono<JsonNode> fetchAndWrite(String id, JsonNode node, Path objDir) {
         return fetchService.fetch(id, token)
-                .doOnSubscribe(sub -> log.info("📥 Fetching block tree for [{}]", id))
+                .doOnSubscribe(sub -> log.debug("📥 Fetching block tree for [{}]", id))
                 .collectList()
-                .doOnNext(blocks -> log.info("📦 Fetched {} blocks for [{}]", blocks.size(), id))
+                .doOnNext(blocks -> log.debug("📦 Fetched {} blocks for [{}]", blocks.size(), id))
                 .flatMap(blocks -> pathService.createDir(objDir)
                         .thenMany(
                                 jsonService.create(objDir.resolve(JSON1.getJson()), node)
@@ -75,6 +75,7 @@ public class BackupService {
                         .then(fromRunnable(() ->
                                 log.info("💾 Object [{}] written to {}", id, objDir)))
                 )
+                .doOnError(e -> log.error("❌ Failed to fetch/write object [{}]", id, e))
                 .thenReturn(node);
     }
 }

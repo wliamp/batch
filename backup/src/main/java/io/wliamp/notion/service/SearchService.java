@@ -32,13 +32,13 @@ public class SearchService {
                 .bodyValue(body)
                 .retrieve()
                 .bodyToMono(JsonNode.class)
-                .doOnNext(root -> log.info("📦 Raw search response: has 'results'={}", root.has("results")))
+                .doOnNext(root -> log.debug("📦 Raw search response: has 'results'={}", root.has("results")))
                 .flatMapMany(root -> {
                     var results = root.get("results");
 
                     return results != null && results.isArray()
                             ? fromIterable(results)
-                            .doOnSubscribe(s -> log.info("🔍 Processing results array"))
+                            .doOnSubscribe(s -> log.debug("🔍 Processing {} results", results.size()))
                             .doOnNext(r -> log.trace("➡️ Result item: {}", r))
                             .doOnComplete(() -> log.info("✅ Search returned {} objects", results.size()))
                             : Flux.<JsonNode>empty()
@@ -47,4 +47,3 @@ public class SearchService {
                 .doOnError(e -> log.error("❌ Search request failed", e));
     }
 }
-

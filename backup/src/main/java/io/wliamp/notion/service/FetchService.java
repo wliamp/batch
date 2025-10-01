@@ -23,14 +23,14 @@ public class FetchService {
                 .header("Authorization", "Bearer " + token)
                 .retrieve()
                 .bodyToMono(JsonNode.class)
-                .doOnNext(root -> log.info("📦 Raw fetch response for [{}]: has 'results'={}",
+                .doOnNext(root -> log.debug("📦 Raw fetch response for [{}]: has 'results'={}",
                         parentId, root.has("results")))
                 .flatMapMany(root -> {
                     var results = root.get("results");
 
                     return results != null && results.isArray()
                             ? fromIterable(results)
-                            .doOnSubscribe(s -> log.info("📥 Processing children for [{}]", parentId))
+                            .doOnSubscribe(_ -> log.debug("📥 Processing {} children for [{}]", results.size(), parentId))
                             .doOnComplete(() -> log.info("✅ Fetched {} blocks for parentId={}", results.size(), parentId))
                             : Flux.<JsonNode>empty()
                             .doOnSubscribe(s -> log.warn("⚠️ No results array in fetch response for [{}]", parentId));
@@ -38,4 +38,3 @@ public class FetchService {
                 .doOnError(e -> log.error("❌ Failed to fetch children for [{}]", parentId, e));
     }
 }
-

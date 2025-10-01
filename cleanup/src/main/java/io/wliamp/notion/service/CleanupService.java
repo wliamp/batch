@@ -23,7 +23,6 @@ public class CleanupService {
 
     public void cleanup() {
         var root = getDir();
-
         log.info("🚀 Starting cleanup repo {}", root);
 
         pathService.isExists(root)
@@ -57,7 +56,7 @@ public class CleanupService {
                                 .flatMap(file -> pathService.isDir(file)
                                         .flatMap(isDir2 -> isDir2
                                                 ? pathService.cleanRecursively(file)
-                                                .doOnSubscribe(s -> log.info("🗑 Unexpected subdirectory inside object, deleting: {}", file))
+                                                .doOnSubscribe(s -> log.debug("🗑 Unexpected subdirectory inside object, deleting: {}", file))
                                                 : cleanFile(file)))
                                 .then(cleanOrphan(dir))
                 );
@@ -67,7 +66,7 @@ public class CleanupService {
         return just(file.getFileName().toString())
                 .filter(n -> !(n.equals(JSON1.getJson()) || n.equals(JSON2.getJson())))
                 .flatMap(n -> pathService.removeFile(file)
-                        .doOnSubscribe(s -> log.info("🗑 Removing extra file: {}", n)))
+                        .doOnSubscribe(s -> log.debug("🗑 Removing extra file: {}", n)))
                 .switchIfEmpty(empty());
     }
 

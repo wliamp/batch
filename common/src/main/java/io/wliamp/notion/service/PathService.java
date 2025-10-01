@@ -18,6 +18,7 @@ import static reactor.core.scheduler.Schedulers.boundedElastic;
 @Service
 @Slf4j
 public class PathService {
+
     public Flux<Path> listPath(Path path) {
         return using(
                 () -> list(path),
@@ -44,7 +45,8 @@ public class PathService {
 
     @SuppressWarnings("resource")
     public Mono<Void> cleanRecursively(Path path) {
-        return Mono.using(() -> walk(path).sorted(reverseOrder()),
+        return Mono.using(
+                        () -> walk(path).sorted(reverseOrder()),
                         stream -> fromStream(stream)
                                 .concatMap(this::removeFile)
                                 .then(),
@@ -56,10 +58,10 @@ public class PathService {
 
     public Mono<Void> removeFile(Path path) {
         return fromCallable(() -> {
-            deleteIfExists(path);
-            return path;
-        })
-                .doOnSuccess(p -> log.info("🗑 Removed {}", p))
+                    deleteIfExists(path);
+                    return path;
+                })
+                .doOnSuccess(p -> log.debug("🗑 Removed {}", p))
                 .then()
                 .subscribeOn(boundedElastic());
     }

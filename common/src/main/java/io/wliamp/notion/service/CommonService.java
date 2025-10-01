@@ -25,22 +25,24 @@ public class CommonService {
     private final PathService pathService;
 
     public Mono<String> safeId(JsonNode node) {
-        return fromCallable(() -> node.get("id").asText().replace("-", ""))
+        return Mono.fromCallable(() -> node.get("id").asText().replace("-", ""))
                 .doOnError(e -> log.error("❌ safeId() FAILED from node={}", node, e));
     }
 
     public Mono<Title> extractTitle(JsonNode node) {
-        return fromCallable(() -> ofNullable(node.get("properties"))
-                .flatMap(n -> stream(n.spliterator(), false)
-                        .filter(prop -> prop.has("title"))
-                        .map(prop -> prop.get("title"))
-                        .map(Utility::extractFirstPlainText)
-                        .flatMap(Optional::stream)
-                        .findFirst())
-                .map(s -> new Title(s, "properties.title"))
-                .orElseGet(() -> extractFirstPlainText(node.get("title"))
-                        .map(s -> new Title(s, "title"))
-                        .orElseGet(() -> new Title(INVALID.getName() + "-" + generateCode(8), "fallback"))))
+        return Mono.fromCallable(() ->
+                        ofNullable(node.get("properties"))
+                                .flatMap(n -> stream(n.spliterator(), false)
+                                        .filter(prop -> prop.has("title"))
+                                        .map(prop -> prop.get("title"))
+                                        .map(Utility::extractFirstPlainText)
+                                        .flatMap(Optional::stream)
+                                        .findFirst())
+                                .map(s -> new Title(s, "properties.title"))
+                                .orElseGet(() -> extractFirstPlainText(node.get("title"))
+                                        .map(s -> new Title(s, "title"))
+                                        .orElseGet(() -> new Title(INVALID.getName() + "-" + generateCode(8), "fallback")))
+                )
                 .doOnError(e -> log.error("❌ extractTitle() FAILED from node={}", node, e));
     }
 
@@ -53,7 +55,7 @@ public class CommonService {
                 .map(parentExists -> {
                     var orphan = !(parentId == null || parentExists) || archived;
 
-                    log.info("🔎 Checking orphan: parentId={}, archived={}, parentExists={}, orphan={}",
+                    log.debug("🔎 Checking orphan: parentId={}, archived={}, parentExists={}, orphan={}",
                             parentId, archived, parentExists, orphan);
 
                     return orphan;
@@ -61,4 +63,3 @@ public class CommonService {
                 .doOnError(e -> log.error("❌ isOrphan() FAILED for dir={}", dir, e));
     }
 }
-
