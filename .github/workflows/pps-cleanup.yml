@@ -1,4 +1,4 @@
-name: Storage Cleanup
+name: PPS Cleanup
 
 on:
   schedule:
