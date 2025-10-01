@@ -10,6 +10,7 @@ import reactor.core.publisher.Mono;
 
 import java.nio.file.Path;
 
+import static io.wliamp.notion.compa.Utility.getDir;
 import static io.wliamp.notion.compa.Utility.safeName;
 import static io.wliamp.notion.constant.Constant.*;
 import static reactor.core.publisher.Mono.fromRunnable;
@@ -29,7 +30,7 @@ public class BackupService {
     private final PathService pathService;
 
     public void backup() {
-        var root = DIR.getPath();
+        var root = getDir();
         log.info("🚀 Starting backup into repo {}", root);
 
         prepareRoot(root)

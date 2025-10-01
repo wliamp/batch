@@ -7,6 +7,7 @@ import reactor.core.publisher.Mono;
 
 import java.nio.file.Path;
 
+import static io.wliamp.notion.compa.Utility.*;
 import static io.wliamp.notion.constant.Constant.*;
 import static reactor.core.publisher.Mono.*;
 import static reactor.core.publisher.Mono.empty;
@@ -21,13 +22,13 @@ public class CleanupService {
     private final JsonService jsonService;
 
     public void cleanup() {
-        var root = DIR.getPath();
+        var root = getDir();
 
         log.info("🚀 Starting cleanup repo {}", root);
 
-        pathService.exists(root)
+        pathService.isExists(root)
                 .filter(Boolean::booleanValue)
-                .flatMapMany(_ -> pathService.list(root))
+                .flatMapMany(_ -> pathService.listPath(root))
                 .flatMap(this::cleanObjectDir)
                 .then()
                 .switchIfEmpty(fromRunnable(() ->
@@ -52,7 +53,7 @@ public class CleanupService {
                 .flatMap(n -> pathService.cleanRecursively(dir)
                         .doOnSubscribe(_ -> log.info("🗑 Removing untitled folder: {}", n)))
                 .switchIfEmpty(
-                        pathService.list(dir)
+                        pathService.listPath(dir)
                                 .flatMap(file -> pathService.isDir(file)
                                         .flatMap(isDir2 -> isDir2
                                                 ? pathService.cleanRecursively(file)

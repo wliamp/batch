@@ -49,7 +49,7 @@ public class CommonService {
         var archived = node.path("archived").asBoolean(false);
         var parentPath = dir.resolve(ofNullable(parentId).orElse(""));
 
-        return pathService.exists(parentPath)
+        return pathService.isExists(parentPath)
                 .map(parentExists -> {
                     var orphan = !(parentId == null || parentExists) || archived;
 

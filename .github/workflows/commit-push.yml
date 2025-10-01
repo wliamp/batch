@@ -27,8 +27,8 @@ jobs:
 
       - name: Run Gradle
         env:
-          NOTION_INTEGRATION_TOKEN: ${{ secrets.NOTION_INTEGRATION_TOKEN || '' }}
-        run: ./gradlew :${{ inputs.scope }}:bootRun
+          NOTION_INTEGRATION_TOKEN: ${{ secrets.NOTION_INTEGRATION_TOKEN }}
+        run: ./gradlew :${{ inputs.scope }}:bootRun --args="--tmp ${{ runner.temp }}"
 
       - name: Setup SSH
         env:
@@ -41,19 +41,17 @@ jobs:
 
       - name: Commit & Push
         run: |
+          git clone --depth=1 git@github.com:wliamp/notion-storage-${{ inputs.module }}.git target-repo
+          cd target-repo
+          
+          rm -rf ./*
+          cp -r ${{ runner.temp }}/storage/* .
+          
           git config user.name "BOT"
           git config user.email "bot@wliamp.io"
-
-          git add storage/
-          git commit \
-            -m "${{ inputs.scope }}: commit at $(date -u +'%Y-%m-%d %H:%M:%S')" \
-            -m "$(git diff --cached --name-status)" \
-            || echo "✅ No changes to commit"
-
-          git subtree split --prefix storage -b storage-branch
-
-          git remote remove storage || true
-          git remote add storage git@github.com:wliamp/notion-storage-${{ inputs.module }}.git
-          git push --force storage storage-branch:main
-
-          git branch -D storage-branch 
+          
+          git add -A
+          git commit -m "${{ inputs.scope }}: commit at $(date -u +'%Y-%m-%d %H:%M:%S')" \
+            -m "$(git diff --cached --name-status)" || echo "✅ No changes to commit"
+          
+          git push origin main
