@@ -23,6 +23,8 @@ runs:
       shell: bash
 
     - name: Commit & Push
+      env:
+        PAT: ${{ env.PAT || github.token }}
       run: |
         git config user.name "github-actions[bot]"
         git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -33,6 +35,6 @@ runs:
           -m "$(git diff --cached --name-status)" \
           || echo "✅ No changes to commit"
         git subtree push --prefix storage \
-        "https://x-access-token:${{ github.token }}@github.com/wliamp/notion-storage-${{ inputs.module }}.git" \
+        "https://x-access-token:${PAT}@github.com/wliamp/notion-storage-${{ inputs.module }}.git" \
         main
       shell: bash
