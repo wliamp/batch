@@ -12,4 +12,4 @@ jobs:
       module: "pps"
       scope: "cleanup"
     secrets:
-      PAT: ${{ secrets.PAT }}
+      DEPLOY_KEY: ${{ secrets.PPS_DEPLOY_KEY }}

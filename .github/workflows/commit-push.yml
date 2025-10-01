@@ -8,7 +8,7 @@ on:
         required: true
         type: string
     secrets:
-      PAT:
+      DEPLOY_KEY:
         required: true
       NOTION_INTEGRATION_TOKEN:
         required: false
@@ -30,38 +30,30 @@ jobs:
           NOTION_INTEGRATION_TOKEN: ${{ secrets.NOTION_INTEGRATION_TOKEN || '' }}
         run: ./gradlew :${{ inputs.scope }}:bootRun
 
-      - name: Debug remote
-        run: |
-          git remote -v
-          echo "PAT length: ${#PAT}"
-          echo "PAT hex: $(echo -n $PAT | xxd)"
+      - name: Setup SSH
         env:
-          PAT: ${{ secrets.PAT }}
+          DEPLOY_KEY: ${{ secrets.DEPLOY_KEY }}
+        run: |
+          mkdir -p ~/.ssh
+          echo "${DEPLOY_KEY}" > ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
+          ssh-keyscan github.com >> ~/.ssh/known_hosts
 
       - name: Commit & Push
-        env:
-          PAT: ${{ secrets.PAT }}
         run: |
-          git config --global --unset credential.helper || true
-          
-          git config user.name "William Phan"
-          git config user.email "phnam230197@gmail.com"
-          
+          git config user.name "BOT"
+          git config user.email "bot@wliamp.io"
+
           git add storage/
           git commit \
-            -m "chore(${{ inputs.scope }}): ${{ inputs.scope }} Notion JSONs at $(date -u +'%Y-%m-%d %H:%M:%S')" \
+            -m "${{ inputs.scope }}: commit at $(date -u +'%Y-%m-%d %H:%M:%S')" \
             -m "$(git diff --cached --name-status)" \
             || echo "✅ No changes to commit"
-          
-          echo "Remote about to add:"
-          echo "https://wliamp:${PAT}@github.com/wliamp/notion-storage-${{ inputs.module }}.git" | sed 's/[0-9a-z]\{20,\}/***/g'
-          
+
           git subtree split --prefix storage -b storage-branch
-          
+
           git remote remove storage || true
-          git remote add storage "https://wliamp:${PAT}@github.com/wliamp/notion-storage-${{ inputs.module }}.git"
-          git remote -v
-          
+          git remote add storage git@github.com:wliamp/notion-storage-${{ inputs.module }}.git
           git push --force storage storage-branch:main
-          
-          git branch -D storage-branch    
+
+          git branch -D storage-branch 
