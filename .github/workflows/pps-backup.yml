@@ -12,5 +12,5 @@ jobs:
       module: "pps"
       scope: "backup"
     secrets:
-      PAT: ${secrets.PAT}
+      PAT: ${{ secrets.PAT }}
       NOTION_INTEGRATION_TOKEN: ${{ secrets.PPS_INTEGRATION_NOTION }}
