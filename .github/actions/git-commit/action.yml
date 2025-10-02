@@ -5,6 +5,10 @@ inputs:
   scope:
     description: "Scope in commit message"
     required: true
+  working-directory:
+    required: false
+    default: "."
+    description: ""
 
 runs:
   using: composite

@@ -22,8 +22,8 @@ jobs:
         run: |
           git clone --depth=1 git@github.com:wliamp/notion-storage-${{ inputs.module }}.git ${{ inputs.module }}
           ./gradlew :cleanup:bootRun --args="--tmp=${{ inputs.module }}"
-          cd ${{ inputs.module }}
 
       - uses: ./.github/actions/git-commit
         with:
           scope: "cleanup"
+          working-directory: ${{ inputs.module }}
