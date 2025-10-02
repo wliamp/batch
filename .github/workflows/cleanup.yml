@@ -18,18 +18,16 @@ jobs:
         with:
           DEPLOY_KEY: ${{ secrets.DEPLOY_KEY }}
 
-      - name: Clone target repo
+      - name: Clone
         run: |
           git clone --depth=1 git@github.com:wliamp/notion-storage-${{ inputs.module }}.git ${{ runner.temp }}/${{ inputs.module }}
-          ls -lah ${{ runner.temp }}/${{ inputs.module }}
 
-      - name: Run cleanup
+      - name: Run
         run: ./gradlew :cleanup:bootRun --args="--tmp=${{ runner.temp }}/${{ inputs.module }}"
 
       - name: Commit & Push
         working-directory: ${{ runner.temp }}/${{ inputs.module }}
         run: |
-          git remote -v
           git config user.name "cleanup-bot"
           git config user.email "cleanup@wliamp.io"
           
@@ -38,6 +36,6 @@ jobs:
             -m "$(git diff --cached --name-status)" || echo "✅ No changes to commit"
           git push origin main
 
-      - name: Cleanup local clone
+      - name: Remove
         run: rm -rf ${{ runner.temp }}/${{ inputs.module }}
 
