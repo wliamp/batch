@@ -68,7 +68,7 @@ public class CleanupService {
 
     private Mono<Void> cleanFile(Path file) {
         return just(file.getFileName().toString())
-                .filter(n -> !(n.equals(JSON1.getJson()) || n.equals(JSON2.getJson())))
+                .filter(n -> !(n.equals(JSON1.getJson()) || n.equals(JSON2.getJson()) || n.equals(".git")))
                 .flatMap(n -> pathService.removeFile(file)
                         .doOnSubscribe(s -> log.debug("🗑 Removing extra file: {}", n)))
                 .switchIfEmpty(empty());
