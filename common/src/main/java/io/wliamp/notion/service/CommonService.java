@@ -2,6 +2,7 @@ package io.wliamp.notion.service;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import io.wliamp.notion.compa.Title;
+import io.wliamp.notion.constant.Constant;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
@@ -11,11 +12,11 @@ import java.nio.file.Path;
 import java.util.stream.Stream;
 
 import static io.wliamp.notion.compa.Utility.extractFirstPlainText;
-import static io.wliamp.notion.compa.Utility.generateCode;
+import static io.wliamp.notion.constant.Constant.*;
 import static java.util.Map.*;
-import static java.util.Optional.of;
 import static java.util.Optional.ofNullable;
 import static java.util.stream.StreamSupport.stream;
+import static reactor.core.publisher.Mono.*;
 import static reactor.core.publisher.Mono.fromCallable;
 
 @Service
@@ -30,27 +31,23 @@ public class CommonService {
     }
 
     public Mono<Title> extractTitle(JsonNode node) {
-        return fromCallable(() ->
-                ofNullable(node.get("properties"))
-                        .flatMap(n -> stream(n.spliterator(), false)
-                                .filter(prop -> prop.has("title"))
-                                .map(p -> "title-" + generateCode(10))
-                                .findFirst())
-                        .or(() -> extractFirstPlainText(node.get("title"))
-                                .map(t -> "field-" + generateCode(10)))
-                        .or(() -> of("untitled-" + generateCode(10)))
+        return defer(() -> fromCallable(() -> {
+                    var props = node.get("properties");
+                    return props != null && stream(props.spliterator(), false)
+                            .anyMatch(prop -> prop.has("title"));
+                })
+                        .flatMap(hasTitle -> hasTitle ? safeId(node) : empty())
+                        .switchIfEmpty(fromCallable(() -> node.has("title"))
+                                .flatMap(has -> has ? safeId(node) : empty())
+                        ).switchIfEmpty(safeId(node).map(id -> INVALID.getName() + "-" + id))
                         .map(name -> {
-                            var source = Stream.of(
-                                            entry("title-", "properties.title"),
-                                            entry("field-", "title")
-                                    )
-                                    .filter(e -> name.startsWith(e.getKey()))
-                                    .map(Entry::getValue)
-                                    .findFirst()
-                                    .orElse("fallback");
+                            var source = node.has("properties") && node.get("properties").has("title")
+                                    ? "properties.title"
+                                    : node.has("title")
+                                    ? "title"
+                                    : "id";
                             return new Title(name, source);
                         })
-                        .orElseThrow()
         ).doOnError(e -> log.error("❌ extractTitle() FAILED from node={}", node, e));
     }
 
