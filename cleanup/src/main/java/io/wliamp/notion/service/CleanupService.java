@@ -2,6 +2,7 @@ package io.wliamp.notion.service;
 
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 import reactor.core.publisher.Mono;
 
@@ -17,12 +18,15 @@ import static reactor.core.publisher.Mono.fromRunnable;
 @Slf4j
 @RequiredArgsConstructor
 public class CleanupService {
+    @Value("${tmp}")
+    private String tmp;
+
     private final CommonService commonService;
     private final PathService pathService;
     private final JsonService jsonService;
 
     public void cleanup() {
-        var root = Paths.get(System.getProperty("tmp"));
+        var root = Paths.get(tmp);
         log.info("🚀 Starting cleanup repo {}", root.toString().toUpperCase());
 
         pathService.isExists(root)

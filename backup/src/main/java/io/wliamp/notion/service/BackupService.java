@@ -19,6 +19,9 @@ import static reactor.core.publisher.Mono.fromRunnable;
 @Slf4j
 @RequiredArgsConstructor
 public class BackupService {
+    @Value("${tmp}")
+    private String tmp;
+
     @Value("${NOTION_INTEGRATION_TOKEN}")
     private String token;
 
@@ -29,7 +32,7 @@ public class BackupService {
     private final PathService pathService;
 
     public void backup() {
-        var root = Paths.get(System.getProperty("tmp"));
+        var root = Paths.get(tmp);
         log.info("🚀 Starting backup into repo {}", root.getFileName().toString().toUpperCase());
 
         prepareRoot(root)
