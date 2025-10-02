@@ -1,9 +1,9 @@
 package io.wliamp.notion.service;
 
 import com.fasterxml.jackson.databind.JsonNode;
+import io.wliamp.notion.config.EnvConfig;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
@@ -20,20 +20,17 @@ import static reactor.core.publisher.Mono.fromRunnable;
 @Slf4j
 @RequiredArgsConstructor
 public class BackupService {
-    @Value("${tmp}")
-    private String tmp;
-
-    @Value("${NOTION_INTEGRATION_TOKEN}")
-    private String token;
-
+    private final EnvConfig envConfig;
     private final FetchService fetchService;
     private final SearchService searchService;
     private final CommonService commonService;
     private final JsonService jsonService;
     private final PathService pathService;
 
+    private final String token = envConfig.getToken();
+
     public void backup() {
-        var root = Paths.get(tmp);
+        var root = Paths.get(envConfig.getTmp());
         log.info("🔐 Found the Secret {}", mask(token, 5));
         log.info("🚀 Starting backup into repo {}", root.getFileName().toString().toUpperCase());
 
