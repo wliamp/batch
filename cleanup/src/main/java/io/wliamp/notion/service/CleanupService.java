@@ -26,7 +26,7 @@ public class CleanupService {
     private final JsonService jsonService;
 
     public void cleanup() {
-        var root = Paths.get(tmp).resolve("storage");
+        var root = Paths.get(tmp);
         log.info("🚀 Starting cleanup repo {}", root.toString().toUpperCase());
 
         pathService.isExists(root)
