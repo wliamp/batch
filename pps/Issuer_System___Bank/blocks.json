@@ -1,0 +1,83 @@
+[ {
+  "object" : "block",
+  "id" : "27cf521e-2b70-8025-afda-c74aae317d33",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "27cf521e-2b70-80ca-93e3-d420ede3f38b"
+  },
+  "created_time" : "2025-09-28T02:23:00.000Z",
+  "last_edited_time" : "2025-09-28T02:23:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : true,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "toggle",
+  "toggle" : {
+    "rich_text" : [ {
+      "type" : "text",
+      "text" : {
+        "content" : "General",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : true,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "General",
+      "href" : null
+    } ],
+    "color" : "default"
+  }
+}, {
+  "object" : "block",
+  "id" : "27cf521e-2b70-8017-b897-cecb295fe222",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "27cf521e-2b70-80ca-93e3-d420ede3f38b"
+  },
+  "created_time" : "2025-09-28T02:23:00.000Z",
+  "last_edited_time" : "2025-09-28T02:23:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : true,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "toggle",
+  "toggle" : {
+    "rich_text" : [ {
+      "type" : "text",
+      "text" : {
+        "content" : "Focused",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : true,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "Focused",
+      "href" : null
+    } ],
+    "color" : "default"
+  }
+} ]

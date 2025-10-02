@@ -1,0 +1,105 @@
+{
+  "object" : "page",
+  "id" : "27af521e-2b70-80da-b9e6-d74c1e60fb53",
+  "created_time" : "2025-09-26T03:44:00.000Z",
+  "last_edited_time" : "2025-09-28T00:52:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "cover" : null,
+  "icon" : null,
+  "parent" : {
+    "type" : "database_id",
+    "database_id" : "27cf521e-2b70-8036-b25a-ce12f56a7afb"
+  },
+  "archived" : false,
+  "in_trash" : false,
+  "is_locked" : false,
+  "properties" : {
+    "theme" : {
+      "id" : "Yz%40%60",
+      "type" : "select",
+      "select" : null
+    },
+    "Status" : {
+      "id" : "k%3FMm",
+      "type" : "status",
+      "status" : {
+        "id" : "8e60037a-bd86-4bec-ae03-6dcd5c392137",
+        "name" : "Not started",
+        "color" : "default"
+      }
+    },
+    "Priority" : {
+      "id" : "lgXk",
+      "type" : "select",
+      "select" : null
+    },
+    "Title" : {
+      "id" : "title",
+      "type" : "title",
+      "title" : [ {
+        "type" : "text",
+        "text" : {
+          "content" : "Authorize Payment",
+          "link" : null
+        },
+        "annotations" : {
+          "bold" : false,
+          "italic" : false,
+          "strikethrough" : false,
+          "underline" : false,
+          "code" : false,
+          "color" : "default"
+        },
+        "plain_text" : "Authorize Payment",
+        "href" : null
+      } ]
+    },
+    "Actor" : {
+      "id" : "738ac8d9-357f-4637-b7d5-acfcbe5c94a5",
+      "type" : "select",
+      "select" : {
+        "id" : ":hXL",
+        "name" : "Customer",
+        "color" : "pink"
+      }
+    },
+    "Sub-Actors" : {
+      "id" : "f5510557-c2ea-4537-93cd-bacc82b7fabb",
+      "type" : "multi_select",
+      "multi_select" : [ {
+        "id" : "Kfe{",
+        "name" : "Merchant",
+        "color" : "green"
+      }, {
+        "id" : "cCgy",
+        "name" : "Gateway",
+        "color" : "purple"
+      }, {
+        "id" : "mXf?",
+        "name" : "Processor",
+        "color" : "orange"
+      }, {
+        "id" : "`ma}",
+        "name" : "Network",
+        "color" : "yellow"
+      }, {
+        "id" : "Ca\\T",
+        "name" : "Issuer",
+        "color" : "blue"
+      }, {
+        "id" : "v?|B",
+        "name" : "Acquirer",
+        "color" : "red"
+      } ]
+    }
+  },
+  "url" : "https://www.notion.so/Authorize-Payment-27af521e2b7080dab9e6d74c1e60fb53",
+  "public_url" : null
+}

@@ -1,0 +1,89 @@
+{
+  "object" : "page",
+  "id" : "27ff521e-2b70-80eb-bf13-f1a9e8e8e6e5",
+  "created_time" : "2025-10-01T00:06:00.000Z",
+  "last_edited_time" : "2025-10-01T00:10:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "cover" : null,
+  "icon" : {
+    "type" : "external",
+    "external" : {
+      "url" : "https://www.notion.so/icons/clipping_gray.svg"
+    }
+  },
+  "parent" : {
+    "type" : "database_id",
+    "database_id" : "27ef521e-2b70-804c-a771-d46e8d445dc8"
+  },
+  "archived" : false,
+  "in_trash" : false,
+  "is_locked" : false,
+  "properties" : {
+    "Flow" : {
+      "id" : "J%5CU%7B",
+      "type" : "select",
+      "select" : {
+        "id" : "f0b6e4da-28f5-4334-90bd-4c2b6b6fbbca",
+        "name" : "Alternate",
+        "color" : "brown"
+      }
+    },
+    "Use Case" : {
+      "id" : "dZh%40",
+      "type" : "select",
+      "select" : {
+        "id" : ":>N[",
+        "name" : "Authorize",
+        "color" : "red"
+      }
+    },
+    "Status" : {
+      "id" : "k%3FMm",
+      "type" : "status",
+      "status" : {
+        "id" : "8e60037a-bd86-4bec-ae03-6dcd5c392137",
+        "name" : "Not started",
+        "color" : "default"
+      }
+    },
+    "Priority" : {
+      "id" : "lgXk",
+      "type" : "select",
+      "select" : {
+        "id" : "PBTx",
+        "name" : "P1",
+        "color" : "red"
+      }
+    },
+    "Title" : {
+      "id" : "title",
+      "type" : "title",
+      "title" : [ {
+        "type" : "text",
+        "text" : {
+          "content" : "Authorization Reversal (Void)",
+          "link" : null
+        },
+        "annotations" : {
+          "bold" : false,
+          "italic" : false,
+          "strikethrough" : false,
+          "underline" : false,
+          "code" : false,
+          "color" : "default"
+        },
+        "plain_text" : "Authorization Reversal (Void)",
+        "href" : null
+      } ]
+    }
+  },
+  "url" : "https://www.notion.so/Authorization-Reversal-Void-27ff521e2b7080ebbf13f1a9e8e8e6e5",
+  "public_url" : null
+}

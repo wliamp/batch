@@ -1,0 +1,95 @@
+{
+  "object" : "page",
+  "id" : "27cf521e-2b70-8026-93fa-d305a3349dae",
+  "created_time" : "2025-09-28T17:32:00.000Z",
+  "last_edited_time" : "2025-09-29T06:33:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "cover" : null,
+  "icon" : {
+    "type" : "emoji",
+    "emoji" : "🏬"
+  },
+  "parent" : {
+    "type" : "database_id",
+    "database_id" : "278f521e-2b70-8020-bf7a-c18805532ce2"
+  },
+  "archived" : false,
+  "in_trash" : false,
+  "is_locked" : false,
+  "properties" : {
+    "Actor" : {
+      "id" : "Yz%40%60",
+      "type" : "select",
+      "select" : {
+        "id" : "55e1fcc0-e6c9-43b7-bc48-df1780b5d187",
+        "name" : "Merchant",
+        "color" : "brown"
+      }
+    },
+    "Policies" : {
+      "id" : "b%7Bxb",
+      "type" : "multi_select",
+      "multi_select" : [ {
+        "id" : "04e934c8-f2f3-42e0-b035-85d3276c8075",
+        "name" : "Chargeback",
+        "color" : "purple"
+      }, {
+        "id" : "cb36254f-31c1-4f02-84d6-9ad93de93596",
+        "name" : "Fraud",
+        "color" : "purple"
+      }, {
+        "id" : "7dcd9209-09fe-46ee-94fb-ecafb408d9ff",
+        "name" : "Notify",
+        "color" : "gray"
+      } ]
+    },
+    "Status" : {
+      "id" : "k%3FMm",
+      "type" : "status",
+      "status" : {
+        "id" : "8e60037a-bd86-4bec-ae03-6dcd5c392137",
+        "name" : "Not started",
+        "color" : "default"
+      }
+    },
+    "Priority" : {
+      "id" : "lgXk",
+      "type" : "select",
+      "select" : {
+        "id" : "_lFc",
+        "name" : "P3",
+        "color" : "purple"
+      }
+    },
+    "Title" : {
+      "id" : "title",
+      "type" : "title",
+      "title" : [ {
+        "type" : "text",
+        "text" : {
+          "content" : "Merchant Suspicious Transaction Alerts",
+          "link" : null
+        },
+        "annotations" : {
+          "bold" : false,
+          "italic" : false,
+          "strikethrough" : false,
+          "underline" : false,
+          "code" : false,
+          "color" : "default"
+        },
+        "plain_text" : "Merchant Suspicious Transaction Alerts",
+        "href" : null
+      } ]
+    }
+  },
+  "url" : "https://www.notion.so/Merchant-Suspicious-Transaction-Alerts-27cf521e2b70802693fad305a3349dae",
+  "public_url" : null
+}

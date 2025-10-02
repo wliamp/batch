@@ -1,0 +1,806 @@
+[ {
+  "object" : "block",
+  "id" : "27df521e-2b70-81b8-b0de-c9f5fc52b367",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "27df521e-2b70-8131-801d-dad9a27bded5"
+  },
+  "created_time" : "2025-09-29T23:56:00.000Z",
+  "last_edited_time" : "2025-09-30T00:24:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "heading_3",
+  "heading_3" : {
+    "rich_text" : [ ],
+    "is_toggleable" : false,
+    "color" : "default"
+  }
+}, {
+  "object" : "block",
+  "id" : "27ef521e-2b70-808a-8ded-f914891d943b",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "27df521e-2b70-8131-801d-dad9a27bded5"
+  },
+  "created_time" : "2025-09-30T00:24:00.000Z",
+  "last_edited_time" : "2025-09-30T00:25:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "heading_3",
+  "heading_3" : {
+    "rich_text" : [ {
+      "type" : "text",
+      "text" : {
+        "content" : "👤 ",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "👤 ",
+      "href" : null
+    }, {
+      "type" : "text",
+      "text" : {
+        "content" : "Payer",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : true,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "Payer",
+      "href" : null
+    } ],
+    "is_toggleable" : false,
+    "color" : "default"
+  }
+}, {
+  "object" : "block",
+  "id" : "27ef521e-2b70-805a-9c6e-e3383aade622",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "27df521e-2b70-8131-801d-dad9a27bded5"
+  },
+  "created_time" : "2025-09-30T00:24:00.000Z",
+  "last_edited_time" : "2025-09-30T00:26:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "heading_3",
+  "heading_3" : {
+    "rich_text" : [ {
+      "type" : "text",
+      "text" : {
+        "content" : "🛍️ ",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "🛍️ ",
+      "href" : null
+    }, {
+      "type" : "text",
+      "text" : {
+        "content" : "Merchant",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : true,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "Merchant",
+      "href" : null
+    } ],
+    "is_toggleable" : false,
+    "color" : "default"
+  }
+}, {
+  "object" : "block",
+  "id" : "27ef521e-2b70-806f-ac67-e9b97854804f",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "27df521e-2b70-8131-801d-dad9a27bded5"
+  },
+  "created_time" : "2025-09-30T00:24:00.000Z",
+  "last_edited_time" : "2025-09-30T00:27:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "heading_3",
+  "heading_3" : {
+    "rich_text" : [ {
+      "type" : "text",
+      "text" : {
+        "content" : "🔗 ",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "🔗 ",
+      "href" : null
+    }, {
+      "type" : "text",
+      "text" : {
+        "content" : "Gateway → Payment Gateway",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : true,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "Gateway → Payment Gateway",
+      "href" : null
+    } ],
+    "is_toggleable" : false,
+    "color" : "default"
+  }
+}, {
+  "object" : "block",
+  "id" : "27ef521e-2b70-8028-b849-d8d1370c5d9b",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "27df521e-2b70-8131-801d-dad9a27bded5"
+  },
+  "created_time" : "2025-09-30T00:24:00.000Z",
+  "last_edited_time" : "2025-09-30T00:26:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "heading_3",
+  "heading_3" : {
+    "rich_text" : [ {
+      "type" : "text",
+      "text" : {
+        "content" : "⚙️ ",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "⚙️ ",
+      "href" : null
+    }, {
+      "type" : "text",
+      "text" : {
+        "content" : "Processor → Payment Processor",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : true,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "Processor → Payment Processor",
+      "href" : null
+    } ],
+    "is_toggleable" : false,
+    "color" : "default"
+  }
+}, {
+  "object" : "block",
+  "id" : "27ef521e-2b70-806e-a05c-e2ec0ffd29c0",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "27df521e-2b70-8131-801d-dad9a27bded5"
+  },
+  "created_time" : "2025-09-30T00:24:00.000Z",
+  "last_edited_time" : "2025-09-30T00:27:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "heading_3",
+  "heading_3" : {
+    "rich_text" : [ {
+      "type" : "text",
+      "text" : {
+        "content" : "🌐 ",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "🌐 ",
+      "href" : null
+    }, {
+      "type" : "text",
+      "text" : {
+        "content" : "Network → Card Network / Clearing House",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : true,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "Network → Card Network / Clearing House",
+      "href" : null
+    } ],
+    "is_toggleable" : false,
+    "color" : "default"
+  }
+}, {
+  "object" : "block",
+  "id" : "27ef521e-2b70-803d-b4c3-f724d2c3cf8a",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "27df521e-2b70-8131-801d-dad9a27bded5"
+  },
+  "created_time" : "2025-09-30T00:24:00.000Z",
+  "last_edited_time" : "2025-09-30T00:28:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "heading_3",
+  "heading_3" : {
+    "rich_text" : [ {
+      "type" : "text",
+      "text" : {
+        "content" : "💳 ",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "💳 ",
+      "href" : null
+    }, {
+      "type" : "text",
+      "text" : {
+        "content" : "Issuer → Issuer System / Bank",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : true,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "Issuer → Issuer System / Bank",
+      "href" : null
+    } ],
+    "is_toggleable" : false,
+    "color" : "default"
+  }
+}, {
+  "object" : "block",
+  "id" : "27ef521e-2b70-8088-85d2-d3477fb4e7e4",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "27df521e-2b70-8131-801d-dad9a27bded5"
+  },
+  "created_time" : "2025-09-30T00:24:00.000Z",
+  "last_edited_time" : "2025-09-30T00:28:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "heading_3",
+  "heading_3" : {
+    "rich_text" : [ {
+      "type" : "text",
+      "text" : {
+        "content" : "🏦 ",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "🏦 ",
+      "href" : null
+    }, {
+      "type" : "text",
+      "text" : {
+        "content" : "Acquirer → Acquirer System / Bank",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : true,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "Acquirer → Acquirer System / Bank",
+      "href" : null
+    } ],
+    "is_toggleable" : false,
+    "color" : "default"
+  }
+}, {
+  "object" : "block",
+  "id" : "27ef521e-2b70-80ad-9442-cfa0527d43b2",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "27df521e-2b70-8131-801d-dad9a27bded5"
+  },
+  "created_time" : "2025-09-30T00:24:00.000Z",
+  "last_edited_time" : "2025-09-30T00:28:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "heading_3",
+  "heading_3" : {
+    "rich_text" : [ {
+      "type" : "text",
+      "text" : {
+        "content" : "🔒 ",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "🔒 ",
+      "href" : null
+    }, {
+      "type" : "text",
+      "text" : {
+        "content" : "Secure → Security Service",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : true,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "Secure → Security Service",
+      "href" : null
+    } ],
+    "is_toggleable" : false,
+    "color" : "default"
+  }
+}, {
+  "object" : "block",
+  "id" : "27ef521e-2b70-809a-b81a-f29ae60f68c9",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "27df521e-2b70-8131-801d-dad9a27bded5"
+  },
+  "created_time" : "2025-09-30T00:24:00.000Z",
+  "last_edited_time" : "2025-09-30T00:28:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "heading_3",
+  "heading_3" : {
+    "rich_text" : [ {
+      "type" : "text",
+      "text" : {
+        "content" : "📢 ",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "📢 ",
+      "href" : null
+    }, {
+      "type" : "text",
+      "text" : {
+        "content" : "Notify → Notification Service",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : true,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "Notify → Notification Service",
+      "href" : null
+    } ],
+    "is_toggleable" : false,
+    "color" : "default"
+  }
+}, {
+  "object" : "block",
+  "id" : "27ef521e-2b70-8045-aa71-c95ffc0ae4ac",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "27df521e-2b70-8131-801d-dad9a27bded5"
+  },
+  "created_time" : "2025-09-30T00:24:00.000Z",
+  "last_edited_time" : "2025-09-30T00:28:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "heading_3",
+  "heading_3" : {
+    "rich_text" : [ {
+      "type" : "text",
+      "text" : {
+        "content" : "📜 ",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "📜 ",
+      "href" : null
+    }, {
+      "type" : "text",
+      "text" : {
+        "content" : "Logger → Logging Service",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : true,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "Logger → Logging Service",
+      "href" : null
+    } ],
+    "is_toggleable" : false,
+    "color" : "default"
+  }
+}, {
+  "object" : "block",
+  "id" : "27ef521e-2b70-80e3-a75a-f4341c6520c6",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "27df521e-2b70-8131-801d-dad9a27bded5"
+  },
+  "created_time" : "2025-09-30T00:24:00.000Z",
+  "last_edited_time" : "2025-09-30T00:29:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "heading_3",
+  "heading_3" : {
+    "rich_text" : [ {
+      "type" : "text",
+      "text" : {
+        "content" : "🕵️ ",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "🕵️ ",
+      "href" : null
+    }, {
+      "type" : "text",
+      "text" : {
+        "content" : "F&R → Fraud / Risk Engine",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : true,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "F&R → Fraud / Risk Engine",
+      "href" : null
+    } ],
+    "is_toggleable" : false,
+    "color" : "default"
+  }
+}, {
+  "object" : "block",
+  "id" : "27ef521e-2b70-809a-a9ec-eceaa2fda7cd",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "27df521e-2b70-8131-801d-dad9a27bded5"
+  },
+  "created_time" : "2025-09-30T00:24:00.000Z",
+  "last_edited_time" : "2025-09-30T00:29:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "heading_3",
+  "heading_3" : {
+    "rich_text" : [ {
+      "type" : "text",
+      "text" : {
+        "content" : "💱 ",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "💱 ",
+      "href" : null
+    }, {
+      "type" : "text",
+      "text" : {
+        "content" : "C&S → Clearing & Settlement",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : true,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "C&S → Clearing & Settlement",
+      "href" : null
+    } ],
+    "is_toggleable" : false,
+    "color" : "default"
+  }
+}, {
+  "object" : "block",
+  "id" : "27ef521e-2b70-80e5-8c09-c66f06a917e0",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "27df521e-2b70-8131-801d-dad9a27bded5"
+  },
+  "created_time" : "2025-09-30T00:24:00.000Z",
+  "last_edited_time" : "2025-09-30T00:29:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "heading_3",
+  "heading_3" : {
+    "rich_text" : [ {
+      "type" : "text",
+      "text" : {
+        "content" : "⚖️ ",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "⚖️ ",
+      "href" : null
+    }, {
+      "type" : "text",
+      "text" : {
+        "content" : "Regulator → Regulatory Authority",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : true,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "Regulator → Regulatory Authority",
+      "href" : null
+    } ],
+    "is_toggleable" : false,
+    "color" : "default"
+  }
+}, {
+  "object" : "block",
+  "id" : "27df521e-2b70-81b5-9340-dd12574e0fee",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "27df521e-2b70-8131-801d-dad9a27bded5"
+  },
+  "created_time" : "2025-09-29T23:56:00.000Z",
+  "last_edited_time" : "2025-09-29T23:56:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "paragraph",
+  "paragraph" : {
+    "rich_text" : [ ],
+    "color" : "default"
+  }
+} ]

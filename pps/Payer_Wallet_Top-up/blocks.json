@@ -1,0 +1,761 @@
+[ {
+  "object" : "block",
+  "id" : "27cf521e-2b70-805d-bdb8-f370ecd8d053",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "278f521e-2b70-802c-924d-c906c0e734bc"
+  },
+  "created_time" : "2025-09-28T11:41:00.000Z",
+  "last_edited_time" : "2025-09-29T05:03:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "quote",
+  "quote" : {
+    "rich_text" : [ {
+      "type" : "text",
+      "text" : {
+        "content" : "“As a ",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : true,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "“As a ",
+      "href" : null
+    }, {
+      "type" : "text",
+      "text" : {
+        "content" : "Payer",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : true,
+        "italic" : true,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "Payer",
+      "href" : null
+    }, {
+      "type" : "text",
+      "text" : {
+        "content" : ", I want to ",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : true,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : ", I want to ",
+      "href" : null
+    }, {
+      "type" : "text",
+      "text" : {
+        "content" : "top-up my wallet/balance",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : true,
+        "italic" : true,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "top-up my wallet/balance",
+      "href" : null
+    }, {
+      "type" : "text",
+      "text" : {
+        "content" : ", so that I can ",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : true,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : ", so that I can ",
+      "href" : null
+    }, {
+      "type" : "text",
+      "text" : {
+        "content" : "use funds more quickly",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : true,
+        "italic" : true,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "use funds more quickly",
+      "href" : null
+    }, {
+      "type" : "text",
+      "text" : {
+        "content" : ".”",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : true,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : ".”",
+      "href" : null
+    } ],
+    "color" : "default"
+  }
+}, {
+  "object" : "block",
+  "id" : "27df521e-2b70-8030-814a-ca643893bb91",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "278f521e-2b70-802c-924d-c906c0e734bc"
+  },
+  "created_time" : "2025-09-29T05:03:00.000Z",
+  "last_edited_time" : "2025-09-29T05:03:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "heading_3",
+  "heading_3" : {
+    "rich_text" : [ {
+      "type" : "text",
+      "text" : {
+        "content" : "📌 Scope",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "📌 Scope",
+      "href" : null
+    } ],
+    "is_toggleable" : false,
+    "color" : "default"
+  }
+}, {
+  "object" : "block",
+  "id" : "27df521e-2b70-80b3-8efb-e254dc9fffeb",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "278f521e-2b70-802c-924d-c906c0e734bc"
+  },
+  "created_time" : "2025-09-29T05:03:00.000Z",
+  "last_edited_time" : "2025-09-29T05:03:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "bulleted_list_item",
+  "bulleted_list_item" : {
+    "rich_text" : [ {
+      "type" : "text",
+      "text" : {
+        "content" : "Allow Payer to add funds into a stored-value account or wallet.",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "Allow Payer to add funds into a stored-value account or wallet.",
+      "href" : null
+    } ],
+    "color" : "default"
+  }
+}, {
+  "object" : "block",
+  "id" : "27df521e-2b70-800e-9b90-fcbfbde553a5",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "278f521e-2b70-802c-924d-c906c0e734bc"
+  },
+  "created_time" : "2025-09-29T05:03:00.000Z",
+  "last_edited_time" : "2025-09-29T05:03:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "bulleted_list_item",
+  "bulleted_list_item" : {
+    "rich_text" : [ {
+      "type" : "text",
+      "text" : {
+        "content" : "Support multiple funding sources (card, bank transfer, external wallet).",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "Support multiple funding sources (card, bank transfer, external wallet).",
+      "href" : null
+    } ],
+    "color" : "default"
+  }
+}, {
+  "object" : "block",
+  "id" : "27df521e-2b70-80f7-91d0-fb2ae960c350",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "278f521e-2b70-802c-924d-c906c0e734bc"
+  },
+  "created_time" : "2025-09-29T05:03:00.000Z",
+  "last_edited_time" : "2025-09-29T05:03:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "bulleted_list_item",
+  "bulleted_list_item" : {
+    "rich_text" : [ {
+      "type" : "text",
+      "text" : {
+        "content" : "Apply fraud checks, AML/CTF rules, and sanctions screening.",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "Apply fraud checks, AML/CTF rules, and sanctions screening.",
+      "href" : null
+    } ],
+    "color" : "default"
+  }
+}, {
+  "object" : "block",
+  "id" : "27df521e-2b70-80d2-b3fe-e7f30ba11127",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "278f521e-2b70-802c-924d-c906c0e734bc"
+  },
+  "created_time" : "2025-09-29T05:03:00.000Z",
+  "last_edited_time" : "2025-09-29T05:03:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "bulleted_list_item",
+  "bulleted_list_item" : {
+    "rich_text" : [ {
+      "type" : "text",
+      "text" : {
+        "content" : "Top-up must update wallet balance in real-time.",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "Top-up must update wallet balance in real-time.",
+      "href" : null
+    } ],
+    "color" : "default"
+  }
+}, {
+  "object" : "block",
+  "id" : "27df521e-2b70-808f-871c-cd2af06d9a6e",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "278f521e-2b70-802c-924d-c906c0e734bc"
+  },
+  "created_time" : "2025-09-29T05:03:00.000Z",
+  "last_edited_time" : "2025-09-29T05:03:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "bulleted_list_item",
+  "bulleted_list_item" : {
+    "rich_text" : [ {
+      "type" : "text",
+      "text" : {
+        "content" : "Provide receipts and confirmations to Payer.",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "Provide receipts and confirmations to Payer.",
+      "href" : null
+    } ],
+    "color" : "default"
+  }
+}, {
+  "object" : "block",
+  "id" : "27df521e-2b70-80b9-a3c3-f3bf70152b5e",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "278f521e-2b70-802c-924d-c906c0e734bc"
+  },
+  "created_time" : "2025-09-29T05:03:00.000Z",
+  "last_edited_time" : "2025-09-29T05:03:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "divider",
+  "divider" : { }
+}, {
+  "object" : "block",
+  "id" : "27df521e-2b70-80a6-a104-c2eb816c0b66",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "278f521e-2b70-802c-924d-c906c0e734bc"
+  },
+  "created_time" : "2025-09-29T05:03:00.000Z",
+  "last_edited_time" : "2025-09-29T05:04:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "heading_3",
+  "heading_3" : {
+    "rich_text" : [ {
+      "type" : "text",
+      "text" : {
+        "content" : "✅ Acceptance Criteria",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "✅ Acceptance Criteria",
+      "href" : null
+    } ],
+    "is_toggleable" : false,
+    "color" : "default"
+  }
+}, {
+  "object" : "block",
+  "id" : "27df521e-2b70-80ea-82e8-e4885ea346f7",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "278f521e-2b70-802c-924d-c906c0e734bc"
+  },
+  "created_time" : "2025-09-29T05:03:00.000Z",
+  "last_edited_time" : "2025-09-29T05:03:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "bulleted_list_item",
+  "bulleted_list_item" : {
+    "rich_text" : [ {
+      "type" : "text",
+      "text" : {
+        "content" : "Payer can initiate a top-up with a valid funding method.",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "Payer can initiate a top-up with a valid funding method.",
+      "href" : null
+    } ],
+    "color" : "default"
+  }
+}, {
+  "object" : "block",
+  "id" : "27df521e-2b70-80c2-a887-f8bdf9b0e3ef",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "278f521e-2b70-802c-924d-c906c0e734bc"
+  },
+  "created_time" : "2025-09-29T05:03:00.000Z",
+  "last_edited_time" : "2025-09-29T05:03:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "bulleted_list_item",
+  "bulleted_list_item" : {
+    "rich_text" : [ {
+      "type" : "text",
+      "text" : {
+        "content" : "System verifies payment source and available funds.",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "System verifies payment source and available funds.",
+      "href" : null
+    } ],
+    "color" : "default"
+  }
+}, {
+  "object" : "block",
+  "id" : "27df521e-2b70-801a-b42d-ee614544b580",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "278f521e-2b70-802c-924d-c906c0e734bc"
+  },
+  "created_time" : "2025-09-29T05:03:00.000Z",
+  "last_edited_time" : "2025-09-29T05:03:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "bulleted_list_item",
+  "bulleted_list_item" : {
+    "rich_text" : [ {
+      "type" : "text",
+      "text" : {
+        "content" : "Top-up transaction is processed securely and reflected immediately in balance.",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "Top-up transaction is processed securely and reflected immediately in balance.",
+      "href" : null
+    } ],
+    "color" : "default"
+  }
+}, {
+  "object" : "block",
+  "id" : "27df521e-2b70-80bb-a53f-d6a660949ec2",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "278f521e-2b70-802c-924d-c906c0e734bc"
+  },
+  "created_time" : "2025-09-29T05:03:00.000Z",
+  "last_edited_time" : "2025-09-29T05:03:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "bulleted_list_item",
+  "bulleted_list_item" : {
+    "rich_text" : [ {
+      "type" : "text",
+      "text" : {
+        "content" : "Payer receives confirmation (amount, source, timestamp, status).",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "Payer receives confirmation (amount, source, timestamp, status).",
+      "href" : null
+    } ],
+    "color" : "default"
+  }
+}, {
+  "object" : "block",
+  "id" : "27df521e-2b70-80db-af0b-c82169db1895",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "278f521e-2b70-802c-924d-c906c0e734bc"
+  },
+  "created_time" : "2025-09-29T05:03:00.000Z",
+  "last_edited_time" : "2025-09-29T05:03:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "bulleted_list_item",
+  "bulleted_list_item" : {
+    "rich_text" : [ {
+      "type" : "text",
+      "text" : {
+        "content" : "All top-up events logged (payer, source, amount, outcome).",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "All top-up events logged (payer, source, amount, outcome).",
+      "href" : null
+    } ],
+    "color" : "default"
+  }
+}, {
+  "object" : "block",
+  "id" : "27df521e-2b70-8073-92d7-f80d54cf9948",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "278f521e-2b70-802c-924d-c906c0e734bc"
+  },
+  "created_time" : "2025-09-29T05:03:00.000Z",
+  "last_edited_time" : "2025-09-29T05:03:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "bulleted_list_item",
+  "bulleted_list_item" : {
+    "rich_text" : [ {
+      "type" : "text",
+      "text" : {
+        "content" : "Duplicate requests are idempotent (no double-charging).",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "Duplicate requests are idempotent (no double-charging).",
+      "href" : null
+    } ],
+    "color" : "default"
+  }
+}, {
+  "object" : "block",
+  "id" : "27df521e-2b70-80a6-8aa4-cdc4caecbfbc",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "278f521e-2b70-802c-924d-c906c0e734bc"
+  },
+  "created_time" : "2025-09-29T05:03:00.000Z",
+  "last_edited_time" : "2025-09-29T05:03:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "bulleted_list_item",
+  "bulleted_list_item" : {
+    "rich_text" : [ {
+      "type" : "text",
+      "text" : {
+        "content" : "Failed top-ups do not affect wallet balance.",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "Failed top-ups do not affect wallet balance.",
+      "href" : null
+    } ],
+    "color" : "default"
+  }
+}, {
+  "object" : "block",
+  "id" : "278f521e-2b70-8053-a3b9-d724662a41a2",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "278f521e-2b70-802c-924d-c906c0e734bc"
+  },
+  "created_time" : "2025-09-24T12:13:00.000Z",
+  "last_edited_time" : "2025-09-24T12:13:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "paragraph",
+  "paragraph" : {
+    "rich_text" : [ ],
+    "color" : "default"
+  }
+} ]

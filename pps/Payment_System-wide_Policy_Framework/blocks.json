@@ -1,0 +1,1245 @@
+[ {
+  "object" : "block",
+  "id" : "27cf521e-2b70-80e4-a71d-e01cf5766a8f",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "277f521e-2b70-80ab-a64d-fa573b73f662"
+  },
+  "created_time" : "2025-09-28T15:44:00.000Z",
+  "last_edited_time" : "2025-09-29T05:30:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "heading_3",
+  "heading_3" : {
+    "rich_text" : [ {
+      "type" : "text",
+      "text" : {
+        "content" : "⚖️ Compliance & Regulation (C&R)",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : true,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "⚖️ Compliance & Regulation (C&R)",
+      "href" : null
+    } ],
+    "is_toggleable" : false,
+    "color" : "default"
+  }
+}, {
+  "object" : "block",
+  "id" : "27cf521e-2b70-8011-9b6f-ca68c66ee3f5",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "277f521e-2b70-80ab-a64d-fa573b73f662"
+  },
+  "created_time" : "2025-09-28T15:44:00.000Z",
+  "last_edited_time" : "2025-09-29T05:29:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "bulleted_list_item",
+  "bulleted_list_item" : {
+    "rich_text" : [ {
+      "type" : "text",
+      "text" : {
+        "content" : "Conform to laws, card network rules, PCI-DSS, GDPR, AML/CTF.",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "Conform to laws, card network rules, PCI-DSS, GDPR, AML/CTF.",
+      "href" : null
+    } ],
+    "color" : "default"
+  }
+}, {
+  "object" : "block",
+  "id" : "27cf521e-2b70-80f7-8e96-f1335a5ac7f0",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "277f521e-2b70-80ab-a64d-fa573b73f662"
+  },
+  "created_time" : "2025-09-28T15:44:00.000Z",
+  "last_edited_time" : "2025-09-29T05:29:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "bulleted_list_item",
+  "bulleted_list_item" : {
+    "rich_text" : [ {
+      "type" : "text",
+      "text" : {
+        "content" : "Sanctions/blacklist screening (OFAC, EU, local regulator).",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "Sanctions/blacklist screening (OFAC, EU, local regulator).",
+      "href" : null
+    } ],
+    "color" : "default"
+  }
+}, {
+  "object" : "block",
+  "id" : "27cf521e-2b70-803d-928b-d6602517b6c0",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "277f521e-2b70-80ab-a64d-fa573b73f662"
+  },
+  "created_time" : "2025-09-28T15:44:00.000Z",
+  "last_edited_time" : "2025-09-29T05:29:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "bulleted_list_item",
+  "bulleted_list_item" : {
+    "rich_text" : [ {
+      "type" : "text",
+      "text" : {
+        "content" : "Data retention policy (e.g., 5–7 years).",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "Data retention policy (e.g., 5–7 years).",
+      "href" : null
+    } ],
+    "color" : "default"
+  }
+}, {
+  "object" : "block",
+  "id" : "27cf521e-2b70-8025-a135-fa9607368826",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "277f521e-2b70-80ab-a64d-fa573b73f662"
+  },
+  "created_time" : "2025-09-28T15:44:00.000Z",
+  "last_edited_time" : "2025-09-29T05:29:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "bulleted_list_item",
+  "bulleted_list_item" : {
+    "rich_text" : [ {
+      "type" : "text",
+      "text" : {
+        "content" : "Consent management & PSD2/RTS compliance.",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "Consent management & PSD2/RTS compliance.",
+      "href" : null
+    } ],
+    "color" : "default"
+  }
+}, {
+  "object" : "block",
+  "id" : "27cf521e-2b70-8059-b392-d6240c8a2738",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "277f521e-2b70-80ab-a64d-fa573b73f662"
+  },
+  "created_time" : "2025-09-28T15:44:00.000Z",
+  "last_edited_time" : "2025-09-29T05:29:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "bulleted_list_item",
+  "bulleted_list_item" : {
+    "rich_text" : [ {
+      "type" : "text",
+      "text" : {
+        "content" : "Regulator & Settlement actors have full audit access.",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "Regulator & Settlement actors have full audit access.",
+      "href" : null
+    } ],
+    "color" : "default"
+  }
+}, {
+  "object" : "block",
+  "id" : "27cf521e-2b70-801d-8bfd-d226a969dc30",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "277f521e-2b70-80ab-a64d-fa573b73f662"
+  },
+  "created_time" : "2025-09-28T15:44:00.000Z",
+  "last_edited_time" : "2025-09-29T05:29:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "heading_3",
+  "heading_3" : {
+    "rich_text" : [ {
+      "type" : "text",
+      "text" : {
+        "content" : "🔐 Security & Authenticity (S&A)",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : true,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "🔐 Security & Authenticity (S&A)",
+      "href" : null
+    } ],
+    "is_toggleable" : false,
+    "color" : "default"
+  }
+}, {
+  "object" : "block",
+  "id" : "27cf521e-2b70-8022-b80e-cdddae10d55d",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "277f521e-2b70-80ab-a64d-fa573b73f662"
+  },
+  "created_time" : "2025-09-28T15:44:00.000Z",
+  "last_edited_time" : "2025-09-29T05:29:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "bulleted_list_item",
+  "bulleted_list_item" : {
+    "rich_text" : [ {
+      "type" : "text",
+      "text" : {
+        "content" : "Integrity: request signing, encryption, anti-replay.",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "Integrity: request signing, encryption, anti-replay.",
+      "href" : null
+    } ],
+    "color" : "default"
+  }
+}, {
+  "object" : "block",
+  "id" : "27cf521e-2b70-80b5-aea3-d098bf5be62a",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "277f521e-2b70-80ab-a64d-fa573b73f662"
+  },
+  "created_time" : "2025-09-28T15:44:00.000Z",
+  "last_edited_time" : "2025-09-29T05:29:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "bulleted_list_item",
+  "bulleted_list_item" : {
+    "rich_text" : [ {
+      "type" : "text",
+      "text" : {
+        "content" : "Authentication: OTP, 3DS, MFA.",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "Authentication: OTP, 3DS, MFA.",
+      "href" : null
+    } ],
+    "color" : "default"
+  }
+}, {
+  "object" : "block",
+  "id" : "27cf521e-2b70-8092-9cec-ccbecf65edd1",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "277f521e-2b70-80ab-a64d-fa573b73f662"
+  },
+  "created_time" : "2025-09-28T15:44:00.000Z",
+  "last_edited_time" : "2025-09-29T05:29:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "bulleted_list_item",
+  "bulleted_list_item" : {
+    "rich_text" : [ {
+      "type" : "text",
+      "text" : {
+        "content" : "Tokenization for PAN/account data.",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "Tokenization for PAN/account data.",
+      "href" : null
+    } ],
+    "color" : "default"
+  }
+}, {
+  "object" : "block",
+  "id" : "27cf521e-2b70-8048-8509-e97ed6cf434f",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "277f521e-2b70-80ab-a64d-fa573b73f662"
+  },
+  "created_time" : "2025-09-28T15:44:00.000Z",
+  "last_edited_time" : "2025-09-29T05:29:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "bulleted_list_item",
+  "bulleted_list_item" : {
+    "rich_text" : [ {
+      "type" : "text",
+      "text" : {
+        "content" : "Secure key management & HSM enforcement.",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "Secure key management & HSM enforcement.",
+      "href" : null
+    } ],
+    "color" : "default"
+  }
+}, {
+  "object" : "block",
+  "id" : "27cf521e-2b70-80c4-83a8-c653cc3fe9fe",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "277f521e-2b70-80ab-a64d-fa573b73f662"
+  },
+  "created_time" : "2025-09-28T15:44:00.000Z",
+  "last_edited_time" : "2025-09-29T05:29:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "bulleted_list_item",
+  "bulleted_list_item" : {
+    "rich_text" : [ {
+      "type" : "text",
+      "text" : {
+        "content" : "Rate limiting & throttling (DoS, brute-force protection).",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "Rate limiting & throttling (DoS, brute-force protection).",
+      "href" : null
+    } ],
+    "color" : "default"
+  }
+}, {
+  "object" : "block",
+  "id" : "27cf521e-2b70-80e1-88d3-ef7dce08f378",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "277f521e-2b70-80ab-a64d-fa573b73f662"
+  },
+  "created_time" : "2025-09-28T15:44:00.000Z",
+  "last_edited_time" : "2025-09-29T05:29:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "heading_3",
+  "heading_3" : {
+    "rich_text" : [ {
+      "type" : "text",
+      "text" : {
+        "content" : "🧾 Traceability & Auditability (T&A)",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : true,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "🧾 Traceability & Auditability (T&A)",
+      "href" : null
+    } ],
+    "is_toggleable" : false,
+    "color" : "default"
+  }
+}, {
+  "object" : "block",
+  "id" : "27cf521e-2b70-80d7-a1ee-caed9df96905",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "277f521e-2b70-80ab-a64d-fa573b73f662"
+  },
+  "created_time" : "2025-09-28T15:44:00.000Z",
+  "last_edited_time" : "2025-09-29T05:29:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "bulleted_list_item",
+  "bulleted_list_item" : {
+    "rich_text" : [ {
+      "type" : "text",
+      "text" : {
+        "content" : "All actions logged (success/failure, timestamp, actor, ID).",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "All actions logged (success/failure, timestamp, actor, ID).",
+      "href" : null
+    } ],
+    "color" : "default"
+  }
+}, {
+  "object" : "block",
+  "id" : "27cf521e-2b70-80d8-a664-fc2e06462daa",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "277f521e-2b70-80ab-a64d-fa573b73f662"
+  },
+  "created_time" : "2025-09-28T15:44:00.000Z",
+  "last_edited_time" : "2025-09-29T05:29:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "bulleted_list_item",
+  "bulleted_list_item" : {
+    "rich_text" : [ {
+      "type" : "text",
+      "text" : {
+        "content" : "Immutable, queryable, reconciliation-ready.",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "Immutable, queryable, reconciliation-ready.",
+      "href" : null
+    } ],
+    "color" : "default"
+  }
+}, {
+  "object" : "block",
+  "id" : "27cf521e-2b70-8092-b85d-cd5deb56a96f",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "277f521e-2b70-80ab-a64d-fa573b73f662"
+  },
+  "created_time" : "2025-09-28T15:44:00.000Z",
+  "last_edited_time" : "2025-09-29T05:29:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "bulleted_list_item",
+  "bulleted_list_item" : {
+    "rich_text" : [ {
+      "type" : "text",
+      "text" : {
+        "content" : "Permanent record storage.",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "Permanent record storage.",
+      "href" : null
+    } ],
+    "color" : "default"
+  }
+}, {
+  "object" : "block",
+  "id" : "27cf521e-2b70-807e-b45b-d3c774aee524",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "277f521e-2b70-80ab-a64d-fa573b73f662"
+  },
+  "created_time" : "2025-09-28T15:44:00.000Z",
+  "last_edited_time" : "2025-09-29T05:29:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "bulleted_list_item",
+  "bulleted_list_item" : {
+    "rich_text" : [ {
+      "type" : "text",
+      "text" : {
+        "content" : "Maker-checker enforced for critical operations.",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "Maker-checker enforced for critical operations.",
+      "href" : null
+    } ],
+    "color" : "default"
+  }
+}, {
+  "object" : "block",
+  "id" : "27cf521e-2b70-8014-8fe3-f9b024718509",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "277f521e-2b70-80ab-a64d-fa573b73f662"
+  },
+  "created_time" : "2025-09-28T15:44:00.000Z",
+  "last_edited_time" : "2025-09-29T05:29:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "heading_3",
+  "heading_3" : {
+    "rich_text" : [ {
+      "type" : "text",
+      "text" : {
+        "content" : "👥 User Protection & Transparency (U&T)",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : true,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "👥 User Protection & Transparency (U&T)",
+      "href" : null
+    } ],
+    "is_toggleable" : false,
+    "color" : "default"
+  }
+}, {
+  "object" : "block",
+  "id" : "27cf521e-2b70-80bb-8669-f52e40c243e1",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "277f521e-2b70-80ab-a64d-fa573b73f662"
+  },
+  "created_time" : "2025-09-28T15:45:00.000Z",
+  "last_edited_time" : "2025-09-29T05:29:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "bulleted_list_item",
+  "bulleted_list_item" : {
+    "rich_text" : [ {
+      "type" : "text",
+      "text" : {
+        "content" : "Clear user communication; no hidden changes or silent errors.",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "Clear user communication; no hidden changes or silent errors.",
+      "href" : null
+    } ],
+    "color" : "default"
+  }
+}, {
+  "object" : "block",
+  "id" : "27cf521e-2b70-8055-9579-e15ca3df67d9",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "277f521e-2b70-80ab-a64d-fa573b73f662"
+  },
+  "created_time" : "2025-09-28T15:45:00.000Z",
+  "last_edited_time" : "2025-09-29T05:29:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "bulleted_list_item",
+  "bulleted_list_item" : {
+    "rich_text" : [ {
+      "type" : "text",
+      "text" : {
+        "content" : "Receipts & proof of payment must be tamper-proof.",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "Receipts & proof of payment must be tamper-proof.",
+      "href" : null
+    } ],
+    "color" : "default"
+  }
+}, {
+  "object" : "block",
+  "id" : "27cf521e-2b70-807a-bb47-e9f6d5f833b8",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "277f521e-2b70-80ab-a64d-fa573b73f662"
+  },
+  "created_time" : "2025-09-28T15:45:00.000Z",
+  "last_edited_time" : "2025-09-29T05:29:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "bulleted_list_item",
+  "bulleted_list_item" : {
+    "rich_text" : [ {
+      "type" : "text",
+      "text" : {
+        "content" : "Merchant reports (daily/monthly, reconciliation-ready).",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "Merchant reports (daily/monthly, reconciliation-ready).",
+      "href" : null
+    } ],
+    "color" : "default"
+  }
+}, {
+  "object" : "block",
+  "id" : "27cf521e-2b70-8014-a559-e22b0dec6c01",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "277f521e-2b70-80ab-a64d-fa573b73f662"
+  },
+  "created_time" : "2025-09-28T15:45:00.000Z",
+  "last_edited_time" : "2025-09-29T05:29:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "bulleted_list_item",
+  "bulleted_list_item" : {
+    "rich_text" : [ {
+      "type" : "text",
+      "text" : {
+        "content" : "Notification Service keeps full history.",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "Notification Service keeps full history.",
+      "href" : null
+    } ],
+    "color" : "default"
+  }
+}, {
+  "object" : "block",
+  "id" : "27cf521e-2b70-80f6-b66d-e1fb30d2a6c8",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "277f521e-2b70-80ab-a64d-fa573b73f662"
+  },
+  "created_time" : "2025-09-28T15:44:00.000Z",
+  "last_edited_time" : "2025-09-29T05:30:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "heading_3",
+  "heading_3" : {
+    "rich_text" : [ {
+      "type" : "text",
+      "text" : {
+        "content" : "⚙️ Operational Integrity (OI)",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : true,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "⚙️ Operational Integrity (OI)",
+      "href" : null
+    } ],
+    "is_toggleable" : false,
+    "color" : "default"
+  }
+}, {
+  "object" : "block",
+  "id" : "27cf521e-2b70-80f7-b23a-f4e1d9e7001b",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "277f521e-2b70-80ab-a64d-fa573b73f662"
+  },
+  "created_time" : "2025-09-28T15:44:00.000Z",
+  "last_edited_time" : "2025-09-29T05:29:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "bulleted_list_item",
+  "bulleted_list_item" : {
+    "rich_text" : [ {
+      "type" : "text",
+      "text" : {
+        "content" : "Idempotent requests (safe retries).",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "Idempotent requests (safe retries).",
+      "href" : null
+    } ],
+    "color" : "default"
+  }
+}, {
+  "object" : "block",
+  "id" : "27cf521e-2b70-80e0-8eec-e35d6c287ffa",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "277f521e-2b70-80ab-a64d-fa573b73f662"
+  },
+  "created_time" : "2025-09-28T15:44:00.000Z",
+  "last_edited_time" : "2025-09-29T05:29:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "bulleted_list_item",
+  "bulleted_list_item" : {
+    "rich_text" : [ {
+      "type" : "text",
+      "text" : {
+        "content" : "Graceful degradation under failure.",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "Graceful degradation under failure.",
+      "href" : null
+    } ],
+    "color" : "default"
+  }
+}, {
+  "object" : "block",
+  "id" : "27cf521e-2b70-80a3-bd37-e04b9536ebdb",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "277f521e-2b70-80ab-a64d-fa573b73f662"
+  },
+  "created_time" : "2025-09-28T15:44:00.000Z",
+  "last_edited_time" : "2025-09-29T05:29:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "bulleted_list_item",
+  "bulleted_list_item" : {
+    "rich_text" : [ {
+      "type" : "text",
+      "text" : {
+        "content" : "Auto-retry/reconciliation jobs for mismatches.",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "Auto-retry/reconciliation jobs for mismatches.",
+      "href" : null
+    } ],
+    "color" : "default"
+  }
+}, {
+  "object" : "block",
+  "id" : "27cf521e-2b70-80a6-9978-cdd1925bf302",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "277f521e-2b70-80ab-a64d-fa573b73f662"
+  },
+  "created_time" : "2025-09-28T15:44:00.000Z",
+  "last_edited_time" : "2025-09-29T05:29:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "bulleted_list_item",
+  "bulleted_list_item" : {
+    "rich_text" : [ {
+      "type" : "text",
+      "text" : {
+        "content" : "Monitoring & alerting for errors, fraud spikes, SLA breaches.",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "Monitoring & alerting for errors, fraud spikes, SLA breaches.",
+      "href" : null
+    } ],
+    "color" : "default"
+  }
+}, {
+  "object" : "block",
+  "id" : "27cf521e-2b70-800a-9f17-f90e79a69449",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "277f521e-2b70-80ab-a64d-fa573b73f662"
+  },
+  "created_time" : "2025-09-28T15:44:00.000Z",
+  "last_edited_time" : "2025-09-29T05:29:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "bulleted_list_item",
+  "bulleted_list_item" : {
+    "rich_text" : [ {
+      "type" : "text",
+      "text" : {
+        "content" : "Failover/HA, disaster recovery tested.",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "Failover/HA, disaster recovery tested.",
+      "href" : null
+    } ],
+    "color" : "default"
+  }
+}, {
+  "object" : "block",
+  "id" : "27cf521e-2b70-80c0-9e5f-c2aa67200046",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "277f521e-2b70-80ab-a64d-fa573b73f662"
+  },
+  "created_time" : "2025-09-28T15:44:00.000Z",
+  "last_edited_time" : "2025-09-29T05:29:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "bulleted_list_item",
+  "bulleted_list_item" : {
+    "rich_text" : [ {
+      "type" : "text",
+      "text" : {
+        "content" : "System diagnostics (ping, health check) without exposing sensitive data.",
+        "link" : null
+      },
+      "annotations" : {
+        "bold" : false,
+        "italic" : false,
+        "strikethrough" : false,
+        "underline" : false,
+        "code" : false,
+        "color" : "default"
+      },
+      "plain_text" : "System diagnostics (ping, health check) without exposing sensitive data.",
+      "href" : null
+    } ],
+    "color" : "default"
+  }
+}, {
+  "object" : "block",
+  "id" : "277f521e-2b70-808a-9334-e6f41083dda6",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "277f521e-2b70-80ab-a64d-fa573b73f662"
+  },
+  "created_time" : "2025-09-23T23:02:00.000Z",
+  "last_edited_time" : "2025-09-23T23:02:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "paragraph",
+  "paragraph" : {
+    "rich_text" : [ ],
+    "color" : "default"
+  }
+}, {
+  "object" : "block",
+  "id" : "277f521e-2b70-8025-9d18-c33be2f8e766",
+  "parent" : {
+    "type" : "page_id",
+    "page_id" : "277f521e-2b70-80ab-a64d-fa573b73f662"
+  },
+  "created_time" : "2025-09-23T23:02:00.000Z",
+  "last_edited_time" : "2025-09-23T23:02:00.000Z",
+  "created_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "last_edited_by" : {
+    "object" : "user",
+    "id" : "277d872b-594c-815d-ac0f-00023df22fd2"
+  },
+  "has_children" : false,
+  "archived" : false,
+  "in_trash" : false,
+  "type" : "paragraph",
+  "paragraph" : {
+    "rich_text" : [ ],
+    "color" : "default"
+  }
+} ]
