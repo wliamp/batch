@@ -1,0 +1,27 @@
+on:
+  workflow_call:
+    inputs:
+      module:
+        required: true
+        type: string
+    secrets:
+      DEPLOY_KEY:
+        required: true
+
+jobs:
+  cleanup:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: ./.github/actions/setup-env
+        with:
+          DEPLOY_KEY: ${{ secrets.DEPLOY_KEY }}
+
+      - name: Run / Commit & Push
+        run: |
+          git clone --depth=1 git@github.com:wliamp/notion-storage-${{ inputs.module }}.git ${{ inputs.module }}
+          cd ${{ inputs.module }}
+          ./gradlew :cleanup:bootRun --args="--tmp ${{ inputs.module }}"
+
+      - uses: ./.github/actions/git-commit
+        with:
+          scope: "cleanup"

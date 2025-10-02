@@ -7,9 +7,8 @@ on:
 
 jobs:
   cleanup:
-    uses: ./.github/workflows/commit-push.yml
+    uses: ./.github/workflows/cleanup.yml
     with:
       module: "pps"
-      scope: "cleanup"
     secrets:
       DEPLOY_KEY: ${{ secrets.PPS_DEPLOY_KEY }}

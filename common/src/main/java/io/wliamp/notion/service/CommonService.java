@@ -25,12 +25,12 @@ public class CommonService {
     private final PathService pathService;
 
     public Mono<String> safeId(JsonNode node) {
-        return Mono.fromCallable(() -> node.get("id").asText().replace("-", ""))
+        return fromCallable(() -> node.get("id").asText().replace("-", ""))
                 .doOnError(e -> log.error("❌ safeId() FAILED from node={}", node, e));
     }
 
     public Mono<Title> extractTitle(JsonNode node) {
-        return Mono.fromCallable(() ->
+        return fromCallable(() ->
                         ofNullable(node.get("properties"))
                                 .flatMap(n -> stream(n.spliterator(), false)
                                         .filter(prop -> prop.has("title"))

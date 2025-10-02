@@ -7,10 +7,9 @@ on:
 
 jobs:
   backup:
-    uses: ./.github/workflows/commit-push.yml
+    uses: ./.github/workflows/backup.yml
     with:
       module: "pps"
-      scope: "backup"
     secrets:
       DEPLOY_KEY: ${{ secrets.PPS_DEPLOY_KEY }}
       NOTION_INTEGRATION_TOKEN: ${{ secrets.PPS_INTEGRATION_NOTION }}

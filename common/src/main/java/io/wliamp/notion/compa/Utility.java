@@ -2,22 +2,12 @@ package io.wliamp.notion.compa;
 
 import com.fasterxml.jackson.databind.JsonNode;
 
-import java.nio.file.Path;
-import java.nio.file.Paths;
 import java.util.Optional;
 
-import static java.lang.System.*;
-import static java.nio.file.Paths.*;
 import static java.util.Optional.ofNullable;
 import static java.util.UUID.*;
 
 public class Utility {
-    public static Path getDir() {
-        return ofNullable(getProperty("tmp"))
-                .map(Paths::get)
-                .orElse(get(getProperty("java.io.tmpdir")));
-    }
-
     public static Optional<String> extractFirstPlainText(JsonNode arr) {
         return ofNullable(arr)
                 .filter(JsonNode::isArray)

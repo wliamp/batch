@@ -9,8 +9,8 @@ import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
 import java.nio.file.Path;
+import java.nio.file.Paths;
 
-import static io.wliamp.notion.compa.Utility.getDir;
 import static io.wliamp.notion.compa.Utility.safeName;
 import static io.wliamp.notion.constant.Constant.*;
 import static reactor.core.publisher.Mono.fromRunnable;
@@ -29,8 +29,8 @@ public class BackupService {
     private final PathService pathService;
 
     public void backup() {
-        var root = getDir();
-        log.info("🚀 Starting backup into repo {}", root);
+        var root = Paths.get(System.getProperty("tmp"));
+        log.info("🚀 Starting backup into repo {}", root.getFileName().toString().toUpperCase());
 
         prepareRoot(root)
                 .flatMapMany(this::searchAndBackupObjects)

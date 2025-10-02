@@ -6,8 +6,8 @@ import org.springframework.stereotype.Service;
 import reactor.core.publisher.Mono;
 
 import java.nio.file.Path;
+import java.nio.file.Paths;
 
-import static io.wliamp.notion.compa.Utility.*;
 import static io.wliamp.notion.constant.Constant.*;
 import static reactor.core.publisher.Mono.*;
 import static reactor.core.publisher.Mono.empty;
@@ -22,8 +22,8 @@ public class CleanupService {
     private final JsonService jsonService;
 
     public void cleanup() {
-        var root = getDir();
-        log.info("🚀 Starting cleanup repo {}", root);
+        var root = Paths.get(System.getProperty("tmp"));
+        log.info("🚀 Starting cleanup repo {}", root.toString().toUpperCase());
 
         pathService.isExists(root)
                 .filter(Boolean::booleanValue)

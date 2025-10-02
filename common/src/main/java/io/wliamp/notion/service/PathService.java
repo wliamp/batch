@@ -18,7 +18,6 @@ import static reactor.core.scheduler.Schedulers.boundedElastic;
 @Service
 @Slf4j
 public class PathService {
-
     public Flux<Path> listPath(Path path) {
         return using(
                 () -> list(path),

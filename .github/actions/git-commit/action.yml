@@ -1,0 +1,21 @@
+name: "Commit and Push"
+description: "Add changes, Commit and Push to Target repo"
+
+inputs:
+  scope:
+    description: "Scope in commit message"
+    required: true
+
+runs:
+  using: composite
+  steps:
+    - name: Commit & Push
+      shell: bash
+      run: |
+        git config user.name "${{ inputs.scope }}-bot"
+        git config user.email "${{ inputs.scope }}@wliamp.io"
+  
+        git add -A
+        git commit -m "${{ inputs.scope }} at $(date -u +'%Y-%m-%d %H:%M:%S')" \
+          -m "$(git diff --cached --name-status)" || echo "✅ No changes to commit"  
+        git push origin main
