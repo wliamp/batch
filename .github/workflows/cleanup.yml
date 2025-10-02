@@ -21,6 +21,7 @@ jobs:
       - name: Clone target repo
         run: |
           git clone --depth=1 git@github.com:wliamp/notion-storage-${{ inputs.module }}.git ${{ runner.temp }}/${{ inputs.module }}
+          ls -lah ${{ runner.temp }}/${{ inputs.module }}
 
       - name: Run cleanup
         run: ./gradlew :cleanup:bootRun --args="--tmp=${{ runner.temp }}/${{ inputs.module }}"
