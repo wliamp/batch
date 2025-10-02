@@ -18,12 +18,23 @@ jobs:
         with:
           DEPLOY_KEY: ${{ secrets.DEPLOY_KEY }}
 
-      - name: Run / Commit & Push
+      - name: Clone
         run: |
           git clone --depth=1 git@github.com:wliamp/notion-storage-${{ inputs.module }}.git ${{ inputs.module }}
-          ./gradlew :cleanup:bootRun --args="--tmp=$GITHUB_WORKSPACE/${{ inputs.module }}"
 
-      - uses: ./.github/actions/git-commit
-        with:
-          scope: "cleanup"
-          dir: ${{ inputs.module }}
+      - name: Run
+        run: ./gradlew :cleanup:bootRun --args="--tmp=$GITHUB_WORKSPACE/${{ inputs.module }}"
+
+      - name: Commit & Push
+        working-directory: ${{ inputs.module }}
+        run: |
+          git config user.name "cleanup-bot"
+          git config user.email "cleanup@wliamp.io"
+
+          git add -A
+          git commit -m "cleanup at $(date -u +'%Y-%m-%d %H:%M:%S')" \
+            -m "$(git diff --cached --name-status)" || echo "✅ No changes to commit"
+          git push origin main
+
+      - name: Remove
+        run: rm -rf "${{ inputs.module }}"
