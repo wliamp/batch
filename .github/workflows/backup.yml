@@ -24,7 +24,7 @@ jobs:
         env:
           NOTION_INTEGRATION_TOKEN: ${{ secrets.NOTION_INTEGRATION_TOKEN }}
         run: |
-          ./gradlew :backup:bootRun -Dtmp=${{ runner.temp }}/${{ inputs.module }}
+          ./gradlew :cleanup:bootRun --args="--tmp=${{ runner.temp }}/${{ inputs.module }}"
           git clone --depth=1 git@github.com:wliamp/notion-storage-${{ inputs.module }}.git ${{ inputs.module }}
           cd ${{ inputs.module }}
           rm -rf ./*
