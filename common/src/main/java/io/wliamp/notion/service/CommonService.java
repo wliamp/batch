@@ -2,21 +2,21 @@ package io.wliamp.notion.service;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import io.wliamp.notion.compa.Title;
-import io.wliamp.notion.compa.Utility;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 import reactor.core.publisher.Mono;
 
 import java.nio.file.Path;
-import java.util.Optional;
+import java.util.stream.Stream;
 
 import static io.wliamp.notion.compa.Utility.extractFirstPlainText;
 import static io.wliamp.notion.compa.Utility.generateCode;
-import static io.wliamp.notion.constant.Constant.INVALID;
+import static java.util.Map.*;
+import static java.util.Optional.of;
 import static java.util.Optional.ofNullable;
 import static java.util.stream.StreamSupport.stream;
-import static reactor.core.publisher.Mono.*;
+import static reactor.core.publisher.Mono.fromCallable;
 
 @Service
 @Slf4j
@@ -31,19 +31,27 @@ public class CommonService {
 
     public Mono<Title> extractTitle(JsonNode node) {
         return fromCallable(() ->
-                        ofNullable(node.get("properties"))
-                                .flatMap(n -> stream(n.spliterator(), false)
-                                        .filter(prop -> prop.has("title"))
-                                        .map(prop -> prop.get("title"))
-                                        .map(Utility::extractFirstPlainText)
-                                        .flatMap(Optional::stream)
-                                        .findFirst())
-                                .map(s -> new Title(s, "properties.title"))
-                                .orElseGet(() -> extractFirstPlainText(node.get("title"))
-                                        .map(s -> new Title(s, "title"))
-                                        .orElseGet(() -> new Title(INVALID.getName() + "-" + generateCode(8), "fallback")))
-                )
-                .doOnError(e -> log.error("❌ extractTitle() FAILED from node={}", node, e));
+                ofNullable(node.get("properties"))
+                        .flatMap(n -> stream(n.spliterator(), false)
+                                .filter(prop -> prop.has("title"))
+                                .map(p -> "title-" + generateCode(10))
+                                .findFirst())
+                        .or(() -> extractFirstPlainText(node.get("title"))
+                                .map(t -> "field-" + generateCode(10)))
+                        .or(() -> of("untitled-" + generateCode(10)))
+                        .map(name -> {
+                            var source = Stream.of(
+                                            entry("title-", "properties.title"),
+                                            entry("field-", "title")
+                                    )
+                                    .filter(e -> name.startsWith(e.getKey()))
+                                    .map(Entry::getValue)
+                                    .findFirst()
+                                    .orElse("fallback");
+                            return new Title(name, source);
+                        })
+                        .orElseThrow()
+        ).doOnError(e -> log.error("❌ extractTitle() FAILED from node={}", node, e));
     }
 
     public Mono<Boolean> isOrphan(JsonNode node, Path dir) {
