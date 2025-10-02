@@ -12,21 +12,20 @@ jobs:
   cleanup:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-
       - uses: ./.github/actions/setup-env
         with:
           DEPLOY_KEY: ${{ secrets.DEPLOY_KEY }}
 
-      - name: Clone
+      - name: Clone target module repo
         run: |
-          git clone --depth=1 git@github.com:wliamp/notion-storage-${{ inputs.module }}.git ${{ inputs.module }}
+          git clone --depth=1 git@github.com:wliamp/notion-storage-${{ inputs.module }}.git /cleanup/${{ inputs.module }}
 
-      - name: Run
-        run: ./gradlew :cleanup:bootRun --args="--tmp=$GITHUB_WORKSPACE/${{ inputs.module }}"
+      - name: Run cleanup
+        run: ./gradlew :cleanup:bootRun --args="--tmp=/tmp/${{ inputs.module }}"
 
+      # Commit & Push trong repo con
       - name: Commit & Push
-        working-directory: ${{ inputs.module }}
+        working-directory: /cleanup/${{ inputs.module }}
         run: |
           git config user.name "cleanup-bot"
           git config user.email "cleanup@wliamp.io"
@@ -36,5 +35,7 @@ jobs:
             -m "$(git diff --cached --name-status)" || echo "✅ No changes to commit"
           git push origin main
 
-      - name: Remove
-        run: rm -rf "${{ inputs.module }}"
+      # Cleanup local repo
+      - name: Remove local repo
+        run: rm -rf /cleanup/${{ inputs.module }}
+
