@@ -28,6 +28,7 @@ jobs:
       - name: Commit & Push
         working-directory: ${{ runner.temp }}/${{ inputs.module }}
         run: |
+          git remote -v
           git config user.name "cleanup-bot"
           git config user.email "cleanup@wliamp.io"
           
