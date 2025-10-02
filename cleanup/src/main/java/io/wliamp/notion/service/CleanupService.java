@@ -26,7 +26,7 @@ public class CleanupService {
     private final JsonService jsonService;
 
     public void cleanup() {
-        var root = Paths.get(tmp);
+        var root = Paths.get(tmp).resolve("storage");
         log.info("🚀 Starting cleanup repo {}", root.toString().toUpperCase());
 
         pathService.isExists(root)
@@ -52,23 +52,27 @@ public class CleanupService {
 
     private Mono<Void> handleDir(Path dir, String name) {
         return just(name)
-                .filter(n -> n.startsWith(INVALID.getName()))
-                .flatMap(n -> pathService.cleanRecursively(dir)
-                        .doOnSubscribe(_ -> log.info("🗑 Removing untitled folder: {}", n)))
-                .switchIfEmpty(
-                        pathService.listPath(dir)
-                                .flatMap(file -> pathService.isDir(file)
-                                        .flatMap(isDir2 -> isDir2
-                                                ? pathService.cleanRecursively(file)
-                                                .doOnSubscribe(s -> log.debug("🗑 Unexpected subdirectory inside object, deleting: {}", file))
-                                                : cleanFile(file)))
-                                .then(cleanOrphan(dir))
-                );
+                .filter(n -> !n.startsWith("."))
+                .flatMap(n -> just(n)
+                        .filter(nn -> nn.startsWith(INVALID.getName()))
+                        .flatMap(nn -> pathService.cleanRecursively(dir)
+                                .doOnSubscribe(_ -> log.info("🗑 Removing untitled folder: {}", nn)))
+                        .switchIfEmpty(
+                                pathService.listPath(dir)
+                                        .flatMap(file -> pathService.isDir(file)
+                                                .flatMap(isDir2 -> isDir2
+                                                        ? pathService.cleanRecursively(file)
+                                                        .doOnSubscribe(s -> log.debug("🗑 Unexpected subdirectory inside object, deleting: {}", file))
+                                                        : cleanFile(file)))
+                                        .then(cleanOrphan(dir))
+                        )
+                )
+                .switchIfEmpty(empty());
     }
 
     private Mono<Void> cleanFile(Path file) {
         return just(file.getFileName().toString())
-                .filter(n -> !(n.equals(JSON1.getJson()) || n.equals(JSON2.getJson()) || n.equals(".git")))
+                .filter(n -> !(n.equals(JSON1.getJson()) || n.equals(JSON2.getJson())))
                 .flatMap(n -> pathService.removeFile(file)
                         .doOnSubscribe(s -> log.debug("🗑 Removing extra file: {}", n)))
                 .switchIfEmpty(empty());
