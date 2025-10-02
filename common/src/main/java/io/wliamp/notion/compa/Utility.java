@@ -7,7 +7,7 @@ import java.util.Optional;
 import static java.util.Optional.ofNullable;
 import static java.util.UUID.*;
 
-public class Utility {
+public final class Utility {
     public static Optional<String> extractFirstPlainText(JsonNode arr) {
         return ofNullable(arr)
                 .filter(JsonNode::isArray)

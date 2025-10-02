@@ -1,14 +1,14 @@
 package io.wliamp.notion.constant;
 
+import lombok.AllArgsConstructor;
 import lombok.Getter;
-import lombok.RequiredArgsConstructor;
 
 @Getter
-@RequiredArgsConstructor
+@AllArgsConstructor
 public enum Constant {
+    INVALID("untitled"),
     JSON1("meta"),
-    JSON2("blocks"),
-    INVALID("untitled");
+    JSON2("blocks");
 
     private final String name;
 

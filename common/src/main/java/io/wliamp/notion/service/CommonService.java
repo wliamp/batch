@@ -2,18 +2,14 @@ package io.wliamp.notion.service;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import io.wliamp.notion.compa.Title;
-import io.wliamp.notion.constant.Constant;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 import reactor.core.publisher.Mono;
 
 import java.nio.file.Path;
-import java.util.stream.Stream;
 
-import static io.wliamp.notion.compa.Utility.extractFirstPlainText;
 import static io.wliamp.notion.constant.Constant.*;
-import static java.util.Map.*;
 import static java.util.Optional.ofNullable;
 import static java.util.stream.StreamSupport.stream;
 import static reactor.core.publisher.Mono.*;

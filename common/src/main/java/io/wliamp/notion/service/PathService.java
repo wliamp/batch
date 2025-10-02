@@ -17,8 +17,6 @@ import static reactor.core.scheduler.Schedulers.boundedElastic;
 @Service
 @Slf4j
 public class PathService {
-
-    /** List files in a directory, skip if path not found */
     public Flux<Path> listPath(Path path) {
         return isExists(path)
                 .filter(Boolean::booleanValue)
@@ -38,7 +36,6 @@ public class PathService {
                 .subscribeOn(boundedElastic());
     }
 
-    /** Check if path exists */
     public Mono<Boolean> isExists(Path path) {
         return fromCallable(() -> exists(path))
                 .onErrorResume(e -> {
@@ -48,7 +45,6 @@ public class PathService {
                 .subscribeOn(boundedElastic());
     }
 
-    /** Check if path is a directory */
     public Mono<Boolean> isDir(Path path) {
         return fromCallable(() -> isDirectory(path))
                 .onErrorResume(e -> {
@@ -58,7 +54,6 @@ public class PathService {
                 .subscribeOn(boundedElastic());
     }
 
-    /** Create directory if not exists */
     public Mono<Path> createDir(Path path) {
         return fromCallable(() -> createDirectories(path))
                 .doOnSuccess(p -> log.info("📂 Directory created at {}", p.toAbsolutePath()))
@@ -69,7 +64,6 @@ public class PathService {
                 .subscribeOn(boundedElastic());
     }
 
-    /** Recursively delete directory (safe if path not found) */
     @SuppressWarnings("resource")
     public Mono<Void> cleanRecursively(Path path) {
         return isExists(path)
@@ -92,7 +86,6 @@ public class PathService {
                 .subscribeOn(boundedElastic());
     }
 
-    /** Remove file or dir (ignore if already gone) */
     public Mono<Void> removeFile(Path path) {
         return fromCallable(() -> {
             deleteIfExists(path);
