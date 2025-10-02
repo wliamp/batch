@@ -18,26 +18,24 @@ jobs:
         with:
           DEPLOY_KEY: ${{ secrets.DEPLOY_KEY }}
 
-      - name: Clone target module repo
+      - name: Clone target repo
         run: |
-          git clone --depth=1 git@github.com:wliamp/notion-storage-${{ inputs.module }}.git $RUNNER_TEMP/${{ inputs.module }}
+          git clone --depth=1 git@github.com:wliamp/notion-storage-${{ inputs.module }}.git ${{ runner.temp }}/${{ inputs.module }}
 
       - name: Run cleanup
-        run: ./gradlew :cleanup:bootRun --args="--tmp=$RUNNER_TEMP/${{ inputs.module }}"
+        run: ./gradlew :cleanup:bootRun --args="--tmp=${{ runner.temp }}/${{ inputs.module }}"
 
-      # Commit & Push trong repo con
       - name: Commit & Push
-        working-directory: $RUNNER_TEMP/${{ inputs.module }}
+        working-directory: ${{ runner.temp }}/${{ inputs.module }}
         run: |
           git config user.name "cleanup-bot"
           git config user.email "cleanup@wliamp.io"
-
+          
           git add -A
           git commit -m "cleanup at $(date -u +'%Y-%m-%d %H:%M:%S')" \
             -m "$(git diff --cached --name-status)" || echo "✅ No changes to commit"
           git push origin main
 
-      # Cleanup local repo
-      - name: Remove local repo
-        run: rm -rf $RUNNER_TEMP/${{ inputs.module }}
+      - name: Cleanup local clone
+        run: rm -rf ${{ runner.temp }}/${{ inputs.module }}
 
