@@ -11,56 +11,98 @@ import java.util.stream.BaseStream;
 import static java.nio.file.Files.*;
 import static java.util.Comparator.reverseOrder;
 import static reactor.core.publisher.Flux.*;
-import static reactor.core.publisher.Flux.using;
 import static reactor.core.publisher.Mono.fromCallable;
 import static reactor.core.scheduler.Schedulers.boundedElastic;
 
 @Service
 @Slf4j
 public class PathService {
+
+    /** List files in a directory, skip if path not found */
     public Flux<Path> listPath(Path path) {
-        return using(
-                () -> list(path),
-                Flux::fromStream,
-                BaseStream::close
-        ).doOnError(e -> log.error("❌ list() FAILED for path={}", path, e));
+        return isExists(path)
+                .filter(Boolean::booleanValue)
+                .flatMapMany(_ -> using(
+                        () -> list(path),
+                        Flux::fromStream,
+                        BaseStream::close
+                ))
+                .switchIfEmpty(defer(() -> {
+                    log.warn("⚠ listPath() skipped, path not found: {}", path.toAbsolutePath());
+                    return empty();
+                }))
+                .onErrorResume(e -> {
+                    log.error("❌ listPath() FAILED for path={}", path, e);
+                    return empty();
+                })
+                .subscribeOn(boundedElastic());
     }
 
+    /** Check if path exists */
     public Mono<Boolean> isExists(Path path) {
         return fromCallable(() -> exists(path))
-                .doOnError(e -> log.error("❌ exists() FAILED for path={}", path, e));
+                .onErrorResume(e -> {
+                    log.error("❌ isExists() FAILED for path={}", path, e);
+                    return Mono.just(false);
+                })
+                .subscribeOn(boundedElastic());
     }
 
+    /** Check if path is a directory */
     public Mono<Boolean> isDir(Path path) {
         return fromCallable(() -> isDirectory(path))
-                .doOnError(e -> log.error("❌ isDir() FAILED for path={}", path, e));
+                .onErrorResume(e -> {
+                    log.error("❌ isDir() FAILED for path={}", path, e);
+                    return Mono.just(false);
+                })
+                .subscribeOn(boundedElastic());
     }
 
+    /** Create directory if not exists */
     public Mono<Path> createDir(Path path) {
         return fromCallable(() -> createDirectories(path))
                 .doOnSuccess(p -> log.info("📂 Directory created at {}", p.toAbsolutePath()))
-                .doOnError(e -> log.error("❌ createDir() FAILED for path={}", path, e));
+                .onErrorResume(e -> {
+                    log.error("❌ createDir() FAILED for path={}", path, e);
+                    return Mono.empty();
+                })
+                .subscribeOn(boundedElastic());
     }
 
+    /** Recursively delete directory (safe if path not found) */
     @SuppressWarnings("resource")
     public Mono<Void> cleanRecursively(Path path) {
-        return Mono.using(
+        return isExists(path)
+                .filter(Boolean::booleanValue)
+                .flatMap(_ -> Mono.using(
                         () -> walk(path).sorted(reverseOrder()),
                         stream -> fromStream(stream)
                                 .concatMap(this::removeFile)
                                 .then(),
                         BaseStream::close
-                )
-                .doOnError(e -> log.error("❌ cleanRecursively() FAILED for path={}", path, e))
+                ).doOnSuccess(v -> log.debug("🧹 Cleaned {}", path.toAbsolutePath())))
+                .switchIfEmpty(defer(() -> {
+                    log.warn("⚠ cleanRecursively() skipped, path not found: {}", path.toAbsolutePath());
+                    return Mono.empty();
+                }).then())
+                .onErrorResume(e -> {
+                    log.error("❌ cleanRecursively() FAILED for path={}", path, e);
+                    return Mono.empty();
+                })
                 .subscribeOn(boundedElastic());
     }
 
+    /** Remove file or dir (ignore if already gone) */
     public Mono<Void> removeFile(Path path) {
         return fromCallable(() -> {
-                    deleteIfExists(path);
-                    return path;
-                })
+            deleteIfExists(path);
+            return path;
+        })
                 .doOnSuccess(p -> log.debug("🗑 Removed {}", p))
+                .onErrorResume(e -> {
+                    log.error("❌ removeFile() FAILED for {}", path, e);
+                    return Mono.empty();
+                })
                 .then()
                 .subscribeOn(boundedElastic());
     }
