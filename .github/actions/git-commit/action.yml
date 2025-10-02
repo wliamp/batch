@@ -5,10 +5,10 @@ inputs:
   scope:
     description: "Scope in commit message"
     required: true
-  working-directory:
+  dir:
     required: false
     default: "."
-    description: ""
+    description: "Working Directory"
 
 runs:
   using: composite
@@ -16,6 +16,7 @@ runs:
     - name: Commit & Push
       shell: bash
       run: |
+        cd "${{ inputs.dir }}"
         git config user.name "${{ inputs.scope }}-bot"
         git config user.email "${{ inputs.scope }}@wliamp.io"
   

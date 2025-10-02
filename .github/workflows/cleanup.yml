@@ -26,4 +26,4 @@ jobs:
       - uses: ./.github/actions/git-commit
         with:
           scope: "cleanup"
-          working-directory: ${{ inputs.module }}
+          dir: ${{ inputs.module }}
