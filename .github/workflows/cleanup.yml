@@ -21,7 +21,7 @@ jobs:
           git clone --depth=1 git@github.com:wliamp/notion-storage-${{ inputs.module }}.git /cleanup/${{ inputs.module }}
 
       - name: Run cleanup
-        run: ./gradlew :cleanup:bootRun --args="--tmp=/tmp/${{ inputs.module }}"
+        run: ./gradlew :cleanup:bootRun --args="--tmp=/cleanup/${{ inputs.module }}"
 
       # Commit & Push trong repo con
       - name: Commit & Push
