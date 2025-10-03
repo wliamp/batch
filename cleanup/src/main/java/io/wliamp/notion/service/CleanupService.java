@@ -1,6 +1,6 @@
 package io.wliamp.notion.service;
 
-import io.wliamp.notion.config.EnvConfig;
+import io.wliamp.notion.compo.EnvConfig;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;

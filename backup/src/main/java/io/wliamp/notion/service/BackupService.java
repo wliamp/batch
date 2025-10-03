@@ -1,7 +1,7 @@
 package io.wliamp.notion.service;
 
 import com.fasterxml.jackson.databind.JsonNode;
-import io.wliamp.notion.config.EnvConfig;
+import io.wliamp.notion.compo.EnvConfig;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
@@ -27,11 +27,9 @@ public class BackupService {
     private final JsonService jsonService;
     private final PathService pathService;
 
-    private final String token = envConfig.getToken();
-
     public void backup() {
         var root = Paths.get(envConfig.getTmp());
-        log.info("🔐 Found the Secret {}", mask(token, 5));
+        log.info("🔐 Found the Secret {}", mask(envConfig.getToken(), 5));
         log.info("🚀 Starting backup into repo {}", root.getFileName().toString().toUpperCase());
 
         prepareRoot(root)
@@ -48,7 +46,7 @@ public class BackupService {
     }
 
     private Flux<JsonNode> searchAndBackupObjects(Path outDir) {
-        return searchService.search(token)
+        return searchService.search(envConfig.getToken())
                 .doOnSubscribe(sub -> log.info("🔍 Searching objects ..."))
                 .flatMapSequential(node -> backupObject(node, outDir), 4);
     }
@@ -65,7 +63,7 @@ public class BackupService {
     }
 
     private Mono<JsonNode> fetchAndWrite(String id, JsonNode node, Path objDir) {
-        return fetchService.fetch(id, token)
+        return fetchService.fetch(id, envConfig.getTmp())
                 .doOnSubscribe(sub -> log.debug("📥 Fetching block tree for [{}]", id))
                 .collectList()
                 .doOnNext(blocks -> log.debug("📦 Fetched {} blocks for [{}]", blocks.size(), id))
