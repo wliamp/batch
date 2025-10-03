@@ -33,7 +33,7 @@ public class FetchService {
                             .doOnSubscribe(_ -> log.debug("📥 Processing {} children for [{}]", results.size(), parentId))
                             .doOnComplete(() -> log.info("✅ Fetched {} blocks for parentId={}", results.size(), parentId))
                             : Flux.<JsonNode>empty()
-                            .doOnSubscribe(s -> log.warn("⚠️ No results array in fetch response for [{}]", parentId));
+                            .doOnSubscribe(_ -> log.warn("⚠️ No results array in fetch response for [{}]", parentId));
                 })
                 .doOnError(e -> log.error("❌ Failed to fetch children for [{}]", parentId, e));
     }

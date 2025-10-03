@@ -38,11 +38,11 @@ public class SearchService {
 
                     return results != null && results.isArray()
                             ? fromIterable(results)
-                            .doOnSubscribe(s -> log.debug("🔍 Processing {} results", results.size()))
+                            .doOnSubscribe(_ -> log.debug("🔍 Processing {} results", results.size()))
                             .doOnNext(r -> log.trace("➡️ Result item: {}", r))
                             .doOnComplete(() -> log.info("✅ Search returned {} objects", results.size()))
                             : Flux.<JsonNode>empty()
-                            .doOnSubscribe(s -> log.warn("⚠️ No results array in search response"));
+                            .doOnSubscribe(_ -> log.warn("⚠️ No results array in search response"));
                 })
                 .doOnError(e -> log.error("❌ Search request failed", e));
     }

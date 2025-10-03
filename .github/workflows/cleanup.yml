@@ -16,7 +16,7 @@ jobs:
 
       - uses: ./.github/actions/setup-run
         with:
-          key: ${{ secures.DEPLOY_KEY }}
+          key: ${{ secrets.DEPLOY_KEY }}
           module: ${{ inputs.module }}
 
       - uses: ./.github/actions/commit-clean

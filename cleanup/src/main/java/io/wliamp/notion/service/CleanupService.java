@@ -7,9 +7,9 @@ import org.springframework.stereotype.Service;
 import reactor.core.publisher.Mono;
 
 import java.nio.file.Path;
-import java.nio.file.Paths;
 
 import static io.wliamp.notion.constant.Constant.*;
+import static java.nio.file.Paths.*;
 import static reactor.core.publisher.Mono.*;
 import static reactor.core.publisher.Mono.empty;
 import static reactor.core.publisher.Mono.fromRunnable;
@@ -24,7 +24,7 @@ public class CleanupService {
     private final JsonService jsonService;
 
     public void cleanup() {
-        var root = Paths.get(envConfig.getTmp());
+        var root = get(envConfig.getTmp());
         log.info("🚀 Starting cleanup repo {}", root.toString().toUpperCase());
 
         pathService.isExists(root)
@@ -34,7 +34,7 @@ public class CleanupService {
                 .then()
                 .switchIfEmpty(fromRunnable(() ->
                         log.warn("⚠ Root folder not found at {}", root.toAbsolutePath())))
-                .doOnSuccess(v -> log.info("🎉 CLEANUP completed successfully"))
+                .doOnSuccess(_ -> log.info("🎉 CLEANUP completed successfully"))
                 .doOnError(e -> log.error("🔥 CLEANUP failed", e))
                 .block();
     }
@@ -60,7 +60,7 @@ public class CleanupService {
                                         .flatMap(file -> pathService.isDir(file)
                                                 .flatMap(isDir2 -> isDir2
                                                         ? pathService.cleanRecursively(file)
-                                                        .doOnSubscribe(s -> log.debug("🗑 Unexpected subdirectory inside object, deleting: {}", file))
+                                                        .doOnSubscribe(_ -> log.debug("🗑 Unexpected subdirectory inside object, deleting: {}", file))
                                                         : cleanFile(file)))
                                         .then(cleanOrphan(dir))
                         )
@@ -72,7 +72,7 @@ public class CleanupService {
         return just(file.getFileName().toString())
                 .filter(n -> !(n.equals(JSON1.getJson()) || n.equals(JSON2.getJson())))
                 .flatMap(n -> pathService.removeFile(file)
-                        .doOnSubscribe(s -> log.debug("🗑 Removing extra file: {}", n)))
+                        .doOnSubscribe(_ -> log.debug("🗑 Removing extra file: {}", n)))
                 .switchIfEmpty(empty());
     }
 
@@ -81,7 +81,7 @@ public class CleanupService {
                 .flatMap(node -> commonService.isOrphan(node, objectDir.getParent()))
                 .filter(Boolean::booleanValue)
                 .flatMap(_ -> pathService.cleanRecursively(objectDir)
-                        .doOnSubscribe(s -> log.info("🗑 Deleting orphan folder: {}", objectDir)))
+                        .doOnSubscribe(_ -> log.info("🗑 Deleting orphan folder: {}", objectDir)))
                 .onErrorResume(e -> {
                     log.error("❌ Failed to process [{}]: {}", objectDir, e.getMessage());
                     return empty();

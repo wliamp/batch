@@ -9,11 +9,11 @@ import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
 import java.nio.file.Path;
-import java.nio.file.Paths;
 
 import static io.wliamp.notion.compa.Utility.mask;
 import static io.wliamp.notion.compa.Utility.safeName;
 import static io.wliamp.notion.constant.Constant.*;
+import static java.nio.file.Paths.*;
 import static reactor.core.publisher.Mono.fromRunnable;
 
 @Service
@@ -28,7 +28,7 @@ public class BackupService {
     private final PathService pathService;
 
     public void backup() {
-        var root = Paths.get(envConfig.getTmp());
+        var root = get(envConfig.getTmp());
         log.info("🔐 Found the Secret {}", mask(envConfig.getToken(), 5));
         log.info("🚀 Starting backup into repo {}", root.getFileName().toString().toUpperCase());
 
@@ -42,12 +42,12 @@ public class BackupService {
 
     private Mono<Path> prepareRoot(Path root) {
         return pathService.createDir(root)
-                .doOnSubscribe(sub -> log.debug("📂 Preparing output directory at {}", root));
+                .doOnSubscribe(_ -> log.debug("📂 Preparing output directory at {}", root));
     }
 
     private Flux<JsonNode> searchAndBackupObjects(Path outDir) {
         return searchService.search(envConfig.getToken())
-                .doOnSubscribe(sub -> log.info("🔍 Searching objects ..."))
+                .doOnSubscribe(_ -> log.info("🔍 Searching objects ..."))
                 .flatMapSequential(node -> backupObject(node, outDir), 4);
     }
 
@@ -64,7 +64,7 @@ public class BackupService {
 
     private Mono<JsonNode> fetchAndWrite(String id, JsonNode node, Path objDir) {
         return fetchService.fetch(id, envConfig.getToken())
-                .doOnSubscribe(sub -> log.debug("📥 Fetching block tree for [{}]", id))
+                .doOnSubscribe(_ -> log.debug("📥 Fetching block tree for [{}]", id))
                 .collectList()
                 .doOnNext(blocks -> log.debug("📦 Fetched {} blocks for [{}]", blocks.size(), id))
                 .flatMap(blocks -> pathService.createDir(objDir)
