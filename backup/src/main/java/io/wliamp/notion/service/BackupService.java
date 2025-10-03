@@ -63,7 +63,7 @@ public class BackupService {
     }
 
     private Mono<JsonNode> fetchAndWrite(String id, JsonNode node, Path objDir) {
-        return fetchService.fetch(id, envConfig.getTmp())
+        return fetchService.fetch(id, envConfig.getToken())
                 .doOnSubscribe(sub -> log.debug("📥 Fetching block tree for [{}]", id))
                 .collectList()
                 .doOnNext(blocks -> log.debug("📦 Fetched {} blocks for [{}]", blocks.size(), id))
