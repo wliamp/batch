@@ -1,0 +1,32 @@
+name: "Commit / Push & Clean"
+description: "Commit and push changes to target repo, remove temp folder"
+
+inputs:
+  module:
+    description: "Notion Workspace name / Module in Spring Boot project"
+    required: true
+  work:
+    description: "The Directory need to working and clean path file name"
+    required: false
+
+runs:
+  using: composite
+  steps:
+    - uses: actions/checkout@v4
+
+    - name: Commit & Push
+      shell: bash
+      working-directory: ${{ runner.temp }}/${{ inputs.module }}/${{ inputs.work }}
+      run: |
+        git config user.name "${{ inputs.module }}"
+        git config user.email ""${{ inputs.module }}@wliamp.io"
+
+        git add -A
+        git commit -m "$(date -u +'%Y-%m-%d %H:%M:%S')" \
+          -m "$(git diff --cached --name-status)" || echo "✅ No changes to commit"
+        git push origin main
+
+    - name: Remove
+      shell: bash
+      run: rm -rf ${{ runner.temp }}/${{ inputs.module }}
+

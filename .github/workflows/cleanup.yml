@@ -14,28 +14,12 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - uses: ./.github/actions/setup-env
+      - uses: ./.github/actions/setup-run
         with:
-          DEPLOY_KEY: ${{ secrets.DEPLOY_KEY }}
+          key: ${{ secures.DEPLOY_KEY }}
+          module: ${{ inputs.module }}
 
-      - name: Clone
-        run: |
-          git clone --depth=1 git@github.com:wliamp/notion-storage-${{ inputs.module }}.git ${{ runner.temp }}/${{ inputs.module }}
-
-      - name: Run
-        run: ./gradlew :cleanup:bootRun --args="--tmp=${{ runner.temp }}/${{ inputs.module }}"
-
-      - name: Commit & Push
-        working-directory: ${{ runner.temp }}/${{ inputs.module }}
-        run: |
-          git config user.name "cleanup-bot"
-          git config user.email "cleanup@wliamp.io"
-          
-          git add -A
-          git commit -m "cleanup at $(date -u +'%Y-%m-%d %H:%M:%S')" \
-            -m "$(git diff --cached --name-status)" || echo "✅ No changes to commit"
-          git push origin main
-
-      - name: Remove
-        run: rm -rf ${{ runner.temp }}/${{ inputs.module }}
+      - uses: ./.github/actions/commit-clean
+        with:
+          module: ${{ inputs.module }}
 

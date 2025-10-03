@@ -7,7 +7,7 @@ import org.springframework.stereotype.Component;
 @Component
 @Getter
 public class EnvConfig {
-    @Value("${tmp}")
+    @Value("${DIRECTORY_TEMP}")
     private String tmp;
 
     @Value("${NOTION_INTEGRATION_TOKEN}")

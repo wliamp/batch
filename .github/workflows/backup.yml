@@ -16,35 +16,21 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - uses: ./.github/actions/setup-env
+      - uses: ./.github/actions/setup-run
         with:
-          DEPLOY_KEY: ${{ secrets.DEPLOY_KEY }}
+          key: ${{ secrets.DEPLOY_KEY }}
+          token: ${{ secrets.NOTION_INTEGRATION_TOKEN }}
+          module: ${{ inputs.module }}
+          clone: storage
+          dir: backup
 
-      - name: Clone
-        run: |
-          git clone --depth=1 git@github.com:wliamp/notion-storage-${{ inputs.module }}.git ${{ runner.temp }}/${{ inputs.module }}/storage
-
-      - name: Run
-        env:
-          NOTION_INTEGRATION_TOKEN: ${{ secrets.NOTION_INTEGRATION_TOKEN }}
-        run: ./gradlew :backup:bootRun --args="--tmp=${{ runner.temp }}/${{ inputs.module }}/backup"
-
-      - name: Sync / Commit & Push
+      - name: Sync
         working-directory: ${{ runner.temp }}/${{ inputs.module }}/storage
         run: |
           rm -rf ./*
           cp -r ${{ runner.temp }}/${{ inputs.module }}/backup/* .
-          
-          git config user.name "backup-bot"
-          git config user.email "backup@wliamp.io"
-          
-          git add -A
-          git commit -m "backup at $(date -u +'%Y-%m-%d %H:%M:%S')" \
-            -m "$(git diff --cached --name-status)" || echo "✅ No changes to commit"
-          git push origin main
 
-      - name: Remove
-        run: |
-          rm -rf ${{ runner.temp }}/${{ inputs.module }}
-        
-
+      - uses: ./.github/actions/commit-clean
+        with:
+          module: ${{ inputs.module }}
+          work: storage

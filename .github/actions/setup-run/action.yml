@@ -1,0 +1,50 @@
+name: "Setup Environment & Run Application"
+description: "Checkout code, setup Java, setup SSH with DEPLOY_KEY, clone target repo, run Gradle"
+
+inputs:
+  key:
+    description: "SSH private key for GitHub deploy"
+    required: true
+  token:
+    description: "Integration token of Notion objects"
+    required: false
+  module:
+    description: "Notion Workspace name / Module in Spring Boot project"
+    required: true
+  clone:
+    description: "Clone temp path file name"
+    required: false
+  dir:
+    description: "Working temp directory path file name"
+    required: false
+
+runs:
+  using: composite
+  steps:
+    - uses: actions/checkout@v4
+
+    - uses: actions/setup-java@v4
+      with:
+        distribution: temurin
+        java-version: 25
+
+    - name: Setup SSH
+      shell: bash
+      run: |
+        mkdir -p ~/.ssh
+        echo "${{ inputs.key }}" > ~/.ssh/id_rsa
+        chmod 600 ~/.ssh/id_rsa
+        ssh-keyscan github.com >> ~/.ssh/known_hosts
+
+    - name: Clone
+      shell: bash
+      run: |
+        git clone --depth=1 git@github.com:wliamp/notion-storage-${{ inputs.module }}.git \
+          ${{ runner.temp }}/${{ inputs.module }}/${{ inputs.clone }}
+
+    - name: Run
+      shell: bash
+      env:
+        NOTION_INTEGRATION_TOKEN: ${{ inputs.token }}
+        DIRECTORY_TEMP: ${{ runner.temp }}/${{ inputs.module }}/${{ inputs.dir }}
+      run: ./gradlew :${{ inputs.module }}:bootRun

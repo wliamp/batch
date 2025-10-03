@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  backup:
+  pss:
     uses: ./.github/workflows/backup.yml
     with:
       module: "pps"
