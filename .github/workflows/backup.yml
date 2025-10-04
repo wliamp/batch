@@ -20,17 +20,17 @@ jobs:
         with:
           key: ${{ secrets.DEPLOY_KEY }}
           token: ${{ secrets.NOTION_INTEGRATION_TOKEN }}
+          notion: ${{ inputs.notion }}
           module: ${{ inputs.module }}
-          clone: storage
-          dir: backup
+          dir: storage
 
       - name: Sync
-        working-directory: ${{ runner.temp }}/${{ inputs.module }}/storage
+        working-directory: ${{ runner.temp }}/${{ inputs.notion }}/storage
         run: |
           rm -rf ./*
-          cp -r ${{ runner.temp }}/${{ inputs.module }}/backup/* .
+          cp -r ${{ runner.temp }}/${{ inputs.notion }}/${{ inputs.module }}/* .
 
       - uses: ./.github/actions/commit-clean
         with:
-          module: ${{ inputs.module }}
-          work: storage
+          notion: ${{ inputs.notion }}
+          dir: storage

@@ -9,7 +9,7 @@ jobs:
   pss:
     uses: ./.github/workflows/backup.yml
     with:
-      module: "pps"
+      notion: "pps"
     secrets:
       DEPLOY_KEY: ${{ secrets.PPS_DEPLOY_KEY }}
       NOTION_INTEGRATION_TOKEN: ${{ secrets.PPS_INTEGRATION_NOTION }}

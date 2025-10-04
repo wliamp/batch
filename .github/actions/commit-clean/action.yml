@@ -2,10 +2,10 @@ name: "Commit / Push & Clean"
 description: "Commit and push changes to target repo, remove temp folder"
 
 inputs:
-  module:
+  notion:
     description: "Notion Workspace name / Module in Spring Boot project"
     required: true
-  work:
+  dir:
     description: "The Directory need to working and clean path file name"
     required: false
 
@@ -16,10 +16,10 @@ runs:
 
     - name: Commit & Push
       shell: bash
-      working-directory: ${{ runner.temp }}/${{ inputs.module }}/${{ inputs.work }}
+      working-directory: ${{ runner.temp }}/${{ inputs.notion }}/${{ inputs.dir }}
       run: |
-        git config user.name "${{ inputs.module }}"
-        git config user.email ""${{ inputs.module }}@wliamp.io"
+        git config user.name "Notion Sync"
+        git config user.email "notion-sync@wliamp.io"
 
         git add -A
         git commit -m "$(date -u +'%Y-%m-%d %H:%M:%S')" \
@@ -28,5 +28,5 @@ runs:
 
     - name: Remove
       shell: bash
-      run: rm -rf ${{ runner.temp }}/${{ inputs.module }}
+      run: rm -rf ${{ runner.temp }}/${{ inputs.notion }}
 

@@ -17,9 +17,9 @@ jobs:
       - uses: ./.github/actions/setup-run
         with:
           key: ${{ secrets.DEPLOY_KEY }}
-          module: ${{ inputs.module }}
+          notion: ${{ inputs.notion }}
 
       - uses: ./.github/actions/commit-clean
         with:
-          module: ${{ inputs.module }}
+          notion: ${{ inputs.notion }}
 

@@ -8,14 +8,14 @@ inputs:
   token:
     description: "Integration token of Notion objects"
     required: false
-  module:
+  notion:
     description: "Notion Workspace name / Module in Spring Boot project"
     required: true
-  clone:
-    description: "Clone temp path file name"
-    required: false
+  module:
+    description: "Backup / Cleanup / Storage"
+    required: true
   dir:
-    description: "Working temp directory path file name"
+    description: "Clone temp directory path file name"
     required: false
 
 runs:
@@ -39,12 +39,12 @@ runs:
     - name: Clone
       shell: bash
       run: |
-        git clone --depth=1 git@github.com:wliamp/notion-storage-${{ inputs.module }}.git \
-          ${{ runner.temp }}/${{ inputs.module }}/${{ inputs.clone }}
+        git clone --depth=1 git@github.com:wliamp/notion-storage-${{ inputs.notion }}.git \
+          ${{ runner.temp }}/${{ inputs.notion }}/${{ inputs.dir }}
 
     - name: Run
       shell: bash
       env:
         NOTION_INTEGRATION_TOKEN: ${{ inputs.token }}
-        DIRECTORY_TEMP: ${{ runner.temp }}/${{ inputs.module }}/${{ inputs.dir }}
+        DIRECTORY_TEMP: ${{ runner.temp }}/${{ inputs.notion }}/${{ inputs.module }}
       run: ./gradlew :${{ inputs.module }}:bootRun

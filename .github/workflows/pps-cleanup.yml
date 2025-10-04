@@ -9,6 +9,6 @@ jobs:
   pss:
     uses: ./.github/workflows/cleanup.yml
     with:
-      module: "pps"
+      notion: "pps"
     secrets:
       DEPLOY_KEY: ${{ secrets.PPS_DEPLOY_KEY }}
