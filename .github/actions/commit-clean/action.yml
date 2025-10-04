@@ -3,7 +3,10 @@ description: "Commit and push changes to target repo, remove temp folder"
 
 inputs:
   notion:
-    description: "Notion Workspace name / Module in Spring Boot project"
+    description: "Notion Workspace name"
+    required: true
+  module:
+    description: "Module in Spring Boot project / Scope in commit message"
     required: true
   dir:
     description: "The Directory need to working and clean path file name"
@@ -18,11 +21,11 @@ runs:
       shell: bash
       working-directory: ${{ runner.temp }}/${{ inputs.notion }}/${{ inputs.dir }}
       run: |
-        git config user.name "Notion Sync"
-        git config user.email "notion-sync@wliamp.io"
+        git config user.name "${{ inputs.module }}"
+        git config user.email "${{ inputs.module }}-bot@wliamp.io"
 
         git add -A
-        git commit -m "$(date -u +'%Y-%m-%d %H:%M:%S')" \
+        git commit -m "${{ inputs.module }} at $(date -u +'%Y-%m-%d %H:%M:%S')" \
           -m "$(git diff --cached --name-status)" || echo "✅ No changes to commit"
         git push origin main
 

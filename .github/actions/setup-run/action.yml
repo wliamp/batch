@@ -9,11 +9,11 @@ inputs:
     description: "Integration token of Notion objects"
     required: false
   notion:
-    description: "Notion Workspace name / Module in Spring Boot project"
+    description: "Notion Workspace name"
     required: true
   module:
-    description: "Backup / Cleanup / Storage"
-    required: true
+    description: "Module in Spring Boot project / Scope in commit message"
+    required: false
   dir:
     description: "Clone temp directory path file name"
     required: false

@@ -22,4 +22,5 @@ jobs:
       - uses: ./.github/actions/commit-clean
         with:
           notion: ${{ inputs.notion }}
+          module: cleanup
 
