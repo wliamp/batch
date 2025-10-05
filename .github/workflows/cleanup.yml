@@ -18,6 +18,7 @@ jobs:
         with:
           key: ${{ secrets.DEPLOY_KEY }}
           notion: ${{ inputs.notion }}
+          module: cleanup
 
       - uses: ./.github/actions/commit-clean
         with:
