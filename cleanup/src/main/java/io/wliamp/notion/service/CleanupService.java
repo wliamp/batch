@@ -25,11 +25,9 @@ public class CleanupService {
 
     public void cleanup() {
         var root = get(envConfig.getTmp());
-        log.info("🚀 Starting cleanup repo {}", root.getParent().getFileName().toString().toUpperCase());
+        log.info("🚀 Starting cleanup Workspace {}", root.getParent().getFileName().toString().toUpperCase());
 
-        pathService.isExists(root)
-                .filter(Boolean::booleanValue)
-                .flatMapMany(_ -> pathService.listPath(root))
+        pathService.listPath(root)
                 .flatMap(this::cleanObjectDir)
                 .then()
                 .switchIfEmpty(fromRunnable(() ->
