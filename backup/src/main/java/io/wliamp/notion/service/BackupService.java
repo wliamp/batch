@@ -9,11 +9,12 @@ import reactor.core.publisher.Flux;
 import reactor.core.publisher.Mono;
 
 import java.nio.file.Path;
+import java.util.concurrent.atomic.AtomicInteger;
 
 import static io.wliamp.notion.compa.Utility.mask;
 import static io.wliamp.notion.compa.Utility.safeName;
 import static io.wliamp.notion.constant.Constant.*;
-import static java.nio.file.Paths.*;
+import static java.nio.file.Paths.get;
 import static reactor.core.publisher.Mono.fromRunnable;
 
 @Service
@@ -29,13 +30,13 @@ public class BackupService {
 
     public void backup() {
         var root = get(envConfig.getTmp());
-        log.info("🔐 Found the Secret {}", mask(envConfig.getToken(), 5));
-        log.info("🚀 Starting backup into repo {}", root.getParent().getFileName().toString().toUpperCase());
+        log.info("🔐 Using secret: {}", mask(envConfig.getToken(), 5));
+        log.info("🚀 Starting workspace backup: {}", root.getParent().getFileName().toString().toUpperCase());
 
         prepareRoot(root)
                 .flatMapMany(this::searchAndBackupObjects)
                 .collectList()
-                .doOnSuccess(_ -> log.info("🎉 Backup completed successfully"))
+                .doOnSuccess(list -> log.info("🎉 Backup completed successfully — {} objects processed", list.size()))
                 .doOnError(e -> log.error("🔥 Backup failed", e))
                 .block();
     }
@@ -46,20 +47,42 @@ public class BackupService {
     }
 
     private Flux<JsonNode> searchAndBackupObjects(Path outDir) {
+        var totalFound = new AtomicInteger();
+        var totalSucceeded = new AtomicInteger();
+        var totalFailed = new AtomicInteger();
+
         return searchService.search(envConfig.getToken())
-                .doOnSubscribe(_ -> log.info("🔍 Searching objects ..."))
-                .flatMapSequential(node -> backupObject(node, outDir), 4);
+                .doOnSubscribe(_ -> log.info("🔍 Searching for objects..."))
+                .doOnNext(_ -> totalFound.incrementAndGet())
+                .flatMapSequential(node ->
+                                backupObject(node, outDir)
+                                        .doOnSuccess(_ -> totalSucceeded.incrementAndGet())
+                                        .onErrorResume(e -> {
+                                            totalFailed.incrementAndGet();
+                                            log.debug("⚠ Failed to backup one object: {}", e.getMessage());
+                                            return Mono.empty();
+                                        }),
+                        4)
+                .doOnComplete(() -> log.info("""
+                                ✅ Backup summary:
+                                • Total objects found: {}
+                                • Successfully backed up: {}
+                                • Failed: {}
+                                """,
+                        totalFound.get(),
+                        totalSucceeded.get(),
+                        totalFailed.get()
+                ));
     }
 
     private Mono<JsonNode> backupObject(JsonNode node, Path outDir) {
         return commonService.safeId(node)
                 .flatMap(id -> commonService.extractTitle(node)
                         .flatMap(title -> {
-                            log.info("➡️ Backing up object [{}] with title [{}]", id, title.name());
+                            log.debug("➡️ Backing up object [{}] with title [{}]", id, title.name());
                             return fetchAndWrite(id, node, outDir.resolve(safeName(title.name())));
                         })
-                )
-                .doOnError(e -> log.warn("⚠ Failed to backup object [{}]", node.path("id").asText(), e));
+                );
     }
 
     private Mono<JsonNode> fetchAndWrite(String id, JsonNode node, Path objDir) {
@@ -73,9 +96,8 @@ public class BackupService {
                                         .then(jsonService.create(objDir.resolve(JSON2.getJson()), blocks))
                         )
                         .then(fromRunnable(() ->
-                                log.info("💾 Object [{}] written to {}", id, objDir)))
+                                log.debug("💾 Object [{}] written to {}", id, objDir)))
                 )
-                .doOnError(e -> log.error("❌ Failed to fetch/write object [{}]", id, e))
                 .thenReturn(node);
     }
 }
