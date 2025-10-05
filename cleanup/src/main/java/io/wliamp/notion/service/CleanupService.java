@@ -9,10 +9,10 @@ import reactor.core.publisher.Mono;
 import java.nio.file.Path;
 
 import static io.wliamp.notion.constant.Constant.*;
-import static java.nio.file.Paths.*;
+import static java.nio.file.Files.exists;
+import static java.nio.file.Files.isDirectory;
+import static java.nio.file.Paths.get;
 import static reactor.core.publisher.Mono.*;
-import static reactor.core.publisher.Mono.empty;
-import static reactor.core.publisher.Mono.fromRunnable;
 
 @Service
 @Slf4j
@@ -26,8 +26,14 @@ public class CleanupService {
     public void cleanup() {
         var root = get(envConfig.getTmp());
         log.info("🚀 Starting cleanup Workspace {}", root.getParent().getFileName().toString().toUpperCase());
+        log.info("DIRECTORY_TEMP = {}", envConfig.getTmp());
+        log.info("Resolved path = {}", get(envConfig.getTmp()).toAbsolutePath());
+        log.info("Exists? {}", exists(get(envConfig.getTmp())));
+        log.info("Is dir? {}", isDirectory(get(envConfig.getTmp())));
 
-        pathService.listPath(root)
+        pathService.isExists(root)
+                .filter(Boolean::booleanValue)
+                .flatMapMany(_ -> pathService.listPath(root))
                 .flatMap(this::cleanObjectDir)
                 .then()
                 .switchIfEmpty(fromRunnable(() ->
