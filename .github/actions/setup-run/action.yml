@@ -14,9 +14,6 @@ inputs:
   module:
     description: "Module in Spring Boot project / Scope in commit message"
     required: false
-  clone:
-    description: "Path file name of temp folder that contain target repo"
-    required: false
   dir:
     description: "Path file name of directory that the Spring Boot run on"
     required: false
@@ -43,7 +40,7 @@ runs:
       shell: bash
       run: |
         git clone --depth=1 git@github.com:wliamp/notion-storage-${{ inputs.notion }}.git \
-          ${{ runner.temp }}/${{ inputs.notion }}/${{ inputs.clone }}
+          ${{ runner.temp }}/${{ inputs.notion }}/storage
 
     - name: Run
       shell: bash

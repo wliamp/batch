@@ -8,9 +8,6 @@ inputs:
   module:
     description: "Module in Spring Boot project / Scope in commit message"
     required: true
-  dir:
-    description: "The Directory need to working and clean path file name"
-    required: false
 
 runs:
   using: composite
@@ -19,7 +16,7 @@ runs:
 
     - name: Commit & Push
       shell: bash
-      working-directory: ${{ runner.temp }}/${{ inputs.notion }}/${{ inputs.dir }}
+      working-directory: ${{ runner.temp }}/${{ inputs.notion }}/storage
       run: |
         git config user.name "${{ inputs.module }}"
         git config user.email "${{ inputs.module }}-bot@wliamp.io"

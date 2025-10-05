@@ -30,7 +30,7 @@ public class BackupService {
     public void backup() {
         var root = get(envConfig.getTmp());
         log.info("🔐 Found the Secret {}", mask(envConfig.getToken(), 5));
-        log.info("🚀 Starting backup into repo {}", root.getFileName().toString().toUpperCase());
+        log.info("🚀 Starting backup into repo {}", root.getParent().getFileName().toString().toUpperCase());
 
         prepareRoot(root)
                 .flatMapMany(this::searchAndBackupObjects)

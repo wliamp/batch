@@ -22,7 +22,6 @@ jobs:
           token: ${{ secrets.NOTION_INTEGRATION_TOKEN }}
           notion: ${{ inputs.notion }}
           module: backup
-          clone: storage
           dir: backup
 
       - name: Sync
@@ -35,4 +34,3 @@ jobs:
         with:
           notion: ${{ inputs.notion }}
           module: backup
-          dir: storage
