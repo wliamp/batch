@@ -26,17 +26,13 @@ public class CleanupService {
     public void cleanup() {
         var root = get(envConfig.getTmp());
         log.info("🚀 Starting cleanup Workspace {}", root.getParent().getFileName().toString().toUpperCase());
-        log.info("DIRECTORY_TEMP = {}", envConfig.getTmp());
-        log.info("Resolved path = {}", get(envConfig.getTmp()).toAbsolutePath());
-        log.info("Exists? {}", exists(get(envConfig.getTmp())));
-        log.info("Is dir? {}", isDirectory(get(envConfig.getTmp())));
 
         pathService.isExists(root)
-                .filter(Boolean::booleanValue)
-                .flatMapMany(_ -> pathService.listPath(root))
-                .flatMap(this::cleanObjectDir)
-                .then()
-                .switchIfEmpty(fromRunnable(() ->
+                .flatMap(exists -> exists
+                        ? pathService.listPath(root)
+                        .flatMap(this::cleanObjectDir)
+                        .then()
+                        : fromRunnable(() ->
                         log.warn("⚠ Root folder not found at {}", root.toAbsolutePath())))
                 .doOnSuccess(_ -> log.info("🎉 CLEANUP completed successfully"))
                 .doOnError(e -> log.error("🔥 CLEANUP failed", e))
