@@ -41,7 +41,7 @@ public class PathService {
                 .doOnNext(v -> log.info("🔍 isExists({}) => {}", path, v))
                 .onErrorResume(e -> {
                     log.error("❌ isExists() FAILED for path={}", path, e);
-                    return just(false);
+                    return Mono.just(false);
                 })
                 .subscribeOn(boundedElastic());
     }
