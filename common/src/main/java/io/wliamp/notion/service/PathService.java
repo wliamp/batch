@@ -18,17 +18,11 @@ import static reactor.core.scheduler.Schedulers.boundedElastic;
 @Slf4j
 public class PathService {
     public Flux<Path> listPath(Path path) {
-        return isExists(path)
-                .filter(Boolean::booleanValue)
-                .flatMapMany(_ -> using(
-                        () -> list(path),
-                        Flux::fromStream,
-                        BaseStream::close
-                ))
-                .switchIfEmpty(defer(() -> {
-                    log.warn("⚠ listPath() skipped, path not found: {}", path.toAbsolutePath());
-                    return empty();
-                }))
+        return using(
+                () -> list(path),
+                Flux::fromStream,
+                BaseStream::close
+        )
                 .onErrorResume(e -> {
                     log.error("❌ listPath() FAILED for path={}", path, e);
                     return empty();
