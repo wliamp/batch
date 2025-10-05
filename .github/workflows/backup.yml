@@ -22,7 +22,8 @@ jobs:
           token: ${{ secrets.NOTION_INTEGRATION_TOKEN }}
           notion: ${{ inputs.notion }}
           module: backup
-          dir: storage
+          clone: storage
+          dir: backup
 
       - name: Sync
         working-directory: ${{ runner.temp }}/${{ inputs.notion }}/storage

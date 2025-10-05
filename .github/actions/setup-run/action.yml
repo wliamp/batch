@@ -14,8 +14,11 @@ inputs:
   module:
     description: "Module in Spring Boot project / Scope in commit message"
     required: false
+  clone:
+    description: "Path file name of temp folder that contain target repo"
+    required: false
   dir:
-    description: "Clone temp directory path file name"
+    description: "Path file name of directory that the Spring Boot run on"
     required: false
 
 runs:
@@ -40,11 +43,11 @@ runs:
       shell: bash
       run: |
         git clone --depth=1 git@github.com:wliamp/notion-storage-${{ inputs.notion }}.git \
-          ${{ runner.temp }}/${{ inputs.notion }}/${{ inputs.dir }}
+          ${{ runner.temp }}/${{ inputs.notion }}/${{ inputs.clone }}
 
     - name: Run
       shell: bash
       env:
         NOTION_INTEGRATION_TOKEN: ${{ inputs.token }}
-        DIRECTORY_TEMP: ${{ runner.temp }}/${{ inputs.notion }}/${{ inputs.module }}
+        DIRECTORY_TEMP: ${{ runner.temp }}/${{ inputs.notion }}/${{ inputs.dir }}
       run: ./gradlew :${{ inputs.module }}:bootRun
