@@ -1,7 +1,8 @@
+name: Backup
 on:
   workflow_call:
     inputs:
-      notion:
+      domain:
         required: true
         type: string
     secrets:
@@ -9,28 +10,23 @@ on:
         required: true
       NOTION_INTEGRATION_TOKEN:
         required: true
-
 jobs:
   backup:
-    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-
       - uses: ./.github/actions/setup-run
         with:
           key: ${{ secrets.DEPLOY_KEY }}
           token: ${{ secrets.NOTION_INTEGRATION_TOKEN }}
-          notion: ${{ inputs.notion }}
-          module: backup
+          domain: ${{ inputs.domain }}
+          batch: backup
           dir: backup
-
-      - name: Sync
-        working-directory: ${{ runner.temp }}/${{ inputs.notion }}/storage
-        run: |
+      - run: |
           rm -rf ./*
-          cp -r ${{ runner.temp }}/${{ inputs.notion }}/backup/* .
-
+          cp -r ${{ runner.temp }}/${{ inputs.domain }}/backup/* .
+        working-directory: ${{ runner.temp }}/${{ inputs.domain }}/storage
       - uses: ./.github/actions/commit-clean
         with:
-          notion: ${{ inputs.notion }}
-          module: backup
+          domain: ${{ inputs.domain }}
+          batch: backup
+    runs-on: ubuntu-latest

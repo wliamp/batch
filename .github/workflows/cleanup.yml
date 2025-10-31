@@ -1,28 +1,26 @@
+name: Cleanup
 on:
   workflow_call:
     inputs:
-      notion:
+      domain:
         required: true
         type: string
     secrets:
       DEPLOY_KEY:
         required: true
-
 jobs:
   cleanup:
-    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-
       - uses: ./.github/actions/setup-run
         with:
           key: ${{ secrets.DEPLOY_KEY }}
-          notion: ${{ inputs.notion }}
-          module: cleanup
+          domain: ${{ inputs.domain }}
+          batch: cleanup
           dir: storage
-
       - uses: ./.github/actions/commit-clean
         with:
-          notion: ${{ inputs.notion }}
-          module: cleanup
+          domain: ${{ inputs.domain }}
+          batch: cleanup
+    runs-on: ubuntu-latest
 

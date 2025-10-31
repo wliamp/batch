@@ -1,32 +1,25 @@
-name: "Commit / Push & Clean"
-description: "Commit and push changes to target repo, remove temp folder"
-
+description: |
+  - Commit and push changes to target repo
+  - Remove temp folder
 inputs:
-  notion:
-    description: "Notion Workspace name"
+  domain:
+    description: "Business domain scope"
     required: true
-  module:
-    description: "Module in Spring Boot project / Scope in commit message"
+  batch:
+    description: "Batch job scope"
     required: true
-
 runs:
   using: composite
   steps:
-    - uses: actions/checkout@v4
-
-    - name: Commit & Push
-      shell: bash
-      working-directory: ${{ runner.temp }}/${{ inputs.notion }}/storage
-      run: |
-        git config user.name "${{ inputs.module }}"
-        git config user.email "${{ inputs.module }}-bot@wliamp.io"
-
+    - run: |
+        git config user.name "${{ inputs.batch }}[bot]"
+        git config user.email "${{ inputs.batch }}[bot]@users.noreply.github.com"
         git add -A
-        git commit -m "${{ inputs.module }} at $(date -u +'%Y-%m-%d %H:%M:%S')" \
+        git commit -m "${{ inputs.batch }} at $(date -u +'%Y-%m-%d %H:%M:%S')" \
           -m "$(git diff --cached --name-status)" || echo "✅ No changes to commit"
         git push origin main
-
-    - name: Remove
+      working-directory: ${{ runner.temp }}/${{ inputs.domain }}/storage
       shell: bash
-      run: rm -rf ${{ runner.temp }}/${{ inputs.notion }}
+    - run: rm -rf ${{ runner.temp }}/${{ inputs.domain }}
+      shell: bash
 

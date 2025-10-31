@@ -1,6 +1,8 @@
-name: "Setup Environment & Run Application"
-description: "Checkout code, setup Java, setup SSH with DEPLOY_KEY, clone target repo, run Gradle"
-
+description: |
+  - Setup Java
+  - Setup SSH with DEPLOY_KEY
+  - Clone target repo
+  - Run Gradle
 inputs:
   key:
     description: "SSH private key for GitHub deploy"
@@ -8,43 +10,34 @@ inputs:
   token:
     description: "Integration token of Notion objects"
     required: false
-  notion:
-    description: "Notion Workspace name"
+  domain:
+    description: "Business domain scope"
     required: true
-  module:
-    description: "Module in Spring Boot project / Scope in commit message"
-    required: false
+  batch:
+    description: "Batch job scope"
+    required: true
   dir:
     description: "Path file name of directory that the Spring Boot run on"
     required: false
-
 runs:
   using: composite
   steps:
-    - uses: actions/checkout@v4
-
     - uses: actions/setup-java@v4
       with:
         distribution: temurin
         java-version: 25
-
-    - name: Setup SSH
-      shell: bash
-      run: |
+    - run: |
         mkdir -p ~/.ssh
         echo "${{ inputs.key }}" > ~/.ssh/id_rsa
         chmod 600 ~/.ssh/id_rsa
-        ssh-keyscan github.com >> ~/.ssh/known_hosts
-
-    - name: Clone
+        ssh-keyscan -t rsa github.com >> ~/.ssh/known_hosts 2>/dev/null
       shell: bash
-      run: |
-        git clone --depth=1 git@github.com:wliamp/notion-storage-${{ inputs.notion }}.git \
-          ${{ runner.temp }}/${{ inputs.notion }}/storage
-
-    - name: Run
+    - run: |
+        git clone --depth=1 git@github.com:wliamp/storage-${{ inputs.domain }}.git \
+          ${{ runner.temp }}/${{ inputs.domain }}/storage
       shell: bash
+    - run: ./gradlew :${{ inputs.batch }}:bootRun
       env:
         NOTION_INTEGRATION_TOKEN: ${{ inputs.token }}
-        DIRECTORY_TEMP: ${{ runner.temp }}/${{ inputs.notion }}/${{ inputs.dir }}
-      run: ./gradlew :${{ inputs.module }}:bootRun
+        DIRECTORY_TEMP: ${{ runner.temp }}/${{ inputs.domain }}/${{ inputs.dir }}
+      shell: bash

@@ -1,15 +1,13 @@
-name: PPS Backup
-
+name: Backup Payment
 on:
   schedule:
     - cron: "0 */6 * * *"
   workflow_dispatch:
-
 jobs:
-  pss:
+  backup-payment:
     uses: ./.github/workflows/backup.yml
     with:
-      notion: "pps"
+      domain: payment
     secrets:
       DEPLOY_KEY: ${{ secrets.PPS_DEPLOY_KEY }}
       NOTION_INTEGRATION_TOKEN: ${{ secrets.PPS_INTEGRATION_NOTION }}
